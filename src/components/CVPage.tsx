@@ -102,6 +102,15 @@ export function CVPage({ onBack }: CVPageProps) {
       const imgY = 5
 
       pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight)
+
+      pdf.setFontSize(8)
+      pdf.setTextColor(100, 100, 100)
+      const footerY = pdfHeight - 10
+      pdf.text('© 2026 Oleksii Havryliuk', pdfWidth / 2, footerY, { align: 'center' })
+      pdf.setFontSize(7)
+      pdf.text(`Portfolio: ${portfolioUrl}`, pdfWidth / 2, footerY + 3, { align: 'center' })
+      pdf.text('Erstellt: ' + new Date().toLocaleDateString('de-DE'), pdfWidth / 2, footerY + 6, { align: 'center' })
+
       pdf.save('Oleksii_Havryliuk_Lebenslauf.pdf')
 
       toast.success('PDF erfolgreich heruntergeladen')
