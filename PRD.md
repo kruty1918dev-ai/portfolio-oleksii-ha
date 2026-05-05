@@ -33,12 +33,12 @@ Dies ist eine moderne Single-Page-Application mit mehreren interaktiven Sektione
 - Progression: Nutzer sieht Skill-Karten → erkennt Technologien → versteht durch Level-Anzeige den aktuellen Kenntnisstand → kann technisches Profil einschätzen
 - Success criteria: Unternehmen können technisches Niveau realistisch einschätzen
 
-**Projekt-Portfolio mit Details**
-- Functionality: Präsentation von 4 Projekten mit Beschreibung, Technologie-Stack, Status und GitHub-Links
-- Purpose: Praktische Erfahrung und Lernfortschritt durch echte Projekte demonstrieren
+**Projekt-Portfolio mit Details und Bildern**
+- Functionality: Präsentation von 4 Projekten mit visuellen Vorschaubildern, Beschreibung, Technologie-Stack, Status und GitHub-Links, inklusive prominenter Erklärung zur KI-gestützten Entwicklung
+- Purpose: Praktische Erfahrung und Lernfortschritt durch echte Projekte demonstrieren; transparente Kommunikation über den Einsatz von KI als Produktivitätswerkzeug und moderne Arbeitsweise
 - Trigger: Nutzer scrollt zu Projekten oder klickt auf "Projekte ansehen"
-- Progression: Nutzer sieht Projektkarten → liest Beschreibungen → versteht Kontext und Lernziele → klickt auf GitHub-Link → kann Code einsehen
-- Success criteria: Unternehmen können praktische Fähigkeiten und Projektarbeit nachvollziehen
+- Progression: Nutzer sieht KI-Hinweis und versteht die moderne Arbeitsweise → scrollt zu Projektkarten → betrachtet Projektbilder → liest Beschreibungen → versteht Kontext und Lernziele → klickt auf GitHub-Link → kann Code einsehen
+- Success criteria: Unternehmen können praktische Fähigkeiten und Projektarbeit nachvollziehen und verstehen, dass KI-Nutzung ein Zeichen von Effizienz und Ergebnisorientierung ist
 
 **Ausbildungs-Timeline**
 - Functionality: Chronologische Darstellung des bisherigen Bildungswegs und Lernfortschritts
