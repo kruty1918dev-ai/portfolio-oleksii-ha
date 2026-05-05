@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { GithubLogo, EnvelopeSimple, Briefcase, FileText } from "@phosphor-icons/react"
+import profilePhoto from "@/assets/images/Ich.png"
 
 interface HeroSectionProps {
   onViewCV: () => void
@@ -15,10 +16,12 @@ export function HeroSection({ onViewCV }: HeroSectionProps) {
     <section className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-b from-background via-background to-secondary/30">
       <div className="max-w-4xl w-full text-center space-y-8">
         <div className="flex justify-center mb-8">
-          <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-2xl bg-gradient-to-br from-primary/10 to-accent/10">
-            <div className="w-full h-full flex items-center justify-center text-6xl font-bold text-primary/40">
-              OH
-            </div>
+          <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-2xl">
+            <img 
+              src={profilePhoto} 
+              alt="Oleksii Havryliuk" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
