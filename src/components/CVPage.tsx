@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator"
 import { DownloadSimple, Copy, ArrowLeft } from "@phosphor-icons/react"
 import { toast } from "sonner"
 import { cvData } from "@/lib/cvData"
+import profilePhoto from "@/assets/images/Ich.png"
 
 interface CVPageProps {
   onBack: () => void
@@ -85,13 +86,24 @@ export function CVPage({ onBack }: CVPageProps) {
           <Card className="p-8 md:p-12 bg-card/50 backdrop-blur">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-foreground">Lebenslauf</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                  <div><span className="font-semibold">Name:</span> Oleksii Havryliuk</div>
-                  <div><span className="font-semibold">Telefon:</span> +380 93 464 1796</div>
-                  <div><span className="font-semibold">Adresse:</span> Kapitänspromenade 6, 23966 Wismar</div>
-                  <div><span className="font-semibold">E-Mail:</span> kruty1918.dev@gmail.com</div>
-                  <div className="md:col-span-2"><span className="font-semibold">GitHub:</span> github.com/kruty1918dev-ai</div>
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+                  <div className="flex-1">
+                    <h2 className="text-2xl font-bold text-foreground mb-4">Lebenslauf</h2>
+                    <div className="grid grid-cols-1 gap-3 text-sm">
+                      <div><span className="font-semibold">Name:</span> Oleksii Havryliuk</div>
+                      <div><span className="font-semibold">Telefon:</span> +380 93 464 1796</div>
+                      <div><span className="font-semibold">Adresse:</span> Kapitänspromenade 6, 23966 Wismar</div>
+                      <div><span className="font-semibold">E-Mail:</span> kruty1918.dev@gmail.com</div>
+                      <div><span className="font-semibold">GitHub:</span> github.com/kruty1918dev-ai</div>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0 mx-auto md:mx-0">
+                    <img 
+                      src={profilePhoto} 
+                      alt="Oleksii Havryliuk" 
+                      className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg border-4 border-primary/20 shadow-lg"
+                    />
+                  </div>
                 </div>
               </div>
 
