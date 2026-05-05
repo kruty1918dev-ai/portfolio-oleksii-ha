@@ -1,7 +1,9 @@
+import { useState } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, Sparkle } from "@phosphor-icons/react"
+import { ImageLightbox } from "@/components/ImageLightbox"
 import graphGenerator from "@/assets/images/graph-generator.png"
 import funandball001 from "@/assets/images/funandball001.jpeg"
 import funandball002 from "@/assets/images/funandball002.jpeg"
@@ -56,6 +58,16 @@ const projects: Project[] = [
 ]
 
 export function ProjectsSection() {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxImages, setLightboxImages] = useState<string[]>([])
+  const [lightboxInitialIndex, setLightboxInitialIndex] = useState(0)
+
+  const openLightbox = (images: string[], initialIndex: number = 0) => {
+    setLightboxImages(images)
+    setLightboxInitialIndex(initialIndex)
+    setLightboxOpen(true)
+  }
+
   return (
     <section id="projects" className="py-20 px-6 bg-secondary/30">
       <div className="max-w-6xl mx-auto">
@@ -87,26 +99,35 @@ export function ProjectsSection() {
           {projects.map((project) => (
             <Card key={project.title} className="flex flex-col hover:shadow-md transition-shadow duration-200 overflow-hidden">
               {project.images && project.images.length > 0 ? (
-                <div className="w-full h-48 overflow-hidden bg-muted">
+                <div className="w-full h-48 overflow-hidden bg-muted cursor-pointer relative" onClick={() => openLightbox(project.images!)}>
                   <div className="grid grid-cols-3 grid-rows-2 h-full gap-0.5">
                     {project.images.map((img, index) => (
-                      <div key={index} className="relative overflow-hidden">
+                      <div key={index} className="relative overflow-hidden group">
                         <img 
                           src={img} 
                           alt={`${project.title} ${index + 1}`}
-                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                       </div>
                     ))}
                   </div>
+                  <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-200 flex items-center justify-center opacity-0 hover:opacity-100">
+                    <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Click to view</span>
+                  </div>
                 </div>
               ) : project.image ? (
-                <div className="w-full h-48 overflow-hidden bg-muted">
+                <div 
+                  className="w-full h-48 overflow-hidden bg-muted cursor-pointer group relative" 
+                  onClick={() => openLightbox([project.image!])}
+                >
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Click to view</span>
+                  </div>
                 </div>
               ) : null}
               <CardHeader>
@@ -141,6 +162,13 @@ export function ProjectsSection() {
           ))}
         </div>
       </div>
+      
+      <ImageLightbox
+        images={lightboxImages}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        initialIndex={lightboxInitialIndex}
+      />
     </section>
   )
 }
