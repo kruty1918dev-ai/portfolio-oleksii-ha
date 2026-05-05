@@ -94,7 +94,7 @@ Die Typografie vermittelt Klarheit, Modernität und Professionalität durch eine
 
 ## Animations
 
-Animationen sind subtil und funktional - sie unterstützen das Verständnis der Interface-Struktur ohne abzulenken. Sanfte Fade-ins beim Scrollen zu neuen Sektionen geben visuelles Feedback. Hover-Effekte auf Buttons und Karten sind minimal (leichte Elevation, Farbwechsel) mit 200ms Transition. Smooth-Scroll zwischen Sektionen verbessert die Navigation. Keine aufmerksamkeitsheischenden Animationen oder Autoplay-Effekte.
+Animationen sind subtil und funktional. Page-Transitions nutzen framer-motion mit fade + slide (x: 50px → 0) und 300ms ease-in-out für die Navigation zwischen Haupt-, CV-, Kontakt- und Projektseiten. Beim Scrollen zu Sektionen aktiviert eine Intersection Observer API fade-in Animationen (y: 30px → 0, 600ms ease-out) mit gestaffelten Delays für Skill-Cards (50ms pro Item). Hover-Effekte auf Buttons und Karten sind minimal (leichte Elevation, Farbwechsel) mit 200ms Transition. Smooth-Scroll zwischen Sektionen verbessert die Navigation. Keine aufmerksamkeitsheischenden Animationen oder Autoplay-Effekte.
 
 ## Component Selection
 

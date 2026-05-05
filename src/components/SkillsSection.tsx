@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -20,34 +22,50 @@ const skills: Skill[] = [
 ]
 
 export function SkillsSection() {
+  const { ref, isVisible } = useScrollAnimation()
+
   return (
-    <section id="skills" className="py-20 px-6 bg-background">
+    <motion.section 
+      id="skills" 
+      className="py-20 px-6 bg-background"
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-foreground text-center">
           Technische Kenntnisse
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((skill) => (
-            <Card key={skill.name} className="p-6 hover:shadow-md transition-shadow duration-200">
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-foreground">{skill.name}</h3>
-                  <Badge variant="secondary" className="font-mono text-xs">
-                    {skill.level}%
-                  </Badge>
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
+            >
+              <Card className="p-6 hover:shadow-md transition-shadow duration-200 h-full">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-foreground">{skill.name}</h3>
+                    <Badge variant="secondary" className="font-mono text-xs">
+                      {skill.level}%
+                    </Badge>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                    <div 
+                      className="h-full bg-primary rounded-full transition-all duration-300"
+                      style={{ width: `${skill.level}%` }}
+                    />
+                  </div>
+                  <p className="text-sm text-muted-foreground">{skill.description}</p>
                 </div>
-                <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                  <div 
-                    className="h-full bg-primary rounded-full transition-all duration-300"
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground">{skill.description}</p>
-              </div>
-            </Card>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

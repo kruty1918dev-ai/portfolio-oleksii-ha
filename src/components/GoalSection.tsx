@@ -1,9 +1,20 @@
+import { motion } from "framer-motion"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Card } from "@/components/ui/card"
 import { Rocket } from "@phosphor-icons/react"
 
 export function GoalSection() {
+  const { ref, isVisible } = useScrollAnimation()
+
   return (
-    <section id="goal" className="py-20 px-6 bg-secondary/30">
+    <motion.section 
+      id="goal" 
+      className="py-20 px-6 bg-secondary/30"
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <Rocket size={32} weight="fill" className="text-primary" />
@@ -34,6 +45,6 @@ export function GoalSection() {
           </div>
         </Card>
       </div>
-    </section>
+    </motion.section>
   )
 }

@@ -1,6 +1,18 @@
+import { motion } from "framer-motion"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+
 export function AboutSection() {
+  const { ref, isVisible } = useScrollAnimation()
+
   return (
-    <section id="about" className="py-20 px-6 bg-background">
+    <motion.section 
+      id="about" 
+      className="py-20 px-6 bg-background"
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-foreground">
           Über mich
@@ -31,6 +43,6 @@ export function AboutSection() {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
