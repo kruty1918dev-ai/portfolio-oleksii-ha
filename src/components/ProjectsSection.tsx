@@ -59,7 +59,7 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     customAction: onViewMoyva,
     buttonText: "Projekt ansehen",
     buttonIcon: <Eye weight="bold" />,
-    images: [moyva001, moyva002, moyva003, moyva004, moyva005, moyva006, graphGenerator]
+    image: graphGenerator
   },
   {
     title: "Fun and Ball Website",
