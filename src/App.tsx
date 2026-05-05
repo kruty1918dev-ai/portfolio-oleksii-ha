@@ -8,15 +8,25 @@ import { TimelineSection } from "@/components/TimelineSection"
 import { WhyMeSection } from "@/components/WhyMeSection"
 import { ContactSection, Footer } from "@/components/ContactSection"
 import { CVPage } from "@/components/CVPage"
+import { ContactPage } from "@/components/ContactPage"
 import { Toaster } from "@/components/ui/sonner"
 
 function App() {
-    const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv'>('portfolio')
+    const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv' | 'contact'>('portfolio')
 
     if (currentPage === 'cv') {
         return (
             <>
                 <CVPage onBack={() => setCurrentPage('portfolio')} />
+                <Toaster />
+            </>
+        )
+    }
+
+    if (currentPage === 'contact') {
+        return (
+            <>
+                <ContactPage onBack={() => setCurrentPage('portfolio')} />
                 <Toaster />
             </>
         )
@@ -31,7 +41,10 @@ function App() {
             <ProjectsSection />
             <TimelineSection />
             <WhyMeSection />
-            <ContactSection onViewCV={() => setCurrentPage('cv')} />
+            <ContactSection 
+                onViewCV={() => setCurrentPage('cv')} 
+                onViewContactPage={() => setCurrentPage('contact')}
+            />
             <Footer />
             <Toaster />
         </div>

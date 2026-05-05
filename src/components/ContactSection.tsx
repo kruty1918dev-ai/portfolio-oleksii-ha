@@ -4,9 +4,10 @@ import { GithubLogo, EnvelopeSimple, MapPin, FileText } from "@phosphor-icons/re
 
 interface ContactSectionProps {
   onViewCV: () => void
+  onViewContactPage?: () => void
 }
 
-export function ContactSection({ onViewCV }: ContactSectionProps) {
+export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionProps) {
   return (
     <section id="contact" className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
@@ -64,11 +65,11 @@ export function ContactSection({ onViewCV }: ContactSectionProps) {
           <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              onClick={() => window.location.href = "mailto:kruty1918.dev@gmail.com"}
+              onClick={onViewContactPage || (() => window.location.href = "mailto:kruty1918.dev@gmail.com")}
               className="gap-2"
             >
               <EnvelopeSimple weight="fill" />
-              E-Mail schreiben
+              Nachricht senden
             </Button>
             <Button 
               size="lg"
