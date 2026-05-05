@@ -31,7 +31,7 @@ interface Project {
   images?: string[]
 }
 
-const createProjects = (onViewMoyva: () => void): Project[] => [
+const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): Project[] => [
   {
     title: "Order Management System",
     description: "Ein Backend-Lernprojekt mit C# zur Verwaltung von Bestellungen und Benutzerkonten. Ziel des Projekts ist es, praktische Erfahrung mit API-Struktur, Datenmodellen, Validierung und Backend-Architektur zu sammeln.",
@@ -46,8 +46,9 @@ const createProjects = (onViewMoyva: () => void): Project[] => [
     description: "Ein eigenes Unity-Spielprojekt mit C#. Der Fokus liegt auf Gameplay-Logik, Spielmechaniken, technischer Struktur und Problemlösung in einem größeren Projekt.",
     technologies: ["C#", "Unity", "ShaderLab", "HLSL"],
     status: "Eigenes Game-Development-Projekt",
-    link: "https://kruty1918.github.io/Fun-and-Ball-web/",
-    buttonText: "Spiel-Website ansehen",
+    customAction: onViewFunAndBall,
+    buttonText: "Projekt ansehen",
+    buttonIcon: <Eye weight="bold" />,
     images: [funandball001, funandball002, funandball003, funandball004, funandball005, funandball006]
   },
   {
@@ -73,14 +74,15 @@ const createProjects = (onViewMoyva: () => void): Project[] => [
 
 interface ProjectsSectionProps {
   onViewMoyva: () => void
+  onViewFunAndBall: () => void
 }
 
-export function ProjectsSection({ onViewMoyva }: ProjectsSectionProps) {
+export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSectionProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImages, setLightboxImages] = useState<string[]>([])
   const [lightboxInitialIndex, setLightboxInitialIndex] = useState(0)
 
-  const projects = createProjects(onViewMoyva)
+  const projects = createProjects(onViewMoyva, onViewFunAndBall)
 
   const openLightbox = (images: string[], initialIndex: number = 0) => {
     setLightboxImages(images)

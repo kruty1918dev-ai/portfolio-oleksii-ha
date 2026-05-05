@@ -74,6 +74,24 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
 
           <Card>
             <CardHeader>
+              <CardTitle>Video Demo</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-border">
+                <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                  <p className="text-center px-4">
+                    Video-Demo wird in Kürze hinzugefügt
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-2">
+                Hier wird ein Gameplay-Video oder eine Projekt-Demo angezeigt
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
               <CardTitle>Screenshots</CardTitle>
             </CardHeader>
             <CardContent>

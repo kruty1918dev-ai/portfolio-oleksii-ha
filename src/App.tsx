@@ -10,10 +10,11 @@ import { ContactSection, Footer } from "@/components/ContactSection"
 import { CVPage } from "@/components/CVPage"
 import { ContactPage } from "@/components/ContactPage"
 import { MoyvaPage } from "@/components/MoyvaPage"
+import { FunAndBallPage } from "@/components/FunAndBallPage"
 import { Toaster } from "@/components/ui/sonner"
 
 function App() {
-    const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv' | 'contact' | 'moyva'>('portfolio')
+    const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv' | 'contact' | 'moyva' | 'funandball'>('portfolio')
 
     if (currentPage === 'cv') {
         return (
@@ -42,13 +43,25 @@ function App() {
         )
     }
 
+    if (currentPage === 'funandball') {
+        return (
+            <>
+                <FunAndBallPage onBack={() => setCurrentPage('portfolio')} />
+                <Toaster />
+            </>
+        )
+    }
+
     return (
         <div className="min-h-screen">
             <HeroSection onViewCV={() => setCurrentPage('cv')} />
             <AboutSection />
             <GoalSection />
             <SkillsSection />
-            <ProjectsSection onViewMoyva={() => setCurrentPage('moyva')} />
+            <ProjectsSection 
+                onViewMoyva={() => setCurrentPage('moyva')}
+                onViewFunAndBall={() => setCurrentPage('funandball')}
+            />
             <TimelineSection />
             <WhyMeSection />
             <ContactSection 
