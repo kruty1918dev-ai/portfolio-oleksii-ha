@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { DownloadSimple, Copy, ArrowLeft } from "@phosphor-icons/react"
+import { DownloadSimple, Copy, ArrowLeft, FilePdf } from "@phosphor-icons/react"
 import { toast } from "sonner"
 import { cvData } from "@/lib/cvData"
 import profilePhoto from "@/assets/images/Ich.png"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import QRCode from "qrcode"
+import html2canvas from "html2canvas"
+import jsPDF from "jspdf"
 
 interface CVPageProps {
   onBack: () => void
@@ -14,7 +16,9 @@ interface CVPageProps {
 
 export function CVPage({ onBack }: CVPageProps) {
   const qrCanvasRef = useRef<HTMLCanvasElement>(null)
+  const cvContentRef = useRef<HTMLDivElement>(null)
   const portfolioUrl = "https://portfolio-oleksii-ha--kruty1918dev-ai.github.app/"
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)
 
   useEffect(() => {
     if (qrCanvasRef.current) {
@@ -59,6 +63,48 @@ export function CVPage({ onBack }: CVPageProps) {
     }
   }
 
+  const handleDownloadPDF = async () => {
+    if (!cvContentRef.current) return
+
+    setIsGeneratingPDF(true)
+    toast.info('PDF wird generiert...')
+
+    try {
+      const element = cvContentRef.current
+      const canvas = await html2canvas(element, {
+        scale: 2,
+        useCORS: true,
+        logging: false,
+        backgroundColor: '#ffffff'
+      })
+
+      const imgData = canvas.toDataURL('image/png')
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'mm',
+        format: 'a4'
+      })
+
+      const pdfWidth = pdf.internal.pageSize.getWidth()
+      const pdfHeight = pdf.internal.pageSize.getHeight()
+      const imgWidth = canvas.width
+      const imgHeight = canvas.height
+      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight)
+      const imgX = (pdfWidth - imgWidth * ratio) / 2
+      const imgY = 0
+
+      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio)
+      pdf.save('Oleksii_Havryliuk_Lebenslauf.pdf')
+
+      toast.success('PDF erfolgreich heruntergeladen')
+    } catch (error) {
+      console.error('PDF generation error:', error)
+      toast.error('Fehler beim Erstellen des PDFs')
+    } finally {
+      setIsGeneratingPDF(false)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-secondary/30 py-12 px-6">
       <div className="max-w-4xl mx-auto">
@@ -86,6 +132,16 @@ export function CVPage({ onBack }: CVPageProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
+              onClick={handleDownloadPDF}
+              className="gap-2"
+              disabled={isGeneratingPDF}
+            >
+              <FilePdf weight="fill" />
+              {isGeneratingPDF ? 'PDF wird erstellt...' : 'Als PDF herunterladen'}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
               onClick={handleDownloadCV}
               className="gap-2"
             >
@@ -104,7 +160,7 @@ export function CVPage({ onBack }: CVPageProps) {
           </div>
 
           <Card className="p-8 md:p-12 bg-card/50 backdrop-blur">
-            <div className="space-y-8">
+            <div ref={cvContentRef} className="space-y-8 bg-white p-8">
               <div className="space-y-4">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
                   <div className="flex-1">
@@ -262,6 +318,16 @@ export function CVPage({ onBack }: CVPageProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
             <Button
               size="lg"
+              onClick={handleDownloadPDF}
+              className="gap-2"
+              disabled={isGeneratingPDF}
+            >
+              <FilePdf weight="fill" />
+              {isGeneratingPDF ? 'PDF wird erstellt...' : 'Als PDF herunterladen'}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
               onClick={handleDownloadCV}
               className="gap-2"
             >
