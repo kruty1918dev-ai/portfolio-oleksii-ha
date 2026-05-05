@@ -75,7 +75,9 @@ export function CVPage({ onBack }: CVPageProps) {
         scale: 2,
         useCORS: true,
         logging: false,
-        backgroundColor: '#ffffff'
+        backgroundColor: '#ffffff',
+        windowWidth: element.scrollWidth,
+        windowHeight: element.scrollHeight
       })
 
       const imgData = canvas.toDataURL('image/png')
@@ -87,13 +89,19 @@ export function CVPage({ onBack }: CVPageProps) {
 
       const pdfWidth = pdf.internal.pageSize.getWidth()
       const pdfHeight = pdf.internal.pageSize.getHeight()
-      const imgWidth = canvas.width
-      const imgHeight = canvas.height
-      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight)
-      const imgX = (pdfWidth - imgWidth * ratio) / 2
-      const imgY = 0
+      const canvasWidth = canvas.width
+      const canvasHeight = canvas.height
+      
+      const widthRatio = pdfWidth / (canvasWidth * 0.264583)
+      const heightRatio = pdfHeight / (canvasHeight * 0.264583)
+      const ratio = Math.min(widthRatio, heightRatio)
+      
+      const imgWidth = canvasWidth * 0.264583 * ratio
+      const imgHeight = canvasHeight * 0.264583 * ratio
+      const imgX = (pdfWidth - imgWidth) / 2
+      const imgY = 5
 
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio)
+      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight)
       pdf.save('Oleksii_Havryliuk_Lebenslauf.pdf')
 
       toast.success('PDF erfolgreich heruntergeladen')
