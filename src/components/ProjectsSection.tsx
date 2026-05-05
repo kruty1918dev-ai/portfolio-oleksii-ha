@@ -69,6 +69,33 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     link: "https://fun-and-ball.web.app/",
     buttonText: "Website ansehen",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop"
+  },
+  {
+    title: "Unity MonoSingleton System",
+    description: "Ein wiederverwendbares Unity-Utility-Package für zentralisiertes Singleton-Management. Vereinfacht den Zugriff auf Szenen-basierte Singleton-Objekte und verbessert die Code-Lesbarkeit durch generische MonoSingleton<T>-Basisklasse.",
+    technologies: ["C#", "Unity", "Singleton Pattern", "Package Development"],
+    status: "Unity Utility / Architecture Tool",
+    link: "https://github.com/Kruty1918/Unity-MonoSingleton-System",
+    buttonText: "Auf GitHub ansehen",
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&h=400&fit=crop"
+  },
+  {
+    title: "2D Hexagon Generator",
+    description: "Ein Unity-Prototyp zur prozeduralen Generierung von 2D-Hex-Tiles. Demonstriert Hex-Grid-Logik, prozedurale Platzierung mit Nachbarschaftsprüfung und grundlegende Interaktion beim Klicken auf Hex-Felder.",
+    technologies: ["C#", "Unity", "Procedural Generation", "Hex Grid", "2D"],
+    status: "Unity Prototype / Procedural Generation",
+    link: "https://github.com/Kruty1918/2D_Hexagon_Generator_Video_Tutorial",
+    buttonText: "Auf GitHub ansehen",
+    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=400&fit=crop"
+  },
+  {
+    title: "2D Tile Generator",
+    description: "Ein leistungsorientiertes 2D-Weltgenerierungssystem für Unity mit Chunk-basierter Architektur. Nutzt mehrere Generierungsschichten, Noise Maps und Unity's Job System für parallele Verarbeitung großer prozeduraler Landschaften.",
+    technologies: ["C#", "Unity", "Job System", "Chunk System", "Noise Map", "2D World Generation"],
+    status: "Unity Technical Project / World Generation",
+    link: "https://github.com/Kruty1918/2D-Tile-Generator",
+    buttonText: "Auf GitHub ansehen",
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=400&fit=crop"
   }
 ]
 

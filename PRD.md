@@ -34,11 +34,11 @@ Dies ist eine moderne Single-Page-Application mit mehreren interaktiven Sektione
 - Success criteria: Unternehmen können technisches Niveau realistisch einschätzen
 
 **Projekt-Portfolio mit Details und Bildern**
-- Functionality: Präsentation von 4 Projekten mit visuellen Vorschaubildern, Beschreibung, Technologie-Stack, Status und GitHub-Links, inklusive prominenter Erklärung zur KI-gestützten Entwicklung
-- Purpose: Praktische Erfahrung und Lernfortschritt durch echte Projekte demonstrieren; transparente Kommunikation über den Einsatz von KI als Produktivitätswerkzeug und moderne Arbeitsweise
+- Functionality: Präsentation von 7 Projekten mit visuellen Vorschaubildern, Beschreibung, Technologie-Stack, Status und GitHub-Links, inklusive prominenter Erklärung zur KI-gestützten Entwicklung. Portfolio umfasst Backend-Entwicklung, Game-Development-Projekte, Web-Entwicklung sowie technische Unity-Tools (Singleton-System, Hex-Generator, 2D-Weltgenerierung)
+- Purpose: Praktische Erfahrung und Lernfortschritt durch echte Projekte demonstrieren; Breite der technischen Fähigkeiten zeigen (von Architektur-Tools bis zu prozeduraler Generierung); transparente Kommunikation über den Einsatz von KI als Produktivitätswerkzeug und moderne Arbeitsweise
 - Trigger: Nutzer scrollt zu Projekten oder klickt auf "Projekte ansehen"
-- Progression: Nutzer sieht KI-Hinweis und versteht die moderne Arbeitsweise → scrollt zu Projektkarten → betrachtet Projektbilder → liest Beschreibungen → versteht Kontext und Lernziele → klickt auf GitHub-Link → kann Code einsehen
-- Success criteria: Unternehmen können praktische Fähigkeiten und Projektarbeit nachvollziehen und verstehen, dass KI-Nutzung ein Zeichen von Effizienz und Ergebnisorientierung ist
+- Progression: Nutzer sieht KI-Hinweis und versteht die moderne Arbeitsweise → scrollt zu Projektkarten → betrachtet Projektbilder → liest Beschreibungen → versteht Kontext und Lernziele → erkennt technische Vielfalt (Utility-Tools, Prototypen, komplexe Systeme) → klickt auf GitHub-Link → kann Code einsehen
+- Success criteria: Unternehmen können praktische Fähigkeiten und Projektarbeit nachvollziehen, die Bandbreite der technischen Interessen erkennen (Architektur, prozedurale Generierung, Performance-Optimierung) und verstehen, dass KI-Nutzung ein Zeichen von Effizienz und Ergebnisorientierung ist
 
 **Ausbildungs-Timeline**
 - Functionality: Chronologische Darstellung des bisherigen Bildungswegs und Lernfortschritts
