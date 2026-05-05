@@ -1,19 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { GithubLogo, EnvelopeSimple, MapPin, DownloadSimple } from "@phosphor-icons/react"
-import { toast } from "sonner"
-import { downloadCV } from "@/lib/generateCV"
+import { GithubLogo, EnvelopeSimple, MapPin, FileText } from "@phosphor-icons/react"
 
-export function ContactSection() {
-  const handleDownloadCV = () => {
-    try {
-      downloadCV()
-      toast.success('Lebenslauf wird heruntergeladen')
-    } catch (error) {
-      toast.error('Fehler beim Herunterladen des Lebenslaufs')
-    }
-  }
+interface ContactSectionProps {
+  onViewCV: () => void
+}
 
+export function ContactSection({ onViewCV }: ContactSectionProps) {
   return (
     <section id="contact" className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
@@ -80,11 +73,11 @@ export function ContactSection() {
             <Button 
               size="lg"
               variant="outline"
-              onClick={handleDownloadCV}
+              onClick={onViewCV}
               className="gap-2"
             >
-              <DownloadSimple weight="fill" />
-              Lebenslauf herunterladen
+              <FileText weight="fill" />
+              Lebenslauf ansehen
             </Button>
           </div>
         </div>
