@@ -12,6 +12,16 @@ import moyva004 from "@/assets/images/moyva-scrins004.png"
 import moyva005 from "@/assets/images/moyva-scrins005.png"
 import moyva006 from "@/assets/images/moyva-scrins006.png"
 import graphGenerator from "@/assets/images/graph-generator.png"
+import moyvaTool001 from "@/assets/images/moyva-scrins_001.png"
+import moyvaTool002 from "@/assets/images/moyva-scrins_002.png"
+import moyvaTool003 from "@/assets/images/moyva-scrins_003.png"
+import moyvaTool004 from "@/assets/images/moyva-scrins_004.png"
+import moyvaTool005 from "@/assets/images/moyva-scrins_005.png"
+import moyvaTool006 from "@/assets/images/moyva-scrins_006.png"
+import moyvaTool007 from "@/assets/images/moyva-scrins_007.png"
+import moyvaTool008 from "@/assets/images/moyva-scrins_008.png"
+import moyvaTool009 from "@/assets/images/moyva-scrins_009.png"
+import moyvaTool010 from "@/assets/images/moyva-scrins_010.png"
 
 interface MoyvaPageProps {
   onBack: () => void
@@ -20,12 +30,13 @@ interface MoyvaPageProps {
 export function MoyvaPage({ onBack }: MoyvaPageProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxInitialIndex, setLightboxInitialIndex] = useState(0)
-  const [currentCategory, setCurrentCategory] = useState<'gameplay' | 'generation'>('gameplay')
+  const [currentCategory, setCurrentCategory] = useState<'gameplay' | 'tools' | 'generation'>('gameplay')
 
-  const gameplayScreenshots = [moyva001, moyva002, moyva003, moyva004, moyva005, moyva006]
+  const gameplayScreenshots = [moyva001, moyva002, moyva003, moyva005, moyva006]
+  const toolScreenshots = [moyva004, moyvaTool001, moyvaTool002, moyvaTool003, moyvaTool004, moyvaTool005, moyvaTool006, moyvaTool007, moyvaTool008, moyvaTool009, moyvaTool010]
   const generationScreenshots = [graphGenerator]
 
-  const allScreenshots = [...gameplayScreenshots, ...generationScreenshots]
+  const allScreenshots = [...gameplayScreenshots, ...toolScreenshots, ...generationScreenshots]
 
   const openLightbox = (index: number) => {
     setLightboxInitialIndex(index)
@@ -158,10 +169,10 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
               <CardTitle>Screenshots</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="flex gap-2 border-b border-border">
+              <div className="flex gap-2 border-b border-border overflow-x-auto">
                 <button
                   onClick={() => setCurrentCategory('gameplay')}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                     currentCategory === 'gameplay'
                       ? 'text-accent border-b-2 border-accent'
                       : 'text-muted-foreground hover:text-foreground'
@@ -170,14 +181,24 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
                   Gameplay
                 </button>
                 <button
+                  onClick={() => setCurrentCategory('tools')}
+                  className={`px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
+                    currentCategory === 'tools'
+                      ? 'text-accent border-b-2 border-accent'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  Tools & Editor
+                </button>
+                <button
                   onClick={() => setCurrentCategory('generation')}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap ${
                     currentCategory === 'generation'
                       ? 'text-accent border-b-2 border-accent'
                       : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
-                  World Generation Tools
+                  World Generation
                 </button>
               </div>
 
@@ -200,9 +221,9 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
                 </div>
               )}
 
-              {currentCategory === 'generation' && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {generationScreenshots.map((screenshot, index) => (
+              {currentCategory === 'tools' && (
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {toolScreenshots.map((screenshot, index) => (
                     <div 
                       key={index} 
                       className="aspect-video overflow-hidden rounded-lg cursor-pointer group relative border border-border hover:border-accent transition-colors"
@@ -210,7 +231,26 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
                     >
                       <img 
                         src={screenshot} 
-                        alt={`World Generation Tool ${index + 1}`}
+                        alt={`Moyva Tool ${index + 1}`}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {currentCategory === 'generation' && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {generationScreenshots.map((screenshot, index) => (
+                    <div 
+                      key={index} 
+                      className="aspect-video overflow-hidden rounded-lg cursor-pointer group relative border border-border hover:border-accent transition-colors"
+                      onClick={() => openLightbox(gameplayScreenshots.length + toolScreenshots.length + index)}
+                    >
+                      <img 
+                        src={screenshot} 
+                        alt={`World Generation ${index + 1}`}
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
