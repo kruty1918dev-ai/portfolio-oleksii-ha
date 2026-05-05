@@ -95,7 +95,7 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     status: "Unity Technical Project / World Generation",
     link: "https://github.com/Kruty1918/2D-Tile-Generator",
     buttonText: "Auf GitHub ansehen",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=400&fit=crop"
+    image: moyva001
   }
 ]
 
