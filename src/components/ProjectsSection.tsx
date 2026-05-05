@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowUpRight, Sparkle } from "@phosphor-icons/react"
+import { ArrowUpRight, Sparkle, Eye } from "@phosphor-icons/react"
 import { ImageLightbox } from "@/components/ImageLightbox"
 import graphGenerator from "@/assets/images/graph-generator.png"
 import funandball001 from "@/assets/images/funandball001.jpeg"
@@ -11,24 +11,34 @@ import funandball003 from "@/assets/images/funandball003.jpeg"
 import funandball004 from "@/assets/images/funandball004.jpeg"
 import funandball005 from "@/assets/images/funandball005.jpeg"
 import funandball006 from "@/assets/images/funandball006.jpeg"
+import moyva001 from "@/assets/images/moyva-scrins001.png"
+import moyva002 from "@/assets/images/moyva-scrins002.png"
+import moyva003 from "@/assets/images/moyva-scrins003.png"
+import moyva004 from "@/assets/images/moyva-scrins004.png"
+import moyva005 from "@/assets/images/moyva-scrins005.png"
+import moyva006 from "@/assets/images/moyva-scrins006.png"
 
 interface Project {
   title: string
   description: string
   technologies: string[]
   status: string
-  link: string
+  link?: string
+  customAction?: () => void
+  buttonText?: string
+  buttonIcon?: React.ReactNode
   image?: string
   images?: string[]
 }
 
-const projects: Project[] = [
+const createProjects = (onViewMoyva: () => void): Project[] => [
   {
     title: "Order Management System",
     description: "Ein Backend-Lernprojekt mit C# zur Verwaltung von Bestellungen und Benutzerkonten. Ziel des Projekts ist es, praktische Erfahrung mit API-Struktur, Datenmodellen, Validierung und Backend-Architektur zu sammeln.",
     technologies: ["C#", "ASP.NET Core", "Entity Framework Core", "SQLite", "Docker", "GitHub"],
     status: "In Entwicklung / Lernprojekt",
     link: "https://github.com/kruty1918dev-ai/order-management-system",
+    buttonText: "Auf GitHub ansehen",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop"
   },
   {
@@ -36,7 +46,8 @@ const projects: Project[] = [
     description: "Ein eigenes Unity-Spielprojekt mit C#. Der Fokus liegt auf Gameplay-Logik, Spielmechaniken, technischer Struktur und Problemlösung in einem größeren Projekt.",
     technologies: ["C#", "Unity", "ShaderLab", "HLSL"],
     status: "Eigenes Game-Development-Projekt",
-    link: "https://github.com/Kruty1918/Fun-and-Ball",
+    link: "https://kruty1918.github.io/Fun-and-Ball-web/",
+    buttonText: "Spiel-Website ansehen",
     images: [funandball001, funandball002, funandball003, funandball004, funandball005, funandball006]
   },
   {
@@ -44,23 +55,32 @@ const projects: Project[] = [
     description: "Ein weiteres C#-Projekt mit Fokus auf Spiellogik, objektorientierte Programmierung und technische Systeme.",
     technologies: ["C#", "Unity", "ShaderLab", "HLSL"],
     status: "Eigenes Projekt",
-    link: "https://github.com/kruty1918dev-ai/moyva",
-    image: graphGenerator
+    customAction: onViewMoyva,
+    buttonText: "Projekt ansehen",
+    buttonIcon: <Eye weight="bold" />,
+    images: [moyva001, moyva002, moyva003, moyva004, moyva005, moyva006, graphGenerator]
   },
   {
     title: "Fun and Ball Website",
     description: "Eine einfache Projekt-Webseite zur Präsentation eines eigenen Spiels.",
     technologies: ["HTML", "CSS", "JavaScript"],
     status: "Web-Projekt",
-    link: "https://github.com/Kruty1918/Fun-and-Ball-web",
+    link: "https://kruty1918.github.io/Fun-and-Ball-web/",
+    buttonText: "Website ansehen",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop"
   }
 ]
 
-export function ProjectsSection() {
+interface ProjectsSectionProps {
+  onViewMoyva: () => void
+}
+
+export function ProjectsSection({ onViewMoyva }: ProjectsSectionProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImages, setLightboxImages] = useState<string[]>([])
   const [lightboxInitialIndex, setLightboxInitialIndex] = useState(0)
+
+  const projects = createProjects(onViewMoyva)
 
   const openLightbox = (images: string[], initialIndex: number = 0) => {
     setLightboxImages(images)
@@ -152,10 +172,16 @@ export function ProjectsSection() {
                 <Button 
                   variant="outline" 
                   className="w-full gap-2"
-                  onClick={() => window.open(project.link, "_blank")}
+                  onClick={() => {
+                    if (project.customAction) {
+                      project.customAction()
+                    } else if (project.link) {
+                      window.open(project.link, "_blank")
+                    }
+                  }}
                 >
-                  <span>Auf GitHub ansehen</span>
-                  <ArrowUpRight weight="bold" />
+                  <span>{project.buttonText || "Ansehen"}</span>
+                  {project.buttonIcon || <ArrowUpRight weight="bold" />}
                 </Button>
               </CardFooter>
             </Card>
