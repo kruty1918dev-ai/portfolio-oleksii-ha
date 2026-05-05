@@ -134,7 +134,7 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
                     ))}
                   </div>
                   <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-200 flex items-center justify-center opacity-0 hover:opacity-100">
-                    <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Click to view</span>
+                    <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Klicken zum Vergrößern</span>
                   </div>
                 </div>
               ) : project.image ? (
@@ -148,7 +148,7 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                    <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Click to view</span>
+                    <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Klicken zum Vergrößern</span>
                   </div>
                 </div>
               ) : null}
