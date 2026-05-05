@@ -184,9 +184,9 @@ export function CVPage({ onBack }: CVPageProps) {
                     <h2 className="text-2xl font-bold text-foreground mb-4">Lebenslauf</h2>
                     <div className="grid grid-cols-1 gap-3 text-sm">
                       <div><span className="font-semibold">Name:</span> Oleksii Havryliuk</div>
-                      <div><span className="font-semibold">Telefon:</span> +380 93 464 1796</div>
+                      <div><span className="font-semibold">Telefon:</span> +38 093 464 1796</div>
                       <div><span className="font-semibold">Adresse:</span> Kapitänspromenade 6, 23966 Wismar</div>
-                      <div><span className="font-semibold">E-Mail:</span> kruty1918.dev@gmail.com</div>
+                      <div><span className="font-semibold">E-Mail:</span> vkmr582@gmail.com</div>
                       <div><span className="font-semibold">GitHub:</span> github.com/kruty1918dev-ai</div>
                     </div>
                   </div>
@@ -216,9 +216,11 @@ export function CVPage({ onBack }: CVPageProps) {
                 <h3 className="text-xl font-semibold text-foreground">Persönliche Daten</h3>
                 <div className="text-sm space-y-1 text-foreground/90">
                   <p><span className="font-semibold">Name:</span> Oleksii Havryliuk</p>
-                  <p><span className="font-semibold">Geburtsdatum:</span> 16.05.2008</p>
-                  <p><span className="font-semibold">Wohnort:</span> 23966 Wismar</p>
+                  <p><span className="font-semibold">Geburtsdatum/-ort:</span> 16.05.2008, Khmelnytskyi (Ukraine)</p>
+                  <p><span className="font-semibold">Wohnort:</span> 23966 Wismar, Deutschland</p>
                   <p><span className="font-semibold">Staatsangehörigkeit:</span> Ukrainisch</p>
+                  <p><span className="font-semibold">Eltern:</span> Natalia Havryliuk (Mutter)</p>
+                  <p><span className="font-semibold">Geschwister:</span> Taras, Tetiana, Karina, Nika</p>
                 </div>
               </div>
 
@@ -228,16 +230,20 @@ export function CVPage({ onBack }: CVPageProps) {
                 <h3 className="text-xl font-semibold text-foreground">Schulbildung</h3>
                 <div className="space-y-4 text-sm">
                   <div>
+                    <p className="font-semibold">09/2024 – 07/2025</p>
+                    <p className="text-foreground/90">Zierow Berufsschule</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold">09/2014 - 05/2024</p>
+                    <p className="text-foreground/90">Sharivska Mittelschule</p>
+                    <p className="text-muted-foreground">Schulabschluss: Mittlerer Schulabschluss (Mai 2024)</p>
+                    <p className="text-muted-foreground">Abschlusszeugnis in deutscher Übersetzung vorhanden</p>
+                  </div>
+                  <div>
                     <p className="font-semibold">seit 11/2025</p>
                     <p className="text-foreground/90">Integrationskurs Deutsch, Wismar</p>
                     <p className="text-muted-foreground">Vorbereitung auf die B1-Prüfung</p>
                     <p className="text-muted-foreground">voraussichtliches Kursende: 07/2026</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold">bis 2025</p>
-                    <p className="text-foreground/90">Schulabschluss nach 11 Klassen</p>
-                    <p className="text-muted-foreground">Chmelnyzkyj NWS Nr. 6, Ukraine</p>
-                    <p className="text-muted-foreground">Abschlusszeugnis in deutscher Übersetzung vorhanden</p>
                   </div>
                 </div>
               </div>

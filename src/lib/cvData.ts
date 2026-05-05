@@ -4,28 +4,33 @@ export const cvData = {
 Oleksii Havryliuk
 Kapitänspromenade 6
 23966 Wismar
-Telefon: +380 93 464 1796
-E-Mail: kruty1918.dev@gmail.com
+Telefon: +38 093 464 1796
+E-Mail: vkmr582@gmail.com
 GitHub: github.com/kruty1918dev-ai
 
 Persönliche Daten
 
 Name: Oleksii Havryliuk
-Geburtsdatum: 16.05.2008
-Wohnort: 23966 Wismar
+Geburtsdatum/-ort: 16.05.2008, Khmelnytskyi (Ukraine)
+Wohnort: 23966 Wismar, Deutschland
 Staatsangehörigkeit: Ukrainisch
+Eltern: Natalia Havryliuk (Mutter)
+Geschwister: Taras, Tetiana, Karina, Nika
 
 Schulbildung
+
+09/2024 – 07/2025
+Zierow Berufsschule
+
+09/2014 - 05/2024
+Sharivska Mittelschule
+Schulabschluss: Mittlerer Schulabschluss (Mai 2024)
+Abschlusszeugnis in deutscher Übersetzung vorhanden
 
 seit 11/2025
 Integrationskurs Deutsch, Wismar
 Vorbereitung auf die B1-Prüfung
 voraussichtliches Kursende: 07/2026
-
-bis 2025
-Schulabschluss nach 11 Klassen
-Chmelnyzkyj NWS Nr. 6, Ukraine
-Abschlusszeugnis in deutscher Übersetzung vorhanden
 
 Praktische Erfahrungen / Projekte
 
