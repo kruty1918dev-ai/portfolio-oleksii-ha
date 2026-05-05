@@ -5,12 +5,32 @@ import { DownloadSimple, Copy, ArrowLeft } from "@phosphor-icons/react"
 import { toast } from "sonner"
 import { cvData } from "@/lib/cvData"
 import profilePhoto from "@/assets/images/Ich.png"
+import { useEffect, useRef } from "react"
+import QRCode from "qrcode"
 
 interface CVPageProps {
   onBack: () => void
 }
 
 export function CVPage({ onBack }: CVPageProps) {
+  const qrCanvasRef = useRef<HTMLCanvasElement>(null)
+  const portfolioUrl = "https://portfolio-oleksii-ha--kruty1918dev-ai.github.app/"
+
+  useEffect(() => {
+    if (qrCanvasRef.current) {
+      QRCode.toCanvas(qrCanvasRef.current, portfolioUrl, {
+        width: 160,
+        margin: 2,
+        color: {
+          dark: '#000000',
+          light: '#FFFFFF',
+        },
+      }).catch((err) => {
+        console.error('QR Code generation error:', err)
+      })
+    }
+  }, [])
+
   const handleDownloadCV = () => {
     try {
       const blob = new Blob([cvData.fullText], { type: 'text/plain;charset=utf-8' })
@@ -97,12 +117,22 @@ export function CVPage({ onBack }: CVPageProps) {
                       <div><span className="font-semibold">GitHub:</span> github.com/kruty1918dev-ai</div>
                     </div>
                   </div>
-                  <div className="flex-shrink-0 mx-auto md:mx-0">
-                    <img 
-                      src={profilePhoto} 
-                      alt="Oleksii Havryliuk" 
-                      className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg border-4 border-primary/20 shadow-lg"
-                    />
+                  <div className="flex flex-col md:flex-row gap-4 items-center flex-shrink-0">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src={profilePhoto} 
+                        alt="Oleksii Havryliuk" 
+                        className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg border-4 border-primary/20 shadow-lg"
+                      />
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="bg-white p-2 rounded-lg shadow-md border-2 border-primary/10">
+                        <canvas ref={qrCanvasRef} />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center max-w-[160px]">
+                        Online-Portfolio
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
