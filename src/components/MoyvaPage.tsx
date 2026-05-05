@@ -247,15 +247,25 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
             </CardContent>
           </Card>
 
-          <div className="flex gap-4">
-            <Button 
-              className="flex-1 gap-2"
-              onClick={() => window.open("https://github.com/kruty1918dev-ai/moyva", "_blank")}
-            >
-              <BookOpen weight="bold" />
-              <span>Dokumentation (GitHub Repository)</span>
-            </Button>
-          </div>
+          <Card className="bg-muted/50">
+            <CardHeader>
+              <CardTitle className="text-lg">Dokumentation</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-sm text-foreground/70">
+                <strong>Hinweis:</strong> Die Dokumentation ist auf Ukrainisch verfasst.
+              </p>
+              <div className="flex gap-4">
+                <Button 
+                  className="flex-1 gap-2"
+                  onClick={() => window.open("https://kruty1918dev-ai.github.io/moyva/#home", "_blank")}
+                >
+                  <BookOpen weight="bold" />
+                  <span>Dokumentation ansehen</span>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 

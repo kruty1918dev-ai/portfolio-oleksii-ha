@@ -68,6 +68,11 @@ export function FunAndBallPage({ onBack }: FunAndBallPageProps) {
                 Implementierung komplexer Spielmechaniken bis zur Optimierung der Performance demonstriert 
                 dieses Projekt ein tiefes Verständnis für Game Development.
               </p>
+              <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
+                <p className="text-sm text-foreground/70 italic">
+                  <strong>Hinweis:</strong> Das Spiel ist auf Ukrainisch, bietet jedoch eine deutsche Sprachauswahl auf der Website.
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -139,22 +144,33 @@ export function FunAndBallPage({ onBack }: FunAndBallPageProps) {
             </CardContent>
           </Card>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col gap-4">
             <Button 
-              className="flex-1 gap-2"
-              onClick={() => window.open("https://kruty1918.github.io/Fun-and-Ball-web/", "_blank")}
+              className="w-full gap-2"
+              size="lg"
+              onClick={() => window.open("https://fun-and-ball.web.app/", "_blank")}
             >
               <GlobeHemisphereWest weight="bold" />
-              <span>Spiel-Website besuchen</span>
+              <span>Fun and Ball spielen</span>
             </Button>
-            <Button 
-              variant="outline"
-              className="flex-1 gap-2"
-              onClick={() => window.open("https://github.com/Kruty1918/Fun-and-Ball", "_blank")}
-            >
-              <ArrowUpRight weight="bold" />
-              <span>GitHub Repository</span>
-            </Button>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Button 
+                variant="outline"
+                className="gap-2"
+                onClick={() => window.open("https://fun-and-ball.web.app/", "_blank")}
+              >
+                <ArrowUpRight weight="bold" />
+                <span>Dokumentation (Website)</span>
+              </Button>
+              <Button 
+                variant="outline"
+                className="gap-2"
+                onClick={() => window.open("https://github.com/Kruty1918/Fun-and-Ball", "_blank")}
+              >
+                <ArrowUpRight weight="bold" />
+                <span>GitHub Repository</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

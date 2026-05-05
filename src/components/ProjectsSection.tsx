@@ -66,7 +66,7 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     description: "Eine einfache Projekt-Webseite zur Präsentation eines eigenen Spiels.",
     technologies: ["HTML", "CSS", "JavaScript"],
     status: "Web-Projekt",
-    link: "https://kruty1918.github.io/Fun-and-Ball-web/",
+    link: "https://fun-and-ball.web.app/",
     buttonText: "Website ansehen",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop"
   }
