@@ -2,7 +2,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
 import { ArrowLeft, BookOpen } from "@phosphor-icons/react"
 import { ImageLightbox } from "@/components/ImageLightbox"
 import moyva001 from "@/assets/images/moyva-scrins001.png"
@@ -73,84 +72,63 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
 
           <Card>
             <CardHeader>
-              <CardTitle>Project Overview / Projektbeschreibung</CardTitle>
+              <CardTitle>Projektbeschreibung</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="space-y-4">
-                <h3 className="font-semibold text-lg text-foreground">English</h3>
-                <p className="text-foreground/80 leading-relaxed">
-                  Moyva is a 2D top-down turn-based strategy game prototype built with C#. 
-                  The player builds a kingdom, manages economy and units, places buildings, and tries to destroy the enemy kingdom.
-                </p>
-                <p className="text-foreground/80 leading-relaxed">
-                  The project supports single-player mode, bot opponents, multiplayer, LAN play, sandbox mode, save system, 
-                  and cross-platform support for PC, Android, and iOS.
-                </p>
-                <p className="text-foreground/80 leading-relaxed">
-                  A key technical focus of the project is its custom world generation pipeline. 
-                  The game uses a self-designed graph-based generation system together with a node-based editor for visual generation setup.
-                </p>
-              </div>
-
-              <Separator />
-
-              <div className="space-y-4">
-                <h3 className="font-semibold text-lg text-foreground">Deutsch</h3>
-                <p className="text-foreground/80 leading-relaxed">
-                  Moyva ist ein Prototyp eines 2D Top-Down-Rundenstrategiespiels, den ich in einem kleinen Zwei-Personen-Team 
-                  größtenteils selbst entwickelt habe. Das Ziel des Spiels ist der Aufbau eines eigenen Königreichs, 
-                  die Verwaltung von Wirtschaft und Einheiten sowie die Zerstörung des gegnerischen Königreichs.
-                </p>
-                <p className="text-foreground/80 leading-relaxed">
-                  Aus technischer Sicht ist das Projekt für mich besonders interessant, weil es mehrere komplexe Systeme kombiniert. 
-                  Ein besonderer Schwerpunkt lag auf der Weltgenerierung: Dafür habe ich ein eigenes graphbasiertes 
-                  Generierungssystem mit nodebasiertem Editor entwickelt.
-                </p>
-                <p className="text-foreground/80 leading-relaxed">
-                  Das Projekt ist plattformübergreifend für PC, Android und iOS ausgelegt und unterstützt Einzelspieler, 
-                  Bot-Gegner, Mehrspieler, LAN sowie einen Sandbox-Modus. Moyva befindet sich aktuell im Prototyp-Stadium 
-                  und dient als praktisches Beispiel für meine Arbeit mit C#, Unity, technischer Systementwicklung und Gameplay-Architektur.
-                </p>
-              </div>
+            <CardContent className="space-y-4">
+              <p className="text-foreground/80 leading-relaxed">
+                Moyva ist ein Prototyp eines 2D Top-Down-Rundenstrategiespiels, den ich in einem kleinen Zwei-Personen-Team 
+                größtenteils selbst entwickelt habe. Das Ziel des Spiels ist der Aufbau eines eigenen Königreichs, 
+                die Verwaltung von Wirtschaft und Einheiten sowie die Zerstörung des gegnerischen Königreichs.
+              </p>
+              <p className="text-foreground/80 leading-relaxed">
+                Aus technischer Sicht ist das Projekt für mich besonders interessant, weil es mehrere komplexe Systeme kombiniert. 
+                Ein besonderer Schwerpunkt lag auf der Weltgenerierung: Dafür habe ich ein eigenes graphbasiertes 
+                Generierungssystem mit nodebasiertem Editor entwickelt.
+              </p>
+              <p className="text-foreground/80 leading-relaxed">
+                Das Projekt ist plattformübergreifend für PC, Android und iOS ausgelegt und unterstützt Einzelspieler, 
+                Bot-Gegner, Mehrspieler, LAN sowie einen Sandbox-Modus. Moyva befindet sich aktuell im Prototyp-Stadium 
+                und dient als praktisches Beispiel für meine Arbeit mit C#, Unity, technischer Systementwicklung und Gameplay-Architektur.
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>My Role / Meine Rolle</CardTitle>
+              <CardTitle>Meine Rolle</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-foreground/80 leading-relaxed">
-                Although the project was created in a two-person team, I implemented most of the actual technical work, including:
+                Obwohl das Projekt in einem Zwei-Personen-Team erstellt wurde, habe ich die meiste technische Arbeit umgesetzt:
               </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Core gameplay logic</span>
+                  <span>Zentrale Spiellogik</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Multiplayer system</span>
+                  <span>Mehrspielersystem</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Main menu</span>
+                  <span>Hauptmenü</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Building placement system</span>
+                  <span>Gebäudeplatzierungssystem</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Gameplay UI</span>
+                  <span>Gameplay-UI</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Tile registry</span>
+                  <span>Tile-Registry</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>Unit movement validators</span>
+                  <span>Bewegungsvalidierung für Einheiten</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
@@ -158,7 +136,7 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">▪</span>
-                  <span>World generation tools</span>
+                  <span>Weltgenerierungs-Tools</span>
                 </li>
               </ul>
             </CardContent>
@@ -234,25 +212,25 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
 
           <Card>
             <CardHeader>
-              <CardTitle>Technologies / Technologien</CardTitle>
+              <CardTitle>Technologien</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
                   <h4 className="font-semibold text-foreground">C#</h4>
-                  <p className="text-sm text-muted-foreground">Core programming language</p>
+                  <p className="text-sm text-muted-foreground">Kern-Programmiersprache</p>
                 </div>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-foreground">Unity</h4>
-                  <p className="text-sm text-muted-foreground">Game engine and framework</p>
+                  <p className="text-sm text-muted-foreground">Game Engine und Framework</p>
                 </div>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-foreground">ShaderLab</h4>
-                  <p className="text-sm text-muted-foreground">Unity shader programming</p>
+                  <p className="text-sm text-muted-foreground">Unity Shader-Programmierung</p>
                 </div>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-foreground">HLSL</h4>
-                  <p className="text-sm text-muted-foreground">High-level shader language</p>
+                  <p className="text-sm text-muted-foreground">High-Level Shader Language</p>
                 </div>
               </div>
             </CardContent>
@@ -264,7 +242,7 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
             </CardHeader>
             <CardContent>
               <p className="text-foreground/80">
-                Prototype in development / Prototyp in Entwicklung
+                Prototyp in Entwicklung
               </p>
             </CardContent>
           </Card>
