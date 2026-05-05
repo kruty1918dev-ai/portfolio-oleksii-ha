@@ -2,6 +2,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, Sparkle } from "@phosphor-icons/react"
+import graphGenerator from "@/assets/images/graph-generator.png"
+import funandball001 from "@/assets/images/funandball001.jpeg"
+import funandball002 from "@/assets/images/funandball002.jpeg"
+import funandball003 from "@/assets/images/funandball003.jpeg"
+import funandball004 from "@/assets/images/funandball004.jpeg"
+import funandball005 from "@/assets/images/funandball005.jpeg"
+import funandball006 from "@/assets/images/funandball006.jpeg"
 
 interface Project {
   title: string
@@ -10,6 +17,7 @@ interface Project {
   status: string
   link: string
   image?: string
+  images?: string[]
 }
 
 const projects: Project[] = [
@@ -27,7 +35,7 @@ const projects: Project[] = [
     technologies: ["C#", "Unity", "ShaderLab", "HLSL"],
     status: "Eigenes Game-Development-Projekt",
     link: "https://github.com/Kruty1918/Fun-and-Ball",
-    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=400&fit=crop"
+    images: [funandball001, funandball002, funandball003, funandball004, funandball005, funandball006]
   },
   {
     title: "Moyva",
@@ -35,7 +43,7 @@ const projects: Project[] = [
     technologies: ["C#", "Unity", "ShaderLab", "HLSL"],
     status: "Eigenes Projekt",
     link: "https://github.com/kruty1918dev-ai/moyva",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=400&fit=crop"
+    image: graphGenerator
   },
   {
     title: "Fun and Ball Website",
@@ -78,7 +86,21 @@ export function ProjectsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects.map((project) => (
             <Card key={project.title} className="flex flex-col hover:shadow-md transition-shadow duration-200 overflow-hidden">
-              {project.image && (
+              {project.images && project.images.length > 0 ? (
+                <div className="w-full h-48 overflow-hidden bg-muted">
+                  <div className="grid grid-cols-3 grid-rows-2 h-full gap-0.5">
+                    {project.images.map((img, index) => (
+                      <div key={index} className="relative overflow-hidden">
+                        <img 
+                          src={img} 
+                          alt={`${project.title} ${index + 1}`}
+                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : project.image ? (
                 <div className="w-full h-48 overflow-hidden bg-muted">
                   <img 
                     src={project.image} 
@@ -86,7 +108,7 @@ export function ProjectsSection() {
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-              )}
+              ) : null}
               <CardHeader>
                 <CardTitle className="text-xl">{project.title}</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground italic">
