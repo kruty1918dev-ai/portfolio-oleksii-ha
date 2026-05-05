@@ -1,10 +1,21 @@
 import { Button } from "@/components/ui/button"
-import { GithubLogo, EnvelopeSimple, Briefcase } from "@phosphor-icons/react"
+import { GithubLogo, EnvelopeSimple, Briefcase, DownloadSimple } from "@phosphor-icons/react"
+import { toast } from "sonner"
+import { downloadCV } from "@/lib/generateCV"
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     element?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const handleDownloadCV = () => {
+    try {
+      downloadCV()
+      toast.success('Lebenslauf wird heruntergeladen')
+    } catch (error) {
+      toast.error('Fehler beim Herunterladen des Lebenslaufs')
+    }
   }
 
   return (
@@ -34,6 +45,15 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button 
             size="lg" 
+            onClick={handleDownloadCV}
+            className="w-full sm:w-auto gap-2"
+          >
+            <DownloadSimple weight="fill" />
+            Lebenslauf herunterladen
+          </Button>
+          <Button 
+            size="lg" 
+            variant="outline"
             onClick={() => scrollToSection("projects")}
             className="w-full sm:w-auto gap-2"
           >
