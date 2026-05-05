@@ -12,12 +12,26 @@ export function GoalSection() {
           </h2>
         </div>
         <Card className="p-8">
-          <p className="text-lg leading-relaxed text-foreground/80">
-            Ich suche eine Ausbildung im Bereich Anwendungsentwicklung, idealerweise mit 
-            Schwerpunkt C#, .NET oder Backend-Entwicklung. Besonders wichtig sind mir praktische 
-            Arbeit an echten Projekten, ein gutes Lernumfeld und die Möglichkeit, langfristig im 
-            Unternehmen zu bleiben.
-          </p>
+          <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
+            <p>
+              Ich suche eine Ausbildung im Bereich Anwendungsentwicklung, idealerweise mit 
+              Schwerpunkt C#, .NET oder Backend-Entwicklung. Besonders wichtig sind mir praktische 
+              Arbeit an echten Projekten, ein gutes Lernumfeld und die Möglichkeit, langfristig im 
+              Unternehmen zu bleiben.
+            </p>
+            <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-md">
+              <p className="font-medium text-foreground mb-2">
+                Meine Erwartungen an die Position:
+              </p>
+              <p>
+                Ich bewerbe mich <strong>nicht</strong> sofort auf eine hohe Position. Ich interessiere mich 
+                für einen schrittweisen Aufbau als qualifizierter Mitarbeiter und bin bereit, eine Ausbildung, 
+                ein Praktikum oder eine Junior-Position anzunehmen. Ich habe Erfahrung in der Entwicklung 
+                und würde mich subjektiv auf Mid-Level-Niveau einschätzen, aber mir fehlt umfangreiche 
+                kommerzielle Erfahrung – deshalb möchte ich gemeinsam mit dem Team wachsen.
+              </p>
+            </div>
+          </div>
         </Card>
       </div>
     </section>

@@ -90,9 +90,12 @@ export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionPr
 export function Footer() {
   return (
     <footer className="py-8 px-6 bg-secondary/30 border-t border-border">
-      <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
-        <p>
+      <div className="max-w-6xl mx-auto text-center space-y-2">
+        <p className="text-sm text-muted-foreground">
           © 2026 Oleksii Havryliuk — C# Developer | Ausbildungssuchender Fachinformatiker für Anwendungsentwicklung
+        </p>
+        <p className="text-xs text-muted-foreground/70 italic">
+          PostScript-Backend für diese Website entwickelt von Oleksii Havryliuk
         </p>
       </div>
     </footer>
