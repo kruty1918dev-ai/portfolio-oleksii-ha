@@ -3,10 +3,15 @@ import { motion, AnimatePresence } from "framer-motion"
 import { HeroSection } from "@/components/HeroSection"
 import { AboutSection } from "@/components/AboutSection"
 import { GoalSection } from "@/components/GoalSection"
+import { HannoverSection } from "@/components/HannoverSection"
+import { OfferSection } from "@/components/OfferSection"
 import { SkillsSection } from "@/components/SkillsSection"
+import { HardwareSection } from "@/components/HardwareSection"
 import { ProjectsSection } from "@/components/ProjectsSection"
 import { TimelineSection } from "@/components/TimelineSection"
 import { WhyMeSection } from "@/components/WhyMeSection"
+import { CurrentLearningSection } from "@/components/CurrentLearningSection"
+import { DeutschSection } from "@/components/DeutschSection"
 import { ContactSection, Footer } from "@/components/ContactSection"
 import { CVPage } from "@/components/CVPage"
 import { ContactPage } from "@/components/ContactPage"
@@ -97,13 +102,18 @@ function App() {
                         <HeroSection onViewCV={() => setCurrentPage('cv')} />
                         <AboutSection />
                         <GoalSection />
+                        <HannoverSection />
+                        <OfferSection />
                         <SkillsSection />
+                        <HardwareSection />
                         <ProjectsSection 
                             onViewMoyva={() => setCurrentPage('moyva')}
                             onViewFunAndBall={() => setCurrentPage('funandball')}
                         />
                         <TimelineSection />
+                        <CurrentLearningSection />
                         <WhyMeSection />
+                        <DeutschSection />
                         <ContactSection 
                             onViewCV={() => setCurrentPage('cv')} 
                             onViewContactPage={() => setCurrentPage('contact')}

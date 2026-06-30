@@ -7,39 +7,40 @@ export function AboutSection() {
   return (
     <motion.section 
       id="about" 
-      className="py-20 px-6 bg-background"
+      className="py-16 px-6 bg-background"
       ref={ref}
       initial={{ opacity: 0, y: 30 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-foreground">
           Über mich
         </h2>
         <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
           <p>
-            Ich heiße Oleksii Havryliuk, bin 18 Jahre alt und lebe in Wismar. Ich interessiere 
-            mich besonders für C#, Backend-Entwicklung und Game Development. 
+            Ich heiße Oleksii Havryliuk, bin 18 Jahre alt und komme aus der Ukraine. Derzeit lebe ich in
+            Wismar und suche eine duale IT-Ausbildung im Raum Hannover.
           </p>
           <p>
-            <strong>Meine Reise begann mit 10 Jahren</strong> – damals habe ich angefangen, Programmierung 
-            aktiv und aus eigenem Antrieb zu lernen. Mit 13 Jahren habe ich mich intensiv mit C# beschäftigt 
-            und mich seitdem kontinuierlich weiterentwickelt. Programmieren habe ich mir hauptsächlich durch 
-            eigene Projekte beigebracht. Dabei arbeite ich mit C#, GitHub, Linux und Unity und beschäftige 
-            mich aktuell mit ASP.NET Core, REST APIs und moderner Backend-Entwicklung.
+            Ich interessiere mich seit mehreren Jahren für IT, Programmierung und technische Systeme. Besonders
+            spannend finde ich Aufgaben, bei denen man logisch denken, Fehler analysieren, Systeme verstehen und
+            Lösungen Schritt für Schritt verbessern muss.
           </p>
           <p>
-            Ich bin kein Befürworter davon, alles auswendig zu wissen oder wie ein Roboter zu funktionieren. 
-            Wenn es KI, Bücher und das Internet gibt, muss man nicht alles im Kopf haben – wichtiger sind 
-            <strong> Erfahrung und vor allem Vorstellungskraft</strong>. Wie Albert Einstein sagte: 
-            „Fantasie ist wichtiger als Wissen, denn Wissen ist begrenzt." Diese Denkweise prägt meine 
-            Herangehensweise an Entwicklung.
+            In meiner Freizeit arbeite ich an eigenen Projekten mit C#, Unity und GitHub. Mein stärkstes
+            aktuelles Projekt ist „Moyva“, ein größeres Unity/C#-Projekt mit Fokus auf Spielsysteme,
+            prozedurale Generierung, Editor-Tools und technische Architektur.
           </p>
           <p>
-            Mein Ziel ist eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung ab 
-            2026/2027. Ich möchte professionelle Softwareentwicklung in einem Unternehmen lernen, 
-            meine Deutschkenntnisse weiter verbessern und langfristig im IT-Bereich arbeiten.
+            Neben Software interessiere ich mich auch für Linux/Ubuntu, PC-Hardware, Elektronik und Löten. Ich
+            habe bereits PCs und Notebooks geöffnet, gereinigt, Wärmeleitpaste erneuert, technische Fehler
+            gesucht und kleinere Elektronikprojekte mit Arduino umgesetzt.
+          </p>
+          <p>
+            Ich weiß, dass eine Ausbildung der Anfang meines beruflichen Weges ist. Mein Ziel ist es, meine
+            praktischen Erfahrungen in einem Unternehmen professionell weiterzuentwickeln, mein Deutsch weiter
+            zu verbessern und langfristig im IT-Bereich zu arbeiten.
           </p>
         </div>
       </div>

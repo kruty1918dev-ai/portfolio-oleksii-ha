@@ -5,15 +5,16 @@ Oleksii Havryliuk
 Kapitänspromenade 6
 23966 Wismar
 Telefon: +38 093 464 1796
-E-Mail: vkmr582@gmail.com
+E-Mail: kruty1918.dev@gmail.com
 GitHub: github.com/kruty1918dev-ai
 
 Persönliche Daten
 
 Name: Oleksii Havryliuk
 Geburtsdatum/-ort: 16.05.2008, Khmelnytskyi (Ukraine)
-Wohnort: 23966 Wismar, Deutschland
+Wohnort: 23966 Wismar, Deutschland — umzugsbereit in den Raum Hannover
 Staatsangehörigkeit: Ukrainisch
+Aufenthalt: Aufenthaltserlaubnis nach § 24 AufenthG
 Eltern: Natalia Havryliuk (Mutter)
 Geschwister: Taras, Tetiana, Karina, Nika
 
@@ -21,15 +22,16 @@ Schulbildung
 
 09/2024 – 07/2025
 Zierow Berufsschule
+Deutschförderung / sprachliche Vorbereitung, nicht benotet
 
 09/2014 - 05/2024
 Sharivska Mittelschule
 Schulabschluss: Mittlerer Schulabschluss (Mai 2024)
-Abschlusszeugnis in deutscher Übersetzung vorhanden
+Die Schulunterlagen liegen in deutscher Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet.
 
 seit 11/2025
 Integrationskurs Deutsch, Wismar
-Vorbereitung auf die B1-Prüfung
+B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn
 voraussichtliches Kursende: 07/2026
 
 Praktische Erfahrungen / Projekte
@@ -37,8 +39,8 @@ Praktische Erfahrungen / Projekte
 Eigene Projekte im Bereich C# und Softwareentwicklung
 
     Arbeit an eigenen Projekten mit C#
-    Interesse an Backend-Entwicklung und Softwarearchitektur
-    Beschäftigung mit GitHub, Linux und modernen Entwicklungstools
+    Interesse an Systemintegration, Anwendungsentwicklung, digitaler Vernetzung und technischer Problemlösung
+    Beschäftigung mit GitHub, Linux/Ubuntu und modernen Entwicklungstools
 
 Game-Development-Projekte mit Unity
 
@@ -47,7 +49,11 @@ Game-Development-Projekte mit Unity
 
 Backend-Lernprojekt
 
-    Beschäftigung mit C#, APIs und Grundlagen moderner Backend-Entwicklung
+    Beschäftigung mit C#, ASP.NET Core, APIs, SQL und Grundlagen moderner Backend-Entwicklung
+
+Hardware und technische Systeme
+
+    Praktische Erfahrung mit PC-Hardware, Linux/Ubuntu, Netzwerken, Arduino, Elektronik und Löten
 
 Kenntnisse
 
@@ -55,12 +61,12 @@ Programmierkenntnisse:
 C# (gute Grundkenntnisse), HTML/CSS/JavaScript (Grundkenntnisse)
 
 IT-Kenntnisse:
-GitHub, Linux, Visual Studio, Visual Studio Code, Unity
+GitHub, Linux/Ubuntu, Visual Studio, Visual Studio Code, Unity, PC-Hardware, Arduino, Netzwerke
 
 Sprachkenntnisse
 
 Ukrainisch: Muttersprache
-Deutsch: gute Grundkenntnisse, B1-Prüfung geplant
+Deutsch: aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn
 Englisch: Grundkenntnisse
 
 Persönliche Stärken
@@ -77,7 +83,8 @@ Interessen
     Softwareentwicklung
     Backend-Entwicklung
     Game Development
+    Linux/Ubuntu, PC-Hardware und Elektronik
     eigene IT-Projekte
 
-Wismar, den 05.05.2026`
+Wismar, den 29.06.2026`
 }

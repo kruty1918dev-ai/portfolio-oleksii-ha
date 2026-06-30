@@ -7,80 +7,78 @@ PERSÖNLICHE DATEN
 ───────────────────────────────────────────────────────────────
 Name:           Oleksii Havryliuk
 Alter:          18 Jahre
-Wohnort:        Wismar, Deutschland
+Wohnort:        Wismar, Deutschland — umzugsbereit in den Raum Hannover
 E-Mail:         kruty1918.dev@gmail.com
 GitHub:         github.com/kruty1918dev-ai
+Aufenthalt:     Aufenthaltserlaubnis nach § 24 AufenthG
 
 
 BERUFSZIEL
 ───────────────────────────────────────────────────────────────
-Ausbildung zum Fachinformatiker für Anwendungsentwicklung ab
-2026/2027. Interesse an professioneller Softwareentwicklung,
-Backend-Entwicklung und modernen Webtechnologien.
+Duale IT-Ausbildung im Raum Hannover ab 2026 oder 2027.
+Besonders interessieren mich Systemintegration, Anwendungsentwicklung,
+digitale Vernetzung, IT-Systemelektronik und technische Problemlösung.
 
 
 ÜBER MICH
 ───────────────────────────────────────────────────────────────
-C# Developer mit starkem Interesse an Backend-Entwicklung,
-Softwarearchitektur und Game Development. Programmieren habe ich
-mir durch eigene Projekte selbst beigebracht. Ich arbeite mit C#,
-GitHub, Linux und Unity und beschäftige mich aktuell intensiv mit
-ASP.NET Core, REST APIs und moderner Backend-Entwicklung.
+Ich heiße Oleksii Havryliuk, bin 18 Jahre alt und lebe derzeit in
+Wismar. Ich beschäftige mich mit eigenen Projekten in C#, Unity,
+prozeduraler Generierung und GitHub. Zusätzlich interessiere ich mich
+für Linux/Ubuntu, PC-Hardware, Netzwerke, Arduino, Elektronik und Löten.
 
 
 TECHNISCHE FÄHIGKEITEN
 ───────────────────────────────────────────────────────────────
-• Programmiersprachen: C#, Python, JavaScript
-• Frameworks & Tools: ASP.NET Core, Unity, Git/GitHub
-• Backend: REST APIs, Datenbankdesign, Server-Entwicklung
-• Systeme: Linux, Windows
-• Arbeitsweise: Selbstständiges Lernen, Projektbasiert
+• Programmiersprachen: C#, HTML, CSS, JavaScript
+• Frameworks & Tools: ASP.NET Core, Unity, Git/GitHub, Docker
+• Datenbanken: SQL / Datenbanken
+• Systeme: Linux/Ubuntu, Windows, PC-Hardware
+• Technik: Fehleranalyse, Netzwerke, Arduino, Elektronik / Löten
 
 
 PROJEKTE
 ───────────────────────────────────────────────────────────────
 
-HorrorGames Forum
-─────────────────
-Vollständiges Forum mit Login-System, Beiträgen und Kommentaren.
-Entwickelt mit ASP.NET Core, Entity Framework und PostgreSQL.
-Implementiert Authentifizierung, CRUD-Operationen und
-Datenbankrelationen.
+Moyva — Unity/C# Strategy Game Project
+──────────────────────────────────────
+Größeres Unity/C#-Projekt mit Fokus auf Spielsysteme, prozedurale
+Generierung, Editor-Tools, objektorientierte Programmierung und
+technische Architektur.
 
-Math Graph Generator
-────────────────────
-Visualisierungstool für mathematische Funktionen.
-Interaktive Grafiken mit konfigurierbaren Parametern.
-Echtzeit-Darstellung komplexer Funktionen.
+Arduino MP3 Player
+──────────────────
+Hardware- und Elektronik-Lernprojekt mit Display, Tastensteuerung,
+Lautstärkeregelung, Ladefunktion und Fehlersuche.
 
-Discord Bot
-───────────
-Bot für Server-Management und Moderation.
-Automatisierte Aufgaben und Benutzerverwaltung.
-Integration mit Discord API.
+Weitere Projekte
+────────────────
+Fun and Ball, 2D Tile Generator, 2D Hexagon Generator,
+Order Management System, Unity MonoSingleton System und
+Fun and Ball Website.
 
 
 ZEITLICHER WERDEGANG
 ───────────────────────────────────────────────────────────────
-2023 - Heute     Selbststudium C# und Unity
-2024 - Heute     Backend-Entwicklung mit ASP.NET Core
-2024 - Heute     Projekte und Portfolio-Aufbau
-2026             Ziel: Beginn Ausbildung Fachinformatiker
+2024             Schulabschluss nach 11 Schuljahren in der Ukraine
+2025 - 2026      B1-Deutschkurs in Deutschland, Prüfung am 18.07. geplant
+Heute            Eigene Projekte mit C#, Unity, Git/GitHub und Technik
+2026/2027        Ziel: duale IT-Ausbildung im Raum Hannover
 
 
 WARUM ICH?
 ───────────────────────────────────────────────────────────────
-✓ Starke Motivation: Ich lerne selbstständig und bin immer
-  bereit, Neues zu entdecken
+✓ Praktische Erfahrung: Eigene Projekte mit C#, Unity und
+  Unity, Git/GitHub, Hardware und Arduino umgesetzt
   
-✓ Praktische Erfahrung: Mehrere eigene Projekte mit modernen
-  Technologien umgesetzt
+✓ Technisches Interesse: Software, PC-Hardware, Linux/Ubuntu,
+  Netzwerke und Elektronik
   
-✓ Teamfähigkeit: Erfahrung mit Git/GitHub und Zusammenarbeit
-  in Entwicklungsprojekten
+✓ Lernbereitschaft: Ausbildung als Startpunkt für professionelles
+  Lernen im Unternehmen
   
-✓ Deutschkenntnisse: B1-Niveau, kontinuierliche Verbesserung
-  durch Kurse und Praxis
+✓ Ausdauer: Ruhiges und konzentriertes Arbeiten an technischen
+  Problemen
 
 
 KONTAKT
@@ -88,7 +86,7 @@ KONTAKT
 E-Mail:         kruty1918.dev@gmail.com
 GitHub:         github.com/kruty1918dev-ai
 Portfolio:      github.com/Kruty1918
-Standort:       Wismar, Deutschland
+Standort:       Wismar, Deutschland — umzugsbereit in den Raum Hannover
 
 
 ═══════════════════════════════════════════════════════════════

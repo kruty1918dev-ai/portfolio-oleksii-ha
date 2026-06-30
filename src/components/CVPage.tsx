@@ -7,11 +7,40 @@ import { cvData } from "@/lib/cvData"
 import profilePhoto from "@/assets/images/Ich.png"
 import { useEffect, useRef, useState } from "react"
 import QRCode from "qrcode"
-import html2canvas from "html2canvas"
 import jsPDF from "jspdf"
 
 interface CVPageProps {
   onBack: () => void
+}
+
+const loadSquareImageDataUrl = (src: string, size = 900): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const image = new Image()
+    image.crossOrigin = "anonymous"
+    image.onload = () => {
+      const canvas = document.createElement("canvas")
+      canvas.width = size
+      canvas.height = size
+
+      const context = canvas.getContext("2d")
+      if (!context) {
+        reject(new Error("Image canvas context could not be created"))
+        return
+      }
+
+      const sourceSize = Math.min(image.naturalWidth, image.naturalHeight)
+      const sourceX = (image.naturalWidth - sourceSize) / 2
+      const sourceY = (image.naturalHeight - sourceSize) / 2
+
+      context.fillStyle = "#ffffff"
+      context.fillRect(0, 0, size, size)
+      context.drawImage(image, sourceX, sourceY, sourceSize, sourceSize, 0, 0, size, size)
+
+      resolve(canvas.toDataURL("image/jpeg", 0.95))
+    }
+    image.onerror = () => reject(new Error("Profile image could not be loaded"))
+    image.src = src
+  })
 }
 
 export function CVPage({ onBack }: CVPageProps) {
@@ -64,52 +93,237 @@ export function CVPage({ onBack }: CVPageProps) {
   }
 
   const handleDownloadPDF = async () => {
-    if (!cvContentRef.current) return
-
     setIsGeneratingPDF(true)
     toast.info('PDF wird generiert...')
 
     try {
-      const element = cvContentRef.current
-      const canvas = await html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        backgroundColor: '#ffffff',
-        windowWidth: element.scrollWidth,
-        windowHeight: element.scrollHeight
-      })
-
-      const imgData = canvas.toDataURL('image/png')
+      const [profileImageDataUrl, qrDataUrl] = await Promise.all([
+        loadSquareImageDataUrl(profilePhoto),
+        QRCode.toDataURL(portfolioUrl, {
+          width: 900,
+          margin: 1,
+          color: {
+            dark: "#111827",
+            light: "#ffffff"
+          }
+        })
+      ])
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
         format: 'a4'
       })
 
-      const pdfWidth = pdf.internal.pageSize.getWidth()
-      const pdfHeight = pdf.internal.pageSize.getHeight()
-      const canvasWidth = canvas.width
-      const canvasHeight = canvas.height
-      
-      const widthRatio = pdfWidth / (canvasWidth * 0.264583)
-      const heightRatio = pdfHeight / (canvasHeight * 0.264583)
-      const ratio = Math.min(widthRatio, heightRatio)
-      
-      const imgWidth = canvasWidth * 0.264583 * ratio
-      const imgHeight = canvasHeight * 0.264583 * ratio
-      const imgX = (pdfWidth - imgWidth) / 2
-      const imgY = 5
+      const pageWidth = pdf.internal.pageSize.getWidth()
+      const pageHeight = pdf.internal.pageSize.getHeight()
+      const margin = 12
+      const rightColumnX = 122
+      const leftColumnWidth = 86
+      const rightColumnWidth = pageWidth - rightColumnX - margin
+      const headerTextWidth = 96
+      const headerMediaX = 124
+      const panelFill = "#f9fafb"
+      const line = "#e5e7eb"
+      const text = "#1f2937"
+      const muted = "#6b7280"
+      let leftY = 18
+      let rightY = 18
 
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight)
+      const setText = (size: number, color = text, style: "normal" | "bold" = "normal") => {
+        pdf.setFont("helvetica", style)
+        pdf.setFontSize(size)
+        pdf.setTextColor(color)
+      }
 
-      pdf.setFontSize(8)
-      pdf.setTextColor(100, 100, 100)
-      const footerY = pdfHeight - 10
-      pdf.text('© 2026 Oleksii Havryliuk', pdfWidth / 2, footerY, { align: 'center' })
-      pdf.setFontSize(7)
-      pdf.text(`Portfolio: ${portfolioUrl}`, pdfWidth / 2, footerY + 3, { align: 'center' })
-      pdf.text('Erstellt: ' + new Date().toLocaleDateString('de-DE'), pdfWidth / 2, footerY + 6, { align: 'center' })
+      const section = (title: string, x: number, y: number, width: number) => {
+        pdf.setDrawColor(line)
+        pdf.setLineWidth(0.3)
+        pdf.line(x, y, x + width, y)
+        setText(11.2, text, "bold")
+        pdf.text(title, x, y + 7)
+        return y + 11
+      }
+
+      const wrap = (value: string, width: number) => pdf.splitTextToSize(value, width) as string[]
+
+      const safeText = (
+        value: string,
+        x: number,
+        y: number,
+        width: number,
+        size = 8,
+        color = text,
+        style: "normal" | "bold" = "normal",
+        lineHeight = 3.8
+      ) => {
+        setText(size, color, style)
+        const lines = wrap(value, width)
+        pdf.text(lines, x, y)
+        return y + Math.max(lineHeight, lines.length * lineHeight)
+      }
+
+      const kv = (label: string, value: string, x: number, y: number, width: number, size = 8.2) => {
+        setText(size, text, "bold")
+        pdf.text(`${label}:`, x, y)
+        const labelWidth = pdf.getTextWidth(`${label}: `)
+        setText(size, text)
+        const lines = wrap(value, width - labelWidth)
+        pdf.text(lines, x + labelWidth, y)
+        return y + Math.max(4.5, lines.length * 4)
+      }
+
+      const bullet = (value: string, x: number, y: number, width: number, size = 8) => {
+        const lines = wrap(value, width - 5)
+        setText(size, text)
+        pdf.text("•", x, y)
+        pdf.text(lines, x + 5, y)
+        return y + Math.max(4, lines.length * 3.8)
+      }
+
+      const smallText = (value: string, x: number, y: number, width: number, size = 8.1, color = text) => {
+        return safeText(value, x, y, width, size, color)
+      }
+
+      pdf.setFillColor("#ffffff")
+      pdf.rect(0, 0, pageWidth, pageHeight, "F")
+      pdf.setFillColor(panelFill)
+      pdf.rect(0, 0, pageWidth, 58, "F")
+      pdf.setDrawColor(line)
+      pdf.line(margin, 58, pageWidth - margin, 58)
+
+      setText(22, text, "bold")
+      pdf.text("Lebenslauf", margin, leftY)
+      leftY += 8
+      leftY = safeText(
+        "Oleksii Havryliuk - Bewerber für eine IT-Ausbildung im Raum Hannover",
+        margin,
+        leftY,
+        headerTextWidth,
+        9.2,
+        muted,
+        "normal",
+        4.2
+      )
+      leftY += 3
+
+      const headerInfoWidth = headerTextWidth
+      leftY = kv("Telefon", "+38 093 464 1796", margin, leftY, headerInfoWidth, 8.5)
+      leftY = kv("Adresse", "Kapitänspromenade 6, 23966 Wismar", margin, leftY, headerInfoWidth, 8.5)
+      leftY = kv("E-Mail", "kruty1918.dev@gmail.com", margin, leftY, headerInfoWidth, 8.5)
+      leftY = kv("GitHub", "github.com/kruty1918dev-ai", margin, leftY, headerInfoWidth, 8.5)
+
+      pdf.setDrawColor("#d1d5db")
+      pdf.setLineWidth(0.5)
+      pdf.roundedRect(headerMediaX, 18, 29, 29, 2, 2, "S")
+      pdf.addImage(qrDataUrl, "PNG", headerMediaX + 2, 20, 25, 25)
+      pdf.roundedRect(headerMediaX + 38, 18, 29, 29, 2, 2, "S")
+      pdf.addImage(profileImageDataUrl, "JPEG", headerMediaX + 39, 19, 27, 27)
+      setText(6.8, muted)
+      pdf.text("Online-Portfolio", headerMediaX + 14.5, 53, { align: "center" })
+      pdf.text("Profilfoto", headerMediaX + 52.5, 53, { align: "center" })
+
+      leftY = 64
+      rightY = 64
+
+      leftY = section("Persönliche Daten", margin, leftY, leftColumnWidth)
+      leftY = kv("Geburtsdatum/-ort", "16.05.2008, Khmelnytskyi (Ukraine)", margin, leftY, leftColumnWidth)
+      leftY = kv("Wohnort", "Wismar, Deutschland - umzugsbereit in den Raum Hannover", margin, leftY, leftColumnWidth)
+      leftY = kv("Staatsangehörigkeit", "Ukrainisch", margin, leftY, leftColumnWidth)
+      leftY = kv("Aufenthalt", "Aufenthaltserlaubnis nach § 24 AufenthG", margin, leftY, leftColumnWidth)
+
+      leftY = section("Kurzprofil", margin, leftY + 4, leftColumnWidth)
+      leftY = smallText("18-jähriger Bewerber aus der Ukraine mit praktischer Erfahrung in C#, Unity, Git/GitHub, Linux/Ubuntu, PC-Hardware und Arduino. Ich lerne am besten durch eigene Projekte und technische Fehlersuche.", margin, leftY, leftColumnWidth, 7.8)
+
+      leftY = section("Schulbildung & Deutsch", margin, leftY + 4, leftColumnWidth)
+      setText(8.4, text, "bold")
+      pdf.text("09/2014 - 05/2024", margin, leftY)
+      leftY += 4
+      leftY = smallText("Sharivska Mittelschule, Schulabschluss nach 11 Schuljahren. Unterlagen liegen in deutscher Übersetzung vor; Bewertung in Niedersachsen wird vorbereitet.", margin, leftY, leftColumnWidth, 8)
+      setText(8.4, text, "bold")
+      pdf.text("09/2024 - 07/2025", margin, leftY + 1)
+      leftY += 5
+      leftY = smallText("Zierow Berufsschule - Deutschförderung / sprachliche Vorbereitung, nicht benotet", margin, leftY, leftColumnWidth, 8)
+      setText(8.4, text, "bold")
+      pdf.text("Deutsch", margin, leftY + 1)
+      leftY += 5
+      leftY = smallText("Aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn.", margin, leftY, leftColumnWidth, 8)
+
+      leftY = section("Kenntnisse", margin, leftY + 4, leftColumnWidth)
+      leftY = bullet("C# und Unity: gute Grundkenntnisse durch eigene Projekte", margin, leftY, leftColumnWidth)
+      leftY = bullet("Git/GitHub: Commit, Push, Pull, Merge, Konfliktlösung", margin, leftY, leftColumnWidth)
+      leftY = bullet("Linux/Ubuntu: Terminal, Einrichtung, Fehlersuche", margin, leftY, leftColumnWidth)
+      leftY = bullet("SQL/Datenbanken und ASP.NET Core: erste Grundlagen", margin, leftY, leftColumnWidth)
+      leftY = bullet("PC-Hardware, Arduino, Elektronik, Löten, Netzwerke", margin, leftY, leftColumnWidth)
+
+      leftY = section("Sprachen & Stärken", margin, leftY + 4, leftColumnWidth)
+      leftY = kv("Ukrainisch", "Muttersprache", margin, leftY, leftColumnWidth, 8)
+      leftY = kv("Deutsch", "B1-Kurs, Ziel B2", margin, leftY, leftColumnWidth, 8)
+      leftY = kv("Englisch", "Grundkenntnisse", margin, leftY, leftColumnWidth, 8)
+      leftY = smallText("Lernbereit, zuverlässig, ruhig, ausdauernd, technisch interessiert.", margin, leftY + 1, leftColumnWidth, 8)
+
+      rightY = section("Ausbildungsziel", rightColumnX, rightY, rightColumnWidth)
+      rightY = smallText("Ich suche eine duale IT-Ausbildung im Raum Hannover ab 2026 oder 2027. Besonders interessieren mich Systemintegration, Anwendungsentwicklung, digitale Vernetzung und IT-Systemelektronik.", rightColumnX, rightY, rightColumnWidth, 8.2)
+      rightY = bullet("Fachinformatiker für Systemintegration", rightColumnX, rightY + 1, rightColumnWidth)
+      rightY = bullet("Fachinformatiker für Anwendungsentwicklung", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("Fachinformatiker für Digitale Vernetzung", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("IT-Systemelektroniker", rightColumnX, rightY, rightColumnWidth)
+
+      rightY = section("Praktische Projekte", rightColumnX, rightY + 4, rightColumnWidth)
+      setText(8.4, text, "bold")
+      pdf.text("Moyva - Unity/C# Strategy Game Project", rightColumnX, rightY)
+      rightY += 4
+      rightY = smallText("Größeres Unity/C#-Projekt mit Spielsystemen, prozeduraler Generierung, Editor-Tools, objektorientierter Programmierung und technischer Architektur.", rightColumnX, rightY, rightColumnWidth, 8)
+      setText(8.4, text, "bold")
+      pdf.text("Arduino MP3 Player", rightColumnX, rightY + 1)
+      rightY += 5
+      rightY = smallText("Hardware- und Elektronik-Lernprojekt mit Display, Tastensteuerung, Lautstärkeregelung, Ladefunktion und Fehlersuche.", rightColumnX, rightY, rightColumnWidth, 8)
+      setText(8.4, text, "bold")
+      pdf.text("Weitere Projekte", rightColumnX, rightY + 1)
+      rightY += 5
+      rightY = bullet("Fun and Ball: Unity-Spielprojekt mit Gameplay-Logik", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("2D Tile/Hex Generator: prozedurale Generierung", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("Order Management System: ASP.NET Core, EF Core, SQLite, Docker", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("Unity MonoSingleton System: Utility/Architecture Tool", rightColumnX, rightY, rightColumnWidth)
+
+      rightY = section("Hardware & Technik", rightColumnX, rightY + 4, rightColumnWidth)
+      rightY = bullet("PCs und Notebooks öffnen, reinigen, Wärmeleitpaste erneuern", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("Komponenten verstehen und technische Fehler suchen", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("Linux/Ubuntu, Router, LAN, WLAN und IT-Infrastruktur", rightColumnX, rightY, rightColumnWidth)
+      rightY = bullet("Arduino, Kabel, kleine Elektronikarbeiten und Löten", rightColumnX, rightY, rightColumnWidth)
+
+      rightY = section("Arbeitsweise", rightColumnX, rightY + 4, rightColumnWidth)
+      rightY = smallText("Ich nutze Dokumentation, Tutorials, Debugging, GitHub und KI-Tools als Unterstützung. Wichtig ist mir, den Code zu verstehen, Probleme selbst zu analysieren und Lösungen erklären zu können.", rightColumnX, rightY, rightColumnWidth, 8)
+
+      const panelTop = Math.max(leftY, rightY) + 6
+      const panelHeight = 36
+      pdf.setFillColor(panelFill)
+      pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "F")
+      pdf.setDrawColor(line)
+      pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "S")
+
+      const panelColumnWidth = (pageWidth - margin * 2 - 8) / 2
+      let panelLeftY = panelTop + 8
+      let panelRightY = panelTop + 8
+      setText(10.5, text, "bold")
+      pdf.text("Warum ich gut zu einer IT-Ausbildung passe", margin + 4, panelLeftY)
+      panelLeftY += 5
+      panelLeftY = bullet("Analytisches Denken und ruhige Fehlersuche", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
+      panelLeftY = bullet("Eigene Projekte statt nur Theorie", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
+      panelLeftY = bullet("Breites Interesse an Software, Systemen und Hardware", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
+
+      const panelRightX = margin + 4 + panelColumnWidth + 8
+      setText(10.5, text, "bold")
+      pdf.text("Hannover & nächster Schritt", panelRightX, panelRightY)
+      panelRightY += 5
+      panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen, arbeiten und mich im IT-Bereich professionell entwickeln. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.5)
+      panelRightY = kv("Verfügbarkeit", "Ausbildung ab 2026 oder 2027", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.5)
+
+      pdf.setDrawColor(line)
+      pdf.line(margin, 281, pageWidth - margin, 281)
+      setText(7.2, muted)
+      pdf.text("Wismar, den 29.06.2026", margin, 286)
+      pdf.text(`Portfolio: ${portfolioUrl}`, pageWidth - margin, 285, { align: "right" })
+      pdf.text("GitHub: github.com/kruty1918dev-ai", pageWidth - margin, 289, { align: "right" })
 
       pdf.save('Oleksii_Havryliuk_Lebenslauf.pdf')
 
@@ -142,7 +356,7 @@ export function CVPage({ onBack }: CVPageProps) {
               Lebenslauf
             </h1>
             <p className="text-lg text-muted-foreground">
-              Oleksii Havryliuk — Bewerber für Fachinformatiker Anwendungsentwicklung
+              Oleksii Havryliuk — Bewerber für eine IT-Ausbildung im Raum Hannover
             </p>
           </div>
 
@@ -176,8 +390,12 @@ export function CVPage({ onBack }: CVPageProps) {
             </Button>
           </div>
 
-          <Card className="p-8 md:p-12 bg-card/50 backdrop-blur">
-            <div ref={cvContentRef} className="space-y-8 bg-white p-8">
+          <Card className="p-4 md:p-10 bg-card/50 backdrop-blur overflow-x-auto">
+            <div
+              ref={cvContentRef}
+              data-pdf-content="lebenslauf"
+              className="space-y-8 bg-white p-8 md:p-10 w-full md:w-[794px] md:max-w-none mx-auto shadow-sm"
+            >
               <div className="space-y-4">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
                   <div className="flex-1">
@@ -186,7 +404,7 @@ export function CVPage({ onBack }: CVPageProps) {
                       <div><span className="font-semibold">Name:</span> Oleksii Havryliuk</div>
                       <div><span className="font-semibold">Telefon:</span> +38 093 464 1796</div>
                       <div><span className="font-semibold">Adresse:</span> Kapitänspromenade 6, 23966 Wismar</div>
-                      <div><span className="font-semibold">E-Mail:</span> vkmr582@gmail.com</div>
+                      <div><span className="font-semibold">E-Mail:</span> kruty1918.dev@gmail.com</div>
                       <div><span className="font-semibold">GitHub:</span> github.com/kruty1918dev-ai</div>
                     </div>
                   </div>
@@ -217,8 +435,9 @@ export function CVPage({ onBack }: CVPageProps) {
                 <div className="text-sm space-y-1 text-foreground/90">
                   <p><span className="font-semibold">Name:</span> Oleksii Havryliuk</p>
                   <p><span className="font-semibold">Geburtsdatum/-ort:</span> 16.05.2008, Khmelnytskyi (Ukraine)</p>
-                  <p><span className="font-semibold">Wohnort:</span> 23966 Wismar, Deutschland</p>
+                  <p><span className="font-semibold">Wohnort:</span> 23966 Wismar, Deutschland — umzugsbereit in den Raum Hannover</p>
                   <p><span className="font-semibold">Staatsangehörigkeit:</span> Ukrainisch</p>
+                  <p><span className="font-semibold">Aufenthalt:</span> Aufenthaltserlaubnis nach § 24 AufenthG</p>
                   <p><span className="font-semibold">Eltern:</span> Natalia Havryliuk (Mutter)</p>
                   <p><span className="font-semibold">Geschwister:</span> Taras, Tetiana, Karina, Nika</p>
                 </div>
@@ -232,17 +451,18 @@ export function CVPage({ onBack }: CVPageProps) {
                   <div>
                     <p className="font-semibold">09/2024 – 07/2025</p>
                     <p className="text-foreground/90">Zierow Berufsschule</p>
+                    <p className="text-muted-foreground">Deutschförderung / sprachliche Vorbereitung, nicht benotet</p>
                   </div>
                   <div>
                     <p className="font-semibold">09/2014 - 05/2024</p>
                     <p className="text-foreground/90">Sharivska Mittelschule</p>
                     <p className="text-muted-foreground">Schulabschluss: Mittlerer Schulabschluss (Mai 2024)</p>
-                    <p className="text-muted-foreground">Abschlusszeugnis in deutscher Übersetzung vorhanden</p>
+                    <p className="text-muted-foreground">Die Schulunterlagen liegen in deutscher Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet.</p>
                   </div>
                   <div>
                     <p className="font-semibold">seit 11/2025</p>
                     <p className="text-foreground/90">Integrationskurs Deutsch, Wismar</p>
-                    <p className="text-muted-foreground">Vorbereitung auf die B1-Prüfung</p>
+                    <p className="text-muted-foreground">B1-Prüfung am 18.07. geplant, Ziel: B2 bis zum Ausbildungsbeginn</p>
                     <p className="text-muted-foreground">voraussichtliches Kursende: 07/2026</p>
                   </div>
                 </div>
@@ -257,8 +477,8 @@ export function CVPage({ onBack }: CVPageProps) {
                     <p className="font-semibold">Eigene Projekte im Bereich C# und Softwareentwicklung</p>
                     <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
                       <li>Arbeit an eigenen Projekten mit C#</li>
-                      <li>Interesse an Backend-Entwicklung und Softwarearchitektur</li>
-                      <li>Beschäftigung mit GitHub, Linux und modernen Entwicklungstools</li>
+                      <li>Interesse an Systemintegration, Anwendungsentwicklung, digitaler Vernetzung und technischer Problemlösung</li>
+                      <li>Beschäftigung mit GitHub, Linux/Ubuntu und modernen Entwicklungstools</li>
                     </ul>
                   </div>
                   <div>
@@ -271,7 +491,13 @@ export function CVPage({ onBack }: CVPageProps) {
                   <div>
                     <p className="font-semibold">Backend-Lernprojekt</p>
                     <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
-                      <li>Beschäftigung mit C#, APIs und Grundlagen moderner Backend-Entwicklung</li>
+                      <li>Beschäftigung mit C#, ASP.NET Core, APIs, SQL und Grundlagen moderner Backend-Entwicklung</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-semibold">Hardware und technische Systeme</p>
+                    <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
+                      <li>Praktische Erfahrung mit PC-Hardware, Linux/Ubuntu, Netzwerken, Arduino, Elektronik und Löten</li>
                     </ul>
                   </div>
                 </div>
@@ -288,7 +514,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </div>
                   <div>
                     <p className="font-semibold">IT-Kenntnisse:</p>
-                    <p className="text-foreground/90">GitHub, Linux, Visual Studio, Visual Studio Code, Unity</p>
+                    <p className="text-foreground/90">GitHub, Linux/Ubuntu, Visual Studio, Visual Studio Code, Unity, PC-Hardware, Arduino, Netzwerke</p>
                   </div>
                 </div>
               </div>
@@ -299,7 +525,7 @@ export function CVPage({ onBack }: CVPageProps) {
                 <h3 className="text-xl font-semibold text-foreground">Sprachkenntnisse</h3>
                 <div className="text-sm space-y-1 text-foreground/90">
                   <p><span className="font-semibold">Ukrainisch:</span> Muttersprache</p>
-                  <p><span className="font-semibold">Deutsch:</span> gute Grundkenntnisse, B1-Prüfung geplant</p>
+                  <p><span className="font-semibold">Deutsch:</span> aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn</p>
                   <p><span className="font-semibold">Englisch:</span> Grundkenntnisse</p>
                 </div>
               </div>
@@ -326,6 +552,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   <li>Softwareentwicklung</li>
                   <li>Backend-Entwicklung</li>
                   <li>Game Development</li>
+                  <li>Linux/Ubuntu, PC-Hardware und Elektronik</li>
                   <li>eigene IT-Projekte</li>
                 </ul>
               </div>
@@ -333,7 +560,7 @@ export function CVPage({ onBack }: CVPageProps) {
               <Separator />
 
               <div className="text-sm text-muted-foreground text-center pt-4">
-                <p>Wismar, den 05.05.2026</p>
+                <p>Wismar, den 29.06.2026</p>
               </div>
             </div>
           </Card>

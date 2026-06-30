@@ -7,28 +7,28 @@ interface TimelineItem {
 
 const timeline: TimelineItem[] = [
   {
-    title: "Schulabschluss nach 11 Klassen in der Ukraine",
-    description: "Abschlusszeugnis liegt in deutscher Übersetzung vor"
+    title: "Schulabschluss in der Ukraine",
+    description: "Schulabschluss nach 11 Schuljahren. Die Schulunterlagen liegen in deutscher Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet."
   },
   {
-    title: "Integrationskurs Deutsch in Deutschland",
-    description: "B1-Prüfung geplant"
+    title: "Deutsch in Deutschland",
+    description: "Aktuell B1-Deutschkurs. Die B1-Prüfung ist am 18.07. geplant. Ziel: B2 bis zum Ausbildungsbeginn."
   },
   {
-    title: "Selbstständiges Lernen von C#, Unity und Backend-Entwicklung",
-    description: "Durch eigene Projekte und praktische Umsetzung"
+    title: "Selbstständiges Lernen",
+    description: "Eigene Projekte mit C#, Unity, Git/GitHub, Linux/Ubuntu und technischen Komponenten."
   },
   {
-    title: "Ziel: Ausbildung zum Fachinformatiker für Anwendungsentwicklung ab 2026/2027",
-    description: "Fokus auf professionelle Softwareentwicklung im Unternehmen"
+    title: "Aktuelles Ziel",
+    description: "Duale IT-Ausbildung im Raum Hannover ab 2026 oder 2027."
   }
 ]
 
 export function TimelineSection() {
   return (
-    <section id="education" className="py-20 px-6 bg-background">
+    <section id="education" className="py-16 px-6 bg-secondary/30">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center gap-3 mb-12 justify-center">
+        <div className="flex items-center gap-3 mb-10 justify-center">
           <GraduationCap size={32} weight="fill" className="text-primary" />
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
             Ausbildung & Lernen

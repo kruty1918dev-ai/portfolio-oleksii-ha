@@ -71,8 +71,8 @@ export function ContactPage({ onBack }: ContactPageProps) {
             Kontakt aufnehmen
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Haben Sie Fragen oder möchten Sie ein Projekt besprechen? 
-            Schreiben Sie mir eine Nachricht!
+            Ich freue mich über Rückmeldungen, Ausbildungsangebote, Praktikumsmöglichkeiten,
+            Einstiegsqualifizierung oder Hinweise zu IT-Ausbildungen im Raum Hannover.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export function ContactPage({ onBack }: ContactPageProps) {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Wismar, Deutschland
+                Wismar, Deutschland — umzugsbereit in den Raum Hannover
               </p>
             </CardContent>
           </Card>
