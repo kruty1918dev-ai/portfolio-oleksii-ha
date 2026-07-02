@@ -304,7 +304,7 @@ export function CVPage({ onBack }: CVPageProps) {
       rightY = section("Arbeitsweise", rightColumnX, rightY + 4, rightColumnWidth)
       rightY = smallText("Ich nutze Dokumentation, Tutorials, Debugging, GitHub und KI-Tools als Unterstützung. Wichtig ist mir, den Code zu verstehen, Probleme selbst zu analysieren und Lösungen erklären zu können.", rightColumnX, rightY, rightColumnWidth, 8)
 
-      const footerLineY = pageHeight - 16
+      const footerLineY = pageHeight - 18
       const panelTop = Math.max(leftY, rightY) + 6
       const panelColumnWidth = (pageWidth - margin * 2 - 8) / 2
       const panelInnerWidth = panelColumnWidth - 4
@@ -324,28 +324,31 @@ export function CVPage({ onBack }: CVPageProps) {
         measureWrappedHeight("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelInnerWidth, 3.8) +
         measureWrappedHeight("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelInnerWidth, 3.8) +
         panelBottomPadding
-      const panelHeight = Math.min(footerLineY - panelTop - 4, Math.max(panelLeftRequiredHeight, panelRightRequiredHeight))
+      const panelHeight = Math.max(panelLeftRequiredHeight, panelRightRequiredHeight)
+      const panelFitsBeforeFooter = panelTop + panelHeight + 6 <= footerLineY
 
-      pdf.setFillColor(panelFill)
-      pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "F")
-      pdf.setDrawColor(line)
-      pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "S")
+      if (panelFitsBeforeFooter) {
+        pdf.setFillColor(panelFill)
+        pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "F")
+        pdf.setDrawColor(line)
+        pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "S")
 
-      let panelLeftY = panelTop + 8
-      let panelRightY = panelTop + 8
-      setText(10.5, text, "bold")
-      pdf.text("Warum ich gut zu einer IT-Ausbildung passe", margin + 4, panelLeftY)
-      panelLeftY += 5
-      panelLeftY = bullet("Analytisches Denken und ruhige Fehlersuche", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
-      panelLeftY = bullet("Eigene Projekte statt nur Theorie", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
-      panelLeftY = bullet("Breites Interesse an Software, Systemen und Hardware", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
+        let panelLeftY = panelTop + 8
+        let panelRightY = panelTop + 8
+        setText(10.5, text, "bold")
+        pdf.text("Warum ich gut zu einer IT-Ausbildung passe", margin + 4, panelLeftY)
+        panelLeftY += 5
+        panelLeftY = bullet("Analytisches Denken und ruhige Fehlersuche", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
+        panelLeftY = bullet("Eigene Projekte statt nur Theorie", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
+        panelLeftY = bullet("Breites Interesse an Software, Systemen und Hardware", margin + 4, panelLeftY, panelColumnWidth - 4, 7.5)
 
-      const panelRightX = margin + 4 + panelColumnWidth + 8
-      setText(10.5, text, "bold")
-      pdf.text("Hannover & nächster Schritt", panelRightX, panelRightY)
-      panelRightY += 5
-      panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.3)
-      panelRightY = smallText("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.3)
+        const panelRightX = margin + 4 + panelColumnWidth + 8
+        setText(10.5, text, "bold")
+        pdf.text("Hannover & nächster Schritt", panelRightX, panelRightY)
+        panelRightY += 5
+        panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.3)
+        panelRightY = smallText("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.3)
+      }
 
       pdf.setDrawColor(line)
       pdf.line(margin, footerLineY, pageWidth - margin, footerLineY)
