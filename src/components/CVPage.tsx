@@ -146,6 +146,10 @@ export function CVPage({ onBack }: CVPageProps) {
       }
 
       const wrap = (value: string, width: number) => pdf.splitTextToSize(value, width) as string[]
+      const measureWrappedHeight = (value: string, width: number, lineHeight = 3.8, minHeight = lineHeight) => {
+        const lines = wrap(value, width)
+        return Math.max(minHeight, lines.length * lineHeight)
+      }
 
       const safeText = (
         value: string,
@@ -179,6 +183,10 @@ export function CVPage({ onBack }: CVPageProps) {
         pdf.text("•", x, y)
         pdf.text(lines, x + 5, y)
         return y + Math.max(4, lines.length * 3.8)
+      }
+      const measureBulletHeight = (value: string, width: number) => {
+        const lines = wrap(value, width - 5)
+        return Math.max(4, lines.length * 3.8)
       }
 
       const smallText = (value: string, x: number, y: number, width: number, size = 8.1, color = text) => {
@@ -296,14 +304,33 @@ export function CVPage({ onBack }: CVPageProps) {
       rightY = section("Arbeitsweise", rightColumnX, rightY + 4, rightColumnWidth)
       rightY = smallText("Ich nutze Dokumentation, Tutorials, Debugging, GitHub und KI-Tools als Unterstützung. Wichtig ist mir, den Code zu verstehen, Probleme selbst zu analysieren und Lösungen erklären zu können.", rightColumnX, rightY, rightColumnWidth, 8)
 
+      const footerLineY = pageHeight - 16
       const panelTop = Math.max(leftY, rightY) + 6
-      const panelHeight = 36
+      const panelColumnWidth = (pageWidth - margin * 2 - 8) / 2
+      const panelInnerWidth = panelColumnWidth - 4
+      const panelHeadingGap = 5
+      const panelTopPadding = 8
+      const panelBottomPadding = 5
+      const panelLeftRequiredHeight =
+        panelTopPadding +
+        panelHeadingGap +
+        measureBulletHeight("Analytisches Denken und ruhige Fehlersuche", panelInnerWidth) +
+        measureBulletHeight("Eigene Projekte statt nur Theorie", panelInnerWidth) +
+        measureBulletHeight("Breites Interesse an Software, Systemen und Hardware", panelInnerWidth) +
+        panelBottomPadding
+      const panelRightRequiredHeight =
+        panelTopPadding +
+        panelHeadingGap +
+        measureWrappedHeight("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelInnerWidth, 3.8) +
+        measureWrappedHeight("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelInnerWidth, 3.8) +
+        panelBottomPadding
+      const panelHeight = Math.min(footerLineY - panelTop - 4, Math.max(panelLeftRequiredHeight, panelRightRequiredHeight))
+
       pdf.setFillColor(panelFill)
       pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "F")
       pdf.setDrawColor(line)
       pdf.roundedRect(margin, panelTop, pageWidth - margin * 2, panelHeight, 2, 2, "S")
 
-      const panelColumnWidth = (pageWidth - margin * 2 - 8) / 2
       let panelLeftY = panelTop + 8
       let panelRightY = panelTop + 8
       setText(10.5, text, "bold")
@@ -320,7 +347,6 @@ export function CVPage({ onBack }: CVPageProps) {
       panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.3)
       panelRightY = smallText("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.3)
 
-      const footerLineY = 281
       pdf.setDrawColor(line)
       pdf.line(margin, footerLineY, pageWidth - margin, footerLineY)
       setText(7.2, muted)
@@ -399,7 +425,7 @@ export function CVPage({ onBack }: CVPageProps) {
               data-pdf-content="lebenslauf"
               className="mx-auto w-full max-w-5xl space-y-6 rounded-xl bg-white p-4 sm:p-6 md:p-8 shadow-sm"
             >
-              <section className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+              <section data-cv-header className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
                 <div className="space-y-4">
                   <div>
                     <h2 className="text-2xl font-bold text-foreground">Lebenslauf</h2>
@@ -454,7 +480,7 @@ export function CVPage({ onBack }: CVPageProps) {
               </section>
 
               <div className="grid gap-4 xl:grid-cols-2">
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Persönliche Daten</h3>
                   <div className="space-y-2 text-sm text-foreground/90">
                     <p><span className="font-semibold">Name:</span> {profile.name}</p>
@@ -465,7 +491,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </div>
                 </section>
 
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Kurzprofil</h3>
                   <p className="text-sm leading-relaxed text-foreground/90">
                     Motivierter Ausbildungskandidat mit praktischen technischen Projekten in C#, Unity,
@@ -474,7 +500,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </p>
                 </section>
 
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Schulbildung und Deutsch</h3>
                   <div className="space-y-4 text-sm">
                     <div>
@@ -499,7 +525,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </div>
                 </section>
 
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Ausbildungsziel</h3>
                   <p className="text-sm leading-relaxed text-foreground/90">
                     Ich suche eine duale IT-Ausbildung im Raum Hannover, besonders in den Bereichen
@@ -513,7 +539,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </ul>
                 </section>
 
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Praktische Projekte</h3>
                   <div className="space-y-4 text-sm">
                     <div>
@@ -542,7 +568,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </div>
                 </section>
 
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Kenntnisse</h3>
                   <div className="space-y-3 text-sm text-foreground/90">
                     <div>
@@ -556,7 +582,7 @@ export function CVPage({ onBack }: CVPageProps) {
                   </div>
                 </section>
 
-                <section className={sectionClassName}>
+                <section data-cv-section className={sectionClassName}>
                   <h3 className="text-lg font-semibold text-foreground">Sprachen und Stärken</h3>
                   <div className="space-y-3 text-sm text-foreground/90">
                     <p><span className="font-semibold">Ukrainisch:</span> Muttersprache</p>
@@ -574,9 +600,32 @@ export function CVPage({ onBack }: CVPageProps) {
                 </section>
               </div>
 
-              <div className="pt-2 text-center text-sm text-muted-foreground">
-                <p>Wismar, den 02.07.2026</p>
-              </div>
+              <footer
+                data-cv-footer
+                className="mt-2 border-t border-border/80 pt-4 text-sm text-muted-foreground"
+              >
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <p className="font-medium text-foreground/80">Wismar, den 02.07.2026</p>
+                  <div className="min-w-0 space-y-1 sm:text-right">
+                    <a
+                      href={profile.portfolioUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block break-all hover:text-primary"
+                    >
+                      Portfolio: {profile.portfolioUrl}
+                    </a>
+                    <a
+                      href={profile.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block break-all hover:text-primary"
+                    >
+                      GitHub: github.com/kruty1918dev-ai
+                    </a>
+                  </div>
+                </div>
+              </footer>
             </div>
           </Card>
 

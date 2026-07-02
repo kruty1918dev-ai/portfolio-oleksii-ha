@@ -82,3 +82,39 @@ body {
 .font-mono {
   font-family: var(--font-mono);
 }
+
+@media print {
+  html,
+  body {
+    background: #ffffff;
+  }
+
+  body {
+    color: #111827;
+  }
+
+  [data-pdf-content="lebenslauf"] {
+    width: 100% !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 16mm 14mm 14mm !important;
+  }
+
+  [data-cv-header],
+  [data-cv-section],
+  [data-cv-footer] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  [data-cv-footer] {
+    margin-top: 6mm !important;
+    padding-top: 4mm !important;
+  }
+
+  [data-slot="card"] {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
