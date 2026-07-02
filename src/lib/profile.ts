@@ -8,7 +8,7 @@ export const profile = {
   githubHandle: "kruty1918dev-ai",
   moyvaShowcaseUrl: "https://github.com/kruty1918dev-ai/moyva-showcase",
   moyvaShowcaseFullName: "kruty1918dev-ai/moyva-showcase",
-  portfolioUrl: "https://oleksiy-havryliuk.de",
+  portfolioUrl: "https://oleksiy-havryliuk.de/",
   location: "Wismar, Germany",
   locationDe: "Wismar, Deutschland",
   relocationDe: "umzugsbereit in den Raum Hannover",
