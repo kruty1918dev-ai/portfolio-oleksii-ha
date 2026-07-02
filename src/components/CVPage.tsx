@@ -315,15 +315,27 @@ export function CVPage({ onBack }: CVPageProps) {
       setText(10.5, text, "bold")
       pdf.text("Hannover & nächster Schritt", panelRightX, panelRightY)
       panelRightY += 5
+<<<<<<< Updated upstream
       panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen, arbeiten und mich im IT-Bereich professionell entwickeln. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.5)
       panelRightY = kv("Verfügbarkeit", "Ausbildung ab 2026 oder 2027", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.5)
+=======
+      panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.3)
+      panelRightY = smallText("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.3)
+>>>>>>> Stashed changes
 
+      const footerLineY = Math.max(281, Math.max(panelLeftY, panelRightY) + 3)
       pdf.setDrawColor(line)
-      pdf.line(margin, 281, pageWidth - margin, 281)
+      pdf.line(margin, footerLineY, pageWidth - margin, footerLineY)
       setText(7.2, muted)
+<<<<<<< Updated upstream
       pdf.text("Wismar, den 29.06.2026", margin, 286)
       pdf.text(`Portfolio: ${portfolioUrl}`, pageWidth - margin, 285, { align: "right" })
       pdf.text("GitHub: github.com/kruty1918dev-ai", pageWidth - margin, 289, { align: "right" })
+=======
+      pdf.text("Wismar, den 02.07.2026", margin, footerLineY + 5)
+      pdf.text(`Portfolio: ${portfolioUrl}`, pageWidth - margin, footerLineY + 4, { align: "right" })
+      pdf.text("GitHub: github.com/kruty1918dev-ai", pageWidth - margin, footerLineY + 8, { align: "right" })
+>>>>>>> Stashed changes
 
       pdf.save('Oleksii_Havryliuk_Lebenslauf.pdf')
 
