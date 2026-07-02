@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, Sparkle, Eye, GithubLogo, GridFour, Wrench, Lock } from "@phosphor-icons/react"
 import { ImageLightbox } from "@/components/ImageLightbox"
-import { GitHubRepoCard } from "@/components/GitHubRepoCard"
 import { profile } from "@/lib/profile"
 import graphGenerator from "@/assets/images/graph-generator.png"
 import funandball001 from "@/assets/images/funandball001.jpeg"
@@ -160,104 +159,88 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
         </div>
 
         <div className="mb-10 overflow-hidden rounded-xl border border-border/80 bg-gradient-to-br from-secondary/70 via-background to-background shadow-sm">
-          <div className="grid gap-0 lg:grid-cols-[1.35fr_0.95fr]">
-            <div className="p-5 sm:p-6 md:p-8">
-              <div className="mb-6 overflow-hidden rounded-lg border border-border/70 bg-muted">
-                <img
-                  src={graphGenerator}
-                  alt="Technischer Screenshot aus Moyva mit Fokus auf Weltgenerierung und Editor-Werkzeuge"
-                  className="h-52 w-full object-cover sm:h-64"
-                />
-              </div>
-
-              <div className="space-y-5">
-                <div className="flex flex-wrap items-center gap-2">
-                  <Badge variant="secondary" className="text-xs">
-                    Stärkstes aktuelles Projekt
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Unity / C#
-                  </Badge>
-                </div>
-
-                <div className="space-y-3">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
-                    Moyva
-                  </h3>
-                  <p className="text-base leading-relaxed text-foreground/80">
-                    Moyva ist mein stärkstes aktuelles Unity/C#-Projekt: ein rundenbasiertes Strategiespiel-Prototyp
-                    mit prozeduraler Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools sowie viel Debugging-,
-                    Refactoring- und Systemarbeit. An diesem Projekt lerne ich besonders viel über technische
-                    Zusammenhänge, saubere Strukturen und systematisches Denken.
-                  </p>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-lg border border-border/70 bg-background/80 p-4">
-                    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-                      <GridFour weight="fill" className="text-primary" />
-                      <span>Spielsysteme</span>
-                    </div>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      Rundenlogik, Tile-/Grid-Strukturen, Bewegungsregeln und technische Organisation mehrerer Systeme.
-                    </p>
-                  </div>
-                  <div className="rounded-lg border border-border/70 bg-background/80 p-4">
-                    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-                      <Wrench weight="fill" className="text-primary" />
-                      <span>Editor & Tools</span>
-                    </div>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      Eigene Unity-Editor-Werkzeuge, Generatoren und technische Hilfen für schnellere Iteration.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="rounded-lg border border-dashed border-border bg-background/70 p-4">
-                  <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
-                    <Lock weight="fill" className="text-primary" />
-                    <span>Öffentliche Showcase-Version</span>
-                  </div>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    Der vollständige Moyva-Projektcode bleibt privat, weil das Projekt Work-in-Progress-Systeme,
-                    Assets und interne Entwicklungsdateien enthält. Eine öffentliche technische Projektübersicht mit
-                    Screenshots, Dokumentation und ausgewählten Codebeispielen ist hier verfügbar.
-                  </p>
-                </div>
-
-                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                  <Button asChild size="lg" className="gap-2">
-                    <a href={profile.moyvaShowcaseUrl} target="_blank" rel="noopener noreferrer">
-                      Moyva Showcase öffnen
-                      <ArrowUpRight weight="bold" />
-                    </a>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="gap-2">
-                    <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer">
-                      GitHub ansehen
-                      <GithubLogo weight="fill" />
-                    </a>
-                  </Button>
-                  <Button size="lg" variant="outline" onClick={onViewMoyva} className="gap-2">
-                    Mehr über das Projekt
-                    <Eye weight="bold" />
-                  </Button>
-                </div>
-              </div>
+          <div className="p-5 sm:p-6 md:p-8">
+            <div className="mb-6 overflow-hidden rounded-lg border border-border/70 bg-muted">
+              <img
+                src={graphGenerator}
+                alt="Technischer Screenshot aus Moyva mit Fokus auf Weltgenerierung und Editor-Werkzeuge"
+                className="h-52 w-full object-cover sm:h-64"
+              />
             </div>
 
-            <div className="border-t border-border/70 bg-secondary/30 p-5 sm:p-6 md:p-8 lg:border-t-0 lg:border-l">
-              <GitHubRepoCard
-                owner="kruty1918dev-ai"
-                repo="moyva-showcase"
-                fallback={{
-                  name: "moyva-showcase",
-                  fullName: profile.moyvaShowcaseFullName,
-                  description:
-                    "Öffentliche technische Projektübersicht zu Moyva mit Screenshots, Dokumentation und ausgewählten Codebeispielen als Bewerbungs-Showcase.",
-                  htmlUrl: profile.moyvaShowcaseUrl,
-                }}
-              />
+            <div className="mx-auto max-w-4xl space-y-5">
+              <div className="flex flex-wrap items-center gap-2">
+                <Badge variant="secondary" className="text-xs">
+                  Stärkstes aktuelles Projekt
+                </Badge>
+                <Badge variant="outline" className="text-xs">
+                  Unity / C#
+                </Badge>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
+                  Moyva
+                </h3>
+                <p className="max-w-3xl text-base leading-relaxed text-foreground/80">
+                  Moyva ist mein stärkstes aktuelles Unity/C#-Projekt: ein rundenbasiertes Strategiespiel-Prototyp
+                  mit prozeduraler Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools sowie viel Debugging-,
+                  Refactoring- und Systemarbeit. An diesem Projekt lerne ich besonders viel über technische
+                  Zusammenhänge, saubere Strukturen und systematisches Denken.
+                </p>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg border border-border/70 bg-background/80 p-4">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                    <GridFour weight="fill" className="text-primary" />
+                    <span>Spielsysteme</span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    Rundenlogik, Tile-/Grid-Strukturen, Bewegungsregeln und technische Organisation mehrerer Systeme.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/70 bg-background/80 p-4">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                    <Wrench weight="fill" className="text-primary" />
+                    <span>Editor & Tools</span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    Eigene Unity-Editor-Werkzeuge, Generatoren und technische Hilfen für schnellere Iteration.
+                  </p>
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-dashed border-border bg-background/70 p-4">
+                <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                  <Lock weight="fill" className="text-primary" />
+                  <span>Öffentliche Showcase-Version</span>
+                </div>
+                <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
+                  Der vollständige Moyva-Projektcode bleibt privat, weil das Projekt Work-in-Progress-Systeme,
+                  Assets und interne Entwicklungsdateien enthält. Eine öffentliche technische Projektübersicht mit
+                  Screenshots, Dokumentation und ausgewählten Codebeispielen ist hier verfügbar.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Button asChild size="lg" className="gap-2">
+                  <a href={profile.moyvaShowcaseUrl} target="_blank" rel="noopener noreferrer">
+                    Moyva Showcase öffnen
+                    <ArrowUpRight weight="bold" />
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="gap-2">
+                  <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer">
+                    GitHub ansehen
+                    <GithubLogo weight="fill" />
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" onClick={onViewMoyva} className="gap-2">
+                  Mehr über das Projekt
+                  <Eye weight="bold" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>

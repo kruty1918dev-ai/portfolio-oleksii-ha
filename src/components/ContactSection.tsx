@@ -5,10 +5,9 @@ import { profile } from "@/lib/profile"
 
 interface ContactSectionProps {
   onViewCV: () => void
-  onViewContactPage?: () => void
 }
 
-export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionProps) {
+export function ContactSection({ onViewCV }: ContactSectionProps) {
   return (
     <section id="contact" className="py-16 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
@@ -67,7 +66,7 @@ export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionPr
           <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              onClick={onViewContactPage || (() => window.location.href = profile.emailHref)}
+              onClick={() => window.location.href = profile.emailHref}
               className="gap-2"
             >
               <EnvelopeSimple weight="fill" />

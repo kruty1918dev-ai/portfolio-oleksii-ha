@@ -14,7 +14,6 @@ import { CurrentLearningSection } from "@/components/CurrentLearningSection"
 import { DeutschSection } from "@/components/DeutschSection"
 import { ContactSection, Footer } from "@/components/ContactSection"
 import { CVPage } from "@/components/CVPage"
-import { ContactPage } from "@/components/ContactPage"
 import { MoyvaPage } from "@/components/MoyvaPage"
 import { FunAndBallPage } from "@/components/FunAndBallPage"
 import { Toaster } from "@/components/ui/sonner"
@@ -33,13 +32,12 @@ const pageTransition = {
 }
 
 function App() {
-    const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv' | 'contact' | 'moyva' | 'funandball'>('portfolio')
+    const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv' | 'moyva' | 'funandball'>('portfolio')
 
     useEffect(() => {
         const titles = {
             portfolio: `${profile.name} — IT-Ausbildung Bewerber im Raum Hannover`,
             cv: `Lebenslauf | ${profile.name}`,
-            contact: `Kontakt | ${profile.name}`,
             moyva: `Moyva Projekt | ${profile.name}`,
             funandball: `Fun and Ball | ${profile.name}`,
         }
@@ -60,19 +58,6 @@ function App() {
                         transition={pageTransition}
                     >
                         <CVPage onBack={() => setCurrentPage('portfolio')} />
-                    </motion.div>
-                )}
-
-                {currentPage === 'contact' && (
-                    <motion.div
-                        key="contact"
-                        variants={pageVariants}
-                        initial="initial"
-                        animate="animate"
-                        exit="exit"
-                        transition={pageTransition}
-                    >
-                        <ContactPage onBack={() => setCurrentPage('portfolio')} />
                     </motion.div>
                 )}
 
@@ -127,10 +112,7 @@ function App() {
                         <CurrentLearningSection />
                         <WhyMeSection />
                         <DeutschSection />
-                        <ContactSection 
-                            onViewCV={() => setCurrentPage('cv')} 
-                            onViewContactPage={() => setCurrentPage('contact')}
-                        />
+                        <ContactSection onViewCV={() => setCurrentPage('cv')} />
                         <Footer />
                     </motion.div>
                 )}

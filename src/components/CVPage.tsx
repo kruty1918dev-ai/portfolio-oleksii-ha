@@ -320,7 +320,7 @@ export function CVPage({ onBack }: CVPageProps) {
       panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen und arbeiten. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.3)
       panelRightY = smallText("Nächster Schritt: IT-Ausbildung im Raum Hannover", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.3)
 
-      const footerLineY = Math.max(281, Math.max(panelLeftY, panelRightY) + 3)
+      const footerLineY = 281
       pdf.setDrawColor(line)
       pdf.line(margin, footerLineY, pageWidth - margin, footerLineY)
       setText(7.2, muted)
