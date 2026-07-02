@@ -12,7 +12,7 @@ import jsPDF from "jspdf"
 interface CVPageProps {
   onBack: () => void
 }
-
+ 
 const loadSquareImageDataUrl = (src: string, size = 900): Promise<string> => {
   return new Promise((resolve, reject) => {
     const image = new Image()
