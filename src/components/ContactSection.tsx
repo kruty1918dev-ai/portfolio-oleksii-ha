@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { GithubLogo, EnvelopeSimple, FilePdf, FileText, MapPin } from "@phosphor-icons/react"
+import { GithubLogo, EnvelopeSimple, FileText, MapPin, Phone } from "@phosphor-icons/react"
+import { profile } from "@/lib/profile"
 
 interface ContactSectionProps {
   onViewCV: () => void
@@ -26,37 +27,38 @@ export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionPr
             <div className="flex items-center justify-center gap-3 text-foreground">
               <EnvelopeSimple size={24} weight="fill" className="text-primary" />
               <a 
-                href="mailto:kruty1918.dev@gmail.com"
+                href={profile.emailHref}
+                className="text-lg break-all hover:text-primary transition-colors"
+              >
+                {profile.email}
+              </a>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-3 text-foreground">
+              <Phone size={24} weight="fill" className="text-primary" />
+              <a
+                href={profile.phoneHref}
                 className="text-lg hover:text-primary transition-colors"
               >
-                kruty1918.dev@gmail.com
+                {profile.phoneDisplay}
               </a>
             </div>
             
             <div className="flex items-center justify-center gap-3 text-foreground">
               <MapPin size={24} weight="fill" className="text-primary" />
-              <span className="text-lg">Wismar, Deutschland — umzugsbereit in den Raum Hannover</span>
+              <span className="text-lg">{profile.locationDe} — {profile.relocationDe}</span>
             </div>
             
-            <div className="flex items-center justify-center gap-3 text-foreground">
+            <div className="flex flex-wrap items-center justify-center gap-3 text-foreground">
               <GithubLogo size={24} weight="fill" className="text-primary" />
-              <div className="flex gap-2 text-lg">
+              <div className="flex flex-wrap justify-center gap-2 text-lg">
                 <a 
-                  href="https://github.com/kruty1918dev-ai"
+                  href={profile.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  kruty1918dev-ai
-                </a>
-                <span>/</span>
-                <a 
-                  href="https://github.com/Kruty1918"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  Kruty1918
+                  {profile.githubHandle}
                 </a>
               </div>
             </div>
@@ -65,7 +67,7 @@ export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionPr
           <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              onClick={onViewContactPage || (() => window.location.href = "mailto:kruty1918.dev@gmail.com")}
+              onClick={onViewContactPage || (() => window.location.href = profile.emailHref)}
               className="gap-2"
             >
               <EnvelopeSimple weight="fill" />
@@ -83,17 +85,7 @@ export function ContactSection({ onViewCV, onViewContactPage }: ContactSectionPr
             <Button 
               size="lg"
               variant="outline"
-              disabled
-              title="PDF-Portfolio bald verfügbar"
-              className="gap-2 opacity-70"
-            >
-              <FilePdf weight="fill" />
-              PDF-Portfolio ansehen
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              onClick={() => window.open("https://github.com/kruty1918dev-ai", "_blank")}
+              onClick={() => window.open(profile.githubUrl, "_blank")}
               className="gap-2"
             >
               <GithubLogo weight="fill" />
@@ -111,10 +103,10 @@ export function Footer() {
     <footer className="py-8 px-6 bg-secondary/30 border-t border-border">
       <div className="max-w-6xl mx-auto text-center space-y-2">
         <p className="text-sm text-muted-foreground">
-          © 2026 Oleksii Havryliuk — Bewerber für eine IT-Ausbildung | C# • Unity • Linux • Hardware
+          © 2026 {profile.name} — Bewerber für eine IT-Ausbildung | C# • Unity • Linux • Hardware
         </p>
         <p className="text-xs text-muted-foreground/70 italic">
-          Diese Website wurde von Oleksii Havryliuk erstellt.
+          Diese Website wurde von {profile.name} erstellt.
         </p>
       </div>
     </footer>

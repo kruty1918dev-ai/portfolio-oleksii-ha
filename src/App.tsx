@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { HeroSection } from "@/components/HeroSection"
 import { AboutSection } from "@/components/AboutSection"
@@ -18,6 +18,7 @@ import { ContactPage } from "@/components/ContactPage"
 import { MoyvaPage } from "@/components/MoyvaPage"
 import { FunAndBallPage } from "@/components/FunAndBallPage"
 import { Toaster } from "@/components/ui/sonner"
+import { profile } from "@/lib/profile"
 
 const pageVariants = {
     initial: { opacity: 0, x: 50 },
@@ -33,6 +34,18 @@ const pageTransition = {
 
 function App() {
     const [currentPage, setCurrentPage] = useState<'portfolio' | 'cv' | 'contact' | 'moyva' | 'funandball'>('portfolio')
+
+    useEffect(() => {
+        const titles = {
+            portfolio: `${profile.name} — IT-Ausbildung Bewerber im Raum Hannover`,
+            cv: `Lebenslauf | ${profile.name}`,
+            contact: `Kontakt | ${profile.name}`,
+            moyva: `Moyva Projekt | ${profile.name}`,
+            funandball: `Fun and Ball | ${profile.name}`,
+        }
+
+        document.title = titles[currentPage]
+    }, [currentPage])
 
     return (
         <>
