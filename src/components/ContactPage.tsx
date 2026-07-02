@@ -4,8 +4,9 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
-import { ArrowLeft, PaperPlaneTilt, EnvelopeSimple, User, ChatText } from "@phosphor-icons/react"
+import { ArrowLeft, PaperPlaneTilt, EnvelopeSimple, User, ChatText, Phone, GithubLogo } from "@phosphor-icons/react"
 import { toast } from "sonner"
+import { profile } from "@/lib/profile"
 
 interface ContactPageProps {
   onBack: () => void
@@ -30,7 +31,7 @@ export function ContactPage({ onBack }: ContactPageProps) {
 
     setIsSubmitting(true)
 
-    const mailtoLink = `mailto:kruty1918.dev@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `${profile.emailHref}?subject=${encodeURIComponent(
       formData.subject || `Nachricht von ${formData.name}`
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nE-Mail: ${formData.email}\n\n${formData.message}`
@@ -76,7 +77,7 @@ export function ContactPage({ onBack }: ContactPageProps) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
           <Card className="text-center">
             <CardHeader>
               <div className="mx-auto mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -86,10 +87,27 @@ export function ContactPage({ onBack }: ContactPageProps) {
             </CardHeader>
             <CardContent>
               <a 
-                href="mailto:kruty1918.dev@gmail.com"
+                href={profile.emailHref}
+                className="text-sm break-all text-muted-foreground hover:text-primary transition-colors"
+              >
+                {profile.email}
+              </a>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center">
+            <CardHeader>
+              <div className="mx-auto mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <Phone size={24} weight="fill" className="text-primary" />
+              </div>
+              <CardTitle className="text-lg">Telefon</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <a
+                href={profile.phoneHref}
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                kruty1918.dev@gmail.com
+                {profile.phoneDisplay}
               </a>
             </CardContent>
           </Card>
@@ -103,7 +121,7 @@ export function ContactPage({ onBack }: ContactPageProps) {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Wismar, Deutschland — umzugsbereit in den Raum Hannover
+                {profile.locationDe} — {profile.relocationDe}
               </p>
             </CardContent>
           </Card>
@@ -111,17 +129,37 @@ export function ContactPage({ onBack }: ContactPageProps) {
           <Card className="text-center">
             <CardHeader>
               <div className="mx-auto mb-2 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <ChatText size={24} weight="fill" className="text-primary" />
+                <GithubLogo size={24} weight="fill" className="text-primary" />
               </div>
-              <CardTitle className="text-lg">Antwortzeit</CardTitle>
+              <CardTitle className="text-lg">GitHub</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Innerhalb von 24 Stunden
-              </p>
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                {profile.githubHandle}
+              </a>
             </CardContent>
           </Card>
         </div>
+
+        <Card className="mb-12 border-dashed">
+          <CardHeader>
+            <div className="flex items-center gap-2 text-primary">
+              <ChatText size={20} weight="fill" />
+              <CardTitle className="text-lg">Hinweis zur Kontaktaufnahme</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Für Bewerbungen ist mein Telefon öffentlich sichtbar. Am zuverlässigsten antworte ich per E-Mail;
+              Rückmeldungen zu Ausbildungsplätzen, Praktika und technischen Gesprächen beantworte ich zeitnah.
+            </p>
+          </CardContent>
+        </Card>
 
         <Card className="shadow-lg">
           <CardHeader>

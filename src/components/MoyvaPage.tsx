@@ -2,8 +2,10 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, BookOpen } from "@phosphor-icons/react"
+import { ArrowLeft, BookOpen, ArrowUpRight, GithubLogo, Lock } from "@phosphor-icons/react"
 import { ImageLightbox } from "@/components/ImageLightbox"
+import { GitHubRepoCard } from "@/components/GitHubRepoCard"
+import { profile } from "@/lib/profile"
 import moyva001 from "@/assets/images/moyva-scrins001.png"
 import moyva002 from "@/assets/images/moyva-scrins002.png"
 import moyva003 from "@/assets/images/moyva-scrins003.png"
@@ -68,28 +70,93 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
               <Badge variant="secondary" className="font-mono">ShaderLab</Badge>
               <Badge variant="secondary" className="font-mono">HLSL</Badge>
             </div>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button asChild className="gap-2">
+                <a href={profile.moyvaShowcaseUrl} target="_blank" rel="noopener noreferrer">
+                  Moyva Showcase öffnen
+                  <ArrowUpRight weight="bold" />
+                </a>
+              </Button>
+              <Button asChild variant="outline" className="gap-2">
+                <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer">
+                  GitHub ansehen
+                  <GithubLogo weight="fill" />
+                </a>
+              </Button>
+              <Button
+                variant="outline"
+                className="gap-2"
+                onClick={() => window.open("https://kruty1918dev-ai.github.io/moyva/#home", "_blank")}
+              >
+                <BookOpen weight="bold" />
+                Dokumentation öffnen
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+            <Card>
+              <CardHeader>
+                <CardTitle>Projektbeschreibung</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-foreground/80 leading-relaxed">
+                  Moyva ist mein stärkstes aktuelles Unity/C#-Projekt. Es handelt sich um einen Prototyp für ein
+                  2D Top-Down-Rundenstrategiespiel mit Fokus auf Spielsysteme, Wirtschaft, Einheiten und den Aufbau
+                  eines eigenen Königreichs.
+                </p>
+                <p className="text-foreground/80 leading-relaxed">
+                  Für mich ist das Projekt besonders wichtig, weil es mehrere technische Lernfelder zusammenführt:
+                  prozedurale Weltgenerierung, Grid-/Tile-Logik, eigene Unity-Editor-Tools, Debugging,
+                  Refactoring und technische Architektur. Genau daran sehe ich, wie sich mein Lernen in C#,
+                  Systemdenken und Problemanalyse Schritt für Schritt verbessert.
+                </p>
+                <div className="rounded-lg border border-dashed border-border bg-secondary/35 p-4">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                    <Lock weight="fill" className="text-primary" />
+                    <span>Öffentliche Projektübersicht</span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    Der vollständige Moyva-Projektcode bleibt privat, weil das Projekt Work-in-Progress-Systeme,
+                    Assets und interne Entwicklungsdateien enthält. Eine öffentliche technische Projektübersicht mit
+                    Screenshots, Dokumentation und ausgewählten Codebeispielen ist hier verfügbar.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <GitHubRepoCard
+              owner="kruty1918dev-ai"
+              repo="moyva-showcase"
+              fallback={{
+                name: "moyva-showcase",
+                fullName: profile.moyvaShowcaseFullName,
+                description:
+                  "Öffentliche technische Projektübersicht zu Moyva mit Screenshots, Dokumentation und ausgewählten Codebeispielen.",
+                htmlUrl: profile.moyvaShowcaseUrl,
+              }}
+            />
           </div>
 
           <Card>
             <CardHeader>
-              <CardTitle>Projektbeschreibung</CardTitle>
+              <CardTitle>Technische Schwerpunkte</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-foreground/80 leading-relaxed">
-                Moyva ist ein Prototyp eines 2D Top-Down-Rundenstrategiespiels, den ich in einem kleinen Zwei-Personen-Team 
-                größtenteils selbst entwickelt habe. Das Ziel des Spiels ist der Aufbau eines eigenen Königreichs, 
-                die Verwaltung von Wirtschaft und Einheiten sowie die Zerstörung des gegnerischen Königreichs.
-              </p>
-              <p className="text-foreground/80 leading-relaxed">
-                Aus technischer Sicht ist das Projekt für mich besonders interessant, weil es mehrere komplexe Systeme kombiniert. 
-                Ein besonderer Schwerpunkt lag auf der Weltgenerierung: Dafür habe ich ein eigenes graphbasiertes 
-                Generierungssystem mit nodebasiertem Editor entwickelt.
-              </p>
-              <p className="text-foreground/80 leading-relaxed">
-                Das Projekt ist plattformübergreifend für PC, Android und iOS ausgelegt und unterstützt Einzelspieler, 
-                Bot-Gegner, Mehrspieler, LAN sowie einen Sandbox-Modus. Moyva befindet sich aktuell im Prototyp-Stadium 
-                und dient als praktisches Beispiel für meine Arbeit mit C#, Unity, technischer Systementwicklung und Gameplay-Architektur.
-              </p>
+              <ul className="grid gap-3 md:grid-cols-2 text-foreground/80">
+                <li className="rounded-lg border border-border/70 bg-background p-4">
+                  Prozedurale Weltgenerierung mit eigenem graphbasiertem Generator und nodebasiertem Editor.
+                </li>
+                <li className="rounded-lg border border-border/70 bg-background p-4">
+                  Grid-/Tile-Logik für Spielfeld, Platzierung, Bewegung und technische Validierung.
+                </li>
+                <li className="rounded-lg border border-border/70 bg-background p-4">
+                  Unity-Editor-Tools, um Inhalte schneller zu testen, zu konfigurieren und weiterzuentwickeln.
+                </li>
+                <li className="rounded-lg border border-border/70 bg-background p-4">
+                  Laufende Debugging-, Refactoring- und Architekturarbeit an einem größeren, wachsenden Projekt.
+                </li>
+              </ul>
             </CardContent>
           </Card>
 
@@ -173,10 +240,12 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
               {currentCategory === 'gameplay' && (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {gameplayScreenshots.map((screenshot, index) => (
-                    <div 
+                    <button
+                      type="button"
                       key={index} 
-                      className="aspect-video overflow-hidden rounded-lg cursor-pointer group relative border border-border hover:border-accent transition-colors"
+                      className="aspect-video overflow-hidden rounded-lg cursor-pointer group relative border border-border hover:border-accent transition-colors text-left"
                       onClick={() => openLightbox(index)}
+                      aria-label={`Moyva Gameplay Screenshot ${index + 1} vergrößern`}
                     >
                       <img 
                         src={screenshot} 
@@ -184,7 +253,7 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
-                    </div>
+                    </button>
                   ))}
                 </div>
               )}
@@ -192,10 +261,12 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
               {currentCategory === 'tools' && (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {toolScreenshots.map((screenshot, index) => (
-                    <div 
+                    <button
+                      type="button"
                       key={index} 
-                      className="aspect-video overflow-hidden rounded-lg cursor-pointer group relative border border-border hover:border-accent transition-colors"
+                      className="aspect-video overflow-hidden rounded-lg cursor-pointer group relative border border-border hover:border-accent transition-colors text-left"
                       onClick={() => openLightbox(gameplayScreenshots.length + index)}
+                      aria-label={`Moyva Tool Screenshot ${index + 1} vergrößern`}
                     >
                       <img 
                         src={screenshot} 
@@ -203,7 +274,7 @@ export function MoyvaPage({ onBack }: MoyvaPageProps) {
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
-                    </div>
+                    </button>
                   ))}
                 </div>
               )}

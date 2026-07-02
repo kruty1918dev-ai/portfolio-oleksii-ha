@@ -1,3 +1,5 @@
+import { profile } from "@/lib/profile"
+
 export function generateCVData() {
   const cvContent = `
 LEBENSLAUF
@@ -5,24 +7,26 @@ LEBENSLAUF
 
 PERSÖNLICHE DATEN
 ───────────────────────────────────────────────────────────────
-Name:           Oleksii Havryliuk
+Name:           ${profile.name}
 Alter:          18 Jahre
-Wohnort:        Wismar, Deutschland — umzugsbereit in den Raum Hannover
-E-Mail:         kruty1918.dev@gmail.com
-GitHub:         github.com/kruty1918dev-ai
+Wohnort:        ${profile.locationDe} — ${profile.relocationDe}
+Telefon:        ${profile.phoneDisplay}
+E-Mail:         ${profile.email}
+GitHub:         ${profile.githubUrl}
+Portfolio:      ${profile.portfolioUrl}
 Aufenthalt:     Aufenthaltserlaubnis nach § 24 AufenthG
 
 
 BERUFSZIEL
 ───────────────────────────────────────────────────────────────
-Duale IT-Ausbildung im Raum Hannover ab 2026 oder 2027.
+Duale IT-Ausbildung im Raum Hannover.
 Besonders interessieren mich Systemintegration, Anwendungsentwicklung,
 digitale Vernetzung, IT-Systemelektronik und technische Problemlösung.
 
 
 ÜBER MICH
 ───────────────────────────────────────────────────────────────
-Ich heiße Oleksii Havryliuk, bin 18 Jahre alt und lebe derzeit in
+Ich heiße ${profile.name}, bin 18 Jahre alt und lebe derzeit in
 Wismar. Ich beschäftige mich mit eigenen Projekten in C#, Unity,
 prozeduraler Generierung und GitHub. Zusätzlich interessiere ich mich
 für Linux/Ubuntu, PC-Hardware, Netzwerke, Arduino, Elektronik und Löten.
@@ -31,8 +35,8 @@ für Linux/Ubuntu, PC-Hardware, Netzwerke, Arduino, Elektronik und Löten.
 TECHNISCHE FÄHIGKEITEN
 ───────────────────────────────────────────────────────────────
 • Programmiersprachen: C#, HTML, CSS, JavaScript
-• Frameworks & Tools: ASP.NET Core, Unity, Git/GitHub, Docker
-• Datenbanken: SQL / Datenbanken
+• Frameworks & Tools: ASP.NET Core Grundlagen, Unity, Git/GitHub, Docker
+• Datenbanken: SQL / Datenbank-Grundlagen
 • Systeme: Linux/Ubuntu, Windows, PC-Hardware
 • Technik: Fehleranalyse, Netzwerke, Arduino, Elektronik / Löten
 
@@ -40,22 +44,23 @@ TECHNISCHE FÄHIGKEITEN
 PROJEKTE
 ───────────────────────────────────────────────────────────────
 
-Moyva — Unity/C# Strategy Game Project
-──────────────────────────────────────
-Größeres Unity/C#-Projekt mit Fokus auf Spielsysteme, prozedurale
-Generierung, Editor-Tools, objektorientierte Programmierung und
-technische Architektur.
+Moyva
+───────────────────────────────────────────────────────────────
+Unity/C#-Projekt mit rundenbasierter Strategie, prozeduraler
+Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools, Debugging
+und Refactoring.
+Öffentliche technische Projektübersicht:
+${profile.moyvaShowcaseUrl}
 
 Arduino MP3 Player
-──────────────────
+───────────────────────────────────────────────────────────────
 Hardware- und Elektronik-Lernprojekt mit Display, Tastensteuerung,
 Lautstärkeregelung, Ladefunktion und Fehlersuche.
 
 Weitere Projekte
-────────────────
+───────────────────────────────────────────────────────────────
 Fun and Ball, 2D Tile Generator, 2D Hexagon Generator,
-Order Management System, Unity MonoSingleton System und
-Fun and Ball Website.
+Order Management System und Unity MonoSingleton System.
 
 
 ZEITLICHER WERDEGANG
@@ -63,34 +68,28 @@ ZEITLICHER WERDEGANG
 2024             Schulabschluss nach 11 Schuljahren in der Ukraine
 2025 - 2026      B1-Deutschkurs in Deutschland, Prüfung am 18.07. geplant
 Heute            Eigene Projekte mit C#, Unity, Git/GitHub und Technik
-2026/2027        Ziel: duale IT-Ausbildung im Raum Hannover
+Nächster Schritt IT-Ausbildung im Raum Hannover
 
 
 WARUM ICH?
 ───────────────────────────────────────────────────────────────
-✓ Praktische Erfahrung: Eigene Projekte mit C#, Unity und
-  Unity, Git/GitHub, Hardware und Arduino umgesetzt
-  
-✓ Technisches Interesse: Software, PC-Hardware, Linux/Ubuntu,
-  Netzwerke und Elektronik
-  
-✓ Lernbereitschaft: Ausbildung als Startpunkt für professionelles
-  Lernen im Unternehmen
-  
-✓ Ausdauer: Ruhiges und konzentriertes Arbeiten an technischen
-  Problemen
+✓ Praktische technische Projekte mit C#, Unity und Hardware
+✓ Interesse an Software, Systemen, Netzwerken und Elektronik
+✓ Lernbereitschaft und ruhige Fehlersuche
+✓ Motivation für eine langfristige Entwicklung im IT-Bereich
 
 
 KONTAKT
 ───────────────────────────────────────────────────────────────
-E-Mail:         kruty1918.dev@gmail.com
-GitHub:         github.com/kruty1918dev-ai
-Portfolio:      github.com/Kruty1918
-Standort:       Wismar, Deutschland — umzugsbereit in den Raum Hannover
+Telefon:        ${profile.phoneDisplay}
+E-Mail:         ${profile.email}
+GitHub:         ${profile.githubUrl}
+Portfolio:      ${profile.portfolioUrl}
+Standort:       ${profile.locationDe} — ${profile.relocationDe}
 
 
 ═══════════════════════════════════════════════════════════════
-Erstellt: ${new Date().toLocaleDateString('de-DE')}
+Erstellt: ${new Date().toLocaleDateString("de-DE")}
 `
 
   return cvContent.trim()
@@ -98,15 +97,15 @@ Erstellt: ${new Date().toLocaleDateString('de-DE')}
 
 export function downloadCV() {
   const cvContent = generateCVData()
-  const blob = new Blob([cvContent], { type: 'text/plain;charset=utf-8' })
+  const blob = new Blob([cvContent], { type: "text/plain;charset=utf-8" })
   const url = URL.createObjectURL(blob)
-  
-  const link = document.createElement('a')
+
+  const link = document.createElement("a")
   link.href = url
-  link.download = 'Oleksii_Havryliuk_Lebenslauf.txt'
+  link.download = "Oleksiy_Havryliuk_Lebenslauf.txt"
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
-  
+
   URL.revokeObjectURL(url)
 }

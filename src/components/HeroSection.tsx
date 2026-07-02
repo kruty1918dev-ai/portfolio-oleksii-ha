@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { GithubLogo, EnvelopeSimple, Briefcase, FilePdf, FileText } from "@phosphor-icons/react"
+import { GithubLogo, EnvelopeSimple, Briefcase, FileText } from "@phosphor-icons/react"
 import profilePhoto from "@/assets/images/Ich.png"
+import { profile } from "@/lib/profile"
 
 interface HeroSectionProps {
   onViewCV: () => void
@@ -19,7 +20,7 @@ export function HeroSection({ onViewCV }: HeroSectionProps) {
           <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-2xl">
             <img 
               src={profilePhoto} 
-              alt="Oleksii Havryliuk" 
+              alt={`Porträt von ${profile.name}`}
               className="w-full h-full object-cover"
             />
           </div>
@@ -27,10 +28,10 @@ export function HeroSection({ onViewCV }: HeroSectionProps) {
 
         <div className="space-y-3">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            Oleksii Havryliuk
+            {profile.name}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-semibold">
-            Bewerber für eine IT-Ausbildung im Raum Hannover
+            {profile.applicantTitle}
           </p>
         </div>
         
@@ -45,8 +46,8 @@ export function HeroSection({ onViewCV }: HeroSectionProps) {
             </p>
             <p>
               In eigenen Projekten beschäftige ich mich mit C#, Unity, prozeduraler Generierung, GitHub,
-              Linux/Ubuntu und technischer Fehlersuche. Zusätzlich interessiere ich mich für PC-Hardware,
-              Elektronik, Löten und Netzwerke.
+              Linux/Ubuntu, ASP.NET Core-Grundlagen und technischer Fehlersuche. Zusätzlich interessiere ich
+              mich für PC-Hardware, Elektronik, Löten, Netzwerke und SQL-/Datenbank-Grundlagen.
             </p>
             <p>
               Aktuell besuche ich einen B1-Deutschkurs. Die B1-Prüfung ist am 18.07. geplant. Mein Ziel ist B2
@@ -63,16 +64,6 @@ export function HeroSection({ onViewCV }: HeroSectionProps) {
           >
             <FileText weight="fill" />
             Lebenslauf ansehen
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            disabled
-            title="PDF-Portfolio bald verfügbar"
-            className="w-full sm:w-auto gap-2 opacity-70"
-          >
-            <FilePdf weight="fill" />
-            PDF-Portfolio ansehen
           </Button>
           <Button 
             size="lg" 
@@ -95,7 +86,7 @@ export function HeroSection({ onViewCV }: HeroSectionProps) {
           <Button 
             size="lg" 
             variant="outline"
-            onClick={() => window.open("https://github.com/kruty1918dev-ai", "_blank")}
+            onClick={() => window.open(profile.githubUrl, "_blank")}
             className="w-full sm:w-auto gap-2"
           >
             <GithubLogo weight="fill" />
