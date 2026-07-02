@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
 import { DownloadSimple, Copy, ArrowLeft, FilePdf } from "@phosphor-icons/react"
 import { toast } from "sonner"
 import { cvData } from "@/lib/cvData"
+import { profile } from "@/lib/profile"
 import profilePhoto from "@/assets/images/Ich.png"
 import { useEffect, useRef, useState } from "react"
 import QRCode from "qrcode"
@@ -46,8 +46,9 @@ const loadSquareImageDataUrl = (src: string, size = 900): Promise<string> => {
 export function CVPage({ onBack }: CVPageProps) {
   const qrCanvasRef = useRef<HTMLCanvasElement>(null)
   const cvContentRef = useRef<HTMLDivElement>(null)
-  const portfolioUrl = "https://portfolio-oleksii-ha--kruty1918dev-ai.github.app/"
+  const portfolioUrl = profile.portfolioUrl
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)
+  const sectionClassName = "space-y-3 rounded-lg border border-border/80 bg-secondary/10 p-4 sm:p-5"
 
   useEffect(() => {
     if (qrCanvasRef.current) {
@@ -62,7 +63,7 @@ export function CVPage({ onBack }: CVPageProps) {
         console.error('QR Code generation error:', err)
       })
     }
-  }, [])
+  }, [portfolioUrl])
 
   const handleDownloadCV = () => {
     try {
@@ -71,7 +72,7 @@ export function CVPage({ onBack }: CVPageProps) {
       
       const link = document.createElement('a')
       link.href = url
-      link.download = 'Oleksii_Havryliuk_Lebenslauf.txt'
+      link.download = 'Oleksiy_Havryliuk_Lebenslauf.txt'
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
@@ -195,7 +196,7 @@ export function CVPage({ onBack }: CVPageProps) {
       pdf.text("Lebenslauf", margin, leftY)
       leftY += 8
       leftY = safeText(
-        "Oleksii Havryliuk - Bewerber für eine IT-Ausbildung im Raum Hannover",
+        `${profile.name} - Bewerber für eine IT-Ausbildung im Raum Hannover`,
         margin,
         leftY,
         headerTextWidth,
@@ -207,9 +208,9 @@ export function CVPage({ onBack }: CVPageProps) {
       leftY += 3
 
       const headerInfoWidth = headerTextWidth
-      leftY = kv("Telefon", "+38 093 464 1796", margin, leftY, headerInfoWidth, 8.5)
-      leftY = kv("Adresse", "Kapitänspromenade 6, 23966 Wismar", margin, leftY, headerInfoWidth, 8.5)
-      leftY = kv("E-Mail", "kruty1918.dev@gmail.com", margin, leftY, headerInfoWidth, 8.5)
+      leftY = kv("Telefon", profile.phoneDisplay, margin, leftY, headerInfoWidth, 8.5)
+      leftY = kv("Standort", `${profile.locationDe} / ${profile.relocationDe}`, margin, leftY, headerInfoWidth, 8.5)
+      leftY = kv("E-Mail", profile.email, margin, leftY, headerInfoWidth, 8.5)
       leftY = kv("GitHub", "github.com/kruty1918dev-ai", margin, leftY, headerInfoWidth, 8.5)
 
       pdf.setDrawColor("#d1d5db")
@@ -227,12 +228,12 @@ export function CVPage({ onBack }: CVPageProps) {
 
       leftY = section("Persönliche Daten", margin, leftY, leftColumnWidth)
       leftY = kv("Geburtsdatum/-ort", "16.05.2008, Khmelnytskyi (Ukraine)", margin, leftY, leftColumnWidth)
-      leftY = kv("Wohnort", "Wismar, Deutschland - umzugsbereit in den Raum Hannover", margin, leftY, leftColumnWidth)
+      leftY = kv("Wohnort", `${profile.locationDe} - ${profile.relocationDe}`, margin, leftY, leftColumnWidth)
       leftY = kv("Staatsangehörigkeit", "Ukrainisch", margin, leftY, leftColumnWidth)
       leftY = kv("Aufenthalt", "Aufenthaltserlaubnis nach § 24 AufenthG", margin, leftY, leftColumnWidth)
 
       leftY = section("Kurzprofil", margin, leftY + 4, leftColumnWidth)
-      leftY = smallText("18-jähriger Bewerber aus der Ukraine mit praktischer Erfahrung in C#, Unity, Git/GitHub, Linux/Ubuntu, PC-Hardware und Arduino. Ich lerne am besten durch eigene Projekte und technische Fehlersuche.", margin, leftY, leftColumnWidth, 7.8)
+      leftY = smallText("18-jähriger Bewerber aus der Ukraine mit praktischen technischen Projekten in C#, Unity, Git/GitHub, Linux/Ubuntu, PC-Hardware und Arduino. Ich lerne besonders gut durch eigene Projekte, Debugging und technische Fehlersuche.", margin, leftY, leftColumnWidth, 7.8)
 
       leftY = section("Schulbildung & Deutsch", margin, leftY + 4, leftColumnWidth)
       setText(8.4, text, "bold")
@@ -262,7 +263,7 @@ export function CVPage({ onBack }: CVPageProps) {
       leftY = smallText("Lernbereit, zuverlässig, ruhig, ausdauernd, technisch interessiert.", margin, leftY + 1, leftColumnWidth, 8)
 
       rightY = section("Ausbildungsziel", rightColumnX, rightY, rightColumnWidth)
-      rightY = smallText("Ich suche eine duale IT-Ausbildung im Raum Hannover ab 2026 oder 2027. Besonders interessieren mich Systemintegration, Anwendungsentwicklung, digitale Vernetzung und IT-Systemelektronik.", rightColumnX, rightY, rightColumnWidth, 8.2)
+      rightY = smallText("Ich suche eine duale IT-Ausbildung im Raum Hannover. Besonders interessieren mich Systemintegration, Anwendungsentwicklung, digitale Vernetzung und IT-Systemelektronik.", rightColumnX, rightY, rightColumnWidth, 8.2)
       rightY = bullet("Fachinformatiker für Systemintegration", rightColumnX, rightY + 1, rightColumnWidth)
       rightY = bullet("Fachinformatiker für Anwendungsentwicklung", rightColumnX, rightY, rightColumnWidth)
       rightY = bullet("Fachinformatiker für Digitale Vernetzung", rightColumnX, rightY, rightColumnWidth)
@@ -270,9 +271,10 @@ export function CVPage({ onBack }: CVPageProps) {
 
       rightY = section("Praktische Projekte", rightColumnX, rightY + 4, rightColumnWidth)
       setText(8.4, text, "bold")
-      pdf.text("Moyva - Unity/C# Strategy Game Project", rightColumnX, rightY)
+      pdf.text("Moyva - Unity/C#-Projekt", rightColumnX, rightY)
       rightY += 4
-      rightY = smallText("Größeres Unity/C#-Projekt mit Spielsystemen, prozeduraler Generierung, Editor-Tools, objektorientierter Programmierung und technischer Architektur.", rightColumnX, rightY, rightColumnWidth, 8)
+      rightY = smallText("Mein stärkstes aktuelles Projekt: rundenbasierter Strategie-Prototyp mit prozeduraler Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools, Debugging und Refactoring.", rightColumnX, rightY, rightColumnWidth, 8)
+      rightY = smallText(`Showcase: ${profile.moyvaShowcaseUrl.replace("https://", "")}`, rightColumnX, rightY + 1, rightColumnWidth, 7.6, muted)
       setText(8.4, text, "bold")
       pdf.text("Arduino MP3 Player", rightColumnX, rightY + 1)
       rightY += 5
@@ -316,16 +318,16 @@ export function CVPage({ onBack }: CVPageProps) {
       pdf.text("Hannover & nächster Schritt", panelRightX, panelRightY)
       panelRightY += 5
       panelRightY = smallText("Ich möchte im Raum Hannover langfristig lernen, arbeiten und mich im IT-Bereich professionell entwickeln. Für einen passenden Ausbildungsplatz bin ich umzugsbereit.", panelRightX, panelRightY, panelColumnWidth - 4, 7.5)
-      panelRightY = kv("Verfügbarkeit", "Ausbildung ab 2026 oder 2027", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.5)
+      panelRightY = kv("Nächster Schritt", "IT-Ausbildung im Raum Hannover", panelRightX, panelRightY + 1, panelColumnWidth - 4, 7.5)
 
       pdf.setDrawColor(line)
       pdf.line(margin, 281, pageWidth - margin, 281)
       setText(7.2, muted)
-      pdf.text("Wismar, den 29.06.2026", margin, 286)
+      pdf.text("Wismar, den 02.07.2026", margin, 286)
       pdf.text(`Portfolio: ${portfolioUrl}`, pageWidth - margin, 285, { align: "right" })
       pdf.text("GitHub: github.com/kruty1918dev-ai", pageWidth - margin, 289, { align: "right" })
 
-      pdf.save('Oleksii_Havryliuk_Lebenslauf.pdf')
+      pdf.save('Oleksiy_Havryliuk_Lebenslauf.pdf')
 
       toast.success('PDF erfolgreich heruntergeladen')
     } catch (error) {
@@ -356,7 +358,7 @@ export function CVPage({ onBack }: CVPageProps) {
               Lebenslauf
             </h1>
             <p className="text-lg text-muted-foreground">
-              Oleksii Havryliuk — Bewerber für eine IT-Ausbildung im Raum Hannover
+              {profile.name} — Bewerber für eine IT-Ausbildung im Raum Hannover
             </p>
           </div>
 
@@ -390,177 +392,189 @@ export function CVPage({ onBack }: CVPageProps) {
             </Button>
           </div>
 
-          <Card className="p-4 md:p-10 bg-card/50 backdrop-blur overflow-x-auto">
+          <Card className="p-3 sm:p-4 md:p-6 bg-card/50 backdrop-blur">
             <div
               ref={cvContentRef}
               data-pdf-content="lebenslauf"
-              className="space-y-8 bg-white p-8 md:p-10 w-full md:w-[794px] md:max-w-none mx-auto shadow-sm"
+              className="mx-auto w-full max-w-5xl space-y-6 rounded-xl bg-white p-4 sm:p-6 md:p-8 shadow-sm"
             >
-              <div className="space-y-4">
-                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
-                  <div className="flex-1">
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Lebenslauf</h2>
-                    <div className="grid grid-cols-1 gap-3 text-sm">
-                      <div><span className="font-semibold">Name:</span> Oleksii Havryliuk</div>
-                      <div><span className="font-semibold">Telefon:</span> +38 093 464 1796</div>
-                      <div><span className="font-semibold">Adresse:</span> Kapitänspromenade 6, 23966 Wismar</div>
-                      <div><span className="font-semibold">E-Mail:</span> kruty1918.dev@gmail.com</div>
-                      <div><span className="font-semibold">GitHub:</span> github.com/kruty1918dev-ai</div>
+              <section className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+                <div className="space-y-4">
+                  <div>
+                    <h2 className="text-2xl font-bold text-foreground">Lebenslauf</h2>
+                    <p className="mt-2 text-sm sm:text-base text-muted-foreground">
+                      {profile.name} — Bewerber für eine IT-Ausbildung im Raum Hannover
+                    </p>
+                  </div>
+
+                  <div className="grid gap-3 sm:grid-cols-2 text-sm">
+                    <div className="rounded-lg border border-border/80 bg-secondary/10 p-4">
+                      <p className="font-semibold text-foreground">Telefon</p>
+                      <a href={profile.phoneHref} className="mt-1 block text-foreground/90 hover:text-primary">
+                        {profile.phoneDisplay}
+                      </a>
+                    </div>
+                    <div className="rounded-lg border border-border/80 bg-secondary/10 p-4">
+                      <p className="font-semibold text-foreground">E-Mail</p>
+                      <a href={profile.emailHref} className="mt-1 block break-all text-foreground/90 hover:text-primary">
+                        {profile.email}
+                      </a>
+                    </div>
+                    <div className="rounded-lg border border-border/80 bg-secondary/10 p-4">
+                      <p className="font-semibold text-foreground">GitHub</p>
+                      <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer" className="mt-1 block text-foreground/90 hover:text-primary">
+                        {profile.githubHandle}
+                      </a>
+                    </div>
+                    <div className="rounded-lg border border-border/80 bg-secondary/10 p-4">
+                      <p className="font-semibold text-foreground">Portfolio</p>
+                      <a href={profile.portfolioUrl} target="_blank" rel="noopener noreferrer" className="mt-1 block break-all text-foreground/90 hover:text-primary">
+                        {profile.portfolioUrl}
+                      </a>
                     </div>
                   </div>
-                  <div className="flex flex-col md:flex-row gap-4 items-center flex-shrink-0">
-                    <div className="flex-shrink-0">
-                      <img 
-                        src={profilePhoto} 
-                        alt="Oleksii Havryliuk" 
-                        className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg border-4 border-primary/20 shadow-lg"
-                      />
+                </div>
+
+                <div className="flex flex-col gap-4 sm:flex-row xl:flex-col xl:items-end">
+                  <img
+                    src={profilePhoto}
+                    alt={`Bewerbungsfoto von ${profile.name}`}
+                    className="h-32 w-32 sm:h-36 sm:w-36 xl:h-40 xl:w-40 object-cover rounded-lg border-4 border-primary/20 shadow-lg"
+                  />
+                  <div className="flex flex-col items-center gap-2 rounded-lg border border-border/80 bg-secondary/10 p-3">
+                    <div className="bg-white p-2 rounded-lg shadow-sm border border-primary/10">
+                      <canvas ref={qrCanvasRef} />
                     </div>
-                    <div className="flex flex-col items-center gap-2">
-                      <div className="bg-white p-2 rounded-lg shadow-md border-2 border-primary/10">
-                        <canvas ref={qrCanvasRef} />
-                      </div>
-                      <p className="text-xs text-muted-foreground text-center max-w-[160px]">
-                        Online-Portfolio
+                    <p className="text-xs text-muted-foreground text-center max-w-[160px]">
+                      Online-Portfolio
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <div className="grid gap-4 xl:grid-cols-2">
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Persönliche Daten</h3>
+                  <div className="space-y-2 text-sm text-foreground/90">
+                    <p><span className="font-semibold">Name:</span> {profile.name}</p>
+                    <p><span className="font-semibold">Geburtsdatum/-ort:</span> 16.05.2008, Khmelnytskyi (Ukraine)</p>
+                    <p><span className="font-semibold">Wohnort:</span> 23966 Wismar, Deutschland — {profile.relocationDe}</p>
+                    <p><span className="font-semibold">Staatsangehörigkeit:</span> Ukrainisch</p>
+                    <p><span className="font-semibold">Aufenthalt:</span> Aufenthaltserlaubnis nach § 24 AufenthG</p>
+                  </div>
+                </section>
+
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Kurzprofil</h3>
+                  <p className="text-sm leading-relaxed text-foreground/90">
+                    Motivierter Ausbildungskandidat mit praktischen technischen Projekten in C#, Unity,
+                    Git/GitHub, Linux/Ubuntu, PC-Hardware, Arduino und Netzwerken. Ich lerne besonders
+                    gut durch eigene Projekte, Debugging und technische Fehlersuche.
+                  </p>
+                </section>
+
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Schulbildung und Deutsch</h3>
+                  <div className="space-y-4 text-sm">
+                    <div>
+                      <p className="font-semibold">09/2014 - 05/2024</p>
+                      <p className="text-foreground/90">Sharivska Mittelschule</p>
+                      <p className="text-muted-foreground">
+                        Schulabschluss nach 11 Schuljahren. Die ukrainischen Schulunterlagen liegen in deutscher
+                        Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">09/2024 - 07/2025</p>
+                      <p className="text-foreground/90">Zierow Berufsschule</p>
+                      <p className="text-muted-foreground">Deutschförderung / sprachliche Vorbereitung, nicht benotet</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Deutsch</p>
+                      <p className="text-muted-foreground">
+                        Aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis zum Ausbildungsbeginn
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
 
-              <Separator />
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Ausbildungsziel</h3>
+                  <p className="text-sm leading-relaxed text-foreground/90">
+                    Ich suche eine duale IT-Ausbildung im Raum Hannover, besonders in den Bereichen
+                    Systemintegration, Anwendungsentwicklung, Digitale Vernetzung und IT-Systemelektronik.
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-sm text-foreground/90">
+                    <li>Fachinformatiker für Systemintegration</li>
+                    <li>Fachinformatiker für Anwendungsentwicklung</li>
+                    <li>Fachinformatiker für Digitale Vernetzung</li>
+                    <li>IT-Systemelektroniker</li>
+                  </ul>
+                </section>
 
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Persönliche Daten</h3>
-                <div className="text-sm space-y-1 text-foreground/90">
-                  <p><span className="font-semibold">Name:</span> Oleksii Havryliuk</p>
-                  <p><span className="font-semibold">Geburtsdatum/-ort:</span> 16.05.2008, Khmelnytskyi (Ukraine)</p>
-                  <p><span className="font-semibold">Wohnort:</span> 23966 Wismar, Deutschland — umzugsbereit in den Raum Hannover</p>
-                  <p><span className="font-semibold">Staatsangehörigkeit:</span> Ukrainisch</p>
-                  <p><span className="font-semibold">Aufenthalt:</span> Aufenthaltserlaubnis nach § 24 AufenthG</p>
-                  <p><span className="font-semibold">Eltern:</span> Natalia Havryliuk (Mutter)</p>
-                  <p><span className="font-semibold">Geschwister:</span> Taras, Tetiana, Karina, Nika</p>
-                </div>
-              </div>
-
-              <Separator />
-
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Schulbildung</h3>
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <p className="font-semibold">09/2024 – 07/2025</p>
-                    <p className="text-foreground/90">Zierow Berufsschule</p>
-                    <p className="text-muted-foreground">Deutschförderung / sprachliche Vorbereitung, nicht benotet</p>
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Praktische Projekte</h3>
+                  <div className="space-y-4 text-sm">
+                    <div>
+                      <p className="font-semibold">Moyva</p>
+                      <p className="text-foreground/90">
+                        Mein stärkstes aktuelles Unity/C#-Projekt: ein rundenbasierter Strategie-Prototyp mit
+                        prozeduraler Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools, Debugging und Refactoring.
+                      </p>
+                      <a
+                        href={profile.moyvaShowcaseUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-block text-primary hover:underline"
+                      >
+                        Öffentliche technische Projektübersicht ansehen
+                      </a>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Weitere Projekte</p>
+                      <ul className="list-disc list-inside space-y-1 text-foreground/90">
+                        <li>Arduino MP3 Player mit Display, Tastensteuerung und Fehlersuche</li>
+                        <li>Fun and Ball als weiteres Unity-Spielprojekt</li>
+                        <li>Order Management System mit ASP.NET Core, EF Core, SQLite und Docker</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-semibold">09/2014 - 05/2024</p>
-                    <p className="text-foreground/90">Sharivska Mittelschule</p>
-                    <p className="text-muted-foreground">Schulabschluss: Mittlerer Schulabschluss (Mai 2024)</p>
-                    <p className="text-muted-foreground">Die Schulunterlagen liegen in deutscher Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet.</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold">seit 11/2025</p>
-                    <p className="text-foreground/90">Integrationskurs Deutsch, Wismar</p>
-                    <p className="text-muted-foreground">B1-Prüfung am 18.07. geplant, Ziel: B2 bis zum Ausbildungsbeginn</p>
-                    <p className="text-muted-foreground">voraussichtliches Kursende: 07/2026</p>
-                  </div>
-                </div>
-              </div>
+                </section>
 
-              <Separator />
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Kenntnisse</h3>
+                  <div className="space-y-3 text-sm text-foreground/90">
+                    <div>
+                      <p className="font-semibold">Software und Entwicklung</p>
+                      <p>C#, Unity, Git/GitHub, ASP.NET Core Grundlagen, SQL-/Datenbank-Grundlagen</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Systeme und Technik</p>
+                      <p>Linux/Ubuntu, Terminal, PC-Hardware, Netzwerke, Arduino, Elektronik und Löten</p>
+                    </div>
+                  </div>
+                </section>
 
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Praktische Erfahrungen / Projekte</h3>
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <p className="font-semibold">Eigene Projekte im Bereich C# und Softwareentwicklung</p>
-                    <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
-                      <li>Arbeit an eigenen Projekten mit C#</li>
-                      <li>Interesse an Systemintegration, Anwendungsentwicklung, digitaler Vernetzung und technischer Problemlösung</li>
-                      <li>Beschäftigung mit GitHub, Linux/Ubuntu und modernen Entwicklungstools</li>
+                <section className={sectionClassName}>
+                  <h3 className="text-lg font-semibold text-foreground">Sprachen und Stärken</h3>
+                  <div className="space-y-3 text-sm text-foreground/90">
+                    <p><span className="font-semibold">Ukrainisch:</span> Muttersprache</p>
+                    <p><span className="font-semibold">Deutsch:</span> B1-Kurs, Ziel B2</p>
+                    <p><span className="font-semibold">Englisch:</span> Grundkenntnisse</p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>lernbereit</li>
+                      <li>zuverlässig</li>
+                      <li>ruhig</li>
+                      <li>ausdauernd</li>
+                      <li>technisch interessiert</li>
+                      <li>systematisches Denken</li>
                     </ul>
                   </div>
-                  <div>
-                    <p className="font-semibold">Game-Development-Projekte mit Unity</p>
-                    <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
-                      <li>Entwicklung eigener Spieleprojekte mit C# und Unity</li>
-                      <li>Arbeit an Gameplay-Logik und technischen Systemen</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="font-semibold">Backend-Lernprojekt</p>
-                    <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
-                      <li>Beschäftigung mit C#, ASP.NET Core, APIs, SQL und Grundlagen moderner Backend-Entwicklung</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="font-semibold">Hardware und technische Systeme</p>
-                    <ul className="list-disc list-inside space-y-1 text-foreground/90 ml-4">
-                      <li>Praktische Erfahrung mit PC-Hardware, Linux/Ubuntu, Netzwerken, Arduino, Elektronik und Löten</li>
-                    </ul>
-                  </div>
-                </div>
+                </section>
               </div>
 
-              <Separator />
-
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Kenntnisse</h3>
-                <div className="text-sm space-y-2">
-                  <div>
-                    <p className="font-semibold">Programmierkenntnisse:</p>
-                    <p className="text-foreground/90">C# (gute Grundkenntnisse), HTML/CSS/JavaScript (Grundkenntnisse)</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold">IT-Kenntnisse:</p>
-                    <p className="text-foreground/90">GitHub, Linux/Ubuntu, Visual Studio, Visual Studio Code, Unity, PC-Hardware, Arduino, Netzwerke</p>
-                  </div>
-                </div>
-              </div>
-
-              <Separator />
-
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Sprachkenntnisse</h3>
-                <div className="text-sm space-y-1 text-foreground/90">
-                  <p><span className="font-semibold">Ukrainisch:</span> Muttersprache</p>
-                  <p><span className="font-semibold">Deutsch:</span> aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn</p>
-                  <p><span className="font-semibold">Englisch:</span> Grundkenntnisse</p>
-                </div>
-              </div>
-
-              <Separator />
-
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Persönliche Stärken</h3>
-                <ul className="list-disc list-inside space-y-1 text-sm text-foreground/90 ml-4">
-                  <li>lernbereit</li>
-                  <li>zuverlässig</li>
-                  <li>freundlich</li>
-                  <li>ruhig</li>
-                  <li>ausdauernd</li>
-                  <li>technisches Interesse</li>
-                </ul>
-              </div>
-
-              <Separator />
-
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-foreground">Interessen</h3>
-                <ul className="list-disc list-inside space-y-1 text-sm text-foreground/90 ml-4">
-                  <li>Softwareentwicklung</li>
-                  <li>Backend-Entwicklung</li>
-                  <li>Game Development</li>
-                  <li>Linux/Ubuntu, PC-Hardware und Elektronik</li>
-                  <li>eigene IT-Projekte</li>
-                </ul>
-              </div>
-
-              <Separator />
-
-              <div className="text-sm text-muted-foreground text-center pt-4">
-                <p>Wismar, den 29.06.2026</p>
+              <div className="pt-2 text-center text-sm text-muted-foreground">
+                <p>Wismar, den 02.07.2026</p>
               </div>
             </div>
           </Card>

@@ -1,90 +1,85 @@
+import { profile } from "@/lib/profile"
+
 export const cvData = {
   fullText: `Lebenslauf
 
-Oleksii Havryliuk
-Kapitänspromenade 6
-23966 Wismar
-Telefon: +38 093 464 1796
-E-Mail: kruty1918.dev@gmail.com
-GitHub: github.com/kruty1918dev-ai
+${profile.name}
+Telefon: ${profile.phoneDisplay}
+E-Mail: ${profile.email}
+GitHub: ${profile.githubUrl}
+Portfolio: ${profile.portfolioUrl}
+Standort: ${profile.locationDe} — ${profile.relocationDe}
 
 Persönliche Daten
 
-Name: Oleksii Havryliuk
+Name: ${profile.name}
 Geburtsdatum/-ort: 16.05.2008, Khmelnytskyi (Ukraine)
-Wohnort: 23966 Wismar, Deutschland — umzugsbereit in den Raum Hannover
+Wohnort: 23966 Wismar, Deutschland — ${profile.relocationDe}
 Staatsangehörigkeit: Ukrainisch
 Aufenthalt: Aufenthaltserlaubnis nach § 24 AufenthG
-Eltern: Natalia Havryliuk (Mutter)
-Geschwister: Taras, Tetiana, Karina, Nika
 
-Schulbildung
+Kurzprofil
 
-09/2024 – 07/2025
-Zierow Berufsschule
-Deutschförderung / sprachliche Vorbereitung, nicht benotet
+Motivierter Bewerber für eine IT-Ausbildung mit praktischen technischen Projekten in C#, Unity, Git/GitHub, Linux/Ubuntu, PC-Hardware, Arduino und Netzwerken. Ich lerne besonders gut durch eigene Projekte, Debugging und technische Fehlersuche.
+
+Schulbildung und Deutsch
 
 09/2014 - 05/2024
 Sharivska Mittelschule
-Schulabschluss: Mittlerer Schulabschluss (Mai 2024)
-Die Schulunterlagen liegen in deutscher Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet.
+Schulabschluss nach 11 Schuljahren. Die ukrainischen Schulunterlagen liegen in deutscher Übersetzung vor. Die Bewertung in Niedersachsen wird vorbereitet.
 
-seit 11/2025
-Integrationskurs Deutsch, Wismar
-B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn
-voraussichtliches Kursende: 07/2026
+09/2024 - 07/2025
+Zierow Berufsschule
+Deutschförderung / sprachliche Vorbereitung, nicht benotet
 
-Praktische Erfahrungen / Projekte
+Deutsch
+Aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis zum Ausbildungsbeginn
 
-Eigene Projekte im Bereich C# und Softwareentwicklung
+Ausbildungsziel
 
-    Arbeit an eigenen Projekten mit C#
-    Interesse an Systemintegration, Anwendungsentwicklung, digitaler Vernetzung und technischer Problemlösung
-    Beschäftigung mit GitHub, Linux/Ubuntu und modernen Entwicklungstools
+Duale IT-Ausbildung im Raum Hannover, besonders in den Bereichen:
+- Fachinformatiker für Systemintegration
+- Fachinformatiker für Anwendungsentwicklung
+- Fachinformatiker für Digitale Vernetzung
+- IT-Systemelektroniker
 
-Game-Development-Projekte mit Unity
+Praktische Projekte
 
-    Entwicklung eigener Spieleprojekte mit C# und Unity
-    Arbeit an Gameplay-Logik und technischen Systemen
+Moyva
+Mein stärkstes aktuelles Unity/C#-Projekt: ein rundenbasiertes Strategiespiel-Prototyp mit prozeduraler Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools, Debugging und Refactoring.
+Öffentliche technische Projektübersicht:
+${profile.moyvaShowcaseUrl}
 
-Backend-Lernprojekt
+Arduino MP3 Player
+Hardware- und Elektronik-Lernprojekt mit Display, Tastensteuerung, Lautstärkeregelung, Ladefunktion und Fehlersuche.
 
-    Beschäftigung mit C#, ASP.NET Core, APIs, SQL und Grundlagen moderner Backend-Entwicklung
-
-Hardware und technische Systeme
-
-    Praktische Erfahrung mit PC-Hardware, Linux/Ubuntu, Netzwerken, Arduino, Elektronik und Löten
+Weitere Lernprojekte
+- Fun and Ball: Unity-Spielprojekt mit Gameplay-Logik
+- 2D Tile / Hex Generator: technische Prototypen zur prozeduralen Generierung
+- Order Management System: C#, ASP.NET Core, EF Core, SQLite, Docker
 
 Kenntnisse
 
-Programmierkenntnisse:
-C# (gute Grundkenntnisse), HTML/CSS/JavaScript (Grundkenntnisse)
-
-IT-Kenntnisse:
-GitHub, Linux/Ubuntu, Visual Studio, Visual Studio Code, Unity, PC-Hardware, Arduino, Netzwerke
+- C#, Unity, Git/GitHub
+- Linux/Ubuntu, Terminal, Fehlersuche
+- ASP.NET Core Grundlagen
+- SQL- und Datenbank-Grundlagen
+- PC-Hardware, Netzwerke, Arduino, Elektronik und Löten
 
 Sprachkenntnisse
 
 Ukrainisch: Muttersprache
-Deutsch: aktuell B1-Deutschkurs, B1-Prüfung am 18.07. geplant, Ziel B2 bis Ausbildungsbeginn
+Deutsch: B1-Kurs, Ziel B2
 Englisch: Grundkenntnisse
 
 Persönliche Stärken
 
-    lernbereit
-    zuverlässig
-    freundlich
-    ruhig
-    ausdauernd
-    technisches Interesse
+- lernbereit
+- zuverlässig
+- ruhig
+- ausdauernd
+- technisches Interesse
+- systematisches Denken
 
-Interessen
-
-    Softwareentwicklung
-    Backend-Entwicklung
-    Game Development
-    Linux/Ubuntu, PC-Hardware und Elektronik
-    eigene IT-Projekte
-
-Wismar, den 29.06.2026`
+Wismar, den 02.07.2026`
 }

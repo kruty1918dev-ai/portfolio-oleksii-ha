@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { profile } from "@/lib/profile"
 
 export function AboutSection() {
   const { ref, isVisible } = useScrollAnimation()
@@ -19,7 +20,7 @@ export function AboutSection() {
         </h2>
         <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
           <p>
-            Ich heiße Oleksii Havryliuk, bin 18 Jahre alt und komme aus der Ukraine. Derzeit lebe ich in
+            Ich heiße {profile.name}, bin 18 Jahre alt und komme aus der Ukraine. Derzeit lebe ich in
             Wismar und suche eine duale IT-Ausbildung im Raum Hannover.
           </p>
           <p>
@@ -30,7 +31,7 @@ export function AboutSection() {
           <p>
             In meiner Freizeit arbeite ich an eigenen Projekten mit C#, Unity und GitHub. Mein stärkstes
             aktuelles Projekt ist „Moyva“, ein größeres Unity/C#-Projekt mit Fokus auf Spielsysteme,
-            prozedurale Generierung, Editor-Tools und technische Architektur.
+            prozedurale Generierung, Editor-Tools, Grid-Logik und technische Architektur.
           </p>
           <p>
             Neben Software interessiere ich mich auch für Linux/Ubuntu, PC-Hardware, Elektronik und Löten. Ich
@@ -41,6 +42,10 @@ export function AboutSection() {
             Ich weiß, dass eine Ausbildung der Anfang meines beruflichen Weges ist. Mein Ziel ist es, meine
             praktischen Erfahrungen in einem Unternehmen professionell weiterzuentwickeln, mein Deutsch weiter
             zu verbessern und langfristig im IT-Bereich zu arbeiten.
+          </p>
+          <p>
+            Meine ukrainischen Schulunterlagen liegen bereits in deutscher Übersetzung vor. Die Bewertung in
+            Niedersachsen wird vorbereitet.
           </p>
         </div>
       </div>

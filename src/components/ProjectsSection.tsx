@@ -2,8 +2,10 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowUpRight, Sparkle, Eye } from "@phosphor-icons/react"
+import { ArrowUpRight, Sparkle, Eye, GithubLogo, GridFour, Wrench, Lock } from "@phosphor-icons/react"
 import { ImageLightbox } from "@/components/ImageLightbox"
+import { GitHubRepoCard } from "@/components/GitHubRepoCard"
+import { profile } from "@/lib/profile"
 import graphGenerator from "@/assets/images/graph-generator.png"
 import funandball001 from "@/assets/images/funandball001.jpeg"
 import funandball002 from "@/assets/images/funandball002.jpeg"
@@ -27,38 +29,19 @@ interface Project {
   buttonIcon?: React.ReactNode
   image?: string
   images?: string[]
+  imageAlt?: string
 }
 
-const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): Project[] => [
-  {
-    title: "Moyva — Unity/C# Strategy Game Project",
-    category: "Größeres eigenes Projekt / Unity / C#",
-    description: "Ein größeres Unity/C#-Projekt mit Fokus auf Spielsysteme, prozedurale Generierung, Editor-Tools, objektorientierte Programmierung und technische Architektur. In diesem Projekt arbeite ich an komplexeren Systemen, Generatoren, Datenstrukturen und technischen Lösungen für ein strategisches Spiel.",
-    learnings: [
-      "Systemarchitektur in C#",
-      "objektorientierte Programmierung",
-      "Unity Editor Tools",
-      "prozedurale Generierung",
-      "Debugging und technische Problemlösung",
-      "Arbeit mit Git/GitHub"
-    ],
-    technologies: ["C#", "Unity", "Editor Tools", "Procedural Generation", "Systemarchitektur", "GitHub"],
-    status: "Eigenes Projekt",
-    featured: true,
-    customAction: onViewMoyva,
-    buttonText: "Projekt ansehen",
-    buttonIcon: <Eye weight="bold" />,
-    image: graphGenerator
-  },
+const createProjects = (onViewFunAndBall: () => void): Project[] => [
   {
     title: "Arduino MP3 Player",
     category: "Hardware- und Elektronik-Lernprojekt",
     description: "Ein stationärer MP3-Player auf Arduino-Basis mit Display, Lautstärkeregelung, Ladefunktion und Tasten zur Steuerung. Ziel des Projekts war es, praktische Erfahrung mit Elektronik, Verdrahtung, Komponenten, Bedienlogik und Fehlersuche zu sammeln.",
     technologies: ["Arduino", "Elektronik", "Löten", "Display", "Tastensteuerung", "Fehlersuche"],
     status: "Hardware-Lernprojekt",
-    buttonText: "Dokumentation bald verfügbar",
     // TODO_REPLACE_IMAGE: durch echtes Arduino-/Elektronik-Projektfoto ersetzen.
-    image: "https://images.unsplash.com/photo-1553406830-ef2513450d76?w=800&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1553406830-ef2513450d76?w=800&h=400&fit=crop",
+    imageAlt: "Arduino-Lernprojekt mit Elektronikbauteilen und Bedienoberfläche"
   },
   {
     title: "Fun and Ball",
@@ -69,7 +52,8 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     customAction: onViewFunAndBall,
     buttonText: "Projekt ansehen",
     buttonIcon: <Eye weight="bold" />,
-    images: [funandball001, funandball002, funandball003, funandball004, funandball005, funandball006]
+    images: [funandball001, funandball002, funandball003, funandball004, funandball005, funandball006],
+    imageAlt: "Screenshots aus dem Unity-Spielprojekt Fun and Ball"
   },
   {
     title: "2D Tile Generator",
@@ -79,7 +63,8 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     status: "Unity Technical Project / World Generation",
     link: "https://github.com/Kruty1918/2D-Tile-Generator",
     buttonText: "Auf GitHub ansehen",
-    image: moyva001
+    image: moyva001,
+    imageAlt: "Screenshot eines Unity-Prototyps zur prozeduralen Tile-Weltgenerierung"
   },
   {
     title: "2D Hexagon Generator",
@@ -90,7 +75,8 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     link: "https://github.com/Kruty1918/2D_Hexagon_Generator_Video_Tutorial",
     buttonText: "Auf GitHub ansehen",
     // TODO_REPLACE_IMAGE: durch echtes Grid-/Generator-Screenshot ersetzen.
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=400&fit=crop",
+    imageAlt: "Abstrakte Darstellung eines technischen Grid- und Generator-Prototyps"
   },
   {
     title: "Order Management System",
@@ -101,7 +87,8 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     link: "https://github.com/kruty1918dev-ai/order-management-system",
     buttonText: "Auf GitHub ansehen",
     // TODO_REPLACE_IMAGE: durch echtes Backend-/API-Screenshot ersetzen.
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop",
+    imageAlt: "Backend-Lernprojekt mit API- und Datenbankbezug"
   },
   {
     title: "Unity MonoSingleton System",
@@ -112,7 +99,8 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     link: "https://github.com/Kruty1918/Unity-MonoSingleton-System",
     buttonText: "Auf GitHub ansehen",
     // TODO_REPLACE_IMAGE: durch echtes Unity-Architecture-/Code-Screenshot ersetzen.
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&h=400&fit=crop",
+    imageAlt: "Codeansicht eines Unity-Utilities zur Architekturunterstützung"
   },
   {
     title: "Fun and Ball Website",
@@ -123,7 +111,8 @@ const createProjects = (onViewMoyva: () => void, onViewFunAndBall: () => void): 
     link: "https://fun-and-ball.web.app/",
     buttonText: "Website ansehen",
     // TODO_REPLACE_IMAGE: durch echtes Website-Screenshot ersetzen.
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop",
+    imageAlt: "Beispielhafte Webseitenansicht für das Fun and Ball Web-Projekt"
   }
 ]
 
@@ -137,7 +126,7 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
   const [lightboxImages, setLightboxImages] = useState<string[]>([])
   const [lightboxInitialIndex, setLightboxInitialIndex] = useState(0)
 
-  const projects = createProjects(onViewMoyva, onViewFunAndBall)
+  const projects = createProjects(onViewFunAndBall)
 
   const openLightbox = (images: string[], initialIndex: number = 0) => {
     setLightboxImages(images)
@@ -170,17 +159,125 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
           </div>
         </div>
 
+        <div className="mb-10 overflow-hidden rounded-xl border border-border/80 bg-gradient-to-br from-secondary/70 via-background to-background shadow-sm">
+          <div className="grid gap-0 lg:grid-cols-[1.35fr_0.95fr]">
+            <div className="p-5 sm:p-6 md:p-8">
+              <div className="mb-6 overflow-hidden rounded-lg border border-border/70 bg-muted">
+                <img
+                  src={graphGenerator}
+                  alt="Technischer Screenshot aus Moyva mit Fokus auf Weltgenerierung und Editor-Werkzeuge"
+                  className="h-52 w-full object-cover sm:h-64"
+                />
+              </div>
+
+              <div className="space-y-5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <Badge variant="secondary" className="text-xs">
+                    Stärkstes aktuelles Projekt
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    Unity / C#
+                  </Badge>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
+                    Moyva
+                  </h3>
+                  <p className="text-base leading-relaxed text-foreground/80">
+                    Moyva ist mein stärkstes aktuelles Unity/C#-Projekt: ein rundenbasiertes Strategiespiel-Prototyp
+                    mit prozeduraler Weltgenerierung, Grid-/Tile-Logik, Unity-Editor-Tools sowie viel Debugging-,
+                    Refactoring- und Systemarbeit. An diesem Projekt lerne ich besonders viel über technische
+                    Zusammenhänge, saubere Strukturen und systematisches Denken.
+                  </p>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <div className="rounded-lg border border-border/70 bg-background/80 p-4">
+                    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                      <GridFour weight="fill" className="text-primary" />
+                      <span>Spielsysteme</span>
+                    </div>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Rundenlogik, Tile-/Grid-Strukturen, Bewegungsregeln und technische Organisation mehrerer Systeme.
+                    </p>
+                  </div>
+                  <div className="rounded-lg border border-border/70 bg-background/80 p-4">
+                    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                      <Wrench weight="fill" className="text-primary" />
+                      <span>Editor & Tools</span>
+                    </div>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Eigene Unity-Editor-Werkzeuge, Generatoren und technische Hilfen für schnellere Iteration.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rounded-lg border border-dashed border-border bg-background/70 p-4">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+                    <Lock weight="fill" className="text-primary" />
+                    <span>Öffentliche Showcase-Version</span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    Der vollständige Moyva-Projektcode bleibt privat, weil das Projekt Work-in-Progress-Systeme,
+                    Assets und interne Entwicklungsdateien enthält. Eine öffentliche technische Projektübersicht mit
+                    Screenshots, Dokumentation und ausgewählten Codebeispielen ist hier verfügbar.
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  <Button asChild size="lg" className="gap-2">
+                    <a href={profile.moyvaShowcaseUrl} target="_blank" rel="noopener noreferrer">
+                      Moyva Showcase öffnen
+                      <ArrowUpRight weight="bold" />
+                    </a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="gap-2">
+                    <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer">
+                      GitHub ansehen
+                      <GithubLogo weight="fill" />
+                    </a>
+                  </Button>
+                  <Button size="lg" variant="outline" onClick={onViewMoyva} className="gap-2">
+                    Mehr über das Projekt
+                    <Eye weight="bold" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-t border-border/70 bg-secondary/30 p-5 sm:p-6 md:p-8 lg:border-t-0 lg:border-l">
+              <GitHubRepoCard
+                owner="kruty1918dev-ai"
+                repo="moyva-showcase"
+                fallback={{
+                  name: "moyva-showcase",
+                  fullName: profile.moyvaShowcaseFullName,
+                  description:
+                    "Öffentliche technische Projektübersicht zu Moyva mit Screenshots, Dokumentation und ausgewählten Codebeispielen als Bewerbungs-Showcase.",
+                  htmlUrl: profile.moyvaShowcaseUrl,
+                }}
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
           {projects.map((project) => (
             <Card key={project.title} className={`flex flex-col h-full hover:shadow-md transition-shadow duration-200 overflow-hidden ${project.featured ? "ring-2 ring-primary/20" : ""}`}>
               {project.images && project.images.length > 0 ? (
-                <div className="w-full h-48 overflow-hidden bg-muted cursor-pointer relative" onClick={() => openLightbox(project.images!)}>
+                <button
+                  type="button"
+                  className="w-full h-48 overflow-hidden bg-muted cursor-pointer relative text-left"
+                  onClick={() => openLightbox(project.images!)}
+                  aria-label={`${project.title} Screenshots vergrößern`}
+                >
                   <div className="grid grid-cols-3 grid-rows-2 h-full gap-0.5">
                     {project.images.map((img, index) => (
                       <div key={index} className="relative overflow-hidden group">
                         <img 
                           src={img} 
-                          alt={`${project.title} ${index + 1}`}
+                          alt={project.imageAlt || `${project.title} Screenshot ${index + 1}`}
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                       </div>
@@ -189,21 +286,23 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
                   <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-200 flex items-center justify-center opacity-0 hover:opacity-100">
                     <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Klicken zum Vergrößern</span>
                   </div>
-                </div>
+                </button>
               ) : project.image ? (
-                <div 
-                  className="w-full h-48 overflow-hidden bg-muted cursor-pointer group relative" 
+                <button
+                  type="button"
+                  className="w-full h-48 overflow-hidden bg-muted cursor-pointer group relative text-left"
                   onClick={() => openLightbox([project.image!])}
+                  aria-label={`${project.title} Bild vergrößern`}
                 >
                   <img 
                     src={project.image} 
-                    alt={project.title}
+                    alt={project.imageAlt || project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200 flex items-center justify-center opacity-0 group-hover:opacity-100">
                     <span className="text-white text-sm font-semibold bg-black/50 px-3 py-1 rounded-full">Klicken zum Vergrößern</span>
                   </div>
-                </div>
+                </button>
               ) : null}
               <CardHeader className="min-h-28">
                 <div className="flex flex-wrap items-center gap-2">
@@ -240,23 +339,24 @@ export function ProjectsSection({ onViewMoyva, onViewFunAndBall }: ProjectsSecti
                   ))}
                 </div>
               </CardContent>
-              <CardFooter>
-                <Button 
-                  variant="outline" 
-                  className="w-full gap-2"
-                  disabled={!project.customAction && !project.link}
-                  onClick={() => {
-                    if (project.customAction) {
-                      project.customAction()
-                    } else if (project.link) {
-                      window.open(project.link, "_blank")
-                    }
-                  }}
-                >
-                  <span>{project.buttonText || "Ansehen"}</span>
-                  {project.buttonIcon || <ArrowUpRight weight="bold" />}
-                </Button>
-              </CardFooter>
+              {project.customAction || project.link ? (
+                <CardFooter>
+                  <Button 
+                    variant="outline" 
+                    className="w-full gap-2"
+                    onClick={() => {
+                      if (project.customAction) {
+                        project.customAction()
+                      } else if (project.link) {
+                        window.open(project.link, "_blank")
+                      }
+                    }}
+                  >
+                    <span>{project.buttonText || "Ansehen"}</span>
+                    {project.buttonIcon || <ArrowUpRight weight="bold" />}
+                  </Button>
+                </CardFooter>
+              ) : null}
             </Card>
           ))}
         </div>
