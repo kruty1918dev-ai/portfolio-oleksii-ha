@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-20",
+  "browser": "Chromium",
+  "base": "http://127.0.0.1:8765",
+  "javascript_disabled": [
+    {
+      "lang": "en",
+      "width": 320,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "en",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "uk",
+      "width": 320,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "uk",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "uk",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "uk",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "uk",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "de",
+      "width": 320,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "de",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "de",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    },
+    {
+      "lang": "de",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "sections": 14
+    }
+  ],
+  "accessibility": [
+    {
+      "lang": "en",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 50
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [],
+      "passes": 50
+    },
+    {
+      "lang": "uk",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 50
+    },
+    {
+      "lang": "uk",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [],
+      "passes": 50
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 50
+    },
+    {
+      "lang": "de",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [],
+      "passes": 50
+    }
+  ],
+  "interaction": [
+    "Tab reveals skip link; Enter focuses main",
+    "Enter expands mobile contents",
+    "Contents link navigates to rights",
+    "EN → DE → UK → EN navigation works",
+    "Reduced motion requested; no animation or sticky mobile controls"
+  ],
+  "browser_version": "154.0.8037.57",
+  "network": [
+    {
+      "lang": "en",
+      "origins": [
+        "http://127.0.0.1:8765"
+      ],
+      "unique_paths": [
+        "http://127.0.0.1:8765/quiet-camp/privacy/",
+        "http://127.0.0.1:8765/quiet-camp/privacy/brand-icon.png",
+        "http://127.0.0.1:8765/quiet-camp/privacy/policy.css"
+      ],
+      "cookies": 0
+    },
+    {
+      "lang": "uk",
+      "origins": [
+        "http://127.0.0.1:8765"
+      ],
+      "unique_paths": [
+        "http://127.0.0.1:8765/quiet-camp/privacy/brand-icon.png",
+        "http://127.0.0.1:8765/quiet-camp/privacy/policy.css",
+        "http://127.0.0.1:8765/quiet-camp/privacy/uk/"
+      ],
+      "cookies": 0
+    },
+    {
+      "lang": "de",
+      "origins": [
+        "http://127.0.0.1:8765"
+      ],
+      "unique_paths": [
+        "http://127.0.0.1:8765/quiet-camp/privacy/brand-icon.png",
+        "http://127.0.0.1:8765/quiet-camp/privacy/de/",
+        "http://127.0.0.1:8765/quiet-camp/privacy/policy.css"
+      ],
+      "cookies": 0
+    }
+  ],
+  "passed": true
+}

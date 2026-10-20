@@ -1,0 +1,27 @@
+[
+  {
+    "path": "public/quiet-camp/privacy/brand-icon.png",
+    "size": 232094,
+    "sha256": "6564ce9296cc00395090591e89413d689eb18ea34e178ebb187c65c34dc93a28"
+  },
+  {
+    "path": "public/quiet-camp/privacy/de/index.html",
+    "size": 32808,
+    "sha256": "4fdf1f6b9b990f5f1b1d3b01abef985424c10511340660d1ac94b5ad3f1fd5b8"
+  },
+  {
+    "path": "public/quiet-camp/privacy/index.html",
+    "size": 29553,
+    "sha256": "497fb67e0b9441fe990cd39629bfeabe1d1b0c9e58222494ff8faf0289c89f39"
+  },
+  {
+    "path": "public/quiet-camp/privacy/policy.css",
+    "size": 8711,
+    "sha256": "9e23289f90f50792104273f3ddb1771476ac6df5f34c180288130825621e2efa"
+  },
+  {
+    "path": "public/quiet-camp/privacy/uk/index.html",
+    "size": 45737,
+    "sha256": "3500b7c5500115fecb5feadd4b41249cf5a86654b5f65d5cfc17d6ec4b6387f7"
+  }
+]

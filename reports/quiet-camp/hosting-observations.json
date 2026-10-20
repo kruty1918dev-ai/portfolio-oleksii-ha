@@ -1,0 +1,24 @@
+{
+  "observed": "2026-10-20",
+  "repository": "kruty1918dev-ai/portfolio-oleksii-ha",
+  "commit": "6e8ab50cdb319a2b186c0db04d8f8e0d3a547b44",
+  "custom_domain_https": 200,
+  "privacy_route_https": 404,
+  "impressum_route_https": 404,
+  "game_site_https": 200,
+  "vercel_status_context": "Vercel \u2013 portfolio-oleksii-ha",
+  "vercel_status": "success",
+  "vercel_project_url": "https://vercel.com/oleksiy-havryliuk/portfolio-oleksii-ha/BUyd2eMUq8Wqv2gSuvCjQ4H22zSj",
+  "account_mapping_confirmed": false,
+  "changes_to_dns_or_deployment": false,
+  "https://oleksiy-havryliuk.de/": {
+    "status": 200,
+    "vercel_id_present": true,
+    "same_live_html": true
+  },
+  "https://portfolio-oleksii-ha.vercel.app/": {
+    "status": 200,
+    "vercel_id_present": true,
+    "same_live_html": true
+  }
+}

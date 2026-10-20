@@ -1,0 +1,116 @@
+{
+  "game_commit": "01784d3614c643eac487baa25d589dce6ed2c0ef",
+  "portfolio_commit": "6e8ab50cdb319a2b186c0db04d8f8e0d3a547b44",
+  "files": [
+    {
+      "key": "save",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Infrastructure/SaveAdapter.cs",
+      "sha256_at_audited_commit": "3791754460e8839e479fad1c583d0edbde40e6de3f5557f94277687f1074dd20"
+    },
+    {
+      "key": "payload",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Application/CampSaveData.cs",
+      "sha256_at_audited_commit": "d5d963f5a9e681de7633e3bed6c3b9aea6db2bfd5b0f7c819c924d200fd82305"
+    },
+    {
+      "key": "analytics",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Application/ComfortAnalytics.cs",
+      "sha256_at_audited_commit": "156289241fa5a98b96af58b840fb3754b1b1424f1541fb90bc367faba026413e"
+    },
+    {
+      "key": "firebase",
+      "path": "QuietCamp/Assets/QuietCamp/OptionalSdk/FirebaseComfortTransport.cs",
+      "sha256_at_audited_commit": "138bcee0bcdee586b2c298737259c430e5aed9423672a3c1a2535a837e4a37bb"
+    },
+    {
+      "key": "ads",
+      "path": "QuietCamp/Assets/QuietCamp/OptionalSdk/GoogleRewardedAdapter.cs",
+      "sha256_at_audited_commit": "687eed00efd551481e4c93749f2cb1e950b2883c3f6a2f9dacb97cb05e594035"
+    },
+    {
+      "key": "reward",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Application/AdLifeService.cs",
+      "sha256_at_audited_commit": "e36bb5a0d0671b69747cf03fafe48fbea08b64fb459e4c84b23baa13a28b31ca"
+    },
+    {
+      "key": "economy",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Application/CampEconomy.cs",
+      "sha256_at_audited_commit": "17327aa6f917118fb6b1375e0c40019842d578fc868c4fa74d061bae9106098a"
+    },
+    {
+      "key": "google",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Infrastructure/OptionalGoogleServices.cs",
+      "sha256_at_audited_commit": "5afaf06e51c73a185a4512caaa335084bd15a4bbae3e18185dd95ddc2acdff36"
+    },
+    {
+      "key": "legal",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Infrastructure/LegalConfiguration.cs",
+      "sha256_at_audited_commit": "6d7fbf639dd2eb402c7250467a055799ccc677436b45d3de4c18e20b1ed2fe46"
+    },
+    {
+      "key": "ui",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/PrivacyPanel.cs",
+      "sha256_at_audited_commit": "04eeca09b3888052cb47f7f315566a784073101f4bd115e2219d2aa0ee655ba5"
+    },
+    {
+      "key": "boot",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/BootPrivacyPanel.cs",
+      "sha256_at_audited_commit": "2b6f6e30c616c82cf8b60ada363530d607b208322ce2db99e6b94bdb13d327dc"
+    },
+    {
+      "key": "settings",
+      "path": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/google_services.json",
+      "sha256_at_audited_commit": "820799579f999482b7f79b11983c9e9e1bb0cf5b033ee994f5fa390149a6de0c"
+    },
+    {
+      "key": "legal-json",
+      "path": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/legal.json",
+      "sha256_at_audited_commit": "c16f8dd3368b4ee7f0bb71c87d32a74f387661238decd1b84e2880ccaef2f149"
+    },
+    {
+      "key": "privacy-json",
+      "path": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json",
+      "sha256_at_audited_commit": "bfa066e0ddbb83b194b4dee5a4534849d1af0585689268596b3e5584af2a6a59"
+    },
+    {
+      "key": "sdk-detection",
+      "path": "QuietCamp/Assets/QuietCamp/Editor/OptionalGoogleSdkDetection.cs",
+      "sha256_at_audited_commit": "74e81c5a1c268b96aec780c86251c1eefdb572b44e6043c2b6dfbc751162ffae"
+    },
+    {
+      "key": "manifest",
+      "path": "QuietCamp/Packages/manifest.json",
+      "sha256_at_audited_commit": "0f73cac7e9f918f01952927de2ca681959a6c85255d431cc13882ebd078ff0bd"
+    },
+    {
+      "key": "lock",
+      "path": "QuietCamp/Packages/packages-lock.json",
+      "sha256_at_audited_commit": "d1ff5f353919382a903d318e1cde5bfaa3fbad37442ef4fee2b0b1ee351b3b50"
+    },
+    {
+      "key": "android",
+      "path": "QuietCamp/Assets/Plugins/Android/QuietCampPrivacy.androidlib/AndroidManifest.xml",
+      "sha256_at_audited_commit": "bf5c0a71eb6316067f8adc836b1baf4526dc0de19283fa7f3b8aca22de97648e"
+    },
+    {
+      "key": "project",
+      "path": "QuietCamp/ProjectSettings/ProjectSettings.asset",
+      "sha256_at_audited_commit": "f0d47e0a4b6a0698adb4ebb357b5cc02cf13870b988d711c97b13a31bfa8a09d"
+    },
+    {
+      "key": "unity",
+      "path": "QuietCamp/ProjectSettings/UnityConnectSettings.asset",
+      "sha256_at_audited_commit": "80f963e17bb88b7534086aa07865c7337f9a464ae605e26fd516ab29fe6f710a"
+    },
+    {
+      "key": "world",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Presentation/World/CampSceneHost.cs",
+      "sha256_at_audited_commit": "ceaa7330bdb7f1eefbb74bfb977a807acb6a6e5549b841b39d099d9d356fab6d"
+    },
+    {
+      "key": "game-services",
+      "path": "QuietCamp/Assets/QuietCamp/Scripts/Presentation/GameServices.cs",
+      "sha256_at_audited_commit": "74d8269c66ebb9fab4b68fca8ee74a633a4fa6323176d46ae9f2d42293b81bf6"
+    }
+  ]
+}

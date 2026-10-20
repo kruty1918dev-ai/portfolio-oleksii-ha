@@ -1,0 +1,83 @@
+
+> spark-template@0.0.0 build
+> tsc -b --noCheck && vite build
+
+[icon-proxy] Checking for exports in directory: /workspace/portfolio-audit/node_modules/@phosphor-icons/react
+[icon-proxy] Found package file: /workspace/portfolio-audit/node_modules/@phosphor-icons/react/dist/index.d.ts
+[icon-proxy] Loaded 1514 exports from /workspace/portfolio-audit/node_modules/@phosphor-icons/react/dist/index.d.ts
+[icon-proxy] Checking for exports in directory: /workspace/portfolio-audit/node_modules/@phosphor-icons/react
+[icon-proxy] Found package file: /workspace/portfolio-audit/node_modules/@phosphor-icons/react/dist/index.d.ts
+[icon-proxy] Loaded 1514 exports from /workspace/portfolio-audit/node_modules/@phosphor-icons/react/dist/index.d.ts
+vite v7.3.7 building client environment for production...
+transforming...
+Found 3 warnings while optimizing generated CSS:
+
+Issue #1:
+[2m│   .container {[22m
+[2m│     width: 100%;[22m
+[2m│[22m     @media (width >= (display-mode: standalone)) {
+[2m┆[22m                     [33m[2m^--[22m Unexpected token ParenthesisBlock[39m
+[2m┆[22m
+[2m│       max-width: (display-mode: standalone);[22m
+[2m│     }[22m
+
+Issue #2:
+[2m│       max-width: (display-mode: standalone);[22m
+[2m│     }[22m
+[2m│[22m     @media (width >= (pointer: coarse)) {
+[2m┆[22m                     [33m[2m^--[22m Unexpected token ParenthesisBlock[39m
+[2m┆[22m
+[2m│       max-width: (pointer: coarse);[22m
+[2m│     }[22m
+
+Issue #3:
+[2m│       max-width: (pointer: coarse);[22m
+[2m│     }[22m
+[2m│[22m     @media (width >= (pointer: fine)) {
+[2m┆[22m                     [33m[2m^--[22m Unexpected token ParenthesisBlock[39m
+[2m┆[22m
+[2m│       max-width: (pointer: fine);[22m
+[2m│     }[22m
+
+✓ 6958 modules transformed.
+rendering chunks...
+Emitted proxy files to build output
+computing gzip size...
+dist/package.json                              0.26 kB │ gzip:   0.18 kB
+dist/index.html                                2.95 kB │ gzip:   1.00 kB
+dist/assets/funandball004-DLlEhPaW.jpeg       46.32 kB
+dist/assets/moyva-scrins005-C0v5PU4L.png      47.54 kB
+dist/assets/funandball006-DwX8LxPe.jpeg       49.87 kB
+dist/assets/moyva-scrins006-72DwRCNR.png      54.06 kB
+dist/assets/funandball005-SLIWZVcN.jpeg       54.06 kB
+dist/assets/funandball003-BJxrkYNc.jpeg       54.26 kB
+dist/assets/funandball001-CdrviAbz.jpeg       60.05 kB
+dist/assets/funandball002-BEzms-mf.jpeg       63.01 kB
+dist/assets/moyva-scrins002-DVSRV-zd.png      66.74 kB
+dist/assets/moyva-scrins003-Djffz49n.png      73.24 kB
+dist/assets/moyva-scrins_006-DAtAvrav.png     79.57 kB
+dist/assets/moyva-scrins_005-DVJexLzU.png     88.27 kB
+dist/assets/moyva-scrins001-BCcF82IE.png     133.45 kB
+dist/assets/moyva-scrins_002-Bx2qthCR.png    138.13 kB
+dist/assets/moyva-scrins_004-Cdm6iUBz.png    138.53 kB
+dist/assets/moyva-scrins_001-DqWr_Cds.png    140.19 kB
+dist/assets/moyva-scrins_008-BozKH1Fh.png    140.68 kB
+dist/assets/moyva-scrins_003-CsVjhyfQ.png    147.95 kB
+dist/assets/moyva-scrins_007-6FFi95Gk.png    154.91 kB
+dist/assets/graph-generator-o1KojJ4I.png     162.46 kB
+dist/assets/moyva-scrins_009-BGfJUhzy.png    204.64 kB
+dist/assets/moyva-scrins004-CEo-DuGB.png     291.77 kB
+dist/assets/moyva-scrins_010-Bl9eolsO.png    337.53 kB
+dist/proxy.js                              1,575.43 kB
+dist/assets/Ich-CekeCMWB.png               1,725.52 kB
+dist/assets/index-BnqocdMF.css               375.43 kB │ gzip:  68.92 kB
+dist/assets/purify.es-18JuyMri.js             30.12 kB │ gzip:  11.51 kB
+dist/assets/index.es-CWK1D5RI.js             158.93 kB │ gzip:  53.03 kB
+dist/assets/html2canvas.esm-DXEQVQnt.js      201.04 kB │ gzip:  47.43 kB
+dist/assets/index-Bp5Ohzp5.js              1,069.83 kB │ gzip: 334.69 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 7.57s

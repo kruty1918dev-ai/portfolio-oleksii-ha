@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://business.safety.google/adsprocessorterms/",
+    "status": 200,
+    "final_url": "https://business.safety.google/adsprocessorterms/"
+  },
+  {
+    "url": "https://business.safety.google/controllerterms/",
+    "status": 200,
+    "final_url": "https://business.safety.google/controllerterms/"
+  },
+  {
+    "url": "https://firebase.google.com/support/privacy",
+    "status": 200,
+    "final_url": "https://firebase.google.com/support/privacy"
+  },
+  {
+    "url": "https://firebase.google.com/terms/data-processing-terms",
+    "status": 200,
+    "final_url": "https://firebase.google.com/terms/data-processing-terms"
+  },
+  {
+    "url": "https://kruty1918dev-ai.github.io/quiet-camp/",
+    "status": 200,
+    "final_url": "https://kruty1918dev-ai.github.io/quiet-camp/"
+  },
+  {
+    "url": "https://policies.google.com/privacy",
+    "status": 200,
+    "final_url": "https://policies.google.com/privacy"
+  },
+  {
+    "url": "https://policies.google.com/technologies/ads",
+    "status": 200,
+    "final_url": "https://policies.google.com/technologies/ads"
+  },
+  {
+    "url": "https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html",
+    "status": 200,
+    "final_url": "https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html"
+  }
+]
