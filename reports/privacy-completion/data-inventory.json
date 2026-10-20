@@ -1,0 +1,134 @@
+[
+  {
+    "data": "Progress, layouts, album, tutorial, settings, local resource balances",
+    "source": "Game save pipeline",
+    "purpose": "Resume requested play and preserve settings",
+    "legal_basis": "Art 6(1)(b) where personal and a valid contractual basis exists; necessary terminal storage §25(2)",
+    "recipients": "Device only through the audited game save pipeline; OS backup recipient depends on final rules",
+    "retention": "Until local removal; device/backup copies separately assessed",
+    "consent": "Not optional tracking consent",
+    "source_evidence": "CampSaveData.cs; SaveAdapter.cs",
+    "verification": "Local source verified; final Android backup behavior pending"
+  },
+  {
+    "data": "Age band; age-policy version",
+    "source": "User self-declaration, no exact date of birth",
+    "purpose": "Restrict optional SDK services for young/unknown-age users",
+    "legal_basis": "Art 6(1)(f), proportionate young-user protection; necessity/balancing review pending",
+    "recipients": "Local game settings; OS backups may apply",
+    "retention": "Until changed/local removal, with backup qualifications",
+    "consent": "Not a consent to SDK processing",
+    "source_evidence": "OptionalPrivacy.cs PrivacyEligibility; BootPrivacyPanel.cs; PrivacyPanel.cs",
+    "verification": "Core contracts pass; native UI/device verification pending"
+  },
+  {
+    "data": "Analytics/crash/advertising consent flags, policy versions, acknowledgement receipt",
+    "source": "Local privacy choices",
+    "purpose": "Manage choices, avoid stale restoration, demonstrate applicable decisions",
+    "legal_basis": "Art 6(1)(c) where required for consent/accountability; necessary preference storage §25(2)",
+    "recipients": "Local settings; provider CMP stores its separate choices",
+    "retention": "Local until reset/replaced; provider receipts under actual terms",
+    "consent": "Acknowledgement does not grant optional consent",
+    "source_evidence": "OptionalPrivacy.cs; ComfortAnalytics.cs; CampSaveData.cs",
+    "verification": "Core independent-choice/migration contracts pass; provider defaults pending"
+  },
+  {
+    "data": "Six numeric qc_* custom families, action/rule counters, duration/settings/frame bands",
+    "source": "ComfortAnalytics",
+    "purpose": "Level difficulty, control/accessibility and performance analysis",
+    "legal_basis": "Art 6(1)(a), §25(1) where applicable",
+    "recipients": "Google Analytics for Firebase under actual account terms",
+    "retention": "Selected GA4 2-month setting for covered data; aggregated reports/IDs differ",
+    "consent": "Separate opt-in; eligible age 16+",
+    "source_evidence": "ComfortAnalytics.cs lines 112–184; FirebaseComfortTransport.cs",
+    "verification": "Source verified, levels 1–30; exact installed SDK/console/network pending"
+  },
+  {
+    "data": "App-instance/device/app/OS identifiers, automatic session/activity events, network IP/coarse derivation",
+    "source": "Firebase Analytics automatic SDK behavior",
+    "purpose": "Gameplay measurement and operation of selected analytics",
+    "legal_basis": "Art 6(1)(a), §25(1) where applicable",
+    "recipients": "Applicable Google entities/processors",
+    "retention": "GA4 setting/identifier lifecycles; no universal two-month limit",
+    "consent": "Separate opt-in; default denied in prepared Android manifest",
+    "source_evidence": "FirebaseComfortTransport.cs; AndroidManifest.xml; official Firebase collection docs",
+    "verification": "Automatic native hooks/persistent defaults and actual SDK data pending"
+  },
+  {
+    "data": "Crash traces, exception text, app/device/OS/session/installation details, possible local cache",
+    "source": "Crashlytics SDK and optional adapter",
+    "purpose": "Reproduce and repair stability failures",
+    "legal_basis": "Selected Art 6(1)(a), §25(1) where applicable; local SDK storage also requires assessment",
+    "recipients": "Firebase Crashlytics / applicable Google entities",
+    "retention": "Google: 90 days before starting removal for documented crash data; queued/local data separately",
+    "consent": "Independent opt-in; eligible age 16+",
+    "source_evidence": "OptionalPrivacy.cs CrashReportConsent; FirebaseCrashReportTransport.cs; AndroidManifest.xml",
+    "verification": "Conditional adapter compiles with doubles; real SDK/native queue/persistent overrides unverified; runtime gate FALSE"
+  },
+  {
+    "data": "IP/coarse location, ad interactions, diagnostics, permitted ad/app-set/SDK identifiers",
+    "source": "Google Mobile Ads / configured ad partners",
+    "purpose": "Requested NPA rewarded ad delivery, performance measurement, fraud prevention",
+    "legal_basis": "Consent for relevant advertising/device access; provider security/fraud grounds separately assessed",
+    "recipients": "Google and actual selected ad-tech providers; absence of mediation SDK is not absence of recipients",
+    "retention": "Applicable provider terms; no invented fixed period",
+    "consent": "Ad permission plus applicable UMP choices; no requests unknown/below16; Teen treatment16–17",
+    "source_evidence": "GoogleRewardedAdapter.cs; OptionalPrivacy.cs; OptionalGoogleServices.cs",
+    "verification": "NPA/Teen/refusal contract tests pass; publisher IDs/messages/vendors/real traffic pending"
+  },
+  {
+    "data": "Reward-earned/completion status and local deduplication IDs",
+    "source": "Ad reward callback and game economy",
+    "purpose": "Grant one earned life/cosmetic and avoid duplicate grants",
+    "legal_basis": "Art 6(1)(b) for requested functionality where applicable; provider processing separately above",
+    "recipients": "Local game economy; no SSV backend found",
+    "retention": "Local save until removed/backup qualifiers",
+    "consent": "User-requested ad; underlying SDK requires applicable choices",
+    "source_evidence": "AdLifeService.cs; CozyRewardService.cs; CampEconomy.cs",
+    "verification": "Life cap 10/day UTC; cosmetic lantern separate and also free through play; no new analytics events introduced"
+  },
+  {
+    "data": "UMP connection/form data, vendor/purpose choices and SDK-managed IAB preferences",
+    "source": "Google UMP",
+    "purpose": "Present/manage advertising choices and apply requests correctly",
+    "legal_basis": "Consent-management/accountability basis assessed separately; not blanket advertising permission",
+    "recipients": "Google CMP infrastructure and applicable disclosed providers",
+    "retention": "Actual CMP/provider receipt retention",
+    "consent": "No UMP refresh under16/unknown; initial optional-ad permission required",
+    "source_evidence": "GoogleRewardedAdapter.cs UpdateConsentInfo / StorageConsentAllowsNpa",
+    "verification": "Every eligible allowed-ad launch refresh prepared; actual TCF vendor configuration/refusal pending"
+  },
+  {
+    "data": "Email address, messages, attachments, correspondence metadata",
+    "source": "Privacy/support mailboxes, owner-managed",
+    "purpose": "Answer support and statutory data requests",
+    "legal_basis": "Art 6(1)(b) necessary support; 6(1)(f) ordinary enquiries; 6(1)(c) statutory rights",
+    "recipients": "Developer and STRATO mail infrastructure, contracts to confirm",
+    "retention": "Selected 12 months after closure, lawful exceptions; operational implementation pending",
+    "consent": "User initiates contact; unrelated SDK consent not required",
+    "source_evidence": "PrivacyPanel.cs mailto; owner confirmation; public MX smtpin.rzone.de",
+    "verification": "Mailbox operation owner-confirmed; exact agreement, backups and deletion schedule pending"
+  },
+  {
+    "data": "IP address, requested path/time, browser/protocol details",
+    "source": "Vercel hosting requests",
+    "purpose": "Deliver and secure static public website",
+    "legal_basis": "Art 6(1)(f), necessary/proportionate hosting",
+    "recipients": "Vercel and actual subprocessors",
+    "retention": "Actual account/provider log/backup settings pending",
+    "consent": "No optional website tracking in code",
+    "source_evidence": "site/layout.mjs; assets/site.css; vercel.json; separate website privacy",
+    "verification": "Local browser no trackers/cookies; contracts and production host logging pending"
+  },
+  {
+    "data": "Provider name/address and contact details supplied by developer",
+    "source": "Controller identity/legal notice",
+    "purpose": "Identify the natural-person operator and provide legal contact",
+    "legal_basis": "Art 6(1)(c) applicable transparency/provider duties",
+    "recipients": "Public legal-document visitors",
+    "retention": "While current/legal duties apply; revision history considered",
+    "consent": "Owner explicitly authorized necessary legal publication",
+    "source_evidence": "legal/controller.json; owner statements 2026-10-20; DDG §5",
+    "verification": "Passport/Play spelling Oleksii; public name Oleksiy. Address/name confirmed by owner, no document image inspected"
+  }
+]

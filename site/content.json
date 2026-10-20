@@ -1,0 +1,788 @@
+{
+  "profile": {
+    "name": "Oleksiy Havryliuk",
+    "brand": "Kruty1918 Games",
+    "email": "oleksiy.havryliuk@gmail.com",
+    "github": "https://github.com/kruty1918dev-ai",
+    "domain": "https://oleksiy-havryliuk.de"
+  },
+  "languages": {
+    "en": {
+      "langName": "English",
+      "skip": "Skip to content",
+      "menu": "Menu",
+      "navigation": "Main navigation",
+      "language": "Language",
+      "role": "Independent game developer",
+      "nav": [
+        "Home",
+        "Games",
+        "Portfolio",
+        "About"
+      ],
+      "homeTitle": "Oleksiy<br>Havryliuk.",
+      "homeIntro": "I make games in Unity. Quiet Camp is my current solo project; this site also collects my earlier games and development tools.",
+      "workCta": "View portfolio",
+      "aboutCta": "About me",
+      "gameCta": "Open game page",
+      "viewProject": "Project details",
+      "viewGame": "Visit the game page",
+      "selected": "Selected work",
+      "selectedIntro": "Earlier games and prototypes, with screenshots and a description of my contribution.",
+      "allProjects": "All projects",
+      "moreGames": "All games",
+      "featured": "Currently in development",
+      "featuredCaption": "Quiet Camp · a small world with room for every guest.",
+      "personalLabel": "About me",
+      "personalTitle": "The developer<br>behind the games.",
+      "personalText": "I’m from Ukraine and live in Germany. I develop Quiet Camp independently under the name Kruty1918 Games. My portfolio also includes a strategy prototype made in a two-person team.",
+      "gamesLabel": "Kruty1918 Games & earlier work",
+      "gamesTitle": "Games & prototypes.",
+      "gamesIntro": "Quiet Camp is my current independent game. Moyva and Fun and Ball are earlier projects, preserved here with their development context.",
+      "current": "Current project",
+      "earlier": "More games & prototypes",
+      "earlierIntro": "More game projects, each with its own development context.",
+      "portfolioLabel": "A selection of my work",
+      "portfolioTitle": "Portfolio.",
+      "portfolioIntro": "Games, prototypes and development tools. Each project includes screenshots, my role and links to the available material.",
+      "gamesAnchor": "Games & prototypes",
+      "toolsAnchor": "Tools & experiments",
+      "toolsIntro": "Smaller explorations in generation, Unity architecture and application development. Source repositories open on GitHub.",
+      "source": "Source on GitHub",
+      "overview": "Project overview",
+      "repository": "GitHub repository",
+      "projectSite": "Original project website",
+      "guide": "Illustrated game guide",
+      "privacy": "Quiet Camp privacy",
+      "privacyShort": "Privacy policy",
+      "backPortfolio": "Back to portfolio",
+      "backGames": "Back to games",
+      "screenshots": "Screenshots",
+      "galleryHelp": "Select an image to view it in full.",
+      "aboutLabel": "About the developer",
+      "aboutTitle": "Hello, I’m Oleksiy.",
+      "aboutIntro": "An independent game developer from Ukraine, based in Germany. I make games under the name Kruty1918 Games.",
+      "aboutHeading": "What I’m working on.",
+      "aboutParagraphs": [
+        "I develop games in Unity. My current solo project is Quiet Camp, a spatial puzzle game for Android about arranging tents and building camps in a post-war Ukrainian setting.",
+        "Earlier projects include Fun and Ball and Moyva. Moyva was developed in a two-person team; I worked on game systems, the interface and world-generation tools. The portfolio also includes smaller Unity tools and an application project.",
+        "I’m from Ukraine and live in Germany. Kruty1918 Games is the name I use for my independent games. I operate as a natural person, not a separate registered company."
+      ],
+      "portraitAlt": "Portrait of Oleksiy Havryliuk",
+      "contactLabel": "Get in touch",
+      "contactTitle": "Contact.",
+      "contactIntro": "For project enquiries and general messages, write to me directly. For Quiet Camp support or a privacy request, use the dedicated address below.",
+      "general": "Developer & project enquiries",
+      "support": "Quiet Camp support",
+      "privacyContact": "Privacy enquiries",
+      "footerLine": "Games and development projects by Oleksiy Havryliuk.",
+      "footerAbout": "Independent developer. Kruty1918 Games is a personal brand.",
+      "close": "Close image",
+      "previous": "Previous image",
+      "next": "Next image",
+      "image": "Image",
+      "of": "of",
+      "viewFull": "View full image",
+      "missingTitle": "Page not found.",
+      "missingText": "The page may have moved. Start with the games or return to the home page.",
+      "home": "Back home",
+      "legalLabel": "Legal / Quiet Camp",
+      "updated": "Last updated",
+      "legalToc": "On this page",
+      "legalBack": "Back to Quiet Camp",
+      "projectDetails": "Project details",
+      "whatBuilt": "What I worked on",
+      "platform": "Platform",
+      "stage": "Stage",
+      "developer": "Developer",
+      "team": "Project context",
+      "focus": "Focus",
+      "archiveLabel": "From the project",
+      "readMore": "About the project",
+      "indexLabel": "Project index",
+      "openProject": "Open project",
+      "currentLabel": "In development now",
+      "projectNumber": "Project",
+      "gameMenu": "On this page",
+      "aboutLink": "Developer & contact",
+      "websitePrivacy": "Website privacy",
+      "impressum": "Legal notice"
+    },
+    "uk": {
+      "langName": "Українська",
+      "skip": "Перейти до вмісту",
+      "menu": "Меню",
+      "navigation": "Основна навігація",
+      "language": "Мова",
+      "role": "Незалежний розробник ігор",
+      "nav": [
+        "Головна",
+        "Ігри",
+        "Портфоліо",
+        "Про мене"
+      ],
+      "homeTitle": "Олексій<br>Гаврилюк.",
+      "homeIntro": "Створюю ігри в Unity. Зараз самостійно розробляю Quiet Camp. Тут також зібрані мої попередні ігри та інструменти для розробки.",
+      "workCta": "Портфоліо",
+      "aboutCta": "Про мене",
+      "gameCta": "На сторінку гри",
+      "viewProject": "Про проєкт",
+      "viewGame": "На сторінку гри",
+      "selected": "Вибрані роботи",
+      "selectedIntro": "Попередні ігри та прототипи: зображення, опис і мій внесок у розробку.",
+      "allProjects": "Усе портфоліо",
+      "moreGames": "Усі ігри",
+      "featured": "Зараз у розробці",
+      "featuredCaption": "Quiet Camp · маленький світ, де знайдеться місце для кожного гостя.",
+      "personalLabel": "Про мене",
+      "personalTitle": "Розробник<br>цих ігор.",
+      "personalText": "Я з України, живу в Німеччині. Самостійно розробляю Quiet Camp під назвою Kruty1918 Games. У портфоліо також є прототип стратегії, який ми створювали вдвох.",
+      "gamesLabel": "Kruty1918 Games і попередні роботи",
+      "gamesTitle": "Ігри та прототипи.",
+      "gamesIntro": "Quiet Camp — моя поточна незалежна гра. Moyva та Fun and Ball — попередні проєкти, про які тут можна дізнатися докладніше.",
+      "current": "Поточний проєкт",
+      "earlier": "Інші ігри та прототипи",
+      "earlierIntro": "Інші ігрові проєкти, кожен із власним контекстом розробки.",
+      "portfolioLabel": "Вибрані проєкти",
+      "portfolioTitle": "Портфоліо.",
+      "portfolioIntro": "Ігри, прототипи та інструменти для розробки. Для кожного проєкту — зображення, мій внесок і посилання на доступні матеріали.",
+      "gamesAnchor": "Ігри та прототипи",
+      "toolsAnchor": "Інструменти й експерименти",
+      "toolsIntro": "Невеликі роботи з генерації, архітектури Unity та розробки застосунків. Вихідний код доступний у репозиторіях GitHub.",
+      "source": "Код на GitHub",
+      "overview": "Огляд проєкту",
+      "repository": "Репозиторій GitHub",
+      "projectSite": "Оригінальний сайт проєкту",
+      "guide": "Ілюстрований довідник гри",
+      "privacy": "Приватність Quiet Camp",
+      "privacyShort": "Політика конфіденційності",
+      "backPortfolio": "До портфоліо",
+      "backGames": "До ігор",
+      "screenshots": "Зображення гри",
+      "galleryHelp": "Виберіть зображення, щоб роздивитися повністю.",
+      "aboutLabel": "Про розробника",
+      "aboutTitle": "Привіт, я Олексій.",
+      "aboutIntro": "Незалежний розробник ігор з України, який живе в Німеччині. Створюю ігри під назвою Kruty1918 Games.",
+      "aboutHeading": "Над чим я працюю.",
+      "aboutParagraphs": [
+        "Розробляю ігри в Unity. Зараз самостійно працюю над Quiet Camp — просторовою головоломкою для Android про розміщення наметів і облаштування таборів у післявоєнній Україні.",
+        "Серед попередніх проєктів — Fun and Ball та Moyva. Над Moyva ми працювали вдвох: я займався ігровими системами, інтерфейсом та інструментами генерації світу. У портфоліо також є невеликі інструменти для Unity та проєкт застосунку.",
+        "Я з України, живу в Німеччині. Kruty1918 Games — назва, під якою я створюю власні ігри. Працюю як фізична особа, а не окрема зареєстрована компанія."
+      ],
+      "portraitAlt": "Портрет Oleksiy Havryliuk",
+      "contactLabel": "Зв’язок",
+      "contactTitle": "Зв’язок.",
+      "contactIntro": "З питань проєктів та загальних звернень пишіть мені напряму. Для підтримки Quiet Camp і запитів щодо приватності є окремі адреси нижче.",
+      "general": "Розробник і запитання про проєкти",
+      "support": "Підтримка Quiet Camp",
+      "privacyContact": "Питання приватності",
+      "footerLine": "Ігри та розробки Олексія Гаврилюка.",
+      "footerAbout": "Незалежний розробник. Kruty1918 Games — особистий бренд.",
+      "close": "Закрити зображення",
+      "previous": "Попереднє зображення",
+      "next": "Наступне зображення",
+      "image": "Зображення",
+      "of": "з",
+      "viewFull": "Відкрити повне зображення",
+      "missingTitle": "Сторінку не знайдено.",
+      "missingText": "Можливо, сторінка переїхала. Перегляньте ігри або поверніться на головну.",
+      "home": "На головну",
+      "legalLabel": "Правова інформація / Quiet Camp",
+      "updated": "Останнє оновлення",
+      "legalToc": "У цьому документі",
+      "legalBack": "До Quiet Camp",
+      "projectDetails": "Про проєкт",
+      "whatBuilt": "Над чим я працював",
+      "platform": "Платформа",
+      "stage": "Стан",
+      "developer": "Розробник",
+      "team": "Контекст проєкту",
+      "focus": "Напрям",
+      "archiveLabel": "Матеріали проєкту",
+      "readMore": "Про проєкт",
+      "indexLabel": "Мої проєкти",
+      "openProject": "Відкрити проєкт",
+      "currentLabel": "Зараз у розробці",
+      "projectNumber": "Проєкт",
+      "gameMenu": "На цій сторінці",
+      "aboutLink": "Розробник і контакти",
+      "websitePrivacy": "Приватність на сайті",
+      "impressum": "Юридичні реквізити"
+    },
+    "de": {
+      "langName": "Deutsch",
+      "skip": "Zum Inhalt springen",
+      "menu": "Menü",
+      "navigation": "Hauptnavigation",
+      "language": "Sprache",
+      "role": "Unabhängiger Spieleentwickler",
+      "nav": [
+        "Start",
+        "Spiele",
+        "Portfolio",
+        "Über mich"
+      ],
+      "homeTitle": "Oleksiy<br>Havryliuk.",
+      "homeIntro": "Ich entwickle Spiele mit Unity. Zurzeit arbeite ich allein an Quiet Camp. Hier zeige ich auch meine früheren Spiele und Entwicklungswerkzeuge.",
+      "workCta": "Zum Portfolio",
+      "aboutCta": "Über mich",
+      "gameCta": "Zur Spielseite",
+      "viewProject": "Zum Projekt",
+      "viewGame": "Zur Spielseite",
+      "selected": "Ausgewählte Arbeiten",
+      "selectedIntro": "Frühere Spiele und Prototypen: mit Bildern und einer Beschreibung meines Beitrags.",
+      "allProjects": "Zum gesamten Portfolio",
+      "moreGames": "Alle Spiele",
+      "featured": "Aktuell in Entwicklung",
+      "featuredCaption": "Quiet Camp · eine kleine Welt mit Platz für jeden Gast.",
+      "personalLabel": "Über mich",
+      "personalTitle": "Der Entwickler<br>hinter den Spielen.",
+      "personalText": "Ich komme aus der Ukraine und lebe in Deutschland. Quiet Camp entwickle ich unabhängig unter dem Namen Kruty1918 Games. Zu meinem Portfolio gehört auch ein Strategieprototyp aus einem Zweierteam.",
+      "gamesLabel": "Kruty1918 Games und frühere Arbeiten",
+      "gamesTitle": "Spiele & Prototypen.",
+      "gamesIntro": "Quiet Camp ist mein aktuelles unabhängiges Spiel. Moyva und Fun and Ball sind frühere Projekte, die hier mit ihrem Entwicklungskontext vorgestellt werden.",
+      "current": "Aktuelles Projekt",
+      "earlier": "Weitere Spiele & Prototypen",
+      "earlierIntro": "Weitere Spieleprojekte mit ihrem jeweiligen Entwicklungskontext.",
+      "portfolioLabel": "Ausgewählte Projekte",
+      "portfolioTitle": "Portfolio.",
+      "portfolioIntro": "Spiele, Prototypen und Entwicklungswerkzeuge. Zu jedem Projekt gibt es Bilder, meinen Beitrag und Links zum verfügbaren Material.",
+      "gamesAnchor": "Spiele & Prototypen",
+      "toolsAnchor": "Werkzeuge & Experimente",
+      "toolsIntro": "Kleinere Arbeiten zu Generierung, Unity-Architektur und Anwendungsentwicklung. Der Quellcode ist auf GitHub zugänglich.",
+      "source": "Quellcode auf GitHub",
+      "overview": "Projektübersicht",
+      "repository": "GitHub-Repository",
+      "projectSite": "Ursprüngliche Projektwebsite",
+      "guide": "Illustrierter Spielführer",
+      "privacy": "Datenschutz für Quiet Camp",
+      "privacyShort": "Datenschutzerklärung",
+      "backPortfolio": "Zurück zum Portfolio",
+      "backGames": "Zurück zu den Spielen",
+      "screenshots": "Spielaufnahmen",
+      "galleryHelp": "Wählen Sie ein Bild aus, um es vollständig anzusehen.",
+      "aboutLabel": "Über den Entwickler",
+      "aboutTitle": "Hallo, ich bin Oleksiy.",
+      "aboutIntro": "Unabhängiger Spieleentwickler aus der Ukraine, wohnhaft in Deutschland. Meine Spiele entstehen unter dem Namen Kruty1918 Games.",
+      "aboutHeading": "Woran ich arbeite.",
+      "aboutParagraphs": [
+        "Ich entwickle Spiele mit Unity. Mein aktuelles Soloprojekt ist Quiet Camp: ein räumliches Rätselspiel für Android, bei dem Zelte platziert und Lager in einer ukrainischen Umgebung nach dem Krieg eingerichtet werden.",
+        "Zu meinen früheren Projekten gehören Fun and Ball und Moyva. Moyva entstand in einem Zweierteam; ich war für Spielsysteme, die Benutzeroberfläche und Werkzeuge zur Weltgenerierung zuständig. Im Portfolio finden sich außerdem kleinere Unity-Werkzeuge und ein Anwendungsprojekt.",
+        "Ich komme aus der Ukraine und lebe in Deutschland. Kruty1918 Games ist der Name, unter dem ich meine eigenen Spiele entwickle. Ich bin als natürliche Person tätig, nicht als eigenständige eingetragene Gesellschaft."
+      ],
+      "portraitAlt": "Porträt von Oleksiy Havryliuk",
+      "contactLabel": "Kontakt",
+      "contactTitle": "Kontakt.",
+      "contactIntro": "Für Projektanfragen und allgemeine Nachrichten können Sie mir direkt schreiben. Für Quiet-Camp-Support und Datenschutzanfragen gibt es die gesonderten Adressen unten.",
+      "general": "Entwickler und Projektanfragen",
+      "support": "Support für Quiet Camp",
+      "privacyContact": "Datenschutzanfragen",
+      "footerLine": "Spiele und Entwicklungsprojekte von Oleksiy Havryliuk.",
+      "footerAbout": "Unabhängiger Entwickler. Kruty1918 Games ist eine persönliche Marke.",
+      "close": "Bild schließen",
+      "previous": "Vorheriges Bild",
+      "next": "Nächstes Bild",
+      "image": "Bild",
+      "of": "von",
+      "viewFull": "Bild vollständig ansehen",
+      "missingTitle": "Seite nicht gefunden.",
+      "missingText": "Vielleicht wurde die Seite verschoben. Entdecken Sie die Spiele oder kehren Sie zur Startseite zurück.",
+      "home": "Zur Startseite",
+      "legalLabel": "Rechtliches / Quiet Camp",
+      "updated": "Zuletzt aktualisiert",
+      "legalToc": "In dieser Erklärung",
+      "legalBack": "Zurück zu Quiet Camp",
+      "projectDetails": "Projektdaten",
+      "whatBuilt": "Mein Beitrag",
+      "platform": "Plattform",
+      "stage": "Stand",
+      "developer": "Entwickler",
+      "team": "Projektkontext",
+      "focus": "Schwerpunkt",
+      "archiveLabel": "Projektmaterial",
+      "readMore": "Über das Projekt",
+      "indexLabel": "Projektverzeichnis",
+      "openProject": "Projekt öffnen",
+      "currentLabel": "Aktuell in Entwicklung",
+      "projectNumber": "Projekt",
+      "gameMenu": "Auf dieser Seite",
+      "aboutLink": "Entwickler & Kontakt",
+      "websitePrivacy": "Datenschutz der Website",
+      "impressum": "Impressum"
+    }
+  },
+  "projects": [
+    {
+      "slug": "quiet-camp",
+      "kind": "game",
+      "featured": true,
+      "hero": "quiet-camp-summer.webp",
+      "gallery": [
+        "quiet-camp-summer.webp",
+        "quiet-camp-autumn.webp"
+      ],
+      "portrait": false,
+      "links": [
+        {
+          "label": "guide",
+          "url": "https://kruty1918dev-ai.github.io/quiet-camp/"
+        },
+        {
+          "label": "repository",
+          "url": "https://github.com/kruty1918dev-ai/quiet-camp"
+        }
+      ],
+      "en": {
+        "name": "Quiet Camp",
+        "category": "Spatial puzzle · Android",
+        "status": "In development",
+        "summary": "Find a place for every guest. A quiet puzzle about tents, thoughtful choices and a Ukrainian world finding its everyday rhythm again.",
+        "intro": "Build a camp, listen to your guests and find a place where every wish fits. A slower kind of puzzle, set in a post-war Ukrainian landscape.",
+        "paragraphs": [
+          "Quiet Camp is my current independent game. Its base campaign spans 100 levels across 10 chapters, with tent-placement puzzles shaped by paths, shade, quiet and friendship.",
+          "The game combines a clear spatial puzzle with the atmosphere of a place returning to everyday life. Completed camp arrangements become part of your local album.",
+          "The game is in development for Android. The page shows development material rather than an available store release. See the illustrated guide for more about the game and its interface."
+        ],
+        "features": [
+          [
+            "Make room for every guest",
+            "Place and rotate tents while respecting the paths, shade, quiet and friendships that matter to your guests."
+          ],
+          [
+            "A journey through Ukraine",
+            "A 100-level base campaign in 10 chapters, set in a Ukrainian environment after the war."
+          ],
+          [
+            "Play at your own pace",
+            "Explore a puzzle, reconsider a placement and keep the camps you complete in your album."
+          ]
+        ],
+        "facts": [
+          [
+            "platform",
+            "Android"
+          ],
+          [
+            "stage",
+            "In development"
+          ],
+          [
+            "developer",
+            "Oleksiy Havryliuk / Kruty1918 Games"
+          ],
+          [
+            "focus",
+            "Spatial puzzles & camp building"
+          ]
+        ],
+        "captureNote": "Development captures from 8 October 2026. The game is still in development."
+      },
+      "uk": {
+        "name": "Quiet Camp",
+        "category": "Просторова головоломка · Android",
+        "status": "У розробці",
+        "summary": "Знайдіть місце для кожного гостя. Спокійна головоломка про намети, уважні рішення й український світ, що повертається до повсякденного життя.",
+        "intro": "Облаштуйте табір, почуйте побажання гостей і знайдіть місце для кожного. Некваплива головоломка серед українських краєвидів після війни.",
+        "paragraphs": [
+          "Quiet Camp — моя поточна незалежна гра. Базова кампанія містить 100 рівнів у 10 розділах. Головоломки з розташуванням наметів враховують шлях, тінь, тишу та дружбу.",
+          "Гра поєднує зрозумілу просторову задачу з атмосферою місця, що повертається до звичайного життя. Завершені табори залишаються у вашому локальному альбомі.",
+          "Гра розробляється для Android. Тут показано матеріали розробки, а не вже доступний реліз у магазині. Більше про гру й інтерфейс — в ілюстрованому довіднику."
+        ],
+        "features": [
+          [
+            "Місце для кожного гостя",
+            "Розташовуйте й повертайте намети, зважаючи на шлях, тінь, тишу та дружні зв’язки гостей."
+          ],
+          [
+            "Подорож Україною",
+            "Базова кампанія зі 100 рівнів у 10 розділах серед українського світу після війни."
+          ],
+          [
+            "Власний темп",
+            "Досліджуйте задачу, переглядайте рішення й зберігайте завершені табори в альбомі."
+          ]
+        ],
+        "facts": [
+          [
+            "platform",
+            "Android"
+          ],
+          [
+            "stage",
+            "У розробці"
+          ],
+          [
+            "developer",
+            "Oleksiy Havryliuk / Kruty1918 Games"
+          ],
+          [
+            "focus",
+            "Просторові головоломки й облаштування табору"
+          ]
+        ],
+        "captureNote": "Кадри розробки від 8 жовтня 2026 року. Гра все ще в розробці."
+      },
+      "de": {
+        "name": "Quiet Camp",
+        "category": "Räumliches Rätselspiel · Android",
+        "status": "In Entwicklung",
+        "summary": "Ein Platz für jeden Gast. Ein ruhiges Rätselspiel über Zelte, überlegte Entscheidungen und eine ukrainische Welt, die in den Alltag zurückfindet.",
+        "intro": "Bauen Sie ein Camp, hören Sie Ihren Gästen zu und finden Sie für jeden Wunsch einen Platz. Ein entschleunigtes Rätselspiel in einer ukrainischen Landschaft nach dem Krieg.",
+        "paragraphs": [
+          "Quiet Camp ist mein aktuelles unabhängiges Spiel. Die Basiskampagne umfasst 100 Level in 10 Kapiteln. Beim Platzieren der Zelte zählen Wege, Schatten, Ruhe und Freundschaft.",
+          "Das Spiel verbindet eine klare räumliche Aufgabe mit der Atmosphäre eines Ortes, an dem der Alltag zurückkehrt. Fertige Camp-Anordnungen werden Teil Ihres lokalen Albums.",
+          "Das Spiel wird für Android entwickelt. Diese Seite zeigt Entwicklungsmaterial und keinen bereits verfügbaren Store-Release. Mehr zum Spiel und seiner Oberfläche finden Sie im illustrierten Spielführer."
+        ],
+        "features": [
+          [
+            "Platz für jeden Gast",
+            "Platzieren und drehen Sie Zelte mit Rücksicht auf Wege, Schatten, Ruhe und die Freundschaften Ihrer Gäste."
+          ],
+          [
+            "Eine Reise durch die Ukraine",
+            "100 Level in 10 Kapiteln, eingebettet in eine ukrainische Umgebung nach dem Krieg."
+          ],
+          [
+            "Im eigenen Tempo",
+            "Erkunden Sie das Rätsel, überdenken Sie Platzierungen und bewahren Sie fertige Camps im Album auf."
+          ]
+        ],
+        "facts": [
+          [
+            "platform",
+            "Android"
+          ],
+          [
+            "stage",
+            "In Entwicklung"
+          ],
+          [
+            "developer",
+            "Oleksiy Havryliuk / Kruty1918 Games"
+          ],
+          [
+            "focus",
+            "Räumliche Rätsel und Camp-Gestaltung"
+          ]
+        ],
+        "captureNote": "Entwicklungsaufnahmen vom 8. Oktober 2026. Das Spiel befindet sich weiterhin in Entwicklung."
+      },
+      "icon": "/quiet-camp/privacy/brand-icon.png",
+      "theme": "camp"
+    },
+    {
+      "slug": "moyva",
+      "kind": "prototype",
+      "featured": false,
+      "hero": "moyva-gameplay.webp",
+      "gallery": [
+        "moyva-gameplay.webp",
+        "moyva-world.webp",
+        "moyva-editor.webp"
+      ],
+      "portrait": false,
+      "links": [
+        {
+          "label": "overview",
+          "url": "https://github.com/kruty1918dev-ai/moyva-showcase"
+        }
+      ],
+      "en": {
+        "name": "Moyva",
+        "category": "Turn-based strategy prototype",
+        "status": "Two-person project",
+        "summary": "A strategy prototype with procedural worlds, grid-based systems and custom Unity tools. My contribution focused on core game systems and development tools.",
+        "intro": "A strategy prototype that connects generated worlds, game systems and tools for building them.",
+        "paragraphs": [
+          "Moyva is a 2D top-down, turn-based strategy prototype developed in a two-person team. It brings together procedural world generation, a grid-based playfield and systems for settlements and units.",
+          "My contribution covered much of the technical implementation: core logic, building placement, gameplay UI, tile registration, movement validation and world-generation tools.",
+          "The full working project remains private. The public showcase contains screenshots, documentation and selected code examples. This page presents prototype work rather than a released game."
+        ],
+        "features": [
+          [
+            "Generated worlds",
+            "Procedural maps and grid systems form the foundation of the prototype."
+          ],
+          [
+            "Tools for development",
+            "A graph-based generator and Unity Editor tools support iteration on worlds and game content."
+          ],
+          [
+            "My contribution",
+            "Core game systems, placement, interface work and technical tooling within the two-person project."
+          ]
+        ],
+        "facts": [
+          [
+            "stage",
+            "Strategy prototype"
+          ],
+          [
+            "team",
+            "Two-person development project"
+          ],
+          [
+            "focus",
+            "World generation, grid systems & tools"
+          ]
+        ],
+        "captureNote": "Original images from the earlier portfolio project. They do not imply a released game."
+      },
+      "uk": {
+        "name": "Moyva",
+        "category": "Прототип покрокової стратегії",
+        "status": "Проєкт двох розробників",
+        "summary": "Прототип стратегії з процедурними світами, сітковими системами та власними інструментами Unity. Мій внесок — основні ігрові системи й засоби розробки.",
+        "intro": "Прототип стратегії, що поєднує згенеровані світи, ігрові системи та інструменти для їх створення.",
+        "paragraphs": [
+          "Moyva — прототип покрокової 2D-стратегії з виглядом згори, створений у команді з двох людей. У ньому поєднані процедурна генерація світу, сіткове поле та системи поселень і юнітів.",
+          "Мій внесок охоплював значну частину технічної реалізації: основну логіку, розміщення будівель, ігровий інтерфейс, реєстр тайлів, перевірку руху та інструменти генерації світу.",
+          "Повний робочий проєкт залишається приватним. Публічний showcase містить зображення, документацію та вибрані приклади коду. Ця сторінка представляє прототип, а не випущену гру."
+        ],
+        "features": [
+          [
+            "Згенеровані світи",
+            "Процедурні карти та сіткові системи лежать в основі прототипу."
+          ],
+          [
+            "Інструменти розробки",
+            "Графовий генератор і засоби Unity Editor допомагають працювати над світами та вмістом гри."
+          ],
+          [
+            "Мій внесок",
+            "Основні ігрові системи, розміщення, інтерфейс і технічні інструменти в межах проєкту двох розробників."
+          ]
+        ],
+        "facts": [
+          [
+            "stage",
+            "Прототип стратегії"
+          ],
+          [
+            "team",
+            "Проєкт двох розробників"
+          ],
+          [
+            "focus",
+            "Генерація світу, сіткові системи й інструменти"
+          ]
+        ],
+        "captureNote": "Оригінальні зображення з попереднього портфоліо проєкту. Вони не означають, що гру вже випущено."
+      },
+      "de": {
+        "name": "Moyva",
+        "category": "Prototyp einer rundenbasierten Strategie",
+        "status": "Projekt im Zweierteam",
+        "summary": "Ein Strategieprototyp mit prozeduralen Welten, Grid-Systemen und eigenen Unity-Werkzeugen. Mein Beitrag lag bei zentralen Spielsystemen und Entwicklungswerkzeugen.",
+        "intro": "Ein Strategieprototyp, der generierte Welten, Spielsysteme und die Werkzeuge zu ihrer Entwicklung verbindet.",
+        "paragraphs": [
+          "Moyva ist ein rundenbasierter 2D-Top-down-Strategieprototyp aus einem Zweierteam. Er verbindet prozedurale Weltgenerierung, ein Grid-Spielfeld sowie Systeme für Siedlungen und Einheiten.",
+          "Mein Beitrag umfasste einen großen Teil der technischen Umsetzung: zentrale Logik, Gebäudeplatzierung, Gameplay-Oberfläche, Tile-Registry, Bewegungsvalidierung und Weltgenerierungswerkzeuge.",
+          "Das vollständige Arbeitsprojekt bleibt privat. Die öffentliche Projektübersicht enthält Bilder, Dokumentation und ausgewählte Codebeispiele. Diese Seite zeigt einen Prototyp und kein veröffentlichtes Spiel."
+        ],
+        "features": [
+          [
+            "Generierte Welten",
+            "Prozedurale Karten und Grid-Systeme bilden die Grundlage des Prototyps."
+          ],
+          [
+            "Werkzeuge für die Entwicklung",
+            "Ein graphbasierter Generator und Unity-Editor-Werkzeuge unterstützen die Arbeit an Welten und Spielinhalten."
+          ],
+          [
+            "Mein Beitrag",
+            "Zentrale Spielsysteme, Platzierung, Oberfläche und technische Werkzeuge innerhalb des Zweierprojekts."
+          ]
+        ],
+        "facts": [
+          [
+            "stage",
+            "Strategieprototyp"
+          ],
+          [
+            "team",
+            "Entwicklungsprojekt im Zweierteam"
+          ],
+          [
+            "focus",
+            "Weltgenerierung, Grid-Systeme und Werkzeuge"
+          ]
+        ],
+        "captureNote": "Originalbilder aus dem früheren Portfolioprojekt. Sie belegen keine Veröffentlichung des Spiels."
+      },
+      "theme": "atlas"
+    },
+    {
+      "slug": "fun-and-ball",
+      "kind": "prototype",
+      "featured": false,
+      "hero": "fun-and-ball-01.webp",
+      "gallery": [
+        "fun-and-ball-01.webp",
+        "fun-and-ball-02.webp",
+        "fun-and-ball-03.webp"
+      ],
+      "portrait": true,
+      "links": [
+        {
+          "label": "projectSite",
+          "url": "https://fun-and-ball.web.app/"
+        }
+      ],
+      "en": {
+        "name": "Fun and Ball",
+        "category": "Unity game project",
+        "status": "Portfolio project",
+        "summary": "An earlier game project exploring gameplay, physics and level structure, presented through its original screenshots and project website.",
+        "intro": "A playful earlier project about gameplay, physical interaction and finding a clear structure for a game.",
+        "paragraphs": [
+          "Fun and Ball is an earlier Unity game project. It explores gameplay mechanics, physics, level structure and the technical work involved in bringing them together.",
+          "The screenshots preserve the original project’s visual style and interface. They are part of my development portfolio, with the original project website linked below.",
+          "This page documents the project; it does not promise current store availability or a new release."
+        ],
+        "features": [
+          [
+            "Gameplay experiments",
+            "Work on game logic, physical interactions and individual level ideas."
+          ],
+          [
+            "A distinct visual style",
+            "Original portrait screenshots show the project’s low-poly environments and interface."
+          ],
+          [
+            "Project history",
+            "The earlier website provides more context for this part of my portfolio."
+          ]
+        ],
+        "facts": [
+          [
+            "stage",
+            "Earlier game project"
+          ],
+          [
+            "developer",
+            "Oleksiy Havryliuk"
+          ],
+          [
+            "focus",
+            "Gameplay, physics & level structure"
+          ]
+        ],
+        "captureNote": "Original images from the earlier portfolio project. They do not imply a released game."
+      },
+      "uk": {
+        "name": "Fun and Ball",
+        "category": "Ігровий проєкт у Unity",
+        "status": "Проєкт портфоліо",
+        "summary": "Попередній ігровий проєкт із роботою над ігровою логікою, фізикою та структурою рівнів. Тут — його оригінальні зображення й сайт.",
+        "intro": "Один із попередніх проєктів про ігрові механіки, фізичну взаємодію та пошук зрозумілої структури гри.",
+        "paragraphs": [
+          "Fun and Ball — один із моїх попередніх ігрових проєктів у Unity. У ньому я працював над ігровими механіками, фізикою, структурою рівнів і технічною основою, що їх поєднує.",
+          "Зображення зберігають оригінальний візуальний стиль та інтерфейс проєкту. Це частина мого портфоліо розробки; нижче є посилання на початковий сайт.",
+          "Сторінка документує проєкт і не обіцяє його поточної доступності в магазинах чи нового релізу."
+        ],
+        "features": [
+          [
+            "Експерименти з механіками",
+            "Робота над логікою гри, фізичними взаємодіями та ідеями окремих рівнів."
+          ],
+          [
+            "Власний візуальний стиль",
+            "Оригінальні портретні зображення показують low-poly оточення та інтерфейс проєкту."
+          ],
+          [
+            "Історія проєкту",
+            "Попередній сайт дає більше контексту цій частині портфоліо."
+          ]
+        ],
+        "facts": [
+          [
+            "stage",
+            "Попередній ігровий проєкт"
+          ],
+          [
+            "developer",
+            "Oleksiy Havryliuk"
+          ],
+          [
+            "focus",
+            "Механіки, фізика й структура рівнів"
+          ]
+        ],
+        "captureNote": "Оригінальні зображення з попереднього портфоліо проєкту. Вони не означають, що гру вже випущено."
+      },
+      "de": {
+        "name": "Fun and Ball",
+        "category": "Unity-Spieleprojekt",
+        "status": "Portfolioprojekt",
+        "summary": "Ein früheres Spieleprojekt zu Gameplay, Physik und Levelstruktur, gezeigt anhand der ursprünglichen Bilder und Projektwebsite.",
+        "intro": "Ein früheres Projekt über Spielmechaniken, physische Interaktion und eine klare Spielstruktur.",
+        "paragraphs": [
+          "Fun and Ball ist eines meiner früheren Unity-Spieleprojekte. Es beschäftigt sich mit Spielmechaniken, Physik, Levelstruktur und der technischen Arbeit, die diese Bereiche verbindet.",
+          "Die Bilder bewahren den ursprünglichen visuellen Stil und die Oberfläche des Projekts. Sie sind Teil meines Entwicklungsportfolios; die damalige Projektwebsite ist unten verlinkt.",
+          "Diese Seite dokumentiert das Projekt. Sie verspricht weder eine aktuelle Store-Verfügbarkeit noch einen neuen Release."
+        ],
+        "features": [
+          [
+            "Experimente mit Gameplay",
+            "Arbeit an Spiellogik, physischen Interaktionen und einzelnen Levelideen."
+          ],
+          [
+            "Ein eigener visueller Stil",
+            "Originale Hochformatbilder zeigen die Low-Poly-Umgebungen und Oberfläche des Projekts."
+          ],
+          [
+            "Projektgeschichte",
+            "Die frühere Website gibt weiteren Kontext zu diesem Teil meines Portfolios."
+          ]
+        ],
+        "facts": [
+          [
+            "stage",
+            "Früheres Spieleprojekt"
+          ],
+          [
+            "developer",
+            "Oleksiy Havryliuk"
+          ],
+          [
+            "focus",
+            "Gameplay, Physik und Levelstruktur"
+          ]
+        ],
+        "captureNote": "Originalbilder aus dem früheren Portfolioprojekt. Sie belegen keine Veröffentlichung des Spiels."
+      },
+      "theme": "play"
+    }
+  ],
+  "tools": [
+    {
+      "name": "2D Tile Generator",
+      "url": "https://github.com/Kruty1918/2D-Tile-Generator",
+      "en": "Procedural tile worlds, chunks and noise maps in Unity.",
+      "uk": "Процедурні тайлові світи, чанки та шумові карти в Unity.",
+      "de": "Prozedurale Tile-Welten, Chunks und Noise Maps in Unity."
+    },
+    {
+      "name": "2D Hexagon Generator",
+      "url": "https://github.com/Kruty1918/2D_Hexagon_Generator_Video_Tutorial",
+      "en": "A small prototype exploring hex grids and neighbouring cells.",
+      "uk": "Невеликий прототип гексагональних сіток і сусідства комірок.",
+      "de": "Ein kleiner Prototyp zu Hex-Grids und benachbarten Feldern."
+    },
+    {
+      "name": "Order Management System",
+      "url": "https://github.com/kruty1918dev-ai/order-management-system",
+      "en": "An application project exploring orders, APIs and data models.",
+      "uk": "Проєкт застосунку з роботою над замовленнями, API та моделями даних.",
+      "de": "Ein Anwendungsprojekt zu Bestellungen, APIs und Datenmodellen."
+    },
+    {
+      "name": "Unity MonoSingleton System",
+      "url": "https://github.com/Kruty1918/Unity-MonoSingleton-System",
+      "en": "A reusable Unity utility for managing singleton objects.",
+      "uk": "Повторно використовуваний інструмент Unity для керування singleton-об’єктами.",
+      "de": "Ein wiederverwendbares Unity-Werkzeug zur Verwaltung von Singleton-Objekten."
+    }
+  ]
+}

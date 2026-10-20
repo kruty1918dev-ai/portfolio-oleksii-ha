@@ -10,147 +10,147 @@
     "updated": "Last updated",
     "date": "20 October 2026",
     "contact": "Privacy contact",
-    "status": "Review copy · not yet published",
-    "noticeTitle": "Release verification is still open",
-    "notice": "This document distinguishes the audited project from reported, unverified SDK changes. It must be reviewed against the actual Android release before publication. The controller’s legal-name spelling, a suitable postal address and the handling of younger users remain unresolved.",
-    "intro": "Privacy information for Quiet Camp on Android, published under the trading name Kruty1918 Games. The game is designed for ages 13 and above. Reading this policy does not give consent to optional data processing.",
+    "status": "Release candidate · activation evidence pending",
+    "noticeTitle": "This document is not yet cleared for the Android release",
+    "notice": "Identity, postal address and working contact mailboxes have been confirmed by the developer. The privacy controls described below have been prepared in source code. The latest installed Firebase SDKs, native startup and network behavior, Google account settings, contractual safeguards and operational retention still require verification. Production SDK activation remains blocked. This candidate must not be represented as a verified release policy until those checks pass.",
+    "intro": "This policy explains local game storage, optional gameplay analysis, crash reporting, rewarded advertising and correspondence for Quiet Camp.",
     "footerDeveloper": "Independent developer · Germany",
     "support": "Technical support",
     "top": "Back to top",
-    "footerNote": "The legal notice will be linked here when it is available. This page does not change privacy choices inside the game.",
+    "footerNote": "Kruty1918 Games is the trading name of an individual developer. Reading this policy is not consent to optional processing.",
     "tableCaption": "Processing at a glance — verified and conditional services",
     "tableHead": [
       "Information",
       "Location / recipient",
-      "Current status"
+      "Choice or control"
     ],
     "rows": [
       [
-        "Progress, camp layouts, album, settings and privacy choices",
-        "On your device; platform backups may apply",
-        "Verified local storage"
+        "Game progress, camp album, settings, age band and privacy-choice receipts",
+        "Your device; Android/device backups may apply",
+        "Local game functions; no account required"
       ],
       [
-        "Gameplay and performance measurements; SDK identifiers",
-        "Google Analytics for Firebase, if activated",
-        "Optional adapter exists; disabled in audited configuration"
+        "Gameplay events, app-instance identifiers, device/app information",
+        "Google Analytics for Firebase",
+        "Separate opt-in for eligible users aged 16+"
       ],
       [
-        "Crash traces, device information and diagnostic identifiers",
-        "Firebase Crashlytics, if installed",
-        "Installation reported; release behavior unverified"
+        "Crash traces, error messages, device/app details and installation identifiers",
+        "Firebase Crashlytics",
+        "Independent opt-in for eligible users aged 16+"
       ],
       [
-        "Ad interactions, IP address, advertising and app identifiers, diagnostics",
-        "Google AdMob and configured ad providers",
-        "Development test inventory; production ads gated"
+        "IP address, ad interactions, permitted SDK/ad identifiers and diagnostics",
+        "Google AdMob and the providers selected in the Google privacy message",
+        "Optional non-personalized rewarded ads; no requests below 16 or with unknown age"
       ],
       [
-        "Email address, message and attachments you send",
-        "Developer and email provider",
-        "Only when you contact us"
+        "Email address, messages, attachments and correspondence metadata",
+        "Developer and mail infrastructure",
+        "Only when you contact the developer"
       ]
     ],
     "sections": [
       {
         "id": "controller",
-        "title": "Who is responsible",
+        "title": "The data controller",
         "paragraphs": [
-          "Quiet Camp is an offline-first spatial puzzle game with a base campaign of 100 levels in 10 chapters. Its developer and data controller is the natural person Олексій Гаврилюк Олександрович, based in Germany. Oleksiy Havryliuk is the English name supplied for correspondence; its spelling has not yet been checked against an official identity document. Kruty1918 Games is a brand and trading name, not a separate registered company.",
-          "Contact the controller at <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. A legally suitable postal address is still being resolved. This omission must be addressed before the document or legal notice is represented as ready for release."
+          "Quiet Camp is an offline-first Android spatial puzzle game. Its controller is the natural person {{legalName}}, also publicly known as {{publicName}}, operating as Kruty1918 Games. The supplied Ukrainian full name is {{ukrainianName}}. Kruty1918 Games is a brand and trading name, not a separate registered company. The developer has confirmed {{legalName}} as the passport spelling used for Google Play verification.",
+          "Postal address: {{postalAddress}}, Germany. Privacy: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>. Further provider details are in the <a href=\"/impressum\">legal notice</a>."
         ]
       },
       {
         "id": "scope",
-        "title": "What has been verified",
+        "title": "Scope and your choices",
         "paragraphs": [
-          "The committed project was audited on 20 October 2026. Core gameplay and saves are local. No active account, authentication, cloud-save, remote-configuration or purchase service was found in the audited game configuration. Game characters and guests are fictional game content, not contacts from your device.",
-          "Google Mobile Ads Unity 11.6.0 is declared. The current configuration uses Google sample rewarded ads in development environments; production ads require separate publication checks. Firebase Analytics collection is configured off and its adapter is conditional. Firebase Analytics and Crashlytics were reported as installed in a newer local project, but that installation, its settings and network behavior were not available for verification. Descriptions of those services below are conditional, not confirmation that they run in a released version.",
-          "The game is not described as purely offline: advertising and any activated analytics or crash SDK can connect to external servers. Visiting this policy also involves a connection to the website host."
+          "This release profile covers the base game, local saves and three optional Google services: Analytics, Crashlytics and non-personalized rewarded advertising. It does not include an account system, cloud-save service, active purchase service, banner or interstitial implementation, or additional mediation SDK. If the actual release adds such functionality, its processing must be assessed and this document updated first.",
+          "The game asks for an age range, not a date of birth or an identity document. Unknown age and ages below 16 do not activate these optional services. For eligible users, gameplay analysis, crash reports and optional advertising have separate choices. Core local play does not require those choices. A document-acknowledgement receipt is not consent.",
+          "The game is offline-first rather than purely offline: optional Google services communicate with their providers when enabled, and opening this webpage sends a request to its host. The candidate status above identifies the release checks that remain outstanding."
         ]
       },
       {
         "id": "data",
         "title": "Information processed",
         "paragraphs": [
-          "The table separates local game data from information that can leave the device. No account is required in the audited implementation. This does not make SDK records anonymous: pseudonymous installation or advertising identifiers can distinguish a device or app installation."
+          "The following categories distinguish data kept by the game on your device from data transmitted to a provider. SDK identifiers are pseudonymous identifiers, not a guarantee of anonymity. No contacts, precise-location permission, camera recording or player account is needed for the described game functions."
         ],
         "table": true
       },
       {
         "id": "local",
-        "title": "Local progress and settings",
+        "title": "Local progress, settings and age range",
         "paragraphs": [
-          "The game stores the current puzzle and tent placements, completed levels, camp album, tutorials, language, sound, display and accessibility settings, local resource balances and privacy-choice receipts. Save recovery copies and a cached legal document may also be stored. These records are not uploaded by the audited save system.",
-          "Local storage supports resuming play and retaining your choices. Where these records are personal data, the basis is Article 6(1)(b) GDPR, to provide the game functions you request. Storage strictly necessary for those functions is assessed separately from optional tracking under German terminal-equipment rules (§25 TDDDG).",
-          "Local data lasts until you erase it or remove the app, subject to Android or manufacturer backup and device-transfer behavior. The repository does not establish the final Android Auto Backup rules. Uninstalling or erasing a local save does not necessarily remove platform backups, SDK storage or server records. Use the game’s local-data controls and Android app-storage and backup settings as appropriate."
+          "The game stores puzzle and tent arrangements, completed levels, camp album, tutorials, language, sound, display/accessibility settings, local resource balances and privacy-choice receipts. It stores an age band and policy-version information without asking for an exact birth date. Save recovery copies and a cached legal document can also be stored. The game save system does not upload these records.",
+          "Local storage provides the game functions and choices you request. Where these records are personal data, Article 6(1)(b) GDPR applies to processing necessary to provide the requested game, where a valid contractual basis exists. Terminal storage strictly necessary for requested functions is assessed under §25(2) TDDDG; that exemption does not cover optional tracking. The minimal age-band restriction uses Article 6(1)(f), the interest in protecting young users and applying the selected privacy rules. Minimum consent-choice receipts support managing and demonstrating choices under Article 6(1)(c) where required for accountability.",
+          "Local data remains until removed using game/device controls or app removal, subject to Android, manufacturer backup and device-transfer behavior. The final release backup rules must be verified. Local erasure or uninstallation does not automatically remove platform backups, SDK records or data already held by Google."
         ]
       },
       {
         "id": "analytics",
         "title": "Optional Firebase Analytics",
         "paragraphs": [
-          "The audited adapter supports a separate opt-in for gameplay analysis. Its purposes are to find difficult levels, assess controls and accessibility choices, and detect performance problems. Implemented custom categories cover level starts and summaries, counts of actions and rule failures, duration bands, screen categories, grouped settings, three fixed feedback choices and frame-time bands. Parameters are numeric; the adapter does not submit free-text feedback or raw gesture traces. Level measurements currently accept levels 1–30, despite the 100-level campaign.",
-          "The previously proposed events such as game_started, level_complete and rewarded_ad_completed were not found as emitted events. They must not be treated as collected data. If Firebase Analytics is enabled in a release, its own collection can additionally include app-instance identifiers, device and OS information, app version, language, session or engagement events and other automatically collected events. IP addresses are processed for network communication and may be used for coarse geographic derivation; no device location permission was found. No account does not mean anonymous analytics.",
-          "The intended basis for optional gameplay analytics is consent under Article 6(1)(a) GDPR and, where required, §25(1) TDDDG. In the committed configuration analytics is disabled. The conditional adapter grants analytics storage only after an opt-in and denies ad storage, ad user data and ad personalization. These code settings do not prove the configuration of a newer installed SDK or linked Google accounts.",
-          "Where available, change the analytics choice under Settings → Privacy → Analytics. Withdrawal stops collection through this adapter and resets local Analytics data and the app-instance ID; it does not itself delete information already sent to Google. Use the privacy email for a server-data request. Declining analytics does not prevent core play."
+          "Gameplay analysis helps identify difficult levels, understand control/accessibility choices and investigate performance problems. The current custom schema has six numeric event families: qc_level_begin, qc_level_summary, qc_screen, qc_comfort_setting, qc_comfort_feedback and qc_frame_budget. It includes grouped durations/settings, counts of actions and rule failures, screen categories, three fixed feedback choices and frame-time bands. The current level measurements cover levels 1–30. They do not contain free-text feedback, player names or raw gesture traces. Previously proposed event names are not treated as implemented collection.",
+          "When enabled, Firebase Analytics also processes app-instance identifiers, device/OS and app information, language and automatically collected activity/session events. Network communication uses an IP address and may support approximate geographic derivation. No precise-location permission is required for that derivation.",
+          "The release profile requires a separate opt-in under Article 6(1)(a) GDPR and, where applicable, §25(1) TDDDG. Analytics collection/storage is off before the applicable choice and is not enabled below 16 or for unknown age. Advertising storage, ad user data and ad personalization consent remain denied in the Analytics adapter. No user ID or Google-signals/personalization integration is part of this profile.",
+          "Change the choice under Settings → Privacy → Analytics. Withdrawal stops further collection through the adapter and resets local Analytics state and its app-instance identifier. This does not itself erase data previously uploaded; use the privacy contact for an applicable server-data request."
         ]
       },
       {
         "id": "crashes",
-        "title": "Firebase Crashlytics diagnostics",
+        "title": "Optional Firebase Crashlytics",
         "paragraphs": [
-          "Crashlytics installation has been reported, but no Crashlytics SDK, initialization, collection override, custom key, user ID or diagnostic-log call was found in the audited committed project. We cannot verify a release-specific opt-out or claim that crash reporting is off by default. Google’s standard Crashlytics behavior is automatic crash-report collection when integrated, unless configured otherwise.",
-          "When active, Crashlytics can process stack traces and exception messages, timestamps, app version, device model, OS, memory and storage information, crash/session and installation identifiers, and configured logs or keys. Analytics breadcrumbs can be attached when Analytics is integrated and its collection allows them. The purpose is to reproduce failures and repair stability problems. Diagnostic messages must be checked for accidental personal information.",
-          "The actual collection controls and lawful basis must be fixed before release. A narrowly limited stability-reporting setup might rely on Article 6(1)(f) GDPR only after a documented necessity and interests assessment and separate assessment of terminal access; an optional consent-based setup would require Article 6(1)(a) and an effective choice. Neither assessment nor a consent implementation has been verified here. The Analytics switch must not be presented as a Crashlytics switch."
+          "Crash reports help reproduce failures and repair stability defects. They can contain stack traces, exception messages, timestamps, app version, device model, OS, memory/storage information and crash, session or installation identifiers. No custom player user ID, free-text player feedback or extra custom log/key schema is introduced by this profile. Error messages must be checked for accidental personal information. SDK-generated diagnostic logs may also accompany reports and must be checked for personal information.",
+          "The selected release model is independent opt-in reporting, based on Article 6(1)(a) GDPR and §25(1) TDDDG where applicable. It must not be enabled for unknown age or ages below 16. The Analytics switch does not authorize crash reporting. Standard Crashlytics integrations can report automatically; this release therefore requires verified native startup defaults and a separate reporting control before activation.",
+          "Change the choice under Settings → Privacy → Crash reports. Withdrawal disables further reporting. Pending on-device reports must be handled and deleted through the SDK separately from game saves; deletion requests for uploaded records use the privacy contact and applicable provider procedures. Firebase may attach Analytics breadcrumbs only where the relevant Analytics collection is also enabled. Verification of the installed SDK and pending-report behavior remains an activation prerequisite."
         ]
       },
       {
         "id": "ads",
-        "title": "Advertising and privacy choices",
+        "title": "Non-personalized rewarded advertising",
         "paragraphs": [
-          "The implemented format is a user-requested rewarded video for an extra life. The game grants the local reward only after the SDK reports it earned and the ad closes; failed or skipped videos do not grant it. The local economy limits these rewards to ten per UTC day. No working banner, interstitial or additional mediation adapter was found. Production AdMob messages and selected advertising partners cannot be established from the repository.",
-          "When ads are requested, Google Mobile Ads may transmit the IP address (which may indicate approximate location), ad interactions such as taps and video views, technical performance data, Android advertising ID, app-set ID and other SDK identifiers where permitted. Advertising and measurement are not made anonymous by selecting non-personalized ads. Device and SDK settings affect which identifiers are available.",
-          "For publisher inventory, the code requests updated UMP consent information, displays a form if required and checks whether ads can be requested before initializing and loading an ad. It does so on an explicit reward request, not at each launch. Google recommends updating consent information each launch; this difference needs review. Google sample inventory in development bypasses publisher messaging. No separate personalized/non-personalized request mode or underage flag is set by the game code; production behavior depends on valid choices, account configuration and SDK behavior.",
-          "Where legally required, storage/access for advertising and personalized advertising need consent under Article 6(1)(a) GDPR and §25(1) TDDDG. Consent and vendor-specific purposes must be shown in the actual in-app message. Fraud-prevention or other provider purposes need their own valid basis; no blanket legitimate-interest justification is asserted here. A production vendor list and the applicable terms must be verified before ads are enabled.",
-          "When UMP reports that privacy options are required, the game exposes an advertising privacy-options action in Settings → Privacy to reopen the Google form. This is separate from the analytics switch. Android advertising-ID controls are in device settings. This webpage has no consent toggle and cannot change in-app choices. See <a href=\"https://policies.google.com/privacy\">Google’s Privacy Policy</a> and <a href=\"https://policies.google.com/technologies/ads\">Google’s advertising information</a>. The final in-app form must let users inspect the selected vendors."
+          "AdMob provides optional rewarded videos. In the implemented paths, a completed SDK reward callback followed by ad closure can grant an extra life or a cosmetic lantern. Extra-life rewards are limited to ten per UTC day; that counter is not a universal limit on all cosmetic rewards. Failed or skipped ads do not grant a reward. The lantern can also be earned through ordinary play. No working banner, interstitial or additional mediation adapter is included in this profile.",
+          "AdMob may process IP address and approximate location derived from it, ad interactions such as taps/video views, technical performance data, advertising ID, app-set ID and other permitted SDK identifiers. Non-personalized advertising still involves personal-data processing. Purposes include delivering the requested ad, measuring its performance and preventing fraud.",
+          "The game requests non-personalized ads for all users. It makes no ad requests for unknown age or ages below 16. Eligible users first choose whether to allow optional rewarded advertising. Where required, Google UMP supplies the further purpose/vendor choices; necessary consent under Article 6(1)(a) GDPR and §25(1) TDDDG must precede the relevant device access and processing. Provider fraud/security purposes require their own lawful grounds; no blanket legitimate-interest basis is assigned to all advertising.",
+          "The release flow refreshes consent information on eligible launches after optional advertising is allowed, checks the applicable UMP result and ad-request permission, and applies the teen treatment before SDK initialization for ages 16–17. It requests NPA ads and conservatively blocks ad loading when required storage consent is absent. It does not intentionally enable a Limited Ads fallback. Publisher message settings, selected providers and the installed SDK behavior must match this flow before production ads are enabled.",
+          "Use Settings → Privacy → Rewarded advertising to turn optional ads off. When Google requires a privacy-options entry point, the game also offers a way to reopen its form. The form provides the applicable selected-vendor information. Android advertising-ID controls are in device settings. This webpage cannot change in-app consent. See <a href=\"https://policies.google.com/privacy\">Google Privacy Policy</a> and <a href=\"https://policies.google.com/technologies/ads\">Google advertising information</a>."
         ]
       },
       {
         "id": "young-users",
         "title": "Children and teenagers",
         "paragraphs": [
-          "Quiet Camp is intended for ages 13+. That intention is not age verification or permission to track every teenager. The audited implementation has a minimum-age setting but no verified age screen, parental-authorization process or underage advertising treatment.",
-          "For an information-society service offered directly to a child on the basis of consent, Article 8 GDPR applies. In Germany, a person below 16 generally needs authorization from a holder of parental responsibility for that consent; thresholds differ by country. This rule does not automatically make all game processing consent-based. Optional analytics and advertising must account for the relevant age and country, with tracking withheld where valid consent cannot be established.",
-          "Before release, the developer must resolve the handling of users aged 13–15 and 16–17, set applicable ad restrictions in both UMP and ad requests, and align the Play Console target-audience declaration with the actual audience. UMP does not automatically pass its under-age-of-consent flag to Mobile Ads. Google Play Families rules must be considered wherever children are included in the applicable audience. No parental consent, age checks or teen-safe personalized advertising are claimed as implemented. Please contact the privacy email if you believe a child’s data was processed improperly."
+          "Quiet Camp is intended for ages 13 and older. An age range is a self-declaration, not verified identity or parental authorization. No parental-consent system is implemented in this first release profile. Users below 13 are informed of the minimum age; unknown age and ages 13–15 do not activate optional Analytics, crash-report transmission or advertising requests.",
+          "For eligible users aged 16–17, Analytics and Crashlytics each require a separate choice and advertising must receive teen protection without personalization. For adults, advertising remains non-personalized. Changing the age range clears optional permissions and requires new applicable choices. These rules are a protective product choice, not a claim that every country has the same consent age.",
+          "Article 8 GDPR governs consent for information-society services offered directly to children where Article 6(1)(a) applies. Germany generally uses 16 as the threshold; national rules differ. The game audience, Play Console age groups and actual marketing/content must remain consistent. A 13+ declaration does not automatically remove applicable Families or other child-protection obligations."
         ]
       },
       {
         "id": "support",
         "title": "Support and privacy correspondence",
         "paragraphs": [
-          "If you email us, we process your address, message, attachments and correspondence metadata to answer the request. Please send only the information necessary to describe the problem; avoid sending sensitive data or complete device backups.",
-          "Game support necessary to fulfil a user’s contractual request can fall under Article 6(1)(b) GDPR. Other ordinary correspondence relies on Article 6(1)(f), the interest in answering enquiries, subject to the sender’s rights. Handling statutory privacy requests relies on Article 6(1)(c). A specific lawful retention duty may require limited records to be retained. These bases do not authorize optional SDK tracking.",
-          "Messages are handled by the developer and the configured mail provider. Domain registration with STRATO does not prove who hosts the mailboxes. The mail provider, processing terms and mailbox operation still need confirmation. The intended deletion rule is 12 months after case closure, unless a specific legal duty or necessary legal-claims retention applies; operational implementation of that schedule has not yet been verified."
+          "When you email the developer, your email address, message, attachments and correspondence metadata are processed to respond. Use <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a> for support and <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a> for privacy. The developer confirms that both mailboxes work and are personally managed. Please send only information needed for the request, not sensitive documents or a complete device backup.",
+          "Article 6(1)(b) GDPR applies where support is necessary for the requested contract; ordinary enquiries can rely on Article 6(1)(f), the legitimate interest in answering correspondence. Statutory data-rights handling relies on Article 6(1)(c). These grounds do not authorize optional SDK tracking.",
+          "Mail is received through STRATO mail infrastructure, as indicated by the domain MX records. Exact contractual and backup arrangements must be confirmed. The selected correspondence schedule is deletion 12 months after case closure, except for specific lawful duties or necessary legal-claims retention; its mailbox implementation must be verified before release clearance."
         ]
       },
       {
         "id": "sharing",
         "title": "Recipients and international transfers",
         "paragraphs": [
-          "For activated Google services, recipients include the applicable Google contracting entity, its processors and any selected advertising partners. Google commonly acts as processor for Crashlytics customer data; Analytics has separate terms, and advertising roles depend on the relevant service and purpose. The exact account contracting entity, vendor selection, data-sharing settings, linked products and accepted agreements are not accessible in this audit. They require confirmation before publication.",
-          "Google services may process information outside the EEA, including in the United States. Applicable safeguards can include an adequacy decision for a certified recipient under the EU–US Data Privacy Framework and/or the European Commission’s Standard Contractual Clauses under the relevant agreement, with supplementary measures where needed. Their applicability must be checked for the actual recipients; no EEA-only storage is promised. You can request information about the applicable safeguards via the privacy contact.",
-          "Refer to <a href=\"https://firebase.google.com/support/privacy\">Firebase privacy information</a>, the <a href=\"https://firebase.google.com/terms/data-processing-terms\">Firebase processing terms</a>, <a href=\"https://business.safety.google/adsprocessorterms/\">Google Ads processing terms</a> and <a href=\"https://business.safety.google/controllerterms/\">Google’s controller terms</a>. Applicable recipient details and transfer arrangements must match the service actually enabled."
+          "Recipients include the developer, the applicable Google entities for enabled services, their processors and the selected advertising partners identified in the actual Google privacy message. Hosting and mail providers process requests/correspondence needed to deliver this page and reply. The absence of an additional mediation SDK does not prove the absence of advertising partners.",
+          "Google services can process data outside the EEA, including the United States; no EEA-only storage is promised. The actual accepted contracts and recipient roles must be checked. Applicable safeguards may include standard contractual clauses and/or an adequacy decision for an eligible certified recipient under the EU–US Data Privacy Framework, with supplementary measures where required. The privacy contact can provide information about the applicable safeguards.",
+          "Provider references: <a href=\"https://firebase.google.com/support/privacy\">Firebase privacy information</a>, <a href=\"https://firebase.google.com/terms/data-processing-terms\">Firebase processing terms</a>, <a href=\"https://business.safety.google/adsprocessorterms/\">Google Ads processing terms</a> and <a href=\"https://business.safety.google/controllerterms/\">controller terms</a>. Publishing these links alone is not proof of the developer’s account-specific agreements."
         ]
       },
       {
         "id": "retention",
         "title": "Retention and deletion",
         "paragraphs": [
-          "Local game records remain on the device until removed, with the backup qualifications in section 4. The intended Analytics retention is two months for user/event-level data covered by the GA4 retention control. No console evidence confirms this setting. It does not set a universal lifetime for standard aggregated reports, separately exported data or all identifiers; reset-on-new-activity and linked exports must also be checked.",
-          "Google documents that Crashlytics retains crash traces, extracted minidump data and associated identifiers for 90 days before starting removal from live and backup systems. This is a provider rule, not a promise of complete deletion on day 90. Raw NDK minidumps are held temporarily for processing. No custom retention override or local release configuration has been verified.",
-          "Advertising retention depends on the applicable Google and selected-vendor terms; no game-specific fixed deletion period has been established. Support correspondence has the intended 12-month rule described in section 9. Hosting-log retention must be confirmed with the actual hosting configuration.",
-          "Request deletion via <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Give the app version, approximate dates and relevant context. We may need proportionate verification and may be unable to identify pseudonymous SDK records from an email address alone. Do not send a passport by default. We will explain identification limits, applicable exceptions and available provider procedures. Local reset, advertising-ID reset and withdrawal do not by themselves delete previously uploaded records."
+          "Local records remain until removed, subject to the backup limitations described above. The release profile selects two months for user/event-level data governed by the GA4 retention setting, without unnecessary renewal through new activity. This must be confirmed in the actual property. It is not a universal expiry for standard aggregated reports, identifiers or separately exported data; no unnecessary export is included in this profile.",
+          "Google states that Crashlytics retains crash traces, extracted minidump data and associated identifiers for 90 days before starting their removal from live and backup systems. This does not promise complete deletion on day 90. Raw NDK minidumps are stored temporarily for processing. Advertising retention follows the applicable Google and selected-provider terms; no unsupported game-specific deletion period is promised.",
+          "Correspondence uses the 12-month schedule and lawful exceptions above. Actual hosting-log and backup retention must be established from the hosting arrangement. Different providers, aggregated reports and local copies do not share one universal retention clock.",
+          "To request access or deletion, email <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a> with the app version, approximate dates and relevant context. An email address alone may not identify pseudonymous SDK records. Proportionate verification may be needed; do not send an identity document by default. We will explain identification limits, provider procedures and lawful exceptions. Local reset, consent withdrawal and advertising-ID reset do not themselves delete already uploaded records."
         ]
       },
       {
@@ -165,18 +165,17 @@
         "id": "website",
         "title": "This website and security",
         "paragraphs": [
-          "This legal page contains no analytics scripts, ad SDKs, third-party fonts, consent cookies or embedded media. Its essential text and language navigation work without JavaScript. The host still receives connection information such as IP address, request path, time and browser information to deliver the page and protect infrastructure. Delivery and proportionate security logging are assessed under Article 6(1)(f) GDPR, the interest in providing a reliable, secure public document.",
-          "The current custom domain responds through Vercel; final hosting account, log controls, retention, data-processing agreement and transfer safeguards require confirmation before publication. Domain registration is with STRATO. The separate illustrated game website uses GitHub Pages and has its own request handling; following an external link connects you to that provider. Existing portfolio pages may use different assets and require a separate website privacy assessment.",
-          "We use reasonable safeguards appropriate to the processing. The audited save system uses validation, atomic writes and recovery copies; these protect integrity and are not a claim of save-file encryption. Google documents encryption in transit for its relevant services. No system can guarantee absolute security. The actual release and hosting controls still need operational verification."
+          "This page loads local assets without visitor analytics, ad SDKs, third-party fonts or tracking cookies. Its text and language navigation work without JavaScript. The Vercel host receives connection/request information, such as IP address, path, time and browser information, to deliver and protect the site. The basis for proportionate necessary delivery/security processing is Article 6(1)(f) GDPR. Host contracts, log settings, retention and transfer safeguards require account-specific confirmation.",
+          "Read the separate <a href=\"/privacy\">website privacy notice</a> for hosting and correspondence, and the <a href=\"/impressum\">legal notice</a> for the operator. The illustrated guide is separately hosted on GitHub Pages. Following an external link connects your browser to that provider.",
+          "Reasonable safeguards include HTTPS delivery, restrictive website content-security settings, minimal optional data and validated local saves with recovery copies. Recovery copies protect integrity and are not a claim of encryption. No system guarantees absolute security. The actual Android release and account controls must be verified independently of this webpage."
         ]
       },
       {
         "id": "changes",
         "title": "Changes and contact",
         "paragraphs": [
-          "We will update this document when data practices or legal requirements change and show the new date. Material changes should also be communicated in the game; where required, a new consent choice must precede new optional processing. All three language versions must be updated together. English is the working version, and it does not override your statutory rights or excuse inconsistent translations.",
-          "Kruty1918 Games<br>Developer: Oleksiy Havryliuk (official Latin spelling awaiting verification)<br>Country: Germany<br>Privacy: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a><br>Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>",
-          "The suitable postal address and legal notice remain release issues. No residential address is included in this review copy."
+          "This policy will be updated when data practices or legal requirements change. Material changes are also communicated in the game; new optional purposes require a new applicable choice before collection. The date identifies the current document. All three language versions must remain substantively consistent; English is the working version and does not override statutory rights.",
+          "Kruty1918 Games<br>Controller: {{legalName}} (public name: {{publicName}})<br>Postal address: {{postalAddress}}, Germany<br>Privacy: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a><br>Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>"
         ]
       }
     ]
@@ -192,44 +191,44 @@
     "updated": "Zuletzt aktualisiert",
     "date": "20. Oktober 2026",
     "contact": "Datenschutzkontakt",
-    "status": "Prüffassung · noch nicht veröffentlicht",
-    "noticeTitle": "Die Freigabeprüfung ist noch offen",
-    "notice": "Diese Erklärung unterscheidet den geprüften Projektstand von gemeldeten, noch ungeprüften SDK-Änderungen. Vor der Veröffentlichung ist ein Abgleich mit der tatsächlichen Android-Version erforderlich. Die amtliche lateinische Namensschreibweise, eine geeignete Postanschrift und der Umgang mit jüngeren Nutzern sind noch zu klären.",
-    "intro": "Datenschutzinformationen für die Android-Version von Quiet Camp unter dem Namen Kruty1918 Games. Das Spiel richtet sich an Personen ab 13 Jahren. Das Lesen dieser Erklärung ist keine Einwilligung in eine optionale Datenverarbeitung.",
+    "status": "Release-Kandidat · Aktivierungsnachweise noch offen",
+    "noticeTitle": "Für die Android-Veröffentlichung noch nicht freigegeben",
+    "notice": "Der Entwickler hat Namen, Postanschrift und funktionierende Kontaktpostfächer bestätigt. Die unten beschriebenen Datenschutzkontrollen sind im Quellcode vorbereitet. Die zuletzt installierten Firebase-SDKs, das native Start- und Netzwerkverhalten, Google-Kontoeinstellungen, Vertragsgarantien und die tatsächliche Aufbewahrung müssen noch geprüft werden. Die produktive SDK-Aktivierung bleibt gesperrt. Dieser Kandidat darf vor Abschluss dieser Prüfungen nicht als geprüfte Release-Datenschutzerklärung dargestellt werden.",
+    "intro": "Diese Erklärung beschreibt lokale Spieldaten, optionale Spielanalyse, Absturzberichte, Werbung gegen Belohnung und Korrespondenz für Quiet Camp.",
     "footerDeveloper": "Unabhängiger Entwickler · Deutschland",
     "support": "Technischer Support",
     "top": "Zum Seitenanfang",
-    "footerNote": "Das Impressum wird hier verlinkt, sobald es verfügbar ist. Diese Seite verändert keine Datenschutzeinstellungen im Spiel.",
+    "footerNote": "Kruty1918 Games ist die Geschäftsbezeichnung eines Einzelentwicklers. Das Lesen dieser Erklärung ist keine Einwilligung in optionale Verarbeitung.",
     "tableCaption": "Datenverarbeitung im Überblick — geprüfte und bedingte Dienste",
     "tableHead": [
       "Informationen",
       "Speicherort / Empfänger",
-      "Aktueller Stand"
+      "Entscheidung oder Kontrolle"
     ],
     "rows": [
       [
-        "Fortschritt, Zeltplätze, Album, Einstellungen und Datenschutzentscheidungen",
-        "Auf Ihrem Gerät; mögliche Plattformsicherungen",
-        "Lokale Speicherung geprüft"
+        "Spielfortschritt, Lageralbum, Einstellungen, Altersgruppe und Datenschutzentscheidungen",
+        "Auf dem Gerät; Android-/Gerätesicherungen sind möglich",
+        "Lokale Spielfunktionen; kein Benutzerkonto erforderlich"
       ],
       [
-        "Spiel- und Leistungsmessungen sowie SDK-Kennungen",
-        "Google Analytics for Firebase, sofern aktiviert",
-        "Optionaler Adapter vorhanden; in der geprüften Konfiguration deaktiviert"
+        "Spielereignisse, App-Instanzkennungen, Geräte- und App-Angaben",
+        "Google Analytics for Firebase",
+        "Gesonderte freiwillige Einwilligung für berechtigte Personen ab 16"
       ],
       [
-        "Absturzprotokolle, Geräteinformationen und Diagnosekennungen",
-        "Firebase Crashlytics, sofern installiert",
-        "Installation gemeldet; Verhalten der Release-Version ungeprüft"
+        "Absturzprotokolle, Fehlermeldungen, Geräte-/App-Daten und Installationskennungen",
+        "Firebase Crashlytics",
+        "Unabhängige freiwillige Einwilligung für berechtigte Personen ab 16"
       ],
       [
-        "Werbeinteraktionen, IP-Adresse, Werbe- und App-Kennungen, Diagnosedaten",
-        "Google AdMob und konfigurierte Werbeanbieter",
-        "Testwerbung in der Entwicklung; produktive Werbung gesperrt"
+        "IP-Adresse, Werbeinteraktionen, zulässige SDK-/Werbekennungen und Diagnosen",
+        "Google AdMob und die im Google-Datenschutzhinweis ausgewählten Anbieter",
+        "Optionale nicht personalisierte Werbung; keine Anfragen unter 16 oder bei unbekanntem Alter"
       ],
       [
-        "E-Mail-Adresse, Nachricht und zugesandte Anhänge",
-        "Entwickler und E-Mail-Anbieter",
+        "E-Mail-Adresse, Nachrichten, Anhänge und Korrespondenzmetadaten",
+        "Entwickler und E-Mail-Infrastruktur",
         "Nur bei Ihrer Kontaktaufnahme"
       ]
     ],
@@ -238,101 +237,101 @@
         "id": "controller",
         "title": "Verantwortlicher",
         "paragraphs": [
-          "Quiet Camp ist ein vorrangig offline spielbares räumliches Rätselspiel mit einer Basiskampagne aus 100 Leveln in 10 Kapiteln. Entwickler und datenschutzrechtlich Verantwortlicher ist die natürliche Person Олексій Гаврилюк Олександрович mit Sitz in Deutschland. Oleksiy Havryliuk ist der für die englische Korrespondenz angegebene Name; die Schreibweise wurde noch nicht anhand eines amtlichen Ausweises geprüft. Kruty1918 Games ist eine Marke und Geschäftsbezeichnung, keine eigenständige eingetragene Gesellschaft.",
-          "Den Verantwortlichen erreichen Sie unter <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Eine rechtlich geeignete Postanschrift wird noch geklärt. Diese Lücke muss geschlossen werden, bevor die Erklärung oder das Impressum als veröffentlichungsreif bezeichnet wird."
+          "Quiet Camp ist ein räumliches Android-Rätselspiel mit vorrangig lokalen Funktionen. Verantwortlich ist die natürliche Person {{legalName}}, öffentlich auch als {{publicName}} bekannt, tätig unter dem Namen Kruty1918 Games. Der mitgeteilte vollständige ukrainische Name lautet {{ukrainianName}}. Kruty1918 Games ist eine Marke und Geschäftsbezeichnung, keine eigenständige eingetragene Gesellschaft. Der Entwickler hat {{legalName}} als die Passschreibweise bestätigt, die für die Google-Play-Verifizierung verwendet wurde.",
+          "Postanschrift: {{postalAddress}}, Deutschland. Datenschutz: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>. Weitere Anbieterangaben stehen im <a href=\"/impressum/de\">Impressum</a>."
         ]
       },
       {
         "id": "scope",
-        "title": "Umfang der Prüfung",
+        "title": "Geltungsbereich und Ihre Entscheidungen",
         "paragraphs": [
-          "Der eingecheckte Projektstand wurde am 20. Oktober 2026 geprüft. Kernspiel und Spielstände werden lokal verarbeitet. In der geprüften Spielkonfiguration wurde kein aktiver Dienst für Konten, Anmeldung, Cloud-Spielstände, Remote Config oder Käufe gefunden. Spielfiguren und Gäste sind fiktive Spielinhalte und keine Kontakte aus Ihrem Gerät.",
-          "Google Mobile Ads Unity 11.6.0 ist als Abhängigkeit eingetragen. Die aktuelle Konfiguration verwendet Googles Rewarded-Testanzeigen in Entwicklungsumgebungen; produktive Werbung unterliegt zusätzlichen Freigabeprüfungen. Firebase Analytics ist in der Konfiguration ausgeschaltet, sein Adapter wird nur unter bestimmten Voraussetzungen eingebunden. Für ein neueres lokales Projekt wurde die Installation von Firebase Analytics und Crashlytics gemeldet. Diese Installation, ihre Einstellungen und ihr Netzwerkverhalten konnten nicht geprüft werden. Die folgenden Beschreibungen dieser Dienste gelten daher nur für den Fall ihrer Aktivierung und belegen keinen Einsatz in einer veröffentlichten Version.",
-          "Das Spiel wird nicht als ausschließlich offline bezeichnet: Werbung und aktivierte Analyse- oder Absturz-SDKs können externe Server kontaktieren. Auch beim Aufruf dieser Erklärung entsteht eine Verbindung zum Website-Hoster."
+          "Dieses Release-Profil umfasst das Basisspiel, lokale Spielstände und drei optionale Google-Dienste: Analytics, Crashlytics und nicht personalisierte Werbung gegen Belohnung. Ein Kontosystem, Cloud-Spielstände, aktive Käufe, Banner, Interstitials oder weitere Vermittlungs-SDKs gehören nicht dazu. Werden solche Funktionen im tatsächlichen Release ergänzt, müssen ihre Verarbeitung und diese Erklärung vorher überprüft werden.",
+          "Das Spiel fragt eine Altersgruppe ab, kein Geburtsdatum und kein Ausweisdokument. Bei unbekanntem Alter und unter 16 werden diese optionalen Dienste nicht aktiviert. Berechtigte Personen entscheiden getrennt über Spielanalyse, Absturzberichte und optionale Werbung. Das lokale Kernspiel setzt diese Einwilligungen nicht voraus. Eine Bestätigung der Kenntnisnahme ist keine Einwilligung.",
+          "Das Spiel ist vorrangig lokal, aber nicht ausschließlich offline: Aktivierte optionale Google-Dienste kommunizieren mit ihren Anbietern; der Abruf dieser Seite sendet eine Anfrage an den Host. Der Kandidatenstatus oben kennzeichnet die noch offenen Release-Prüfungen."
         ]
       },
       {
         "id": "data",
         "title": "Verarbeitete Informationen",
         "paragraphs": [
-          "Die Tabelle trennt lokale Spieldaten von Informationen, die das Gerät verlassen können. Die geprüfte Umsetzung benötigt kein Nutzerkonto. SDK-Datensätze sind dadurch nicht anonym: pseudonyme Installations- oder Werbekennungen können ein Gerät oder eine App-Installation wiedererkennen."
+          "Die folgenden Kategorien unterscheiden die lokalen Spieldaten von Informationen, die an Anbieter übermittelt werden. SDK-Kennungen sind pseudonyme Kennungen und keine Garantie für Anonymität. Die beschriebenen Spielfunktionen benötigen weder Gerätekontakte, eine Berechtigung für den präzisen Standort, Kameraaufnahmen noch ein Spielerkonto."
         ],
         "table": true
       },
       {
         "id": "local",
-        "title": "Lokale Spielstände und Einstellungen",
+        "title": "Lokale Spielstände, Einstellungen und Altersgruppe",
         "paragraphs": [
-          "Gespeichert werden das aktuelle Rätsel und die Zeltanordnung, abgeschlossene Level, das Camp-Album, Tutorials, Sprache, Ton-, Anzeige- und Barrierefreiheitseinstellungen, lokale Ressourcenstände sowie Nachweise über Datenschutzentscheidungen. Auch Wiederherstellungskopien von Spielständen und eine zwischengespeicherte rechtliche Erklärung können vorhanden sein. Das geprüfte Speichersystem lädt diese Daten nicht hoch.",
-          "Die lokale Speicherung ermöglicht es, das Spiel fortzusetzen und Ihre Auswahl zu behalten. Soweit es sich um personenbezogene Daten handelt, ist die Grundlage Art. 6 Abs. 1 Buchst. b DSGVO zur Bereitstellung der von Ihnen gewünschten Spielfunktionen. Für diese Funktionen unbedingt notwendige Speicherung ist nach §25 TDDDG gesondert von optionalem Tracking zu beurteilen.",
-          "Lokale Daten bleiben bis zum Löschen oder Entfernen der App gespeichert; Android- oder Herstellersicherungen und Geräteübertragungen können fortbestehen. Das Repository belegt nicht die endgültigen Regeln für Android Auto Backup. Eine Deinstallation oder das Löschen des Spielstands entfernt nicht zwangsläufig Plattformsicherungen, SDK-Speicher oder Serverdaten. Nutzen Sie nach Bedarf die lokalen Löschfunktionen des Spiels sowie Androids App-Speicher- und Sicherungseinstellungen."
+          "Das Spiel speichert Rätsel- und Zeltanordnungen, abgeschlossene Level, Lageralbum, Einführung, Sprache, Ton, Anzeige-/Barrierefreiheitseinstellungen, lokale Ressourcen und Datenschutzentscheidungen. Gespeichert werden außerdem Altersgruppe und Regelversion, ohne ein genaues Geburtsdatum abzufragen. Wiederherstellungskopien und ein zwischengespeicherter Rechtstext sind möglich. Das Speichersystem des Spiels lädt diese Daten nicht auf einen Server hoch.",
+          "Lokale Speicherung stellt die von Ihnen gewünschten Spielfunktionen und Einstellungen bereit. Soweit diese Daten personenbezogen sind, gilt Art. 6 Abs. 1 lit. b DSGVO für die zur Bereitstellung erforderliche Verarbeitung, sofern eine wirksame Vertragsgrundlage besteht. Für unbedingt erforderliche Endgerätespeicherung wird §25 Abs. 2 TDDDG geprüft; diese Ausnahme umfasst kein optionales Tracking. Die minimale Altersgruppenbeschränkung beruht auf Art. 6 Abs. 1 lit. f: dem Interesse am Schutz junger Personen und an der Anwendung der gewählten Datenschutzregeln. Minimale Entscheidungsnachweise dienen der Verwaltung und dem Nachweis von Einwilligungen nach Art. 6 Abs. 1 lit. c, soweit zur gesetzlichen Rechenschaft erforderlich.",
+          "Lokale Daten bleiben bis zur Entfernung über Spiel-, Geräte- oder App-Löschfunktionen erhalten; Android-, Hersteller- und Geräteübertragungssicherungen sind zu berücksichtigen. Die endgültigen Release-Sicherungsregeln sind noch zu prüfen. Lokales Löschen oder Deinstallieren entfernt nicht automatisch Plattformsicherungen, SDK-Daten oder bereits an Google übermittelte Daten."
         ]
       },
       {
         "id": "analytics",
-        "title": "Optionale Firebase-Analyse",
+        "title": "Optionale Firebase Analytics",
         "paragraphs": [
-          "Der geprüfte Adapter unterstützt eine gesonderte freiwillige Einwilligung in die Spielanalyse. Sie dient dazu, schwierige Level zu erkennen, Bedienung und Barrierefreiheit zu bewerten und Leistungsprobleme festzustellen. Die implementierten Kategorien umfassen Levelbeginn und Zusammenfassungen, Zähler für Aktionen und Regelverstöße, Zeitspannen, Bildschirmkategorien, gruppierte Einstellungen, drei festgelegte Rückmeldungen und Klassen von Frame-Zeiten. Parameter sind numerisch; Freitext oder rohe Gestenverläufe werden vom Adapter nicht übermittelt. Die Levelmessung erfasst derzeit nur Level 1–30, obwohl die Kampagne 100 Level hat.",
-          "Die früher vorgeschlagenen Ereignisse wie game_started, level_complete und rewarded_ad_completed wurden nicht als tatsächlich gesendete Ereignisse gefunden. Sie dürfen nicht als erhobene Daten dargestellt werden. Bei aktivem Firebase Analytics können zusätzlich App-Instanzkennungen, Geräte- und Betriebssysteminformationen, App-Version, Sprache, Sitzungs- oder Nutzungsereignisse sowie weitere automatisch erfasste Ereignisse anfallen. IP-Adressen werden für die Netzwerkverbindung verarbeitet und können zur groben geografischen Zuordnung dienen; eine Berechtigung für den Gerätestandort wurde nicht gefunden. Ohne Konto bedeutet nicht anonym.",
-          "Vorgesehene Grundlage der optionalen Spielanalyse ist eine Einwilligung nach Art. 6 Abs. 1 Buchst. a DSGVO und, soweit erforderlich, §25 Abs. 1 TDDDG. Im eingecheckten Stand ist die Analyse ausgeschaltet. Der bedingt eingebundene Adapter erlaubt Analytics-Speicherung erst nach Zustimmung; Werbespeicherung, Werbenutzerdaten und personalisierte Werbung werden abgelehnt. Diese Codevorgaben belegen nicht die Konfiguration eines neueren SDKs oder verknüpfter Google-Konten.",
-          "Soweit verfügbar, ändern Sie Ihre Auswahl unter Einstellungen → Datenschutz → Analyse. Ein Widerruf beendet die Erfassung durch diesen Adapter und setzt lokale Analytics-Daten sowie die App-Instanzkennung zurück. Bereits an Google übermittelte Informationen werden dadurch nicht automatisch gelöscht. Für eine Anfrage zu Serverdaten nutzen Sie die Datenschutz-E-Mail-Adresse. Die Ablehnung der Analyse verhindert das eigentliche Spielen nicht."
+          "Die Spielanalyse hilft, schwierige Level zu erkennen, Steuerungs-/Barrierefreiheitseinstellungen zu bewerten und Leistungsprobleme zu untersuchen. Das aktuelle Schema umfasst sechs numerische Ereignisfamilien: qc_level_begin, qc_level_summary, qc_screen, qc_comfort_setting, qc_comfort_feedback und qc_frame_budget. Erfasst werden gruppierte Zeit-/Einstellungswerte, Zähler für Aktionen und Regelverletzungen, Bildschirmkategorien, drei feste Rückmeldungen und Bildzeitbereiche. Die Levelmessung umfasst derzeit Level 1–30. Freitext, Spielernamen und rohe Gestenspuren gehören nicht dazu. Früher vorgeschlagene Ereignisnamen gelten nicht als implementierte Erfassung.",
+          "Bei Aktivierung verarbeitet Firebase Analytics zusätzlich App-Instanzkennungen, Geräte-/Betriebssystem- und App-Angaben, Sprache sowie automatisch erfasste Aktivitäts-/Sitzungsereignisse. Für die Netzwerkkommunikation wird eine IP-Adresse verarbeitet; daraus kann ein ungefährer Standort abgeleitet werden. Eine Berechtigung für den präzisen Standort ist dafür nicht erforderlich.",
+          "Das Release-Profil verlangt eine gesonderte Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und, soweit einschlägig, §25 Abs. 1 TDDDG. Analytics-Erfassung und -Speicherung sind vor der maßgeblichen Entscheidung ausgeschaltet und werden unter 16 oder bei unbekanntem Alter nicht aktiviert. Werbespeicherung, Werbenutzerdaten und Personalisierung bleiben im Analytics-Adapter abgelehnt. Eine eigene Nutzer-ID sowie Google-Signals-/Personalisierungsintegrationen gehören nicht zu diesem Profil.",
+          "Die Entscheidung lässt sich unter Einstellungen → Datenschutz → Analytics ändern. Ein Widerruf stoppt weitere Erfassung durch den Adapter und setzt den lokalen Analytics-Zustand und die App-Instanzkennung zurück. Bereits hochgeladene Daten werden dadurch nicht automatisch gelöscht; wenden Sie sich für einen entsprechenden Serverdatenantrag an den Datenschutzkontakt."
         ]
       },
       {
         "id": "crashes",
-        "title": "Absturzdiagnose mit Firebase Crashlytics",
+        "title": "Freiwillige Firebase-Crashlytics-Berichte",
         "paragraphs": [
-          "Eine Crashlytics-Installation wurde gemeldet. Im geprüften eingecheckten Projekt wurden jedoch weder das Crashlytics-SDK noch Initialisierung, abweichende Erfassungseinstellungen, benutzerdefinierte Schlüssel, Nutzerkennungen oder Diagnoseprotokoll-Aufrufe gefunden. Eine konkrete Widerspruchs- oder Abschaltmöglichkeit in der Release-Version lässt sich nicht bestätigen. Ebenso wenig lässt sich behaupten, dass Crashmeldungen standardmäßig deaktiviert sind. Googles Standardverhalten bei eingebundenem Crashlytics ist die automatische Erfassung, sofern sie nicht anders konfiguriert wird.",
-          "Ist Crashlytics aktiv, können Stacktraces und Ausnahmemeldungen, Zeitstempel, App-Version, Gerätemodell, Betriebssystem, Speicherinformationen, Absturz-, Sitzungs- und Installationskennungen sowie konfigurierte Protokolle oder Schlüssel verarbeitet werden. Bei eingebundenem Analytics und zulässiger Erfassung können Analytics-Breadcrumbs hinzukommen. Zweck ist, Fehler nachzuvollziehen und die Stabilität zu verbessern. Diagnosemeldungen müssen auf versehentlich enthaltene personenbezogene Informationen geprüft werden.",
-          "Erfassungssteuerung und Rechtsgrundlage müssen vor dem Release festgelegt werden. Eine eng begrenzte Stabilitätsdiagnose könnte nur nach dokumentierter Erforderlichkeits- und Interessenabwägung sowie gesonderter Prüfung des Endgerätezugriffs auf Art. 6 Abs. 1 Buchst. f DSGVO gestützt werden. Eine freiwillige Einwilligungslösung benötigt Art. 6 Abs. 1 Buchst. a und eine wirksame Auswahl. Hier wurden weder eine solche Prüfung noch eine Einwilligungsumsetzung nachgewiesen. Der Analytics-Schalter ist kein belegter Crashlytics-Schalter."
+          "Absturzberichte helfen, Fehler nachzuvollziehen und Stabilitätsprobleme zu beheben. Sie können Stacktraces, Ausnahmetexte, Zeitpunkte, App-Version, Gerätemodell, Betriebssystem, Speicherangaben sowie Absturz-, Sitzungs- und Installationskennungen enthalten. Dieses Profil führt weder eine eigene Spieler-ID noch Spielerfreitext oder ein zusätzliches Schema eigener Logs/Schlüssel ein. Fehlermeldungen müssen auf unbeabsichtigte personenbezogene Inhalte geprüft werden. Berichte können auch SDK-Diagnoseprotokolle enthalten; diese sind auf personenbezogene Informationen zu prüfen.",
+          "Gewählt ist eine unabhängige freiwillige Übermittlung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und gegebenenfalls §25 Abs. 1 TDDDG. Sie wird unter 16 und bei unbekanntem Alter nicht aktiviert. Der Analytics-Schalter erlaubt keine Absturzberichte. Eine Standardintegration kann automatisch berichten; vor der Aktivierung sind deshalb geprüfte native Starteinstellungen und eine gesonderte Steuerung erforderlich.",
+          "Die Entscheidung lässt sich unter Einstellungen → Datenschutz → Absturzberichte ändern. Ein Widerruf beendet künftige Berichte. Ausstehende Geräteberichte müssen mit SDK-Funktionen getrennt von Spielständen behandelt und gelöscht werden. Anträge zu bereits übermittelten Berichten erfolgen über den Datenschutzkontakt und Anbieterprozesse. Firebase kann Analytics-Breadcrumbs nur bei zugleich aktivierter maßgeblicher Analytics-Erfassung hinzufügen. Das installierte SDK und die Warteschlangenbehandlung müssen vor der Aktivierung noch geprüft werden."
         ]
       },
       {
         "id": "ads",
-        "title": "Werbung und Datenschutzauswahl",
+        "title": "Nicht personalisierte Werbung gegen Belohnung",
         "paragraphs": [
-          "Implementiert ist ein vom Nutzer angefordertes Belohnungsvideo für ein zusätzliches Leben. Die lokale Belohnung wird erst vergeben, wenn das SDK den Anspruch meldet und die Anzeige geschlossen wurde. Fehlgeschlagene oder übersprungene Videos gewähren sie nicht. Das lokale Wirtschaftssystem begrenzt diese Belohnungen auf zehn je UTC-Tag. Funktionsfähige Banner, Interstitials oder zusätzliche Mediation-Adapter wurden nicht gefunden. Produktive AdMob-Nachrichten und ausgewählte Werbepartner lassen sich aus dem Repository nicht ermitteln.",
-          "Bei Werbeanfragen kann Google Mobile Ads IP-Adressen, die einen ungefähren Standort erkennen lassen, Interaktionen wie Antippen und Videoaufrufe, technische Leistungsdaten, die Android-Werbe-ID, App-Set-ID und weitere zulässige SDK-Kennungen übermitteln. Nicht personalisierte Werbung macht Werbung und Messung nicht anonym. Verfügbare Kennungen hängen auch von Geräte- und SDK-Einstellungen ab.",
-          "Bei Herausgeberinventar aktualisiert der Code UMP-Einwilligungsinformationen, zeigt bei Bedarf ein Formular und prüft die Zulässigkeit einer Werbeanfrage, bevor Werbung initialisiert und geladen wird. Dies erfolgt auf ausdrückliche Belohnungsanfrage, nicht bei jedem Start. Google empfiehlt eine Aktualisierung bei jedem App-Start; diese Abweichung ist zu prüfen. Googles Testinventar in der Entwicklung umgeht Herausgebernachrichten. Der Spielcode setzt weder einen eigenen personalisierten/nicht personalisierten Anfragemodus noch ein Minderjährigen-Flag. Das produktive Verhalten hängt von gültigen Entscheidungen, Kontoeinstellungen und dem SDK ab.",
-          "Soweit gesetzlich erforderlich, benötigen Speicherung/Zugriff für Werbung und personalisierte Werbung eine Einwilligung nach Art. 6 Abs. 1 Buchst. a DSGVO und §25 Abs. 1 TDDDG. Einwilligung und anbieterspezifische Zwecke müssen in der tatsächlichen In-App-Nachricht ausgewiesen werden. Betrugsprävention und weitere Anbieterzwecke benötigen jeweils eine tragfähige Grundlage; eine pauschale Rechtfertigung durch berechtigte Interessen wird hier nicht behauptet. Vor Aktivierung produktiver Werbung müssen die Anbieterliste und einschlägigen Bedingungen geprüft werden.",
-          "Wenn UMP eine Datenschutzauswahl verlangt, stellt das Spiel unter Einstellungen → Datenschutz eine Aktion zum erneuten Öffnen des Google-Formulars bereit. Sie ist vom Analytics-Schalter getrennt. Die Werbe-ID verwalten Sie in Androids Geräteeinstellungen. Diese Website enthält keinen Einwilligungsschalter und kann Ihre In-App-Auswahl nicht ändern. Siehe <a href=\"https://policies.google.com/privacy\">Googles Datenschutzerklärung</a> und <a href=\"https://policies.google.com/technologies/ads\">Googles Informationen zu Werbung</a>. Das endgültige Formular muss die ausgewählten Anbieter einsehbar machen."
+          "AdMob stellt freiwillige Videos gegen Belohnung bereit. In den implementierten Abläufen können ein bestätigtes SDK-Belohnungsereignis und das anschließende Schließen der Anzeige ein Leben oder eine kosmetische Laterne gewähren. Zusätzliche Leben sind auf zehn pro UTC-Tag begrenzt; das ist kein allgemeines Limit aller kosmetischen Belohnungen. Fehlgeschlagene oder übersprungene Anzeigen gewähren keine Belohnung. Die Laterne kann auch durch normales Spielen verdient werden. Funktionierende Banner, Interstitials oder zusätzliche Vermittlungsadapter gehören nicht zu diesem Profil.",
+          "AdMob kann IP-Adresse und daraus abgeleiteten ungefähren Standort, Klicks/Videoaufrufe, technische Leistungsdaten, Werbe-ID, App-Set-ID und andere zulässige SDK-Kennungen verarbeiten. Auch nicht personalisierte Werbung verarbeitet personenbezogene Daten. Zwecke sind die Auslieferung der angeforderten Anzeige, Erfolgsmessung und Betrugsbekämpfung.",
+          "Für alle Personen wird nicht personalisierte Werbung angefordert. Bei unbekanntem Alter und unter 16 gibt es keine Werbeanfragen. Berechtigte Personen entscheiden zunächst über optionale Werbung. Soweit erforderlich, bietet Google UMP weitere Zweck-/Anbieterentscheidungen; eine notwendige Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und §25 Abs. 1 TDDDG muss dem betreffenden Gerätezugriff und der Verarbeitung vorausgehen. Sicherheits-/Betrugszwecke der Anbieter benötigen eigene gültige Grundlagen; ein pauschales berechtigtes Interesse für sämtliche Werbung wird nicht behauptet.",
+          "Der Release-Ablauf aktualisiert Einwilligungsinformationen bei berechtigten Starts nach Erlaubnis optionaler Werbung, prüft UMP-Ergebnis und Anzeigenberechtigung und setzt für 16–17-Jährige den Jugendschutzmodus vor der SDK-Initialisierung. Es werden NPA-Anzeigen angefordert; fehlt erforderliche Speichereinwilligung, wird das Laden vorsorglich gesperrt. Ein Limited-Ads-Ersatzmodus wird nicht bewusst aktiviert. Produktive Werbung setzt die Prüfung der veröffentlichten Nachricht, ausgewählten Anbieter und tatsächlichen SDK-Verarbeitung voraus.",
+          "Unter Einstellungen → Datenschutz → Werbung gegen Belohnung können Sie optionale Anzeigen ausschalten. Verlangt Google einen Datenschutzeinstellungszugang, lässt sich das Formular im Spiel erneut öffnen. Dort sind die ausgewählten Anbieter einsehbar. Die Werbe-ID lässt sich in Android verwalten. Diese Website verändert keine Spieleinwilligungen. Siehe <a href=\"https://policies.google.com/privacy\">Google-Datenschutzerklärung</a> und <a href=\"https://policies.google.com/technologies/ads\">Google-Werbeinformationen</a>."
         ]
       },
       {
         "id": "young-users",
         "title": "Kinder und Jugendliche",
         "paragraphs": [
-          "Quiet Camp richtet sich an Personen ab 13 Jahren. Dies ist weder eine Altersprüfung noch eine Erlaubnis zum Tracking sämtlicher Jugendlicher. Im geprüften Stand gibt es eine Mindestalter-Einstellung, aber keinen nachgewiesenen Altersdialog, kein Verfahren zur elterlichen Autorisierung und keine belegte Minderjährigenbehandlung für Werbung.",
-          "Wird einem Kind ein Dienst der Informationsgesellschaft unmittelbar auf Grundlage einer Einwilligung angeboten, gilt Art. 8 DSGVO. In Deutschland benötigt eine Person unter 16 dafür grundsätzlich die Autorisierung eines Trägers der elterlichen Verantwortung; andere Länder haben andere Altersgrenzen. Nicht jede Verarbeitung im Spiel beruht deshalb automatisch auf Einwilligung. Optionale Analyse und Werbung müssen Alter und Land berücksichtigen; lässt sich keine gültige Einwilligung feststellen, muss das entsprechende Tracking unterbleiben.",
-          "Vor dem Release muss der Entwickler den Umgang mit 13–15- und 16–17-Jährigen klären, die erforderlichen Werbeeinschränkungen sowohl in UMP als auch in Werbeanfragen setzen und die Play-Console-Zielgruppe mit dem tatsächlichen Publikum abstimmen. UMP überträgt sein Under-Age-of-Consent-Flag nicht automatisch an Mobile Ads. Die Google-Play-Familienrichtlinien sind zu beachten, soweit Kinder zur jeweils relevanten Zielgruppe gehören. Elterliche Einwilligung, Altersprüfungen oder jugendgerechte personalisierte Werbung werden hier nicht als umgesetzt dargestellt. Bei Hinweisen auf eine unzulässige Verarbeitung von Kinderdaten wenden Sie sich bitte an den Datenschutzkontakt."
+          "Quiet Camp richtet sich an Personen ab 13 Jahren. Die Altersgruppenauswahl ist eine Selbstauskunft, keine Identitätsprüfung oder elterliche Erlaubnis. Eine elterliche Einwilligungsprüfung ist in diesem ersten Release-Profil nicht umgesetzt. Unter 13 wird auf das Mindestalter hingewiesen; unbekanntes Alter und die Gruppe 13–15 aktivieren weder Analytics noch die Übermittlung von Absturzberichten oder Werbeanfragen.",
+          "Für berechtigte 16–17-Jährige verlangen Analytics und Crashlytics unabhängige Entscheidungen; Werbung erhält Jugendschutz ohne Personalisierung. Auch für Erwachsene bleibt Werbung nicht personalisiert. Eine Änderung der Altersgruppe setzt optionale Erlaubnisse zurück und erfordert neue maßgebliche Entscheidungen. Diese Schutzregel ist eine Produktentscheidung und behauptet kein weltweit einheitliches Einwilligungsalter.",
+          "Art. 8 DSGVO betrifft Einwilligungen in unmittelbar Kindern angebotene Dienste der Informationsgesellschaft, soweit Art. 6 Abs. 1 lit. a gilt. In Deutschland liegt die allgemeine Schwelle bei 16; nationale Regeln unterscheiden sich. Zielgruppe, Play-Console-Altersgruppen und tatsächliche Inhalte/Werbung müssen übereinstimmen. Eine 13+-Angabe beseitigt anwendbare Families- oder andere Kinderschutzpflichten nicht automatisch."
         ]
       },
       {
         "id": "support",
-        "title": "Support und Datenschutzanfragen",
+        "title": "Support und Datenschutzkorrespondenz",
         "paragraphs": [
-          "Bei einer E-Mail verarbeiten wir Ihre Adresse, Nachricht, Anhänge und Korrespondenz-Metadaten, um Ihre Anfrage zu beantworten. Senden Sie nur die zur Problembeschreibung nötigen Informationen, möglichst keine sensiblen Daten oder vollständigen Gerätesicherungen.",
-          "Für vertraglich erforderlichen Spielsupport kann Art. 6 Abs. 1 Buchst. b DSGVO gelten. Sonstige gewöhnliche Korrespondenz stützt sich unter Wahrung Ihrer Rechte auf Art. 6 Abs. 1 Buchst. f, das Interesse an der Beantwortung von Anfragen. Gesetzliche Datenschutzanfragen werden nach Art. 6 Abs. 1 Buchst. c bearbeitet. Bestimmte gesetzliche Aufbewahrungspflichten können eine begrenzte Dokumentation erfordern. Diese Grundlagen erlauben kein optionales SDK-Tracking.",
-          "Nachrichten bearbeiten der Entwickler und der konfigurierte E-Mail-Anbieter. Eine Domainregistrierung bei STRATO belegt nicht den Anbieter der Postfächer. Mailanbieter, Verarbeitungsbedingungen und Funktionsfähigkeit der Postfächer sind noch zu bestätigen. Vorgesehen ist die Löschung zwölf Monate nach Abschluss des Falls, soweit keine konkrete gesetzliche Pflicht oder notwendige Aufbewahrung zur Rechtsverfolgung entgegensteht. Die praktische Umsetzung dieses Plans ist noch nicht geprüft."
+          "Wenn Sie dem Entwickler schreiben, werden E-Mail-Adresse, Nachricht, Anhänge und Korrespondenzmetadaten zur Antwort verarbeitet. Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>; Datenschutz: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Der Entwickler bestätigt funktionierende Postfächer und persönliche Bearbeitung. Senden Sie nur erforderliche Angaben, keine sensiblen Dokumente oder vollständige Gerätesicherung.",
+          "Art. 6 Abs. 1 lit. b DSGVO gilt bei notwendiger Vertragsunterstützung; allgemeine Anfragen können auf Art. 6 Abs. 1 lit. f beruhen, dem berechtigten Interesse an der Beantwortung von Korrespondenz. Gesetzliche Betroffenenrechte werden nach Art. 6 Abs. 1 lit. c bearbeitet. Diese Grundlagen erlauben kein optionales SDK-Tracking.",
+          "Die Domain-MX-Einträge weisen auf E-Mail-Empfang über STRATO-Infrastruktur hin. Genaue Vertrags- und Sicherungsbedingungen sind noch zu bestätigen. Vorgesehen ist die Löschung zwölf Monate nach Vorgangsabschluss, außer bei konkreten gesetzlichen Pflichten oder erforderlicher Rechtsverfolgung. Die praktische Umsetzung im Postfach muss vor der Release-Freigabe geprüft werden."
         ]
       },
       {
         "id": "sharing",
         "title": "Empfänger und Drittlandübermittlungen",
         "paragraphs": [
-          "Bei aktivierten Google-Diensten gehören der zuständige Google-Vertragspartner, dessen Auftragsverarbeiter und ausgewählte Werbepartner zu den Empfängern. Bei Crashlytics-Kundendaten handelt Google üblicherweise als Auftragsverarbeiter; Analytics hat gesonderte Bedingungen. Bei Werbung hängen die Rollen vom Dienst und Zweck ab. Die konkrete Vertragsgesellschaft, Anbieterauswahl, Freigabeeinstellungen, verknüpften Produkte und angenommenen Verträge waren für diese Prüfung nicht zugänglich und müssen vor Veröffentlichung bestätigt werden.",
-          "Google-Dienste können Daten außerhalb des EWR, auch in den USA, verarbeiten. Je nach Empfänger kommen ein Angemessenheitsbeschluss für einen zertifizierten Empfänger nach dem EU–US Data Privacy Framework und/oder die Standardvertragsklauseln der Europäischen Kommission im jeweiligen Vertrag mit gegebenenfalls nötigen ergänzenden Maßnahmen in Betracht. Ihre Anwendbarkeit ist für die tatsächlichen Empfänger zu prüfen. Eine ausschließliche Speicherung im EWR wird nicht zugesagt. Informationen zu den anwendbaren Garantien können Sie über den Datenschutzkontakt anfordern.",
-          "Weitere Informationen enthalten die <a href=\"https://firebase.google.com/support/privacy\">Firebase-Datenschutzinformationen</a>, die <a href=\"https://firebase.google.com/terms/data-processing-terms\">Firebase-Verarbeitungsbedingungen</a>, <a href=\"https://business.safety.google/adsprocessorterms/\">Google-Ads-Verarbeitungsbedingungen</a> und <a href=\"https://business.safety.google/controllerterms/\">Googles Bedingungen für Verantwortliche</a>. Empfängerangaben und Übermittlungsregeln müssen zum tatsächlich aktivierten Dienst passen."
+          "Empfänger sind der Entwickler, die zuständigen Google-Unternehmen für aktivierte Dienste, deren Auftragsverarbeiter und die in der tatsächlichen Google-Nachricht ausgewählten Werbepartner. Hosting und E-Mail-Anbieter verarbeiten notwendige Seitenanfragen und Korrespondenz. Das Fehlen eines zusätzlichen Vermittlungs-SDKs belegt nicht, dass keine Werbepartner beteiligt sind.",
+          "Google-Dienste können außerhalb des EWR, einschließlich der USA, verarbeiten; eine ausschließlich europäische Speicherung wird nicht zugesagt. Tatsächlich angenommene Verträge und Empfängerrollen sind zu prüfen. Anwendbare Garantien können Standardvertragsklauseln und/oder ein Angemessenheitsbeschluss für einen berechtigten zertifizierten Empfänger des EU–US Data Privacy Framework sein, bei Bedarf ergänzt um weitere Maßnahmen. Angaben zu den geltenden Garantien erhalten Sie über den Datenschutzkontakt.",
+          "Anbieterquellen: <a href=\"https://firebase.google.com/support/privacy\">Firebase-Datenschutz</a>, <a href=\"https://firebase.google.com/terms/data-processing-terms\">Firebase-Verarbeitungsbedingungen</a>, <a href=\"https://business.safety.google/adsprocessorterms/\">Google-Ads-Verarbeitungsbedingungen</a> und <a href=\"https://business.safety.google/controllerterms/\">Controller-Bedingungen</a>. Diese Links allein bestätigen keine kontospezifischen Verträge des Entwicklers."
         ]
       },
       {
         "id": "retention",
         "title": "Speicherdauer und Löschung",
         "paragraphs": [
-          "Lokale Spieldaten bleiben bis zum Entfernen auf dem Gerät; die Sicherungsvorbehalte in Abschnitt 4 gelten. Für Analytics sind zwei Monate für Nutzer- und Ereignisdaten vorgesehen, soweit diese unter die GA4-Aufbewahrungseinstellung fallen. Ein Konsolennachweis hierfür fehlt. Diese Einstellung bestimmt keine einheitliche Frist für aggregierte Standardberichte, gesonderte Exporte oder sämtliche Kennungen. Auch eine Zurücksetzung der Frist bei neuer Aktivität und verknüpfte Exporte sind zu prüfen.",
-          "Google dokumentiert für Crashlytics eine Aufbewahrung von Absturz-Stacktraces, extrahierten Minidump-Daten und zugehörigen Kennungen für 90 Tage, bevor die Entfernung aus Live- und Sicherungssystemen beginnt. Dies ist eine Anbieterregel und keine Zusage vollständiger Löschung am 90. Tag. Rohe NDK-Minidumps werden nur vorübergehend zur Verarbeitung gespeichert. Abweichende Fristen oder die lokale Release-Konfiguration wurden nicht geprüft.",
-          "Die Aufbewahrung von Werbedaten richtet sich nach den einschlägigen Google- und Anbieterbedingungen. Eine feste spielspezifische Frist ist nicht festgestellt. Für Support gilt die vorgesehene Zwölfmonatsregel aus Abschnitt 9. Die Speicherdauer von Hosting-Protokollen ist anhand der tatsächlichen Hosting-Konfiguration zu bestätigen.",
-          "Löschanfragen richten Sie an <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Nennen Sie App-Version, ungefähre Zeitpunkte und den relevanten Zusammenhang. Eine verhältnismäßige Identitätsprüfung kann nötig sein; pseudonyme SDK-Datensätze sind unter Umständen nicht allein anhand einer E-Mail-Adresse auffindbar. Senden Sie nicht unaufgefordert einen Ausweis. Wir erläutern Grenzen der Zuordnung, anwendbare Ausnahmen und mögliche Anbieterprozesse. Lokales Zurücksetzen, Zurücksetzen der Werbe-ID und Widerruf löschen frühere Serverdaten nicht automatisch."
+          "Lokale Daten bleiben bis zur Entfernung erhalten, mit den beschriebenen Sicherungsgrenzen. Das Release-Profil wählt zwei Monate für die von der GA4-Aufbewahrungseinstellung erfassten Nutzer-/Ereignisdaten, ohne unnötige Verlängerung durch neue Aktivität. Die tatsächliche Property-Einstellung ist zu bestätigen. Dies ist keine universelle Frist für aggregierte Standardberichte, Kennungen oder gesonderte Exporte; unnötige Exporte gehören nicht zu diesem Profil.",
+          "Google erklärt, dass Crashlytics Stacktraces, extrahierte Minidump-Daten und verbundene Kennungen 90 Tage aufbewahrt, bevor die Entfernung aus Live- und Sicherungssystemen beginnt. Vollständige Löschung am 90. Tag wird damit nicht zugesagt. Rohe NDK-Minidumps werden vorübergehend zur Verarbeitung gespeichert. Werbedaten unterliegen den jeweiligen Google-/Anbieterbedingungen; eine ungeprüfte spielspezifische Höchstdauer wird nicht versprochen.",
+          "Für Korrespondenz gelten die gewählte Zwölfmonatsfrist und gesetzlichen Ausnahmen. Tatsächliche Hosting-Protokoll- und Sicherungsfristen sind anhand der Hosting-Vereinbarung festzustellen. Anbieter, aggregierte Berichte und lokale Kopien haben keine einheitliche universelle Aufbewahrungsuhr.",
+          "Für Auskunft oder Löschung schreiben Sie an <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a> und nennen App-Version, ungefähre Zeitpunkte und Kontext. Eine E-Mail-Adresse allein identifiziert pseudonyme SDK-Einträge möglicherweise nicht. Eine verhältnismäßige Prüfung kann erforderlich sein; senden Sie nicht unaufgefordert einen Ausweis. Wir erläutern Zuordnungsgrenzen, Anbieterprozesse und rechtliche Ausnahmen. Lokales Zurücksetzen, Widerruf und Zurücksetzen der Werbe-ID löschen bereits übermittelte Daten nicht selbst."
         ]
       },
       {
@@ -345,20 +344,19 @@
       },
       {
         "id": "website",
-        "title": "Diese Website und Datensicherheit",
+        "title": "Diese Website und Sicherheit",
         "paragraphs": [
-          "Diese rechtliche Seite enthält keine Analyse-Skripte, Werbe-SDKs, externen Schriftarten, Einwilligungs-Cookies oder eingebetteten Medien. Wesentlicher Text und Sprachnavigation funktionieren ohne JavaScript. Der Hoster empfängt dennoch Verbindungsdaten wie IP-Adresse, Anfragepfad, Zeitpunkt und Browserinformationen zur Auslieferung und zum Schutz der Infrastruktur. Auslieferung und angemessene Sicherheitsprotokollierung werden nach Art. 6 Abs. 1 Buchst. f DSGVO beurteilt: Interesse an einer zuverlässigen und sicheren öffentlichen Erklärung.",
-          "Die eigene Domain antwortet derzeit über Vercel. Das endgültige Hosting-Konto, Protokolleinstellungen, Aufbewahrung, Auftragsverarbeitungsvertrag und Übermittlungsgarantien sind vor Veröffentlichung zu bestätigen. Die Domain ist bei STRATO registriert. Die separate illustrierte Spielwebsite nutzt GitHub Pages mit eigener Anfrageverarbeitung. Beim Folgen externer Links entsteht eine Verbindung zum jeweiligen Anbieter. Bestehende Portfolioseiten können andere Ressourcen laden und benötigen eine eigene Website-Datenschutzprüfung.",
-          "Wir treffen der Verarbeitung angemessene Schutzmaßnahmen. Das geprüfte Speichersystem verwendet Validierung, atomare Schreibvorgänge und Wiederherstellungskopien. Das schützt die Integrität und ist keine Aussage über verschlüsselte Spielstände. Google dokumentiert für die betreffenden Dienste eine Transportverschlüsselung. Absolute Sicherheit kann kein System gewährleisten. Tatsächliche Release- und Hosting-Kontrollen sind noch praktisch zu prüfen."
+          "Diese Seite lädt lokale Ressourcen ohne Besucheranalyse, Werbe-SDKs, externe Schriftarten oder Tracking-Cookies. Text und Sprachnavigation funktionieren ohne JavaScript. Vercel erhält Verbindungs-/Anfragedaten wie IP-Adresse, Pfad, Zeitpunkt und Browserangaben zur Bereitstellung und zum Schutz der Website. Art. 6 Abs. 1 lit. f DSGVO ist die Grundlage für verhältnismäßige notwendige Bereitstellung/Sicherheit. Host-Verträge, Protokolle, Aufbewahrung und Übermittlungsgarantien bedürfen noch der kontospezifischen Prüfung.",
+          "Hosting und Korrespondenz sind in der separaten <a href=\"/privacy/de\">Website-Datenschutzerklärung</a> beschrieben; Betreiberangaben stehen im <a href=\"/impressum/de\">Impressum</a>. Der illustrierte Spielführer wird separat auf GitHub Pages bereitgestellt. Externe Links verbinden den Browser mit dem jeweiligen Anbieter.",
+          "Angemessene Maßnahmen umfassen HTTPS, restriktive Website-Sicherheitsheader, sparsame optionale Daten und validierte Spielstände mit Wiederherstellungskopien. Diese sichern Integrität und behaupten keine Spielstandverschlüsselung. Absolute Sicherheit ist nicht möglich. Das tatsächliche Android-Release und die Kontoeinstellungen sind unabhängig von dieser Website zu prüfen."
         ]
       },
       {
         "id": "changes",
         "title": "Änderungen und Kontakt",
         "paragraphs": [
-          "Bei Änderungen der Datenverarbeitung oder Rechtslage passen wir diese Erklärung an und aktualisieren das Datum. Wesentliche Änderungen sollen zusätzlich im Spiel mitgeteilt werden. Soweit erforderlich, muss vor neuer optionaler Verarbeitung eine neue Einwilligung eingeholt werden. Alle drei Sprachfassungen sind gemeinsam zu aktualisieren. Englisch ist die Arbeitsfassung; sie beschränkt keine gesetzlichen Rechte und rechtfertigt keine widersprüchlichen Übersetzungen.",
-          "Kruty1918 Games<br>Entwickler: Oleksiy Havryliuk (amtliche lateinische Schreibweise noch zu prüfen)<br>Land: Deutschland<br>Datenschutz: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a><br>Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>",
-          "Eine geeignete Postanschrift und das Impressum bleiben Freigabevoraussetzungen. Diese Prüffassung enthält keine Wohnanschrift."
+          "Diese Erklärung wird bei geänderten Datenpraktiken oder rechtlichen Anforderungen aktualisiert. Wesentliche Änderungen werden auch im Spiel mitgeteilt; neue optionale Zwecke verlangen vor Erfassung eine neue maßgebliche Entscheidung. Das Datum bezeichnet die Version. Alle drei Sprachfassungen müssen inhaltlich übereinstimmen. Englisch ist die Arbeitsfassung und schränkt gesetzliche Rechte nicht ein.",
+          "Kruty1918 Games<br>Verantwortlicher: {{legalName}} (öffentlicher Name: {{publicName}})<br>Postanschrift: {{postalAddress}}, Deutschland<br>Datenschutz: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a><br>Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>"
         ]
       }
     ]
@@ -374,147 +372,147 @@
     "updated": "Останнє оновлення",
     "date": "20 жовтня 2026 року",
     "contact": "Контакт із питань приватності",
-    "status": "Копія для перевірки · ще не опублікована",
-    "noticeTitle": "Перевірку перед випуском ще не завершено",
-    "notice": "Документ розмежовує перевірений стан проєкту та повідомлені, але не перевірені зміни SDK. Перед публікацією його слід звірити з фактичною Android-версією. Офіційне латинське написання імені, належна поштова адреса й обробка даних молодших користувачів залишаються невирішеними.",
-    "intro": "Інформація про приватність в Android-грі Quiet Camp під торговою назвою Kruty1918 Games. Гра призначена для осіб від 13 років. Читання цієї політики не означає згоди на додаткову обробку даних.",
+    "status": "Релізний кандидат · підтвердження активації ще потрібні",
+    "noticeTitle": "Документ ще не допущено до релізу Android",
+    "notice": "Розробник підтвердив ім’я, поштову адресу та роботу контактних скриньок. Описані нижче механізми приватності підготовлено у вихідному коді. Останні встановлені Firebase SDK, нативний запуск і мережеву поведінку, налаштування Google, договірні гарантії та фактичне зберігання ще потрібно перевірити. Production-активацію SDK заблоковано. Цей кандидат не можна представляти як перевірену релізну політику до завершення цих перевірок.",
+    "intro": "Ця політика описує локальні дані Quiet Camp, необов’язкову ігрову аналітику, звіти про збої, рекламу за винагороду та листування.",
     "footerDeveloper": "Незалежний розробник · Німеччина",
     "support": "Технічна підтримка",
     "top": "На початок",
-    "footerNote": "Посилання на Impressum з’явиться тут, коли сторінка буде доступна. Ця вебсторінка не змінює налаштування приватності у грі.",
+    "footerNote": "Kruty1918 Games — торгова назва фізичної особи. Читання політики не є згодою на необов’язкову обробку.",
     "tableCaption": "Огляд обробки — перевірені та умовні сервіси",
     "tableHead": [
       "Інформація",
-      "Місце зберігання / одержувач",
-      "Поточний стан"
+      "Місце / одержувач",
+      "Вибір або контроль"
     ],
     "rows": [
       [
-        "Прогрес, розташування наметів, альбом, налаштування й рішення щодо приватності",
-        "На пристрої; можливі резервні копії платформи",
-        "Локальне зберігання перевірено"
+        "Прогрес, альбом таборів, налаштування, вікова група та записи про вибір",
+        "На пристрої; можливі резервні копії Android/виробника",
+        "Локальні функції; обліковий запис не потрібен"
       ],
       [
-        "Ігрові та технічні вимірювання, ідентифікатори SDK",
-        "Google Analytics for Firebase, якщо активовано",
-        "Є додатковий адаптер; у перевіреній конфігурації вимкнено"
+        "Ігрові події, ідентифікатори екземпляра застосунку, дані пристрою й гри",
+        "Google Analytics for Firebase",
+        "Окрема добровільна згода для дозволеної аудиторії від 16 років"
       ],
       [
-        "Траси збоїв, інформація про пристрій і діагностичні ідентифікатори",
-        "Firebase Crashlytics, якщо встановлено",
-        "Про інсталяцію повідомлено; поведінку релізу не перевірено"
+        "Траси збоїв, помилки, технічні дані й ідентифікатори встановлення",
+        "Firebase Crashlytics",
+        "Незалежна добровільна згода для дозволеної аудиторії від 16 років"
       ],
       [
-        "Взаємодії з рекламою, IP-адреса, рекламні й програмні ідентифікатори, діагностика",
-        "Google AdMob та налаштовані рекламні партнери",
-        "Тестова реклама для розробки; бойовий режим заблоковано"
+        "IP-адреса, взаємодії з рекламою, дозволені ідентифікатори SDK і діагностика",
+        "Google AdMob та постачальники, вибрані у повідомленні Google",
+        "Добровільна неперсоналізована реклама; без запитів до 16 років або за невідомого віку"
       ],
       [
-        "Адреса електронної пошти, надіслані повідомлення та вкладення",
-        "Розробник і поштовий провайдер",
-        "Лише якщо ви звертаєтеся до нас"
+        "Адреса електронної пошти, листи, вкладення й метадані листування",
+        "Розробник і поштова інфраструктура",
+        "Лише якщо ви звертаєтеся до розробника"
       ]
     ],
     "sections": [
       {
         "id": "controller",
-        "title": "Хто відповідає за дані",
+        "title": "Контролер персональних даних",
         "paragraphs": [
-          "Quiet Camp — просторова головоломка з основним ігровим процесом без постійного з’єднання та базовою кампанією зі 100 рівнів у 10 розділах. Розробник і контролер персональних даних — фізична особа Олексій Гаврилюк Олександрович, що працює в Німеччині. Oleksiy Havryliuk — надане англомовне ім’я для листування; його написання ще не звірено з офіційним документом. Kruty1918 Games — бренд і торгова назва, а не окрема зареєстрована компанія.",
-          "Звернутися до контролера можна за адресою <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Юридично належна поштова адреса ще узгоджується. Це питання потрібно вирішити, перш ніж оголошувати документ або Impressum готовими до випуску."
+          "Quiet Camp — просторова головоломка для Android із локальними основними функціями. Контролер — фізична особа {{legalName}}, також публічно відома як {{publicName}}, що працює під назвою Kruty1918 Games. Надане повне ім’я українською — {{ukrainianName}}. Kruty1918 Games — бренд і торгова назва, а не окрема зареєстрована компанія. Розробник підтвердив, що {{legalName}} — паспортне написання, використане для верифікації Google Play.",
+          "Поштова адреса: {{postalAddress}}, Німеччина. Приватність: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Підтримка: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>. Відомості про власника наведено в <a href=\"/impressum/uk\">юридичних реквізитах</a>."
         ]
       },
       {
         "id": "scope",
-        "title": "Що було перевірено",
+        "title": "Сфера дії та ваш вибір",
         "paragraphs": [
-          "Стан проєкту, збережений у репозиторії, перевірено 20 жовтня 2026 року. Основний ігровий процес і збереження працюють локально. У перевіреній конфігурації не знайдено активного сервісу облікових записів, автентифікації, хмарних збережень, віддаленої конфігурації чи покупок. Персонажі й гості — вигаданий вміст гри, а не контакти з вашого пристрою.",
-          "У залежностях вказано Google Mobile Ads Unity 11.6.0. Поточна конфігурація використовує тестові оголошення Google з винагородою в середовищах розробки; бойова реклама потребує окремих перевірок публікації. Збір Firebase Analytics вимкнено конфігурацією, а його адаптер підключається умовно. Повідомлено про встановлення Firebase Analytics і Crashlytics у новішому локальному проєкті, але інсталяція, її налаштування та мережеві запити були недоступні для перевірки. Нижче ці сервіси описано умовно: це не підтвердження їхньої роботи у випущеній версії.",
-          "Гра не описується як повністю офлайн: реклама та активовані SDK аналітики чи діагностики можуть з’єднуватися із зовнішніми серверами. Відвідування цієї політики також створює з’єднання з хостингом сайту."
+          "Цей релізний профіль охоплює основну гру, локальні збереження та три необов’язкові сервіси Google: Analytics, Crashlytics і неперсоналізовану рекламу за винагороду. Він не містить системи акаунтів, хмарних збережень, активних покупок, банерів, міжсторінкової реклами чи додаткового SDK медіації. Якщо реліз додасть такі функції, спочатку потрібно оцінити обробку й оновити документ.",
+          "Гра запитує віковий діапазон, а не дату народження чи документ. За невідомого віку та до 16 років необов’язкові сервіси не активуються. Для дозволеної аудиторії аналітика, звіти про збої й добровільна реклама мають окремі рішення. Основна локальна гра не потребує цих дозволів. Запис про ознайомлення з документом не є згодою.",
+          "Гра насамперед локальна, але не суто офлайн: активовані необов’язкові Google-сервіси з’єднуються з постачальниками, а відкриття цієї сторінки створює запит до хостингу. Статус кандидата вище позначає незавершені перевірки релізу."
         ]
       },
       {
         "id": "data",
         "title": "Яка інформація обробляється",
         "paragraphs": [
-          "Таблиця відокремлює локальні дані від інформації, що може залишати пристрій. Перевірена реалізація не потребує облікового запису. Це не робить записи SDK анонімними: псевдонімні ідентифікатори інсталяції або реклами можуть розрізняти пристрої чи інсталяції застосунку."
+          "Таблиця розрізняє дані гри на пристрої та інформацію, передану постачальнику. Ідентифікатори SDK є псевдонімними, а не гарантією анонімності. Для описаних функцій не потрібні контакти пристрою, дозвіл на точну геолокацію, запис камери чи акаунт гравця."
         ],
         "table": true
       },
       {
         "id": "local",
-        "title": "Локальний прогрес і налаштування",
+        "title": "Локальний прогрес, налаштування та вік",
         "paragraphs": [
-          "Гра зберігає поточну головоломку й розташування наметів, завершені рівні, альбом таборів, навчання, мову, параметри звуку, зображення та доступності, локальні залишки ресурсів і підтвердження вибору щодо приватності. Також можуть зберігатися копії для відновлення та кеш правового документа. Перевірена система збережень не завантажує ці записи на сервер.",
-          "Локальне зберігання дає змогу продовжувати гру й пам’ятати ваші налаштування. Якщо ці записи є персональними даними, підстава — стаття 6(1)(b) GDPR: надання замовлених вами функцій гри. Зберігання, суворо необхідне для цих функцій, оцінюється окремо від необов’язкового відстеження за німецькими правилами доступу до кінцевого обладнання (§25 TDDDG).",
-          "Локальні дані зберігаються до видалення вами або видалення застосунку з урахуванням резервного копіювання Android, виробника та перенесення на інший пристрій. Репозиторій не підтверджує остаточних правил Android Auto Backup. Видалення застосунку чи локального збереження не обов’язково видаляє резервні копії платформи, сховище SDK або серверні записи. За потреби скористайтеся локальним видаленням у грі та налаштуваннями сховища й резервування Android."
+          "Гра зберігає розкладки головоломок і наметів, завершені рівні, альбом, навчання, мову, звук, налаштування відображення й доступності, локальні ресурси та записи про приватність. Зберігається вікова група й версія правил без запиту точної дати народження. Можливі відновлювальні копії та кеш юридичного документа. Система збережень гри не завантажує ці записи на сервер.",
+          "Локальні записи забезпечують запитані функції й налаштування. Якщо вони є персональними даними, стаття 6(1)(b) GDPR застосовується до необхідної для надання запитаної гри обробки за наявності належної договірної підстави. Строго необхідне для запитаних функцій зберігання на пристрої оцінюється за §25(2) TDDDG; цей виняток не охоплює необов’язкове відстеження. Мінімальний віковий діапазон для обмежень обробляється за статтею 6(1)(f) — інтересом захищати молодих користувачів і застосовувати обрані правила приватності. Мінімальні записи про вибір підтримують керування та підтвердження згоди за статтею 6(1)(c), де це необхідно для юридичної підзвітності.",
+          "Локальні дані залишаються до видалення засобами гри, пристрою або застосунку, з урахуванням резервного копіювання Android, виробника й перенесення пристрою. Фінальні правила backup потрібно перевірити. Очищення або деінсталяція не видаляють автоматично резервні копії платформи, записи SDK чи вже передані Google дані."
         ]
       },
       {
         "id": "analytics",
         "title": "Необов’язкова Firebase Analytics",
         "paragraphs": [
-          "Перевірений адаптер передбачає окрему добровільну згоду на ігрову аналітику. Мета — знаходити складні рівні, оцінювати керування й налаштування доступності та виявляти проблеми швидкодії. Реалізовані категорії охоплюють початок і підсумки рівня, лічильники дій і порушень правил, діапазони тривалості, категорії екранів, згруповані налаштування, три фіксовані варіанти відгуку й діапазони часу кадру. Параметри числові; адаптер не надсилає довільний текст або сирі траєкторії жестів. Попри кампанію зі 100 рівнів, вимірювання рівнів зараз приймає лише номери 1–30.",
-          "Раніше запропоновані події на зразок game_started, level_complete та rewarded_ad_completed не знайдено серед фактично надісланих викликів. Їх не слід подавати як зібрані дані. Якщо Firebase Analytics активовано в релізі, SDK може додатково обробляти ідентифікатор екземпляра застосунку, відомості про пристрій і ОС, версію застосунку, мову, події сеансів і залученості та інші автоматичні події. IP-адреси обробляються для мережевого зв’язку й можуть використовуватися для приблизного географічного визначення; дозволу на геолокацію пристрою не знайдено. Відсутність облікового запису не означає анонімну аналітику.",
-          "Передбачена підстава необов’язкової ігрової аналітики — згода за статтею 6(1)(a) GDPR та, де потрібно, §25(1) TDDDG. У збереженій конфігурації аналітику вимкнено. Умовний адаптер дозволяє аналітичне сховище лише після згоди й забороняє рекламне сховище, використання даних для реклами та персоналізацію реклами. Ці налаштування коду не доводять відповідної конфігурації новішого SDK або пов’язаних облікових записів Google.",
-          "Якщо функція доступна, змініть вибір у Налаштування → Приватність → Аналітика. Відкликання згоди зупиняє збір через цей адаптер і скидає локальні дані Analytics та ідентифікатор екземпляра застосунку. Це саме по собі не видаляє вже надіслану Google інформацію. Для звернення щодо серверних даних використовуйте пошту з питань приватності. Відмова від аналітики не перешкоджає основній грі."
+          "Ігрова аналітика допомагає знаходити складні рівні, оцінювати керування й доступність та досліджувати проблеми продуктивності. Поточна схема має шість числових сімейств: qc_level_begin, qc_level_summary, qc_screen, qc_comfort_setting, qc_comfort_feedback і qc_frame_budget. Це згруповані тривалості й налаштування, лічильники дій і порушень правил, категорії екранів, три фіксовані відповіді та діапазони часу кадру. Зараз вимірювання рівнів охоплюють 1–30. Вільного тексту, імен гравців або сирих траєкторій жестів немає. Раніше запропоновані назви подій не вважаються реалізованим збором.",
+          "Коли сервіс активний, Firebase Analytics також обробляє ідентифікатори екземпляра застосунку, дані пристрою, ОС і версії гри, мову та автоматичні події активності й сеансів. Мережа використовує IP-адресу, з якої може визначатися приблизне місцеположення. Це не потребує дозволу на точну геолокацію.",
+          "Релізний профіль вимагає окремої згоди за статтею 6(1)(a) GDPR і, де застосовно, §25(1) TDDDG. До належного вибору збір і сховище Analytics вимкнені; до 16 років або за невідомого віку не активуються. В адаптері Analytics рекламне сховище, рекламні дані та персоналізація залишаються забороненими. Ідентифікатор користувача та інтеграції Google signals/персоналізації не входять до цього профілю.",
+          "Вибір змінюється в Налаштування → Приватність → Аналітика. Відкликання припиняє подальший збір адаптером і скидає локальний стан Analytics та ідентифікатор екземпляра. Це не видаляє раніше передане; для відповідного серверного запиту використовуйте контакт приватності."
         ]
       },
       {
         "id": "crashes",
-        "title": "Діагностика Firebase Crashlytics",
+        "title": "Добровільні звіти Firebase Crashlytics",
         "paragraphs": [
-          "Про встановлення Crashlytics повідомлено, але в перевіреному стані репозиторію не знайдено SDK Crashlytics, ініціалізації, перевизначення збору, власних ключів, ідентифікаторів користувача чи викликів діагностичного журналу. Ми не можемо підтвердити керування відмовою в релізі або стверджувати, що звітування про збої початково вимкнено. Стандартна поведінка інтегрованого Crashlytics від Google — автоматичний збір звітів, якщо його не налаштовано інакше.",
-          "За активного Crashlytics можуть оброблятися траси стеку й повідомлення винятків, час, версія застосунку, модель пристрою, ОС, відомості про пам’ять і сховище, ідентифікатори збоїв, сеансів та інсталяцій, налаштовані журнали й ключі. Якщо Analytics інтегровано і його збір дозволений, можуть додаватися аналітичні breadcrumbs. Мета — відтворювати помилки та виправляти проблеми стабільності. Діагностичні повідомлення слід перевірити на випадкові персональні дані.",
-          "Перед релізом потрібно визначити фактичне керування збором і правову підставу. Вузька діагностика стабільності може спиратися на статтю 6(1)(f) GDPR лише після документованої перевірки необхідності, балансу інтересів і окремої оцінки доступу до обладнання. Добровільна модель потребуватиме статті 6(1)(a) та дієвого вибору. Тут не підтверджено ні такої оцінки, ні реалізації згоди. Перемикач Analytics не можна представляти як перемикач Crashlytics."
+          "Звіти допомагають відтворити збої та виправити нестабільність. Вони можуть містити стеки викликів, текст винятків, час, версію гри, модель пристрою, ОС, дані пам’яті й сховища та ідентифікатори збою, сеансу або встановлення. Профіль не додає власного user ID гравця, його вільного тексту або додаткової схеми журналів чи ключів. Повідомлення помилок потрібно перевіряти на випадкові персональні дані. Звіти також можуть містити діагностичні журнали SDK; їх потрібно перевіряти на персональні дані.",
+          "Обрана модель — незалежна добровільна передача за статтею 6(1)(a) GDPR та §25(1) TDDDG, де застосовно. Вона не вмикається до 16 років або за невідомого віку. Перемикач Analytics не дозволяє Crashlytics. Звичайна інтеграція Crashlytics може звітувати автоматично; перед активацією потрібні перевірені нативні початкові налаштування й окремий контроль.",
+          "Вибір змінюється в Налаштування → Приватність → Звіти про збої. Відкликання вимикає подальше звітування. Невідправлені звіти обробляються та видаляються засобами SDK окремо від збережень гри; запити щодо переданих записів виконуються через контакт приватності й процедури постачальника. Firebase може додавати breadcrumbs Analytics лише за активного відповідного збору Analytics. Поведінка встановленого SDK і черги звітів ще має бути перевірена перед активацією."
         ]
       },
       {
         "id": "ads",
-        "title": "Реклама й вибір щодо приватності",
+        "title": "Неперсоналізована реклама за винагороду",
         "paragraphs": [
-          "Реалізований формат — відео з винагородою, яке користувач запитує заради додаткового життя. Локальна винагорода надається лише після сигналу SDK про її отримання й закриття оголошення; помилка чи пропуск відео винагороди не дають. Локальна економіка обмежує їх десятьма за добу UTC. Робочих банерів, міжсторінкової реклами чи додаткових адаптерів медіації не знайдено. Бойові повідомлення AdMob та вибраних рекламних партнерів неможливо встановити з репозиторію.",
-          "Під час запиту реклами Google Mobile Ads може передавати IP-адресу, що може вказувати на приблизне місцезнаходження, взаємодії на зразок натискань і переглядів, технічні показники, рекламний ідентифікатор Android, App Set ID та інші дозволені ідентифікатори SDK. Неперсоналізована реклама не робить рекламу й вимірювання анонімними. Доступність ідентифікаторів залежить від пристрою та налаштувань SDK.",
-          "Для інвентарю видавця код оновлює інформацію про згоду UMP, за потреби показує форму й перевіряє можливість запиту реклами перед ініціалізацією та завантаженням оголошення. Це відбувається за явного запиту винагороди, а не при кожному запуску. Google рекомендує оновлення при кожному запуску; різницю потрібно оцінити. Тестовий інвентар Google у розробці обходить повідомлення видавця. Код гри не задає окремого режиму персоналізованого/неперсоналізованого запиту чи прапорця неповнолітнього. Бойова поведінка залежить від дійсного вибору, налаштувань облікового запису та SDK.",
-          "Де цього вимагає закон, зберігання/доступ для реклами та персоналізована реклама потребують згоди за статтею 6(1)(a) GDPR та §25(1) TDDDG. Згода й цілі окремих постачальників мають відображатися в реальному повідомленні у грі. Запобігання шахрайству та інші цілі провайдерів потребують власної чинної підстави; загального виправдання законним інтересом тут немає. Перед активацією бойової реклами слід перевірити список постачальників та застосовні умови.",
-          "Якщо UMP вказує, що параметри приватності обов’язкові, у Налаштування → Приватність є дія для повторного відкриття форми Google. Вона відокремлена від перемикача аналітики. Керування рекламним ідентифікатором Android є в налаштуваннях пристрою. Ця вебсторінка не має перемикача згоди й не змінює вибір у грі. Дивіться <a href=\"https://policies.google.com/privacy\">політику конфіденційності Google</a> та <a href=\"https://policies.google.com/technologies/ads\">інформацію Google про рекламу</a>. Остаточна форма у грі має дозволяти перегляд вибраних постачальників."
+          "AdMob надає добровільні відео за винагороду. У реалізованих шляхах підтверджений SDK зароблений бонус і подальше закриття реклами можуть дати життя або косметичний ліхтарик. Життя обмежені десятьма за добу UTC; це не загальний ліміт усіх косметичних винагород. Невдалий чи пропущений перегляд винагороди не дає. Ліхтарик також можна отримати звичайною грою. Робочі банери, міжсторінкова реклама й додаткові адаптери медіації не входять до профілю.",
+          "AdMob може обробляти IP-адресу й отримане з неї приблизне місцеположення, натискання та перегляди, технічні показники, рекламний ID, app-set ID та інші дозволені ідентифікатори SDK. Неперсоналізована реклама теж обробляє персональні дані. Мета — показ запитаного оголошення, вимірювання його результативності та запобігання шахрайству.",
+          "Для всіх запитується неперсоналізована реклама. За невідомого віку й до 16 років рекламних запитів немає. Дозволена аудиторія спочатку вирішує, чи дозволяти добровільну рекламу. Де потрібно, Google UMP надає додатковий вибір цілей і постачальників; належна згода за статтею 6(1)(a) GDPR та §25(1) TDDDG передує відповідному доступу до пристрою й обробці. Безпека та протидія шахрайству постачальника потребують власних законних підстав; загальний законний інтерес для всієї реклами не призначається.",
+          "Релізний процес оновлює інформацію про згоду під час дозволених запусків після дозволу необов’язкової реклами, перевіряє результат UMP і можливість запиту та застосовує підлітковий режим для 16–17 років перед ініціалізацією SDK. Запитується NPA; без необхідної згоди на сховище завантаження обмежується. Навмисного резервного режиму Limited Ads немає. Перед бойовою рекламою повідомлення, постачальники та поведінка встановленого SDK мають бути перевірені.",
+          "У Налаштування → Приватність → Реклама за винагороду можна вимкнути добровільні оголошення. Коли Google вимагає точку доступу до privacy options, гра також дозволяє відкрити форму повторно. У ній доступні вибрані постачальники. Рекламний ID керується засобами Android. Ця вебсторінка не змінює згоду в грі. Дивіться <a href=\"https://policies.google.com/privacy\">політику Google</a> та <a href=\"https://policies.google.com/technologies/ads\">відомості про рекламу Google</a>."
         ]
       },
       {
         "id": "young-users",
         "title": "Діти й підлітки",
         "paragraphs": [
-          "Quiet Camp призначена для осіб від 13 років. Це не перевірка віку й не дозвіл відстежувати всіх підлітків. У перевіреній реалізації є параметр мінімального віку, але немає підтвердженого екрана визначення віку, процедури батьківського дозволу чи спеціального режиму реклами для неповнолітніх.",
-          "Якщо послуга інформаційного суспільства пропонується дитині безпосередньо на підставі згоди, застосовується стаття 8 GDPR. У Німеччині для такої згоди особі до 16 років зазвичай потрібен дозвіл носія батьківської відповідальності; межі в інших країнах відрізняються. Це не означає, що вся обробка у грі автоматично ґрунтується на згоді. Необов’язкова аналітика й реклама повинні враховувати вік і країну та не здійснювати відповідне відстеження, якщо чинну згоду не встановлено.",
-          "Перед випуском розробник має визначити підхід до груп 13–15 і 16–17 років, задати належні обмеження в UMP та рекламних запитах і узгодити цільову аудиторію Play Console з фактичними користувачами. UMP не передає автоматично прапорець віку згоди до Mobile Ads. Правила Google Play Families потрібно врахувати там, де діти входять до відповідної цільової аудиторії. Батьківська згода, перевірка віку чи безпечна для підлітків персоналізована реклама тут не заявляються як реалізовані. Якщо ви вважаєте, що дані дитини оброблялися неналежно, зверніться на пошту з питань приватності."
+          "Quiet Camp призначена для віку 13+. Вибір діапазону — самостійна заява, а не перевірка особи чи батьківського дозволу. У першому релізному профілі немає процедури батьківської згоди. Особи до 13 років бачать мінімальний вік; невідомий вік і група 13–15 не активують Analytics, передачу звітів про збої або рекламні запити.",
+          "Для дозволеної групи 16–17 років аналітика й звіти про збої потребують незалежних рішень; реклама має підлітковий захист без персоналізації. Для дорослих реклама також неперсоналізована. Зміна вікового діапазону скидає необов’язкові дозволи й потребує нового належного вибору. Це захисне продуктове рішення, а не твердження про однаковий вік згоди в усіх країнах.",
+          "Стаття 8 GDPR регулює згоду на прямо пропоновані дитині послуги інформаційного суспільства, якщо застосовується стаття 6(1)(a). У Німеччині загальний поріг — 16; національні правила відрізняються. Аудиторія, вікові групи Play Console та реальний контент і маркетинг мають збігатися. Позначка 13+ не усуває автоматично застосовні правила Families чи інші вимоги захисту дітей."
         ]
       },
       {
         "id": "support",
-        "title": "Підтримка й звернення про приватність",
+        "title": "Підтримка й звернення щодо приватності",
         "paragraphs": [
-          "Якщо ви пишете нам, ми обробляємо вашу адресу, повідомлення, вкладення й метадані листування для відповіді. Надсилайте лише потрібне для опису проблеми; уникайте чутливих даних і повних резервних копій пристрою.",
-          "Для підтримки, необхідної для виконання договірного запиту користувача, може застосовуватися стаття 6(1)(b) GDPR. Інше звичайне листування ґрунтується на статті 6(1)(f) — інтересі відповідати на запити з урахуванням прав відправника. Обробка передбачених законом запитів про приватність ґрунтується на статті 6(1)(c). Конкретний правовий обов’язок зберігання може вимагати обмежених записів. Ці підстави не дозволяють необов’язкового відстеження SDK.",
-          "Листи обробляють розробник і налаштований поштовий провайдер. Реєстрація домену в STRATO не доводить, хто обслуговує поштові скриньки. Потрібно підтвердити провайдера, умови обробки й роботу скриньок. Заплановано видалення через 12 місяців після закриття справи, якщо немає конкретного правового обов’язку або необхідності зберігання для захисту правових вимог. Практичне виконання цього строку ще не перевірено."
+          "Коли ви пишете розробнику, для відповіді обробляються електронна адреса, текст, вкладення та метадані листування. Підтримка: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>; приватність: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Розробник підтверджує роботу обох скриньок і особисту обробку звернень. Надсилайте лише потрібні дані, без чутливих документів або повного backup пристрою.",
+          "Стаття 6(1)(b) GDPR застосовується, коли підтримка необхідна для запитаного договору; звичайні звернення можуть спиратися на статтю 6(1)(f) — законний інтерес відповідати на листи. Виконання встановлених законом прав ґрунтується на статті 6(1)(c). Ці підстави не дозволяють необов’язкове SDK-відстеження.",
+          "Пошта надходить через інфраструктуру STRATO, на що вказують MX-записи домену. Точні договірні умови й резервні копії ще потрібно підтвердити. Обраний строк — видалення через 12 місяців після закриття звернення, крім конкретних юридичних обов’язків або необхідного захисту правових вимог; фактичне виконання правила має бути перевірене перед допуском релізу."
         ]
       },
       {
         "id": "sharing",
-        "title": "Одержувачі й міжнародні передачі",
+        "title": "Одержувачі та міжнародні передачі",
         "paragraphs": [
-          "За активних сервісів Google одержувачами є відповідна договірна компанія Google, її обробники та вибрані рекламні партнери. Для клієнтських даних Crashlytics Google зазвичай є обробником; Analytics має окремі умови. Ролі в рекламі залежать від сервісу й мети. Точна договірна компанія, вибір постачальників, налаштування поширення, пов’язані продукти й прийняті угоди були недоступні для аудиту. Їх потрібно підтвердити до публікації.",
-          "Сервіси Google можуть обробляти дані поза ЄЕЗ, зокрема у США. Застосовні гарантії можуть включати рішення про належність захисту для сертифікованого одержувача в EU–US Data Privacy Framework та/або стандартні договірні положення Єврокомісії у відповідній угоді з додатковими заходами за потреби. Застосовність слід перевірити для фактичних одержувачів; зберігання виключно в ЄЕЗ не обіцяється. Інформацію про чинні гарантії можна запитати через контакт із питань приватності.",
-          "Дивіться <a href=\"https://firebase.google.com/support/privacy\">інформацію Firebase про приватність</a>, <a href=\"https://firebase.google.com/terms/data-processing-terms\">умови обробки Firebase</a>, <a href=\"https://business.safety.google/adsprocessorterms/\">умови обробки Google Ads</a> та <a href=\"https://business.safety.google/controllerterms/\">умови Google для контролерів</a>. Відомості про одержувачів і передачі мають відповідати фактично активованому сервісу."
+          "Одержувачі — розробник, відповідні юридичні особи Google для активованих сервісів, їхні обробники та рекламні партнери, вибрані в реальному повідомленні Google. Хостинг і пошта обробляють необхідні запити для сторінки та відповіді. Відсутність додаткового SDK медіації не доводить відсутності рекламних партнерів.",
+          "Google може обробляти дані за межами ЄЕЗ, зокрема у США; зберігання лише в ЄЕЗ не обіцяється. Фактичні прийняті договори й ролі одержувачів потрібно перевірити. Гарантії можуть включати стандартні договірні положення та/або рішення про належний захист для відповідного сертифікованого одержувача EU–US Data Privacy Framework, з додатковими заходами за потреби. Відомості про застосовні гарантії можна запитати за контактом приватності.",
+          "Джерела постачальників: <a href=\"https://firebase.google.com/support/privacy\">приватність Firebase</a>, <a href=\"https://firebase.google.com/terms/data-processing-terms\">умови обробки Firebase</a>, <a href=\"https://business.safety.google/adsprocessorterms/\">умови обробки Google Ads</a> та <a href=\"https://business.safety.google/controllerterms/\">умови контролерів</a>. Самі посилання не підтверджують договорів конкретного облікового запису розробника."
         ]
       },
       {
         "id": "retention",
         "title": "Строки зберігання й видалення",
         "paragraphs": [
-          "Локальні записи залишаються на пристрої до видалення з урахуванням резервних копій у розділі 4. Для Analytics заплановано два місяці для даних користувачів і подій, на які поширюється налаштування GA4. Підтвердження з консолі немає. Воно не задає єдиного строку для стандартних агрегованих звітів, окремих експортів або всіх ідентифікаторів; потрібно також перевірити поновлення строку при новій активності та пов’язані експорти.",
-          "За документацією Google, Crashlytics зберігає траси збоїв, витягнуті дані minidump і пов’язані ідентифікатори 90 днів, після чого починає видалення з основних і резервних систем. Це правило провайдера, а не обіцянка повного видалення на 90-й день. Сирі NDK minidump зберігаються тимчасово для обробки. Власного перевизначення строку чи локальної релізної конфігурації не перевірено.",
-          "Зберігання рекламних даних залежить від застосовних умов Google і вибраних постачальників; окремого фіксованого строку для гри не встановлено. Для підтримки передбачено 12 місяців, як описано в розділі 9. Строки журналів хостингу потрібно підтвердити за фактичними налаштуваннями.",
-          "Запит на видалення надсилайте на <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Укажіть версію застосунку, приблизні дати й потрібний контекст. Може знадобитися пропорційна перевірка; ми можемо не мати змоги знайти псевдонімні записи SDK лише за електронною адресою. Не надсилайте паспорт без запиту. Ми пояснимо обмеження ідентифікації, законні винятки та доступні процедури провайдерів. Локальне скидання, скидання рекламного ідентифікатора й відкликання згоди самі по собі не видаляють раніше переданих записів."
+          "Локальні записи залишаються до видалення, з описаними вище обмеженнями backup. Для даних користувацького й подієвого рівня, охоплених налаштуванням GA4, релізний профіль обирає два місяці без непотрібного подовження новою активністю. Це потрібно підтвердити у фактичній властивості. Строк не є універсальним для стандартних агрегованих звітів, ідентифікаторів чи окремих експортів; зайві експорти до профілю не входять.",
+          "Google зазначає, що Crashlytics зберігає траси збоїв, витягнуті дані minidump і пов’язані ідентифікатори 90 днів до початку видалення з робочих і резервних систем. Повного видалення на 90-й день це не гарантує. Сирі NDK-minidump зберігаються тимчасово для обробки. Рекламне зберігання визначають відповідні умови Google і вибраних постачальників; непідтверджений власний строк не обіцяється.",
+          "Для листування діє обраний 12-місячний графік і законні винятки. Фактичні строки журналів хостингу та його резервних копій потрібно встановити за умовами хостингу. Постачальники, агреговані звіти й локальні копії не мають одного універсального таймера.",
+          "Для доступу або видалення пишіть на <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>, вказавши версію гри, приблизні дати й контекст. Електронна адреса сама по собі може не ідентифікувати псевдонімні записи SDK. Може знадобитися пропорційна перевірка; не надсилайте документ без потреби. Ми пояснимо межі ідентифікації, процедури постачальника й законні винятки. Локальний reset, відкликання згоди й скидання рекламного ID самі не видаляють передане раніше."
         ]
       },
       {
@@ -529,18 +527,17 @@
         "id": "website",
         "title": "Цей сайт і безпека",
         "paragraphs": [
-          "Ця правова сторінка не містить скриптів аналітики, рекламних SDK, сторонніх шрифтів, cookies згоди чи вбудованих медіа. Основний текст і перемикання мов працюють без JavaScript. Хостинг усе ж отримує дані з’єднання: IP-адресу, шлях запиту, час і відомості про браузер для доставки сторінки та захисту інфраструктури. Доставка й пропорційні журнали безпеки оцінюються за статтею 6(1)(f) GDPR — інтересом у надійному й безпечному публічному документі.",
-          "Власний домен зараз відповідає через Vercel; остаточний обліковий запис хостингу, керування журналами, строки, угоду обробки та гарантії передач потрібно підтвердити до публікації. Домен зареєстровано в STRATO. Окремий ілюстрований сайт гри працює на GitHub Pages і має власну обробку запитів; перехід за зовнішнім посиланням з’єднує вас із відповідним провайдером. Наявні сторінки портфоліо можуть мати інші ресурси й потребують окремої перевірки приватності вебсайту.",
-          "Ми застосовуємо розумні заходи відповідно до обробки. Перевірена система збережень використовує валідацію, атомарний запис і копії відновлення; це захист цілісності, а не твердження про шифрування збережень. Google документує шифрування передачі для відповідних сервісів. Жодна система не гарантує абсолютної безпеки. Фактичні налаштування релізу й хостингу ще потребують практичної перевірки."
+          "Сторінка завантажує локальні ресурси без аналітики відвідувачів, рекламних SDK, сторонніх шрифтів і tracking cookies. Текст і мовні посилання працюють без JavaScript. Хостинг Vercel отримує дані з’єднання й запиту — IP, шлях, час і відомості браузера — для надання та захисту сайту. Підстава для пропорційної необхідної доставки й безпеки — стаття 6(1)(f) GDPR. Договори, журнали, строки й гарантії передачі хостингу ще потребують перевірки конкретного облікового запису.",
+          "Хостинг і листування описано в окремій <a href=\"/privacy/uk\">політиці сайту</a>, власника — в <a href=\"/impressum/uk\">юридичних реквізитах</a>. Ілюстрований довідник окремо працює на GitHub Pages. Зовнішній перехід з’єднує браузер із відповідним постачальником.",
+          "Розумні заходи включають HTTPS, обмежувальні заголовки сайту, мінімізацію необов’язкових даних і перевірені локальні збереження з копіями відновлення. Вони захищають цілісність і не означають шифрування save-файлів. Абсолютної безпеки немає. Фактичний Android-реліз і налаштування облікових записів перевіряються окремо від вебсторінки."
         ]
       },
       {
         "id": "changes",
         "title": "Зміни й контакти",
         "paragraphs": [
-          "Ми оновлюватимемо документ при зміні обробки або правових вимог та вказуватимемо нову дату. Про суттєві зміни слід також повідомляти у грі; де потрібно, новий вибір згоди має передувати новій необов’язковій обробці. Усі три мовні версії потрібно оновлювати разом. Англійська є робочою версією, але не скасовує ваших законних прав і не виправдовує розбіжностей перекладу.",
-          "Kruty1918 Games<br>Розробник: Oleksiy Havryliuk (офіційне латинське написання ще не перевірено)<br>Країна: Німеччина<br>Приватність: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a><br>Підтримка: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>",
-          "Належна поштова адреса та Impressum залишаються питаннями перед випуском. Домашню адресу до цієї копії для перевірки не включено."
+          "Політика оновлюється зі зміною практик або вимог. Про суттєві зміни також повідомляється в грі; нові необов’язкові цілі потребують належного нового вибору до збору. Дата позначає версію. Три мови мають зберігати однаковий зміст; англійська — робоча й не переважає законних прав.",
+          "Kruty1918 Games<br>Контролер: {{legalName}} (публічне ім’я: {{publicName}})<br>Поштова адреса: {{postalAddress}}, Німеччина<br>Приватність: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a><br>Підтримка: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>"
         ]
       }
     ]

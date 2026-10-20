@@ -1,0 +1,41 @@
+{
+  "en": {
+    "title": "Legal notice",
+    "intro": "Provider identification for this independent developer website and Quiet Camp.",
+    "operator": "Operator",
+    "identity": "{{legalName}}<br>Public name: {{publicName}}<br>Ukrainian full name: {{ukrainianName}}<br>{{postalAddress}}<br>Germany",
+    "brand": "Kruty1918 Games is the brand and trading name of the natural-person developer. It is not a separate registered company. The developer confirms the passport spelling Oleksii Havryliuk used for Google Play verification and the public/German spelling Oleksiy Havryliuk.",
+    "contact": "Contact",
+    "privacy": "For privacy and data-rights requests:",
+    "support": "For game support and direct electronic contact:",
+    "documents": "Privacy documents",
+    "website": "Website privacy",
+    "game": "Quiet Camp privacy policy"
+  },
+  "uk": {
+    "title": "Юридичні реквізити",
+    "intro": "Відомості про власника сайту незалежного розробника та Quiet Camp.",
+    "operator": "Власник",
+    "identity": "{{legalName}}<br>Публічне ім’я: {{publicName}}<br>Повне ім’я українською: {{ukrainianName}}<br>{{postalAddress}}<br>Німеччина",
+    "brand": "Kruty1918 Games — бренд і торгова назва розробника як фізичної особи, а не окрема зареєстрована компанія. Розробник підтвердив паспортне написання Oleksii Havryliuk для Google Play та публічний/німецький варіант Oleksiy Havryliuk.",
+    "contact": "Контакти",
+    "privacy": "Питання приватності та прав на дані:",
+    "support": "Підтримка гри й прямий електронний зв’язок:",
+    "documents": "Документи про приватність",
+    "website": "Приватність на сайті",
+    "game": "Політика конфіденційності Quiet Camp"
+  },
+  "de": {
+    "title": "Impressum",
+    "intro": "Anbieterkennzeichnung für diese unabhängige Entwicklerwebsite und Quiet Camp.",
+    "operator": "Anbieter",
+    "identity": "{{legalName}}<br>Öffentlicher Name: {{publicName}}<br>Vollständiger ukrainischer Name: {{ukrainianName}}<br>{{postalAddress}}<br>Deutschland",
+    "brand": "Kruty1918 Games ist die Marke und Geschäftsbezeichnung des Entwicklers als natürliche Person, keine eigenständige eingetragene Gesellschaft. Der Entwickler bestätigt die Passschreibweise Oleksii Havryliuk für die Google-Play-Verifizierung und die öffentliche/deutsche Schreibweise Oleksiy Havryliuk.",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz und Betroffenenrechte:",
+    "support": "Spielsupport und unmittelbare elektronische Kontaktaufnahme:",
+    "documents": "Datenschutzhinweise",
+    "website": "Datenschutz dieser Website",
+    "game": "Datenschutzerklärung für Quiet Camp"
+  }
+}

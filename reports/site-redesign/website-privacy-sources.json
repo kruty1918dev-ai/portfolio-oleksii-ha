@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://vercel.com/legal/privacy-policy",
+    "status": 200,
+    "final_url": "https://vercel.com/legal/privacy-notice",
+    "title": [
+      "Privacy Notice"
+    ]
+  },
+  {
+    "url": "https://vercel.com/legal/dpa",
+    "status": 200,
+    "final_url": "https://vercel.com/legal/dpa",
+    "title": [
+      "Data Processing Addendum"
+    ]
+  },
+  {
+    "url": "https://vercel.com/legal/sub-processors",
+    "status": 200,
+    "final_url": "https://security.vercel.com/?itemName=legal&itemUid=e3fae2ca-94a9-416b-b577-5c90e382df57",
+    "title": []
+  },
+  {
+    "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+    "status": 200,
+    "final_url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+    "title": [
+      "&#167; 5 DDG - Einzelnorm"
+    ]
+  }
+]

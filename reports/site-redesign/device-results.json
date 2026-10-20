@@ -1,0 +1,267 @@
+{
+  "engine": "Chromium; mobile profiles are emulation, not Safari or physical devices",
+  "checks": [
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/games/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/portfolio/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/about/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/quiet-camp/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/moyva/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/fun-and-ball/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/privacy/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "Pixel 7",
+      "path": "/quiet-camp/privacy/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/games/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/portfolio/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/about/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/quiet-camp/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/moyva/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/fun-and-ball/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/privacy/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPhone 13",
+      "path": "/quiet-camp/privacy/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/games/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/portfolio/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/about/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/quiet-camp/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/moyva/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/fun-and-ball/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/privacy/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "device_emulation": "iPad (gen 7)",
+      "path": "/quiet-camp/privacy/uk",
+      "overflow": false,
+      "menu": "pass"
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/games/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/portfolio/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/about/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/quiet-camp/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/moyva/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/fun-and-ball/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/privacy/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "viewport": "640x480 landscape",
+      "path": "/quiet-camp/privacy/uk",
+      "overflow": false,
+      "js_disabled": true
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/games/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/portfolio/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/about/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/quiet-camp/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/moyva/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/fun-and-ball/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/privacy/uk",
+      "overflow": false
+    },
+    {
+      "text_enlargement": "200% at 640 CSS px",
+      "path": "/quiet-camp/privacy/uk",
+      "overflow": false
+    }
+  ],
+  "passed": true
+}

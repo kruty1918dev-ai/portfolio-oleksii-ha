@@ -1,0 +1,17 @@
+{
+  "monetizationProbeCompiles": true,
+  "initialGroupsPass": [
+    "navigation",
+    "economy",
+    "reward contracts",
+    "save migration",
+    "corrupt-save protection",
+    "local reset"
+  ],
+  "fullProbePassed": false,
+  "failure": "Preserved historical level gen:qc_mt:8",
+  "baselineReproduced": true,
+  "baselineMethod": "Original committed project and CampSaveData; other compiled dependencies and campaign files unchanged by privacy patch",
+  "campaignModified": false,
+  "playerBuildPerformed": false
+}

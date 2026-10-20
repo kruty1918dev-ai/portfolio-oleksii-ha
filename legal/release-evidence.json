@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "policyRevision": "2026-10-20.privacy-2",
+  "initialMarkets": [
+    "Ukraine",
+    "EEA",
+    "United Kingdom",
+    "Switzerland"
+  ],
+  "profile": {
+    "minimumAge": 13,
+    "optionalServicesMinimumAge": 16,
+    "personalizedAdvertising": false,
+    "analyticsConsent": "separate opt-in",
+    "crashConsent": "separate opt-in",
+    "ga4RetentionMonths": 2,
+    "supportRetentionMonthsAfterClosure": 12
+  },
+  "identityAndContacts": {
+    "status": "owner-confirmed",
+    "confirmedOn": "2026-10-20",
+    "documentImageInspected": false,
+    "mailInfrastructure": "Public MX smtpin.rzone.de; exact account terms pending"
+  },
+  "releaseArtifactSha256": null,
+  "firebaseAnalyticsVersion": null,
+  "firebaseCrashlyticsVersion": null,
+  "checks": {
+    "latestGameSourceAndSdkInventory": {
+      "status": "pending",
+      "evidence": null
+    },
+    "nativeStartupAndMergedManifest": {
+      "status": "pending",
+      "evidence": null
+    },
+    "ageConsentAndNetworkMatrix": {
+      "status": "pending",
+      "evidence": null
+    },
+    "admobMessagesVendorsAndNpa": {
+      "status": "pending",
+      "evidence": null
+    },
+    "ga4RetentionAndSharing": {
+      "status": "pending",
+      "evidence": null
+    },
+    "crashQueueAndIndependentConsent": {
+      "status": "pending",
+      "evidence": null
+    },
+    "contractsAndTransferSafeguards": {
+      "status": "pending",
+      "evidence": null
+    },
+    "mailDeletionProcedure": {
+      "status": "pending",
+      "evidence": null
+    },
+    "hostingLogsAndRetention": {
+      "status": "pending",
+      "evidence": null
+    },
+    "legalNoticeAndRegionalReview": {
+      "status": "pending",
+      "evidence": null
+    },
+    "finalPublicTextAndTranslations": {
+      "status": "pending",
+      "evidence": null
+    }
+  },
+  "documentSha256": {
+    "quietCamp": null,
+    "website": null,
+    "impressum": null
+  }
+}

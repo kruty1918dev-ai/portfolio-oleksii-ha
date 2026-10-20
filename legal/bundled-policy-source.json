@@ -1,0 +1,10 @@
+{
+  "revision": "2026-10-20.privacy-2",
+  "gameResource": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json",
+  "bodySha256": {
+    "uk": "2f66ff07d80cc94840989aca1ee3e00046968b82924cd1862e323eebd0ffd897",
+    "en": "f3ebf325992aafee2d0f6615666a56dee7f2899357786070ced671cf99e0b91d",
+    "de": "419d09fd2719aa9bcf8b4217080b05fd6a0bacb1eb8dc6e72de0b925b5a5228b"
+  },
+  "status": "candidate; native UI and installed SDK verification pending"
+}
