@@ -1,0 +1,26 @@
+[
+  {
+    "name": "com.google.firebase.app",
+    "version": "14.0.0",
+    "dependencies": {
+      "com.unity.external-dependency-manager": "2.1.0"
+    },
+    "archive_bytes": 60116169
+  },
+  {
+    "name": "com.google.firebase.analytics",
+    "version": "14.0.0",
+    "dependencies": {
+      "com.google.firebase.app": "14.0.0"
+    },
+    "archive_bytes": 891327
+  },
+  {
+    "name": "com.google.firebase.crashlytics",
+    "version": "14.0.0",
+    "dependencies": {
+      "com.google.firebase.app": "14.0.0"
+    },
+    "archive_bytes": 302364
+  }
+]

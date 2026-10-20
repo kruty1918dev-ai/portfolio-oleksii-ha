@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "policyRevision": "2026-10-20.privacy-2",
+  "policyRevision": "2026-10-20.privacy-3",
   "initialMarkets": [
     "Ukraine",
     "EEA",
@@ -23,12 +23,12 @@
     "mailInfrastructure": "Public MX smtpin.rzone.de; exact account terms pending"
   },
   "releaseArtifactSha256": null,
-  "firebaseAnalyticsVersion": null,
-  "firebaseCrashlyticsVersion": null,
+  "firebaseAnalyticsVersion": "14.0.0",
+  "firebaseCrashlyticsVersion": "14.0.0",
   "checks": {
     "latestGameSourceAndSdkInventory": {
-      "status": "pending",
-      "evidence": null
+      "status": "passed",
+      "evidence": "2026-10-20: main 9d34262c999951f5418777d863b8ccb25932759c; manifests and embedded tgz package.json inspected (Firebase app/analytics/crashlytics 14.0.0, Mobile Ads 11.6.0). reports/privacy-completion/SDK14-UPDATE.md and sdk14-package-verification.json; native resolution is a separate pending check."
     },
     "nativeStartupAndMergedManifest": {
       "status": "pending",

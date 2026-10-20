@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-20",
+  "contentSha256": "644e8f170c965a8866fbf1a56beea2625965a77edc5de0769a35381a7ad8d5a6",
+  "layouts": [
+    {
+      "lang": "en",
+      "width": 320,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "width": 375,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "uk",
+      "width": 320,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "uk",
+      "width": 375,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "uk",
+      "width": 390,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "uk",
+      "width": 768,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "uk",
+      "width": 1440,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "width": 320,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "width": 375,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "width": 768,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "width": 1440,
+      "javascript": false,
+      "overflow": false,
+      "status": 200
+    }
+  ],
+  "axe_scans": [
+    {
+      "lang": "en",
+      "width": 390,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "lang": "uk",
+      "width": 390,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "lang": "uk",
+      "width": 1440,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "lang": "de",
+      "width": 1440,
+      "violations": 0,
+      "incomplete": []
+    }
+  ],
+  "third_party_requests": 0,
+  "cookies": 0,
+  "passed": true
+}

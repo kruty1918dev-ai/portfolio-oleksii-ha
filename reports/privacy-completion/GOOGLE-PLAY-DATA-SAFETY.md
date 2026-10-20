@@ -1,58 +1,32 @@
-# Google Play Data Safety mapping — review before submission
+# Google Play Data Safety worksheet — main at 9d34262 / SDK14
 
-This is a release-profile worksheet, not a submitted declaration. Google Play
-summarizes all applicable user paths: collection for consenting 16+/adult users
-must be disclosed even if under-16 users transmit nothing. No “no data collected”
-claim is supportable once these production SDK paths are active.
+This is a review worksheet, not a submitted declaration or proof of actual native behavior. Source/package versions are verified: Firebase 14.0.0 and Mobile Ads 11.6.0. Production is still gated. Development sample ads can communicate with Google. When production paths are enabled, disclose all applicable paths, including optional collection; do not answer “no data collected” because some users decline.
 
-| Play category | Processing to examine | Purposes | Required/optional and sharing review |
+| Play category | Actual source/SDK processing to assess | Purposes | Optionality/sharing review |
 |---|---|---|---|
-| Location → Approximate location | AdMob IP-derived location; Analytics derivation if enabled | Advertising, analytics, fraud/security as actually configured | No precise-location permission is needed for IP derivation. Declare when actually derived; no precise-location collection found. |
-| App activity → App interactions | Numeric qc_* events, navigation/settings/level interaction categories; ad clicks/video views | Analytics; advertising/performance measurement | Optional Analytics/ad flows. No invented planned game_started or interstitial events. |
-| App info and performance → Crash logs | Crashlytics stack traces and exceptions | App functionality/stability, analytics as applicable | Independent optional reporting; examine cached reports and SDK automatic behavior. |
-| App info and performance → Diagnostics / other app performance data | Device/OS/app details, frame bands and SDK performance data | Stability/analytics, advertising measurement and fraud/security where applicable | Use the exact form definitions and SDK disclosure for the installed versions. |
-| Device or other IDs | App-instance/Firebase installation/Crashlytics/session identifiers, permitted advertising/app-set IDs | Analytics, stability, advertising, fraud/security as actually used | No account does not mean anonymous. NPA does not mean no identifiers. Final manifest/traffic determines exact claims. |
-| Personal info → Email / correspondence content | Support/privacy email initiated outside the app through mailto | Respond to enquiries/rights | Disclose in the policy. Do not automatically mark this as in-app SDK collection solely because a mailto link exists; check the actual Play definition and whether any app code captures/prefills/sends this data. |
+| Location → Approximate location | IP-derived AdMob location and Analytics derivation where configured | Advertising/measurement, analytics, fraud/security as actually used | No precise-location permission is necessary for IP derivation. No precise-location collection identified. |
+| App activity → App interactions | Ten custom Analytics events: six qc_* families plus level_fail, rewarded_ad_requested/completed, reward_granted; automatic session/engagement events; ad taps/views | Difficulty, controls/accessibility, performance and reward-funnel analysis; advertising | Current Analytics choice is separate; planned age controls are absent. Completion is qc_level_summary, not an invented level_complete event. Reward_granted follows save success. |
+| App info and performance → Crash logs | Crashlytics stack traces and exception messages, fixed manual nonfatal diagnostics | Stability, app functionality/analysis as actually configured | Independent crash choice; previous-session queue behavior must be checked natively. Local SDK creation and startup are distinct from upload. |
+| App info and performance → Diagnostics / other app performance data | SDK device/OS/app metrics, custom frame bands, keys game_version/game_mode/level_index/failure_area, possible logs/breadcrumbs | Stability/performance analysis; advertising performance/security where applicable | No full sanitization guarantee. Confirm payloads in the actual artifact. |
+| Device or other IDs | App-instance, Firebase installation, crash/session IDs and permitted advertising/app-set/SDK IDs | Operation of analytics/diagnostics/advertising and fraud protection | No account is not anonymity. Initialization can occur before opt-in; determine any resulting collection. NPA-only is not currently enforced. |
+| Personal info → Email / other user-generated content, where applicable | User-initiated external support/privacy mail, messages/attachments | Enquiries and statutory rights | Covered in the policy; an external mailto does not alone prove in-app collection. Apply the actual form definitions to any app capture/prefill/transmission. |
 
-## Collected versus shared
+No accounts/authentication, active purchases, cloud save, Remote Config, working banner/interstitial or extra mediation SDK were identified in audited source. Local progress/choices are not uploaded by the game save system; platform backup is separate. Main does not currently collect an age band.
 
-Apply Play's definitions to each provider and purpose. Service-provider processing
-may qualify for an exception to “sharing” only when its contractual/practical
-conditions are actually met. Do not equate every Google transfer with sharing,
-and do not claim “never shared”: Google's Mobile Ads disclosure explicitly
-identifies collected/shared advertising data. Obtain actual ad vendor selection,
-Google roles, data-sharing settings and mediation evidence.
+## Required form decisions
 
-## Other form answers
+- Assess “collected” and “shared” separately under Play definitions and actual provider roles. A contractual service-provider sharing exception requires real supporting conditions. AdMob's official SDK disclosure identifies collected/shared advertising data; generic “never shared” is unsupported. Absence of a mediation SDK does not establish absence of ad-tech recipients.
+- Intended audience 13+, with proposed 13–15/16–17/18+ groups, is not implemented age protection. Reconcile actual audience/marketing, age rules, UMP and NPA/Teen controls before activation. A 13+ declaration does not automatically exclude Families obligations or authorize consent from everyone aged13–17.
+- Firebase initialization after the publication gate is independent of optional choices, and a native ContentProvider invokes Firebase early. Do not describe every SDK operation as opt-in-only until early traffic/storage is measured and legally resolved.
+- SDK collection flags are source-denied; this is not a final-manifest or encryption-in-transit audit. Verify actual artifact/network behavior before unconditional answers about optionality, encryption or deletion.
+- Ads must be declared consistently with rewarded functionality. Optional-video availability is on by default; UMP is separate. Google sample units skip UMP only in the development path. Production units remain empty.
+- No account-deletion feature is needed solely for a nonexistent account; data-rights contact and provider procedures remain necessary. The game dataRequestUrl uses the real `#retention` section. Local reset/withdrawal does not delete all previously uploaded Google records.
 
-- Ads: the release profile includes rewarded ads, so declare ads consistently.
-- Age groups: selected intended groups are 13–15, 16–17 and 18+, with first markets
-  Ukraine, EEA, UK and Switzerland. Audit actual presentation/marketing and any
-  applicable Families requirements; declaration alone does not settle eligibility.
-- Accounts: none found/introduced. Do not invent an account-deletion feature.
-  Public privacy-email/data-rights instructions still need to work. The existing
-  game dataRequestUrl points to the policy's rights section.
-- Local progress, age band and choices are not uploaded by the game save pipeline;
-  do not confuse local storage with Play's off-device “collected” definition.
-  Final backup/device-transfer behavior needs separate inspection.
-- Encryption in transit: provider docs describe TLS, but verify actual release
-  requests before selecting an unconditional answer for the whole application.
-- Optional processing: refusal and withdrawal must work in the shipped artifact.
-  A greyed-out switch in a gated prototype is not proof of a working release path.
-- Do not promise deletion of all pseudonymous Google records from an email address.
-  Local reset, instance-ID reset and ad-ID reset are not universal server deletion.
+Before submission: exact Android artifact/hash, resolved native versions/manifest, age/choice/network tests, real vendor/contract roles, retention settings and final synchronized policy. No Play declaration was submitted and no player build was run for this update.
 
-## Evidence needed before submission
-
-Exact app version/artifact hash, installed Unity/native SDK versions, merged
-manifest, actual network/consent tests, provider configurations/agreements,
-retention settings and the final synchronized policy revision. No AAB/APK was
-built or submitted for this task.
-
-Authoritative references, rechecked 20 October 2026:
+Official sources re-fetched 20 October 2026; details/status in sdk14-official-sources.json:
 
 - https://support.google.com/googleplay/android-developer/answer/10144311
-- https://support.google.com/googleplay/android-developer/answer/10787469
 - https://support.google.com/googleplay/android-developer/answer/9867159
 - https://developers.google.com/admob/unity/privacy/play-data-disclosure
 - https://firebase.google.com/docs/android/play-data-disclosure

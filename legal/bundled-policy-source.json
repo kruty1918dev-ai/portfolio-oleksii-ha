@@ -1,10 +1,10 @@
 {
-  "revision": "2026-10-20.privacy-2",
+  "revision": "2026-10-20.privacy-3",
   "gameResource": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json",
   "bodySha256": {
-    "uk": "2f66ff07d80cc94840989aca1ee3e00046968b82924cd1862e323eebd0ffd897",
-    "en": "f3ebf325992aafee2d0f6615666a56dee7f2899357786070ced671cf99e0b91d",
-    "de": "419d09fd2719aa9bcf8b4217080b05fd6a0bacb1eb8dc6e72de0b925b5a5228b"
+    "uk": "f7b0504f693ecdb408038a335614a3501d2c4c4c0ed26222266d2e2b3a2d837c",
+    "en": "c6a7d3f2aec51ba9263aadb965298ac9025e007a141ac3cbc70769db582b4799",
+    "de": "8f1f4573efc9130e34a2f3566c516ef9fd3dc31b6292f7d353c1247a4630e5ff"
   },
-  "status": "candidate; native UI and installed SDK verification pending"
+  "status": "candidate; Firebase14 source/packages verified; native UI, age/ad controls and account evidence pending"
 }

@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-20",
+  "gameSourceCommit": "9d34262c999951f5418777d863b8ccb25932759c",
+  "policyRevision": "2026-10-20.privacy-3",
+  "contentSha256": "644e8f170c965a8866fbf1a56beea2625965a77edc5de0769a35381a7ad8d5a6",
+  "build": {
+    "passed": true,
+    "pages": 30,
+    "htmlDocumentsValidated": 31,
+    "localLinksAssetsAnchors": 1101
+  },
+  "localBrowser": {
+    "initialFullSiteLayouts": 150,
+    "initialFullSiteAxeScans": 40,
+    "finalPolicyLayouts": 15,
+    "finalPolicyAxeScans": 6,
+    "widths": [
+      320,
+      375,
+      390,
+      768,
+      1440
+    ],
+    "axeViolations": 0,
+    "overflow": false,
+    "javascriptRequiredForLegalText": false,
+    "thirdPartyRequests": 0,
+    "cookies": 0,
+    "scope": "Local Chromium only; final policy-results bind exact content hash. Initial full-site run preceded final copy corrections."
+  },
+  "gameTests": {
+    "privacyContractsPassed": 49,
+    "resources": "Updated bundled notice and locales",
+    "runner": "Existing assembly compiled from unchanged main9d34262 test/source files, .NET10/NUnitLite with file-backed Unity doubles",
+    "nativeUnityOrAndroid": false,
+    "adapterScenariosPreviouslyPassed": 19,
+    "adapterScenariosRerunThisContentUpdate": false
+  },
+  "localization": {
+    "languages": [
+      "en",
+      "uk",
+      "de"
+    ],
+    "sectionIdsMatch": true,
+    "actualCustomEventsInAllVersions": [
+      "qc_level_begin",
+      "qc_level_summary",
+      "level_fail",
+      "qc_screen",
+      "qc_comfort_setting",
+      "qc_comfort_feedback",
+      "qc_frame_budget",
+      "rewarded_ad_requested",
+      "rewarded_ad_completed",
+      "reward_granted"
+    ],
+    "crashCustomKeysInAllVersions": [
+      "game_version",
+      "game_mode",
+      "level_index",
+      "failure_area"
+    ],
+    "bundledTextParity": true,
+    "canonicalSourceLinks": true
+  },
+  "guards": {
+    "sdkSourceInventoryVerified": true,
+    "productionFlagsUnchanged": true,
+    "releaseCheck": "expected failure: actual artifact,10 reviews and3 reviewed document hashes absent",
+    "releaseGuardFixtures": "passed; synthetic only"
+  },
+  "deployment": {
+    "performed": false,
+    "productionDomainRetested": false,
+    "gitWriteCheck": "Website dry-run returned403; Termux handoff prepared",
+    "dnsOrMailChanged": false,
+    "playerBuildRun": false
+  }
+}

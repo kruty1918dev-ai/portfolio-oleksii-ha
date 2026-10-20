@@ -1,30 +1,13 @@
-# Publication after evidence completion
+# Publication and SDK14 handoff
 
-1. Reconcile both prepared patches with current repository main and the actual
-   developer SDK installation. Keep the existing Vercel project/domain binding.
-2. Complete OWNER-CHECKLIST.md and record dated evidence, installed versions and
-   exact Android artifact hash. No new player build is implied or authorized.
-3. Replace remaining release-candidate qualifications with established facts in
-   all translations; synchronize the bundled notice and publication revision/date.
-   Check actual backup, log/mail retention and recipient safeguards rather than
-   guessing them. Review any applicable DDG tax/business-ID particulars.
-4. Populate the three reviewed document hashes in legal/release-evidence.json.
-   Run npm ci, npm run build, npm test, the game privacy probe and HTML/browser
-   checks. `npm run release:check` must pass on genuine current evidence.
-5. Change the existing Vercel build command in committed configuration to
-   `npm run build:release` after passing checks. Run that exact build locally.
-   Its gate verifies evidence and document hashes; it must not be bypassed to
-   hide a candidate notice. Keep main/DNS/mail settings otherwise intact.
-6. Only with publication authorization, push to the existing website main. A main
-   push can auto-deploy through Vercel. No branch push is performed by this task.
-7. Verify HTTPS 200, text/html, canonicals, language links, no-JS content, mobile,
-   contacts, legal notice and data-rights anchor at the exact official URLs:
-   /quiet-camp/privacy, /quiet-camp/privacy/uk, /quiet-camp/privacy/de,
-   /impressum, /impressum/uk, /impressum/de and /privacy language routes.
-8. Set the same verified legal revision/date and production Google IDs/approvals
-   in the actual game release; verify its Settings links and separate choices.
-   Complete Play Console policy URL, age/country/ads and Data Safety fields from
-   the real artifact. Do not submit the worksheet automatically.
+Website source starts at privacy-site-review at 64f5edc (the existing redesign plus Vercel routing fix). Game content patch starts at current main at 9d34262, not the old privacy-controls-review branch. Do not apply the old full game patch over the Firebase 14 integration.
 
-Current state: steps 2–4 are not complete. No release approval is implied by the
-prepared source, working old URL, fulfilled identity fields or contract doubles.
+1. Apply the included patch to a fresh matching website checkout and the minimal content patch to current game main. Keep each as a separate review branch. The Termux script preflights both before creating commits; newer overlapping edits must be reconciled rather than overwritten.
+2. Normal `npm ci`, `npm run build`, `npm test` retain the visible review notice and can be previewed. The existing Vercel Git integration may create a preview after a review-branch push. It is not production clearance. No DNS, mail or domain ownership change is needed.
+3. Publication authorization has already been given by the owner. Nevertheless, missing facts cannot be replaced by that authorization: complete OWNER-CHECKLIST.md, especially actual age/NPA integration, Android startup/queue/network tests and Google account/contract/retention evidence. No player build is authorized here.
+4. Set final facts in every translation, sync the bundled notice and exact revision/date, record actual Android/document hashes and dated reviews in legal/release-evidence.json. Run `npm run release:check` and `npm run build:release`. They currently must fail because evidence is incomplete. Do not remove guards to conceal missing verification.
+5. For the cleared final release, set Vercel buildCommand to the evidence-gated build:release, verify it locally and fast-forward the existing website main after reviewing the diff. Do not force-push. Vercel production normally follows main through the existing binding. Do not change STRATO DNS/MX.
+6. Reach HTTPS at https://oleksiy-havryliuk.de/quiet-camp/privacy and /uk, /de, the legal notice and website privacy. Verify200/text-html, canonical/alternate metadata, content without JavaScript, mobile links/contact and #retention. A local browser check or successful preview does not prove the production URL is updated.
+7. Only after app-specific evidence is complete set the actual game publication/review approvals and production ad configuration. The content patch leaves policyIsDraft true, publication date empty and teen/SDK reviews false. Complete Play policy URL, target ages, ads and Data Safety from the real shipped artifact; do not auto-submit this worksheet.
+
+The ZIP can update and push review branches using the owner's existing Termux gh authorization. It does not itself deploy main, alter DNS or enable game SDK production gates. It contains no credentials. The original local worktrees are preserved.

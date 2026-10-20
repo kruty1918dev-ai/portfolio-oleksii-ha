@@ -24,13 +24,14 @@ for variant in data['document']['variants']:
   body.append(f"{i}. {section['title']}");body.extend(text(p) for p in section['paragraphs'])
   if section.get('table'):body.extend(' — '.join(row) for row in c['rows'])
  body='\n\n'.join(body);hashes[lang]=hashlib.sha256(body.encode()).hexdigest()
- changed|=variant.get('bundledBody')!=body or variant.get('revision')!=revision
- if args.write_candidate:variant.update({'bundledBody':body,'revision':revision,'url':'','sourceUrl':''})
+ source_url='https://oleksiy-havryliuk.de/quiet-camp/privacy'+('' if lang=='en' else '/'+lang)
+ changed|=variant.get('bundledBody')!=body or variant.get('revision')!=revision or variant.get('url')!='' or variant.get('sourceUrl')!=source_url
+ if args.write_candidate:variant.update({'bundledBody':body,'revision':revision,'url':'','sourceUrl':source_url})
  scope=next(s for s in c['sections'] if s['id']=='scope')
  summaries.append({'language':lang,'revision':revision,'text':c['intro']+'\n\n'+text(scope['paragraphs'][1])+'\n\n'+c['notice']})
 changed|=data['summaries']!=summaries
 if args.write_candidate:
  data['summaries']=summaries;resource.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
- (root/'legal/bundled-policy-source.json').write_text(json.dumps({'revision':revision,'gameResource':str(resource.relative_to(args.game_root)),'bodySha256':hashes,'status':'candidate; native UI and installed SDK verification pending'},indent=2)+'\n')
+ (root/'legal/bundled-policy-source.json').write_text(json.dumps({'revision':revision,'gameResource':str(resource.relative_to(args.game_root)),'bodySha256':hashes,'status':'candidate; Firebase14 source/packages verified; native UI, age/ad controls and account evidence pending'},indent=2)+'\n')
 else:assert not changed,'Bundled policy differs; review source changes and run --write-candidate'
 print('PASS: matching en/uk/de bundled candidate content, no remote policy fetch or SDK activation.')
