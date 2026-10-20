@@ -61,7 +61,13 @@ const security=[{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Po
 const config={$schema:'https://openapi.vercel.sh/vercel.json',buildCommand:'npm run build',installCommand:'npm ci',outputDirectory:'dist',framework:null,rewrites,redirects:[{source:'/cv',destination:'/about',permanent:true},{source:'/lebenslauf',destination:'/about/de',permanent:true},{source:'/funandball',destination:'/fun-and-ball',permanent:true},{source:'/contact',destination:'/about#contact',permanent:true}],headers:[{source:'/(.*)',headers:security}]};
 const committed=JSON.stringify(config,null,2)+'\n';
 if(process.argv.includes('--write-routing'))await writeFile(path.join(root,'vercel.json'),committed);
-else if(await readFile(path.join(root,'vercel.json'),'utf8')!==committed)throw Error('Routing changed. Run npm run routes, review and commit vercel.json.');
+else {
+ // Vercel may rewrite configuration formatting or add build metadata before running us.
+ // Compare routing/security values, preserving array order, rather than JSON bytes.
+ const actual=JSON.parse(await readFile(path.join(root,'vercel.json'),'utf8'));
+ const stable=value=>Array.isArray(value)?value.map(stable):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,stable(value[key])])):value;
+ for(const key of ['rewrites','redirects','headers'])if(JSON.stringify(stable(actual[key]))!==JSON.stringify(stable(config[key])))throw Error(`Routing/security changed (${key}). Run npm run routes, review and commit vercel.json.`);
+}
 await writeFile(path.join(out,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+routes.map(r=>`<url><loc>${data.profile.domain+r.path}</loc></url>`).join('')+'</urlset>\n');
 await writeFile(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${data.profile.domain}/sitemap.xml\n`);
 await writeFile(path.join(out,'routes.json'),JSON.stringify(routes,null,2)+'\n');
