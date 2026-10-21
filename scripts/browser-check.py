@@ -3,13 +3,14 @@
 No browser/test package is required to build or publish this static site.
 """
 import argparse,json
+from datetime import date
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-p=argparse.ArgumentParser();p.add_argument('--base',default='http://127.0.0.1:4173');p.add_argument('--axe',required=True);p.add_argument('--output',default='reports/site-redesign');args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--base',default='http://127.0.0.1:4173');p.add_argument('--axe',required=True);p.add_argument('--browser');p.add_argument('--output',required=True);args=p.parse_args()
 root=Path(__file__).resolve().parents[1];out=root/args.output;shots=out/'screenshots';shots.mkdir(parents=True,exist_ok=True)
-routes=json.loads((root/'dist/routes.json').read_text());result={'base':args.base,'date':'2026-10-20','layouts':[],'accessibility':[],'interactions':[],'network':[]}
+routes=json.loads((root/'dist/routes.json').read_text(encoding='utf8'));result={'base':args.base,'date':date.today().isoformat(),'layouts':[],'accessibility':[],'interactions':[],'network':[]}
 with sync_playwright() as p:
- b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);result['browser']=b.version
+ b=p.chromium.launch(executable_path=args.browser,headless=True);result['browser']=b.version
  ctx=b.new_context(java_script_enabled=False,reduced_motion='reduce');page=ctx.new_page();requests=[];page.on('request',lambda req:requests.append(req.url))
  for r in routes:
   for width in [320,375,390,768,1440]:
@@ -49,6 +50,6 @@ with sync_playwright() as p:
    result['accessibility'].append({'path':r['path'],'width':width,'violations':scan['violations'],'incomplete':scan['incomplete']})
  ctx.close();b.close()
 result['passed']=all(not x['violations'] for x in result['accessibility'])
-(out/'browser-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+(out/'browser-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 print(json.dumps({'passed':result['passed'],'layouts':len(result['layouts']),'axe_scans':len(result['accessibility']),'failures':[(x['path'],x['width'],[v['id'] for v in x['violations']]) for x in result['accessibility'] if x['violations']]},indent=2))
 assert result['passed'],'Accessibility errors are recorded in browser-results.json'

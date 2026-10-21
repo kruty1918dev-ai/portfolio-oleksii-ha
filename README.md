@@ -54,7 +54,7 @@ page. The original Quiet Camp policy URL and its language URLs are retained.
 - **public/assets/site.css**: studio design and scoped game themes; **site.js** adds only an optional
   accessible image viewer. Menu, page content and language links work without JS.
 - **legal/quiet-camp/content.json**: maintained full privacy document. All legal
-  facts, contacts, unresolved SDK/age/address qualifications remain explicit.
+  facts, confirmed controller placeholders and unresolved SDK checks remain explicit.
 - **legal/website/content.json**: separate complete en/uk/de website privacy notice.
 - **legal/quiet-camp/policy.css**: scoped legal-document layout using shared colours.
 - **public/media/**: optimized genuine project images and developer portrait.
@@ -73,8 +73,10 @@ team contributions or screenshots.
 
 `npm test` verifies routes, canonical/hreflang, local links/assets/anchors, section
 coverage and removal of recruitment content. Optional browser checks are in
-scripts/browser-check.py; they require local Python Playwright/Chromium/axe-core,
-which are not build dependencies. See reports/site-redesign/ for captured evidence.
+scripts/browser-check.py; they require local Python Playwright, a Chromium browser
+and axe-core, which are not build dependencies. Pass --browser for Edge/Chrome
+and --output pointing outside tracked paths. Earlier captures in
+reports/site-redesign/ describe their dated revision only.
 
 The deployment still belongs to the existing portfolio Vercel project. No DNS,
 mail, domain, Unity repo or game SDK configuration changes are needed. A main
@@ -83,9 +85,10 @@ upload through Termux, not pushed or deployed by the assistant.
 
 The public policy is a **review copy**. The earlier privacy audit and legal
 blockers remain documented in reports/quiet-camp/ (historical audit snapshot).
-The redesign updates its surrounding design and status wording, without claiming
-that the release SDK configuration, teen handling or postal-address requirements
-are resolved. A real multilingual legal-notice page now contains owner-confirmed details; remaining release checks are tracked separately.
+The current candidate combines the redesign with the latest runtime policy.
+The multilingual legal notice preserves owner-confirmed identity, postal address
+and contacts. Native SDK behavior, Google settings and operational retention
+remain subject to separate release checks.
 
 ## Privacy completion and release checks
 
@@ -104,3 +107,9 @@ flag as verification or enable production SDKs just because a policy URL exists.
 Bundled game notice parity: `python scripts/sync-game-policy.py --game-root
 /path/to/quiet-camp --check`. The explicit --write-candidate mode updates draft
 legal resources only; it refuses an already published non-draft configuration.
+Build the site first: parity uses the generated dist pages, controller.json and
+the canonical game tools/sync_privacy_policy.py renderer. Revision
+2026-10-21.privacy-5 includes consent-save failure handling and restored confirmed
+details. Local Edge verification on 2026-10-21 passed 150 responsive layouts and
+40 axe scans, with JavaScript disabled for content, no external requests or cookies.
+This is website QA, not Android or console verification.

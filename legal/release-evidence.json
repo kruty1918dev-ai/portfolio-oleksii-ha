@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "policyRevision": "2026-10-20.privacy-3",
+  "policyRevision": "2026-10-21.privacy-5",
   "initialMarkets": [
     "Ukraine",
     "EEA",
@@ -28,7 +28,7 @@
   "checks": {
     "latestGameSourceAndSdkInventory": {
       "status": "passed",
-      "evidence": "2026-10-20: main 9d34262c999951f5418777d863b8ccb25932759c; manifests and embedded tgz package.json inspected (Firebase app/analytics/crashlytics 14.0.0, Mobile Ads 11.6.0). reports/privacy-completion/SDK14-UPDATE.md and sdk14-package-verification.json; native resolution is a separate pending check."
+      "evidence": "2026-10-21: game main 45b7b6e9; Firebase app/analytics/crashlytics embedded 14.0.0 and Mobile Ads Unity 11.6.0. Current C# runtime, Editor, tests and optional adapters compile against actual SDK DLLs. 74 privacy and 27 SDK-contract scenarios pass, including active Analytics shutdown on advertising/crash save failure. Native resolution and Android behavior remain separate pending checks."
     },
     "nativeStartupAndMergedManifest": {
       "status": "pending",
