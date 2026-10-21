@@ -10,7 +10,7 @@ BASE='https://oleksiy-havryliuk.de/quiet-camp/privacy'
 PATHS={'en':'','uk':'/uk','de':'/de'}
 NAMES={'en':'English','uk':'Українська','de':'Deutsch'}
 LABELS={'en':'EN','uk':'UA','de':'DE'}
-data=json.loads((SOURCE/'content.json').read_text())
+data=json.loads((SOURCE/'content.json').read_text(encoding='utf-8'))
 keys=list(data['en'])
 for lang,c in data.items():
     assert set(c)==set(keys), f'Missing top-level translations: {lang}'
@@ -55,7 +55,7 @@ for lang,c in data.items():
 <div class="header-tools"><a class="game-link" href="https://kruty1918dev-ai.github.io/quiet-camp/">{escape(c['back'])}</a><nav class="languages" aria-label="{escape(c['languages'])}">{nav}</nav></div>
 </div></header>
 <section class="hero" aria-labelledby="page-title"><div class="wrap hero-grid"><div><p class="eyebrow">{escape(c['legal'])}</p><h1 id="page-title">{escape(c['title'])}</h1><p class="lede">{escape(c['intro'])}</p></div>
-<div class="metadata"><p><span>{escape(c['updated'])}</span><time datetime="2026-10-20">{escape(c['date'])}</time></p><p><span>{escape(c['contact'])}</span><a href="mailto:privacy@oleksiy-havryliuk.de">privacy@oleksiy-havryliuk.de</a></p></div></div></section>
+<div class="metadata"><p><code>{escape(c['revision'])}</code></p><p><span>{escape(c['updated'])}</span><time datetime="{c['dateISO']}">{escape(c['date'])}</time></p><p><span>{escape(c['contact'])}</span><a href="mailto:privacy@oleksiy-havryliuk.de">privacy@oleksiy-havryliuk.de</a></p></div></div></section>
 <div class="wrap document-grid">
 <aside class="sidebar"><nav aria-label="{escape(c['toc'])}"><h2>{escape(c['toc'])}</h2>{toc()}</nav><div class="sidebar-contact"><p>Kruty1918 Games</p><a href="mailto:privacy@oleksiy-havryliuk.de">privacy@oleksiy-havryliuk.de</a></div></aside>
 <main id="policy" tabindex="-1">
@@ -69,7 +69,7 @@ for lang,c in data.items():
 '''
     dest=OUT/(lang if lang!='en' else '')
     dest.mkdir(parents=True,exist_ok=True)
-    (dest/'index.html').write_text(html)
+    (dest/'index.html').write_text(html, encoding='utf-8')
 shutil.copyfile(SOURCE/'policy.css',OUT/'policy.css')
 shutil.copyfile(SOURCE/'brand-icon.png',OUT/'brand-icon.png')
 print('Rendered en, uk, de: 14 sections each. No deployment performed.')
