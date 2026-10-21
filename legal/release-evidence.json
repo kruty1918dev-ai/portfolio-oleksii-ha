@@ -28,11 +28,11 @@
   "checks": {
     "latestGameSourceAndSdkInventory": {
       "status": "passed",
-      "evidence": "2026-10-21: game main 45b7b6e9; Firebase app/analytics/crashlytics embedded 14.0.0 and Mobile Ads Unity 11.6.0. Current C# runtime, Editor, tests and optional adapters compile against actual SDK DLLs. 74 privacy and 27 SDK-contract scenarios pass, including active Analytics shutdown on advertising/crash save failure. Native resolution and Android behavior remain separate pending checks."
+      "evidence": "2026-10-21: game main 748936da. Actual Unity Editor 6000.6.2f1 ran 76/76 focused EditMode tests, including cross-purpose save failure and application-manifest policy tests; 27 SDK-contract scenarios also pass. Firebase Unity wrappers 14.0.0 and Mobile Ads Unity 11.6.0. First QA Gradle releaseRuntimeClasspath resolved Firebase Common 23.0.0, Analytics 24.0.0, Crashlytics/NDK 21.0.0, Installations 20.0.0, Ads 25.5.0 and UMP 4.0.0."
     },
     "nativeStartupAndMergedManifest": {
       "status": "pending",
-      "evidence": null
+      "evidence": "2026-10-21: first QA APK built successfully but packaged-manifest inspection FAILED: FirebaseInitProvider remained, and the development flag was absent. It was installed but never launched. Source fixes move privacy rules to the application manifest and explicitly enable Development for QA. Two new Unity tests pass; rebuilt APK is pending Android Auto-Resolution in the authorized existing Editor. No native startup/network clearance."
     },
     "ageConsentAndNetworkMatrix": {
       "status": "pending",
