@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "policyRevision": "2026-10-21.privacy-7-revenue",
+  "initialMarkets": [
+    "Ukraine",
+    "EEA",
+    "United Kingdom",
+    "Switzerland"
+  ],
+  "profile": {
+    "minimumAge": 13,
+    "optionalServicesMinimumAge": 16,
+    "personalizedAdvertising": "approved adults only; Google UMP choice required",
+    "analyticsConsent": "separate opt-in",
+    "crashConsent": "separate opt-in",
+    "ga4RetentionMonths": 2,
+    "supportRetentionMonthsAfterClosure": 12,
+    "underAgeAdsMinimumAge": 13,
+    "purchasesEnabled": false,
+    "limitedAdsEnabled": false,
+    "underAgeLimitedAdsEnabled": false,
+    "adultPersonalizationEnabled": false,
+    "primaryAudience13Plus": true,
+    "youngerUsersLocalFallback": true
+  },
+  "identityAndContacts": {
+    "status": "owner-confirmed",
+    "confirmedOn": "2026-10-20",
+    "documentImageInspected": false,
+    "mailInfrastructure": "Public MX smtpin.rzone.de; exact account terms pending"
+  },
+  "releaseArtifactSha256": null,
+  "firebaseAnalyticsVersion": "14.0.0",
+  "firebaseCrashlyticsVersion": "14.0.0",
+  "checks": {
+    "latestGameSourceAndSdkInventory": {
+      "status": "pending",
+      "evidence": "Based on main 030e76d; candidate adds slow recovery, rewarded hints, separate age/serving modes and sequential privacy. Firebase14/GMA11.6 installed; no new native/Android evidence. Real billing remains unavailable."
+    },
+    "nativeStartupAndMergedManifest": {
+      "status": "pending",
+      "evidence": "2026-10-21: corrected QA APKs pass packaged-manifest and DEX checks: FirebaseInitProvider absent, defaults denied, sample AdMob app ID and development enabled, privacy Java provider present; app starts on Android 16. Initial manifest/Java defects were fixed. Full early-network attribution remains unverified: Development Player emits UDP discovery; UID counters do not identify destinations. Analytics-only shared Core initialization actually created local Crashlytics session/native and Firebase Sessions files without a crash opt-in; production remains blocked."
+    },
+    "ageConsentAndNetworkMatrix": {
+      "status": "pending",
+      "evidence": "2026-10-21: all five age bands saved and read with valid CRC/matching noBackup marker; ad switch unavailable Unknown/<16, available 16+; adult ad-only does not enable Analytics/crash and survives restart. Real marker loss and corrupt-primary/valid-backup reset permissions to Unknown/all-off. Production Analytics/crash gates closed. Full independent native opt-ins, OS Backup/D2D, network attribution and ad request races are still pending."
+    },
+    "admobMessagesVendorsAndNpa": {
+      "status": "pending",
+      "evidence": "2026-10-21: owner explicitly confirms production AdMob IDs/UMP, GA4 retention and Play target age groups have not yet been checked. Keep activation closed; account values were not inferred."
+    },
+    "ga4RetentionAndSharing": {
+      "status": "pending",
+      "evidence": "2026-10-21: owner explicitly confirms production AdMob IDs/UMP, GA4 retention and Play target age groups have not yet been checked. Keep activation closed; account values were not inferred."
+    },
+    "crashQueueAndIndependentConsent": {
+      "status": "pending",
+      "evidence": "2026-10-21: 76/76 real Unity EditMode tests plus 4/4 explicit native Analytics regression cases passed. Native measurement_enabled becomes false after failed advertising/crash saves and remains false after restart; persisted crash auto-collection also false. This is not proof of Crashlytics native send/delete completion, old pending report handling or payload sanitization. Local Crashlytics files appeared during Analytics-only Core initialization; queue isolation remains a release blocker."
+    },
+    "contractsAndTransferSafeguards": {
+      "status": "pending",
+      "evidence": null
+    },
+    "mailDeletionProcedure": {
+      "status": "pending",
+      "evidence": null
+    },
+    "hostingLogsAndRetention": {
+      "status": "pending",
+      "evidence": null
+    },
+    "legalNoticeAndRegionalReview": {
+      "status": "pending",
+      "evidence": null
+    },
+    "finalPublicTextAndTranslations": {
+      "status": "pending",
+      "evidence": null
+    },
+    "familiesAudienceAndContent": {
+      "status": "pending",
+      "evidence": "2026-10-21: owner explicitly confirms production AdMob IDs/UMP, GA4 retention and Play target age groups have not yet been checked. Keep activation closed; account values were not inferred."
+    },
+    "ageAssuranceAndFalseAgeResponse": {
+      "status": "pending",
+      "evidence": null
+    },
+    "sequentialOnboardingAndLinks": {
+      "status": "pending",
+      "evidence": null
+    },
+    "limitedAdsProcessingAndAccount": {
+      "status": "pending",
+      "evidence": "13–15 LTD and adult refusal fallback implemented behind separate disabled approvals. Actual programmatic setting, legitimate-interest assessment, terminal-storage basis and native signals not verified."
+    },
+    "adultPersonalizationAndUmp": {
+      "status": "pending",
+      "evidence": "Optional feature disabled. Adult-only enforcement and actual current UMP choices need production evidence before activation."
+    }
+  },
+  "documentSha256": {
+    "quietCamp": null,
+    "website": null,
+    "impressum": null
+  },
+  "qaArtifacts": [
+    {
+      "sha256": "707e2dc4e7898df8ad1b6554bb3a6f9b9b08eca8f74840c8f26faf61ee1d16a4",
+      "profile": "Development, Quiet Camp QA, policy-5, passive UI/UID probe",
+      "scope": "Packaged manifest/DEX; all five saved age bands; ad switch restrictions; adult ad-only independent choice and restart; marker loss and primary CRC/backup recovery reset."
+    },
+    {
+      "sha256": "d1d6d2ef8855714eb5ef776e09d209d54e482461a06fab167dbea3a0812400aa",
+      "profile": "Development, Quiet Camp QA, policy-5, explicitly commanded isolated native regression",
+      "scope": "4/4 actual Firebase Analytics measurement_enabled true -> false on simulated advertising/crash save failure; false and exception cases. Synthetic test settings; production gates unchanged."
+    }
+  ]
+}

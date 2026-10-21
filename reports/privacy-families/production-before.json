@@ -1,0 +1,43 @@
+{
+  "checkedUtc": "2026-10-21T12:43:38.604501+00:00",
+  "routes": [
+    {
+      "url": "https://oleksiy-havryliuk.de/",
+      "finalUrl": "https://oleksiy-havryliuk.de/",
+      "status": 200,
+      "policy6": false,
+      "server": "envoy"
+    },
+    {
+      "url": "https://oleksiy-havryliuk.de/quiet-camp/privacy",
+      "finalUrl": "https://oleksiy-havryliuk.de/quiet-camp/privacy",
+      "status": 200,
+      "policy6": false,
+      "server": "envoy"
+    },
+    {
+      "url": "https://oleksiy-havryliuk.de/quiet-camp/privacy/uk",
+      "finalUrl": "https://oleksiy-havryliuk.de/quiet-camp/privacy/uk",
+      "status": 200,
+      "policy6": false,
+      "server": "envoy"
+    },
+    {
+      "url": "https://oleksiy-havryliuk.de/quiet-camp/privacy/de",
+      "finalUrl": "https://oleksiy-havryliuk.de/quiet-camp/privacy/de",
+      "status": 200,
+      "policy6": false,
+      "server": "envoy"
+    },
+    {
+      "url": "https://oleksiy-havryliuk.de/privacy",
+      "status": 404,
+      "error": "HTTPError"
+    },
+    {
+      "url": "https://oleksiy-havryliuk.de/impressum",
+      "status": 404,
+      "error": "HTTPError"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "scope": "C# 9 syntax under player/Editor symbols only; not Unity assembly compilation or scene execution",
+  "files": [
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/OptionalSdk/GoogleRewardedAdapter.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/AdHintService.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/CampEconomy.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/CampSaveData.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/ComfortAnalytics.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/PrivacyConsentPersistence.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/PrivacyEligibility.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Application/PrivacySetup.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Infrastructure/LegalConfiguration.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Infrastructure/OptionalGoogleServices.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/GameServices.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/QuietCampBootstrap.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/BootPrivacyPanel.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/EconomyPanel.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/PrivacyPanel.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/SettingsPanel.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/VideoBonusPanel.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Tests/Editor/MonetizationPrivacyTests.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Tests/Editor/OptionalPrivacyTests.cs",
+    "/workspace/scratch/privacy-sequential-game/QuietCamp/Assets/QuietCamp/Tests/Editor/PrivacySetupTests.cs",
+    "/workspace/scratch/privacy-sequential-game/tools/optional-google-probe/Program.cs"
+  ],
+  "errors": []
+}

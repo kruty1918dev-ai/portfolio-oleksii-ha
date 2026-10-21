@@ -1,0 +1,50 @@
+{
+  "checkedOn": "2026-10-21",
+  "links": [
+    {
+      "url": "https://business.safety.google/adsprocessorterms/",
+      "status": 200,
+      "final": "https://business.safety.google/adsprocessorterms/"
+    },
+    {
+      "url": "https://business.safety.google/controllerterms/",
+      "status": 200,
+      "final": "https://business.safety.google/controllerterms/"
+    },
+    {
+      "url": "https://developers.google.com/admob/unity/privacy/play-data-disclosure",
+      "status": 200,
+      "final": "https://developers.google.com/admob/unity/privacy/play-data-disclosure"
+    },
+    {
+      "url": "https://firebase.google.com/support/privacy",
+      "status": 200,
+      "final": "https://firebase.google.com/support/privacy"
+    },
+    {
+      "url": "https://firebase.google.com/terms/data-processing-terms",
+      "status": 200,
+      "final": "https://firebase.google.com/terms/data-processing-terms"
+    },
+    {
+      "url": "https://github.com/kruty1918dev-ai",
+      "status": 200,
+      "final": "https://github.com/kruty1918dev-ai"
+    },
+    {
+      "url": "https://policies.google.com/privacy",
+      "status": 200,
+      "final": "https://policies.google.com/privacy"
+    },
+    {
+      "url": "https://policies.google.com/technologies/ads",
+      "status": 200,
+      "final": "https://policies.google.com/technologies/ads"
+    },
+    {
+      "url": "https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html",
+      "status": 200,
+      "final": "https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html"
+    }
+  ]
+}

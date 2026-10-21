@@ -1,0 +1,97 @@
+[
+  {
+    "url": "https://business.safety.google/adsprocessorterms/",
+    "status": 200,
+    "final_url": "https://business.safety.google/adsprocessorterms/"
+  },
+  {
+    "url": "https://business.safety.google/controllerterms/",
+    "status": 200,
+    "final_url": "https://business.safety.google/controllerterms/"
+  },
+  {
+    "url": "https://firebase.google.com/support/privacy",
+    "status": 200,
+    "final_url": "https://firebase.google.com/support/privacy"
+  },
+  {
+    "url": "https://firebase.google.com/terms/data-processing-terms",
+    "status": 200,
+    "final_url": "https://firebase.google.com/terms/data-processing-terms"
+  },
+  {
+    "url": "https://fun-and-ball.web.app/",
+    "status": 200,
+    "final_url": "https://fun-and-ball.web.app/"
+  },
+  {
+    "url": "https://github.com/Kruty1918/2D-Tile-Generator",
+    "status": 200,
+    "final_url": "https://github.com/Kruty1918/2D-Tile-Generator"
+  },
+  {
+    "url": "https://github.com/Kruty1918/2D_Hexagon_Generator_Video_Tutorial",
+    "status": 200,
+    "final_url": "https://github.com/Kruty1918/2D_Hexagon_Generator_Video_Tutorial"
+  },
+  {
+    "url": "https://github.com/Kruty1918/Unity-MonoSingleton-System",
+    "status": 200,
+    "final_url": "https://github.com/Kruty1918/Unity-MonoSingleton-System"
+  },
+  {
+    "url": "https://github.com/kruty1918dev-ai",
+    "status": 200,
+    "final_url": "https://github.com/kruty1918dev-ai"
+  },
+  {
+    "url": "https://github.com/kruty1918dev-ai/moyva-showcase",
+    "status": 200,
+    "final_url": "https://github.com/kruty1918dev-ai/moyva-showcase"
+  },
+  {
+    "url": "https://github.com/kruty1918dev-ai/order-management-system",
+    "status": 200,
+    "final_url": "https://github.com/kruty1918dev-ai/order-management-system"
+  },
+  {
+    "url": "https://github.com/kruty1918dev-ai/quiet-camp",
+    "status": 200,
+    "final_url": "https://github.com/kruty1918dev-ai/quiet-camp"
+  },
+  {
+    "url": "https://kruty1918dev-ai.github.io/quiet-camp/",
+    "status": 200,
+    "final_url": "https://kruty1918dev-ai.github.io/quiet-camp/"
+  },
+  {
+    "url": "https://policies.google.com/privacy",
+    "status": 200,
+    "final_url": "https://policies.google.com/privacy"
+  },
+  {
+    "url": "https://policies.google.com/technologies/ads",
+    "status": 200,
+    "final_url": "https://policies.google.com/technologies/ads"
+  },
+  {
+    "url": "https://vercel.com/legal/dpa",
+    "status": 200,
+    "final_url": "https://vercel.com/legal/dpa"
+  },
+  {
+    "url": "https://vercel.com/legal/privacy-policy",
+    "status": 200,
+    "final_url": "https://vercel.com/legal/privacy-notice"
+  },
+  {
+    "url": "https://vercel.com/legal/sub-processors",
+    "status": 200,
+    "final_url": "https://security.vercel.com/?itemName=legal&itemUid=e3fae2ca-94a9-416b-b577-5c90e382df57"
+  },
+  {
+    "url": "https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html",
+    "status": 200,
+    "final_url": "https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "gameBase": "030e76d46048f7b40500c3ff333795e181b32406",
+  "siteBase": "2a0642bfeb485eec7418260ea80a762410c21c8b",
+  "productionSiteBase": "e2220fa14ba2f62cb622954cf8d5cd48903ebd3a",
+  "policyRevision": "2026-10-21.privacy-6-families",
+  "portableTests": 98,
+  "sdkDoubleContracts": 27,
+  "syntaxFiles": 7,
+  "browserLayouts": 150,
+  "axeScans": 40,
+  "nativeUnityRun": false,
+  "playerBuild": false,
+  "productionDeployment": false,
+  "legalClearance": false,
+  "policySha256": "f023a8412908b822cadf69a0e99fa26c6d8fbfaf997868902d82c3ac92ec0599"
+}

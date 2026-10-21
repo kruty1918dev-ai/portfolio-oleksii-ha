@@ -1,0 +1,21 @@
+PASS direct navigation: fresh/5/45/final completions, resume, replay, journey and access gates
+PASS initial allowances, hint and attempt persistence
+PASS currency, no-lives, duplicate receipt and exchange rollback
+PASS ad daily quota, UTC reset, clock rollback and duplicate rewards
+PASS restart and Pro unlimited without counters
+PASS catalog, main progression, standalone DLC and missing content
+PASS fake store, pending, restore, duplicate credits and unavailable provider
+PASS invalid verification and final-journal recovery never grant twice or re-charge
+PASS actual session, reset/undo, completion transaction, IO rollback, replay and saved memory
+PASS rewarded ad skip, save rollback, retry without second video and concurrent requests
+PASS native save module migration and unknown nested JSON preservation
+PASS backup recovery revokes privacy receipts without losing game progress
+PASS future schema and corrupt primary/backup are write-protected
+PASS explicit local reset clears staged extension data and stale write protection
+PASS All100 current levels passed witness, independent solver and content-hash checks
+Unhandled exception. System.InvalidOperationException: Preserved historical level gen:qc_mt:8: witness:unsolved solved=False
+   at MonetizationProbe.Expect(Boolean condition, String message) in /workspace/scratch/revenue-monetization-baseline/tools/MonetizationProbe.cs:line 17
+   at MonetizationProbe.Campaign100Contracts(String[] ids, String resources) in /workspace/scratch/revenue-monetization-baseline/tools/MonetizationProbe.cs:line 333
+   at MonetizationProbe.ContentContracts() in /workspace/scratch/revenue-monetization-baseline/tools/MonetizationProbe.cs:line 247
+   at MonetizationProbe.Main(String[] args) in /workspace/scratch/revenue-monetization-baseline/tools/MonetizationProbe.cs:line 110
+   at MonetizationProbe.<Main>(String[] args)

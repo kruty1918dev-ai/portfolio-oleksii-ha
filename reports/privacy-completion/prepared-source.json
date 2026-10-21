@@ -1,0 +1,38 @@
+{
+  "status": "Committed source snapshot used for SDK14 policy review; not a built Android artifact. Policy-resource patch is tracked separately.",
+  "public_game_main": "9d34262c999951f5418777d863b8ccb25932759c",
+  "websiteBase": "64f5edc13c470c7854813c784f59947c76245007",
+  "files": {
+    "QuietCamp/Packages/manifest.json": "6976d92034a16b00a9534738db549600f43b8d3dea19cdcee923a9568a087d05",
+    "QuietCamp/Packages/packages-lock.json": "4acb616913f935a53c5384345c5480978f6ed7e18a6b3ab9c59165c6015eda8f",
+    "QuietCamp/Assets/Plugins/Android/QuietCampPrivacy.androidlib/AndroidManifest.xml": "fc29251baf85b40211032427de152812c4db775f91cc235aa2a1b3b5f652a9a3",
+    "QuietCamp/Assets/Plugins/Android/QuietCampPrivacy.androidlib/src/com/quietcamp/game/privacy/FirebasePrivacyProvider.java": "a60fef9f599e90d292de2921b935d51a45456543ad5974c9c58da8f381adb136",
+    "QuietCamp/Assets/QuietCamp/OptionalSdk/FirebaseRuntime.cs": "142e3390369e989c973696361230c02dad788ac771d39905cdb7e3138b424820",
+    "QuietCamp/Assets/QuietCamp/OptionalSdk/FirebaseComfortTransport.cs": "7d077c9038ed2faaf91d9b1aa22abd0ad4c201976eb80a12073a7d7cee701c5c",
+    "QuietCamp/Assets/QuietCamp/OptionalSdk/FirebaseCrashTransport.cs": "91ff477655fcef25d4bc1fedaef08ea26b504460c5b51593219c8d64a4153d21",
+    "QuietCamp/Assets/QuietCamp/OptionalSdk/GoogleRewardedAdapter.cs": "018c0d914050cb24d4eb69c03ed2f7c1501ccb196c4719de7bcecefd1ce663ad",
+    "QuietCamp/Assets/QuietCamp/Scripts/Infrastructure/OptionalGoogleServices.cs": "07725d5e6eec0e9f395cec72b5f319c23ca0842f963f5669360ad16d7a7455ae",
+    "QuietCamp/Assets/QuietCamp/Scripts/Application/ComfortAnalytics.cs": "589a75621f81a50a9aa90dfc9b85fdb6e91bc6e9cadd8be5474e85bebb4c56fd",
+    "QuietCamp/Assets/QuietCamp/Scripts/Application/CrashDiagnostics.cs": "af10111c2b4b20934ab56cc05626a02e1493e043e607c4209012e5aeac71f251",
+    "QuietCamp/Assets/QuietCamp/Scripts/Application/CampSaveData.cs": "70b46e8a54f9f4021d4d098e3c53dd46ebc5a2504eb7d687189a00dc96bd8f18",
+    "QuietCamp/Assets/QuietCamp/Scripts/Application/AdLifeService.cs": "8e614fc173955c96c000eb0f3596b7316efaa8bb3e29755d94aa5e8448a81d1f",
+    "QuietCamp/Assets/QuietCamp/Scripts/Application/CozyRewardService.cs": "5611bb984b96a8479ef04849356a63cc596819425b7305d6887847e6ee3ee750",
+    "QuietCamp/Assets/QuietCamp/Scripts/Presentation/GameServices.cs": "0928131ed194aae05798213d3e96d6132d32d56ccdf3e057c0e2460d6be9338f",
+    "QuietCamp/Assets/QuietCamp/Scripts/Presentation/QuietCampBootstrap.cs": "648b1aeec23fcf1755079537b8bc0785814b114b55f0a296c602d8470edb2ff6",
+    "QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/PrivacyPanel.cs": "b2744e785f3a2ea13a2e9a923a23184d13f50dfb7a531aefe24fea1a954f233a",
+    "QuietCamp/Assets/QuietCamp/Scripts/Presentation/UI/BootPrivacyPanel.cs": "c62206c03b97ef3e94bf1ed591c63f02b94bf0245c97f03cd53f9398c43fa7f9",
+    "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/google_services.json": "6df081311b354892894d41eb652fd958bab121d7d6a867294adce1fa82c1f2f1",
+    "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/legal.json": "4ec10bdf605a1138134d74220f0946a7a4ffe376faa07e170717a8796aef8cc6",
+    "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json": "a9e030b7e454922121d78b2f547f7e106067c732db43e499f11aff79c0886b4e"
+  },
+  "privacy_contracts": {
+    "passed": 49,
+    "platform": "NUnitLite focused real test sources with doubles",
+    "nativeSdkVerification": false
+  },
+  "adapter_contracts": {
+    "passed": 19,
+    "platform": "dotnet SDK adapter doubles",
+    "nativeSdkVerification": false
+  }
+}

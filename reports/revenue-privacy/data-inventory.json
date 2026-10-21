@@ -1,0 +1,145 @@
+[
+  {
+    "Collected data": "Game progress, settings, layouts, album, balances, life-recovery timestamps and local reward receipts",
+    "Data source": "CampSaveData; CampEconomy; SaveAdapter",
+    "Purpose": "Resume play and grant requested saved rewards",
+    "Legal basis": "Art6(1)(b) where applicable/valid; necessary terminal storage §25(2)",
+    "Recipients": "Device; platform backup subject to final Android rules",
+    "Retention": "Until reset/removal; backup copies separately assessed",
+    "Consent required": "No optional tracking consent",
+    "Source-code evidence": "CampEconomy.RefreshLives/GrantAdHint; CampSaveData",
+    "Verification status": "Source verified; final Android backup/native artifact pending"
+  },
+  {
+    "Collected data": "Local age band, flow version, acknowledgement hash/language and independent optional choices",
+    "Data source": "PrivacySetup; PrivacyInstallScope; PrivacyEligibility",
+    "Purpose": "Apply age safeguards and current privacy choices; prevent stale restore",
+    "Legal basis": "Art6(1)(c) where accountability duties apply; necessary preference storage §25(2)",
+    "Recipients": "Local settings; Google CMP has separate receipts",
+    "Retention": "Until replaced/reset; provider receipts under actual terms",
+    "Consent required": "Acknowledgement is not consent",
+    "Source-code evidence": "PrivacySetup.Commit/IsComplete; BootPrivacyPanel",
+    "Verification status": "Portable contracts pass; native UI and age-assurance assessment pending"
+  },
+  {
+    "Collected data": "Ten custom Analytics event names and numeric level/performance/reward-category parameters",
+    "Data source": "ComfortAnalytics; GameServices reward callbacks",
+    "Purpose": "Find difficult levels, control/performance problems and verify reward funnel",
+    "Legal basis": "Art6(1)(a); §25(1) where required",
+    "Recipients": "Google Analytics for Firebase",
+    "Retention": "Intended GA4 two-month setting for covered event/user-level data, not all aggregates/IDs; account not verified",
+    "Consent required": "Separate current opt-in, age16+",
+    "Source-code evidence": "ComfortAnalytics.Reward category0life/1cosmetic/2hint; FirebaseComfortTransport",
+    "Verification status": "Firebase14 installed; source/contracts verified; no native/account evidence"
+  },
+  {
+    "Collected data": "Automatic app-instance, session/device/app/OS information and IP/coarse derivation",
+    "Data source": "Firebase Analytics SDK",
+    "Purpose": "Operation of selected gameplay measurement",
+    "Legal basis": "Art6(1)(a); §25(1) where required",
+    "Recipients": "Applicable Google entities/processors",
+    "Retention": "GA4 setting and identifier lifecycles; no universal two-month promise",
+    "Consent required": "Selected model separate Analytics opt-in age16+",
+    "Source-code evidence": "FirebaseComfortTransport; FirebaseRuntime; Android defaults",
+    "Verification status": "Native auto-collection/old overrides/startup still pending"
+  },
+  {
+    "Collected data": "Crash traces/messages, installation/session/device/app/OS data, fixed keys and possible logs/breadcrumbs/cache",
+    "Data source": "CrashDiagnostics; FirebaseCrashTransport; Firebase SDK",
+    "Purpose": "Reproduce stability failures and repair crashes",
+    "Legal basis": "Selected Art6(1)(a); terminal storage separately assessed",
+    "Recipients": "Firebase Crashlytics / relevant Google entities",
+    "Retention": "Documented Google90days before starting removal for covered crash data; local queues/backups separately",
+    "Consent required": "Separate crash opt-in age16+; independent of Analytics",
+    "Source-code evidence": "CrashDiagnostics; FirebaseRuntime; FirebasePrivacyProvider.java",
+    "Verification status": "SDK14 verified; native early storage/queue/upload behavior pending"
+  },
+  {
+    "Collected data": "Potential early SDK storage, installation or initialization traffic",
+    "Data source": "Firebase/Google Android native initialization providers",
+    "Purpose": "SDK initialization; actual pre-choice nonessential behavior unresolved",
+    "Legal basis": "No assumed blanket consent or legitimate-interest exemption",
+    "Recipients": "Device and potentially Google; measure actual recipients",
+    "Retention": "Native identifier/cache lifecycles unresolved",
+    "Consent required": "Source-denied collection does not prove no initialization",
+    "Source-code evidence": "AndroidManifest.xml; FirebasePrivacyProvider; SDK manifests",
+    "Verification status": "Release blocker: inspect exact merged artifact/network/storage"
+  },
+  {
+    "Collected data": "IP/coarse location, device/app/ad-interaction data, diagnostics and permitted advertising/SDK IDs",
+    "Data source": "Google Mobile Ads standard NPA; conditional approved-adult mode",
+    "Purpose": "Deliver explicitly requested rewarded video, ad measurement/fraud prevention",
+    "Legal basis": "Art6(1)(a) for consent-based processing; §25(1) where required",
+    "Recipients": "Google and actual selected ad-tech recipients",
+    "Retention": "Applicable provider terms; no invented fixed game retention",
+    "Consent required": "Saved independent local choice16+ plus fresh UMP/storage/vendor signals; adult PA separately approved",
+    "Source-code evidence": "GoogleRewardedAdapter.ShowRewarded/DeviceStorageAllowed; GoogleServicesConfiguration",
+    "Verification status": "GMA11.6 source verified; publisher IDs/UMP/native payload pending"
+  },
+  {
+    "Collected data": "Reduced advertising data including IP/creative transfer/cache; possible programmatic anti-fraud storage",
+    "Data source": "Separately approved Limited Ads path",
+    "Purpose": "Contextual requested video delivery and proportionate fraud prevention",
+    "Legal basis": "Separate documented assessment; potentially Art6(1)(f) after child-weighted balancing; §25 exception/consent separately assessed",
+    "Recipients": "Google and genuinely configured LTD inventory/providers",
+    "Retention": "Applicable provider terms and necessary cache lifecycle, verified before activation",
+    "Consent required": "No fictional child tracking consent; no automatic storage exemption",
+    "Source-code evidence": "GoogleRewardedAdapter.ApplyStorageMode; UnderAgeLimitedAdsAllowed",
+    "Verification status": "13–15 explicit path and adult refusal fallback prepared; feature/review flags false; native/legal/account verification pending"
+  },
+  {
+    "Collected data": "UMP form/connection data and SDK-managed IAB purpose/vendor preferences",
+    "Data source": "Google UMP",
+    "Purpose": "Present/manage actual advertising choices; apply freshness and request eligibility",
+    "Legal basis": "Consent management/accountability basis assessed separately, not blanket advertising consent",
+    "Recipients": "Google CMP infrastructure / disclosed relevant providers",
+    "Retention": "Actual CMP/provider retention terms",
+    "Consent required": "Separate management operation; publisher refresh/form before ad init;13–15 TFUA explicit-only",
+    "Source-code evidence": "GoogleRewardedAdapter.UpdateConsentInformation/ShowPrivacyOptions",
+    "Verification status": "SDK-contract tests only; actual message/selected vendors not verified"
+  },
+  {
+    "Collected data": "Reward earned/closed/result, local unique deduplication IDs, UTC quotas",
+    "Data source": "AdLifeService; AdHintService; CozyRewardService; CampEconomy",
+    "Purpose": "Grant one promised resource once after save; cap requested bonuses",
+    "Legal basis": "Art6(1)(b) for requested functionality where applicable; ad processing separately above",
+    "Recipients": "Local; numeric category events to Analytics only with independent opt-in",
+    "Retention": "Local save until removal; pending failed-save reward is in-memory only",
+    "Consent required": "Explicit voluntary ad action; underlying mode requires applicable safeguards",
+    "Source-code evidence": "AdHintService.Request; CampEconomy.GrantAdHint/GrantAdLife",
+    "Verification status": "Portable quota/save/retry tests pass; native reward order/traffic pending; no SSV backend"
+  },
+  {
+    "Collected data": "Future real purchase/token/entitlement data",
+    "Data source": "No current production Billing provider",
+    "Purpose": "Future Pro purchase/restore/verification",
+    "Legal basis": "Not active; assess Art6(1)(b)/(c), minor capacity and actual provider processing before enabling",
+    "Recipients": "Future Google/store/verifier recipients, not invented",
+    "Retention": "Not yet configured",
+    "Consent required": "No Firebase/ad opt-in required for a future purchase",
+    "Source-code evidence": "GameServices.ConfigureMonetization uses UnavailablePurchaseProvider; quietcamp_pro unpublished",
+    "Verification status": "Sales disabled; no current purchase collection by a real provider; separate implementation required"
+  },
+  {
+    "Collected data": "Email, request/message/attachments and correspondence metadata",
+    "Data source": "Personally managed privacy/support mailboxes",
+    "Purpose": "Answer support and statutory data-rights requests",
+    "Legal basis": "Art6(1)(b) necessary support;6(1)(f) enquiries;6(1)(c) statutory rights",
+    "Recipients": "Developer/STRATO mail infrastructure under actual agreement",
+    "Retention": "Target12months after closure; lawful exceptions/backups separately",
+    "Consent required": "User-initiated contact; no SDK opt-in",
+    "Source-code evidence": "PrivacyPanel mailto; owner-confirmed working mail",
+    "Verification status": "Operation confirmed; contracts and actual deletion/log schedule pending"
+  },
+  {
+    "Collected data": "IP, requested URL/time and browser/protocol hosting request data",
+    "Data source": "Vercel static hosting",
+    "Purpose": "Deliver and secure public legal/portfolio pages",
+    "Legal basis": "Art6(1)(f), necessary/proportionate hosting",
+    "Recipients": "Vercel and actual subprocessors",
+    "Retention": "Actual account/log/backup terms pending; no fabricated fixed period",
+    "Consent required": "No optional website analytics/cookies in site code",
+    "Source-code evidence": "vercel.json; site/layout.mjs; public/assets",
+    "Verification status": "Local no-third-party-assets/browser tests; production hosting/log terms require owner evidence"
+  }
+]

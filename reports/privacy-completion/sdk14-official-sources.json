@@ -1,0 +1,102 @@
+{
+  "play_user_data": {
+    "url": "https://support.google.com/googleplay/android-developer/answer/10144311?hl=en",
+    "final_url": "https://support.google.com/googleplay/android-developer/answer/10144311?hl=en",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "N=null;Vj(this)}; Y.prototype.Ya=function(a){a==2&&(a=0);for(var b=0;b Google Help Help Center Play Console Help Policy Center Community Play Console Privacy Policy Terms of Service Submit feedback Send feedback on... This help content & information General Help Center experience Close Next Help Center Community Announcements Play Console Play Console Help Get started Popular articles Manage your developer account Create, upload, and publish Distribute your app Run tests and check performance Protect your app",
+      " with which any personal or sensitive user data is shared. Secure data handling procedures for personal and sensitive user data. The developer's data retention and deletion policy. Clear labeling as a privacy policy (for example, listed as \"privacy policy\" in title). The entity (for example, developer, company) named in the app's Google Play store listing must appear in the privacy policy or the app must be named in the privacy policy. Apps that do not access any personal and sensitive user data must sti",
+      "n't provide misleading or inaccurate information about your data practices. Disclose your data collection and sharing practices in the Play Console's Data safety section. Don't collect data that is not critical to your app's core purpose. Obtain clear, affirmative user consent before collecting any personal or sensitive data. Don't sell personal and sensitive user data. Protect all user data with appropriate security measures, including modern cryptography for data in transit. Don't violate child safety po"
+    ]
+  },
+  "admob_consent": {
+    "url": "https://support.google.com/admob/answer/13554116?hl=en",
+    "final_url": "https://support.google.com/admob/answer/13554116?hl=en",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "equirements for serving ads in the EEA, the UK, and Switzerland (for CMPs) This help center article is for publishers looking for more information on certified CMPs. If you are an advertiser or CMP for advertisers, please find more information here for advertisers. To comply with the EU User Consent Policy, partners using our publisher products—Google AdSense, Ad Manager, or AdMob—are required to use a consent management platform (CMP) that has been certified by Google and integrates with the IAB's Trans",
+      " Google consent management requirements for serving ads in the EEA, the UK, and Switzerland (for publishers) - Google AdMob Help @font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc9.ttf)format('true",
+      " Google consent management requirements for serving ads in the EEA, the UK, and Switzerland (for publishers) - Google AdMob Help @font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(http"
+    ]
+  },
+  "firebase_privacy": {
+    "url": "https://firebase.google.com/support/privacy",
+    "final_url": "https://firebase.google.com/support/privacy",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      " crash stack traces, extracted minidump data, and associated identifiers (including Crashlytics Installation UUIDs and Firebase installation IDs) for 90 days before starting the process of removing it from live and backup systems. Note: Firebase Crashlytics stores minidump data only temporarily in order to process NDK crashes. Firebase Dynamic Links Device specs (iOS) IP Addresses (iOS) How it helps: Dynamic Links uses device specs and IP addresses on iOS to open newly-installed apps to a specific page",
+      "n Run Run your app with confidence and deliver the best experience for your users Go to Run Run Products A/B Testing App Distribution Cloud Messaging Crashlytics Google Analytics In-App Messaging Performance Monitoring Remote Config Test Lab Solutions Pricing Docs Overview Fundamentals AI Build Run Reference Samples Community Learn Stories Support / English Español – América Latina Indonesia Português – Brasil 中文 – 简体 日本語 한국어 Blog Go to console Sign in Support Build More Run More Solutions Pricing Docs Mor",
+      "otection features are not retained by Firebase services. Firebase App Distribution Users' names Email addresses iOS UDIDs Secure Android IDs Firebase installation IDs Tester feedback (screenshots and text) How it helps: Firebase App Distribution uses the data to distribute app builds to testers, monitor tester activity, enable tester features like in-app feedback, and associate data with tester devices. Retention: Firebase App Distribution retains user information until the Firebase customer requests its deleti"
+    ]
+  },
+  "firebase_analytics_collection": {
+    "url": "https://firebase.google.com/docs/analytics/configure-data-collection?platform=unity",
+    "final_url": "https://firebase.google.com/docs/analytics/ios/configure-data-collection?platform=unity",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "Analytics data collection In some cases, you may want to temporarily or permanently disable collection of Analytics data, such as to collect end-user consent or to fulfill legal obligations. Google Analytics offers multiple options for disabling and deactivating Analytics collection. Used together, they support many typical use cases. Temporarily disable collection If you wish to temporarily disable Analytics collection, such as to get end-user consent before collecting data, you can set the value of F",
+      " Configure Analytics data collection and usage | Google Analytics for Firebase { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{ \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Documentation\", \"item\": \"https://firebase.google.com/docs\" },{ \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Analytics\", \"item\": \"https://firebase.google.com/docs/anal"
+    ]
+  },
+  "crashlytics_collection": {
+    "url": "https://firebase.google.com/docs/crashlytics/customize-crash-reports?platform=unity",
+    "final_url": "https://firebase.google.com/docs/crashlytics/customize-crash-reports?platform=unity",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "ion Get readable crash reports FAQ and troubleshooting for setup Performance Monitoring Introduction Get started iOS+ Android Web Flutter Learn about automatically collected data App start, foreground, background (iOS+ & Android) Screen rendering (iOS+ & Android) Page loading (web) HTTP/S network requests Customize data collection and aggregation Add monitoring for specific code Add monitoring for specific network requests Customize network request data aggregation Disable Performance Monitoring Track, view,",
+      "d data App start, foreground, background (iOS+ & Android) Screen rendering (iOS+ & Android) Page loading (web) HTTP/S network requests Customize data collection and aggregation Add monitoring for specific code Add monitoring for specific network requests Customize network request data aggregation Disable Performance Monitoring Track, view, and filter data Overview of the console Filter data using attributes Set up alerts for performance issues Export data to BigQuery FAQ and troubleshooting Iterate Remote"
+    ]
+  },
+  "ga4_retention": {
+    "url": "https://support.google.com/analytics/answer/7667196?hl=en",
+    "final_url": "https://support.google.com/analytics/answer/7667196?hl=en",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "truncated to the 36-month limit. Google Analytics properties For Google Analytics properties, you can set the retention period of user-level data to: 2 months 14 months This retention period also applies to key events data. For all other event data, you can set retention to: 2 months 14 months 26 months (360 only) 38 months (360 only) 50 months (360 only) The two-month retention period is always applied to age, gender, and interest data regardless of your settings. When you increase the retention period",
+      " to the 36-month limit. Google Analytics properties For Google Analytics properties, you can set the retention period of user-level data to: 2 months 14 months This retention period also applies to key events data. For all other event data, you can set retention to: 2 months 14 months 26 months (360 only) 38 months (360 only) 50 months (360 only) The two-month retention period is always applied to age, gender, and interest data regardless of your settings. When you increase the retention period it is app"
+    ]
+  },
+  "gdpr": {
+    "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+    "final_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+    "status": 202,
+    "checkedOn": "2026-10-20",
+    "excerpts": []
+  },
+  "play_sdk_ads": {
+    "url": "https://developers.google.com/admob/unity/privacy/play-data-disclosure",
+    "final_url": "https://developers.google.com/admob/unity/privacy/play-data-disclosure",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      " location data policy US states privacy laws User Messaging Platform (UMP) Set up UMP SDK IAB support Disclose to EEA users Disclose to US users Sync consent across apps Troubleshoot ads Ad inspector Overview Launch ad inspector Verify adapter integrations Test ad units Troubleshoot ad units Troubleshoot privacy settings Copy troubleshooting output Ad load errors Response info Log ad response ID to Crashlytics Troubleshoot ads not showing Optimize Ad preloading Global settings Impression-level ad reven",
+      " Google Play data disclosure | Unity | Google for Developers { \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Google Play data disclosure\" } { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{ \"@type\": \"ListItem\", \"position\": 1, \"name\": \"AdMob\", \"item\": \"https://developers.google.com/admob\" },{ \"@type\": \"ListItem"
+    ]
+  },
+  "play_sdk_firebase": {
+    "url": "https://firebase.google.com/docs/android/play-data-disclosure",
+    "final_url": "https://firebase.google.com/docs/android/play-data-disclosure",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "'s configuration and invocation, the Firebase Phone Number Verification SDK... Phone number Retrieves the phone number of the device (with the user's consent). Additional information Purpose for data collection Firebase Phone Number Verification is a service intended to enable apps to obtain the phone number of a device directly from the mobile carrier. The SDK requires user consent every time the app requests the device’s phone number. This capability is often, but not necessarily, used for app sign-i",
+      " Prepare for Google Play's data disclosure requirements | Firebase for Android { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{ \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Documentation\", \"item\": \"https://firebase.google.com/docs\" },{ \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Firebase for Android\", \"item\": \"https://firebase.google.com/docs"
+    ]
+  },
+  "play_target_age": {
+    "url": "https://support.google.com/googleplay/android-developer/answer/9867159?hl=en",
+    "final_url": "https://support.google.com/googleplay/android-developer/answer/9867159?hl=en",
+    "status": 200,
+    "checkedOn": "2026-10-20",
+    "excerpts": [
+      "llection of personal and sensitive information from children, such as name or e-mail address, must be disclosed and should be collected with parental consent if required. We advise you to take the time to thoroughly consider, research, and understand how any SDKs or APIs used in your app may collect user data. Reading through any documentation for these SDKs or APIs is a good starting point. Keep in mind that any data exfiltrated from your app is your responsibility. Please also consult Play’s user dat",
+      "oor(window.performance.now());} (function(){var ga4_id='G-H30R9PNQFN';var hc_name='androidmarket';var page_type=1;var is_community_page=false; window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', ga4_id, { 'helpcenter': hc_name, 'support_page_type': page_type, 'content_group': is_community_page ? 'Tailwind' : 'Help Center', }); })(); html{-webkit-text-size-adjust:100%}html.hcfe{background-color:#fffff"
+    ]
+  }
+}

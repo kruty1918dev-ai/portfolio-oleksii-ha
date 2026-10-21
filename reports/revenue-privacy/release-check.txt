@@ -1,0 +1,23 @@
+
+> oleksiy-havryliuk-developer-site@1.0.0 release:check
+> node scripts/check-release.mjs
+
+RELEASE BLOCKED:
+ - Exact audited Android artifact SHA-256 missing
+ - latestGameSourceAndSdkInventory: dated verification evidence required
+ - nativeStartupAndMergedManifest: dated verification evidence required
+ - ageConsentAndNetworkMatrix: dated verification evidence required
+ - admobMessagesVendorsAndNpa: dated verification evidence required
+ - ga4RetentionAndSharing: dated verification evidence required
+ - crashQueueAndIndependentConsent: dated verification evidence required
+ - contractsAndTransferSafeguards: dated verification evidence required
+ - mailDeletionProcedure: dated verification evidence required
+ - hostingLogsAndRetention: dated verification evidence required
+ - legalNoticeAndRegionalReview: dated verification evidence required
+ - finalPublicTextAndTranslations: dated verification evidence required
+ - familiesAudienceAndContent: dated verification evidence required
+ - ageAssuranceAndFalseAgeResponse: dated verification evidence required
+ - sequentialOnboardingAndLinks: dated verification evidence required
+ - quietCamp: reviewed document SHA-256 missing
+ - website: reviewed document SHA-256 missing
+ - impressum: reviewed document SHA-256 missing

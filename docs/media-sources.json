@@ -1,0 +1,65 @@
+[
+  {
+    "file": "public/media/portrait.webp",
+    "source": "src/assets/images/Ich.png",
+    "width": 800,
+    "height": 1000,
+    "bytes": 33612
+  },
+  {
+    "file": "public/media/fun-and-ball-01.webp",
+    "source": "src/assets/images/funandball001.jpeg",
+    "width": 720,
+    "height": 1600,
+    "bytes": 51364
+  },
+  {
+    "file": "public/media/fun-and-ball-02.webp",
+    "source": "src/assets/images/funandball003.jpeg",
+    "width": 720,
+    "height": 1600,
+    "bytes": 45856
+  },
+  {
+    "file": "public/media/fun-and-ball-03.webp",
+    "source": "src/assets/images/funandball005.jpeg",
+    "width": 720,
+    "height": 1600,
+    "bytes": 46938
+  },
+  {
+    "file": "public/media/moyva-gameplay.webp",
+    "source": "src/assets/images/moyva-scrins001.png",
+    "width": 1440,
+    "height": 681,
+    "bytes": 36034
+  },
+  {
+    "file": "public/media/moyva-world.webp",
+    "source": "src/assets/images/moyva-scrins003.png",
+    "width": 826,
+    "height": 820,
+    "bytes": 26270
+  },
+  {
+    "file": "public/media/moyva-editor.webp",
+    "source": "src/assets/images/graph-generator.png",
+    "width": 1440,
+    "height": 801,
+    "bytes": 44678
+  },
+  {
+    "file": "public/media/quiet-camp-summer.webp",
+    "source": "quiet-camp/docs/images/captures/2026-10-08/album-season-summer.png",
+    "width": 1280,
+    "height": 800,
+    "bytes": 81736
+  },
+  {
+    "file": "public/media/quiet-camp-autumn.webp",
+    "source": "quiet-camp/docs/images/captures/2026-10-08/album-season-autumn.png",
+    "width": 1280,
+    "height": 800,
+    "bytes": 63622
+  }
+]
