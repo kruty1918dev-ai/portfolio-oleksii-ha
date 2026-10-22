@@ -30,6 +30,10 @@
       "destination": "/fun-and-ball/index.html"
     },
     {
+      "source": "/quiet-camp/legal",
+      "destination": "/quiet-camp/legal/index.html"
+    },
+    {
       "source": "/impressum",
       "destination": "/impressum/index.html"
     },
@@ -70,6 +74,10 @@
       "destination": "/fun-and-ball/uk/index.html"
     },
     {
+      "source": "/quiet-camp/legal/uk",
+      "destination": "/quiet-camp/legal/uk/index.html"
+    },
+    {
       "source": "/impressum/uk",
       "destination": "/impressum/uk/index.html"
     },
@@ -108,6 +116,10 @@
     {
       "source": "/fun-and-ball/de",
       "destination": "/fun-and-ball/de/index.html"
+    },
+    {
+      "source": "/quiet-camp/legal/de",
+      "destination": "/quiet-camp/legal/de/index.html"
     },
     {
       "source": "/impressum/de",

@@ -9,7 +9,7 @@ const config=JSON.parse(await fs.readFile(path.join(root,'vercel.json'),'utf8'))
 const data=JSON.parse(await fs.readFile(path.join(root,'site/content.json'),'utf8'));
 const policy=JSON.parse(await fs.readFile(path.join(root,'legal/quiet-camp/content.json'),'utf8'));
 const known=new Map(routes.map(r=>[r.path,r.file]));
-assert.equal(routes.length,(7+data.projects.length)*3,'Every project and core page needs three languages');
+assert.equal(routes.length,(8+data.projects.length)*3,'Every project and core page needs three languages');
 const sharedCss='/assets/site.css';
 let links=0;
 for(const r of routes){

@@ -8,7 +8,7 @@
     "languages": "Policy language",
     "toc": "On this page",
     "updated": "Last updated",
-    "date": "21 October 2026",
+    "date": "22 October 2026",
     "contact": "Privacy contact",
     "status": "13+ audience · production configuration and Android checks pending",
     "noticeTitle": "This document is not yet cleared for the Android release",
@@ -65,7 +65,7 @@
         "title": "Scope and your choices",
         "paragraphs": [
           "This policy review covers Quiet Camp for Android (com.quietcamp.game), local saves, Google Analytics for Firebase, Firebase Crashlytics and AdMob rewarded advertising. Firebase Core, Analytics and Crashlytics 14.0.0 and Google Mobile Ads 11.6.0 are present in the audited source. No player account, authentication, cloud saves, active purchase service, Remote Config, working banner/interstitial implementation or additional mediation SDK was identified in that source. New services require a fresh assessment and policy update.",
-          "Quiet Camp primarily targets ages 13 and older. First comes privacy information, then a neutral age category, then independent available choices, starting with video bonuses for eligible users, followed by a final review. Categories are not provided, under 13, 13–15, 16–17 and 18+; no birth date or identity document is requested. Reading or continuing past the policy is not consent. Gameplay Analytics and crash uploads remain separate opt-ins from age 16. Advertising does not require either of them. Choices are saved before game-side provider composition; published choice receipts also identify the exact document hash. Age changes withdraw optional permissions.",
+          "Quiet Camp primarily targets ages 13 and older. First launch shows at most three cards: age with a link to this policy, then separate Analytics and crash-report choices only when those services are available and age permits them. Visible age choices are under 13, 13–15, 16–17 and 18+; no birth date or identity document is requested. Choosing an age advances immediately. Reading the policy is information, not optional-processing consent. There is no advertising questionnaire or final review card at startup. Choices are saved reliably before entering the game; no response, Back or closing never grants permission. Analytics and crash uploads remain independent opt-ins from age 16. Advertising requires neither of them: Google UMP is requested when needed on the first voluntary video-bonus action, with existing age and production restrictions preserved. Published choice receipts identify the document hash. Age changes withdraw optional permissions.",
           "C# Firebase initialization waits for an eligible, saved Analytics or crash opt-in. The game’s Android startup provider calls no Firebase API; the source manifest excludes FirebaseInitProvider. Shared Core can create installed native products for a single purpose. Persisted overrides, identifiers, files, automatic collection and traffic differ from game-side checks: absence of early storage/traffic is unproven. Mobile Ads’ startup provider and delayed-measurement flag also require native verification.",
           "Quiet Camp is offline-first, not purely offline. Enabled services contact Google; opening this page contacts its host. Explicit Google sample ads are development-only and need the same age gate and separate local advertising choice. Sample app/units lack a publisher UMP message and skip that production form flow. Test ads still process technical data; they do not prove a production consent configuration.",
           "Local play remains available when optional purposes are declined. The intended monetization model retains five initial lives and three hints, offers voluntary video rewards and slowly recovers lives locally with time, rather than granting an unlimited instant free refill. The prepared defaults are one life per 30 minutes up to five; earned or purchased extra lives are not reduced to that cap. Rewarded life videos retain the ten-per-UTC-day limit; the prepared hint-video limit is five per UTC day. These local timers and counters are not server-verified clocks."
@@ -187,8 +187,8 @@
         ]
       }
     ],
-    "revision": "2026-10-21.privacy-7-revenue",
-    "dateISO": "2026-10-21"
+    "revision": "2026-10-22.privacy-8-compact-ui",
+    "dateISO": "2026-10-22"
   },
   "de": {
     "title": "Datenschutzerklärung",
@@ -199,7 +199,7 @@
     "languages": "Sprache der Erklärung",
     "toc": "In dieser Erklärung",
     "updated": "Zuletzt aktualisiert",
-    "date": "21. Oktober 2026",
+    "date": "22. Oktober 2026",
     "contact": "Datenschutzkontakt",
     "status": "Vorrangige Zielgruppe ab 13 · Produktiv- und Android-Prüfungen offen",
     "noticeTitle": "Für die Android-Veröffentlichung noch nicht freigegeben",
@@ -256,7 +256,7 @@
         "title": "Geltungsbereich und Ihre Entscheidungen",
         "paragraphs": [
           "Diese Prüffassung betrifft Quiet Camp für Android (com.quietcamp.game), lokale Spielstände, Google Analytics for Firebase, Firebase Crashlytics und AdMob-Werbung mit Belohnung. Im geprüften Quellcode sind Firebase Core, Analytics und Crashlytics 14.0.0 sowie Google Mobile Ads 11.6.0 enthalten. Dort wurden keine Spielerkonten, Authentifizierung, Cloud-Spielstände, aktiven Käufe, Remote Config, funktionsfähigen Banner- oder Interstitial-Anzeigen oder zusätzlichen Vermittlungs-SDKs festgestellt. Weitere Dienste erfordern eine neue Prüfung und Anpassung dieser Erklärung.",
-          "Quiet Camp richtet sich vorrangig an Personen ab 13 Jahren. Auf die Datenschutzhinweise folgen eine neutrale Altersgruppenwahl, getrennte verfügbare Einstellungen – beginnend mit Videoboni für berechtigte Personen – und eine abschließende Übersicht. Kategorien sind keine Angabe, unter 13, 13–15, 16–17 und ab 18; Geburtsdatum oder Ausweis werden nicht abgefragt. Lesen oder Weitergehen ist keine Einwilligung. Spielanalyse und Absturzübermittlung bleiben getrennte freiwillige Entscheidungen ab 16. Werbung setzt keine davon voraus. Die Auswahl wird vor dem Zusammenstellen der spielseitigen Anbieter gespeichert; bei veröffentlichten Hinweisen beziehen sich Entscheidungsnachweise auch auf den genauen Dokumenthash. Altersänderungen widerrufen optionale Freigaben.",
+          "Quiet Camp richtet sich hauptsächlich an Personen ab 13 Jahren. Beim ersten Start erscheinen höchstens drei Karten: Alter mit Link zu dieser Erklärung, danach getrennte Fragen zu Analytics und Absturzberichten, soweit Dienste verfügbar und für die Altersgruppe zulässig sind. Sichtbare Altersgruppen sind unter 13, 13–15, 16–17 und 18+; Geburtsdatum und Ausweisdokumente werden nicht erfragt. Die Alterswahl führt direkt weiter. Das Lesen ist Information und keine Einwilligung in optionale Verarbeitung. Beim Start gibt es weder Werbefragebogen noch abschließende Übersicht. Die Auswahl wird vor dem Spieleintritt zuverlässig gespeichert; fehlende Antwort, Zurück oder Schließen erteilen keine Erlaubnis. Analytics und Absturzübermittlung bleiben unabhängige Einwilligungen ab 16 Jahren. Werbung benötigt keine davon: Google UMP wird bei Bedarf beim ersten freiwilligen Videobonus aufgerufen; Altersgrenzen und Produktionsfreigaben bleiben bestehen. Veröffentlichte Entscheidungsnachweise enthalten den Dokumenthash. Altersänderungen widerrufen optionale Erlaubnisse.",
           "Die C#-Firebase-Initialisierung wartet auf zulässiges Alter und gespeicherte Analytics- oder Absturzeinwilligung. Der Android-Startprovider des Spiels ruft keine Firebase-API auf; das Quellmanifest schließt FirebaseInitProvider aus. Gemeinsames Core kann installierte native Produkte für einen einzelnen Zweck erzeugen. Persistente Überschreibungen, Kennungen, Dateien, automatische Erfassung und Verkehr unterscheiden sich von Spielprüfungen: fehlender früher Speicherzugriff/Verkehr ist unbelegt. Auch der Mobile-Ads-Startprovider und verzögerte Messung müssen nativ geprüft werden.",
           "Quiet Camp bietet lokales Spielen, ist aber nicht vollständig offline. Aktivierte Dienste kontaktieren Google; diese Seite ihren Host. Explizite Google-Testanzeigen sind auf Entwicklungsversionen begrenzt und erfordern dieselbe Altersprüfung sowie separate lokale Werbefreigabe. Test-App/-Block-IDs haben keine Publisher-UMP-Nachricht und überspringen diesen produktiven Formularablauf. Auch Testanzeigen verarbeiten technische Daten und belegen keine produktive Einwilligungskonfiguration.",
           "Das lokale Spiel bleibt bei Ablehnung optionaler Zwecke zugänglich. Das Monetarisierungsmodell behält fünf anfängliche Leben und drei Hinweise, bietet freiwillige Videobelohnungen und lässt Leben langsam lokal mit der Zeit zurückkehren, statt unbegrenzt sofort kostenlos aufzufüllen. Vorbereitet ist ein Leben je 30 Minuten bis zum Vorrat von fünf; zusätzlich verdiente oder gekaufte Leben werden nicht auf diese Grenze gekürzt. Für Videoleben bleibt es bei zehn pro UTC-Tag; für Videohinweise sind fünf pro UTC-Tag vorgesehen. Diese lokalen Zeitgeber und Zähler sind keine servergeprüfte Uhr."
@@ -378,8 +378,8 @@
         ]
       }
     ],
-    "revision": "2026-10-21.privacy-7-revenue",
-    "dateISO": "2026-10-21"
+    "revision": "2026-10-22.privacy-8-compact-ui",
+    "dateISO": "2026-10-22"
   },
   "uk": {
     "title": "Політика конфіденційності",
@@ -390,7 +390,7 @@
     "languages": "Мова політики",
     "toc": "У цьому документі",
     "updated": "Останнє оновлення",
-    "date": "21 жовтня 2026 року",
+    "date": "22 жовтня 2026",
     "contact": "Контакт із питань приватності",
     "status": "Основна аудиторія 13+ · виробничі та Android-перевірки тривають",
     "noticeTitle": "Документ ще не допущено до релізу Android",
@@ -447,7 +447,7 @@
         "title": "Сфера дії та ваш вибір",
         "paragraphs": [
           "Ця копія для перевірки стосується Quiet Camp для Android (com.quietcamp.game), локальних збережень, Google Analytics for Firebase, Firebase Crashlytics і винагороджуваної реклами AdMob. В аудитованому коді наявні Firebase Core, Analytics і Crashlytics 14.0.0 та Google Mobile Ads 11.6.0. У ньому не виявлено облікових записів гравців, автентифікації, хмарних збережень, активних покупок, Remote Config, робочих банерів/міжсторінкової реклами чи додаткового SDK медіації. Нові сервіси потребують окремої оцінки та оновлення політики.",
-          "Основна аудиторія Quiet Camp — від 13 років. Спочатку показується інформація про приватність, потім нейтральна вікова категорія, далі — незалежні доступні налаштування, починаючи з відеобонусів для допустимих користувачів, і остаточний огляд. Категорії: не зазначено, до 13, 13–15, 16–17 та 18+; дата народження й документи не запитуються. Читання політики чи перехід далі не є згодою. Analytics гри й надсилання збоїв залишаються окремими дозволами від 16 років. Реклама не потребує жодного з них. Вибір зберігається до створення провайдерів гри; для опублікованої політики записи рішень також містять точний хеш документа. Зміна віку відкликає необов’язкові дозволи.",
+          "Quiet Camp орієнтована насамперед на аудиторію від 13 років. Перший запуск містить максимум три картки: вік із посиланням на цю політику, потім окремі запитання про аналітику й звіти про збої лише за доступності сервісів та відповідного віку. Видимі категорії: до 13, 13–15, 16–17 та 18+; дата народження й документи не запитуються. Вибір віку одразу переводить далі. Ознайомлення з політикою є інформуванням, а не згодою на необов’язкову обробку. На старті немає рекламної анкети й фінального підсумку. Вибори надійно зберігаються перед входом у гру; відсутність відповіді, Back або закриття не надають дозволу. Аналітика й надсилання збоїв залишаються незалежними дозволами від 16 років. Реклама не потребує жодного з них: Google UMP відкривається за потреби при першій добровільній дії відеобонусу зі збереженням вікових і виробничих обмежень. Записи опублікованих виборів містять хеш документа. Зміна віку відкликає необов’язкові дозволи.",
           "Ініціалізація Firebase в C# очікує допустимий вік і збережений дозвіл на Analytics або збої. Стартовий Android-провайдер гри не викликає Firebase API; вихідний маніфест виключає FirebaseInitProvider. Спільне Core може створити встановлені нативні продукти навіть для однієї мети. Збережені SDK-перевизначення, ідентифікатори, файли, автоматичний збір і трафік відрізняються від перевірок гри: відсутність раннього сховища/трафіку не доведена. Стартовий провайдер Mobile Ads і прапорець відкладеного вимірювання також потребують нативної перевірки.",
           "Quiet Camp має основну локальну гру, але не є повністю офлайн. Увімкнені сервіси звертаються до Google; відкриття сторінки — до її хостингу. Явно запитані тестові Google-реклами доступні лише в розробницьких версіях і вимагають тієї самої вікової перевірки й окремого рекламного дозволу. Тестові app/unit ID не мають повідомлення видавця UMP і пропускають цей виробничий процес форм. Тестова реклама також обробляє технічні дані й не доводить правильність виробничої згоди.",
           "Локальна гра доступна при відмові від необов’язкових цілей. Модель монетизації зберігає п’ять стартових життів і три підказки, пропонує добровільні відеовинагороди й повільно відновлює життя локально з часом замість необмеженого миттєвого безкоштовного поповнення. Підготовлені стандартні значення — одне життя за 30 хвилин до запасу п’ять; додаткові зароблені чи придбані життя не обрізаються до цього ліміту. Для відеожиттів зберігається межа десять за UTC-добу; для відеопідказок підготовлено п’ять за UTC-добу. Локальні таймери та лічильники не є перевіреним сервером годинником."
@@ -569,7 +569,7 @@
         ]
       }
     ],
-    "revision": "2026-10-21.privacy-7-revenue",
-    "dateISO": "2026-10-21"
+    "revision": "2026-10-22.privacy-8-compact-ui",
+    "dateISO": "2026-10-22"
   }
 }

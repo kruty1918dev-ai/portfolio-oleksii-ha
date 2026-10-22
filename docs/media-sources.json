@@ -61,5 +61,103 @@
     "width": 1280,
     "height": 800,
     "bytes": 63622
+  },
+  {
+    "file": "public/media/quiet-camp-leaf.png",
+    "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/QuietCamp/Assets/QuietCamp/Resources/QuietCamp/UI/Atlas/leaf_c.png",
+    "width": 42,
+    "height": 60,
+    "bytes": 5860
+  },
+  {
+    "file": "public/media/quiet-camp-wordmark.svg",
+    "source": "Native MenuScreens wordmark Quiet / Camp, outlined from the game NotoSans-Bold.ttf at e1cdf86; leaf is kept separately. Font license: public/media/NotoSans-LICENSE.txt. No font request.",
+    "width": 310,
+    "height": 215,
+    "bytes": 3328
+  },
+  {
+    "file": "public/media/quiet-camp-clearing.webp",
+    "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/OpeningCampaign/Final/QC003.png",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 161060,
+    "capturedUtc": "2026-10-14T18:06:35.5689750Z",
+    "originalSha256": "cf930f7d36ac9be7cbf12df4bb5a785acc7fc7f69ebeb2024c0313e32e3783b6",
+    "kind": "native-unity-production-world-components",
+    "variants": [
+      {
+        "file": "quiet-camp-clearing-480.webp",
+        "width": 480,
+        "height": 480
+      },
+      {
+        "file": "quiet-camp-clearing-800.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "file": "quiet-camp-clearing.webp",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "note": "Archived native world-camera image. It does not depict the redesigned HUD. Originals remain in the pinned game repository and the V2 delivery archive."
+  },
+  {
+    "file": "public/media/quiet-camp-airplane.webp",
+    "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Campaign100/2026-10-11/Renders/level-042-landscape.png",
+    "width": 1280,
+    "height": 800,
+    "bytes": 124480,
+    "capturedUtc": "2026-10-11T09:41:10.2060530Z",
+    "originalSha256": "1b732af0a29caaf0c6e4407c2e96cba80ee5a340b9710fa37558b7a19e07f341",
+    "kind": "native-unity-world-camera",
+    "variants": [
+      {
+        "file": "quiet-camp-airplane-480.webp",
+        "width": 480,
+        "height": 300
+      },
+      {
+        "file": "quiet-camp-airplane-800.webp",
+        "width": 800,
+        "height": 500
+      },
+      {
+        "file": "quiet-camp-airplane.webp",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "note": "Archived native world-camera image. It does not depict the redesigned HUD. Originals remain in the pinned game repository and the V2 delivery archive."
+  },
+  {
+    "file": "public/media/quiet-camp-winter.webp",
+    "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Campaign100/2026-10-11/Renders/level-077-landscape.png",
+    "width": 1280,
+    "height": 800,
+    "bytes": 69610,
+    "capturedUtc": "2026-10-11T09:42:12.8740940Z",
+    "originalSha256": "f186de55d80873fa97fcad8b4dcee4f38b24189181a69d609f708ca3e260a2cf",
+    "kind": "native-unity-world-camera",
+    "variants": [
+      {
+        "file": "quiet-camp-winter-480.webp",
+        "width": 480,
+        "height": 300
+      },
+      {
+        "file": "quiet-camp-winter-800.webp",
+        "width": 800,
+        "height": 500
+      },
+      {
+        "file": "quiet-camp-winter.webp",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "note": "Archived native world-camera image. It does not depict the redesigned HUD. Originals remain in the pinned game repository and the V2 delivery archive."
   }
 ]

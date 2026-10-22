@@ -468,7 +468,14 @@
         "captureNote": "Entwicklungsaufnahmen vom 8. Oktober 2026. Das Spiel befindet sich weiterhin in Entwicklung."
       },
       "icon": "/quiet-camp/privacy/brand-icon.png",
-      "theme": "camp"
+      "theme": "camp",
+      "promotion": {
+        "hero": "quiet-camp-clearing.webp",
+        "gallery": [
+          "quiet-camp-airplane.webp",
+          "quiet-camp-winter.webp"
+        ]
+      }
     },
     {
       "slug": "moyva",
@@ -784,5 +791,52 @@
       "uk": "Повторно використовуваний інструмент Unity для керування singleton-об’єктами.",
       "de": "Ein wiederverwendbares Unity-Werkzeug zur Verwaltung von Singleton-Objekten."
     }
-  ]
+  ],
+  "campPromotion": {
+    "en": {
+      "back": "Developer website",
+      "description": "A quiet puzzle about finding a place for every guest among Ukrainian landscapes.",
+      "status": "In development for Android",
+      "archive": "Development images · 11–14 October 2026",
+      "legal": "Help & documents",
+      "support": "Support",
+      "heroAlt": "Three tents in a wooded clearing beside a river",
+      "galleryAlt": [
+        "A camp beside a grounded aircraft",
+        "A winter camp among snow-covered trees"
+      ],
+      "privacy": "Privacy",
+      "linksLabel": "Game links"
+    },
+    "uk": {
+      "back": "Сайт розробника",
+      "description": "Спокійна головоломка про місце для кожного гостя серед українських краєвидів.",
+      "status": "У розробці для Android",
+      "archive": "Кадри розробки · 11–14 жовтня 2026",
+      "legal": "Допомога й документи",
+      "support": "Підтримка",
+      "heroAlt": "Три намети на лісовій галявині біля річки",
+      "galleryAlt": [
+        "Табір біля літака",
+        "Зимовий табір серед засніжених дерев"
+      ],
+      "privacy": "Приватність",
+      "linksLabel": "Посилання гри"
+    },
+    "de": {
+      "back": "Zur Entwicklerwebsite",
+      "description": "Ein ruhiges Rätselspiel, in dem jeder Gast seinen Platz in ukrainischen Landschaften findet.",
+      "status": "In Entwicklung für Android",
+      "archive": "Entwicklungsaufnahmen · 11.–14. Oktober 2026",
+      "legal": "Hilfe & Dokumente",
+      "support": "Support",
+      "heroAlt": "Drei Zelte auf einer Waldlichtung am Fluss",
+      "galleryAlt": [
+        "Ein Camp neben einem Flugzeug",
+        "Ein Wintercamp zwischen verschneiten Bäumen"
+      ],
+      "privacy": "Datenschutz",
+      "linksLabel": "Links zum Spiel"
+    }
+  }
 }

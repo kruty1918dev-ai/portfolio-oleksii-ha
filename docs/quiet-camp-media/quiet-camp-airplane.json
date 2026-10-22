@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/kruty1918dev-ai/quiet-camp",
+  "commit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+  "originalPath": "Design/Campaign100/2026-10-11/Renders/level-042-landscape.png",
+  "originalSha256": "1b732af0a29caaf0c6e4407c2e96cba80ee5a340b9710fa37558b7a19e07f341",
+  "capturedUtc": "2026-10-11T09:41:10.2060530Z",
+  "kind": "native-unity-world-camera",
+  "levelId": "gen:qc_camp:57",
+  "conversion": "WebP quality 91, responsive copies at 480/800 px quality 88; original aspect ratio; no retouch",
+  "originalReceiptPath": "Design/Campaign100/2026-10-11/Renders/level-042-landscape.json",
+  "unityVersion": "6000.6.2f1",
+  "gameBuildVersion": "Not recorded in archive receipt; this is not a new UI acceptance capture."
+}
