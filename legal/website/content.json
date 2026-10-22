@@ -5,74 +5,74 @@
     "intro": "This notice covers visits to oleksiy-havryliuk.de and correspondence with its developer. Processing inside Quiet Camp is covered by the separate game privacy policy.",
     "toc": "In this notice",
     "updated": "Last updated",
-    "date": "20 October 2026",
-    "status": "Identity confirmed · hosting and retention verification pending",
-    "noticeTitle": "Remaining operational checks",
-    "notice": "The developer has confirmed legal/public name spellings, postal address and working privacy/support mailboxes. The actual hosting/mail contracts, log retention, transfer safeguards and practical correspondence deletion still require verification. This notice must not be represented as fully cleared until those account-specific checks are complete.",
+    "date": "22 October 2026",
+    "status": "",
+    "noticeTitle": "",
+    "notice": "",
     "footerNote": "Kruty1918 Games is the developer’s brand, not a separate registered company.",
     "sections": [
       {
         "id": "controller",
-        "title": "The person responsible",
+        "title": "Who is responsible",
         "paragraphs": [
-          "The controller is {{legalName}}, publicly known as {{publicName}}, an independent developer in Germany trading as Kruty1918 Games. The Ukrainian full name is {{ukrainianName}}. The developer confirms the passport/Google Play spelling {{legalName}} and the public/German spelling {{publicName}}. Kruty1918 Games is a brand, not a separate registered company.",
-          "Postal address: {{postalAddress}}, Germany. Privacy: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. See the <a href=\"/impressum\">legal notice</a>."
+          "The controller for this website is {{legalName}}, publicly known as {{publicName}}, trading as Kruty1918 Games. Postal address: {{postalAddress}}, Germany. Kruty1918 Games is a trading name of an individual developer, not a separate company.",
+          "For questions about your data or to exercise your rights, write to <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Operator details are in the <a href=\"/impressum\">legal notice</a>."
         ]
       },
       {
         "id": "hosting",
-        "title": "Delivering the website",
+        "title": "Website delivery and security",
         "paragraphs": [
-          "Your browser must send connection and request information to the hosting service to retrieve these pages and images. This includes the IP address, requested URL, request time and browser or protocol information transmitted with the request. The current domain is served through Vercel. STRATO is the domain registrar; that does not establish who hosts the mailboxes.",
-          "The purpose is to deliver the requested pages and protect the website against misuse and technical failures. The proposed legal basis is Article 6(1)(f) GDPR: the operator’s legitimate interest in running a functional, secure public website, limited to necessary connection and security processing. The actual Vercel account logging settings and contractual arrangements must still be checked; no fixed log-retention period has been verified."
+          "This website is hosted by Vercel Inc. Your browser sends the information needed to retrieve a page or image, including your IP address, requested URL, request time and browser or protocol information. Vercel and its infrastructure providers process this information to deliver content, operate the service and protect against abuse and technical failures.",
+          "The legal basis for necessary delivery and proportionate security processing is Article 6(1)(f) GDPR: the legitimate interest in operating an accessible, reliable and secure public website. A browser request is necessary to retrieve the site; you do not have to create an account or provide a name."
         ]
       },
       {
         "id": "browser",
-        "title": "Cookies, analytics and external content",
+        "title": "Cookies, local storage and external links",
         "paragraphs": [
-          "The website code sets no cookies, uses no localStorage or other persistent browser storage, and includes no visitor analytics, advertising, external fonts or embedded social content. All page assets are served from this domain. The optional image viewer keeps its current image only in memory; page text, navigation and original image links work without JavaScript.",
-          "There is no website tracking-consent switch because no optional website tracking is implemented. This does not control consent inside the game. When you follow a link to GitHub, the game guide, another project site or a provider’s documents, your browser connects to that external service under its own privacy terms."
+          "The website does not use visitor analytics, advertising, tracking cookies or localStorage, and it does not write persistent preferences or visitor identifiers to your browser. Your browser may cache downloaded page assets under its own settings. Fonts and images are served from this domain. There are no embedded social feeds or automatically loaded external videos. The image viewer keeps its current selection in memory only. Page content, navigation and document links work without JavaScript.",
+          "No tracking-consent banner is needed for the current website because no optional tracking is implemented. Website settings do not control consent in Quiet Camp. An email link opens your mail application. An external link connects to the selected service only when you follow it; that service has its own privacy practices."
         ]
       },
       {
         "id": "messages",
-        "title": "Messages and privacy requests",
+        "title": "Contact and correspondence",
         "paragraphs": [
-          "When you email the developer, the email address, message, attachments and correspondence metadata are processed to answer the request. General messages go to <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, using Google’s Gmail service. Quiet Camp support uses <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, and privacy requests use <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. The developer confirms these two domain mailboxes are working and personally managed. Public MX records identify STRATO mail infrastructure; account-specific contractual and retention settings remain to be checked. Email links open your mail application; there is no contact form.",
-          "Ordinary enquiries are handled under Article 6(1)(f) GDPR, for the legitimate interest in responding to correspondence. Article 6(1)(b) applies where a message is necessary for a contract or steps you request before a contract. Handling statutory privacy rights and applicable legal duties relies on Article 6(1)(c). Please include only information needed for the request."
+          "If you contact the developer, your email address, message, attachments and email metadata are processed to answer your request. Game support uses <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a> and privacy enquiries use <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. These domain mailboxes receive messages through STRATO mail infrastructure. General enquiries can also be sent to <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, which uses Google Gmail. There is no contact form or public user account.",
+          "Ordinary correspondence is based on Article 6(1)(f) GDPR, for the legitimate interest in responding to enquiries. Article 6(1)(b) applies to communication necessary for a contract or steps you request before a contract. Article 6(1)(c) applies to handling statutory data-rights requests and other legal obligations. Please send only the information needed to resolve your enquiry."
         ]
       },
       {
         "id": "recipients",
-        "title": "Recipients and transfers",
+        "title": "Recipients and international processing",
         "paragraphs": [
-          "Recipients are the developer, the hosting provider and the email provider needed to handle the communication. Hosting or email processing may involve providers or subprocessors outside the EEA. No sale of visitor data or advertising disclosure is implemented by the website code.",
-          "Vercel publishes a <a href=\"https://vercel.com/legal/privacy-policy\">privacy policy</a>, a <a href=\"https://vercel.com/legal/dpa\">data processing addendum</a> and a <a href=\"https://vercel.com/legal/sub-processors\">subprocessor list</a>. Google explains its email-service data handling in its <a href=\"https://policies.google.com/privacy\">privacy policy</a>. The operator must verify the actual contracting entities, applicable agreements, processing locations and transfer safeguards, such as applicable standard contractual clauses or another lawful mechanism. Publication of a provider’s terms alone is not proof that the operator has completed that verification."
+          "Recipients are the developer and the hosting or email providers needed for the relevant service. Their information is available from <a href=\"https://vercel.com/legal/privacy-notice\">Vercel</a>, <a href=\"https://www.strato.de/datenschutz/\">STRATO</a> and <a href=\"https://policies.google.com/privacy\">Google</a>. Data is not sold by the developer. The website does not create marketing profiles or make solely automated decisions with legal or similarly significant effects.",
+          "Vercel operates a global delivery network, and hosting or Google email processing can involve countries outside the EEA, including the United States. The applicable service terms describe the provider’s role and transfer arrangements. Vercel publishes its <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> and <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>; where applicable, protection can include an adequacy decision for an eligible recipient or standard contractual clauses. Contact the privacy address for information about the safeguards relevant to your request. There is no promise of EEA-only processing."
         ]
       },
       {
         "id": "retention",
-        "title": "Retention and deletion",
+        "title": "How long information is kept",
         "paragraphs": [
-          "The website does not maintain a visitor account or a separate visitor database. Necessary request processing and any host logs are subject to the actual hosting setup; its log and backup retention has not been verified. No invented retention limit is promised.",
-          "The intended correspondence schedule is deletion 12 months after case closure, unless a specific legal duty or necessary retention for legal claims applies. Implementation across the actual mailboxes and backups still needs confirmation. To request deletion, write to the privacy address and identify the relevant correspondence. An email address alone may not identify a hosting record; proportionate verification may be needed. Do not send an identity document by default."
+          "Connection data is processed for delivery and for as long as necessary for service operation, security and investigation of specific incidents. The website has no separate visitor database. Host-side logs and recovery copies follow the hosting service’s applicable retention arrangements; a single deletion deadline cannot be promised for every infrastructure record.",
+          "Correspondence is retained while the enquiry is being handled and afterwards only as necessary to meet a legal retention duty or establish, exercise or defend legal claims. The relevant criteria are the nature of the enquiry, outstanding obligations and applicable statutory periods. When those purposes end, the corresponding records are deleted or restricted. You may request information or deletion through the privacy address. Please identify the relevant correspondence; an email address alone may not identify a technical hosting record."
         ]
       },
       {
         "id": "rights",
         "title": "Your rights",
         "paragraphs": [
-          "Depending on the applicable conditions, you may request access, correction, erasure, restriction and data portability, and object to processing based on legitimate interests. If future processing relies on consent, you may withdraw that consent without affecting earlier lawful processing; reading this notice is not consent.",
-          "Contact <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Requests are normally answered within one month; any legally permitted extension will be explained. You may complain to a supervisory authority, particularly where you live, work or believe a breach occurred. The <a href=\"https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html\">German authority directory</a> lists the state authorities."
+          "Under the conditions of the GDPR, you may request access, rectification, erasure, restriction of processing and data portability. You may object to processing based on legitimate interests for reasons relating to your situation. Any consent can be withdrawn for the future without affecting the lawfulness of earlier processing. Reading this notice is not consent.",
+          "Write to <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Requests are normally answered within one month; a permitted extension and its reasons will be explained. Proportionate verification may be required, but please do not send an identity document unless specifically necessary. You may complain to a supervisory authority, particularly where you live, work or believe a breach occurred. The authority at the developer’s location is the <a href=\"https://www.datenschutz-mv.de/\">Landesbeauftragter für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern</a>."
         ]
       },
       {
         "id": "security",
         "title": "Security and changes",
         "paragraphs": [
-          "The current domain uses HTTPS. The prepared website uses local assets, restrictive content-security headers and read-only static pages. These measures reduce exposure but do not guarantee absolute security. Account access, hosting settings and mailbox security also require the operator’s ongoing attention.",
-          "Material changes to hosting, communication or tracking must be reflected in this notice and its translations. The updated date identifies the current version. For processing inside the game, read the <a href=\"/quiet-camp/privacy\">Quiet Camp privacy policy</a>."
+          "The site uses HTTPS, local assets and restrictive content-security headers. These measures reduce risk but cannot guarantee absolute security.",
+          "This notice is updated when relevant data practices or legal requirements change. The date identifies the current version. Processing inside the game is described separately in the <a href=\"/quiet-camp/privacy\">Quiet Camp privacy policy</a>."
         ]
       }
     ]
@@ -83,74 +83,74 @@
     "intro": "Цей документ стосується відвідування oleksiy-havryliuk.de та листування з розробником. Обробку даних у Quiet Camp описано в окремій політиці гри.",
     "toc": "У цьому документі",
     "updated": "Останнє оновлення",
-    "date": "20 жовтня 2026 року",
-    "status": "Реквізити підтверджено · перевірка хостингу та зберігання триває",
-    "noticeTitle": "Незавершені операційні перевірки",
-    "notice": "Розробник підтвердив юридичне й публічне написання імені, поштову адресу та роботу privacy/support. Фактичні договори хостингу й пошти, строки журналів, гарантії передачі та виконання видалення листування ще потрібно перевірити. До цього документ не вважається повністю допущеним до публікації.",
+    "date": "22 жовтня 2026 року",
+    "status": "",
+    "noticeTitle": "",
+    "notice": "",
     "footerNote": "Kruty1918 Games — бренд розробника, а не окрема зареєстрована компанія.",
     "sections": [
       {
         "id": "controller",
         "title": "Хто відповідає за дані",
         "paragraphs": [
-          "Контролер — {{legalName}}, публічно відомий як {{publicName}}, незалежний розробник у Німеччині під назвою Kruty1918 Games. Повне ім’я українською — {{ukrainianName}}. Розробник підтвердив паспортне написання для Google Play {{legalName}} та публічний/німецький варіант {{publicName}}. Kruty1918 Games — бренд, а не окрема зареєстрована компанія.",
-          "Поштова адреса: {{postalAddress}}, Німеччина. Приватність: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Дивіться <a href=\"/impressum/uk\">юридичні реквізити</a>."
+          "Володілець персональних даних цього сайту — {{legalName}}, публічно відомий як {{publicName}}, який працює під назвою Kruty1918 Games. Поштова адреса: {{postalAddress}}, Німеччина. Kruty1918 Games — комерційна назва фізичної особи-розробника, а не окрема компанія.",
+          "Із запитаннями щодо даних і для реалізації своїх прав звертайтеся на <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Реквізити наведено в <a href=\"/impressum/uk\">юридичній інформації</a>."
         ]
       },
       {
         "id": "hosting",
-        "title": "Надання доступу до сайту",
+        "title": "Робота й захист сайту",
         "paragraphs": [
-          "Щоб завантажити сторінки й зображення, браузер передає хостингу дані з’єднання та запиту: IP-адресу, запитану URL-адресу, час запиту, а також відомості про браузер або протокол, які супроводжують запит. Поточний домен обслуговується через Vercel. STRATO є реєстратором домену; це не встановлює постачальника поштових скриньок.",
-          "Мета — показати запитані сторінки та захистити сайт від зловживань і технічних збоїв. Запропонована підстава — стаття 6(1)(f) GDPR: законний інтерес власника в роботі доступного й безпечного публічного сайту, з обмеженням необхідними даними з’єднання та безпеки. Фактичні налаштування журналів і договори облікового запису Vercel ще потрібно перевірити; фіксований строк зберігання журналів не підтверджено."
+          "Сайт розміщено на Vercel Inc. Для отримання сторінки чи зображення браузер передає необхідні відомості: IP-адресу, запитаний URL, час запиту та інформацію браузера або протоколу. Vercel і постачальники її інфраструктури обробляють ці дані для доставки вмісту, роботи сервісу та захисту від зловживань і технічних збоїв.",
+          "Правова підстава необхідної доставки та пропорційного захисту — стаття 6(1)(f) GDPR: законний інтерес у доступному, надійному й захищеному публічному сайті. Запит браузера потрібен для завантаження сайту; створювати обліковий запис чи вказувати ім’я не потрібно."
         ]
       },
       {
         "id": "browser",
-        "title": "Cookies, аналітика та зовнішні матеріали",
+        "title": "Cookies, локальне зберігання й зовнішні посилання",
         "paragraphs": [
-          "Код сайту не встановлює cookies, не використовує localStorage чи інше постійне сховище браузера та не містить аналітики відвідувачів, реклами, зовнішніх шрифтів або вбудованих соціальних матеріалів. Усі ресурси сторінок завантажуються із цього домену. Переглядач зображень тримає поточний кадр лише в оперативній пам’яті; тексти, навігація та посилання на зображення працюють без JavaScript.",
-          "Перемикача згоди на відстеження на сайті немає, оскільки необов’язкове відстеження не реалізовано. Це не керує згодою всередині гри. Перехід на GitHub, довідник гри, інший сайт проєкту або документи постачальника з’єднує браузер із зовнішньою службою, що має власні правила приватності."
+          "Сайт не використовує аналітику відвідувачів, рекламу, cookies для відстеження чи localStorage та не записує постійні налаштування або ідентифікатори відвідувача у браузер. Браузер може кешувати завантажені ресурси сторінки відповідно до власних налаштувань. Шрифти й зображення завантажуються з цього домену. Немає вбудованих соціальних стрічок чи зовнішнього відео, що завантажується автоматично. Переглядач зображень тримає поточний вибір лише в пам’яті. Вміст, навігація й посилання на документи працюють без JavaScript.",
+          "Для поточного сайту банер згоди на відстеження не потрібен, оскільки необов’язкового відстеження немає. Налаштування сайту не керують згодою у Quiet Camp. Поштове посилання відкриває вашу поштову програму. Зовнішній сервіс отримує з’єднання після переходу за його посиланням і застосовує власні правила приватності."
         ]
       },
       {
         "id": "messages",
-        "title": "Листи та запити щодо приватності",
+        "title": "Звернення й листування",
         "paragraphs": [
-          "Для відповіді на лист обробляються електронна адреса, текст, вкладення та метадані листування. Загальні звернення — <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a> у Gmail Google. Підтримка Quiet Camp — <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, приватність — <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Розробник підтвердив роботу цих двох доменних скриньок та особисту обробку звернень. Публічні MX-записи вказують на інфраструктуру STRATO; договірні умови й налаштування зберігання ще потребують перевірки. Посилання відкривають поштову програму; форми звернень немає.",
-          "Звичайні звернення обробляються на підставі статті 6(1)(f) GDPR — законного інтересу відповідати на листи. Стаття 6(1)(b) застосовується, коли повідомлення необхідне для договору або переддоговірних дій на ваш запит. Виконання прав щодо даних та інших відповідних юридичних обов’язків ґрунтується на статті 6(1)(c). Надсилайте лише необхідну для звернення інформацію."
+          "Якщо ви пишете розробнику, ваша адреса, повідомлення, вкладення й метадані листа обробляються для відповіді. Підтримка гри: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, запити щодо приватності: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Ці доменні скриньки отримують листи через поштову інфраструктуру STRATO. Загальні звернення також можна надсилати на <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, що працює через Google Gmail. Контактної форми та публічних облікових записів на сайті немає.",
+          "Звичайне листування ґрунтується на статті 6(1)(f) GDPR — законному інтересі відповідати на звернення. Стаття 6(1)(b) застосовується до необхідного договірного або запитаного вами переддоговірного спілкування. Стаття 6(1)(c) — до виконання запитів щодо законних прав на дані та інших юридичних обов’язків. Надсилайте лише необхідну для звернення інформацію."
         ]
       },
       {
         "id": "recipients",
-        "title": "Одержувачі та міжнародні передачі",
+        "title": "Одержувачі й міжнародна обробка",
         "paragraphs": [
-          "Одержувачі — розробник, хостинг і поштовий постачальник, потрібний для листування. Обробка хостингом або поштою може залучати постачальників чи субпідрядників за межами ЄЕЗ. Код сайту не реалізує продаж даних відвідувачів або їх передавання для реклами.",
-          "Vercel публікує <a href=\"https://vercel.com/legal/privacy-policy\">політику приватності</a>, <a href=\"https://vercel.com/legal/dpa\">угоду про обробку даних</a> та <a href=\"https://vercel.com/legal/sub-processors\">перелік субпідрядників</a>. Обробку даних поштовою службою Google описано в її <a href=\"https://policies.google.com/privacy\">політиці конфіденційності</a>. Власник має перевірити фактичні сторони договорів, застосовні угоди, місця обробки й гарантії передачі, наприклад відповідні стандартні договірні положення або інший законний механізм. Сам факт публікації умов постачальника не доводить завершення цієї перевірки."
+          "Одержувачі — розробник і постачальники хостингу чи пошти, необхідні для відповідного сервісу. Їхня інформація доступна у <a href=\"https://vercel.com/legal/privacy-notice\">Vercel</a>, <a href=\"https://www.strato.de/datenschutz/\">STRATO</a> та <a href=\"https://policies.google.com/privacy\">Google</a>. Розробник не продає дані. Сайт не створює маркетингових профілів і не приймає виключно автоматизованих рішень із юридичними або подібними істотними наслідками.",
+          "Глобальна мережа Vercel та обробка хостингу чи Google-пошти можуть охоплювати країни поза ЄЕЗ, зокрема США. Роль постачальника й умови передачі описані в застосовних умовах сервісу. Vercel публікує <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> та перелік <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>; де застосовно, захист може ґрунтуватися на рішенні про належний захист для відповідного одержувача або стандартних договірних положеннях. Інформацію про гарантії щодо вашого запиту можна отримати за адресою приватності. Обробка виключно в ЄЕЗ не обіцяється."
         ]
       },
       {
         "id": "retention",
-        "title": "Зберігання та видалення",
+        "title": "Строки зберігання",
         "paragraphs": [
-          "Сайт не створює облікових записів відвідувачів або окремої бази даних про них. Необхідна обробка запитів і можливі журнали залежать від фактичного хостингу; строки зберігання журналів і резервних копій не перевірені. Вигаданий строк не обіцяється.",
-          "Запланований строк для листування — видалення через 12 місяців після закриття звернення, якщо конкретний юридичний обов’язок або необхідність захисту правових вимог не вимагає довшого зберігання. Виконання цього правила в поштових скриньках і резервних копіях ще потрібно підтвердити. Для видалення напишіть на адресу приватності та вкажіть відповідне листування. Самої електронної адреси може бути недостатньо для пошуку запису хостингу; може знадобитися пропорційна перевірка. Не надсилайте документ, що посвідчує особу, без потреби."
+          "Дані з’єднання обробляються для доставки та стільки, скільки потрібно для роботи сервісу, безпеки й розслідування конкретних інцидентів. Окремої бази відвідувачів сайт не має. Журнали й відновлювальні копії на стороні хостингу підпорядковуються відповідним правилам сервісу; єдиний строк видалення для всіх інфраструктурних записів не обіцяється.",
+          "Листування зберігається під час розгляду звернення, а після нього — лише доки це потрібно для законного обов’язку зберігання або заявлення, здійснення чи захисту правових вимог. Критерії — характер звернення, невиконані зобов’язання та застосовні законні строки. Коли ці цілі припиняються, відповідні записи видаляються або їх обробка обмежується. Запитати інформацію чи видалення можна за адресою приватності. Укажіть потрібне листування: самої email-адреси може бути недостатньо для пошуку технічного запису хостингу."
         ]
       },
       {
         "id": "rights",
         "title": "Ваші права",
         "paragraphs": [
-          "За застосовних умов ви можете вимагати доступу, виправлення, видалення, обмеження та перенесення даних, а також заперечувати проти обробки на підставі законного інтересу. Якщо майбутня обробка спиратиметься на згоду, її можна відкликати без впливу на попередню законну обробку; читання документа не є згодою.",
-          "Звертайтеся на <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Зазвичай відповідь надається протягом місяця; законне продовження строку буде пояснено. Ви можете поскаржитися наглядовому органу, зокрема за місцем проживання, роботи або ймовірного порушення. Земельні органи наведено в <a href=\"https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html\">довіднику органів Німеччини</a>."
+          "За умовами GDPR ви можете вимагати доступ, виправлення, видалення, обмеження обробки й перенесення даних. Ви маєте право заперечити проти обробки на підставі законних інтересів із причин, пов’язаних із вашою ситуацією. Згоду можна відкликати на майбутнє без впливу на законність попередньої обробки. Читання документа не є згодою.",
+          "Звертайтеся на <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Зазвичай відповідь надається протягом одного місяця; дозволене законом подовження та його причини буде пояснено. Може знадобитися пропорційна перевірка, але не надсилайте посвідчення особи без конкретної потреби. Ви можете подати скаргу до наглядового органу, зокрема за місцем проживання, роботи чи ймовірного порушення. За місцем розробника таким органом є <a href=\"https://www.datenschutz-mv.de/\">Landesbeauftragter für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern</a>."
         ]
       },
       {
         "id": "security",
-        "title": "Безпека та зміни",
+        "title": "Безпека й оновлення",
         "paragraphs": [
-          "Поточний домен використовує HTTPS. Підготовлений сайт має локальні ресурси, обмежувальні заголовки безпеки вмісту та статичні сторінки, доступні відвідувачам лише для читання. Ці заходи зменшують ризики, але не гарантують абсолютної безпеки. Доступ до облікових записів, хостинг і пошта також потребують постійної уваги власника.",
-          "Суттєві зміни хостингу, листування або відстеження мають відображатися в цьому документі та перекладах. Дата оновлення позначає поточну версію. Обробку всередині гри описує <a href=\"/quiet-camp/privacy/uk\">політика конфіденційності Quiet Camp</a>."
+          "Сайт використовує HTTPS, локальні ресурси та обмежувальні заголовки безпеки вмісту. Ці заходи зменшують ризик, але не гарантують абсолютної безпеки.",
+          "Документ оновлюється при зміні відповідних практик або вимог законодавства. Дата позначає поточну версію. Обробку всередині гри окремо описує <a href=\"/quiet-camp/privacy/uk\">політика конфіденційності Quiet Camp</a>."
         ]
       }
     ]
@@ -161,74 +161,74 @@
     "intro": "Diese Erklärung gilt für Besuche auf oleksiy-havryliuk.de und die Korrespondenz mit dem Entwickler. Für die Datenverarbeitung in Quiet Camp gilt die gesonderte Datenschutzerklärung des Spiels.",
     "toc": "In dieser Erklärung",
     "updated": "Zuletzt aktualisiert",
-    "date": "20. Oktober 2026",
-    "status": "Identität bestätigt · Hosting- und Aufbewahrungsprüfung offen",
-    "noticeTitle": "Noch offene betriebliche Prüfungen",
-    "notice": "Der Entwickler hat amtliche/öffentliche Namensschreibweisen, Postanschrift und funktionierende Datenschutz-/Supportpostfächer bestätigt. Tatsächliche Hosting-/E-Mail-Verträge, Protokollfristen, Übermittlungsgarantien und die praktische Korrespondenzlöschung müssen noch geprüft werden. Vor Abschluss dieser kontospezifischen Prüfungen gilt diese Erklärung nicht als vollständig freigegeben.",
+    "date": "22. Oktober 2026",
+    "status": "",
+    "noticeTitle": "",
+    "notice": "",
     "footerNote": "Kruty1918 Games ist die Marke des Entwicklers und keine eigenständige eingetragene Gesellschaft.",
     "sections": [
       {
         "id": "controller",
         "title": "Verantwortlicher",
         "paragraphs": [
-          "Verantwortlich ist {{legalName}}, öffentlich als {{publicName}} bekannt, unabhängiger Entwickler in Deutschland unter dem Namen Kruty1918 Games. Der vollständige ukrainische Name lautet {{ukrainianName}}. Der Entwickler bestätigt die Pass-/Google-Play-Schreibweise {{legalName}} und die öffentliche/deutsche Schreibweise {{publicName}}. Kruty1918 Games ist eine Marke und keine eigenständige eingetragene Gesellschaft.",
-          "Postanschrift: {{postalAddress}}, Deutschland. Datenschutz: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Siehe <a href=\"/impressum/de\">Impressum</a>."
+          "Verantwortlicher für diese Website ist {{legalName}}, öffentlich bekannt als {{publicName}}, tätig unter Kruty1918 Games. Postanschrift: {{postalAddress}}, Deutschland. Kruty1918 Games ist die Geschäftsbezeichnung eines einzelnen Entwicklers und keine eigenständige Gesellschaft.",
+          "Bei Datenschutzfragen und zur Ausübung Ihrer Rechte schreiben Sie an <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Die Betreiberangaben stehen im <a href=\"/impressum/de\">Impressum</a>."
         ]
       },
       {
         "id": "hosting",
-        "title": "Bereitstellung der Website",
+        "title": "Bereitstellung und Schutz der Website",
         "paragraphs": [
-          "Zum Abruf der Seiten und Bilder übermittelt Ihr Browser Verbindungs- und Anfragedaten an den Hosting-Dienst. Dazu gehören die IP-Adresse, die angeforderte URL, der Zeitpunkt der Anfrage sowie mitgesendete Browser- oder Protokollangaben. Die aktuelle Domain wird über Vercel ausgeliefert. STRATO ist der Domainregistrar; daraus folgt nicht, wer die E-Mail-Postfächer betreibt.",
-          "Zwecke sind die Auslieferung der angeforderten Seiten und der Schutz vor Missbrauch und technischen Störungen. Als Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO vorgesehen: das berechtigte Interesse des Betreibers an einer funktionsfähigen, sicheren öffentlichen Website, beschränkt auf erforderliche Verbindungs- und Sicherheitsverarbeitung. Die tatsächlichen Protokolleinstellungen und Vertragsverhältnisse des Vercel-Kontos müssen noch geprüft werden. Eine feste Speicherdauer für Protokolle ist nicht bestätigt."
+          "Die Website wird bei Vercel Inc. gehostet. Zum Abruf einer Seite oder eines Bildes übermittelt Ihr Browser erforderliche Informationen, darunter IP-Adresse, angeforderte URL, Zeitpunkt sowie Browser- oder Protokollinformationen. Vercel und seine Infrastrukturpartner verarbeiten diese Angaben zur Auslieferung der Inhalte, zum Betrieb und zum Schutz vor Missbrauch und technischen Störungen.",
+          "Rechtsgrundlage für die erforderliche Auslieferung und angemessene Sicherheitsverarbeitung ist Artikel 6 Absatz 1 Buchstabe f DSGVO: das berechtigte Interesse an einer zugänglichen, zuverlässigen und sicheren öffentlichen Website. Eine Browseranfrage ist für den Abruf erforderlich; ein Konto oder die Angabe Ihres Namens ist nicht notwendig."
         ]
       },
       {
         "id": "browser",
-        "title": "Cookies, Analyse und externe Inhalte",
+        "title": "Cookies, Browserspeicher und externe Links",
         "paragraphs": [
-          "Der Websitecode setzt keine Cookies, verwendet weder localStorage noch andere dauerhafte Browserspeicher und enthält keine Besucheranalyse, Werbung, externen Schriftarten oder eingebetteten sozialen Inhalte. Sämtliche Seitenressourcen werden von dieser Domain geladen. Die optionale Bildansicht hält das aktuelle Bild nur im Arbeitsspeicher; Texte, Navigation und ursprüngliche Bildlinks funktionieren ohne JavaScript.",
-          "Ein Einwilligungsschalter für Webtracking ist nicht vorhanden, weil kein optionales Webtracking eingebaut ist. Das steuert keine Einwilligung im Spiel. Wenn Sie einem Link zu GitHub, dem Spielführer, einer anderen Projektwebsite oder Anbieterdokumenten folgen, stellt Ihr Browser eine Verbindung zum jeweiligen externen Dienst her. Dort gelten dessen Datenschutzbestimmungen."
+          "Die Website verwendet keine Besucheranalyse, Werbung, Tracking-Cookies oder localStorage und speichert keine dauerhaften Einstellungen oder Besucherkennungen in Ihrem Browser. Ihr Browser kann geladene Seitenressourcen gemäß seinen eigenen Einstellungen zwischenspeichern. Schriftdateien und Bilder werden von dieser Domain geladen. Es gibt keine eingebetteten Social-Media-Feeds oder automatisch geladenen externen Videos. Der Bildbetrachter hält seine Auswahl ausschließlich im Arbeitsspeicher. Inhalte, Navigation und Dokumentlinks funktionieren ohne JavaScript.",
+          "Ein Tracking-Einwilligungsbanner ist für die aktuelle Website nicht erforderlich, da kein optionales Tracking eingesetzt wird. Website-Einstellungen steuern keine Einwilligungen in Quiet Camp. Ein E-Mail-Link öffnet Ihr E-Mail-Programm. Erst beim Aufruf eines externen Links verbindet sich Ihr Browser mit dem gewählten Dienst; dafür gelten dessen Datenschutzinformationen."
         ]
       },
       {
         "id": "messages",
-        "title": "Nachrichten und Datenschutzanfragen",
+        "title": "Kontakt und Korrespondenz",
         "paragraphs": [
-          "Bei E-Mail-Kontakt werden Adresse, Nachricht, Anhänge und Korrespondenzmetadaten zur Antwort verarbeitet. Allgemeine Nachrichten gehen an <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a> beim Google-Dienst Gmail. Quiet-Camp-Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>; Datenschutz: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Der Entwickler bestätigt funktionierende Domainpostfächer und persönliche Bearbeitung. Öffentliche MX-Einträge weisen auf STRATO-Infrastruktur hin; kontospezifische Verträge und Aufbewahrungseinstellungen sind noch zu prüfen. Die Links öffnen Ihr E-Mail-Programm; ein Kontaktformular gibt es nicht.",
-          "Allgemeine Anfragen werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO bearbeitet: dem berechtigten Interesse, Korrespondenz zu beantworten. Art. 6 Abs. 1 lit. b gilt, soweit eine Nachricht für einen Vertrag oder von Ihnen veranlasste vorvertragliche Maßnahmen erforderlich ist. Die Erfüllung gesetzlicher Datenschutzrechte und einschlägiger rechtlicher Pflichten stützt sich auf Art. 6 Abs. 1 lit. c. Bitte senden Sie nur die für die Anfrage erforderlichen Angaben."
+          "Wenn Sie den Entwickler anschreiben, werden E-Mail-Adresse, Nachricht, Anhänge und E-Mail-Metadaten zur Beantwortung verarbeitet. Spiel-Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, Datenschutzanfragen: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Diese Domain-Postfächer empfangen Nachrichten über die STRATO-Mailinfrastruktur. Allgemeine Anfragen können auch an <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a> über Google Gmail gerichtet werden. Ein Kontaktformular oder öffentliche Nutzerkonten gibt es nicht.",
+          "Gewöhnliche Korrespondenz beruht auf Artikel 6 Absatz 1 Buchstabe f DSGVO, dem berechtigten Interesse an der Beantwortung von Anfragen. Buchstabe b gilt für notwendige Vertragskommunikation oder von Ihnen gewünschte vorvertragliche Maßnahmen. Buchstabe c gilt für gesetzliche Datenschutzanfragen und andere rechtliche Pflichten. Bitte übermitteln Sie nur die für Ihr Anliegen erforderlichen Informationen."
         ]
       },
       {
         "id": "recipients",
-        "title": "Empfänger und Drittlandübermittlungen",
+        "title": "Empfänger und internationale Verarbeitung",
         "paragraphs": [
-          "Empfänger sind der Entwickler, der Hosting-Anbieter und der für die Kommunikation erforderliche E-Mail-Anbieter. Hosting und E-Mail-Verarbeitung können Anbieter oder Unterauftragnehmer außerhalb des EWR einbeziehen. Der Websitecode setzt weder einen Verkauf von Besucherdaten noch eine Weitergabe zu Werbezwecken um.",
-          "Vercel veröffentlicht eine <a href=\"https://vercel.com/legal/privacy-policy\">Datenschutzerklärung</a>, einen <a href=\"https://vercel.com/legal/dpa\">Auftragsverarbeitungszusatz</a> und eine <a href=\"https://vercel.com/legal/sub-processors\">Liste der Unterauftragnehmer</a>. Google erläutert die Verarbeitung seines E-Mail-Dienstes in seiner <a href=\"https://policies.google.com/privacy\">Datenschutzerklärung</a>. Der Betreiber muss die tatsächlichen Vertragspartner, geltenden Vereinbarungen, Verarbeitungsorte und Übermittlungsgarantien prüfen, etwa anwendbare Standardvertragsklauseln oder einen anderen rechtmäßigen Mechanismus. Veröffentlichte Anbieterbedingungen allein belegen nicht, dass diese Prüfung abgeschlossen ist."
+          "Empfänger sind der Entwickler sowie die für den jeweiligen Dienst erforderlichen Hosting- oder E-Mail-Anbieter. Anbieterinformationen finden Sie bei <a href=\"https://vercel.com/legal/privacy-notice\">Vercel</a>, <a href=\"https://www.strato.de/datenschutz/\">STRATO</a> und <a href=\"https://policies.google.com/privacy\">Google</a>. Der Entwickler verkauft keine Daten. Die Website erstellt keine Marketingprofile und trifft keine ausschließlich automatisierten Entscheidungen mit rechtlicher oder vergleichbar erheblicher Wirkung.",
+          "Vercels weltweites Auslieferungsnetz sowie Hosting oder Google-E-Mail können Länder außerhalb des EWR einschließlich der USA einbeziehen. Die geltenden Dienstbedingungen beschreiben die Rolle des Anbieters und die Übermittlungsregelungen. Vercel veröffentlicht das <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> und die Liste der <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>. Soweit anwendbar, können Garantien auf einem Angemessenheitsbeschluss für einen berechtigten Empfänger oder Standardvertragsklauseln beruhen. Informationen zu den für Ihre Anfrage einschlägigen Garantien erhalten Sie über die Datenschutzadresse. Eine ausschließlich im EWR stattfindende Verarbeitung wird nicht zugesagt."
         ]
       },
       {
         "id": "retention",
-        "title": "Speicherdauer und Löschung",
+        "title": "Speicherdauer",
         "paragraphs": [
-          "Die Website führt keine Besucherkonten oder eigene Besucherdatenbank. Die erforderliche Verarbeitung von Anfragen und mögliche Hosting-Protokolle hängen von der tatsächlichen Konfiguration ab. Die Aufbewahrung von Protokollen und Sicherungskopien ist nicht geprüft; eine erfundene Höchstdauer wird nicht zugesagt.",
-          "Für Korrespondenz ist die Löschung zwölf Monate nach Abschluss des Vorgangs vorgesehen, soweit keine konkrete gesetzliche Pflicht oder erforderliche Aufbewahrung zur Rechtsverfolgung entgegensteht. Die Umsetzung in den tatsächlichen Postfächern und Sicherungskopien muss noch bestätigt werden. Für einen Löschungswunsch schreiben Sie an die Datenschutzadresse und benennen die betroffene Korrespondenz. Eine E-Mail-Adresse allein lässt sich möglicherweise keinem Hosting-Eintrag zuordnen; eine verhältnismäßige Prüfung kann erforderlich sein. Senden Sie nicht unaufgefordert einen Ausweis."
+          "Verbindungsdaten werden zur Auslieferung und so lange verarbeitet, wie dies für Betrieb, Sicherheit und die Untersuchung konkreter Vorfälle erforderlich ist. Die Website führt keine gesonderte Besucherdatenbank. Hostseitige Protokolle und Wiederherstellungskopien unterliegen den einschlägigen Aufbewahrungsregelungen des Hostingdienstes; es gibt keine einheitliche zugesagte Löschfrist für sämtliche Infrastrukturdatensätze.",
+          "Korrespondenz wird während der Bearbeitung und anschließend nur aufbewahrt, soweit dies für gesetzliche Aufbewahrungspflichten oder die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist. Maßgeblich sind Art der Anfrage, offene Pflichten und anwendbare gesetzliche Fristen. Entfallen diese Zwecke, werden die betreffenden Daten gelöscht oder ihre Verarbeitung eingeschränkt. Auskunft oder Löschung können Sie über die Datenschutzadresse beantragen. Benennen Sie bitte die betreffende Korrespondenz; allein eine E-Mail-Adresse identifiziert möglicherweise keinen technischen Hostingdatensatz."
         ]
       },
       {
         "id": "rights",
         "title": "Ihre Rechte",
         "paragraphs": [
-          "Unter den jeweiligen gesetzlichen Voraussetzungen haben Sie Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung und Datenübertragbarkeit sowie ein Widerspruchsrecht gegen Verarbeitungen aufgrund berechtigter Interessen. Sollte eine künftige Verarbeitung auf Einwilligung beruhen, können Sie diese für die Zukunft widerrufen, ohne die Rechtmäßigkeit früherer Verarbeitung zu berühren. Das Lesen dieser Erklärung ist keine Einwilligung.",
-          "Kontakt: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Anfragen werden grundsätzlich innerhalb eines Monats beantwortet; eine gesetzlich zulässige Verlängerung wird erläutert. Sie können sich bei einer Aufsichtsbehörde beschweren, insbesondere an Ihrem Wohnort, Arbeitsplatz oder am Ort eines mutmaßlichen Verstoßes. Die <a href=\"https://www.bfdi.bund.de/EN/Service/Anschriften/Laender/Laender-node.html\">Behördenübersicht des BfDI</a> führt die deutschen Landesaufsichtsbehörden auf."
+          "Unter den Voraussetzungen der DSGVO können Sie Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit verlangen. Gegen eine Verarbeitung aufgrund berechtigter Interessen können Sie aus Gründen Ihrer besonderen Situation Widerspruch einlegen. Eine Einwilligung können Sie jederzeit für die Zukunft widerrufen; die Rechtmäßigkeit früherer Verarbeitung bleibt unberührt. Das Lesen dieser Erklärung ist keine Einwilligung.",
+          "Kontakt: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Anfragen werden grundsätzlich innerhalb eines Monats beantwortet; eine zulässige Verlängerung und deren Gründe werden erläutert. Eine angemessene Identitätsprüfung kann erforderlich sein; senden Sie ohne konkreten Bedarf keine Ausweiskopie. Sie können sich bei einer Aufsichtsbehörde beschweren, insbesondere an Ihrem Wohn- oder Arbeitsort oder am Ort des vermuteten Verstoßes. Am Standort des Entwicklers ist dies der <a href=\"https://www.datenschutz-mv.de/\">Landesbeauftragter für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern</a>."
         ]
       },
       {
         "id": "security",
         "title": "Sicherheit und Änderungen",
         "paragraphs": [
-          "Die aktuelle Domain verwendet HTTPS. Die vorbereitete Website nutzt lokale Ressourcen, restriktive Sicherheitsheader für Inhalte und statische Seiten, die Besucher nur lesen können. Diese Maßnahmen begrenzen Risiken, garantieren aber keine absolute Sicherheit. Kontozugänge, Hosting-Einstellungen und Postfachsicherheit erfordern ebenfalls die laufende Aufmerksamkeit des Betreibers.",
-          "Wesentliche Änderungen beim Hosting, bei der Kommunikation oder beim Tracking müssen in dieser Erklärung und ihren Übersetzungen berücksichtigt werden. Das Aktualisierungsdatum bezeichnet den Stand. Zur Verarbeitung im Spiel lesen Sie die <a href=\"/quiet-camp/privacy/de\">Datenschutzerklärung für Quiet Camp</a>."
+          "Die Website nutzt HTTPS, lokale Ressourcen und restriktive Content-Security-Header. Diese Maßnahmen verringern Risiken, garantieren jedoch keine absolute Sicherheit.",
+          "Diese Erklärung wird bei relevanten Änderungen der Datenverarbeitung oder rechtlicher Anforderungen aktualisiert. Das Datum kennzeichnet die geltende Fassung. Für die Verarbeitung im Spiel gilt die gesonderte <a href=\"/quiet-camp/privacy/de\">Datenschutzerklärung von Quiet Camp</a>."
         ]
       }
     ]

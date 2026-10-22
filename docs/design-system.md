@@ -1,53 +1,57 @@
-# Studio and game identities
+# Shared studio design — 22 October 2026
 
-The shared thread is a stable page structure, not a compulsory game palette.
-The same name, navigation order, language links, width, spacing scale, link/focus
-behaviour and footer stay in place as visitors move between projects. Visitors
-can always return to the developer and can distinguish development work from a
-store release. Native HTML navigation is fully usable without JavaScript.
+All 33 pages, including the help hub, both policies and legal notice, use the
+same visual system. A page cannot select a different theme. Historical project
+`theme` fields are ignored by the common renderer.
 
-## Developer / studio
+## Foundation
 
-Warm off-white paper, dark neutral ink and a restrained rust accent. The homepage
-starts with the developer's name and an index of actual projects; a large current
-project image follows. Fine rules separate entries rather than floating cards.
-The portrait belongs on About, with a smaller introduction on the homepage.
-Copy describes actual work in the first person, without skills scores, generic
-creative slogans, recruitment history or relocation plans.
+Forest background `#142a23`, slightly lighter panels `#1b342b`, cream text
+`#f2efdf`, sage secondary text `#b7c7bb`, warm accents `#d9bd86`, and quiet
+`#365044` separators. Georgia supplies editorial headings; the system sans-serif
+supplies readable body copy and controls. All assets are local.
 
-## Quiet Camp / `camp`
+The common header presents the studio identity, Home / Projects / About,
+language links and a contact route. The same footer exposes game navigation,
+email, help, both privacy policies and owner details. A compact native details
+menu replaces desktop navigation on smaller screens.
 
-Forest-green opening, warm cream type, the genuine game icon and a framed
-landscape capture. The rest of the game page reads like a restrained field book:
-project facts, game description, short notes and landscape screenshots. The
-legal document shares the forest frame but keeps a neutral, readable document
-layout. It has no image gallery or game-marketing decoration.
+## Page structure
 
-## Moyva / `atlas`
+Home introduces the developer and current project, then presents the full
+catalogue, developer context and the correct contact addresses. Games and
+portfolio use the same project cards. The portfolio also exposes tools.
+Project pages share a scene-led hero, clear availability status, source links,
+natural-ratio gallery and a route to other games. Fun and Ball retains genuine
+portrait framing. About and help use the same typography and spacing.
 
-Dark blue-grey background, warm cartographic accents, a bold sans-serif title
-and small monospace project labels. A square generated-world map leads the
-page. The contribution and numbered systems notes sit alongside each other;
-the gallery leads with a wide gameplay view and then world/editor captures.
-The two-person context and prototype status remain explicit.
+Policies use readable section widths, numbered headings, a sticky desktop
+contents list, a collapsible mobile contents list, and a direct switch between
+website and game policies. The processing table stacks on narrow screens while
+preserving table semantics. Internal links retain the reader's language.
 
-## Fun and Ball / `play`
+## Interaction and accessibility
 
-Pale sky-blue opening, cream content surface, bold rounded system lettering and
-rounded controls. A portrait game capture balances the title. The later gallery
-uses all three original vertical captures. No invented platform frames, new
-logo, stock illustrations or store availability claims are added.
+Content and normal navigation work without JavaScript. Gallery links open the
+original images; browsers with a supported dialog add a keyboard image viewer
+with previous/next controls, Escape, image count, original-image link and focus
+restoration. Mobile navigation supports Escape and returns focus to its toggle.
+Policy reading position is highlighted without changing the URL or scroll.
 
-## Extending the catalogue
+Controls have visible keyboard focus. Main controls and language switches have
+44-pixel or larger targets. Reduced-motion preferences disable decorative
+transitions and smooth scrolling. The shared skip link goes to the main content.
 
-`site/projects.mjs` selects the composition from the project `theme` value;
-`site/layout.mjs` keeps common chrome and sets the corresponding body theme.
-`public/assets/site.css` holds shared rules plus three scoped game themes.
-A new project without a theme gets a complete neutral page. It does not need
-to resemble Quiet Camp. For a new visual identity, add a composition and a
-scoped theme while preserving the shared navigation and accessible controls.
+## Imagery
 
-All assets are local and genuine. Fonts are platform-provided; exact glyphs can
-vary between operating systems. CSS includes small-screen and reduced-motion
-rules. No animation, external font loading, decorative gradient or third-party
-tracking is needed for these identities.
+Use genuine captures with source commit and dimensions. No generated game
+scenes, UI paintovers or invented release evidence. Haven is the Quiet Camp and
+home hero; the summer bridge and autumn stone gateway are the square gallery.
+They replace the older clearing, aircraft, winter and placement-guide frames.
+Moyva uses the clearer public world and coastline prototype screenshots.
+
+On mobile the hero image keeps its complete original frame above the copy;
+wide screens use an unobtrusive gradient behind the common title area. Gallery
+images retain their native proportions. Responsive WebP variants avoid sending
+the largest image to a small display. The portrait game is contained, never
+stretched into landscape.

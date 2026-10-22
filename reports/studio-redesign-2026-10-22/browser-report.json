@@ -1,0 +1,1618 @@
+{
+  "date": "2026-10-22T17:44:40.744Z",
+  "browser": "154.0.8037.57",
+  "layouts": [
+    {
+      "route": "/",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/uk",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/uk",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/uk",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/uk",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/uk",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/games/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/portfolio/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/about/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/moyva/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/fun-and-ball/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/legal/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/impressum/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/privacy/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/de",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/de",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/de",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/de",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    },
+    {
+      "route": "/quiet-camp/privacy/de",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "clipped": false,
+      "h1": 1
+    }
+  ],
+  "zoomed": [
+    {
+      "route": "/",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/games",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/portfolio",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/about",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/moyva",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/fun-and-ball",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/legal",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/impressum",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/privacy",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/privacy",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/games/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/portfolio/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/about/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/moyva/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/fun-and-ball/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/legal/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/impressum/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/privacy/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/privacy/uk",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/games/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/portfolio/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/about/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/moyva/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/fun-and-ball/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/legal/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/impressum/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/privacy/de",
+      "overflow": false,
+      "clipped": false
+    },
+    {
+      "route": "/quiet-camp/privacy/de",
+      "overflow": false,
+      "clipped": false
+    }
+  ],
+  "axe": [
+    {
+      "route": "home",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "home",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "games",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "games",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "portfolio",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "portfolio",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "about",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "about",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "quiet-camp",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "quiet-camp",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "moyva",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "moyva",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "fun-and-ball",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "fun-and-ball",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "quiet-camp/legal",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "quiet-camp/legal",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "privacy",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "privacy",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "quiet-camp/privacy",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "quiet-camp/privacy",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "impressum",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "impressum",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "interactions": [
+    "Native mobile navigation works with JavaScript disabled",
+    "No-JavaScript gallery links open original full images",
+    "Mobile Escape closes menu and restores toggle focus",
+    "Mobile contact opens the current-language contact section",
+    "All project dialogs: original links, arrow keys, Escape and focus restoration",
+    "Language switching preserves the exact page",
+    "Policy anchors navigate and reading position is highlighted",
+    "Existing redirects retained",
+    "Real 404 response uses the common shell"
+  ],
+  "externalRequests": [],
+  "pageErrors": []
+}

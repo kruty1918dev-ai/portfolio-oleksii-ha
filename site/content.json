@@ -316,10 +316,10 @@
       "slug": "quiet-camp",
       "kind": "game",
       "featured": true,
-      "hero": "quiet-camp-summer.webp",
+      "hero": "qc-selected-haven.webp",
       "gallery": [
-        "quiet-camp-summer.webp",
-        "quiet-camp-autumn.webp"
+        "qc-selected-bridge.webp",
+        "qc-selected-autumn-gate.webp"
       ],
       "portrait": false,
       "links": [
@@ -375,7 +375,12 @@
             "Spatial puzzles & camp building"
           ]
         ],
-        "captureNote": "Development captures from 8 October 2026. The game is still in development."
+        "captureNote": "Scenes from Quiet Camp, captured on 15–19 October 2026.",
+        "heroAlt": "A campsite beside a green-roofed shelter, surrounded by trees",
+        "galleryAlt": [
+          "Four tents beside a wooden bridge crossing a summer river",
+          "Three red tents and a campfire beside a stone gateway in an autumn woodland"
+        ]
       },
       "uk": {
         "name": "Quiet Camp",
@@ -420,7 +425,12 @@
             "Просторові головоломки й облаштування табору"
           ]
         ],
-        "captureNote": "Кадри розробки від 8 жовтня 2026 року. Гра все ще в розробці."
+        "captureNote": "Сцени Quiet Camp, зафіксовані 15–19 жовтня 2026 року.",
+        "heroAlt": "Табір поруч із прихистком під зеленим дахом серед дерев",
+        "galleryAlt": [
+          "Чотири намети біля дерев’яного мосту через літню річку",
+          "Три червоні намети й вогнище біля кам’яної брами в осінньому лісі"
+        ]
       },
       "de": {
         "name": "Quiet Camp",
@@ -465,26 +475,24 @@
             "Räumliche Rätsel und Camp-Gestaltung"
           ]
         ],
-        "captureNote": "Entwicklungsaufnahmen vom 8. Oktober 2026. Das Spiel befindet sich weiterhin in Entwicklung."
+        "captureNote": "Szenen aus Quiet Camp, aufgenommen am 15.–19. Oktober 2026.",
+        "heroAlt": "Ein Zeltlager neben einer Unterkunft mit grünem Dach zwischen Bäumen",
+        "galleryAlt": [
+          "Vier Zelte neben einer Holzbrücke über einen sommerlichen Fluss",
+          "Drei rote Zelte und ein Lagerfeuer an einem Steintor im herbstlichen Wald"
+        ]
       },
       "icon": "/quiet-camp/privacy/brand-icon.png",
-      "theme": "camp",
-      "promotion": {
-        "hero": "quiet-camp-clearing.webp",
-        "gallery": [
-          "quiet-camp-airplane.webp",
-          "quiet-camp-winter.webp"
-        ]
-      }
+      "theme": "camp"
     },
     {
       "slug": "moyva",
       "kind": "prototype",
       "featured": false,
-      "hero": "moyva-gameplay.webp",
+      "hero": "studio-moyva-world.webp",
       "gallery": [
-        "moyva-gameplay.webp",
-        "moyva-world.webp",
+        "studio-moyva-world.webp",
+        "studio-moyva-detail.webp",
         "moyva-editor.webp"
       ],
       "portrait": false,
@@ -533,7 +541,12 @@
             "World generation, grid systems & tools"
           ]
         ],
-        "captureNote": "Original images from the earlier portfolio project. They do not imply a released game."
+        "captureNote": "Original images from the Moyva prototype and its development tools.",
+        "heroAlt": "Procedurally generated islands, layered shores and blue water in Moyva",
+        "galleryAlt": [
+          "A closer view of generated coastlines and height transitions in Moyva",
+          "Moyva — development tools"
+        ]
       },
       "uk": {
         "name": "Moyva",
@@ -574,7 +587,12 @@
             "Генерація світу, сіткові системи й інструменти"
           ]
         ],
-        "captureNote": "Оригінальні зображення з попереднього портфоліо проєкту. Вони не означають, що гру вже випущено."
+        "captureNote": "Оригінальні кадри прототипу Moyva та його інструментів розробки.",
+        "heroAlt": "Процедурні острови, ярусні береги й синя вода у Moyva",
+        "galleryAlt": [
+          "Детальніший вигляд згенерованого узбережжя та перепадів висоти у Moyva",
+          "Moyva — інструменти розробки"
+        ]
       },
       "de": {
         "name": "Moyva",
@@ -615,7 +633,12 @@
             "Weltgenerierung, Grid-Systeme und Werkzeuge"
           ]
         ],
-        "captureNote": "Originalbilder aus dem früheren Portfolioprojekt. Sie belegen keine Veröffentlichung des Spiels."
+        "captureNote": "Originalaufnahmen des Moyva-Prototyps und seiner Entwicklungswerkzeuge.",
+        "heroAlt": "Prozedural erzeugte Inseln, gestufte Küsten und blaues Wasser in Moyva",
+        "galleryAlt": [
+          "Detailansicht erzeugter Küstenlinien und Höhenübergänge in Moyva",
+          "Moyva — Entwicklungswerkzeuge"
+        ]
       },
       "theme": "atlas"
     },
@@ -623,10 +646,10 @@
       "slug": "fun-and-ball",
       "kind": "prototype",
       "featured": false,
-      "hero": "fun-and-ball-01.webp",
+      "hero": "fun-and-ball-02.webp",
       "gallery": [
-        "fun-and-ball-01.webp",
         "fun-and-ball-02.webp",
+        "fun-and-ball-01.webp",
         "fun-and-ball-03.webp"
       ],
       "portrait": true,
@@ -675,7 +698,11 @@
             "Gameplay, physics & level structure"
           ]
         ],
-        "captureNote": "Original images from the earlier portfolio project. They do not imply a released game."
+        "captureNote": "Original gameplay images from Fun and Ball.",
+        "galleryAlt": [
+          "Fun and Ball — development tools",
+          "Fun and Ball — development tools"
+        ]
       },
       "uk": {
         "name": "Fun and Ball",
@@ -716,7 +743,11 @@
             "Механіки, фізика й структура рівнів"
           ]
         ],
-        "captureNote": "Оригінальні зображення з попереднього портфоліо проєкту. Вони не означають, що гру вже випущено."
+        "captureNote": "Оригінальні ігрові кадри Fun and Ball.",
+        "galleryAlt": [
+          "Fun and Ball — інструменти розробки",
+          "Fun and Ball — інструменти розробки"
+        ]
       },
       "de": {
         "name": "Fun and Ball",
@@ -757,7 +788,11 @@
             "Gameplay, Physik und Levelstruktur"
           ]
         ],
-        "captureNote": "Originalbilder aus dem früheren Portfolioprojekt. Sie belegen keine Veröffentlichung des Spiels."
+        "captureNote": "Originale Spielaufnahmen aus Fun and Ball.",
+        "galleryAlt": [
+          "Fun and Ball — Entwicklungswerkzeuge",
+          "Fun and Ball — Entwicklungswerkzeuge"
+        ]
       },
       "theme": "play"
     }
@@ -837,6 +872,161 @@
       ],
       "privacy": "Datenschutz",
       "linksLabel": "Links zum Spiel"
+    }
+  },
+  "studio": {
+    "en": {
+      "projectsNav": "Projects",
+      "tagline": "Independent games & small worlds",
+      "heroTitle": "Small worlds.<br>Stories to discover.",
+      "heroIntro": "I’m Oleksiy Havryliuk, an independent game developer. I build games in Unity, from quiet puzzles to experiments with living worlds.",
+      "heroAction": "Discover Quiet Camp",
+      "projectsTitle": "Games with a world of their own.",
+      "projectsIntro": "My current independent game, earlier projects and the ideas behind them.",
+      "allWork": "All projects",
+      "aboutEyebrow": "The person behind the games",
+      "aboutTitle": "Hello, I’m Oleksiy.",
+      "aboutShort": "From Ukraine, now based in Germany. I make games under the name Kruty1918 Games, with a focus on gameplay, atmosphere and the tools that bring worlds to life.",
+      "aboutAction": "About the developer",
+      "contactTitle": "Let’s keep in touch.",
+      "contactText": "A question about a game, a project or working together? Choose the address that fits your message.",
+      "backTop": "Back to top",
+      "documents": "Help & documents",
+      "gamePrivacy": "Quiet Camp privacy",
+      "sitePrivacy": "Website privacy",
+      "imageOriginal": "Open original image",
+      "projectContext": "About this project",
+      "relatedTitle": "Explore another world.",
+      "relatedLink": "All games",
+      "gamesTitle": "Games & prototypes.",
+      "gamesIntro": "Different ideas, made with the same curiosity. Discover the games and the work behind them.",
+      "portfolioTitle": "Games, tools & experiments.",
+      "portfolioIntro": "From a first prototype to a world of its own. A selection of my work in Unity and application development.",
+      "toolsTitle": "Behind the worlds.",
+      "toolsIntro": "Small tools and experiments that make larger ideas possible. Source and details are on GitHub.",
+      "helpTitle": "How can I help?",
+      "helpIntro": "Support, documents and data requests for Quiet Camp, in one place.",
+      "supportTitle": "A question about the game",
+      "supportText": "Write to the support address. Include the game version and device model if they help describe the issue. Please avoid sending sensitive information.",
+      "dataTitle": "Your privacy & data",
+      "dataText": "Read how data is handled, change optional choices in the game, or contact me about your rights.",
+      "legalTitle": "Documents",
+      "legalIntro": "The full policies and operator information are available below.",
+      "fullPolicy": "Read the policy",
+      "operator": "Operator information",
+      "policyLinkIntro": "This page covers",
+      "gameLabel": "Quiet Camp",
+      "websiteLabel": "this website",
+      "notFound": "This path ends here.",
+      "notFoundIntro": "The page may have moved. Explore the projects or return to the beginning.",
+      "contactNav": "Contact",
+      "footerText": "Independent games by Oleksiy Havryliuk. Made with curiosity, care and Unity.",
+      "archiveNote": "Development images.",
+      "projectCode": "Project",
+      "current": "In development",
+      "projectSource": "Project links"
+    },
+    "uk": {
+      "projectsNav": "Проєкти",
+      "tagline": "Незалежні ігри та маленькі світи",
+      "heroTitle": "Маленькі світи.<br>Власні історії.",
+      "heroIntro": "Я Олексій Гаврилюк, незалежний розробник ігор. Створюю ігри в Unity — від спокійних головоломок до експериментів із живими світами.",
+      "heroAction": "Відкрити Quiet Camp",
+      "projectsTitle": "Ігри з власним світом.",
+      "projectsIntro": "Моя поточна незалежна гра, попередні проєкти та ідеї, з яких вони починалися.",
+      "allWork": "Усі проєкти",
+      "aboutEyebrow": "Хто створює ці ігри",
+      "aboutTitle": "Привіт, я Олексій.",
+      "aboutShort": "Я з України, зараз живу в Німеччині. Створюю ігри під назвою Kruty1918 Games: працюю над механіками, атмосферою та інструментами, які допомагають оживляти світи.",
+      "aboutAction": "Про розробника",
+      "contactTitle": "Будьмо на зв’язку.",
+      "contactText": "Є запитання про гру, проєкт або співпрацю? Оберіть адресу відповідно до теми звернення.",
+      "backTop": "На початок",
+      "documents": "Допомога й документи",
+      "gamePrivacy": "Приватність Quiet Camp",
+      "sitePrivacy": "Приватність на сайті",
+      "imageOriginal": "Відкрити оригінал зображення",
+      "projectContext": "Про цей проєкт",
+      "relatedTitle": "Ще один світ поруч.",
+      "relatedLink": "Усі ігри",
+      "gamesTitle": "Ігри та прототипи.",
+      "gamesIntro": "Різні ідеї та спільна цікавість до розробки. Перегляньте ігри й дізнайтеся, як вони створювалися.",
+      "portfolioTitle": "Ігри, інструменти й експерименти.",
+      "portfolioIntro": "Від першого прототипу до власного світу. Вибрані роботи з Unity та розробки застосунків.",
+      "toolsTitle": "За лаштунками світів.",
+      "toolsIntro": "Невеликі інструменти й експерименти, завдяки яким більші ідеї стають можливими. Код і подробиці доступні на GitHub.",
+      "helpTitle": "Чим можу допомогти?",
+      "helpIntro": "Підтримка, документи та звернення щодо даних Quiet Camp в одному місці.",
+      "supportTitle": "Запитання щодо гри",
+      "supportText": "Напишіть у підтримку. Якщо це допоможе описати проблему, вкажіть версію гри й модель пристрою. Не надсилайте чутливі дані без потреби.",
+      "dataTitle": "Ваші дані й приватність",
+      "dataText": "Дізнайтеся про обробку даних, змініть необов’язкові дозволи в грі або зверніться щодо своїх прав.",
+      "legalTitle": "Документи",
+      "legalIntro": "Повні політики й інформація про розробника доступні нижче.",
+      "fullPolicy": "Читати політику",
+      "operator": "Юридичні реквізити",
+      "policyLinkIntro": "Ця сторінка стосується",
+      "gameLabel": "Quiet Camp",
+      "websiteLabel": "цього сайту",
+      "notFound": "Ця стежка закінчилася.",
+      "notFoundIntro": "Можливо, сторінка переїхала. Перегляньте проєкти або поверніться на головну.",
+      "contactNav": "Зв’язок",
+      "footerText": "Незалежні ігри Олексія Гаврилюка. Створені з цікавістю, турботою та Unity.",
+      "archiveNote": "Кадри розробки.",
+      "projectCode": "Проєкт",
+      "current": "У розробці",
+      "projectSource": "Посилання проєкту"
+    },
+    "de": {
+      "projectsNav": "Projekte",
+      "tagline": "Unabhängige Spiele & kleine Welten",
+      "heroTitle": "Kleine Welten.<br>Eigene Geschichten.",
+      "heroIntro": "Ich bin Oleksiy Havryliuk, unabhängiger Spieleentwickler. Ich entwickle Spiele mit Unity: von ruhigen Rätseln bis zu Experimenten mit lebendigen Welten.",
+      "heroAction": "Quiet Camp entdecken",
+      "projectsTitle": "Spiele mit einer eigenen Welt.",
+      "projectsIntro": "Mein aktuelles unabhängiges Spiel, frühere Projekte und die Ideen dahinter.",
+      "allWork": "Alle Projekte",
+      "aboutEyebrow": "Der Mensch hinter den Spielen",
+      "aboutTitle": "Hallo, ich bin Oleksiy.",
+      "aboutShort": "Ich komme aus der Ukraine und lebe heute in Deutschland. Unter dem Namen Kruty1918 Games arbeite ich an Spielmechaniken, Atmosphäre und Werkzeugen, die Welten zum Leben erwecken.",
+      "aboutAction": "Über den Entwickler",
+      "contactTitle": "Bleiben wir in Kontakt.",
+      "contactText": "Eine Frage zu einem Spiel, einem Projekt oder einer Zusammenarbeit? Wählen Sie die passende Adresse.",
+      "backTop": "Nach oben",
+      "documents": "Hilfe & Dokumente",
+      "gamePrivacy": "Quiet-Camp-Datenschutz",
+      "sitePrivacy": "Website-Datenschutz",
+      "imageOriginal": "Originalbild öffnen",
+      "projectContext": "Über dieses Projekt",
+      "relatedTitle": "Noch eine Welt entdecken.",
+      "relatedLink": "Alle Spiele",
+      "gamesTitle": "Spiele & Prototypen.",
+      "gamesIntro": "Unterschiedliche Ideen, dieselbe Neugier. Entdecken Sie die Spiele und die Arbeit dahinter.",
+      "portfolioTitle": "Spiele, Werkzeuge & Experimente.",
+      "portfolioIntro": "Vom ersten Prototyp bis zur eigenen Welt. Ausgewählte Arbeiten mit Unity und aus der Anwendungsentwicklung.",
+      "toolsTitle": "Hinter den Welten.",
+      "toolsIntro": "Kleine Werkzeuge und Experimente, die größere Ideen möglich machen. Quellcode und Details finden Sie auf GitHub.",
+      "helpTitle": "Wie kann ich helfen?",
+      "helpIntro": "Support, Dokumente und Datenanfragen zu Quiet Camp an einem Ort.",
+      "supportTitle": "Eine Frage zum Spiel",
+      "supportText": "Schreiben Sie an den Support. Nennen Sie bei Bedarf die Spielversion und das Gerätemodell. Senden Sie keine unnötigen sensiblen Daten.",
+      "dataTitle": "Ihre Daten & Privatsphäre",
+      "dataText": "Lesen Sie die Informationen zur Datenverarbeitung, ändern Sie optionale Entscheidungen im Spiel oder wenden Sie sich wegen Ihrer Rechte an mich.",
+      "legalTitle": "Dokumente",
+      "legalIntro": "Hier finden Sie die vollständigen Datenschutzhinweise und Betreiberinformationen.",
+      "fullPolicy": "Datenschutzhinweise lesen",
+      "operator": "Impressum",
+      "policyLinkIntro": "Diese Seite betrifft",
+      "gameLabel": "Quiet Camp",
+      "websiteLabel": "diese Website",
+      "notFound": "Dieser Weg endet hier.",
+      "notFoundIntro": "Die Seite ist vielleicht umgezogen. Entdecken Sie die Projekte oder kehren Sie zum Anfang zurück.",
+      "contactNav": "Kontakt",
+      "footerText": "Unabhängige Spiele von Oleksiy Havryliuk. Mit Neugier, Sorgfalt und Unity entwickelt.",
+      "archiveNote": "Entwicklungsaufnahmen.",
+      "projectCode": "Projekt",
+      "current": "In Entwicklung",
+      "projectSource": "Projektlinks"
     }
   }
 }

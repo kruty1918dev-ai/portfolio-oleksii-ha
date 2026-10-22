@@ -1,0 +1,373 @@
+{
+  "selectedAt": "2026-10-22",
+  "scope": "Real imagery for one consistent developer website",
+  "selectionNotes": [
+    "Replaces the very old 8 October album frames and 11 October aircraft/winter staging images as primary promotional media.",
+    "The V02 Haven full frame is the best available landscape hero without placement guides or HUD. The V03 close tent frame is archived for provenance but excluded from primary usage because prominent placement outlines dominate its composition.",
+    "These are archived real captures, not new renders or evidence of final redesigned native UI. No Unity/player run was performed.",
+    "Existing Fun & Ball images are genuine portrait gameplay; image 02 is the clearest hero because ball, fan and goal are readable together. Keep its portrait aspect, do not stretch or crop it into a landscape.",
+    "Moyva showcase frames are technical prototype images, not screenshots of a finished strategy game.",
+    "A bounded review of 14 recent native house/landmark scenes selected L065 autumn stone gateway as a second gallery image; complete 1024×1024 native frame, receipt hash verified."
+  ],
+  "assets": [
+    {
+      "capturedDate": "2026-10-19",
+      "dateEvidence": "Design/Marketing/Teaser/V02/QA_REPORT.md",
+      "kind": "native Unity teaser still; actual completed camp and environment; native marketing camera; HUD hidden",
+      "level": "gen:qc_camp:122 — Haven",
+      "sourceStatus": "V02 actual recorded teaser, 19 October 2026",
+      "recommended": "Quiet Camp and homepage feature hero. Display the complete 16:9 frame; put title/copy outside image so the camp remains readable.",
+      "alt": {
+        "en": "A campsite beside a green-roofed shelter, surrounded by trees",
+        "uk": "Табір поруч із прихистком під зеленим дахом серед дерев",
+        "de": "Ein Zeltlager neben einer Unterkunft mit grünem Dach zwischen Bäumen"
+      },
+      "file": "public/media/qc-selected-haven.webp",
+      "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Marketing/Teaser/V02/preview.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Marketing/Teaser/V02/preview.jpg",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+      "sourcePath": "Design/Marketing/Teaser/V02/preview.jpg",
+      "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/preview.jpg",
+      "originalSha256": "faa01a3a4b2eaf49e75f254328658abf81ceaf7575a8e733ebef86b1e0aa33d4",
+      "width": 1280,
+      "height": 720,
+      "bytes": 111608,
+      "variants": [
+        {
+          "file": "qc-selected-haven-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 24224,
+          "sha256": "d960f10cdb043e05bfad9a4f057d262868709cc112195a4861fa7cfef87a2ce2"
+        },
+        {
+          "file": "qc-selected-haven-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 48398,
+          "sha256": "c007f83ff5241bc5927d2bd8f78425d69ad3df0355aac42c0b2ab51a916faf69"
+        },
+        {
+          "file": "qc-selected-haven-1200.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 78614,
+          "sha256": "0b710ec3ea853e6991a25e1a3acec4a2fb9c960e9937310583eeb723682c3f48"
+        },
+        {
+          "file": "qc-selected-haven.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 111608,
+          "sha256": "aa6b38f7ff6036c33719e99844a9c441e78772c5d42bfce01db83c1f700cfc29"
+        }
+      ],
+      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
+    },
+    {
+      "capturedDate": "2026-10-15",
+      "capturedUtc": "2026-10-15T06:36:45.7778133Z",
+      "dateEvidence": "Design/LevelAuthoring/StoryCampaign/Review/U07/L036.json",
+      "kind": "native-unity-production-world-components; world-camera scene capture, no HUD",
+      "level": "Campaign order 36; receipt authoring id QC_EDITOR_5ea6395b",
+      "sourceStatus": "Campaign scene archive, no new UI shown",
+      "recommended": "Secondary square gallery image, fully visible with object-fit contain or natural aspect ratio. Do not use as a full viewport background because that recreates the crop problem.",
+      "alt": {
+        "en": "Four tents beside a wooden bridge crossing a summer river",
+        "uk": "Чотири намети біля дерев’яного мосту через літню річку",
+        "de": "Vier Zelte neben einer Holzbrücke über einen sommerlichen Fluss"
+      },
+      "file": "public/media/qc-selected-bridge.webp",
+      "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
+      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+      "sourcePath": "Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
+      "originalPath": "/workspace/studio-media-originals/Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
+      "originalSha256": "971df4794ffbe8b6dca20bad5b0a9c1fbf334e09fa1b8c3c3d53385f84ccb6c9",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 236484,
+      "variants": [
+        {
+          "file": "qc-selected-bridge-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 68764,
+          "sha256": "1d5ff5f193c3d790ad904e5fdfd4009029124396acb7a24a091f21e354673f20"
+        },
+        {
+          "file": "qc-selected-bridge-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 141398,
+          "sha256": "67b5d3d08fe158d233939653038d929d42a830e1cf76e35bfbe344a237f21417"
+        },
+        {
+          "file": "qc-selected-bridge.webp",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 236484,
+          "sha256": "80202a6cef8e8630a122a735416979a67ee9db9b98836f74d3be91f7524b77a7"
+        }
+      ],
+      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
+    },
+    {
+      "capturedDate": null,
+      "sourceSnapshotDate": "2026-07-02",
+      "dateEvidence": "Repository commit 305faf99e0610897a9eb0d342e186a423db3d7ef; image capture date not documented",
+      "kind": "publicly curated Unity procedural-world prototype screenshot",
+      "level": null,
+      "sourceStatus": "Technical prototype, not finished strategy gameplay",
+      "recommended": "Moyva hero and portfolio card. Clear land/water shapes are more representative of the current world generation than the old debug placement screen.",
+      "alt": {
+        "en": "Procedurally generated islands, layered shores and blue water in Moyva",
+        "uk": "Процедурні острови, ярусні береги й синя вода у Moyva",
+        "de": "Prozedural erzeugte Inseln, gestufte Küsten und blaues Wasser in Moyva"
+      },
+      "file": "public/media/studio-moyva-world.webp",
+      "source": "moyva-showcase@305faf99e0610897a9eb0d342e186a423db3d7ef/screenshots/moyva-world-preview.png",
+      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/moyva-showcase/305faf99e0610897a9eb0d342e186a423db3d7ef/screenshots/moyva-world-preview.png",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/moyva-showcase",
+      "sourceCommit": "305faf99e0610897a9eb0d342e186a423db3d7ef",
+      "sourcePath": "screenshots/moyva-world-preview.png",
+      "originalPath": "/workspace/studio-media-originals/moyva-showcase/screenshots/moyva-world-preview.png",
+      "originalSha256": "5f95a5f5193464bbad016b838a0bf1f61bf7739dcf8ba950dd2ce7d374d6477b",
+      "width": 1746,
+      "height": 854,
+      "bytes": 136572,
+      "variants": [
+        {
+          "file": "studio-moyva-world-480.webp",
+          "width": 480,
+          "height": 235,
+          "bytes": 17450,
+          "sha256": "2d0ab4974bd59dee64190cba8302e69f6fe25e7651dcad6e9fb503905321bba0"
+        },
+        {
+          "file": "studio-moyva-world-800.webp",
+          "width": 800,
+          "height": 391,
+          "bytes": 35248,
+          "sha256": "5a32ce60945492edd5e410474545c2f0bf6919235225ce1ef11b9197c69bda30"
+        },
+        {
+          "file": "studio-moyva-world-1200.webp",
+          "width": 1200,
+          "height": 587,
+          "bytes": 63020,
+          "sha256": "ddc108072b8b855b22afaf15d52175d667e0e2c888489ac5660bd4d574ce2bec"
+        },
+        {
+          "file": "studio-moyva-world.webp",
+          "width": 1746,
+          "height": 854,
+          "bytes": 136572,
+          "sha256": "baa48567db132f0098a6d1a08e7356bd41e8cf658c021cc966069f6fa6d67489"
+        }
+      ],
+      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
+    },
+    {
+      "capturedDate": null,
+      "sourceSnapshotDate": "2026-07-02",
+      "dateEvidence": "Repository commit 305faf99e0610897a9eb0d342e186a423db3d7ef; image capture date not documented",
+      "kind": "publicly curated Unity procedural-map prototype screenshot",
+      "level": null,
+      "sourceStatus": "Technical prototype, not finished strategy gameplay",
+      "recommended": "Moyva secondary gallery image for coastline detail. Existing real generator-graph screenshot can be kept lower on that project page if technical implementation is explained.",
+      "alt": {
+        "en": "A closer view of generated coastlines and height transitions in Moyva",
+        "uk": "Детальніший вигляд згенерованого узбережжя та перепадів висоти у Moyva",
+        "de": "Detailansicht erzeugter Küstenlinien und Höhenübergänge in Moyva"
+      },
+      "file": "public/media/studio-moyva-detail.webp",
+      "source": "moyva-showcase@305faf99e0610897a9eb0d342e186a423db3d7ef/screenshots/moyva-map-generation-detail.png",
+      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/moyva-showcase/305faf99e0610897a9eb0d342e186a423db3d7ef/screenshots/moyva-map-generation-detail.png",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/moyva-showcase",
+      "sourceCommit": "305faf99e0610897a9eb0d342e186a423db3d7ef",
+      "sourcePath": "screenshots/moyva-map-generation-detail.png",
+      "originalPath": "/workspace/studio-media-originals/moyva-showcase/screenshots/moyva-map-generation-detail.png",
+      "originalSha256": "3c3bf1aceae05e7c9cf92df56da61ba3f73ff72a7717c9e152923de50facb980",
+      "width": 1746,
+      "height": 854,
+      "bytes": 106950,
+      "variants": [
+        {
+          "file": "studio-moyva-detail-480.webp",
+          "width": 480,
+          "height": 235,
+          "bytes": 13508,
+          "sha256": "5e353c2fca5bbee7d8fb67c3c4acc519938c050cbed247f7b6b6d04b510666cd"
+        },
+        {
+          "file": "studio-moyva-detail-800.webp",
+          "width": 800,
+          "height": 391,
+          "bytes": 28166,
+          "sha256": "b60323cdafbf5c72a2914ce39e74b34dd1bc622ee189c432dfb14be65ec1dcd5"
+        },
+        {
+          "file": "studio-moyva-detail-1200.webp",
+          "width": 1200,
+          "height": 587,
+          "bytes": 49810,
+          "sha256": "5d97207ff2529fc3459173c3ec80152dffd9520a623c5cf8a8f8cb7b4efedea8"
+        },
+        {
+          "file": "studio-moyva-detail.webp",
+          "width": 1746,
+          "height": 854,
+          "bytes": 106950,
+          "sha256": "9e7823cc02b68e953a5710d758662eba3a442130182b5e6ccbe72bdb688ace10"
+        }
+      ],
+      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
+    },
+    {
+      "capturedDate": "2026-10-15",
+      "capturedUtc": "2026-10-15T06:37:44.2344468Z",
+      "dateEvidence": "Design/LevelAuthoring/StoryCampaign/Review/U07/L065.json",
+      "kind": "native-unity-production-world-components; world-camera scene capture, no HUD",
+      "level": "Campaign order 65, gen:qc_camp:84; Відкрита хвіртка сусідам / Кам’яна брама сусідського двору; receipt authoring id QC_EDITOR_4d61ff46",
+      "sourceStatus": "Campaign scene archive; native autumn_sunset effects and settled 3-resident composition, no new UI shown",
+      "recommended": "Second square gallery image beside bridge; preserve the complete native 1:1 frame. Campfire and stone gate distinguish this autumn scene from the summer river and Haven hero.",
+      "alt": {
+        "en": "Three red tents and a campfire beside a stone gateway in an autumn woodland",
+        "uk": "Три червоні намети й вогнище біля кам’яної брами в осінньому лісі",
+        "de": "Drei rote Zelte und ein Lagerfeuer an einem Steintor im herbstlichen Wald"
+      },
+      "file": "public/media/qc-selected-autumn-gate.webp",
+      "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
+      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+      "sourcePath": "Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
+      "originalPath": "/workspace/studio-media-originals/quiet-camp/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
+      "originalSha256": "f928f2d9a2c1ac9e860920569f16d72478f28c37a3bd6262515bfc141bba0266",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 129210,
+      "variants": [
+        {
+          "file": "qc-selected-autumn-gate-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 35296,
+          "sha256": "a984b7e552d248f482987c8cc0636b2a0ed6d02948336bb91379814669296706"
+        },
+        {
+          "file": "qc-selected-autumn-gate-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 72332,
+          "sha256": "9c16f52af86429c2563c6c8f260d11e2ce2b83d4053d1766933c5ea4cd350af6"
+        },
+        {
+          "file": "qc-selected-autumn-gate.webp",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 129210,
+          "sha256": "6a8ab7f1a025c691527a51a8f955f927dfff8cfafda0dc1963e71c872198357f"
+        }
+      ],
+      "receiptVerification": {
+        "imageSha256Matches": true,
+        "receiptPath": "/workspace/studio-media-originals/quiet-camp/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.json",
+        "receiptSha256": "0e5f1e0a7d6a54f347dbdc3b8accd1868d021885dd0dd6389bbc2ae032d8e89a",
+        "effectsPreset": "autumn_sunset"
+      },
+      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
+    }
+  ],
+  "placementRecommendations": {
+    "homeQuietCamp": "qc-selected-haven.webp",
+    "quietCampHero": "qc-selected-haven.webp",
+    "quietCampGallery": [
+      "qc-selected-bridge.webp",
+      "qc-selected-autumn-gate.webp"
+    ],
+    "moyvaHero": "studio-moyva-world.webp",
+    "moyvaGallery": [
+      "studio-moyva-detail.webp",
+      "moyva-editor.webp"
+    ],
+    "funAndBallHero": "fun-and-ball-02.webp",
+    "funAndBallGallery": [
+      "fun-and-ball-01.webp",
+      "fun-and-ball-03.webp"
+    ],
+    "removedFromPrimaryUsage": [
+      "quiet-camp-clearing.webp",
+      "quiet-camp-airplane.webp",
+      "quiet-camp-winter.webp",
+      "quiet-camp-summer.webp",
+      "moyva-gameplay.webp",
+      "moyva-world.webp",
+      "qc-selected-tents.webp"
+    ]
+  },
+  "furtherSelectionReview": {
+    "date": "2026-10-22",
+    "reviewed": "V02 final review sheets, V03 review sheets, initial teaser preview, native campaign scene captures",
+    "videoToolAvailable": "/usr/bin/ffmpeg",
+    "publicVideoAvailability": "No video files in the tracked Git tree or GitHub releases. V02 QA_REPORT.md explicitly documents MP4 and full source PNGs as local files outside Git; V03 README gives local-only delivery paths.",
+    "contactSheetFinding": "V02 includes wider river and bridge camera moments without guides, but complete frame tiles are only 480×270. V03 guide-free moments are similarly small and retain close tent composition. Neither is a suitable high-resolution website hero.",
+    "decision": "Use the archived V02 1280×720 Haven preview as complete-frame hero; do not upscale a montage tile, invent a render, remove guides, or crop native scene content.",
+    "evidence": [
+      {
+        "sourcePath": "Design/Marketing/Teaser/V02/final-review-01.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-01.jpg",
+        "sha256": "b67c47c8652681d7f75911da6c17dcfd84a125b6ec18885789679df9af743900"
+      },
+      {
+        "sourcePath": "Design/Marketing/Teaser/V02/final-review-02.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-02.jpg",
+        "sha256": "87e3fc1f480f49bbca415526a52964ee2cb1d6b379f430f338004c356ae7e0b2"
+      },
+      {
+        "sourcePath": "Design/Marketing/Teaser/V02/final-review-03.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-03.jpg",
+        "sha256": "3ffa2e706b58d5c9f33914a7e5cf009197a05fa5e4be842b323237f54bf8e333"
+      },
+      {
+        "sourcePath": "Design/Marketing/Teaser/V02/final-review-04.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-04.jpg",
+        "sha256": "6e0ebb2c4b4da5a4e2212d0bef73af812e546dd3fa9c372176aac0f6efb9ca34"
+      },
+      {
+        "sourcePath": "Design/Marketing/Teaser/V03/Review/contact-01.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V03/Review/contact-01.jpg",
+        "sha256": "25bf289cdb9399086cd5da023125bc1ae1847b7b56e61724bbdf30c11d4d72b7"
+      },
+      {
+        "sourcePath": "Design/Marketing/Teaser/V03/Review/contact-02.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V03/Review/contact-02.jpg",
+        "sha256": "5f9411c86ec541a9d465f5b23edcd90c4ffbc03b0cdf4d7eea6c47fd9a6ded44"
+      },
+      {
+        "sourcePath": "Design/Marketing/Teaser/V03/Review/contact-03.jpg",
+        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V03/Review/contact-03.jpg",
+        "sha256": "0ec9d8dcece03cfa038533d4d1e30ed90d5e603f4c9b42fa0c12ba43f3822350"
+      }
+    ]
+  },
+  "reviewedExcluded": [
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Marketing/Teaser/V03/preview.jpg",
+      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
+      "sourcePath": "Design/Marketing/Teaser/V03/preview.jpg",
+      "originalSha256": "1905ca6d94a06e3a48682fb776acdf3310ee3769a5ac2faebf1c114d6c4c4c8c",
+      "recommended": "Archive only; avoid primary or gallery promotion because placement guides are prominent."
+    }
+  ]
+}
