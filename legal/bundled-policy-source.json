@@ -1,10 +1,10 @@
 {
-  "revision": "2026-10-23.public-policy-6-linked-accounts",
+  "revision": "2026-10-23.public-policy-7-google-facebook",
   "gameResource": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json",
   "bodySha256": {
-    "uk": "096a1492fae349cd8244534ef7fed29ce97e27745502a7c434ce51e9fde25e98",
-    "en": "2ea2b3cae7181fc5209e2195a56001f7f44182bc0f79d196c9e5b1b67e4b95e0",
-    "de": "9bbb78d502c1a2cf12ed2201d8f0684346523416a5e3c475ba8b08464cc5c794"
+    "uk": "81e2a15cf7da5b5cf0237aedc42c987e90ed620d9755bd131fe512260ac991a2",
+    "en": "2caddfe2c7767a07a16bc6056f4d0178f79a7177f02e05e09236e9ddae9024d4",
+    "de": "e1ea81c59bf2bcbf3fe8f105f0dceb4c7f40b958683bc864b58a4258bb28e1d7"
   },
   "status": "candidate; native Android, account and operational evidence pending"
 }

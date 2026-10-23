@@ -68,7 +68,7 @@ or unverified project credits. Hosting is static; contact links use email.
 ## Policies and Android release evidence
 
 Both public policies are complete visitor-facing documents dated 23 October
-2026. The Quiet Camp policy candidate revision is `2026-10-23.public-policy-6-linked-accounts`. They explain
+2026. The Quiet Camp policy candidate revision is `2026-10-23.public-policy-7-google-facebook`. They explain
 the implemented processing and the conditions for optional game services. They
 do not display internal review or unfinished-document notices.
 
@@ -76,7 +76,7 @@ Website publication and Android service activation are separate operations.
 The existing runtime/evidence flags remain unchanged. `npm run release:check`
 and `npm run build:release` still require actual Android, account and SDK evidence;
 normal `npm run build` produces the public website without enabling game services.
-This revision describes local-only anonymous play, Google/Facebook/X account sign-in
+This revision describes local-only anonymous play, Google/Facebook account sign-in
 with automatic progress/resource sync, late linking that refuses an occupied game
 profile, local milestone reminders and cloud account deletion. Provider configuration,
 backend activation and Android verification remain separate required steps.
