@@ -54,7 +54,7 @@
     "sections": [
       {
         "id": "controller",
-        "title": "Who is responsible",
+        "title": "The data controller",
         "paragraphs": [
           "The controller for Quiet Camp is {{legalName}}, publicly known as {{publicName}}, trading as Kruty1918 Games. Postal address: {{postalAddress}}, Germany. Kruty1918 Games is the trading name of an individual developer, not a separate company.",
           "Privacy: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>. Operator details are in the <a href=\"/impressum\">legal notice</a>."
@@ -414,7 +414,7 @@
     "sections": [
       {
         "id": "controller",
-        "title": "Хто відповідає за дані",
+        "title": "Контролер персональних даних",
         "paragraphs": [
           "Володілець персональних даних Quiet Camp — {{legalName}}, публічно відомий як {{publicName}}, який працює під назвою Kruty1918 Games. Поштова адреса: {{postalAddress}}, Німеччина. Kruty1918 Games — комерційна назва фізичної особи-розробника, а не окрема компанія.",
           "Приватність: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Підтримка: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>. Реквізити наведено в <a href=\"/impressum/uk\">юридичній інформації</a>."
