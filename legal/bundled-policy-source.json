@@ -1,10 +1,10 @@
 {
-  "revision": "2026-10-23.public-policy-2",
+  "revision": "2026-10-23.public-policy-3",
   "gameResource": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json",
   "bodySha256": {
-    "uk": "95db899f11c156a2a55009f6f20ff0ce9ac2b516790418387156bcfa8550c876",
-    "en": "54190b68370e7e82bbffbe4b792492e1e8d4372bbf6a97ef2fc9c5cd3941aa1b",
-    "de": "63892dc1aaeff8839d205a903ee371a4052cbed8da49f80fa6c7f3ec6214562d"
+    "uk": "73c095b2656a82fea6aed634800b1117acb304b33eb06f67fbf2bdac6be8ba65",
+    "en": "01532c10bbe649c0db3ae3afef06c76ab56d52511965cee2b2bc5f7460c519ba",
+    "de": "1cb39a46551fa17df0e1e9851fb17cac2f85c9e07b9e0d46574036cb4be5d334"
   },
   "status": "candidate; native Android, account and operational evidence pending"
 }
