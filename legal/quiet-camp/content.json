@@ -8,7 +8,7 @@
     "languages": "Policy language",
     "toc": "On this page",
     "updated": "Last updated",
-    "date": "22 October 2026",
+    "date": "23 October 2026",
     "contact": "Privacy contact",
     "status": "",
     "noticeTitle": "",
@@ -49,6 +49,16 @@
         "Email address, message, attachments and correspondence metadata",
         "Developer and email infrastructure",
         "Only when you contact the developer"
+      ],
+      [
+        "Purchase token, product/package identifiers and verification status",
+        "Google Play and the verification service, if made available",
+        "Currently inactive; pending purchases grant no access"
+      ],
+      [
+        "Grouped technical counts; network IP address on transmission",
+        "Operational-metrics endpoint, if separately approved",
+        "Currently inactive; not enabled by Analytics consent"
       ]
     ],
     "sections": [
@@ -65,7 +75,7 @@
         "title": "The game and your choices",
         "paragraphs": [
           "This policy covers the Android game Quiet Camp (com.quietcamp.game), its local storage, optional Google services and correspondence with the developer. The game works locally without a player account or cloud save. The current development configuration does not activate production gameplay analytics, crash-report uploads, advertising or purchases. The optional-service sections below explain processing in versions that offer those services. Development testing can offer Google sample ads after an explicit request; those ads still involve Google processing.",
-          "Age category and optional-service choices are separate. The game asks only for an age group, not a birth date or identity document. Gameplay Analytics and crash-report uploads require separate choices and are offered only from age 16 where available. Reading this policy, continuing to the game, closing a screen or giving no answer does not grant optional consent.",
+          "Age category and optional-service choices are separate. The game asks only for an age group, not a birth date or identity document. Optional gameplay Analytics and crash uploads need independent choices and an approved age-specific configuration; both remain unavailable below 16 in the current configuration. Reading this policy, continuing to the game, closing a screen or giving no answer does not grant optional consent.",
           "Declining optional processing does not prevent basic local play. You can change the relevant choices in Settings → Data & advertising. Advertising choices are independent of Analytics and crash reports. Each video bonus must be requested voluntarily; a game button does not replace a required Google privacy form."
         ]
       },
@@ -83,7 +93,8 @@
         "paragraphs": [
           "Quiet Camp stores your tent arrangements, progress, album, tutorial state, language, accessibility/audio/display settings and local resource balances. It also stores an age category, privacy choices, the policy version and a local receipt needed to apply those choices. Save recovery copies, document caches and SDK settings or unsent technical reports can remain on the device. The game does not upload your save or album to a developer-operated server.",
           "Storage necessary to provide requested game functions relies on Article 6(1)(b) GDPR where a contractual basis applies; proportionate technical operation can rely on Article 6(1)(f). Strictly necessary storage or access on the device falls under §25(2) TDDDG where applicable. This does not authorize optional tracking. Records needed to apply and demonstrate privacy choices support applicable accountability duties.",
-          "Settings distinguish resetting progress, erasing the game save and clearing local Analytics data. They have different effects. A local reset or uninstallation does not automatically erase provider-held records, operating-system backups or copies made through device transfer. Privacy choices are requested again if a valid local decision receipt cannot be restored."
+          "Settings distinguish resetting progress, erasing the game save and clearing local Analytics data. They have different effects. A local reset or uninstallation does not automatically erase provider-held records, operating-system backups or copies made through device transfer. Privacy choices are requested again if a valid local decision receipt cannot be restored.",
+          "Purchases are currently inactive: the Pro product and verification service are not available. The prepared Google Play flow sends a purchase token, product and package identifiers to a verification service, which checks purchase state with Google Play, acknowledges a completed purchase and returns a time-limited entitlement. Pending purchases do not unlock Pro; refunds and revoked purchases remove verified access. Restore queries Google Play and rechecks the purchase. A local reset does not cancel a Google Play purchase or delete provider records. Tokens are purchase credentials, not anonymous data; the prepared server ledger stores token hashes rather than raw tokens. No verification endpoint or live server connection is currently configured. Pro covers the benefits actually listed at purchase, not unspecified future add-ons."
         ]
       },
       {
@@ -92,7 +103,8 @@
         "paragraphs": [
           "When available and separately enabled, Google Analytics for Firebase helps identify difficult levels, assess controls and accessibility, investigate performance and understand whether an explicitly requested video reward was completed and saved. Game events describe level starts/results, failures, grouped screen/settings choices, fixed feedback choices, performance bands and reward stages. Parameters use level and numeric categories, grouped timing and bounded counts rather than names, free-text feedback or raw gesture recordings.",
           "The Analytics SDK may also process app-instance identifiers, device and operating-system information, app version, language and automatically collected session or engagement events. IP addresses are involved in network communication and can support approximate geographic information. No custom player name or account ID is configured. More information is available from <a href=\"https://firebase.google.com/support/privacy\">Firebase</a>.",
-          "Optional Analytics uses a separate consent from age 16 under Article 6(1)(a) GDPR and, where required, §25(1) TDDDG. Crash-report consent and advertising choices do not authorize it. Withdrawal in Settings disables further game-side Analytics collection and requests a reset of local Analytics data and identifiers. It does not by itself delete records already uploaded; use the privacy contact for an applicable access or erasure request."
+          "Where offered under an approved age-specific configuration, optional Analytics requires separate consent under Article 6(1)(a) GDPR and, where required, §25(1) TDDDG. Crash-report consent and advertising choices do not authorize it. Withdrawal in Settings disables further game-side Analytics collection and requests a reset of local Analytics data and identifiers. It does not by itself delete records already uploaded; use the privacy contact for an applicable access or erasure request.",
+          "A separate operational-metrics path is prepared but disabled, including for under-13 users. If approved and made available, it uses only fixed technical categories and grouped counts, without a player account, advertising identifier or save upload. Transmission still exposes an IP address to the receiving service, so it is not described as automatically anonymous. It needs its own disclosed legal basis and endpoint; Analytics consent does not silently activate it."
         ]
       },
       {
@@ -101,17 +113,17 @@
         "paragraphs": [
           "When available and separately enabled, Firebase Crashlytics helps diagnose crashes and repair stability problems. Reports may contain stack traces, exception messages, timestamps, device model, operating system, app version, memory/storage information and technical installation or session identifiers. Analytics breadcrumbs may be included when Analytics is also enabled. A diagnostic message or SDK log can contain incidental information; reports are not described as inherently anonymous.",
           "The game adds limited diagnostic categories such as game version, campaign mode, level index and failure area. Its manual diagnostic messages do not deliberately include save contents or free-text player input. Installed SDK components can maintain local technical state and unsent reports; permission to upload reports is distinct from the presence of a local file.",
-          "Crash-report uploads require their own consent from age 16 under Article 6(1)(a) GDPR and, where required, §25(1) TDDDG. Enabling Analytics does not grant that consent. Withdrawal stops further authorized uploads through the game and requests deletion of unsent reports where supported by an initialized service. A request cannot recall a report already transmitted, and removal of local files does not erase provider-held records."
+          "Where offered under an approved age-specific configuration, crash-report uploads require their own consent under Article 6(1)(a) GDPR and, where required, §25(1) TDDDG. Enabling Analytics does not grant that consent. Withdrawal stops further authorized uploads through the game and requests deletion of unsent reports where supported by an initialized service. A request cannot recall a report already transmitted, and removal of local files does not erase provider-held records."
         ]
       },
       {
         "id": "ads",
         "title": "Voluntary video bonuses and advertising choices",
         "paragraphs": [
-          "Where available, a player can request a rewarded video for an extra life, a hint or a cosmetic reward. The game does not request an automatic banner, app-open ad or interstitial. Viewing a video is optional. Ordinary local play and its local recovery rules remain available without consenting to Analytics or crash uploads.",
+          "Where available, a player can request a rewarded video for an extra life, a hint or a cosmetic reward. Viewing a video is optional. Ordinary local play remains available without Analytics or crash uploads. An interstitial path is prepared only for transitions after completed levels, with protection for the first levels, spacing, a reward cooldown and a session limit. No interstitial unit has been configured, so it is inactive. No automatic banner or app-open ad is requested. Pro suppresses advertising requests.",
           "Google AdMob and providers identified in the applicable privacy message can process IP addresses, device/app information, ad views and interactions, SDK diagnostics and permitted advertising or other technical identifiers. The actual data depends on the advertising mode and your choices. Google explains this in its <a href=\"https://policies.google.com/technologies/ads\">Google Ads</a> privacy information. Contextual or non-personalized advertising is not necessarily anonymous and can still use device storage for delivery, measurement or fraud prevention.",
-          "For production advertising, Google User Messaging Platform presents any required privacy message and provider information. Current privacy information and the SDK’s permission to request ads are checked before loading an ad. Where required, you can reopen Google privacy options from Settings. The game’s optional-video preference is an availability control, not Google consent. Turning it off prevents further video requests through the game; withdrawing Analytics does not automatically change an independent advertising choice.",
-          "Ages 16–17 use age-restricted, non-personalized advertising treatment. Personalization is not offered to minors and is disabled in the current configuration. A restricted Limited Ads option for ages 13–15 is also disabled in the current configuration; it cannot be substituted with ordinary advertising or a child tracking opt-in. Unknown age and under 13 cannot request advertising through the game. Where a restricted mode is offered, it needs its own valid legal basis and applicable device-access safeguards; the label “Limited Ads” does not itself remove those requirements.",
+          "Google User Messaging Platform (UMP) supplies any required advertising privacy message and provider information. The game refreshes UMP information at startup and before an advertising request. Google privacy options can be reopened in Settings where required. Permission to request an ad is not consent to Analytics, advertising storage, use of data or personalization. Those signals are evaluated separately; missing or stale advertising signals do not grant those purposes. The UMP Analytics mode is disabled; only the independent game Analytics choice can authorize gameplay Analytics. The optional-video switch controls video availability and does not replace a Google privacy choice.",
+          "Unknown age cannot request advertising. Ages 16–17 use non-personalized, age-restricted treatment. Minors cannot enable personalized advertising. Restricted advertising paths for under 13 and ages 13–15 are prepared but disabled pending the relevant reviews, legal basis, SDK/format suitability and Android verification. They cannot be activated by a child tracking opt-in. “Limited Ads” or non-personalized does not mean anonymous or automatically exempt from device-access requirements. Adult personalization also remains disabled until separately reviewed and permitted by the actual UMP choice.",
           "Consent-based advertising relies on Article 6(1)(a) GDPR and, where required, §25(1) TDDDG. Necessary consent-management and security operations have their own applicable basis. The requested reward is handled locally after the advertising service confirms it and the result is saved. Closing a video without earning its reward does not earn it. Google privacy options and withdrawal govern future processing; they do not automatically erase previously held advertising records."
         ]
       },
@@ -119,8 +131,8 @@
         "id": "young-users",
         "title": "Children and teenagers",
         "paragraphs": [
-          "Quiet Camp is primarily intended for ages 13 and older. The age selector stores a category locally; it does not verify identity. No date of birth, parent account or parental identity document is collected. Unknown age and under 13 use basic local play without optional game-side Analytics, crash uploads or advertising requests.",
-          "Ages 13–15 cannot enable gameplay Analytics or crash-report uploads. The restricted advertising option described above is currently disabled. From age 16, available optional purposes remain separate decisions. Personalized advertising is not offered to minors. An age declaration does not remove children’s rights or the developer’s duties.",
+          "The game records an age category locally without verifying identity. No date of birth, parent account or parental identity document is collected. Unknown age and under 13 currently use basic local play without optional gameplay Analytics, crash uploads, advertising requests or purchases.",
+          "Analytics and crash uploads remain unavailable below 16 in the current configuration. The prepared under-13 and 13–15 advertising paths are inactive. From 16, available optional purposes remain separate choices and still require the applicable reviews. Minors are never offered personalized advertising. Changing age category revokes prior optional choices; an age declaration does not remove children’s rights or the developer’s duties.",
           "If you believe data concerning a child has been processed contrary to these restrictions, contact <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. The developer will investigate, stop ineligible processing where identified and handle applicable erasure requests. Please provide relevant context without sending unnecessary identity documents."
         ]
       },
@@ -176,8 +188,8 @@
         ]
       }
     ],
-    "revision": "2026-10-22.public-policy-1",
-    "dateISO": "2026-10-22"
+    "revision": "2026-10-23.public-policy-2",
+    "dateISO": "2026-10-23"
   },
   "de": {
     "title": "Datenschutzerklärung",
@@ -188,7 +200,7 @@
     "languages": "Sprache der Erklärung",
     "toc": "In dieser Erklärung",
     "updated": "Zuletzt aktualisiert",
-    "date": "22. Oktober 2026",
+    "date": "23. Oktober 2026",
     "contact": "Datenschutzkontakt",
     "status": "",
     "noticeTitle": "",
@@ -229,6 +241,16 @@
         "E-Mail-Adresse, Nachricht, Anhänge und Korrespondenzmetadaten",
         "Entwickler und E-Mail-Infrastruktur",
         "Nur wenn Sie den Entwickler kontaktieren"
+      ],
+      [
+        "Kauftoken, Produkt-/Paketkennungen und Prüfstatus",
+        "Google Play und Prüfdienst, falls aktiviert",
+        "Derzeit inaktiv; ausstehende Käufe erteilen keinen Zugriff"
+      ],
+      [
+        "Gruppierte technische Zähler; Netzwerk-IP-Adresse bei Übertragung",
+        "Endpunkt für Betriebsmetriken nach gesonderter Freigabe",
+        "Derzeit inaktiv; keine Aktivierung durch Analytics-Einwilligung"
       ]
     ],
     "sections": [
@@ -245,7 +267,7 @@
         "title": "Spiel und Ihre Entscheidungen",
         "paragraphs": [
           "Diese Erklärung gilt für das Android-Spiel Quiet Camp (com.quietcamp.game), lokale Speicherung, optionale Google-Dienste und Korrespondenz mit dem Entwickler. Das Spiel funktioniert lokal ohne Spielerkonto oder Cloud-Spielstand. Die aktuelle Entwicklungskonfiguration aktiviert keine produktive Spielanalyse, Übermittlung von Absturzberichten, Werbung oder Käufe. Die folgenden Abschnitte erläutern die Verarbeitung in Versionen, die entsprechende optionale Dienste anbieten. Entwicklungstests können nach ausdrücklicher Anforderung Google-Testanzeigen anbieten; auch diese beinhalten eine Verarbeitung durch Google.",
-          "Altersgruppe und optionale Dienste sind getrennte Entscheidungen. Das Spiel erfragt nur eine Altersgruppe, kein Geburtsdatum oder Ausweisdokument. Spielanalyse und Absturzübermittlung benötigen eigene Entscheidungen und werden, soweit verfügbar, erst ab 16 Jahren angeboten. Das Lesen der Erklärung, der Spieleintritt, das Schließen eines Bildschirms oder eine fehlende Antwort erteilen keine optionale Einwilligung.",
+          "Altersgruppe und Entscheidungen über optionale Dienste sind getrennt. Das Spiel fragt nur eine Altersgruppe ab, kein Geburtsdatum oder Ausweisdokument. Optionale Spielanalyse und das Hochladen von Absturzberichten benötigen unabhängige Entscheidungen und eine für die Altersgruppe freigegebene Konfiguration; in der aktuellen Konfiguration sind beide unter 16 nicht verfügbar. Das Lesen dieser Erklärung, Weiterspielen, Schließen eines Fensters oder Schweigen erteilt keine Einwilligung.",
           "Eine Ablehnung optionaler Verarbeitung verhindert das grundlegende lokale Spiel nicht. Entscheidungen lassen sich unter Einstellungen → Daten & Werbung ändern. Werbung ist von Analytics und Absturzberichten unabhängig. Jeder Videobonus wird freiwillig angefordert; eine Schaltfläche im Spiel ersetzt kein erforderliches Google-Datenschutzformular."
         ]
       },
@@ -263,7 +285,8 @@
         "paragraphs": [
           "Quiet Camp speichert Zeltanordnungen, Fortschritt, Album, Lernfortschritt, Sprache, Bedienungs-/Audio-/Anzeigeeinstellungen und lokale Ressourcen. Hinzu kommen Altersgruppe, Datenschutzentscheidungen, Erklärungsversion und ein lokaler Nachweis zur Anwendung dieser Entscheidungen. Wiederherstellungskopien, Dokumentcache und SDK-Einstellungen oder ungesendete technische Berichte können auf dem Gerät verbleiben. Spielstand und Album werden nicht auf einen vom Entwickler betriebenen Server hochgeladen.",
           "Die notwendige Speicherung für angeforderte Spielfunktionen beruht bei entsprechender Vertragsgrundlage auf Artikel 6 Absatz 1 Buchstabe b DSGVO; angemessener technischer Betrieb kann auf Buchstabe f beruhen. Unbedingt erforderliche Speicherung oder Zugriffe auf dem Endgerät fallen, soweit anwendbar, unter §25 Absatz 2 TDDDG. Dies erlaubt kein optionales Tracking. Notwendige Nachweise zur Anwendung und Dokumentation der Datenschutzentscheidungen unterstützen einschlägige Rechenschaftspflichten.",
-          "Die Einstellungen unterscheiden das Zurücksetzen des Fortschritts, das Löschen des Spielstands und das Leeren lokaler Analytics-Daten. Diese Vorgänge wirken unterschiedlich. Lokales Löschen oder Deinstallieren entfernt nicht automatisch Anbieteraufzeichnungen, Betriebssystem-Backups oder Kopien aus Geräteübertragungen. Kann kein gültiger lokaler Entscheidungsnachweis wiederhergestellt werden, werden Datenschutzentscheidungen erneut erfragt."
+          "Die Einstellungen unterscheiden das Zurücksetzen des Fortschritts, das Löschen des Spielstands und das Leeren lokaler Analytics-Daten. Diese Vorgänge wirken unterschiedlich. Lokales Löschen oder Deinstallieren entfernt nicht automatisch Anbieteraufzeichnungen, Betriebssystem-Backups oder Kopien aus Geräteübertragungen. Kann kein gültiger lokaler Entscheidungsnachweis wiederhergestellt werden, werden Datenschutzentscheidungen erneut erfragt.",
+          "Käufe sind derzeit inaktiv: Pro-Produkt und Prüfdienst sind nicht verfügbar. Der vorbereitete Google-Play-Ablauf sendet einen Kauftoken sowie Produkt- und Paketkennungen an einen Prüfdienst. Dieser prüft den Zustand bei Google Play, bestätigt einen abgeschlossenen Kauf und liefert eine zeitlich begrenzte Berechtigung. Ausstehende Käufe schalten Pro nicht frei; Erstattungen und widerrufene Käufe entziehen den verifizierten Zugriff. Die Wiederherstellung fragt Google Play ab und prüft erneut. Lokales Löschen storniert keinen Google-Play-Kauf und löscht keine Anbieteraufzeichnungen. Token sind Kaufnachweise, keine anonymen Daten; das vorbereitete Serverregister speichert Token-Hashes statt Roh-Token. Ein produktiver Prüf-Endpunkt oder eine Serververbindung ist derzeit nicht eingerichtet. Pro umfasst die beim Kauf tatsächlich aufgeführten Vorteile, keine unbestimmten künftigen Erweiterungen."
         ]
       },
       {
@@ -272,7 +295,8 @@
         "paragraphs": [
           "Wenn verfügbar und separat aktiviert, hilft Google Analytics for Firebase dabei, schwierige Level zu erkennen, Steuerung und Barrierefreiheit zu bewerten, Leistungsprobleme zu untersuchen und den Abschluss sowie die Speicherung eines ausdrücklich angeforderten Videobonus zu verstehen. Spielereignisse beschreiben Levelbeginn/-ergebnis, Fehler, gruppierte Bildschirm-/Einstellungsentscheidungen, feste Rückmeldungen, Leistungsgruppen und Belohnungsphasen. Parameter enthalten Level und numerische Kategorien, gruppierte Zeiten und begrenzte Zähler statt Namen, Freitext oder rohen Gestenaufzeichnungen.",
           "Das Analytics-SDK kann außerdem App-Instanzkennungen, Geräte-/Betriebssystemdaten, App-Version, Sprache und automatische Sitzungs- oder Interaktionsereignisse verarbeiten. Netzwerkkommunikation verwendet eine IP-Adresse, aus der ungefähre geografische Informationen abgeleitet werden können. Ein eigener Spielername oder eine Konto-ID wird nicht gesetzt. Weitere Informationen bietet <a href=\"https://firebase.google.com/support/privacy\">Firebase</a>.",
-          "Optionale Analytics-Verarbeitung benötigt eine gesonderte Einwilligung ab 16 Jahren nach Artikel 6 Absatz 1 Buchstabe a DSGVO und, soweit erforderlich, §25 Absatz 1 TDDDG. Absturzeinwilligung und Werbeentscheidungen erlauben sie nicht. Ein Widerruf in den Einstellungen stoppt weitere spielseitige Analytics-Erfassung und fordert das Zurücksetzen lokaler Analytics-Daten und Kennungen an. Bereits übermittelte Aufzeichnungen werden dadurch nicht automatisch gelöscht; wenden Sie sich für einschlägige Auskunfts- oder Löschanfragen an die Datenschutzadresse."
+          "Optionale Analytics-Verarbeitung benötigt eine gesonderte Einwilligung ab 16 Jahren nach Artikel 6 Absatz 1 Buchstabe a DSGVO und, soweit erforderlich, §25 Absatz 1 TDDDG. Absturzeinwilligung und Werbeentscheidungen erlauben sie nicht. Ein Widerruf in den Einstellungen stoppt weitere spielseitige Analytics-Erfassung und fordert das Zurücksetzen lokaler Analytics-Daten und Kennungen an. Bereits übermittelte Aufzeichnungen werden dadurch nicht automatisch gelöscht; wenden Sie sich für einschlägige Auskunfts- oder Löschanfragen an die Datenschutzadresse.",
+          "Ein gesonderter Pfad für Betriebsmetriken ist vorbereitet, aber deaktiviert, auch für unter 13-Jährige. Nach gesonderter Freigabe und Aktivierung verwendet er nur feste technische Kategorien und gruppierte Zähler ohne Spielerkonto, Werbekennung oder Spielstand-Upload. Bei der Übertragung wird dem Empfänger dennoch eine IP-Adresse bekannt; dies wird deshalb nicht automatisch als anonym bezeichnet. Eine gesondert offengelegte Rechtsgrundlage und ein Endpunkt sind erforderlich; Analytics-Einwilligung aktiviert diese Metriken nicht stillschweigend."
         ]
       },
       {
@@ -288,10 +312,10 @@
         "id": "ads",
         "title": "Freiwillige Videoboni und Werbeentscheidungen",
         "paragraphs": [
-          "Soweit verfügbar, können Spieler ein belohntes Video für ein zusätzliches Leben, einen Hinweis oder einen kosmetischen Gegenstand anfordern. Das Spiel fordert keine automatischen Banner, App-Open-Anzeigen oder Interstitials an. Das Ansehen ist freiwillig. Das gewöhnliche lokale Spiel und seine lokalen Erholungsregeln bleiben ohne Analytics- oder Absturzeinwilligung verfügbar.",
+          "Wenn verfügbar, kann ein Spieler freiwillig ein Video für ein zusätzliches Leben, einen Hinweis oder eine kosmetische Belohnung anfordern. Lokales Spielen bleibt ohne Analytics oder Absturz-Uploads möglich. Ein Interstitial-Pfad ist ausschließlich für Übergänge nach abgeschlossenen Leveln vorbereitet, mit Schutz für die ersten Level, Abständen, Pause nach Belohnungen und Sitzungslimit. Dafür ist kein Anzeigenblock konfiguriert; er ist inaktiv. Automatische Banner oder App-Open-Anzeigen werden nicht angefordert. Pro unterbindet Werbeanfragen.",
           "Google AdMob und im einschlägigen Datenschutzhinweis genannte Anbieter können IP-Adressen, Geräte-/App-Daten, Anzeigenaufrufe und Interaktionen, SDK-Diagnosen und zulässige Werbe- oder andere technische Kennungen verarbeiten. Welche Angaben tatsächlich anfallen, hängt von Werbemodus und Entscheidungen ab. Google erläutert dies in den Datenschutzinformationen zu <a href=\"https://policies.google.com/technologies/ads\">Google Ads</a>. Kontextbezogene oder nicht personalisierte Werbung ist nicht zwangsläufig anonym und kann für Auslieferung, Messung oder Betrugsbekämpfung Gerätespeicher verwenden.",
-          "Für produktive Werbung zeigt Google User Messaging Platform erforderliche Datenschutzmeldungen und Anbieterinformationen. Vor dem Laden einer Anzeige werden aktuelle Datenschutzinformationen und die SDK-Erlaubnis für eine Anzeigenanfrage geprüft. Soweit erforderlich, lassen sich Google-Datenschutzoptionen über die Einstellungen erneut öffnen. Die spielseitige Videobonus-Option steuert die Verfügbarkeit und ist keine Google-Einwilligung. Ihr Ausschalten verhindert weitere Videoanfragen durch das Spiel; ein Analytics-Widerruf ändert keine unabhängige Werbeentscheidung automatisch.",
-          "Für 16–17-Jährige gilt altersbeschränkte, nicht personalisierte Werbebehandlung. Personalisierung wird Minderjährigen nicht angeboten und ist in der aktuellen Konfiguration deaktiviert. Auch die beschränkte Limited-Ads-Option für 13–15-Jährige ist deaktiviert; sie darf nicht durch gewöhnliche Werbung oder eine Tracking-Einwilligung des Kindes ersetzt werden. Bei unbekanntem Alter und unter 13 Jahren fordert das Spiel keine Werbung an. Ein angebotener beschränkter Modus benötigt eine eigene gültige Rechtsgrundlage und einschlägige Garantien für Endgerätezugriffe; die Bezeichnung Limited Ads hebt diese Anforderungen nicht auf.",
+          "Google User Messaging Platform (UMP) stellt erforderliche Datenschutzhinweise für Werbung und Anbieterinformationen bereit. Das Spiel aktualisiert UMP beim Start und vor einer Werbeanfrage. Erforderliche Google-Datenschutzoptionen lassen sich in den Einstellungen erneut öffnen. Die Erlaubnis, eine Anzeige anzufordern, ist keine Einwilligung in Analytics, Werbespeicherung, Datennutzung oder Personalisierung. Diese Signale werden getrennt bewertet; fehlende oder veraltete Werbesignale erteilen keine solchen Berechtigungen. Der Analytics-Modus in UMP ist deaktiviert; nur die unabhängige Entscheidung im Spiel kann Spiel-Analytics erlauben. Der Videobonus-Schalter steuert die Verfügbarkeit und ersetzt keine Google-Datenschutzentscheidung.",
+          "Bei unbekanntem Alter werden keine Anzeigen angefordert. Für 16–17-Jährige gilt eine altersbeschränkte, nicht personalisierte Behandlung. Minderjährige können keine Werbepersonalisierung aktivieren. Eingeschränkte Werbepfade für unter 13 und 13–15 sind vorbereitet, bleiben aber bis zur erforderlichen Prüfung von Rechtsgrundlage, SDK, Formaten und Android-Verhalten deaktiviert. Eine Tracking-Einwilligung eines Kindes kann sie nicht aktivieren. „Limited Ads“ oder nicht personalisiert bedeutet weder anonym noch automatisch von Anforderungen an Gerätezugriffe befreit. Auch Personalisierung für Erwachsene bleibt bis zur gesonderten Freigabe und tatsächlichen UMP-Erlaubnis deaktiviert.",
           "Einwilligungsbasierte Werbung beruht auf Artikel 6 Absatz 1 Buchstabe a DSGVO und, soweit erforderlich, §25 Absatz 1 TDDDG. Notwendige Einwilligungsverwaltung und Sicherheit haben eigene einschlägige Grundlagen. Eine angeforderte Belohnung wird nach Bestätigung des Werbedienstes und Speicherung des Ergebnisses lokal verarbeitet. Ein Schließen ohne verdiente Belohnung gewährt diese nicht. Google-Datenschutzoptionen und Widerruf steuern die künftige Verarbeitung, löschen aber nicht automatisch frühere Werbeaufzeichnungen."
         ]
       },
@@ -299,8 +323,8 @@
         "id": "young-users",
         "title": "Kinder und Jugendliche",
         "paragraphs": [
-          "Quiet Camp richtet sich hauptsächlich an Personen ab 13 Jahren. Die Altersauswahl speichert lokal eine Kategorie und überprüft keine Identität. Geburtsdatum, Elternkonto oder Identitätsnachweise der Eltern werden nicht erhoben. Bei unbekanntem Alter und unter 13 Jahren steht das grundlegende lokale Spiel ohne optionale spielseitige Analytics-, Absturz- oder Werbeanfragen zur Verfügung.",
-          "13–15-Jährige können Spielanalyse und Absturzübermittlung nicht aktivieren. Die oben beschriebene beschränkte Werbeoption ist derzeit deaktiviert. Ab 16 Jahren bleiben verfügbare optionale Zwecke getrennte Entscheidungen. Personalisierte Werbung wird Minderjährigen nicht angeboten. Eine Altersangabe hebt Kinderrechte oder Pflichten des Entwicklers nicht auf.",
+          "Das Spiel speichert eine Altersgruppe lokal ohne Identitätsprüfung. Geburtsdatum, Elternkonto und Identitätsdokumente der Eltern werden nicht erhoben. Bei unbekanntem Alter und unter 13 steht derzeit lokales Spielen ohne optionale Spiel-Analytics, Absturz-Uploads, Werbeanfragen oder Käufe zur Verfügung.",
+          "In der aktuellen Konfiguration sind Analytics und Absturz-Uploads unter 16 nicht verfügbar. Die vorbereiteten Werbepfade für unter 13 und 13–15 sind inaktiv. Ab 16 bleiben verfügbare optionale Zwecke getrennte Entscheidungen und benötigen die jeweiligen Freigaben. Minderjährigen wird keine personalisierte Werbung angeboten. Ein Wechsel der Altersgruppe widerruft frühere optionale Entscheidungen; eine Altersangabe hebt weder Kinderrechte noch Entwicklerpflichten auf.",
           "Wenn Sie eine Verarbeitung von Kinderdaten entgegen diesen Grenzen vermuten, schreiben Sie an <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Der Entwickler prüft den Sachverhalt, beendet festgestellte unzulässige Verarbeitung und bearbeitet einschlägige Löschanfragen. Bitte nennen Sie relevanten Kontext, ohne unnötige Identitätsdokumente zu senden."
         ]
       },
@@ -356,8 +380,8 @@
         ]
       }
     ],
-    "revision": "2026-10-22.public-policy-1",
-    "dateISO": "2026-10-22"
+    "revision": "2026-10-23.public-policy-2",
+    "dateISO": "2026-10-23"
   },
   "uk": {
     "title": "Політика конфіденційності",
@@ -368,7 +392,7 @@
     "languages": "Мова політики",
     "toc": "У цьому документі",
     "updated": "Останнє оновлення",
-    "date": "22 жовтня 2026 року",
+    "date": "23 жовтня 2026 року",
     "contact": "Контакт із питань приватності",
     "status": "",
     "noticeTitle": "",
@@ -409,6 +433,16 @@
         "Email-адреса, повідомлення, вкладення й метадані листування",
         "Розробник і поштова інфраструктура",
         "Лише коли ви звертаєтеся до розробника"
+      ],
+      [
+        "Токен покупки, ідентифікатори товару/пакета та стан перевірки",
+        "Google Play і сервіс перевірки, якщо його буде ввімкнено",
+        "Наразі неактивно; очікувана покупка не надає доступу"
+      ],
+      [
+        "Згруповані технічні лічильники; мережева IP-адреса під час передавання",
+        "Endpoint операційних метрик після окремого схвалення",
+        "Наразі неактивно; згода на Analytics не вмикає"
       ]
     ],
     "sections": [
@@ -425,7 +459,7 @@
         "title": "Гра та ваші рішення",
         "paragraphs": [
           "Ця політика охоплює Android-гру Quiet Camp (com.quietcamp.game), локальне зберігання, необов’язкові сервіси Google та листування з розробником. Гра працює локально без облікового запису й хмарного збереження. Поточна конфігурація розробки не активує виробничу аналітику гри, надсилання звітів про збої, рекламу чи покупки. Розділи про необов’язкові сервіси нижче пояснюють обробку у версіях, де вони доступні. Під час розробки після явного запиту можуть використовуватися тестові рекламні блоки Google; така реклама також передбачає обробку Google.",
-          "Вікова група й дозволи на необов’язкові сервіси — різні рішення. Гра запитує лише вікову категорію, а не дату народження чи документ. Аналітика гри й надсилання збоїв потребують незалежних дозволів і пропонуються лише від 16 років за доступності сервісів. Читання політики, перехід до гри, закриття екрана чи відсутність відповіді не надають необов’язкової згоди.",
+          "Вікова категорія та дозволи на необов’язкові сервіси є окремими рішеннями. Гра запитує лише вікову групу, а не дату народження чи документ. Необов’язкові ігрова Analytics і надсилання звітів про збої потребують незалежних рішень та схваленої для віку конфігурації; у чинній конфігурації обидва сервіси недоступні до 16 років. Читання політики, продовження гри, закриття екрана чи відсутність відповіді не надають згоди.",
           "Відмова від необов’язкової обробки не блокує базову локальну гру. Вибори можна змінити в Налаштування → Дані й реклама. Рекламні рішення незалежні від аналітики та збоїв. Кожен відеобонус запитується добровільно; кнопка гри не замінює необхідної форми приватності Google."
         ]
       },
@@ -443,7 +477,8 @@
         "paragraphs": [
           "Quiet Camp зберігає розташування наметів, прогрес, альбом, стан навчання, мову, параметри доступності, звуку й відображення та локальні ресурси. Також зберігаються вікова категорія, вибори приватності, версія політики й локальний запис для застосування цих рішень. На пристрої можуть залишатися відновлювальні копії, кеш документів, налаштування SDK чи ненадіслані технічні звіти. Гра не завантажує ваше збереження або альбом на сервер розробника.",
           "Необхідне для запитаних функцій гри зберігання ґрунтується на статті 6(1)(b) GDPR за наявності договірної підстави; пропорційна технічна робота може ґрунтуватися на статті 6(1)(f). Суворо необхідне зберігання чи доступ на пристрої підпадає під §25(2) TDDDG, де застосовно. Це не дозволяє необов’язкового відстеження. Записи, потрібні для застосування й підтвердження виборів приватності, підтримують відповідні обов’язки підзвітності.",
-          "Налаштування розрізняють скидання прогресу, видалення збереження гри й очищення локальних даних аналітики. Наслідки цих дій різні. Локальне очищення чи видалення застосунку не стирає автоматично записи постачальників, резервні копії ОС чи дані перенесення пристрою. Якщо чинний локальний запис рішення не відновлено, вибір приватності запитується знову."
+          "Налаштування розрізняють скидання прогресу, видалення збереження гри й очищення локальних даних аналітики. Наслідки цих дій різні. Локальне очищення чи видалення застосунку не стирає автоматично записи постачальників, резервні копії ОС чи дані перенесення пристрою. Якщо чинний локальний запис рішення не відновлено, вибір приватності запитується знову.",
+          "Покупки наразі неактивні: товар Pro і сервіс перевірки недоступні. Підготовлений шлях Google Play передає токен покупки, ідентифікатори товару та пакета сервісу перевірки, який звіряє стан із Google Play, підтверджує завершену покупку та повертає право доступу з обмеженим строком дії. Очікувана покупка не відкриває Pro; повернення коштів і відкликання покупки прибирають перевірений доступ. Відновлення запитує Google Play та повторно перевіряє покупку. Локальне очищення не скасовує покупку Google Play і не видаляє записи постачальника. Токени є даними доступу до покупки, а не анонімними даними; підготовлений серверний реєстр зберігає хеші токенів замість самих токенів. Робочий endpoint перевірки та підключення до сервера наразі не налаштовані. Pro охоплює переваги, фактично наведені під час покупки, а не невизначені майбутні доповнення."
         ]
       },
       {
@@ -452,7 +487,8 @@
         "paragraphs": [
           "За доступності й окремого ввімкнення Google Analytics for Firebase допомагає знаходити складні рівні, оцінювати керування й доступність, досліджувати продуктивність і розуміти, чи явно запитану відеонагороду завершено та збережено. Події описують початок і результат рівня, помилки, згруповані екрани й налаштування, фіксовані відповіді, категорії продуктивності та етапи винагороди. Параметри містять рівень і числові категорії, згрупований час та обмежені лічильники, а не імена, довільні тексти чи сирі записи жестів.",
           "SDK аналітики також може обробляти ідентифікатор екземпляра застосунку, інформацію про пристрій та ОС, версію, мову й автоматичні події сеансів або взаємодії. Мережеве з’єднання використовує IP-адресу, з якої може визначатися приблизне географічне розташування. Власне ім’я гравця чи ідентифікатор акаунта не задається. Докладніше — у <a href=\"https://firebase.google.com/support/privacy\">Firebase</a>.",
-          "Необов’язкова аналітика має незалежну згоду від 16 років за статтею 6(1)(a) GDPR та, де потрібно, §25(1) TDDDG. Дозвіл на звіти про збої й рекламні рішення її не дозволяють. Відкликання в налаштуваннях припиняє подальше збирання аналітики з боку гри й запитує скидання локальних даних та ідентифікаторів. Уже передані записи від цього не видаляються автоматично; щодо доступу чи видалення звертайтеся за адресою приватності."
+          "Необов’язкова аналітика має незалежну згоду від 16 років за статтею 6(1)(a) GDPR та, де потрібно, §25(1) TDDDG. Дозвіл на звіти про збої й рекламні рішення її не дозволяють. Відкликання в налаштуваннях припиняє подальше збирання аналітики з боку гри й запитує скидання локальних даних та ідентифікаторів. Уже передані записи від цього не видаляються автоматично; щодо доступу чи видалення звертайтеся за адресою приватності.",
+          "Окремий шлях операційних метрик підготовлено, але вимкнено, зокрема для дітей до 13 років. Після окремого схвалення та ввімкнення він використовуватиме лише фіксовані технічні категорії та згруповані лічильники без облікового запису гравця, рекламного ідентифікатора чи надсилання збереження. Передавання все одно розкриває IP-адресу сервісу, тому не називається автоматично анонімним. Потрібні окремо розкрита правова підстава та endpoint; згода на Analytics не вмикає ці метрики приховано."
         ]
       },
       {
@@ -468,10 +504,10 @@
         "id": "ads",
         "title": "Добровільні відеобонуси й рекламні рішення",
         "paragraphs": [
-          "За доступності гравець може запитати відео за додаткове життя, підказку чи косметичну винагороду. Гра не запитує автоматичного банера, реклами при відкритті чи interstitial. Перегляд добровільний. Звичайна локальна гра та її локальні правила відновлення залишаються доступними без згоди на аналітику чи надсилання збоїв.",
+          "Якщо функція доступна, гравець може сам запросити відео за додаткове життя, підказку або косметичну винагороду. Перегляд добровільний. Звичайна локальна гра доступна без Analytics і надсилання звітів про збої. Підготовлено міжсторінкову рекламу лише на переходах після завершених рівнів, із захистом перших рівнів, інтервалами, паузою після винагороди та лімітом за сесію. Рекламний блок для неї не налаштовано, тому вона неактивна. Автоматичні банери та реклама під час відкриття застосунку не запитуються. Pro припиняє рекламні запити.",
           "Google AdMob і постачальники, зазначені у відповідному повідомленні приватності, можуть обробляти IP, відомості про пристрій і застосунок, перегляди та рекламні взаємодії, діагностику SDK й допустимі рекламні або інші технічні ідентифікатори. Фактичні дані залежать від режиму реклами та ваших виборів. Google описує це у приватності <a href=\"https://policies.google.com/technologies/ads\">Google Ads</a>. Контекстна або неперсоналізована реклама не обов’язково анонімна й може використовувати сховище пристрою для доставки, вимірювання чи запобігання шахрайству.",
-          "Для виробничої реклами Google User Messaging Platform показує потрібне повідомлення й інформацію про постачальників. Перед завантаженням реклами перевіряються актуальна інформація приватності й дозвіл SDK на запит. Де потрібно, налаштування дозволяють повторно відкрити privacy options Google. Перемикач відеобонусів гри керує доступністю, а не згодою Google. Його вимкнення припиняє подальші відеозапити гри; відкликання Analytics автоматично не змінює незалежного рекламного рішення.",
-          "Для 16–17 років застосовується вікове обмеження й неперсоналізована реклама. Персоналізація не пропонується неповнолітнім і вимкнена в поточній конфігурації. Обмежений варіант Limited Ads для 13–15 років також вимкнений; замінювати його звичайною рекламою чи згодою дитини на відстеження не можна. За невідомого віку та до 13 років гра не запитує рекламу. Доступний обмежений режим потребує власної законної підстави й відповідних гарантій доступу до пристрою; назва Limited Ads сама по собі їх не скасовує.",
+          "Google User Messaging Platform (UMP) надає потрібне рекламне повідомлення про конфіденційність та відомості про постачальників. Гра оновлює інформацію UMP під час запуску й перед рекламним запитом. За потреби параметри Google можна повторно відкрити в налаштуваннях. Дозвіл запитати рекламу не є згодою на Analytics, рекламне зберігання, використання даних чи персоналізацію. Ці сигнали оцінюються окремо; відсутні або застарілі рекламні сигнали не надають відповідних дозволів. Режим Analytics у UMP вимкнений; ігрову Analytics може дозволити лише незалежне рішення у грі. Перемикач відеобонусів керує доступністю відео й не замінює рішення в Google.",
+          "За невідомого віку реклама не запитується. Для 16–17 років застосовується неперсоналізована реклама з віковими обмеженнями. Неповнолітні не можуть увімкнути персоналізацію. Обмежені рекламні шляхи для дітей до 13 та віку 13–15 підготовлено, але вимкнено до потрібних перевірок, визначення правової підстави, придатності SDK і форматів та перевірки на Android. Дитяча згода на відстеження не може їх активувати. «Limited Ads» або неперсоналізована реклама не означає анонімність чи автоматичне звільнення від вимог доступу до пристрою. Персоналізація для дорослих також вимкнена до окремої перевірки та фактичного дозволу UMP.",
           "Рекламна обробка на підставі згоди ґрунтується на статті 6(1)(a) GDPR та, де потрібно, §25(1) TDDDG. Необхідне керування згодою й безпека мають власні застосовні підстави. Запитана винагорода обробляється локально після підтвердження рекламного сервісу й збереження результату. Закриття відео без заробленої винагороди її не надає. Privacy options Google і відкликання керують подальшою обробкою, а не автоматичним видаленням раніше отриманих рекламних записів."
         ]
       },
@@ -479,8 +515,8 @@
         "id": "young-users",
         "title": "Діти й підлітки",
         "paragraphs": [
-          "Quiet Camp насамперед призначена для аудиторії від 13 років. Віковий вибір зберігає категорію локально, а не перевіряє особу. Дата народження, батьківський акаунт чи документи батьків не збираються. За невідомого віку та до 13 років доступна базова локальна гра без необов’язкової аналітики, надсилання збоїв чи рекламних запитів гри.",
-          "Для 13–15 років аналітика гри й надсилання збоїв недоступні. Описаний вище обмежений рекламний варіант наразі вимкнений. Від 16 років доступні необов’язкові цілі залишаються незалежними рішеннями. Персоналізована реклама неповнолітнім не пропонується. Зазначення віку не скасовує прав дітей або обов’язків розробника.",
+          "Гра зберігає вікову категорію локально без перевірки особи. Дата народження, батьківський обліковий запис чи документ батьків не збираються. За невідомого віку та до 13 років наразі доступна базова локальна гра без необов’язкових ігрової Analytics, надсилання звітів про збої, рекламних запитів або покупок.",
+          "У чинній конфігурації Analytics і надсилання звітів про збої недоступні до 16 років. Підготовлені рекламні шляхи для віку до 13 та 13–15 неактивні. Від 16 років доступні необов’язкові цілі залишаються окремими рішеннями та потребують відповідних перевірок. Персоналізована реклама неповнолітнім не пропонується. Зміна вікової категорії відкликає попередні необов’язкові рішення; зазначення віку не скасовує прав дітей або обов’язків розробника.",
           "Якщо ви вважаєте, що дані дитини оброблялися всупереч цим обмеженням, напишіть на <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Розробник розгляне ситуацію, припинить виявлену недопустиму обробку й опрацює застосовний запит на видалення. Надайте потрібний контекст без зайвих документів."
         ]
       },
@@ -536,7 +572,7 @@
         ]
       }
     ],
-    "revision": "2026-10-22.public-policy-1",
-    "dateISO": "2026-10-22"
+    "revision": "2026-10-23.public-policy-2",
+    "dateISO": "2026-10-23"
   }
 }
