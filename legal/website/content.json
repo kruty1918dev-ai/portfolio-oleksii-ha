@@ -5,7 +5,7 @@
     "intro": "This notice covers visits to oleksiy-havryliuk.de and correspondence with its developer. Processing inside Quiet Camp is covered by the separate game privacy policy.",
     "toc": "In this notice",
     "updated": "Last updated",
-    "date": "22 October 2026",
+    "date": "23 October 2026",
     "status": "",
     "noticeTitle": "",
     "notice": "",
@@ -24,7 +24,8 @@
         "title": "Website delivery and security",
         "paragraphs": [
           "This website is hosted by Vercel Inc. Your browser sends the information needed to retrieve a page or image, including your IP address, requested URL, request time and browser or protocol information. Vercel and its infrastructure providers process this information to deliver content, operate the service and protect against abuse and technical failures.",
-          "The legal basis for necessary delivery and proportionate security processing is Article 6(1)(f) GDPR: the legitimate interest in operating an accessible, reliable and secure public website. A browser request is necessary to retrieve the site; you do not have to create an account or provide a name."
+          "The legal basis for necessary delivery and proportionate security processing is Article 6(1)(f) GDPR: the legitimate interest in operating an accessible, reliable and secure public website. A browser request is necessary to retrieve the site; you do not have to create an account or provide a name.",
+          "The complimentary-access API uses a separate Cloudflare address. Reading this website or this policy does not itself sign you into that API or send it the game’s stored session. Processing when you use complimentary access is described in the game policy; this does not move website hosting from Vercel to Cloudflare."
         ]
       },
       {
@@ -83,7 +84,7 @@
     "intro": "Цей документ стосується відвідування oleksiy-havryliuk.de та листування з розробником. Обробку даних у Quiet Camp описано в окремій політиці гри.",
     "toc": "У цьому документі",
     "updated": "Останнє оновлення",
-    "date": "22 жовтня 2026 року",
+    "date": "23 жовтня 2026 року",
     "status": "",
     "noticeTitle": "",
     "notice": "",
@@ -102,7 +103,8 @@
         "title": "Робота й захист сайту",
         "paragraphs": [
           "Сайт розміщено на Vercel Inc. Для отримання сторінки чи зображення браузер передає необхідні відомості: IP-адресу, запитаний URL, час запиту та інформацію браузера або протоколу. Vercel і постачальники її інфраструктури обробляють ці дані для доставки вмісту, роботи сервісу та захисту від зловживань і технічних збоїв.",
-          "Правова підстава необхідної доставки та пропорційного захисту — стаття 6(1)(f) GDPR: законний інтерес у доступному, надійному й захищеному публічному сайті. Запит браузера потрібен для завантаження сайту; створювати обліковий запис чи вказувати ім’я не потрібно."
+          "Правова підстава необхідної доставки та пропорційного захисту — стаття 6(1)(f) GDPR: законний інтерес у доступному, надійному й захищеному публічному сайті. Запит браузера потрібен для завантаження сайту; створювати обліковий запис чи вказувати ім’я не потрібно.",
+          "API безоплатного доступу використовує окрему адресу Cloudflare. Саме читання цього сайту або політики не виконує вхід до API й не передає йому збережену сесію гри. Обробку при використанні безоплатного доступу описує політика гри; це не переносить хостинг сайту з Vercel до Cloudflare."
         ]
       },
       {
@@ -161,7 +163,7 @@
     "intro": "Diese Erklärung gilt für Besuche auf oleksiy-havryliuk.de und die Korrespondenz mit dem Entwickler. Für die Datenverarbeitung in Quiet Camp gilt die gesonderte Datenschutzerklärung des Spiels.",
     "toc": "In dieser Erklärung",
     "updated": "Zuletzt aktualisiert",
-    "date": "22. Oktober 2026",
+    "date": "23. Oktober 2026",
     "status": "",
     "noticeTitle": "",
     "notice": "",
@@ -180,7 +182,8 @@
         "title": "Bereitstellung und Schutz der Website",
         "paragraphs": [
           "Die Website wird bei Vercel Inc. gehostet. Zum Abruf einer Seite oder eines Bildes übermittelt Ihr Browser erforderliche Informationen, darunter IP-Adresse, angeforderte URL, Zeitpunkt sowie Browser- oder Protokollinformationen. Vercel und seine Infrastrukturpartner verarbeiten diese Angaben zur Auslieferung der Inhalte, zum Betrieb und zum Schutz vor Missbrauch und technischen Störungen.",
-          "Rechtsgrundlage für die erforderliche Auslieferung und angemessene Sicherheitsverarbeitung ist Artikel 6 Absatz 1 Buchstabe f DSGVO: das berechtigte Interesse an einer zugänglichen, zuverlässigen und sicheren öffentlichen Website. Eine Browseranfrage ist für den Abruf erforderlich; ein Konto oder die Angabe Ihres Namens ist nicht notwendig."
+          "Rechtsgrundlage für die erforderliche Auslieferung und angemessene Sicherheitsverarbeitung ist Artikel 6 Absatz 1 Buchstabe f DSGVO: das berechtigte Interesse an einer zugänglichen, zuverlässigen und sicheren öffentlichen Website. Eine Browseranfrage ist für den Abruf erforderlich; ein Konto oder die Angabe Ihres Namens ist nicht notwendig.",
+          "Die API für kostenlosen Zugang verwendet eine gesonderte Cloudflare-Adresse. Das bloße Lesen dieser Website oder Erklärung meldet Sie nicht bei dieser API an und übermittelt ihr keine gespeicherte Spielsitzung. Die Verarbeitung bei Nutzung des kostenlosen Zugangs erläutert die Datenschutzerklärung des Spiels; dadurch wird das Websitehosting nicht von Vercel zu Cloudflare verlagert."
         ]
       },
       {

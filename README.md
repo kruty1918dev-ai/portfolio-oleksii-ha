@@ -67,8 +67,8 @@ or unverified project credits. Hosting is static; contact links use email.
 
 ## Policies and Android release evidence
 
-Both public policies are complete visitor-facing documents dated 22 October
-2026. The Quiet Camp policy revision is `2026-10-22.public-policy-1`. They explain
+Both public policies are complete visitor-facing documents dated 23 October
+2026. The Quiet Camp policy revision is `2026-10-23.public-policy-4-cloudflare`. They explain
 the implemented processing and the conditions for optional game services. They
 do not display internal review or unfinished-document notices.
 
@@ -76,7 +76,8 @@ Website publication and Android service activation are separate operations.
 The existing runtime/evidence flags remain unchanged. `npm run release:check`
 and `npm run build:release` still require actual Android, account and SDK evidence;
 normal `npm run build` produces the public website without enabling game services.
-See [policy source notes](docs/policy-publication-2026-10-22.md).
+See [current Cloudflare policy source notes](docs/privacy-cloudflare-2026-10-23.md)
+and [earlier policy source notes](docs/policy-publication-2026-10-22.md).
 
 The canonical game policy renderer can synchronize draft game resources without
 enabling SDKs. After applying the accompanying policy-sync compatibility update
