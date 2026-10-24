@@ -4,35 +4,42 @@
     "deleteLabel": "Delete Quiet Camp account",
     "account": {
       "title": "Quiet Camp account & cloud saves",
-      "intro": "Choose local play or connect Google or Facebook to save and recover your Quiet Camp progress.",
+      "intro": "One Quiet Camp profile for the website and your game: sign in, manage connected accounts and find your cloud progress.",
       "sections": [
         [
-          "Play without an account",
+          "Create or open your profile on the website",
           [
-            "Anonymous play keeps progress on this device. It does not create an anonymous cloud account. To protect this progress if you change or lose your device, choose account linking in the game."
+            "Open your account using the button above and continue with Google or Facebook. Your first successful sign-in creates a Quiet Camp profile; it does not upload a game save or require a separate password.",
+            "In your account you can change your camper name, see your connected sign-in methods and the time of your latest cloud save, sign out of this browser, or delete your account."
           ]
         ],
         [
-          "Sign in or link your progress",
+          "Use the same account in the game",
           [
-            "In Quiet Camp, open Settings → Account & cloud progress and choose an available Google or Facebook sign-in option. The game opens the browser and shows a pairing code. Check that the code matches before continuing, then return to the game.",
-            "Start sign-in from the game so the browser can connect to the correct device session. Use your existing Google or Facebook account; this creates or opens a Quiet Camp game profile. Available options depend on your game version and eligibility."
+            "Choose the same Google or Facebook account in Quiet Camp. Supported Android versions can use native sign-in; older versions open the browser and show a pairing code. Both connect to the same game profile.",
+            "Use ordinary sign-in to open a profile already created on the website. Linking local guest progress to an identity that already has a game profile remains a separate action and does not merge profiles."
+          ]
+        ],
+        [
+          "Connect another sign-in method",
+          [
+            "In your account, choose Connect Google or Connect Facebook. Confirm the current account first, then authorize the additional method. An identity belonging to another profile cannot be silently merged. Matching email addresses alone do not link profiles."
           ]
         ],
         [
           "Restore progress and play offline",
           [
-            "Signing in normally restores an existing game profile. If you are linking local guest progress and the chosen identity already has a game profile, choose another account; the two profiles are not merged.",
-            "Without a connection, changes remain on the device. Account-based synchronization resumes when connected. If both local and cloud progress changed, the game asks which copy to keep."
+            "Website registration creates an empty profile. Game progress appears after you play and synchronize from the game. Offline changes stay on the device; a conflict between local and cloud copies needs your choice in the game."
           ]
         ],
         [
-          "Sign out or delete your game account",
+          "Sign out or delete your account",
           [
-            "Signing out keeps local progress and stops automatic synchronization for that session. For permanent removal of the cloud profile, use the account deletion page below."
+            "Website sign-out ends this browser session. Account deletion removes the Quiet Camp cloud profile, cloud save and all game and website sessions after identity verification and confirmation. Your Google/Facebook account and local device progress stay separate."
           ]
         ]
-      ]
+      ],
+      "openAccount": "Open my account"
     },
     "delete": {
       "title": "Delete your Quiet Camp account and cloud progress",
@@ -49,7 +56,7 @@
         [
           "What is deleted",
           [
-            "The procedure removes your Quiet Camp cloud profile, cloud progress and device-session records from the active game database, and removes the game’s Firebase Authentication profile."
+            "The procedure removes your Quiet Camp cloud profile, cloud progress and device-session records from the active game database, and removes the game’s Firebase Authentication profile. It also removes your website profile fields and website sessions."
           ]
         ],
         [
@@ -84,35 +91,42 @@
     "deleteLabel": "Видалити акаунт Quiet Camp",
     "account": {
       "title": "Акаунт Quiet Camp і хмарні збереження",
-      "intro": "Грайте локально або підключіть Google чи Facebook для збереження й відновлення прогресу Quiet Camp.",
+      "intro": "Один профіль Quiet Camp для сайту й гри: вхід, керування підключеними акаунтами та інформація про хмарний прогрес.",
       "sections": [
         [
-          "Гра без акаунта",
+          "Створення або відкриття профілю на сайті",
           [
-            "Анонімна гра зберігає прогрес лише на цьому пристрої й не створює анонімного хмарного акаунта. Щоб захистити прогрес на випадок зміни або втрати телефона, оберіть прив’язку акаунта у грі."
+            "Відкрийте кабінет кнопкою вище та продовжте з Google або Facebook. Перший успішний вхід створить профіль Quiet Camp без окремого пароля та без завантаження ігрового збереження.",
+            "У кабінеті можна змінити ім’я гостя, переглянути підключені способи входу й час останнього хмарного збереження, вийти з цього браузера або видалити акаунт."
           ]
         ],
         [
-          "Вхід і прив’язка прогресу",
+          "Той самий акаунт у грі",
           [
-            "У Quiet Camp відкрийте Settings → Account & cloud progress та оберіть доступний вхід через Google або Facebook. Гра відкриє браузер і покаже код зв’язування. Звірте код перед продовженням, а після входу поверніться у гру.",
-            "Починайте вхід із гри, щоб браузер підключився до правильної сесії пристрою. Використовується ваш наявний Google- або Facebook-акаунт; створюється чи відкривається ігровий профіль Quiet Camp. Доступність залежить від версії гри та застосовних умов."
+            "У Quiet Camp оберіть той самий Google- або Facebook-акаунт. Підтримувані Android-версії можуть використовувати нативний вхід; старіші відкривають браузер і показують код зв’язування. Обидва способи підключають той самий профіль гри.",
+            "Щоб відкрити профіль, уже створений на сайті, використовуйте звичайний вхід. Прив’язка локального гостьового прогресу до акаунта з наявним профілем залишається окремою дією та не об’єднує профілі."
+          ]
+        ],
+        [
+          "Додатковий спосіб входу",
+          [
+            "У кабінеті оберіть «Підключити Google» або «Підключити Facebook». Спочатку підтвердьте поточний акаунт, потім авторизуйте додатковий спосіб. Акаунт іншого профілю не об’єднується автоматично. Однакова пошта сама по собі не прив’язує профілі."
           ]
         ],
         [
           "Відновлення та гра без мережі",
           [
-            "Звичайний вхід відновлює наявний ігровий профіль. Якщо ви прив’язуєте локальний гостьовий прогрес, а обраний акаунт уже має профіль гри, потрібно обрати інший: два профілі не об’єднуються.",
-            "Без мережі зміни залишаються на пристрої. Синхронізація акаунта поновлюється після підключення. Якщо змінилися і локальна, і хмарна копії, гра пропонує обрати, яку залишити."
+            "Реєстрація на сайті створює порожній профіль. Прогрес з’явиться після гри й синхронізації з неї. Без мережі зміни залишаються на пристрої; у разі конфлікту локальної та хмарної копій вибір робиться у грі."
           ]
         ],
         [
           "Вихід або видалення",
           [
-            "Вихід залишає локальний прогрес і зупиняє автоматичну синхронізацію цієї сесії. Для остаточного видалення хмарного профілю відкрийте сторінку видалення акаунта нижче."
+            "Вихід на сайті завершує лише сесію цього браузера. Видалення акаунта після підтвердження особи й дії прибирає профіль Quiet Camp, хмарне збереження та всі сесії гри й сайту. Ваш Google/Facebook-акаунт і локальний прогрес на пристроях обробляються окремо."
           ]
         ]
-      ]
+      ],
+      "openAccount": "Відкрити мій кабінет"
     },
     "delete": {
       "title": "Видалення акаунта Quiet Camp і хмарного прогресу",
@@ -129,7 +143,7 @@
         [
           "Що видаляється",
           [
-            "Процедура прибирає хмарний профіль Quiet Camp, хмарний прогрес і записи сесій пристроїв з активної бази гри, а також профіль гри у Firebase Authentication."
+            "Процедура прибирає хмарний профіль Quiet Camp, хмарний прогрес і записи сесій пристроїв з активної бази гри, а також профіль гри у Firebase Authentication. Також видаляються поля профілю сайту та сесії сайту."
           ]
         ],
         [
@@ -164,35 +178,42 @@
     "deleteLabel": "Quiet-Camp-Konto löschen",
     "account": {
       "title": "Quiet Camp: Konto und Cloud-Spielstände",
-      "intro": "Spiele lokal oder verbinde Google oder Facebook, um deinen Quiet-Camp-Fortschritt zu speichern und wiederherzustellen.",
+      "intro": "Ein Quiet-Camp-Profil für Website und Spiel: anmelden, verknüpfte Konten verwalten und den Cloud-Spielstand finden.",
       "sections": [
         [
-          "Ohne Konto spielen",
+          "Profil auf der Website erstellen oder öffnen",
           [
-            "Anonymes Spielen speichert den Fortschritt nur auf diesem Gerät. Es wird kein anonymes Cloud-Konto erstellt. Verknüpfe im Spiel ein Konto, um den Fortschritt bei einem Gerätewechsel oder Verlust zu schützen."
+            "Öffne dein Konto über die Schaltfläche oben und fahre mit Google oder Facebook fort. Die erste erfolgreiche Anmeldung erstellt ein Quiet-Camp-Profil ohne eigenes Passwort und ohne einen Spielstand hochzuladen.",
+            "Im Kontobereich kannst du deinen Campernamen ändern, verknüpfte Anmeldemethoden und die letzte Cloud-Speicherung sehen, diesen Browser abmelden oder dein Konto löschen."
           ]
         ],
         [
-          "Anmelden und Fortschritt verknüpfen",
+          "Dasselbe Konto im Spiel verwenden",
           [
-            "Öffne in Quiet Camp Settings → Account & cloud progress und wähle eine verfügbare Anmeldung über Google oder Facebook. Das Spiel öffnet den Browser und zeigt einen Verbindungscode. Vergleiche den Code, bevor du fortfährst, und kehre danach zum Spiel zurück.",
-            "Starte die Anmeldung im Spiel, damit der Browser zur richtigen Gerätesitzung gehört. Du verwendest dein bestehendes Google- oder Facebook-Konto; erstellt oder geöffnet wird ein Quiet-Camp-Spielprofil. Verfügbare Optionen hängen von Spielversion und Zugangsvoraussetzungen ab."
+            "Wähle in Quiet Camp dasselbe Google- oder Facebook-Konto. Unterstützte Android-Versionen können die native Anmeldung nutzen; ältere Versionen öffnen den Browser und zeigen einen Verbindungscode. Beide Wege öffnen dasselbe Spielprofil.",
+            "Öffne ein bereits auf der Website erstelltes Profil mit der normalen Anmeldung. Die Verknüpfung lokalen Gastfortschritts mit einer Identität, die bereits ein Spielprofil hat, bleibt ein eigener Vorgang und führt keine Profile zusammen."
+          ]
+        ],
+        [
+          "Weitere Anmeldemethode verbinden",
+          [
+            "Wähle im Konto Google verknüpfen oder Facebook verknüpfen. Bestätige zuerst das bestehende Konto und autorisiere danach die weitere Methode. Eine Identität eines anderen Profils wird nicht stillschweigend zusammengeführt. Gleiche E-Mail-Adressen verknüpfen keine Profile."
           ]
         ],
         [
           "Wiederherstellen und offline spielen",
           [
-            "Eine normale Anmeldung stellt ein bestehendes Spielprofil wieder her. Wenn du lokalen Gastfortschritt verknüpfst und das ausgewählte Konto bereits ein Spielprofil hat, wähle ein anderes Konto. Die Profile werden nicht zusammengeführt.",
-            "Offline bleiben Änderungen auf dem Gerät. Die Kontosynchronisierung wird bei erneuter Verbindung fortgesetzt. Wenn sich beide Kopien geändert haben, fragt das Spiel, welche erhalten bleiben soll."
+            "Die Website-Registrierung erstellt ein leeres Profil. Fortschritt erscheint nach dem Spielen und Synchronisieren aus dem Spiel. Offline bleiben Änderungen auf dem Gerät. Bei einem Konflikt zwischen lokaler und Cloud-Kopie wählst du im Spiel die gewünschte Kopie."
           ]
         ],
         [
           "Abmelden oder Konto löschen",
           [
-            "Abmelden behält lokalen Fortschritt und beendet die automatische Synchronisierung dieser Sitzung. Zum dauerhaften Entfernen des Cloud-Profils öffne die unten verlinkte Seite zur Kontolöschung."
+            "Die Abmeldung auf der Website beendet nur diese Browsersitzung. Nach Identitätsprüfung und Bestätigung entfernt die Kontolöschung das Quiet-Camp-Profil, den Cloud-Spielstand sowie alle Spiel- und Website-Sitzungen. Google/Facebook-Konto und lokale Gerätespielstände bleiben getrennt."
           ]
         ]
-      ]
+      ],
+      "openAccount": "Mein Konto öffnen"
     },
     "delete": {
       "title": "Quiet-Camp-Konto und Cloud-Spielstand löschen",
@@ -209,7 +230,7 @@
         [
           "Was wird gelöscht?",
           [
-            "Der Vorgang entfernt dein Quiet-Camp-Cloud-Profil, Cloud-Spielstände und Gerätesitzungen aus der aktiven Spieldatenbank sowie das Firebase-Authentication-Profil des Spiels."
+            "Der Vorgang entfernt dein Quiet-Camp-Cloud-Profil, Cloud-Spielstände und Gerätesitzungen aus der aktiven Spieldatenbank sowie das Firebase-Authentication-Profil des Spiels. Auch Website-Profilfelder und Website-Sitzungen werden entfernt."
           ]
         ],
         [
