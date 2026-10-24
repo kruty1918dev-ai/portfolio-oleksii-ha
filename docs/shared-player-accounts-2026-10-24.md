@@ -39,3 +39,14 @@ Android chooser, credentials and mobile performance remain unverified.
 Owner instructions: Server/cloudflare/PLAYER-ACCOUNTS-UA.md in the game repo.
 Delivery includes a bundled Worker, new migration, guide and copyable Unity prompt.
 Do not publish a static portal link before its Worker service is ready.
+
+## Publication
+
+Website PR #8 was merged and published on 24 October 2026. Production HTTP
+checks passed for 12 account, game-policy, deletion-help and website-policy
+pages across en/uk/de. All account pages contain the matching localized portal
+link; all game-policy pages contain revision 11 and 14 sections. The owner
+reported completing the Worker/D1 setup, Google sign-in and UID-authorized owner
+access. Those privileged provider checks were not independently repeated from
+this environment. The matching server/policy source was merged in game PR #1.
+Native Unity sign-in remains to be implemented by the project agent.
