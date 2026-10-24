@@ -5,7 +5,7 @@
     "intro": "This notice covers visits to oleksiy-havryliuk.de and correspondence with its developer. Processing inside Quiet Camp is covered by the separate game privacy policy.",
     "toc": "In this notice",
     "updated": "Last updated",
-    "date": "23 October 2026",
+    "date": "24 October 2026",
     "status": "",
     "noticeTitle": "",
     "notice": "",
@@ -32,15 +32,16 @@
         "id": "browser",
         "title": "Cookies, local storage and external links",
         "paragraphs": [
-          "The website does not use visitor analytics, advertising, tracking cookies or localStorage, and it does not write persistent preferences or visitor identifiers to your browser. Your browser may cache downloaded page assets under its own settings. Fonts and images are served from this domain. There are no embedded social feeds or automatically loaded external videos. The image viewer keeps its current selection in memory only. Page content, navigation and document links work without JavaScript.",
-          "No tracking-consent banner is needed for the current website because no optional tracking is implemented. Website settings do not control consent in Quiet Camp. An email link opens your mail application. An external link connects to the selected service only when you follow it; that service has its own privacy practices."
+          "The informational website does not use visitor analytics, advertising, tracking cookies or localStorage. Fonts and images are served from this domain; no social feed or external video loads automatically. The image viewer keeps its selection in memory, and informational content and document links work without JavaScript. Following the optional account link opens the developer-operated Quiet Camp account service on Cloudflare, which requires JavaScript for sign-in and profile actions.",
+          "No tracking-consent banner is needed for the current website because no optional tracking is implemented. Website settings do not control consent in Quiet Camp. An email link opens your mail application. An external link connects to the selected service only when you follow it; that service has its own privacy practices.",
+          "In the optional account service, your requested Google/Facebook sign-in connects the same Quiet Camp profile used in the game. Processing covers the verified Firebase user ID, provider-supplied email where available, camper name, connected providers and account/save timestamps. A necessary Secure, HttpOnly, SameSite=Strict cookie (__Host-qc_account) lasts up to one hour, with only its hash stored on the server; authentication state in the page is memory-only. Provider services may use necessary authentication storage. Requested account functions rely on Article 6(1)(b) GDPR where contractual, proportionate security on Article 6(1)(f), and necessary device storage on §25(2) TDDDG where applicable. This does not enable Analytics or advertising tracking. The game privacy policy describes the shared account, restricted owner directory, retention and deletion."
         ]
       },
       {
         "id": "messages",
         "title": "Contact and correspondence",
         "paragraphs": [
-          "If you contact the developer, your email address, message, attachments and email metadata are processed to answer your request. Game support uses <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a> and privacy enquiries use <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. These domain mailboxes receive messages through STRATO mail infrastructure. General enquiries can also be sent to <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, which uses Google Gmail. There is no contact form or public user account.",
+          "If you contact the developer, your email address, message, attachments and email metadata are processed to answer your request. Game support uses <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a> and privacy enquiries use <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. These domain mailboxes receive messages through STRATO mail infrastructure. General enquiries can also be sent to <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, which uses Google Gmail. There is no contact form. The optional Quiet Camp account area is described above.",
           "Ordinary correspondence is based on Article 6(1)(f) GDPR, for the legitimate interest in responding to enquiries. Article 6(1)(b) applies to communication necessary for a contract or steps you request before a contract. Article 6(1)(c) applies to handling statutory data-rights requests and other legal obligations. Please send only the information needed to resolve your enquiry."
         ]
       },
@@ -49,7 +50,8 @@
         "title": "Recipients and international processing",
         "paragraphs": [
           "Recipients are the developer and the hosting or email providers needed for the relevant service. Their information is available from <a href=\"https://vercel.com/legal/privacy-notice\">Vercel</a>, <a href=\"https://www.strato.de/datenschutz/\">STRATO</a> and <a href=\"https://policies.google.com/privacy\">Google</a>. Data is not sold by the developer. The website does not create marketing profiles or make solely automated decisions with legal or similarly significant effects.",
-          "Vercel operates a global delivery network, and hosting or Google email processing can involve countries outside the EEA, including the United States. The applicable service terms describe the provider’s role and transfer arrangements. Vercel publishes its <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> and <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>; where applicable, protection can include an adequacy decision for an eligible recipient or standard contractual clauses. Contact the privacy address for information about the safeguards relevant to your request. There is no promise of EEA-only processing."
+          "Vercel operates a global delivery network, and hosting or Google email processing can involve countries outside the EEA, including the United States. The applicable service terms describe the provider’s role and transfer arrangements. Vercel publishes its <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> and <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>; where applicable, protection can include an adequacy decision for an eligible recipient or standard contractual clauses. Contact the privacy address for information about the safeguards relevant to your request. There is no promise of EEA-only processing.",
+          "The optional website account area uses the same Firebase user identifier as the game. A first sign-in can create a profile without a game save. The service stores your camper name, an email address if supplied by the verified sign-in provider, connected Google/Facebook provider identifiers, account identifiers, creation and activity times and cloud-save metadata. You can edit the camper name. Only provider-verified identities are linked; matching email addresses do not merge profiles. The owner can view these minimal account fields in a restricted directory for account operation, security and support; that directory does not expose save contents, passwords or session tokens. The profile and its requested functions use the account/security bases described above, not advertising or Analytics consent."
         ]
       },
       {
@@ -57,7 +59,8 @@
         "title": "How long information is kept",
         "paragraphs": [
           "Connection data is processed for delivery and for as long as necessary for service operation, security and investigation of specific incidents. The website has no separate visitor database. Host-side logs and recovery copies follow the hosting service’s applicable retention arrangements; a single deletion deadline cannot be promised for every infrastructure record.",
-          "Correspondence is retained while the enquiry is being handled and afterwards only as necessary to meet a legal retention duty or establish, exercise or defend legal claims. The relevant criteria are the nature of the enquiry, outstanding obligations and applicable statutory periods. When those purposes end, the corresponding records are deleted or restricted. You may request information or deletion through the privacy address. Please identify the relevant correspondence; an email address alone may not identify a technical hosting record."
+          "Correspondence is retained while the enquiry is being handled and afterwards only as necessary to meet a legal retention duty or establish, exercise or defend legal claims. The relevant criteria are the nature of the enquiry, outstanding obligations and applicable statutory periods. When those purposes end, the corresponding records are deleted or restricted. You may request information or deletion through the privacy address. Please identify the relevant correspondence; an email address alone may not identify a technical hosting record.",
+          "Account deletion also removes profile name/email/provider fields and all website sessions from the active database. It requires fresh identity proof and explicit confirmation, whether initiated on the website or in a supported native game version. A minimal Firebase-ID deletion marker prevents concurrent sign-ins from recreating data: it remains while failed provider cleanup is retried and is eligible for daily cleanup 24 hours after confirmed provider deletion. The marker contains no email or game progress. Expired website-session hashes are removed by daily cleanup. Temporary browser handoff metadata expires with its ten-minute request. These controls do not erase local device copies or applicable provider backups automatically."
         ]
       },
       {
@@ -76,7 +79,8 @@
           "This notice is updated when relevant data practices or legal requirements change. The date identifies the current version. Processing inside the game is described separately in the <a href=\"/quiet-camp/privacy\">Quiet Camp privacy policy</a>."
         ]
       }
-    ]
+    ],
+    "dateISO": "2026-10-24"
   },
   "uk": {
     "title": "Приватність на сайті",
@@ -84,7 +88,7 @@
     "intro": "Цей документ стосується відвідування oleksiy-havryliuk.de та листування з розробником. Обробку даних у Quiet Camp описано в окремій політиці гри.",
     "toc": "У цьому документі",
     "updated": "Останнє оновлення",
-    "date": "23 жовтня 2026 року",
+    "date": "24 жовтня 2026 року",
     "status": "",
     "noticeTitle": "",
     "notice": "",
@@ -111,15 +115,16 @@
         "id": "browser",
         "title": "Cookies, локальне зберігання й зовнішні посилання",
         "paragraphs": [
-          "Сайт не використовує аналітику відвідувачів, рекламу, cookies для відстеження чи localStorage та не записує постійні налаштування або ідентифікатори відвідувача у браузер. Браузер може кешувати завантажені ресурси сторінки відповідно до власних налаштувань. Шрифти й зображення завантажуються з цього домену. Немає вбудованих соціальних стрічок чи зовнішнього відео, що завантажується автоматично. Переглядач зображень тримає поточний вибір лише в пам’яті. Вміст, навігація й посилання на документи працюють без JavaScript.",
-          "Для поточного сайту банер згоди на відстеження не потрібен, оскільки необов’язкового відстеження немає. Налаштування сайту не керують згодою у Quiet Camp. Поштове посилання відкриває вашу поштову програму. Зовнішній сервіс отримує з’єднання після переходу за його посиланням і застосовує власні правила приватності."
+          "Інформаційний сайт не використовує аналітику відвідувачів, рекламу, cookies для відстеження чи localStorage. Шрифти й зображення завантажуються з цього домену; соціальні стрічки та зовнішнє відео автоматично не завантажуються. Переглядач зображень тримає вибір у пам’яті, а інформація й посилання на документи працюють без JavaScript. Необов’язкове посилання на кабінет відкриває сервіс акаунтів Quiet Camp розробника на Cloudflare; для входу та дій із профілем потрібен JavaScript.",
+          "Для поточного сайту банер згоди на відстеження не потрібен, оскільки необов’язкового відстеження немає. Налаштування сайту не керують згодою у Quiet Camp. Поштове посилання відкриває вашу поштову програму. Зовнішній сервіс отримує з’єднання після переходу за його посиланням і застосовує власні правила приватності.",
+          "У необов’язковому кабінеті запитаний вами вхід Google/Facebook підключає той самий профіль Quiet Camp, що й гра. Обробляються перевірений Firebase ID, пошта від провайдера за наявності, ім’я гостя, підключені способи входу та часові позначки акаунта й збереження. Необхідний cookie __Host-qc_account з параметрами Secure, HttpOnly і SameSite=Strict діє до однієї години; сервер зберігає лише хеш. Стан авторизації сторінки тримається в пам’яті. Провайдери можуть використовувати необхідне сховище входу. Запитані функції акаунта спираються на ст. 6(1)(b) GDPR за договірної підстави, пропорційний захист — на ст. 6(1)(f), необхідне сховище пристрою — на §25(2) TDDDG, де застосовно. Це не вмикає аналітику чи рекламне відстеження. Спільний профіль, закритий список власника, строки й видалення описані в політиці гри."
         ]
       },
       {
         "id": "messages",
         "title": "Звернення й листування",
         "paragraphs": [
-          "Якщо ви пишете розробнику, ваша адреса, повідомлення, вкладення й метадані листа обробляються для відповіді. Підтримка гри: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, запити щодо приватності: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Ці доменні скриньки отримують листи через поштову інфраструктуру STRATO. Загальні звернення також можна надсилати на <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, що працює через Google Gmail. Контактної форми та публічних облікових записів на сайті немає.",
+          "Якщо ви пишете розробнику, ваша адреса, повідомлення, вкладення й метадані листа обробляються для відповіді. Підтримка гри: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, запити щодо приватності: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Ці доменні скриньки отримують листи через поштову інфраструктуру STRATO. Загальні звернення також можна надсилати на <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a>, що працює через Google Gmail. Контактної форми немає. Необов’язковий кабінет Quiet Camp описаний вище.",
           "Звичайне листування ґрунтується на статті 6(1)(f) GDPR — законному інтересі відповідати на звернення. Стаття 6(1)(b) застосовується до необхідного договірного або запитаного вами переддоговірного спілкування. Стаття 6(1)(c) — до виконання запитів щодо законних прав на дані та інших юридичних обов’язків. Надсилайте лише необхідну для звернення інформацію."
         ]
       },
@@ -128,7 +133,8 @@
         "title": "Одержувачі й міжнародна обробка",
         "paragraphs": [
           "Одержувачі — розробник і постачальники хостингу чи пошти, необхідні для відповідного сервісу. Їхня інформація доступна у <a href=\"https://vercel.com/legal/privacy-notice\">Vercel</a>, <a href=\"https://www.strato.de/datenschutz/\">STRATO</a> та <a href=\"https://policies.google.com/privacy\">Google</a>. Розробник не продає дані. Сайт не створює маркетингових профілів і не приймає виключно автоматизованих рішень із юридичними або подібними істотними наслідками.",
-          "Глобальна мережа Vercel та обробка хостингу чи Google-пошти можуть охоплювати країни поза ЄЕЗ, зокрема США. Роль постачальника й умови передачі описані в застосовних умовах сервісу. Vercel публікує <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> та перелік <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>; де застосовно, захист може ґрунтуватися на рішенні про належний захист для відповідного одержувача або стандартних договірних положеннях. Інформацію про гарантії щодо вашого запиту можна отримати за адресою приватності. Обробка виключно в ЄЕЗ не обіцяється."
+          "Глобальна мережа Vercel та обробка хостингу чи Google-пошти можуть охоплювати країни поза ЄЕЗ, зокрема США. Роль постачальника й умови передачі описані в застосовних умовах сервісу. Vercel публікує <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> та перелік <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>; де застосовно, захист може ґрунтуватися на рішенні про належний захист для відповідного одержувача або стандартних договірних положеннях. Інформацію про гарантії щодо вашого запиту можна отримати за адресою приватності. Обробка виключно в ЄЕЗ не обіцяється.",
+          "Необов’язковий кабінет на сайті використовує той самий ідентифікатор Firebase, що й гра. Перший вхід може створити профіль без ігрового збереження. Сервіс зберігає ім’я гостя, пошту за наявності від перевіреного провайдера входу, підключені способи Google/Facebook, ідентифікатори акаунта, час створення й активності та метадані хмарного збереження. Ім’я гостя можна змінити. Прив’язуються лише підтверджені провайдером ідентичності; однакова пошта не об’єднує профілі. Власник може переглядати ці мінімальні поля у закритому списку для роботи акаунтів, захисту й підтримки; список не показує вміст збережень, паролі чи токени сесій. Застосовуються описані вище підстави запитаних функцій акаунта й захисту, а не згода на рекламу чи аналітику."
         ]
       },
       {
@@ -136,7 +142,8 @@
         "title": "Строки зберігання",
         "paragraphs": [
           "Дані з’єднання обробляються для доставки та стільки, скільки потрібно для роботи сервісу, безпеки й розслідування конкретних інцидентів. Окремої бази відвідувачів сайт не має. Журнали й відновлювальні копії на стороні хостингу підпорядковуються відповідним правилам сервісу; єдиний строк видалення для всіх інфраструктурних записів не обіцяється.",
-          "Листування зберігається під час розгляду звернення, а після нього — лише доки це потрібно для законного обов’язку зберігання або заявлення, здійснення чи захисту правових вимог. Критерії — характер звернення, невиконані зобов’язання та застосовні законні строки. Коли ці цілі припиняються, відповідні записи видаляються або їх обробка обмежується. Запитати інформацію чи видалення можна за адресою приватності. Укажіть потрібне листування: самої email-адреси може бути недостатньо для пошуку технічного запису хостингу."
+          "Листування зберігається під час розгляду звернення, а після нього — лише доки це потрібно для законного обов’язку зберігання або заявлення, здійснення чи захисту правових вимог. Критерії — характер звернення, невиконані зобов’язання та застосовні законні строки. Коли ці цілі припиняються, відповідні записи видаляються або їх обробка обмежується. Запитати інформацію чи видалення можна за адресою приватності. Укажіть потрібне листування: самої email-адреси може бути недостатньо для пошуку технічного запису хостингу.",
+          "Видалення акаунта також прибирає поля імені, пошти, провайдерів і всі сесії сайту з активної бази. Потрібні свіже підтвердження особи й явне підтвердження дії на сайті або в підтримуваній нативній версії гри. Мінімальна позначка з Firebase ID не дає паралельним входам створити дані повторно: вона залишається на час повторення невдалого очищення провайдера та підлягає щоденному очищенню через 24 години після підтвердженого видалення у провайдера. Позначка не містить пошти чи ігрового прогресу. Прострочені хеші сесій сайту прибирає щоденне очищення. Тимчасові метадані браузерного входу діють разом із десятихвилинною заявкою. Це автоматично не стирає локальні копії та застосовні резервні копії провайдерів."
         ]
       },
       {
@@ -155,7 +162,8 @@
           "Документ оновлюється при зміні відповідних практик або вимог законодавства. Дата позначає поточну версію. Обробку всередині гри окремо описує <a href=\"/quiet-camp/privacy/uk\">політика конфіденційності Quiet Camp</a>."
         ]
       }
-    ]
+    ],
+    "dateISO": "2026-10-24"
   },
   "de": {
     "title": "Datenschutz auf dieser Website",
@@ -163,7 +171,7 @@
     "intro": "Diese Erklärung gilt für Besuche auf oleksiy-havryliuk.de und die Korrespondenz mit dem Entwickler. Für die Datenverarbeitung in Quiet Camp gilt die gesonderte Datenschutzerklärung des Spiels.",
     "toc": "In dieser Erklärung",
     "updated": "Zuletzt aktualisiert",
-    "date": "23. Oktober 2026",
+    "date": "24. Oktober 2026",
     "status": "",
     "noticeTitle": "",
     "notice": "",
@@ -190,15 +198,16 @@
         "id": "browser",
         "title": "Cookies, Browserspeicher und externe Links",
         "paragraphs": [
-          "Die Website verwendet keine Besucheranalyse, Werbung, Tracking-Cookies oder localStorage und speichert keine dauerhaften Einstellungen oder Besucherkennungen in Ihrem Browser. Ihr Browser kann geladene Seitenressourcen gemäß seinen eigenen Einstellungen zwischenspeichern. Schriftdateien und Bilder werden von dieser Domain geladen. Es gibt keine eingebetteten Social-Media-Feeds oder automatisch geladenen externen Videos. Der Bildbetrachter hält seine Auswahl ausschließlich im Arbeitsspeicher. Inhalte, Navigation und Dokumentlinks funktionieren ohne JavaScript.",
-          "Ein Tracking-Einwilligungsbanner ist für die aktuelle Website nicht erforderlich, da kein optionales Tracking eingesetzt wird. Website-Einstellungen steuern keine Einwilligungen in Quiet Camp. Ein E-Mail-Link öffnet Ihr E-Mail-Programm. Erst beim Aufruf eines externen Links verbindet sich Ihr Browser mit dem gewählten Dienst; dafür gelten dessen Datenschutzinformationen."
+          "Die Informationswebsite verwendet keine Besucheranalyse, Werbung, Tracking-Cookies oder localStorage. Schriften und Bilder stammen von dieser Domain. Social-Media-Feeds und externe Videos werden nicht automatisch geladen. Der Bildbetrachter hält die Auswahl im Arbeitsspeicher; Informationen und Dokumentlinks funktionieren ohne JavaScript. Der optionale Kontolink öffnet den vom Entwickler betriebenen Quiet-Camp-Kontodienst auf Cloudflare. Anmeldung und Profilaktionen benötigen dort JavaScript.",
+          "Ein Tracking-Einwilligungsbanner ist für die aktuelle Website nicht erforderlich, da kein optionales Tracking eingesetzt wird. Website-Einstellungen steuern keine Einwilligungen in Quiet Camp. Ein E-Mail-Link öffnet Ihr E-Mail-Programm. Erst beim Aufruf eines externen Links verbindet sich Ihr Browser mit dem gewählten Dienst; dafür gelten dessen Datenschutzinformationen.",
+          "Im optionalen Kontobereich verbindet die angeforderte Google/Facebook-Anmeldung dasselbe Quiet-Camp-Profil wie im Spiel. Verarbeitet werden geprüfte Firebase-ID, gegebenenfalls vom Anbieter gelieferte E-Mail, Campername, verknüpfte Anmeldemethoden und Konto-/Spielstandzeitpunkte. Das erforderliche Secure-, HttpOnly- und SameSite=Strict-Cookie __Host-qc_account gilt höchstens eine Stunde; serverseitig wird nur sein Hash gespeichert. Der Anmeldestatus der Seite bleibt im Arbeitsspeicher. Anmeldedienste können erforderliche Authentifizierungsspeicher nutzen. Angeforderte Kontofunktionen beruhen bei vertraglicher Grundlage auf Art. 6 Abs. 1 lit. b DSGVO, angemessene Sicherheit auf lit. f und erforderlicher Gerätespeicher gegebenenfalls auf §25 Abs. 2 TDDDG. Dies aktiviert keine Analyse oder Werbeverfolgung. Das gemeinsame Profil, die beschränkte Betreiberübersicht, Aufbewahrung und Löschung beschreibt die Spiel-Datenschutzerklärung."
         ]
       },
       {
         "id": "messages",
         "title": "Kontakt und Korrespondenz",
         "paragraphs": [
-          "Wenn Sie den Entwickler anschreiben, werden E-Mail-Adresse, Nachricht, Anhänge und E-Mail-Metadaten zur Beantwortung verarbeitet. Spiel-Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, Datenschutzanfragen: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Diese Domain-Postfächer empfangen Nachrichten über die STRATO-Mailinfrastruktur. Allgemeine Anfragen können auch an <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a> über Google Gmail gerichtet werden. Ein Kontaktformular oder öffentliche Nutzerkonten gibt es nicht.",
+          "Wenn Sie den Entwickler anschreiben, werden E-Mail-Adresse, Nachricht, Anhänge und E-Mail-Metadaten zur Beantwortung verarbeitet. Spiel-Support: <a href=\"mailto:support@oleksiy-havryliuk.de\">support@oleksiy-havryliuk.de</a>, Datenschutzanfragen: <a href=\"mailto:privacy@oleksiy-havryliuk.de\">privacy@oleksiy-havryliuk.de</a>. Diese Domain-Postfächer empfangen Nachrichten über die STRATO-Mailinfrastruktur. Allgemeine Anfragen können auch an <a href=\"mailto:oleksiy.havryliuk@gmail.com\">oleksiy.havryliuk@gmail.com</a> über Google Gmail gerichtet werden. Ein Kontaktformular gibt es nicht. Der optionale Quiet-Camp-Kontobereich ist oben beschrieben.",
           "Gewöhnliche Korrespondenz beruht auf Artikel 6 Absatz 1 Buchstabe f DSGVO, dem berechtigten Interesse an der Beantwortung von Anfragen. Buchstabe b gilt für notwendige Vertragskommunikation oder von Ihnen gewünschte vorvertragliche Maßnahmen. Buchstabe c gilt für gesetzliche Datenschutzanfragen und andere rechtliche Pflichten. Bitte übermitteln Sie nur die für Ihr Anliegen erforderlichen Informationen."
         ]
       },
@@ -207,7 +216,8 @@
         "title": "Empfänger und internationale Verarbeitung",
         "paragraphs": [
           "Empfänger sind der Entwickler sowie die für den jeweiligen Dienst erforderlichen Hosting- oder E-Mail-Anbieter. Anbieterinformationen finden Sie bei <a href=\"https://vercel.com/legal/privacy-notice\">Vercel</a>, <a href=\"https://www.strato.de/datenschutz/\">STRATO</a> und <a href=\"https://policies.google.com/privacy\">Google</a>. Der Entwickler verkauft keine Daten. Die Website erstellt keine Marketingprofile und trifft keine ausschließlich automatisierten Entscheidungen mit rechtlicher oder vergleichbar erheblicher Wirkung.",
-          "Vercels weltweites Auslieferungsnetz sowie Hosting oder Google-E-Mail können Länder außerhalb des EWR einschließlich der USA einbeziehen. Die geltenden Dienstbedingungen beschreiben die Rolle des Anbieters und die Übermittlungsregelungen. Vercel veröffentlicht das <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> und die Liste der <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>. Soweit anwendbar, können Garantien auf einem Angemessenheitsbeschluss für einen berechtigten Empfänger oder Standardvertragsklauseln beruhen. Informationen zu den für Ihre Anfrage einschlägigen Garantien erhalten Sie über die Datenschutzadresse. Eine ausschließlich im EWR stattfindende Verarbeitung wird nicht zugesagt."
+          "Vercels weltweites Auslieferungsnetz sowie Hosting oder Google-E-Mail können Länder außerhalb des EWR einschließlich der USA einbeziehen. Die geltenden Dienstbedingungen beschreiben die Rolle des Anbieters und die Übermittlungsregelungen. Vercel veröffentlicht das <a href=\"https://vercel.com/legal/dpa\">Vercel Data Processing Addendum</a> und die Liste der <a href=\"https://vercel.com/legal/sub-processors\">Vercel subprocessors</a>. Soweit anwendbar, können Garantien auf einem Angemessenheitsbeschluss für einen berechtigten Empfänger oder Standardvertragsklauseln beruhen. Informationen zu den für Ihre Anfrage einschlägigen Garantien erhalten Sie über die Datenschutzadresse. Eine ausschließlich im EWR stattfindende Verarbeitung wird nicht zugesagt.",
+          "Der optionale Website-Kontobereich verwendet dieselbe Firebase-Nutzerkennung wie das Spiel. Die erste Anmeldung kann ein Profil ohne Spielstand erstellen. Gespeichert werden Campername, eine vom geprüften Anmeldedienst bereitgestellte E-Mail-Adresse, verbundene Google/Facebook-Anmeldemethoden, Kontokennungen, Erstellungs- und Aktivitätszeiten sowie Metadaten des Cloud-Spielstands. Der Campername ist änderbar. Nur durch den Anbieter bestätigte Identitäten werden verknüpft; gleiche E-Mail-Adressen führen keine Profile zusammen. Der Betreiber kann diese minimalen Felder in einer zugangsbeschränkten Übersicht für Kontobetrieb, Sicherheit und Support sehen. Diese zeigt keine Spielstandinhalte, Passwörter oder Sitzungstoken. Es gelten die oben beschriebenen Konto- und Sicherheitsgrundlagen, keine Werbe- oder Analyseeinwilligung."
         ]
       },
       {
@@ -215,7 +225,8 @@
         "title": "Speicherdauer",
         "paragraphs": [
           "Verbindungsdaten werden zur Auslieferung und so lange verarbeitet, wie dies für Betrieb, Sicherheit und die Untersuchung konkreter Vorfälle erforderlich ist. Die Website führt keine gesonderte Besucherdatenbank. Hostseitige Protokolle und Wiederherstellungskopien unterliegen den einschlägigen Aufbewahrungsregelungen des Hostingdienstes; es gibt keine einheitliche zugesagte Löschfrist für sämtliche Infrastrukturdatensätze.",
-          "Korrespondenz wird während der Bearbeitung und anschließend nur aufbewahrt, soweit dies für gesetzliche Aufbewahrungspflichten oder die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist. Maßgeblich sind Art der Anfrage, offene Pflichten und anwendbare gesetzliche Fristen. Entfallen diese Zwecke, werden die betreffenden Daten gelöscht oder ihre Verarbeitung eingeschränkt. Auskunft oder Löschung können Sie über die Datenschutzadresse beantragen. Benennen Sie bitte die betreffende Korrespondenz; allein eine E-Mail-Adresse identifiziert möglicherweise keinen technischen Hostingdatensatz."
+          "Korrespondenz wird während der Bearbeitung und anschließend nur aufbewahrt, soweit dies für gesetzliche Aufbewahrungspflichten oder die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist. Maßgeblich sind Art der Anfrage, offene Pflichten und anwendbare gesetzliche Fristen. Entfallen diese Zwecke, werden die betreffenden Daten gelöscht oder ihre Verarbeitung eingeschränkt. Auskunft oder Löschung können Sie über die Datenschutzadresse beantragen. Benennen Sie bitte die betreffende Korrespondenz; allein eine E-Mail-Adresse identifiziert möglicherweise keinen technischen Hostingdatensatz.",
+          "Die Kontolöschung entfernt auch Profilname, E-Mail, Anbieterfelder und alle Website-Sitzungen aus der aktiven Datenbank. Sie erfordert eine frische Identitätsprüfung und ausdrückliche Bestätigung auf der Website oder in unterstützten nativen Spielversionen. Ein minimaler Firebase-ID-Löschvermerk verhindert, dass parallele Anmeldungen Daten neu anlegen. Er bleibt während Wiederholungen fehlgeschlagener Anbieterbereinigung bestehen und wird 24 Stunden nach bestätigter Anbieterlöschung für die tägliche Bereinigung fällig. Der Vermerk enthält weder E-Mail noch Spielfortschritt. Abgelaufene Website-Sitzungshashes werden täglich bereinigt. Temporäre Browser-Anmeldemetadaten laufen mit der zehnminütigen Anfrage ab. Lokale Kopien und einschlägige Anbietersicherungen werden dadurch nicht automatisch gelöscht."
         ]
       },
       {
@@ -234,6 +245,7 @@
           "Diese Erklärung wird bei relevanten Änderungen der Datenverarbeitung oder rechtlicher Anforderungen aktualisiert. Das Datum kennzeichnet die geltende Fassung. Für die Verarbeitung im Spiel gilt die gesonderte <a href=\"/quiet-camp/privacy/de\">Datenschutzerklärung von Quiet Camp</a>."
         ]
       }
-    ]
+    ],
+    "dateISO": "2026-10-24"
   }
 }

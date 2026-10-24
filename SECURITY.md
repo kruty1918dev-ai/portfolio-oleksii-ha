@@ -29,3 +29,10 @@ This information will help us triage your report more quickly.
 ## Policy
 
 See [GitHub's Safe Harbor Policy](https://docs.github.com/en/site-policy/security-policies/github-bug-bounty-program-legal-safe-harbor#1-safe-harbor-terms)
+
+The optional Quiet Camp account portal is a separate same-origin Cloudflare
+Worker service linked from the static website. It uses Firebase social identity,
+server-side UID authorization, an HttpOnly/Secure/SameSite=Strict session cookie,
+nonce CSP and noindex/no-store documents. Website static hosting does not receive
+provider credentials, private admin allow-lists or session cookies. The Worker
+and D1 migration must be published before the website's new portal link.

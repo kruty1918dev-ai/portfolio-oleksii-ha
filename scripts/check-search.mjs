@@ -31,7 +31,10 @@ for(const route of routes){
   assert(!html.includes('/v1/cloud/delete-federated'),route.path+' no automatic destructive API request');
   assert(html.includes('privacy@oleksiy-havryliuk.de'),route.path+' account access fallback');
  }
- if(route.slug==='quiet-camp/account')assert(!html.includes('href="https://quietcamp-access.oleksiy-havryliuk.workers.dev/v1/cloud/login"'),route.path+' sign-in must start with game handoff');
+ if(route.slug==='quiet-camp/account'){
+  assert(html.includes('href="https://quietcamp-access.oleksiy-havryliuk.workers.dev/v1/cloud/account?lang='+route.lang+'"'),route.path+' localized account portal');
+  assert(!html.includes('/v1/cloud/login#'),route.path+' no static device ticket');
+ }
  if(route.slug==='quiet-camp'&&route.lang==='uk')assert(html.includes('Квіт Кемп'),route.path+' natural localized game name');
 }
 assert.equal(structured,12);
