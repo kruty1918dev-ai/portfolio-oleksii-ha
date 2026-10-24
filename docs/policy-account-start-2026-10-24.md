@@ -1,5 +1,8 @@
 # Final first-run direction: privacy panel, then account
 
+The first-run direction remains current. Advertising/data-choice disclosures
+were subsequently updated in revision 10; see `ads-privacy-choices-2026-10-24.md`.
+
 Revision `2026-10-24.public-policy-9-policy-account-start` supersedes revision 8.
 The owner explicitly rejected age questions and age-group selection. The requested
 entry flow is the privacy acknowledgement panel, optional Google/Facebook/local
