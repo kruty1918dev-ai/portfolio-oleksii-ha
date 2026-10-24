@@ -15,10 +15,10 @@ const [routes,config,data,policy,websitePolicy,controller,media,selection]=await
 const domain=data.profile.domain;
 assert.equal(new URL(domain).protocol,'https:','Public canonical origin must use HTTPS');
 const known=new Map(routes.map(r=>[r.path,r]));
-assert.equal(routes.length,33,'The complete site needs 11 routes in all three languages');
+assert.equal(routes.length,39,'The complete site needs 13 routes in all three languages');
 assert.equal(known.size,routes.length,'Duplicate routes');
-assert.equal(routes.length,(8+data.projects.length)*3,'Every project and core page needs all languages');
-const expectedSlugs=['','games','portfolio','about','quiet-camp','moyva','fun-and-ball','quiet-camp/legal','impressum','privacy','quiet-camp/privacy'];
+assert.equal(routes.length,(10+data.projects.length)*3,'Every project and core page needs all languages');
+const expectedSlugs=['','games','portfolio','about','quiet-camp','moyva','fun-and-ball','quiet-camp/legal','quiet-camp/account','quiet-camp/delete-account','impressum','privacy','quiet-camp/privacy'];
 for(const slug of expectedSlugs)for(const lang of ['en','uk','de']){
  const target='/'+[slug,...(lang==='en'?[]:[lang])].filter(Boolean).join('/');
  assert(known.has(target),`Missing translated route ${target}`);
@@ -84,9 +84,10 @@ function checkShell(html,label){
  assert(tags(html,'a').some(tag=>hasClass(tag,'skip')&&tag.href==='#main'),label+' skip link');
  assert(tags(html,'details').some(tag=>hasClass(tag,'mobile-menu')),label+' native mobile menu');
  assert(tags(html,'link').some(tag=>tag.rel==='stylesheet'&&tag.href==='/assets/site.css'),label+' shared stylesheet');
- const scripts=tags(html,'script');
- assert.equal(scripts.length,1,label+' only the shared progressive-interaction script');
- assert(scripts[0].src==='/assets/site.js'&&Object.hasOwn(scripts[0],'defer'),label+' shared deferred site.js');
+ const scripts=tags(html,'script'),executable=scripts.filter(tag=>tag.type!=='application/ld+json');
+ assert.equal(executable.length,1,label+' only the shared progressive-interaction script');
+ assert(executable[0].src==='/assets/site.js'&&Object.hasOwn(executable[0],'defer'),label+' shared deferred site.js');
+ assert(scripts.filter(tag=>tag.type==='application/ld+json').every(tag=>!tag.src),label+' structured data is local static JSON');
  assert(tags(html,'link').filter(tag=>tag.rel==='stylesheet').every(tag=>tag.href.startsWith('/assets/')),label+' external stylesheet or font');
  assert(!tags(html,'video').some(tag=>Object.hasOwn(tag,'autoplay')),label+' automatic video');
  assert(!/\{\{\s*(?:legalName|publicName|postalAddress|ukrainianName|privacyEmail|supportEmail|brand|country)\s*\}\}/.test(html),label+' unresolved controller tokens');

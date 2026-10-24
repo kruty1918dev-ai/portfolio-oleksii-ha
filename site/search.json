@@ -1,0 +1,104 @@
+{
+  "en": {
+    "": {
+      "title": "Kruty1918 Games — Quiet Camp & Unity Games",
+      "description": "Official site of independent developer Oleksiy Havryliuk: Quiet Camp campsite puzzles, Unity game projects, player support, privacy and account deletion."
+    },
+    "quiet-camp": {
+      "title": "Quiet Camp — Cozy Campsite Logic Puzzles",
+      "description": "Discover Quiet Camp by Kruty1918 Games. Place tents, keep paths open and meet campers’ wishes. Find game information, support and account help."
+    },
+    "games": {
+      "title": "Games by Kruty1918 Games",
+      "description": "Explore Quiet Camp, Moyva and Fun and Ball: independent games and Unity projects by developer Oleksiy Havryliuk."
+    },
+    "portfolio": {
+      "title": "Game Development Portfolio — Oleksiy Havryliuk",
+      "description": "Unity games, C# tools and game development projects by Oleksiy Havryliuk, the independent developer behind Kruty1918 Games."
+    },
+    "about": {
+      "title": "Oleksiy Havryliuk — Independent Game Developer",
+      "description": "Meet Oleksiy Havryliuk, the developer behind Kruty1918 Games and Quiet Camp. Find his Unity projects and contact details."
+    },
+    "quiet-camp/legal": {
+      "title": "Quiet Camp Support, Privacy & Account Help",
+      "description": "Find Quiet Camp player support, privacy documents, cloud account help and the account deletion form. Contact Kruty1918 Games."
+    },
+    "quiet-camp/account": {
+      "title": "Quiet Camp Account & Cloud Saves",
+      "description": "How to sign in with Google or Facebook in Quiet Camp, link guest progress, restore cloud saves and find account deletion."
+    },
+    "quiet-camp/delete-account": {
+      "title": "Delete Quiet Camp Account & Cloud Progress",
+      "description": "Delete your Quiet Camp game account and cloud saves. Open the deletion form, verify your Google or Facebook identity and learn which data is removed."
+    }
+  },
+  "uk": {
+    "": {
+      "title": "Kruty1918 Games — Quiet Camp та ігри на Unity",
+      "description": "Офіційний сайт розробника Олексія Гаврилюка: Quiet Camp (Квіт Кемп), ігрові проєкти Unity, підтримка гравців, конфіденційність і видалення акаунта."
+    },
+    "quiet-camp": {
+      "title": "Quiet Camp (Квіт Кемп) — логічна гра про кемпінг",
+      "description": "Quiet Camp від Kruty1918 Games: розміщуйте намети, залишайте проходи й виконуйте побажання гостей. Інформація про гру, підтримка та допомога з акаунтом."
+    },
+    "games": {
+      "title": "Ігри Kruty1918 Games — Quiet Camp, Moyva, Fun and Ball",
+      "description": "Знайомтеся з Quiet Camp, Moyva та Fun and Ball — незалежними іграми й проєктами Unity розробника Олексія Гаврилюка."
+    },
+    "portfolio": {
+      "title": "Портфоліо розробника ігор — Олексій Гаврилюк",
+      "description": "Ігри на Unity, інструменти C# та проєкти Олексія Гаврилюка — незалежного розробника Kruty1918 Games."
+    },
+    "about": {
+      "title": "Олексій Гаврилюк — незалежний розробник ігор",
+      "description": "Про Олексія Гаврилюка, розробника Kruty1918 Games і Quiet Camp. Ігрові проєкти Unity та контактні дані."
+    },
+    "quiet-camp/legal": {
+      "title": "Підтримка Quiet Camp, конфіденційність та акаунт",
+      "description": "Підтримка гравців Quiet Camp, політика конфіденційності, допомога з хмарним акаунтом і форма видалення профілю."
+    },
+    "quiet-camp/account": {
+      "title": "Акаунт Quiet Camp і хмарні збереження",
+      "description": "Як увійти через Google чи Facebook у Quiet Camp, прив’язати гостьовий прогрес, відновити збереження та знайти видалення акаунта."
+    },
+    "quiet-camp/delete-account": {
+      "title": "Видалити акаунт Quiet Camp і хмарний прогрес",
+      "description": "Як видалити ігровий акаунт Quiet Camp і хмарні збереження. Форма видалення, підтвердження Google чи Facebook та пояснення, які дані прибираються."
+    }
+  },
+  "de": {
+    "": {
+      "title": "Kruty1918 Games — Quiet Camp & Unity-Spiele",
+      "description": "Offizielle Website von Spieleentwickler Oleksiy Havryliuk: Quiet Camp, Unity-Projekte, Spielerhilfe, Datenschutz und Kontolöschung."
+    },
+    "quiet-camp": {
+      "title": "Quiet Camp — Gemütliches Camping-Logikspiel",
+      "description": "Entdecke Quiet Camp von Kruty1918 Games: Zelte platzieren, Wege freihalten und Gästewünsche erfüllen. Spielinfos, Support und Kontohilfe."
+    },
+    "games": {
+      "title": "Spiele von Kruty1918 Games",
+      "description": "Entdecke Quiet Camp, Moyva und Fun and Ball: unabhängige Spiele und Unity-Projekte von Entwickler Oleksiy Havryliuk."
+    },
+    "portfolio": {
+      "title": "Spieleentwicklungs-Portfolio — Oleksiy Havryliuk",
+      "description": "Unity-Spiele, C#-Werkzeuge und Projekte von Oleksiy Havryliuk, dem unabhängigen Entwickler hinter Kruty1918 Games."
+    },
+    "about": {
+      "title": "Oleksiy Havryliuk — Unabhängiger Spieleentwickler",
+      "description": "Lerne Oleksiy Havryliuk kennen, den Entwickler von Kruty1918 Games und Quiet Camp. Unity-Projekte und Kontaktinformationen."
+    },
+    "quiet-camp/legal": {
+      "title": "Quiet Camp: Support, Datenschutz & Kontohilfe",
+      "description": "Spielerhilfe für Quiet Camp, Datenschutzerklärungen, Informationen zum Cloud-Konto und das Formular zur Kontolöschung."
+    },
+    "quiet-camp/account": {
+      "title": "Quiet Camp: Konto & Cloud-Spielstände",
+      "description": "So meldest du dich bei Quiet Camp mit Google oder Facebook an, verknüpfst Gastfortschritt und findest Wiederherstellung und Kontolöschung."
+    },
+    "quiet-camp/delete-account": {
+      "title": "Quiet-Camp-Konto & Cloud-Spielstand löschen",
+      "description": "Lösche dein Quiet-Camp-Spielkonto und Cloud-Spielstände. Zum Löschformular mit Google- oder Facebook-Anmeldung und Informationen zu betroffenen Daten."
+    }
+  }
+}

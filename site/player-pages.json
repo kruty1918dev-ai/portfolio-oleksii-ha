@@ -1,0 +1,242 @@
+{
+  "en": {
+    "accountLabel": "Account & cloud saves",
+    "deleteLabel": "Delete Quiet Camp account",
+    "account": {
+      "title": "Quiet Camp account & cloud saves",
+      "intro": "Choose local play or connect Google or Facebook to save and recover your Quiet Camp progress.",
+      "sections": [
+        [
+          "Play without an account",
+          [
+            "Anonymous play keeps progress on this device. It does not create an anonymous cloud account. To protect this progress if you change or lose your device, choose account linking in the game."
+          ]
+        ],
+        [
+          "Sign in or link your progress",
+          [
+            "In Quiet Camp, open Settings → Account & cloud progress and choose an available Google or Facebook sign-in option. The game opens the browser and shows a pairing code. Check that the code matches before continuing, then return to the game.",
+            "Start sign-in from the game so the browser can connect to the correct device session. Use your existing Google or Facebook account; this creates or opens a Quiet Camp game profile. Available options depend on your game version and eligibility."
+          ]
+        ],
+        [
+          "Restore progress and play offline",
+          [
+            "Signing in normally restores an existing game profile. If you are linking local guest progress and the chosen identity already has a game profile, choose another account; the two profiles are not merged.",
+            "Without a connection, changes remain on the device. Account-based synchronization resumes when connected. If both local and cloud progress changed, the game asks which copy to keep."
+          ]
+        ],
+        [
+          "Sign out or delete your game account",
+          [
+            "Signing out keeps local progress and stops automatic synchronization for that session. For permanent removal of the cloud profile, use the account deletion page below."
+          ]
+        ]
+      ]
+    },
+    "delete": {
+      "title": "Delete your Quiet Camp account and cloud progress",
+      "intro": "Use this page to find the Quiet Camp account deletion form and understand which data it removes.",
+      "openForm": "Open account deletion form",
+      "stepsTitle": "How to delete your cloud account",
+      "steps": [
+        "Open the deletion form using the button on this page.",
+        "Sign in with the same Google or Facebook account you used for Quiet Camp.",
+        "Choose “Delete my cloud account and progress” and confirm the deletion.",
+        "Wait for the success message. If deletion does not complete, sign in again and retry, or contact the privacy address below."
+      ],
+      "sections": [
+        [
+          "What is deleted",
+          [
+            "The procedure removes your Quiet Camp cloud profile, cloud progress and device-session records from the active game database, and removes the game’s Firebase Authentication profile."
+          ]
+        ],
+        [
+          "What stays separate",
+          [
+            "Your Google or Facebook account is not deleted. Progress already stored on your devices is not erased by this web form; remove it separately in the game or through Android app settings.",
+            "Store purchases, cancellations and refunds are handled separately through the store. Deleting cloud progress does not cancel a purchase or subscription."
+          ]
+        ],
+        [
+          "Backups and service records",
+          [
+            "Cloudflare D1 Free recovery history may retain earlier database states for up to seven days. Authentication-provider backups, security logs and legally required records follow their applicable retention rules. See the privacy policy for details."
+          ]
+        ],
+        [
+          "Cannot access the account?",
+          [
+            "Contact privacy@oleksiy-havryliuk.de and explain which game account is affected. Do not send passwords, session tokens or identity documents by default. An appropriate identity check may be needed to protect your account."
+          ]
+        ]
+      ]
+    },
+    "overviewTitle": "A place for every camper",
+    "overview": [
+      "Quiet Camp is a cozy campsite logic puzzle by Kruty1918 Games, an independent game project by Oleksiy Havryliuk. Place and rotate tents, keep doors connected to paths, and meet campers’ wishes for shade, quiet and nearby friends.",
+      "Explore the game here, find support and privacy information, or manage your account and cloud progress using the links below."
+    ]
+  },
+  "uk": {
+    "accountLabel": "Акаунт і хмарний прогрес",
+    "deleteLabel": "Видалити акаунт Quiet Camp",
+    "account": {
+      "title": "Акаунт Quiet Camp і хмарні збереження",
+      "intro": "Грайте локально або підключіть Google чи Facebook для збереження й відновлення прогресу Quiet Camp.",
+      "sections": [
+        [
+          "Гра без акаунта",
+          [
+            "Анонімна гра зберігає прогрес лише на цьому пристрої й не створює анонімного хмарного акаунта. Щоб захистити прогрес на випадок зміни або втрати телефона, оберіть прив’язку акаунта у грі."
+          ]
+        ],
+        [
+          "Вхід і прив’язка прогресу",
+          [
+            "У Quiet Camp відкрийте Settings → Account & cloud progress та оберіть доступний вхід через Google або Facebook. Гра відкриє браузер і покаже код зв’язування. Звірте код перед продовженням, а після входу поверніться у гру.",
+            "Починайте вхід із гри, щоб браузер підключився до правильної сесії пристрою. Використовується ваш наявний Google- або Facebook-акаунт; створюється чи відкривається ігровий профіль Quiet Camp. Доступність залежить від версії гри та застосовних умов."
+          ]
+        ],
+        [
+          "Відновлення та гра без мережі",
+          [
+            "Звичайний вхід відновлює наявний ігровий профіль. Якщо ви прив’язуєте локальний гостьовий прогрес, а обраний акаунт уже має профіль гри, потрібно обрати інший: два профілі не об’єднуються.",
+            "Без мережі зміни залишаються на пристрої. Синхронізація акаунта поновлюється після підключення. Якщо змінилися і локальна, і хмарна копії, гра пропонує обрати, яку залишити."
+          ]
+        ],
+        [
+          "Вихід або видалення",
+          [
+            "Вихід залишає локальний прогрес і зупиняє автоматичну синхронізацію цієї сесії. Для остаточного видалення хмарного профілю відкрийте сторінку видалення акаунта нижче."
+          ]
+        ]
+      ]
+    },
+    "delete": {
+      "title": "Видалення акаунта Quiet Camp і хмарного прогресу",
+      "intro": "Тут можна відкрити форму видалення акаунта Quiet Camp і дізнатися, які дані вона прибирає.",
+      "openForm": "Відкрити форму видалення акаунта",
+      "stepsTitle": "Як видалити хмарний акаунт",
+      "steps": [
+        "Відкрийте форму кнопкою «Відкрити форму видалення акаунта» на цій сторінці.",
+        "Увійдіть через той самий Google- або Facebook-акаунт, який використовували у Quiet Camp.",
+        "Оберіть «Delete my cloud account and progress» та підтвердьте видалення.",
+        "Дочекайтеся повідомлення про успіх. Якщо видалення не завершилося, увійдіть повторно й спробуйте ще раз або зверніться на адресу щодо приватності нижче."
+      ],
+      "sections": [
+        [
+          "Що видаляється",
+          [
+            "Процедура прибирає хмарний профіль Quiet Camp, хмарний прогрес і записи сесій пристроїв з активної бази гри, а також профіль гри у Firebase Authentication."
+          ]
+        ],
+        [
+          "Що обробляється окремо",
+          [
+            "Ваш акаунт Google або Facebook не видаляється. Ця вебформа не очищує прогрес, уже збережений на пристроях: його потрібно видалити окремо у грі або через налаштування застосунку Android.",
+            "Покупки, скасування та повернення коштів обробляються окремо через магазин. Видалення хмарного прогресу не скасовує покупку чи підписку."
+          ]
+        ],
+        [
+          "Резервні копії та службові записи",
+          [
+            "Історія відновлення Cloudflare D1 Free може містити попередні стани бази до семи днів. Копії провайдерів авторизації, безпекові журнали та обов’язкові записи мають власні застосовні строки. Докладніше — у політиці конфіденційності."
+          ]
+        ],
+        [
+          "Немає доступу до акаунта?",
+          [
+            "Напишіть на privacy@oleksiy-havryliuk.de та поясніть, якого ігрового акаунта стосується запит. Не надсилайте паролі, токени сесій чи документи без потреби. Для захисту акаунта може знадобитися відповідна перевірка особи."
+          ]
+        ]
+      ]
+    },
+    "overviewTitle": "Місце для кожного гостя",
+    "overview": [
+      "Quiet Camp (Квіт Кемп) — затишна логічна головоломка про кемпінг від Kruty1918 Games, незалежний ігровий проєкт Олексія Гаврилюка. Розміщуйте й обертайте намети, залишайте проходи до дверей і враховуйте побажання гостей щодо тіні, тиші та друзів поруч.",
+      "На цій сторінці можна дізнатися про гру, знайти підтримку й документи або перейти до керування акаунтом і хмарним прогресом."
+    ]
+  },
+  "de": {
+    "accountLabel": "Konto & Cloud-Spielstand",
+    "deleteLabel": "Quiet-Camp-Konto löschen",
+    "account": {
+      "title": "Quiet Camp: Konto und Cloud-Spielstände",
+      "intro": "Spiele lokal oder verbinde Google oder Facebook, um deinen Quiet-Camp-Fortschritt zu speichern und wiederherzustellen.",
+      "sections": [
+        [
+          "Ohne Konto spielen",
+          [
+            "Anonymes Spielen speichert den Fortschritt nur auf diesem Gerät. Es wird kein anonymes Cloud-Konto erstellt. Verknüpfe im Spiel ein Konto, um den Fortschritt bei einem Gerätewechsel oder Verlust zu schützen."
+          ]
+        ],
+        [
+          "Anmelden und Fortschritt verknüpfen",
+          [
+            "Öffne in Quiet Camp Settings → Account & cloud progress und wähle eine verfügbare Anmeldung über Google oder Facebook. Das Spiel öffnet den Browser und zeigt einen Verbindungscode. Vergleiche den Code, bevor du fortfährst, und kehre danach zum Spiel zurück.",
+            "Starte die Anmeldung im Spiel, damit der Browser zur richtigen Gerätesitzung gehört. Du verwendest dein bestehendes Google- oder Facebook-Konto; erstellt oder geöffnet wird ein Quiet-Camp-Spielprofil. Verfügbare Optionen hängen von Spielversion und Zugangsvoraussetzungen ab."
+          ]
+        ],
+        [
+          "Wiederherstellen und offline spielen",
+          [
+            "Eine normale Anmeldung stellt ein bestehendes Spielprofil wieder her. Wenn du lokalen Gastfortschritt verknüpfst und das ausgewählte Konto bereits ein Spielprofil hat, wähle ein anderes Konto. Die Profile werden nicht zusammengeführt.",
+            "Offline bleiben Änderungen auf dem Gerät. Die Kontosynchronisierung wird bei erneuter Verbindung fortgesetzt. Wenn sich beide Kopien geändert haben, fragt das Spiel, welche erhalten bleiben soll."
+          ]
+        ],
+        [
+          "Abmelden oder Konto löschen",
+          [
+            "Abmelden behält lokalen Fortschritt und beendet die automatische Synchronisierung dieser Sitzung. Zum dauerhaften Entfernen des Cloud-Profils öffne die unten verlinkte Seite zur Kontolöschung."
+          ]
+        ]
+      ]
+    },
+    "delete": {
+      "title": "Quiet-Camp-Konto und Cloud-Spielstand löschen",
+      "intro": "Hier findest du das Formular zur Löschung deines Quiet-Camp-Kontos und Informationen zu den betroffenen Daten.",
+      "openForm": "Formular zur Kontolöschung öffnen",
+      "stepsTitle": "So löschst du dein Cloud-Konto",
+      "steps": [
+        "Öffne das Löschformular über die Schaltfläche auf dieser Seite.",
+        "Melde dich mit demselben Google- oder Facebook-Konto an, das du für Quiet Camp verwendet hast.",
+        "Wähle „Delete my cloud account and progress“ und bestätige die Löschung.",
+        "Warte auf die Erfolgsmeldung. Falls die Löschung nicht abgeschlossen wird, melde dich erneut an und versuche es noch einmal oder kontaktiere die unten genannte Datenschutzadresse."
+      ],
+      "sections": [
+        [
+          "Was wird gelöscht?",
+          [
+            "Der Vorgang entfernt dein Quiet-Camp-Cloud-Profil, Cloud-Spielstände und Gerätesitzungen aus der aktiven Spieldatenbank sowie das Firebase-Authentication-Profil des Spiels."
+          ]
+        ],
+        [
+          "Was bleibt getrennt?",
+          [
+            "Dein Google- oder Facebook-Konto wird nicht gelöscht. Dieses Webformular entfernt keine bereits auf deinen Geräten gespeicherten Spielstände. Lösche diese getrennt im Spiel oder über die Android-App-Einstellungen.",
+            "Käufe, Kündigungen und Erstattungen werden getrennt über den Store bearbeitet. Die Löschung des Cloud-Fortschritts storniert keinen Kauf und kündigt kein Abonnement."
+          ]
+        ],
+        [
+          "Sicherungen und Dienstaufzeichnungen",
+          [
+            "Der Wiederherstellungsverlauf von Cloudflare D1 Free kann frühere Datenbankzustände bis zu sieben Tage enthalten. Sicherungen der Anmeldedienste, Sicherheitsprotokolle und gesetzlich erforderliche Aufzeichnungen unterliegen ihren jeweiligen Fristen. Einzelheiten stehen in der Datenschutzerklärung."
+          ]
+        ],
+        [
+          "Kein Zugriff auf das Konto?",
+          [
+            "Schreibe an privacy@oleksiy-havryliuk.de und erläutere, welches Spielkonto betroffen ist. Sende nicht unaufgefordert Passwörter, Sitzungstoken oder Ausweisdokumente. Zum Schutz deines Kontos kann eine angemessene Identitätsprüfung erforderlich sein."
+          ]
+        ]
+      ]
+    },
+    "overviewTitle": "Ein Platz für jeden Gast",
+    "overview": [
+      "Quiet Camp ist ein gemütliches Camping-Logikspiel von Kruty1918 Games, einem unabhängigen Spieleprojekt von Oleksiy Havryliuk. Platziere und drehe Zelte, halte Wege zu den Türen frei und erfülle die Wünsche der Gäste nach Schatten, Ruhe und Freunden in der Nähe.",
+      "Hier findest du Informationen zum Spiel, Hilfe und Dokumente sowie die Verwaltung deines Kontos und Cloud-Spielstands."
+    ]
+  }
+}

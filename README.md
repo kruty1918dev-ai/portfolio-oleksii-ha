@@ -22,7 +22,7 @@ settings for the existing Vercel project.
 
 ## Pages and languages
 
-There are 33 complete pages and a 404 page. English uses the base route;
+There are 39 complete pages and a 404 page. English uses the base route;
 Ukrainian and German retain the same page with `/uk` and `/de` suffixes, for
 example `/about/uk` and `/quiet-camp/privacy/de`.
 
@@ -36,6 +36,8 @@ example `/about/uk` and `/quiet-camp/privacy/de`.
 | `/moyva` | World-generation prototype and contribution |
 | `/fun-and-ball` | Earlier Unity game |
 | `/quiet-camp/legal` | Support, privacy contact and documents |
+| `/quiet-camp/account` | Sign-in, account linking and cloud-save help |
+| `/quiet-camp/delete-account` | Account deletion guide and link to the live deletion form |
 | `/privacy` | Website privacy policy |
 | `/quiet-camp/privacy` | Quiet Camp privacy policy |
 | `/impressum` | Owner identity, postal address and contacts |
@@ -50,6 +52,8 @@ viewer, Escape handling for the mobile menu and a policy reading indicator.
 - `site/content.json`: the complete en/uk/de catalogue and visible interface copy.
 - `site/layout.mjs`: one shared header, footer, metadata and language navigation.
 - `site/projects.mjs`: the common project layout and natural-ratio galleries.
+- `site/player-pages.json` / `player-pages.mjs`: translated account and deletion guides.
+- `site/search.json` / `search.mjs`: localized search metadata and static structured data.
 - `public/assets/site.css`: shared design; `site.js`: progressive interactions.
 - `legal/website/content.json`: website policy, eight sections in each language.
 - `legal/quiet-camp/content.json`: game policy, fourteen sections in each language.
@@ -95,3 +99,9 @@ python scripts/sync-game-policy.py --game-root /path/to/quiet-camp --check
 Earlier reports in `reports/` and V1/V2 design documents describe their dated
 revisions. The current shared layout is documented in
 [the design system](docs/design-system.md).
+
+## Search and player account discovery
+
+Account help and deletion are linked from the game page, documents hub and shared footer, with all six translated routes in the sitemap. The actual deletion form stays on the existing Worker and requires fresh provider sign-in plus confirmation. Browser sign-in for the game requires its handoff and is not offered as a standalone website login.
+
+See [search and publication instructions](docs/search-and-player-pages-2026-10-24.md) for metadata, strict CSP hashes and Google Search Console steps. Run `npm run routes` after changing structured-data content to regenerate the matching Vercel security hashes, then build/test. Search result snippets and indexing remain controlled by the search engine; no indexing request was submitted from this workspace.
