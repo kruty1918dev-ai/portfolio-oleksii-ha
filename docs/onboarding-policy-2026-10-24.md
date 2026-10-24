@@ -1,5 +1,9 @@
 # Policy for the short first-run flow — 24 October 2026
 
+**Superseded by revision 9:** the final user direction is privacy panel → account,
+with no age question. See `policy-account-start-2026-10-24.md`. The following
+records the earlier proposal and is not the active implementation instruction.
+
 Revision `2026-10-24.public-policy-8-13plus-onboarding`, English/Ukrainian/German.
 
 The owner requested one age-group question followed by Google/Facebook/local
