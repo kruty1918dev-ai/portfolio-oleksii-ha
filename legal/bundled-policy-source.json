@@ -1,10 +1,10 @@
 {
-  "revision": "2026-10-24.public-policy-11-shared-player-accounts",
+  "revision": "2026-11-14.public-policy-12-google-opt-in",
   "gameResource": "QuietCamp/Assets/QuietCamp/Resources/QuietCamp/privacy_content.json",
   "bodySha256": {
-    "uk": "871b115403bbc1652186d0509e1baceb972c65510bf57b6d921dbe8c90dfcb85",
-    "en": "37b182094c80fa89cff697b8488b0a01802a9a81e2ba871f5ba39a2bc2306f23",
-    "de": "c8a1ff8b25316f7a1cb05d1c9b055913a13274f87ad4414fa48aac857c4df05e"
+    "uk": "4459cf9a6c8a442430ac35a5baa62124daba635f56de7b0b472ef09111cf589c",
+    "en": "bc1479686a1cdfc832ff47d169103f0f5b10ac25b650d009cc58948a9039438d",
+    "de": "d064c04dbe96c8dddfb98a5a589f26a0b417341262288c523b0225d22e679fdc"
   },
   "status": "published policy text synchronized; native Android and service activation evidence remain separate"
 }

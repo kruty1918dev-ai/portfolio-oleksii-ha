@@ -9,21 +9,21 @@
         [
           "Create or open your profile on the website",
           [
-            "Open your account using the button above and continue with Google or Facebook. Your first successful sign-in creates a Quiet Camp profile; it does not upload a game save or require a separate password.",
+            "Open your account using the button above and continue with Google. Your first successful sign-in creates a Quiet Camp profile; it does not upload a game save or require a separate password.",
             "In your account you can change your camper name, see your connected sign-in methods and the time of your latest cloud save, sign out of this browser, or delete your account."
           ]
         ],
         [
           "Use the same account in the game",
           [
-            "Choose the same Google or Facebook account in Quiet Camp. Supported Android versions can use native sign-in; older versions open the browser and show a pairing code. Both connect to the same game profile.",
+            "Choose the same Google account in Quiet Camp. Supported Android versions can use native sign-in; older versions open the browser and show a pairing code. Both connect to the same game profile.",
             "Use ordinary sign-in to open a profile already created on the website. Linking local guest progress to an identity that already has a game profile remains a separate action and does not merge profiles."
           ]
         ],
         [
-          "Connect another sign-in method",
+          "Available sign-in method",
           [
-            "In your account, choose Connect Google or Connect Facebook. Confirm the current account first, then authorize the additional method. An identity belonging to another profile cannot be silently merged. Matching email addresses alone do not link profiles."
+            "Facebook sign-in and new linking are paused. If your old profile uses Facebook and you cannot access it, contact privacy@oleksiy-havryliuk.de for an appropriately verified request. Do not create another profile expecting an automatic merge."
           ]
         ],
         [
@@ -35,7 +35,7 @@
         [
           "Sign out or delete your account",
           [
-            "Website sign-out ends this browser session. Account deletion removes the Quiet Camp cloud profile, cloud save and all game and website sessions after identity verification and confirmation. Your Google/Facebook account and local device progress stay separate."
+            "Website sign-out ends this browser session. Account deletion removes the Quiet Camp cloud profile, cloud save and all game and website sessions after identity verification and confirmation. Your Google account and local device progress stay separate."
           ]
         ]
       ],
@@ -48,7 +48,7 @@
       "stepsTitle": "How to delete your cloud account",
       "steps": [
         "Open the deletion form using the button on this page.",
-        "Sign in with the same Google or Facebook account you used for Quiet Camp.",
+        "Sign in with the same Google account you used for Quiet Camp.",
         "Choose “Delete my cloud account and progress” and confirm the deletion.",
         "Wait for the success message. If deletion does not complete, sign in again and retry, or contact the privacy address below."
       ],
@@ -62,20 +62,21 @@
         [
           "What stays separate",
           [
-            "Your Google or Facebook account is not deleted. Progress already stored on your devices is not erased by this web form; remove it separately in the game or through Android app settings.",
+            "Your Google account is not deleted. Progress already stored on your devices is not erased by this web form; remove it separately in the game or through Android app settings.",
             "Store purchases, cancellations and refunds are handled separately through the store. Deleting cloud progress does not cancel a purchase or subscription."
           ]
         ],
         [
           "Backups and service records",
           [
-            "Cloudflare D1 Free recovery history may retain earlier database states for up to seven days. Authentication-provider backups, security logs and legally required records follow their applicable retention rules. See the privacy policy for details."
+            "Deleting active data does not immediately erase Cloudflare D1 recovery history. Cloudflare documents up to seven days for Free and 30 days for Paid; the applicable plan controls the window. Provider backups, security logs and legally required records have separate retention. See the privacy policy."
           ]
         ],
         [
           "Cannot access the account?",
           [
-            "Contact privacy@oleksiy-havryliuk.de and explain which game account is affected. Do not send passwords, session tokens or identity documents by default. An appropriate identity check may be needed to protect your account."
+            "Contact privacy@oleksiy-havryliuk.de and explain which game account is affected. Do not send passwords, session tokens or identity documents by default. An appropriate identity check may be needed to protect your account.",
+            "Facebook sign-in and new linking are paused. If your old profile uses Facebook and you cannot access it, contact privacy@oleksiy-havryliuk.de for an appropriately verified request. Do not create another profile expecting an automatic merge."
           ]
         ]
       ]
@@ -96,21 +97,21 @@
         [
           "Створення або відкриття профілю на сайті",
           [
-            "Відкрийте кабінет кнопкою вище та продовжте з Google або Facebook. Перший успішний вхід створить профіль Quiet Camp без окремого пароля та без завантаження ігрового збереження.",
+            "Відкрийте кабінет кнопкою вище та продовжте з Google. Перший успішний вхід створить профіль Quiet Camp без окремого пароля та без завантаження ігрового збереження.",
             "У кабінеті можна змінити ім’я гостя, переглянути підключені способи входу й час останнього хмарного збереження, вийти з цього браузера або видалити акаунт."
           ]
         ],
         [
           "Той самий акаунт у грі",
           [
-            "У Quiet Camp оберіть той самий Google- або Facebook-акаунт. Підтримувані Android-версії можуть використовувати нативний вхід; старіші відкривають браузер і показують код зв’язування. Обидва способи підключають той самий профіль гри.",
+            "У Quiet Camp оберіть той самий Google-акаунт. Підтримувані Android-версії можуть використовувати нативний вхід; старіші відкривають браузер і показують код зв’язування. Обидва способи підключають той самий профіль гри.",
             "Щоб відкрити профіль, уже створений на сайті, використовуйте звичайний вхід. Прив’язка локального гостьового прогресу до акаунта з наявним профілем залишається окремою дією та не об’єднує профілі."
           ]
         ],
         [
-          "Додатковий спосіб входу",
+          "Доступний спосіб входу",
           [
-            "У кабінеті оберіть «Підключити Google» або «Підключити Facebook». Спочатку підтвердьте поточний акаунт, потім авторизуйте додатковий спосіб. Акаунт іншого профілю не об’єднується автоматично. Однакова пошта сама по собі не прив’язує профілі."
+            "Facebook-вхід і нову прив’язку призупинено. Якщо старий профіль використовує Facebook і доступу немає, напишіть privacy@oleksiy-havryliuk.de для належно перевіреного запиту. Не створюйте інший профіль в очікуванні автоматичного об’єднання."
           ]
         ],
         [
@@ -122,7 +123,7 @@
         [
           "Вихід або видалення",
           [
-            "Вихід на сайті завершує лише сесію цього браузера. Видалення акаунта після підтвердження особи й дії прибирає профіль Quiet Camp, хмарне збереження та всі сесії гри й сайту. Ваш Google/Facebook-акаунт і локальний прогрес на пристроях обробляються окремо."
+            "Вихід на сайті завершує лише сесію цього браузера. Видалення акаунта після підтвердження особи й дії прибирає профіль Quiet Camp, хмарне збереження та всі сесії гри й сайту. Ваш Google-акаунт і локальний прогрес на пристроях обробляються окремо."
           ]
         ]
       ],
@@ -135,7 +136,7 @@
       "stepsTitle": "Як видалити хмарний акаунт",
       "steps": [
         "Відкрийте форму кнопкою «Відкрити форму видалення акаунта» на цій сторінці.",
-        "Увійдіть через той самий Google- або Facebook-акаунт, який використовували у Quiet Camp.",
+        "Увійдіть через той самий Google-акаунт, який використовували у Quiet Camp.",
         "Оберіть «Delete my cloud account and progress» та підтвердьте видалення.",
         "Дочекайтеся повідомлення про успіх. Якщо видалення не завершилося, увійдіть повторно й спробуйте ще раз або зверніться на адресу щодо приватності нижче."
       ],
@@ -149,20 +150,21 @@
         [
           "Що обробляється окремо",
           [
-            "Ваш акаунт Google або Facebook не видаляється. Ця вебформа не очищує прогрес, уже збережений на пристроях: його потрібно видалити окремо у грі або через налаштування застосунку Android.",
+            "Ваш акаунт Google не видаляється. Ця вебформа не очищує прогрес, уже збережений на пристроях: його потрібно видалити окремо у грі або через налаштування застосунку Android.",
             "Покупки, скасування та повернення коштів обробляються окремо через магазин. Видалення хмарного прогресу не скасовує покупку чи підписку."
           ]
         ],
         [
           "Резервні копії та службові записи",
           [
-            "Історія відновлення Cloudflare D1 Free може містити попередні стани бази до семи днів. Копії провайдерів авторизації, безпекові журнали та обов’язкові записи мають власні застосовні строки. Докладніше — у політиці конфіденційності."
+            "Видалення активних даних не очищує історію відновлення Cloudflare D1 миттєво. Cloudflare описує до семи днів на Free й 30 днів на Paid; вікно залежить від застосовного тарифу. Копії провайдерів, безпекові й обов’язкові записи мають окремі строки. Дивіться політику приватності."
           ]
         ],
         [
           "Немає доступу до акаунта?",
           [
-            "Напишіть на privacy@oleksiy-havryliuk.de та поясніть, якого ігрового акаунта стосується запит. Не надсилайте паролі, токени сесій чи документи без потреби. Для захисту акаунта може знадобитися відповідна перевірка особи."
+            "Напишіть на privacy@oleksiy-havryliuk.de та поясніть, якого ігрового акаунта стосується запит. Не надсилайте паролі, токени сесій чи документи без потреби. Для захисту акаунта може знадобитися відповідна перевірка особи.",
+            "Facebook-вхід і нову прив’язку призупинено. Якщо старий профіль використовує Facebook і доступу немає, напишіть privacy@oleksiy-havryliuk.de для належно перевіреного запиту. Не створюйте інший профіль в очікуванні автоматичного об’єднання."
           ]
         ]
       ]
@@ -183,21 +185,21 @@
         [
           "Profil auf der Website erstellen oder öffnen",
           [
-            "Öffne dein Konto über die Schaltfläche oben und fahre mit Google oder Facebook fort. Die erste erfolgreiche Anmeldung erstellt ein Quiet-Camp-Profil ohne eigenes Passwort und ohne einen Spielstand hochzuladen.",
+            "Öffne dein Konto über die Schaltfläche oben und fahre mit Google fort. Die erste erfolgreiche Anmeldung erstellt ein Quiet-Camp-Profil ohne eigenes Passwort und ohne einen Spielstand hochzuladen.",
             "Im Kontobereich kannst du deinen Campernamen ändern, verknüpfte Anmeldemethoden und die letzte Cloud-Speicherung sehen, diesen Browser abmelden oder dein Konto löschen."
           ]
         ],
         [
           "Dasselbe Konto im Spiel verwenden",
           [
-            "Wähle in Quiet Camp dasselbe Google- oder Facebook-Konto. Unterstützte Android-Versionen können die native Anmeldung nutzen; ältere Versionen öffnen den Browser und zeigen einen Verbindungscode. Beide Wege öffnen dasselbe Spielprofil.",
+            "Wähle in Quiet Camp dasselbe Google-Konto. Unterstützte Android-Versionen können die native Anmeldung nutzen; ältere Versionen öffnen den Browser und zeigen einen Verbindungscode. Beide Wege öffnen dasselbe Spielprofil.",
             "Öffne ein bereits auf der Website erstelltes Profil mit der normalen Anmeldung. Die Verknüpfung lokalen Gastfortschritts mit einer Identität, die bereits ein Spielprofil hat, bleibt ein eigener Vorgang und führt keine Profile zusammen."
           ]
         ],
         [
-          "Weitere Anmeldemethode verbinden",
+          "Verfügbare Anmeldemethode",
           [
-            "Wähle im Konto Google verknüpfen oder Facebook verknüpfen. Bestätige zuerst das bestehende Konto und autorisiere danach die weitere Methode. Eine Identität eines anderen Profils wird nicht stillschweigend zusammengeführt. Gleiche E-Mail-Adressen verknüpfen keine Profile."
+            "Facebook-Anmeldung und neue Verknüpfungen sind ausgesetzt. Ist dein früheres Facebook-Profil nicht erreichbar, kontaktiere privacy@oleksiy-havryliuk.de für eine angemessen geprüfte Anfrage. Ein neues Profil führt alte Konten nicht automatisch zusammen."
           ]
         ],
         [
@@ -209,7 +211,7 @@
         [
           "Abmelden oder Konto löschen",
           [
-            "Die Abmeldung auf der Website beendet nur diese Browsersitzung. Nach Identitätsprüfung und Bestätigung entfernt die Kontolöschung das Quiet-Camp-Profil, den Cloud-Spielstand sowie alle Spiel- und Website-Sitzungen. Google/Facebook-Konto und lokale Gerätespielstände bleiben getrennt."
+            "Die Abmeldung auf der Website beendet nur diese Browsersitzung. Nach Identitätsprüfung und Bestätigung entfernt die Kontolöschung das Quiet-Camp-Profil, den Cloud-Spielstand sowie alle Spiel- und Website-Sitzungen. Google-Konto und lokale Gerätespielstände bleiben getrennt."
           ]
         ]
       ],
@@ -222,7 +224,7 @@
       "stepsTitle": "So löschst du dein Cloud-Konto",
       "steps": [
         "Öffne das Löschformular über die Schaltfläche auf dieser Seite.",
-        "Melde dich mit demselben Google- oder Facebook-Konto an, das du für Quiet Camp verwendet hast.",
+        "Melde dich mit demselben Google-Konto an, das du für Quiet Camp verwendet hast.",
         "Wähle „Delete my cloud account and progress“ und bestätige die Löschung.",
         "Warte auf die Erfolgsmeldung. Falls die Löschung nicht abgeschlossen wird, melde dich erneut an und versuche es noch einmal oder kontaktiere die unten genannte Datenschutzadresse."
       ],
@@ -236,20 +238,21 @@
         [
           "Was bleibt getrennt?",
           [
-            "Dein Google- oder Facebook-Konto wird nicht gelöscht. Dieses Webformular entfernt keine bereits auf deinen Geräten gespeicherten Spielstände. Lösche diese getrennt im Spiel oder über die Android-App-Einstellungen.",
+            "Dein Google-Konto wird nicht gelöscht. Dieses Webformular entfernt keine bereits auf deinen Geräten gespeicherten Spielstände. Lösche diese getrennt im Spiel oder über die Android-App-Einstellungen.",
             "Käufe, Kündigungen und Erstattungen werden getrennt über den Store bearbeitet. Die Löschung des Cloud-Fortschritts storniert keinen Kauf und kündigt kein Abonnement."
           ]
         ],
         [
           "Sicherungen und Dienstaufzeichnungen",
           [
-            "Der Wiederherstellungsverlauf von Cloudflare D1 Free kann frühere Datenbankzustände bis zu sieben Tage enthalten. Sicherungen der Anmeldedienste, Sicherheitsprotokolle und gesetzlich erforderliche Aufzeichnungen unterliegen ihren jeweiligen Fristen. Einzelheiten stehen in der Datenschutzerklärung."
+            "Das Löschen aktiver Daten entfernt den Cloudflare-D1-Wiederherstellungsverlauf nicht sofort. Cloudflare nennt bis zu sieben Tage für Free und 30 Tage für Paid; maßgeblich ist der anwendbare Tarif. Anbietersicherungen, Sicherheits- und gesetzlich notwendige Aufzeichnungen haben getrennte Fristen. Siehe Datenschutzerklärung."
           ]
         ],
         [
           "Kein Zugriff auf das Konto?",
           [
-            "Schreibe an privacy@oleksiy-havryliuk.de und erläutere, welches Spielkonto betroffen ist. Sende nicht unaufgefordert Passwörter, Sitzungstoken oder Ausweisdokumente. Zum Schutz deines Kontos kann eine angemessene Identitätsprüfung erforderlich sein."
+            "Schreibe an privacy@oleksiy-havryliuk.de und erläutere, welches Spielkonto betroffen ist. Sende nicht unaufgefordert Passwörter, Sitzungstoken oder Ausweisdokumente. Zum Schutz deines Kontos kann eine angemessene Identitätsprüfung erforderlich sein.",
+            "Facebook-Anmeldung und neue Verknüpfungen sind ausgesetzt. Ist dein früheres Facebook-Profil nicht erreichbar, kontaktiere privacy@oleksiy-havryliuk.de für eine angemessen geprüfte Anfrage. Ein neues Profil führt alte Konten nicht automatisch zusammen."
           ]
         ]
       ]

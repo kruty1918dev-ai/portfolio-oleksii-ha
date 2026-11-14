@@ -71,21 +71,21 @@ or unverified project credits. Hosting is static; contact links use email.
 
 ## Policies and Android release evidence
 
-Both public policies are complete visitor-facing documents dated 23 October
-2026. The Quiet Camp policy candidate revision is `2026-10-23.public-policy-7-google-facebook`. They explain
-the implemented processing and the conditions for optional game services. They
-do not display internal review or unfinished-document notices.
+The current Quiet Camp policy revision is
+`2026-11-14.public-policy-12-google-opt-in`, dated 14 November 2026 in en/uk/de.
+It describes Google-only new sign-in, optional cloud progress, independent
+Firebase Analytics consent, first-win invitation and main-menu privacy controls,
+free retries, banner/win-break advertising and one-hint rewarded videos.
+Facebook is paused; historical identities and verified-deletion support remain.
+The website privacy notice, account/deletion guides and search metadata are aligned.
+See [the update evidence and remaining limits](docs/privacy-update-2026-11-14.md).
 
-Website publication and Android service activation are separate operations.
-The existing runtime/evidence flags remain unchanged. `npm run release:check`
-and `npm run build:release` still require actual Android, account and SDK evidence;
-normal `npm run build` produces the public website without enabling game services.
-This revision describes local-only anonymous play, Google/Facebook account sign-in
-with automatic progress/resource sync, late linking that refuses an occupied game
-profile, local milestone reminders and cloud account deletion. Provider configuration,
-backend activation and Android verification remain separate required steps.
-See [current Cloudflare policy source notes](docs/privacy-cloudflare-2026-10-23.md)
-and [earlier policy source notes](docs/policy-publication-2026-10-22.md).
+Website publication does not activate game SDKs, sales or real ad inventory.
+The release-evidence file remains a dated incomplete Android checklist;
+`release:check` and `build:release` must still reject missing artifact,
+native consent/network and provider-account evidence. Ordinary `build` publishes
+static information without claiming Android release acceptance. Earlier reports
+and policy revisions remain historical; they do not describe the current text.
 
 The canonical game policy renderer can synchronize draft game resources without
 enabling SDKs. After applying the accompanying policy-sync compatibility update

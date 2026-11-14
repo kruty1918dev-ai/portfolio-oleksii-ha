@@ -26,11 +26,11 @@
     },
     "quiet-camp/account": {
       "title": "Quiet Camp Account — Sign In & Cloud Saves",
-      "description": "Open your Quiet Camp account with Google or Facebook. Manage your profile, connected sign-in methods, cloud saves and account deletion."
+      "description": "Open your Quiet Camp account with Google. Manage your profile, connected sign-in methods, cloud saves and account deletion."
     },
     "quiet-camp/delete-account": {
       "title": "Delete Quiet Camp Account & Cloud Progress",
-      "description": "Delete your Quiet Camp game account and cloud saves. Open the deletion form, verify your Google or Facebook identity and learn which data is removed."
+      "description": "Delete your Quiet Camp game account and cloud saves. Open the deletion form, verify your Google identity and learn which data is removed."
     }
   },
   "uk": {
@@ -60,11 +60,11 @@
     },
     "quiet-camp/account": {
       "title": "Акаунт Quiet Camp — кабінет і хмарний прогрес",
-      "description": "Увійдіть у кабінет Quiet Camp (Квіт Кемп) через Google або Facebook. Керуйте профілем, способами входу та видаленням хмарного акаунта."
+      "description": "Увійдіть у кабінет Quiet Camp (Квіт Кемп) через Google. Керуйте профілем, способами входу та видаленням хмарного акаунта."
     },
     "quiet-camp/delete-account": {
       "title": "Видалити акаунт Quiet Camp і хмарний прогрес",
-      "description": "Як видалити ігровий акаунт Quiet Camp і хмарні збереження. Форма видалення, підтвердження Google чи Facebook та пояснення, які дані прибираються."
+      "description": "Як видалити ігровий акаунт Quiet Camp і хмарні збереження. Форма видалення, підтвердження Google та пояснення, які дані прибираються."
     }
   },
   "de": {
@@ -94,11 +94,11 @@
     },
     "quiet-camp/account": {
       "title": "Quiet-Camp-Konto — Anmeldung und Cloud-Spielstand",
-      "description": "Öffne dein Quiet-Camp-Konto mit Google oder Facebook. Verwalte Profil, verknüpfte Anmeldemethoden, Cloud-Spielstände und Kontolöschung."
+      "description": "Öffne dein Quiet-Camp-Konto mit Google. Verwalte Profil, verknüpfte Anmeldemethoden, Cloud-Spielstände und Kontolöschung."
     },
     "quiet-camp/delete-account": {
       "title": "Quiet-Camp-Konto & Cloud-Spielstand löschen",
-      "description": "Lösche dein Quiet-Camp-Spielkonto und Cloud-Spielstände. Zum Löschformular mit Google- oder Facebook-Anmeldung und Informationen zu betroffenen Daten."
+      "description": "Lösche dein Quiet-Camp-Spielkonto und Cloud-Spielstände. Zum Löschformular mit Google-Anmeldung und Informationen zu betroffenen Daten."
     }
   }
 }
