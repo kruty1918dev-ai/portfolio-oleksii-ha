@@ -430,5 +430,71 @@
       "effectsPreset": "autumn_sunset"
     },
     "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
+  },
+  {
+    "capturedDate": "2026-11-14",
+    "dateEvidence": "reports/campaign-visual-production/2026-11-14/length-first/REPORT-UA.md",
+    "kind": "original Unity Editor Game View capture; development visuals, not final mobile release",
+    "level": "QC039",
+    "sourceStatus": "experimental v5 tent-size pilot; not applied to live campaign",
+    "recommended": "Development gallery: label clearly as a work-in-progress Unity capture. Do not present as an Android store release screenshot.",
+    "alt": {
+      "en": "Unity Editor development view of a sunny campsite puzzle with tents, trees, paths and placement grid",
+      "uk": "Робочий кадр Unity Editor: сонячна головоломка з наметами, деревами, шляхами й сіткою розміщення",
+      "de": "Unity-Editor-Aufnahme eines sonnigen Camp-Rätsels mit Zelten, Bäumen, Wegen und Platzierungsraster"
+    },
+    "file": "public/media/qc-dev-2026-11-14-qc039-landscape.png",
+    "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/reports/campaign-visual-production/2026-11-14/length-first/gen_qc_camp_56-landscape.png",
+    "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+    "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
+    "sourcePath": "reports/campaign-visual-production/2026-11-14/length-first/gen_qc_camp_56-landscape.png",
+    "originalBlobSha": "c800374414fd33562833d9f18a7ef533799913df",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 987608
+  },
+  {
+    "capturedDate": "2026-11-14",
+    "dateEvidence": "reports/campaign-visual-production/2026-11-14/hud-followup/evidence.json",
+    "kind": "original Unity Editor Game View capture; development visuals, not final mobile release",
+    "level": "QC001",
+    "sourceStatus": "QC001 native Game View capture in technical review; final mobile build not validated",
+    "recommended": "Development gallery: label clearly as a work-in-progress Unity capture. Do not present as an Android store release screenshot.",
+    "alt": {
+      "en": "Portrait Unity Editor game view of the first Quiet Camp puzzle and tent controls",
+      "uk": "Вертикальний ігровий кадр Unity Editor першої головоломки Quiet Camp з керуванням наметами",
+      "de": "Hochformat-Spielansicht aus dem Unity-Editor zum ersten Quiet-Camp-Rätsel mit Zeltsteuerung"
+    },
+    "file": "public/media/qc-dev-2026-11-14-qc001-portrait.png",
+    "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/reports/campaign-visual-production/2026-11-14/hud-followup/portrait-gameplay-after-sequencing.png",
+    "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+    "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
+    "sourcePath": "reports/campaign-visual-production/2026-11-14/hud-followup/portrait-gameplay-after-sequencing.png",
+    "originalBlobSha": "08c4d5681ed25c2932fa31cbfb5fb71edc8f7575",
+    "width": 750,
+    "height": 1334,
+    "bytes": 496185
+  },
+  {
+    "capturedDate": "2026-11-14",
+    "dateEvidence": "reports/campaign-visual-production/2026-11-14/natural-river/REPORT-UA.md",
+    "kind": "original Unity Editor Game View capture; development visuals, not final mobile release",
+    "level": "QC072",
+    "sourceStatus": "QC072 winter river visual pilot; awaiting owner review, not applied to active campaign",
+    "recommended": "Development gallery: label clearly as a work-in-progress Unity capture. Do not present as an Android store release screenshot.",
+    "alt": {
+      "en": "Portrait Unity Editor work-in-progress winter camp with a river, trees and tents",
+      "uk": "Вертикальний робочий кадр Unity Editor зимового табору з річкою, деревами й наметами",
+      "de": "Hochformat-Entwicklungsaufnahme aus dem Unity-Editor: Wintercamp mit Fluss, Bäumen und Zelten"
+    },
+    "file": "public/media/qc-dev-2026-11-14-qc072-portrait.png",
+    "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/reports/campaign-visual-production/2026-11-14/natural-river/after-portrait-placed.png",
+    "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+    "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
+    "sourcePath": "reports/campaign-visual-production/2026-11-14/natural-river/after-portrait-placed.png",
+    "originalBlobSha": "81865cd6e70994b5f8cde4c60bf95d8a3b239367",
+    "width": 750,
+    "height": 1334,
+    "bytes": 649802
   }
 ]

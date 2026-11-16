@@ -318,168 +318,185 @@
       "featured": true,
       "hero": "qc-selected-haven.webp",
       "gallery": [
-        "qc-selected-bridge.webp",
+        "qc-dev-2026-11-14-qc039-landscape.png",
+        "qc-dev-2026-11-14-qc001-portrait.png",
+        "qc-dev-2026-11-14-qc072-portrait.png",
         "qc-selected-autumn-gate.webp"
       ],
       "portrait": false,
-      "links": [
-        {
-          "label": "guide",
-          "url": "https://kruty1918dev-ai.github.io/quiet-camp/"
-        },
-        {
-          "label": "repository",
-          "url": "https://github.com/kruty1918dev-ai/quiet-camp"
-        }
-      ],
+      "links": [],
       "en": {
         "name": "Quiet Camp",
-        "category": "Spatial puzzle · Android",
+        "category": "Cozy spatial puzzle · Android",
         "status": "In development",
-        "summary": "Find a place for every guest. A quiet puzzle about tents, thoughtful choices and a Ukrainian world finding its everyday rhythm again.",
-        "intro": "Build a camp, listen to your guests and find a place where every wish fits. A slower kind of puzzle, set in a post-war Ukrainian landscape.",
+        "summary": "A thoughtful low-poly puzzle about placing tents and making room for every camper in atmospheric Ukrainian landscapes.",
+        "intro": "Place and rotate tents, keep shared paths open, and consider what each guest needs — shade, quiet, water, friendship and a warm campfire.",
         "paragraphs": [
-          "Quiet Camp is my current independent game. Its base campaign spans 100 levels across 10 chapters, with tent-placement puzzles shaped by paths, shade, quiet and friendship.",
-          "The game combines a clear spatial puzzle with the atmosphere of a place returning to everyday life. Completed camp arrangements become part of your local album.",
-          "The game is in development for Android. The page shows development material rather than an available store release. See the illustrated guide for more about the game and its interface."
+          "Quiet Camp is a cozy spatial puzzle in active development for Android. Its 100-level campaign across 10 chapters has been integrated into the development source; the scenery, device experience and playtesting are still being refined.",
+          "Every camper has a place to find. Plan the shape and entrance of each tent, leave space for paths and neighbors, and balance shade, quiet and access to shared facilities.",
+          "Later puzzles explore wells, movable campfires, places to rest, different tent sizes and bridges between separate areas. The images below are genuine Unity Editor development captures, including visual pilots, not final store screenshots. No public release date has been announced."
         ],
         "features": [
           [
-            "Make room for every guest",
-            "Place and rotate tents while respecting the paths, shade, quiet and friendships that matter to your guests."
+            "A place for every tent",
+            "Move and rotate tents with different footprints while keeping entrances and paths clear."
           ],
           [
-            "A journey through Ukraine",
-            "A 100-level base campaign in 10 chapters, set in a Ukrainian environment after the war."
+            "Care for your guests",
+            "Consider shade, quiet, nearby friends, water, rest and the campfire."
           ],
           [
-            "Play at your own pace",
-            "Explore a puzzle, reconsider a placement and keep the camps you complete in your album."
+            "A growing journey",
+            "A 100-level development campaign across 10 chapters, with varied terrain and bridges."
           ]
         ],
         "facts": [
           [
             "platform",
-            "Android"
+            "Android (in development)"
           ],
           [
             "stage",
-            "In development"
+            "Level and visual QA in progress"
           ],
           [
             "developer",
-            "Oleksiy Havryliuk / Kruty1918 Games"
+            "Kruty1918 Games"
           ],
           [
             "focus",
-            "Spatial puzzles & camp building"
+            "Spatial puzzles and campsite design"
           ]
         ],
-        "captureNote": "Scenes from Quiet Camp, captured on 15–19 October 2026.",
+        "captureNote": "Fresh unretouched Unity Editor Game View captures from 14 November 2026 (including two experimental visual pilots). Final mobile presentation and 100-level visual review are ongoing. The last autumn image dates to 15 October; the hero is a native teaser still from 19 October 2026.",
         "heroAlt": "A campsite beside a green-roofed shelter, surrounded by trees",
         "galleryAlt": [
-          "Four tents beside a wooden bridge crossing a summer river",
+          "Unity Editor development view of a sunny campsite puzzle with tents, trees, paths and placement grid",
+          "Portrait Unity Editor game view of the first Quiet Camp puzzle and tent controls",
+          "Portrait Unity Editor work-in-progress winter camp with a river, trees and tents",
           "Three red tents and a campfire beside a stone gateway in an autumn woodland"
+        ],
+        "galleryCaptions": [
+          "Tent sizes and paths · Unity Editor pilot, 14 Nov 2026",
+          "First camp · portrait gameplay, 14 Nov 2026",
+          "Winter river · environment pilot, 14 Nov 2026",
+          "Autumn camp · earlier native capture, 15 Oct 2026"
         ]
       },
       "uk": {
         "name": "Quiet Camp",
-        "category": "Просторова головоломка · Android",
+        "category": "Затишна просторова головоломка · Android",
         "status": "У розробці",
-        "summary": "Знайдіть місце для кожного гостя. Спокійна головоломка про намети, уважні рішення й український світ, що повертається до повсякденного життя.",
-        "intro": "Облаштуйте табір, почуйте побажання гостей і знайдіть місце для кожного. Некваплива головоломка серед українських краєвидів після війни.",
+        "summary": "Затишна low-poly головоломка про розміщення наметів і турботу про кожного гостя серед українських краєвидів.",
+        "intro": "Розміщуй і повертай намети, залишай вільні проходи та враховуй потреби гостей — тінь, тишу, воду, дружбу й тепло багаття.",
         "paragraphs": [
-          "Quiet Camp — моя поточна незалежна гра. Базова кампанія містить 100 рівнів у 10 розділах. Головоломки з розташуванням наметів враховують шлях, тінь, тишу та дружбу.",
-          "Гра поєднує зрозумілу просторову задачу з атмосферою місця, що повертається до звичайного життя. Завершені табори залишаються у вашому локальному альбомі.",
-          "Гра розробляється для Android. Тут показано матеріали розробки, а не вже доступний реліз у магазині. Більше про гру й інтерфейс — в ілюстрованому довіднику."
+          "Quiet Camp — просторова головоломка для Android, яку активно розробляють. Кампанію зі 100 рівнів у 10 розділах інтегровано в джерела гри; оформлення, роботу на пристроях і проходження рівнів ще вдосконалюють.",
+          "Для кожного гостя потрібно знайти правильне місце. Враховуй форму й вхід намету, спільні проходи та сусідів, тінь, тишу й доступ до потрібних місць.",
+          "Пізніші задачі додають криниці, перенесення багаття, зони відпочинку, намети різних розмірів і мости між ділянками. Нижче — справжні робочі кадри Unity Editor, включно з експериментальними сценами, а не фінальні скриншоти магазину. Публічної дати релізу поки немає."
         ],
         "features": [
           [
-            "Місце для кожного гостя",
-            "Розташовуйте й повертайте намети, зважаючи на шлях, тінь, тишу та дружні зв’язки гостей."
+            "Місце для кожного намету",
+            "Переміщуй і повертай намети різних форм, залишаючи вільними входи та проходи."
           ],
           [
-            "Подорож Україною",
-            "Базова кампанія зі 100 рівнів у 10 розділах серед українського світу після війни."
+            "Турбота про гостей",
+            "Поєднуй тінь, тишу, близькість друзів, воду, відпочинок і багаття."
           ],
           [
-            "Власний темп",
-            "Досліджуйте задачу, переглядайте рішення й зберігайте завершені табори в альбомі."
+            "Подорож, що розвивається",
+            "Кампанія зі 100 рівнів у 10 розділах із різними ландшафтами й мостами."
           ]
         ],
         "facts": [
           [
             "platform",
-            "Android"
+            "Android (у розробці)"
           ],
           [
             "stage",
-            "У розробці"
+            "Триває перевірка рівнів і графіки"
           ],
           [
             "developer",
-            "Oleksiy Havryliuk / Kruty1918 Games"
+            "Kruty1918 Games"
           ],
           [
             "focus",
-            "Просторові головоломки й облаштування табору"
+            "Просторові головоломки та кемпінг"
           ]
         ],
-        "captureNote": "Сцени Quiet Camp, зафіксовані 15–19 жовтня 2026 року.",
+        "captureNote": "Нові справжні кадри Game View із Unity Editor від 14 листопада 2026 року, зокрема два експериментальні пілоти. Візуальне приймання 100 рівнів та мобільне тестування ще тривають. Останній осінній кадр — 15 жовтня, головне промозображення Unity — 19 жовтня 2026 року.",
         "heroAlt": "Табір поруч із прихистком під зеленим дахом серед дерев",
         "galleryAlt": [
-          "Чотири намети біля дерев’яного мосту через літню річку",
+          "Робочий кадр Unity Editor: сонячна головоломка з наметами, деревами, шляхами й сіткою розміщення",
+          "Вертикальний ігровий кадр Unity Editor першої головоломки Quiet Camp з керуванням наметами",
+          "Вертикальний робочий кадр Unity Editor зимового табору з річкою, деревами й наметами",
           "Три червоні намети й вогнище біля кам’яної брами в осінньому лісі"
+        ],
+        "galleryCaptions": [
+          "Розміри наметів і проходи · пілот Unity Editor, 14.11.2026",
+          "Перший табір · вертикальний ігровий кадр, 14.11.2026",
+          "Зимова річка · пілот оточення, 14.11.2026",
+          "Осінній табір · попередній ігровий кадр, 15.10.2026"
         ]
       },
       "de": {
         "name": "Quiet Camp",
-        "category": "Räumliches Rätselspiel · Android",
+        "category": "Gemütliches räumliches Rätselspiel · Android",
         "status": "In Entwicklung",
-        "summary": "Ein Platz für jeden Gast. Ein ruhiges Rätselspiel über Zelte, überlegte Entscheidungen und eine ukrainische Welt, die in den Alltag zurückfindet.",
-        "intro": "Bauen Sie ein Camp, hören Sie Ihren Gästen zu und finden Sie für jeden Wunsch einen Platz. Ein entschleunigtes Rätselspiel in einer ukrainischen Landschaft nach dem Krieg.",
+        "summary": "Ein gemütliches Low-Poly-Rätselspiel über Zeltplatzierung und Fürsorge für jeden Gast in ukrainischen Landschaften.",
+        "intro": "Platziere und drehe Zelte, halte gemeinsame Wege frei und beachte die Wünsche deiner Gäste: Schatten, Ruhe, Wasser, Freundschaft und ein warmes Lagerfeuer.",
         "paragraphs": [
-          "Quiet Camp ist mein aktuelles unabhängiges Spiel. Die Basiskampagne umfasst 100 Level in 10 Kapiteln. Beim Platzieren der Zelte zählen Wege, Schatten, Ruhe und Freundschaft.",
-          "Das Spiel verbindet eine klare räumliche Aufgabe mit der Atmosphäre eines Ortes, an dem der Alltag zurückkehrt. Fertige Camp-Anordnungen werden Teil Ihres lokalen Albums.",
-          "Das Spiel wird für Android entwickelt. Diese Seite zeigt Entwicklungsmaterial und keinen bereits verfügbaren Store-Release. Mehr zum Spiel und seiner Oberfläche finden Sie im illustrierten Spielführer."
+          "Quiet Camp ist ein räumliches Rätselspiel für Android in aktiver Entwicklung. Eine Kampagne mit 100 Leveln in 10 Kapiteln ist in den Entwicklungsquellen integriert; Szenengestaltung, Geräteerfahrung und Spieltests werden weiter verbessert.",
+          "Finde für jeden Gast einen geeigneten Platz. Achte auf Größe und Eingang der Zelte, freie Wege, Nachbarn, Schatten, Ruhe und die Erreichbarkeit gemeinsamer Einrichtungen.",
+          "Spätere Rätsel beschäftigen sich mit Brunnen, versetzbaren Lagerfeuern, Ruheplätzen, verschiedenen Zeltgrößen und Brücken. Die Bilder unten sind echte Entwicklungsaufnahmen aus dem Unity-Editor einschließlich experimenteller Szenen, keine endgültigen Store-Screenshots. Ein öffentliches Veröffentlichungsdatum wurde nicht bekanntgegeben."
         ],
         "features": [
           [
-            "Platz für jeden Gast",
-            "Platzieren und drehen Sie Zelte mit Rücksicht auf Wege, Schatten, Ruhe und die Freundschaften Ihrer Gäste."
+            "Platz für jedes Zelt",
+            "Verschiebe und drehe Zelte mit verschiedenen Grundflächen, ohne Eingänge und Wege zu blockieren."
           ],
           [
-            "Eine Reise durch die Ukraine",
-            "100 Level in 10 Kapiteln, eingebettet in eine ukrainische Umgebung nach dem Krieg."
+            "Rücksicht auf deine Gäste",
+            "Beachte Schatten, Ruhe, Freundschaften, Wasser, Erholung und das Lagerfeuer."
           ],
           [
-            "Im eigenen Tempo",
-            "Erkunden Sie das Rätsel, überdenken Sie Platzierungen und bewahren Sie fertige Camps im Album auf."
+            "Eine wachsende Reise",
+            "Entwicklungskampagne mit 100 Leveln in 10 Kapiteln, wechselndem Gelände und Brücken."
           ]
         ],
         "facts": [
           [
             "platform",
-            "Android"
+            "Android (in Entwicklung)"
           ],
           [
             "stage",
-            "In Entwicklung"
+            "Level- und Grafikprüfung läuft"
           ],
           [
             "developer",
-            "Oleksiy Havryliuk / Kruty1918 Games"
+            "Kruty1918 Games"
           ],
           [
             "focus",
-            "Räumliche Rätsel und Camp-Gestaltung"
+            "Räumliche Rätsel und Campingplatzgestaltung"
           ]
         ],
-        "captureNote": "Szenen aus Quiet Camp, aufgenommen am 15.–19. Oktober 2026.",
+        "captureNote": "Neue, unveränderte Unity-Editor-Game-View-Aufnahmen vom 14. November 2026, darunter zwei experimentelle Szenen. Die visuelle Prüfung aller 100 Level und mobile Tests laufen weiter. Das letzte Herbstbild stammt vom 15. Oktober, das Titelmotiv aus einem Unity-Teaser vom 19. Oktober 2026.",
         "heroAlt": "Ein Zeltlager neben einer Unterkunft mit grünem Dach zwischen Bäumen",
         "galleryAlt": [
-          "Vier Zelte neben einer Holzbrücke über einen sommerlichen Fluss",
+          "Unity-Editor-Aufnahme eines sonnigen Camp-Rätsels mit Zelten, Bäumen, Wegen und Platzierungsraster",
+          "Hochformat-Spielansicht aus dem Unity-Editor zum ersten Quiet-Camp-Rätsel mit Zeltsteuerung",
+          "Hochformat-Entwicklungsaufnahme aus dem Unity-Editor: Wintercamp mit Fluss, Bäumen und Zelten",
           "Drei rote Zelte und ein Lagerfeuer an einem Steintor im herbstlichen Wald"
+        ],
+        "galleryCaptions": [
+          "Zeltgrößen und Wege · Unity-Editor-Pilot, 14.11.2026",
+          "Erstes Camp · Gameplay im Hochformat, 14.11.2026",
+          "Winterfluss · Umgebungspilot, 14.11.2026",
+          "Herbstcamp · frühere native Aufnahme, 15.10.2026"
         ]
       },
       "icon": "/quiet-camp/privacy/brand-icon.png",

@@ -27,6 +27,21 @@ a.community-card:hover{border-color:var(--copper);background:#254335;color:var(-
 .community-card small{display:block;margin-top:12px;color:var(--muted);font-size:.78rem;line-height:1.55}
 .community-card .community-action{color:var(--copper);font-size:.75rem;font-weight:600}
 .community-card.is-pending{opacity:.75;cursor:default}
+
+/* Actual Unity development captures and gameplay highlights. */
+.game-features{padding-block:74px}
+.game-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.game-feature{padding:28px 26px 30px;background:var(--sheet);border:1px solid var(--line);min-width:0}
+.game-feature-index{color:var(--copper);font-size:.66rem;letter-spacing:.17em;font-weight:600}
+.game-feature h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:1.45rem;line-height:1.3;margin-top:16px}
+.game-feature p{font-size:.85rem;line-height:1.75;color:var(--muted);margin-top:12px}
+.development-gallery-title{margin-bottom:28px}
+.capture-frame{margin:0;min-width:0}
+.capture-frame a{display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:200px;background:#1a3027}
+.capture-frame img{display:block;width:100%;height:390px;object-fit:contain;background:#1a3027}
+.capture-frame figcaption{font-size:.72rem;line-height:1.65;color:var(--muted);padding-top:12px}
+@media(max-width:900px){.game-feature-grid{grid-template-columns:1fr}.game-feature{padding:22px}.capture-frame img{height:auto;max-height:560px}}
+
 @media(max-width:900px){.community-grid{grid-template-columns:1fr;gap:12px}.community-card{min-height:126px;padding:23px 22px}}
 
 @media(min-width:1700px){.scene-hero{max-width:1920px;margin-inline:auto}.scene-content{max-width:1450px}.hero-copy{width:38%}}
