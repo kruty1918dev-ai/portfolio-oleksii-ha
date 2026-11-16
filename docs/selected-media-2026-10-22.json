@@ -1,119 +1,13 @@
 {
-  "selectedAt": "2026-10-22",
+  "selectedAt": "2026-11-16",
   "scope": "Real imagery for one consistent developer website",
   "selectionNotes": [
-    "Replaces the very old 8 October album frames and 11 October aircraft/winter staging images as primary promotional media.",
-    "The V02 Haven full frame is the best available landscape hero without placement guides or HUD. The V03 close tent frame is archived for provenance but excluded from primary usage because prominent placement outlines dominate its composition.",
-    "These are archived real captures, not new renders or evidence of final redesigned native UI. No Unity/player run was performed.",
-    "Existing Fun & Ball images are genuine portrait gameplay; image 02 is the clearest hero because ball, fan and goal are readable together. Keep its portrait aspect, do not stretch or crop it into a landscape.",
-    "Moyva showcase frames are technical prototype images, not screenshots of a finished strategy game.",
-    "A bounded review of 14 recent native house/landmark scenes selected L065 autumn stone gateway as a second gallery image; complete 1024×1024 native frame, receipt hash verified."
+    "Quiet Camp hero and gallery replaced with original November 2026 Unity Game View screenshots to respect current clean-ground art direction.",
+    "No old screenshots with dense ground vegetation remain in active public media; the three selected capture files are from 10/14 November.",
+    "Originals are preserved without recoloring or scene alteration and are labeled as development captures; game release acceptance is still pending.",
+    "Other non-Quiet-Camp project media selections remain unchanged."
   ],
   "assets": [
-    {
-      "capturedDate": "2026-10-19",
-      "dateEvidence": "Design/Marketing/Teaser/V02/QA_REPORT.md",
-      "kind": "native Unity teaser still; actual completed camp and environment; native marketing camera; HUD hidden",
-      "level": "gen:qc_camp:122 — Haven",
-      "sourceStatus": "V02 actual recorded teaser, 19 October 2026",
-      "recommended": "Quiet Camp and homepage feature hero. Display the complete 16:9 frame; put title/copy outside image so the camp remains readable.",
-      "alt": {
-        "en": "A campsite beside a green-roofed shelter, surrounded by trees",
-        "uk": "Табір поруч із прихистком під зеленим дахом серед дерев",
-        "de": "Ein Zeltlager neben einer Unterkunft mit grünem Dach zwischen Bäumen"
-      },
-      "file": "public/media/qc-selected-haven.webp",
-      "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Marketing/Teaser/V02/preview.jpg",
-      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/Marketing/Teaser/V02/preview.jpg",
-      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
-      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-      "sourcePath": "Design/Marketing/Teaser/V02/preview.jpg",
-      "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/preview.jpg",
-      "originalSha256": "faa01a3a4b2eaf49e75f254328658abf81ceaf7575a8e733ebef86b1e0aa33d4",
-      "width": 1280,
-      "height": 720,
-      "bytes": 111608,
-      "variants": [
-        {
-          "file": "qc-selected-haven-480.webp",
-          "width": 480,
-          "height": 270,
-          "bytes": 24224,
-          "sha256": "d960f10cdb043e05bfad9a4f057d262868709cc112195a4861fa7cfef87a2ce2"
-        },
-        {
-          "file": "qc-selected-haven-800.webp",
-          "width": 800,
-          "height": 450,
-          "bytes": 48398,
-          "sha256": "c007f83ff5241bc5927d2bd8f78425d69ad3df0355aac42c0b2ab51a916faf69"
-        },
-        {
-          "file": "qc-selected-haven-1200.webp",
-          "width": 1200,
-          "height": 675,
-          "bytes": 78614,
-          "sha256": "0b710ec3ea853e6991a25e1a3acec4a2fb9c960e9937310583eeb723682c3f48"
-        },
-        {
-          "file": "qc-selected-haven.webp",
-          "width": 1280,
-          "height": 720,
-          "bytes": 111608,
-          "sha256": "aa6b38f7ff6036c33719e99844a9c441e78772c5d42bfce01db83c1f700cfc29"
-        }
-      ],
-      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
-    },
-    {
-      "capturedDate": "2026-10-15",
-      "capturedUtc": "2026-10-15T06:36:45.7778133Z",
-      "dateEvidence": "Design/LevelAuthoring/StoryCampaign/Review/U07/L036.json",
-      "kind": "native-unity-production-world-components; world-camera scene capture, no HUD",
-      "level": "Campaign order 36; receipt authoring id QC_EDITOR_5ea6395b",
-      "sourceStatus": "Campaign scene archive, no new UI shown",
-      "recommended": "Secondary square gallery image, fully visible with object-fit contain or natural aspect ratio. Do not use as a full viewport background because that recreates the crop problem.",
-      "alt": {
-        "en": "Four tents beside a wooden bridge crossing a summer river",
-        "uk": "Чотири намети біля дерев’яного мосту через літню річку",
-        "de": "Vier Zelte neben einer Holzbrücke über einen sommerlichen Fluss"
-      },
-      "file": "public/media/qc-selected-bridge.webp",
-      "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
-      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
-      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
-      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-      "sourcePath": "Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
-      "originalPath": "/workspace/studio-media-originals/Design/LevelAuthoring/StoryCampaign/Review/U07/L036.png",
-      "originalSha256": "971df4794ffbe8b6dca20bad5b0a9c1fbf334e09fa1b8c3c3d53385f84ccb6c9",
-      "width": 1024,
-      "height": 1024,
-      "bytes": 236484,
-      "variants": [
-        {
-          "file": "qc-selected-bridge-480.webp",
-          "width": 480,
-          "height": 480,
-          "bytes": 68764,
-          "sha256": "1d5ff5f193c3d790ad904e5fdfd4009029124396acb7a24a091f21e354673f20"
-        },
-        {
-          "file": "qc-selected-bridge-800.webp",
-          "width": 800,
-          "height": 800,
-          "bytes": 141398,
-          "sha256": "67b5d3d08fe158d233939653038d929d42a830e1cf76e35bfbe344a237f21417"
-        },
-        {
-          "file": "qc-selected-bridge.webp",
-          "width": 1024,
-          "height": 1024,
-          "bytes": 236484,
-          "sha256": "80202a6cef8e8630a122a735416979a67ee9db9b98836f74d3be91f7524b77a7"
-        }
-      ],
-      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
-    },
     {
       "capturedDate": null,
       "sourceSnapshotDate": "2026-07-02",
@@ -227,107 +121,6 @@
       "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
     },
     {
-      "capturedDate": "2026-10-15",
-      "capturedUtc": "2026-10-15T06:37:44.2344468Z",
-      "dateEvidence": "Design/LevelAuthoring/StoryCampaign/Review/U07/L065.json",
-      "kind": "native-unity-production-world-components; world-camera scene capture, no HUD",
-      "level": "Campaign order 65, gen:qc_camp:84; Відкрита хвіртка сусідам / Кам’яна брама сусідського двору; receipt authoring id QC_EDITOR_4d61ff46",
-      "sourceStatus": "Campaign scene archive; native autumn_sunset effects and settled 3-resident composition, no new UI shown",
-      "recommended": "Second square gallery image beside bridge; preserve the complete native 1:1 frame. Campfire and stone gate distinguish this autumn scene from the summer river and Haven hero.",
-      "alt": {
-        "en": "Three red tents and a campfire beside a stone gateway in an autumn woodland",
-        "uk": "Три червоні намети й вогнище біля кам’яної брами в осінньому лісі",
-        "de": "Drei rote Zelte und ein Lagerfeuer an einem Steintor im herbstlichen Wald"
-      },
-      "file": "public/media/qc-selected-autumn-gate.webp",
-      "source": "quiet-camp@e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
-      "sourceUrl": "https://raw.githubusercontent.com/kruty1918dev-ai/quiet-camp/e1cdf86ebd31f8edb336d73d105128e97189cdf8/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
-      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
-      "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-      "sourcePath": "Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
-      "originalPath": "/workspace/studio-media-originals/quiet-camp/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.png",
-      "originalSha256": "f928f2d9a2c1ac9e860920569f16d72478f28c37a3bd6262515bfc141bba0266",
-      "width": 1024,
-      "height": 1024,
-      "bytes": 129210,
-      "variants": [
-        {
-          "file": "qc-selected-autumn-gate-480.webp",
-          "width": 480,
-          "height": 480,
-          "bytes": 35296,
-          "sha256": "a984b7e552d248f482987c8cc0636b2a0ed6d02948336bb91379814669296706"
-        },
-        {
-          "file": "qc-selected-autumn-gate-800.webp",
-          "width": 800,
-          "height": 800,
-          "bytes": 72332,
-          "sha256": "9c16f52af86429c2563c6c8f260d11e2ce2b83d4053d1766933c5ea4cd350af6"
-        },
-        {
-          "file": "qc-selected-autumn-gate.webp",
-          "width": 1024,
-          "height": 1024,
-          "bytes": 129210,
-          "sha256": "6a8ab7f1a025c691527a51a8f955f927dfff8cfafda0dc1963e71c872198357f"
-        }
-      ],
-      "receiptVerification": {
-        "imageSha256Matches": true,
-        "receiptPath": "/workspace/studio-media-originals/quiet-camp/Design/LevelAuthoring/StoryCampaign/Review/U07/L065.json",
-        "receiptSha256": "0e5f1e0a7d6a54f347dbdc3b8accd1868d021885dd0dd6389bbc2ae032d8e89a",
-        "effectsPreset": "autumn_sunset"
-      },
-      "conversion": "Full original frame; format conversion and aspect-preserving downscale only. WebP 93 full / 90 responsive; no retouch, recolor, object addition or cropping."
-    },
-    {
-      "capturedDate": "2026-11-14",
-      "dateEvidence": "reports/campaign-visual-production/2026-11-14/length-first/REPORT-UA.md",
-      "kind": "original Unity Editor Game View capture; development visuals, not final mobile release",
-      "level": "QC039",
-      "sourceStatus": "experimental v5 tent-size pilot; not applied to live campaign",
-      "recommended": "Development gallery: label clearly as a work-in-progress Unity capture. Do not present as an Android store release screenshot.",
-      "alt": {
-        "en": "Unity Editor development view of a sunny campsite puzzle with tents, trees, paths and placement grid",
-        "uk": "Робочий кадр Unity Editor: сонячна головоломка з наметами, деревами, шляхами й сіткою розміщення",
-        "de": "Unity-Editor-Aufnahme eines sonnigen Camp-Rätsels mit Zelten, Bäumen, Wegen und Platzierungsraster"
-      },
-      "file": "public/media/qc-dev-2026-11-14-qc039-landscape.png",
-      "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/reports/campaign-visual-production/2026-11-14/length-first/gen_qc_camp_56-landscape.png",
-      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
-      "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
-      "sourcePath": "reports/campaign-visual-production/2026-11-14/length-first/gen_qc_camp_56-landscape.png",
-      "originalBlobSha": "c800374414fd33562833d9f18a7ef533799913df",
-      "width": 1440,
-      "height": 1080,
-      "bytes": 987608,
-      "selectionNote": "Selected for dated development gallery on 16 November 2026; no native/human release approval inferred."
-    },
-    {
-      "capturedDate": "2026-11-14",
-      "dateEvidence": "reports/campaign-visual-production/2026-11-14/hud-followup/evidence.json",
-      "kind": "original Unity Editor Game View capture; development visuals, not final mobile release",
-      "level": "QC001",
-      "sourceStatus": "QC001 native Game View capture in technical review; final mobile build not validated",
-      "recommended": "Development gallery: label clearly as a work-in-progress Unity capture. Do not present as an Android store release screenshot.",
-      "alt": {
-        "en": "Portrait Unity Editor game view of the first Quiet Camp puzzle and tent controls",
-        "uk": "Вертикальний ігровий кадр Unity Editor першої головоломки Quiet Camp з керуванням наметами",
-        "de": "Hochformat-Spielansicht aus dem Unity-Editor zum ersten Quiet-Camp-Rätsel mit Zeltsteuerung"
-      },
-      "file": "public/media/qc-dev-2026-11-14-qc001-portrait.png",
-      "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/reports/campaign-visual-production/2026-11-14/hud-followup/portrait-gameplay-after-sequencing.png",
-      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
-      "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
-      "sourcePath": "reports/campaign-visual-production/2026-11-14/hud-followup/portrait-gameplay-after-sequencing.png",
-      "originalBlobSha": "08c4d5681ed25c2932fa31cbfb5fb71edc8f7575",
-      "width": 750,
-      "height": 1334,
-      "bytes": 496185,
-      "selectionNote": "Selected for dated development gallery on 16 November 2026; no native/human release approval inferred."
-    },
-    {
       "capturedDate": "2026-11-14",
       "dateEvidence": "reports/campaign-visual-production/2026-11-14/natural-river/REPORT-UA.md",
       "kind": "original Unity Editor Game View capture; development visuals, not final mobile release",
@@ -349,14 +142,56 @@
       "height": 1334,
       "bytes": 649802,
       "selectionNote": "Selected for dated development gallery on 16 November 2026; no native/human release approval inferred."
+    },
+    {
+      "capturedDate": "2026-11-10",
+      "dateEvidence": "Design/Marketing/SourceScreenshots/2026-11-10/review.json",
+      "kind": "original Unity Game View landscape screenshot; visual review passed for individual screenshot",
+      "level": "winter camp level 82",
+      "sourceStatus": "original Game View capture; individual screenshot visually reviewed, not a current release build",
+      "recommended": "Website promotional media showing naturally sparse/snow-covered ground without dense plants; label as development capture.",
+      "file": "public/media/qc-current-2026-11-10-winter-landscape.png",
+      "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/Design/Marketing/SourceScreenshots/2026-11-10/PNG/08-winter-landscape.png",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+      "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
+      "sourcePath": "Design/Marketing/SourceScreenshots/2026-11-10/PNG/08-winter-landscape.png",
+      "originalBlobSha": "739880c7073f326ca47aa73b05621560273e0500",
+      "originalSha256": "7aaf02d86dfa443492fa882cb018363c30de82613a1ed042de67209d995f53d2",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 891122,
+      "sha256": "7aaf02d86dfa443492fa882cb018363c30de82613a1ed042de67209d995f53d2",
+      "reviewLimit": "Screenshot review only; 100-level campaign and final Android build remain unverified.",
+      "selectionNote": "2026-11-16 visual refresh: preserve original full frame, remove grass-heavy older captures from public site."
+    },
+    {
+      "capturedDate": "2026-11-10",
+      "dateEvidence": "Design/Marketing/SourceScreenshots/2026-11-10/review.json",
+      "kind": "original Unity Game View portrait screenshot; visual review passed for individual screenshot",
+      "level": "winter camp level 72",
+      "sourceStatus": "original Game View capture; individual screenshot visually reviewed, not a current release build",
+      "recommended": "Website promotional media showing naturally sparse/snow-covered ground without dense plants; label as development capture.",
+      "file": "public/media/qc-current-2026-11-10-winter-portrait.png",
+      "source": "quiet-camp@da49f9857abd20eefdad0bf2f659be3494cd8516/Design/Marketing/SourceScreenshots/2026-11-10/PNG/07-winter-portrait.png",
+      "sourceRepository": "https://github.com/kruty1918dev-ai/quiet-camp",
+      "sourceCommit": "da49f9857abd20eefdad0bf2f659be3494cd8516",
+      "sourcePath": "Design/Marketing/SourceScreenshots/2026-11-10/PNG/07-winter-portrait.png",
+      "originalBlobSha": "927966d9242c9afd66176793df27036436477280",
+      "originalSha256": "733cebee79df586ff39e61f0403bcfb161e08ccb84f88afa6967ff3b7fe3f76d",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 656674,
+      "sha256": "733cebee79df586ff39e61f0403bcfb161e08ccb84f88afa6967ff3b7fe3f76d",
+      "reviewLimit": "Screenshot review only; 100-level campaign and final Android build remain unverified.",
+      "selectionNote": "2026-11-16 visual refresh: preserve original full frame, remove grass-heavy older captures from public site."
     }
   ],
   "placementRecommendations": {
-    "homeQuietCamp": "qc-selected-haven.webp",
-    "quietCampHero": "qc-selected-haven.webp",
+    "homeQuietCamp": "qc-current-2026-11-10-winter-landscape.png",
+    "quietCampHero": "qc-current-2026-11-10-winter-landscape.png",
     "quietCampGallery": [
-      "qc-selected-bridge.webp",
-      "qc-selected-autumn-gate.webp"
+      "qc-current-2026-11-10-winter-portrait.png",
+      "qc-dev-2026-11-14-qc072-portrait.png"
     ],
     "moyvaHero": "studio-moyva-world.webp",
     "moyvaGallery": [
@@ -375,58 +210,31 @@
       "quiet-camp-summer.webp",
       "moyva-gameplay.webp",
       "moyva-world.webp",
-      "qc-selected-tents.webp"
+      "qc-selected-tents.webp",
+      "quiet-camp-autumn.webp",
+      "qc-selected-haven.webp",
+      "qc-selected-bridge.webp",
+      "qc-selected-autumn-gate.webp",
+      "qc-dev-2026-11-14-qc039-landscape.png",
+      "qc-dev-2026-11-14-qc001-portrait.png"
     ]
   },
   "furtherSelectionReview": {
-    "date": "2026-10-22",
-    "reviewed": "V02 final review sheets, V03 review sheets, initial teaser preview, native campaign scene captures",
-    "videoToolAvailable": "/usr/bin/ffmpeg",
-    "publicVideoAvailability": "No video files in the tracked Git tree or GitHub releases. V02 QA_REPORT.md explicitly documents MP4 and full source PNGs as local files outside Git; V03 README gives local-only delivery paths.",
-    "contactSheetFinding": "V02 includes wider river and bridge camera moments without guides, but complete frame tiles are only 480×270. V03 guide-free moments are similarly small and retain close tent composition. Neither is a suitable high-resolution website hero.",
-    "decision": "Use the archived V02 1280×720 Haven preview as complete-frame hero; do not upscale a montage tile, invent a render, remove guides, or crop native scene content.",
+    "date": "2026-11-16",
+    "reviewed": "10 November original approved Unity Game View winter screenshots and 14 November QC072 Unity Editor winter pilot; previous October and grass-heavy selections excluded",
+    "decision": "Use original winter screenshots without abundant ground vegetation as the website hero and gallery. This is a media refresh, not game QA or release acceptance.",
     "evidence": [
       {
-        "sourcePath": "Design/Marketing/Teaser/V02/final-review-01.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-01.jpg",
-        "sha256": "b67c47c8652681d7f75911da6c17dcfd84a125b6ec18885789679df9af743900"
+        "sourcePath": "Design/Marketing/SourceScreenshots/2026-11-10/PNG/08-winter-landscape.png",
+        "sourceSha256": "7aaf02d86dfa443492fa882cb018363c30de82613a1ed042de67209d995f53d2"
       },
       {
-        "sourcePath": "Design/Marketing/Teaser/V02/final-review-02.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-02.jpg",
-        "sha256": "87e3fc1f480f49bbca415526a52964ee2cb1d6b379f430f338004c356ae7e0b2"
+        "sourcePath": "Design/Marketing/SourceScreenshots/2026-11-10/PNG/07-winter-portrait.png",
+        "sourceSha256": "733cebee79df586ff39e61f0403bcfb161e08ccb84f88afa6967ff3b7fe3f76d"
       },
       {
-        "sourcePath": "Design/Marketing/Teaser/V02/final-review-03.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-03.jpg",
-        "sha256": "3ffa2e706b58d5c9f33914a7e5cf009197a05fa5e4be842b323237f54bf8e333"
-      },
-      {
-        "sourcePath": "Design/Marketing/Teaser/V02/final-review-04.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V02/final-review-04.jpg",
-        "sha256": "6e0ebb2c4b4da5a4e2212d0bef73af812e546dd3fa9c372176aac0f6efb9ca34"
-      },
-      {
-        "sourcePath": "Design/Marketing/Teaser/V03/Review/contact-01.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V03/Review/contact-01.jpg",
-        "sha256": "25bf289cdb9399086cd5da023125bc1ae1847b7b56e61724bbdf30c11d4d72b7"
-      },
-      {
-        "sourcePath": "Design/Marketing/Teaser/V03/Review/contact-02.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V03/Review/contact-02.jpg",
-        "sha256": "5f9411c86ec541a9d465f5b23edcd90c4ffbc03b0cdf4d7eea6c47fd9a6ded44"
-      },
-      {
-        "sourcePath": "Design/Marketing/Teaser/V03/Review/contact-03.jpg",
-        "sourceCommit": "e1cdf86ebd31f8edb336d73d105128e97189cdf8",
-        "originalPath": "/workspace/studio-media-originals/Design/Marketing/Teaser/V03/Review/contact-03.jpg",
-        "sha256": "0ec9d8dcece03cfa038533d4d1e30ed90d5e603f4c9b42fa0c12ba43f3822350"
+        "sourcePath": "reports/campaign-visual-production/2026-11-14/natural-river/after-portrait-placed.png",
+        "reviewReport": "reports/campaign-visual-production/2026-11-14/natural-river/REPORT-UA.md"
       }
     ]
   },
@@ -440,5 +248,5 @@
     }
   ],
   "supplementalSelectionAt": "2026-11-16",
-  "supplementalSelectionNote": "Added three unchanged 14 November Unity Editor development captures with current review limitations; original October hero remains clearly identified. They are not store release screenshots."
+  "supplementalSelectionNote": "Public Quiet Camp website now uses only original November 2026 winter captures with sparse/snow-covered ground. Obsolete October and grass-heavy images were removed, not merely hidden."
 }

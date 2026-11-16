@@ -316,12 +316,10 @@
       "slug": "quiet-camp",
       "kind": "game",
       "featured": true,
-      "hero": "qc-selected-haven.webp",
+      "hero": "qc-current-2026-11-10-winter-landscape.png",
       "gallery": [
-        "qc-dev-2026-11-14-qc039-landscape.png",
-        "qc-dev-2026-11-14-qc001-portrait.png",
-        "qc-dev-2026-11-14-qc072-portrait.png",
-        "qc-selected-autumn-gate.webp"
+        "qc-current-2026-11-10-winter-portrait.png",
+        "qc-dev-2026-11-14-qc072-portrait.png"
       ],
       "portrait": false,
       "links": [],
@@ -368,19 +366,15 @@
             "Spatial puzzles and campsite design"
           ]
         ],
-        "captureNote": "Fresh unretouched Unity Editor Game View captures from 14 November 2026 (including two experimental visual pilots). Final mobile presentation and 100-level visual review are ongoing. The last autumn image dates to 15 October; the hero is a native teaser still from 19 October 2026.",
-        "heroAlt": "A campsite beside a green-roofed shelter, surrounded by trees",
+        "captureNote": "The photos shown here are original unretouched Unity Game View captures from 10 and 14 November 2026. They are development and visual-pilot images, not final Android screenshots; the level designs and final presentation are still under review.",
+        "heroAlt": "Snow-covered tents, a boat and a quiet stream beside winter trees in Quiet Camp.",
         "galleryAlt": [
-          "Unity Editor development view of a sunny campsite puzzle with tents, trees, paths and placement grid",
-          "Portrait Unity Editor game view of the first Quiet Camp puzzle and tent controls",
-          "Portrait Unity Editor work-in-progress winter camp with a river, trees and tents",
-          "Three red tents and a campfire beside a stone gateway in an autumn woodland"
+          "Five tents beside a fire on a snowy campsite, captured in Unity Game View",
+          "A snowy riverside campsite with trees, a bridge and tents, captured from a Unity Editor scene"
         ],
         "galleryCaptions": [
-          "Tent sizes and paths · Unity Editor pilot, 14 Nov 2026",
-          "First camp · portrait gameplay, 14 Nov 2026",
-          "Winter river · environment pilot, 14 Nov 2026",
-          "Autumn camp · earlier native capture, 15 Oct 2026"
+          "Winter camp · original Game View screenshot, 10 Nov 2026",
+          "Winter river · original Unity Editor pilot, 14 Nov 2026"
         ]
       },
       "uk": {
@@ -426,19 +420,15 @@
             "Просторові головоломки та кемпінг"
           ]
         ],
-        "captureNote": "Нові справжні кадри Game View із Unity Editor від 14 листопада 2026 року, зокрема два експериментальні пілоти. Візуальне приймання 100 рівнів та мобільне тестування ще тривають. Останній осінній кадр — 15 жовтня, головне промозображення Unity — 19 жовтня 2026 року.",
-        "heroAlt": "Табір поруч із прихистком під зеленим дахом серед дерев",
+        "captureNote": "Тут показано оригінальні, не ретушовані кадри Unity Game View від 10 і 14 листопада 2026 року. Це матеріали розробки та візуальних пілотів, а не фінальні скриншоти Android. Перевірка рівнів та оформлення ще триває.",
+        "heroAlt": "Засніжені намети, човен і тиха річка серед зимових дерев у Quiet Camp.",
         "galleryAlt": [
-          "Робочий кадр Unity Editor: сонячна головоломка з наметами, деревами, шляхами й сіткою розміщення",
-          "Вертикальний ігровий кадр Unity Editor першої головоломки Quiet Camp з керуванням наметами",
-          "Вертикальний робочий кадр Unity Editor зимового табору з річкою, деревами й наметами",
-          "Три червоні намети й вогнище біля кам’яної брами в осінньому лісі"
+          "П’ять наметів біля вогнища в засніженому таборі, справжній кадр Unity Game View",
+          "Зимовий табір біля річки з деревами, мостом і наметами, робочий кадр Unity Editor"
         ],
         "galleryCaptions": [
-          "Розміри наметів і проходи · пілот Unity Editor, 14.11.2026",
-          "Перший табір · вертикальний ігровий кадр, 14.11.2026",
-          "Зимова річка · пілот оточення, 14.11.2026",
-          "Осінній табір · попередній ігровий кадр, 15.10.2026"
+          "Зимовий табір · оригінальний Game View, 10.11.2026",
+          "Зимова річка · оригінальний пілот Unity Editor, 14.11.2026"
         ]
       },
       "de": {
@@ -484,19 +474,15 @@
             "Räumliche Rätsel und Campingplatzgestaltung"
           ]
         ],
-        "captureNote": "Neue, unveränderte Unity-Editor-Game-View-Aufnahmen vom 14. November 2026, darunter zwei experimentelle Szenen. Die visuelle Prüfung aller 100 Level und mobile Tests laufen weiter. Das letzte Herbstbild stammt vom 15. Oktober, das Titelmotiv aus einem Unity-Teaser vom 19. Oktober 2026.",
-        "heroAlt": "Ein Zeltlager neben einer Unterkunft mit grünem Dach zwischen Bäumen",
+        "captureNote": "Diese Bilder sind unveränderte Unity-Game-View-Aufnahmen vom 10. und 14. November 2026. Sie dokumentieren die Entwicklung und experimentelle Szenen, keine endgültigen Android-Screenshots; die Überprüfung von Leveln und Gestaltung läuft weiter.",
+        "heroAlt": "Verschneite Zelte, ein Boot und ein ruhiger Bach zwischen winterlichen Bäumen in Quiet Camp.",
         "galleryAlt": [
-          "Unity-Editor-Aufnahme eines sonnigen Camp-Rätsels mit Zelten, Bäumen, Wegen und Platzierungsraster",
-          "Hochformat-Spielansicht aus dem Unity-Editor zum ersten Quiet-Camp-Rätsel mit Zeltsteuerung",
-          "Hochformat-Entwicklungsaufnahme aus dem Unity-Editor: Wintercamp mit Fluss, Bäumen und Zelten",
-          "Drei rote Zelte und ein Lagerfeuer an einem Steintor im herbstlichen Wald"
+          "Fünf Zelte und ein Lagerfeuer in einem verschneiten Camp, echte Unity-Game-View-Aufnahme",
+          "Verschneites Flusscamp mit Bäumen, Brücke und Zelten aus einer Unity-Editor-Szene"
         ],
         "galleryCaptions": [
-          "Zeltgrößen und Wege · Unity-Editor-Pilot, 14.11.2026",
-          "Erstes Camp · Gameplay im Hochformat, 14.11.2026",
-          "Winterfluss · Umgebungspilot, 14.11.2026",
-          "Herbstcamp · frühere native Aufnahme, 15.10.2026"
+          "Wintercamp · originale Game-View-Aufnahme, 10.11.2026",
+          "Winterfluss · originaler Unity-Editor-Pilot, 14.11.2026"
         ]
       },
       "icon": "/quiet-camp/privacy/brand-icon.png",
@@ -849,13 +835,13 @@
       "back": "Developer website",
       "description": "A quiet puzzle about finding a place for every guest among Ukrainian landscapes.",
       "status": "In development for Android",
-      "archive": "Development images · 11–14 October 2026",
+      "archive": "Unity development captures · 10–14 November 2026",
       "legal": "Help & documents",
       "support": "Support",
-      "heroAlt": "Three tents in a wooded clearing beside a river",
+      "heroAlt": "Snow-covered tents, a boat and a quiet stream beside winter trees in Quiet Camp.",
       "galleryAlt": [
-        "A camp beside a grounded aircraft",
-        "A winter camp among snow-covered trees"
+        "Five tents beside a fire on a snowy campsite, captured in Unity Game View",
+        "A snowy riverside campsite with trees, a bridge and tents, captured from a Unity Editor scene"
       ],
       "privacy": "Privacy",
       "linksLabel": "Game links"
@@ -864,13 +850,13 @@
       "back": "Сайт розробника",
       "description": "Спокійна головоломка про місце для кожного гостя серед українських краєвидів.",
       "status": "У розробці для Android",
-      "archive": "Кадри розробки · 11–14 жовтня 2026",
+      "archive": "Кадри Unity з розробки · 10–14 листопада 2026",
       "legal": "Допомога й документи",
       "support": "Підтримка",
-      "heroAlt": "Три намети на лісовій галявині біля річки",
+      "heroAlt": "Засніжені намети, човен і тиха річка серед зимових дерев у Quiet Camp.",
       "galleryAlt": [
-        "Табір біля літака",
-        "Зимовий табір серед засніжених дерев"
+        "П’ять наметів біля вогнища в засніженому таборі, справжній кадр Unity Game View",
+        "Зимовий табір біля річки з деревами, мостом і наметами, робочий кадр Unity Editor"
       ],
       "privacy": "Приватність",
       "linksLabel": "Посилання гри"
@@ -879,13 +865,13 @@
       "back": "Zur Entwicklerwebsite",
       "description": "Ein ruhiges Rätselspiel, in dem jeder Gast seinen Platz in ukrainischen Landschaften findet.",
       "status": "In Entwicklung für Android",
-      "archive": "Entwicklungsaufnahmen · 11.–14. Oktober 2026",
+      "archive": "Unity-Entwicklungsaufnahmen · 10.–14. November 2026",
       "legal": "Hilfe & Dokumente",
       "support": "Support",
-      "heroAlt": "Drei Zelte auf einer Waldlichtung am Fluss",
+      "heroAlt": "Verschneite Zelte, ein Boot und ein ruhiger Bach zwischen winterlichen Bäumen in Quiet Camp.",
       "galleryAlt": [
-        "Ein Camp neben einem Flugzeug",
-        "Ein Wintercamp zwischen verschneiten Bäumen"
+        "Fünf Zelte und ein Lagerfeuer in einem verschneiten Camp, echte Unity-Game-View-Aufnahme",
+        "Verschneites Flusscamp mit Bäumen, Brücke und Zelten aus einer Unity-Editor-Szene"
       ],
       "privacy": "Datenschutz",
       "linksLabel": "Links zum Spiel"
