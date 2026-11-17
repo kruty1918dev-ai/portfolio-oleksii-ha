@@ -50,6 +50,10 @@
       "destination": "/privacy/index.html"
     },
     {
+      "source": "/quiet-camp/playtesting/privacy",
+      "destination": "/quiet-camp/playtesting/privacy/index.html"
+    },
+    {
       "source": "/quiet-camp/privacy",
       "destination": "/quiet-camp/privacy/index.html"
     },
@@ -102,6 +106,10 @@
       "destination": "/privacy/uk/index.html"
     },
     {
+      "source": "/quiet-camp/playtesting/privacy/uk",
+      "destination": "/quiet-camp/playtesting/privacy/uk/index.html"
+    },
+    {
       "source": "/quiet-camp/privacy/uk",
       "destination": "/quiet-camp/privacy/uk/index.html"
     },
@@ -152,6 +160,10 @@
     {
       "source": "/privacy/de",
       "destination": "/privacy/de/index.html"
+    },
+    {
+      "source": "/quiet-camp/playtesting/privacy/de",
+      "destination": "/quiet-camp/playtesting/privacy/de/index.html"
     },
     {
       "source": "/quiet-camp/privacy/de",

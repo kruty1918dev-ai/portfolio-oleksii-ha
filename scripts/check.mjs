@@ -15,10 +15,10 @@ const [routes,config,data,policy,websitePolicy,controller,media,selection]=await
 const domain=data.profile.domain;
 assert.equal(new URL(domain).protocol,'https:','Public canonical origin must use HTTPS');
 const known=new Map(routes.map(r=>[r.path,r]));
-assert.equal(routes.length,39,'The complete site needs 13 routes in all three languages');
+assert.equal(routes.length,42,'The complete site needs 14 routes in all three languages');
 assert.equal(known.size,routes.length,'Duplicate routes');
-assert.equal(routes.length,(10+data.projects.length)*3,'Every project and core page needs all languages');
-const expectedSlugs=['','games','portfolio','about','quiet-camp','moyva','fun-and-ball','quiet-camp/legal','quiet-camp/account','quiet-camp/delete-account','impressum','privacy','quiet-camp/privacy'];
+assert.equal(routes.length,(11+data.projects.length)*3,'Every project and core page needs all languages');
+const expectedSlugs=['','games','portfolio','about','quiet-camp','moyva','fun-and-ball','quiet-camp/legal','quiet-camp/account','quiet-camp/delete-account','impressum','privacy','quiet-camp/privacy','quiet-camp/playtesting/privacy'];
 for(const slug of expectedSlugs)for(const lang of ['en','uk','de']){
  const target='/'+[slug,...(lang==='en'?[]:[lang])].filter(Boolean).join('/');
  assert(known.has(target),`Missing translated route ${target}`);
@@ -92,7 +92,8 @@ function checkShell(html,label){
  assert(!tags(html,'video').some(tag=>Object.hasOwn(tag,'autoplay')),label+' automatic video');
  assert(!/\{\{\s*(?:legalName|publicName|postalAddress|ukrainianName|privacyEmail|supportEmail|brand|country)\s*\}\}/.test(html),label+' unresolved controller tokens');
  assert(!/\breview-note\b|id="review-heading"/.test(html),label+' public internal review notice');
- assert(!unfinishedCopy.test(publicText(html)),label+' public unfinished/audit copy');
+ if(label.startsWith('/quiet-camp/playtesting/privacy'))assert(tags(html,'meta').some(t=>t.name==='robots'&&t.content.includes('noindex')),label+' draft must be noindex');
+ else assert(!unfinishedCopy.test(publicText(html)),label+' public unfinished/audit copy');
  for(const asset of ['script','img','source','iframe','embed','object'].flatMap(name=>tags(html,name))){
   for(const attr of ['src','data'])if(asset[attr])assert(asset[attr].startsWith('/'),label+' external asset or tracking request: '+asset[attr]);
  }
@@ -115,7 +116,7 @@ async function checkLocal(value,r){
 for(const r of routes){
  const html=htmlByPath.get(r.path);checkShell(html,r.path);
  assert.equal(tags(html,'html')[0]?.lang,r.lang,r.path+' language');
- assert(!tags(html,'meta').some(tag=>tag.name==='robots'&&/noindex/i.test(tag.content||'')),r.path+' public page indexing');
+ assert.equal(tags(html,'meta').some(tag=>tag.name==='robots'&&/noindex/i.test(tag.content||'')),r.slug==='quiet-camp/playtesting/privacy',r.path+' draft/public indexing');
  assert(tags(html,'link').some(tag=>tag.rel==='canonical'&&tag.href===domain+r.path),r.path+' canonical');
  const alternates=tags(html,'link').filter(tag=>tag.rel==='alternate');assert.equal(alternates.length,4,r.path+' language alternatives');
  for(const lang of ['en','uk','de']){
