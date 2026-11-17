@@ -18,4 +18,4 @@ export function structuredData(data,slug,lang,title,description){
  return JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/[<>&\u2028\u2029]/g,c=>'\\u'+c.charCodeAt(0).toString(16).padStart(4,'0'));
 }
 export const scriptHash=text=>"'sha256-"+createHash('sha256').update(text).digest('base64')+"'";
-export const contentSecurityPolicy=(hashes=[])=>`default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'${hashes.length?' '+hashes.join(' '):''}; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`;
+export const contentSecurityPolicy=(hashes=[])=>`default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'${hashes.length?' '+hashes.join(' '):''}; connect-src 'self' https://quietcamp-testers.oleksiy-havryliuk.workers.dev; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`;

@@ -1,0 +1,131 @@
+{
+  "revision": "2026-11-17-v2",
+  "releaseApproved": true,
+  "controllerSource": "portfolio-oleksii-ha/legal/controller.json (owner-confirmed 2026-10-20)",
+  "en": {
+    "title": "Quiet Camp playtesting — privacy notice",
+    "intro": "How we process data when you join the Quiet Camp Android playtesting waiting list through our website or Discord.",
+    "sections": [
+      {
+        "title": "Who is responsible",
+        "text": "Controller: Oleksii Havryliuk (publicly Oleksiy Havryliuk), Kruty1918 Games, Kapitänspromenade 6, 23966 Wismar, Germany. Privacy contact: privacy@oleksiy-havryliuk.de; support: support@oleksiy-havryliuk.de. These details come from the owner's confirmed website record."
+      },
+      {
+        "title": "Data and purpose",
+        "text": "We request the email used for your Google Play account, chosen language, application status, application and consent dates, privacy notice version and verification date. Discord ID is stored only if you apply through Discord or link that account. We use these data to verify email control, manage the waiting list, prevent duplicates, grant the testing role and send relevant test instructions. Only your Google account email is needed for the Google Group/Play access flow; we do not request a password, birth date, phone number or identity document. Applying is voluntary and does not authorize unrelated marketing or game analytics."
+      },
+      {
+        "title": "Legal basis and consent",
+        "text": "The legal basis for registration and related testing messages is consent under GDPR Article 6(1)(a). Read this notice and explicitly consent in the form; the first testing programme is for adults aged 18 or older. We send a single-use six-digit email code. Code confirmation proves control of that mailbox, not Google Group membership or Play participation. You can withdraw consent at any time without affecting earlier lawful processing. When a test is actually available, verified pending applications may be approved automatically; administrators can review status and handle requests. These decisions do not have legal or similarly significant effects. Limited abuse prevention and service security use legitimate interests under Article 6(1)(f)."
+      },
+      {
+        "title": "Services and access",
+        "text": "The registration form and its API are hosted by Cloudflare Workers with two private D1 databases created with EU jurisdiction. This does not mean all Worker execution or service processing is confined to the EU. Email is encrypted with AES-256-GCM and uses a separate keyed duplicate index. Quiet Camp Control on OpenAI Sites/Cloudflare receives administrative metadata and counts; ordinary conversational MCP tools do not return unmasked email. A separately authenticated administrator may request a one-time export. STRATO sends codes and test emails from quietcamp@oleksiy-havryliuk.de and therefore processes the recipient address and message. Discord processes its private form, account identity, roles and messages if you use that route. Google Groups and Google Play process joining and opt-in under their own terms. The existing information website on Vercel links to the Cloudflare registration form; no email entry form is hosted on its Hobby deployment. The website visit itself is covered by the website privacy notice. Recovery keys are backed up in private GitHub Actions secrets; applicant email records are not uploaded to GitHub."
+      },
+      {
+        "title": "Retention and security",
+        "text": "Applications, including rejected applications, expire 90 days after submission, or earlier on deletion/withdrawal. Unverified codes, encrypted delivery payloads and addresses expire within ten minutes; after successful verification their code/address payload is wiped. Browser access sessions expire after one hour and remain only in the current tab memory. Hashed abuse-limiting keys expire after a day. Cloudflare D1 recovery history may retain earlier encrypted records for up to 30 days. Random erased application IDs stay in a separate current erasure ledger for 31 days; this ledger must be applied after restoration before processing resumes. Administrative audit records expire after 90 days. Queued invitations are cancelled on erasure; temporary role-removal jobs retain Discord ID until execution or retention expiry. Delivered mail, Discord messages and exports cannot be recalled. Your own mail provider may retain received messages under its own terms. HTTPS, separate secrets, authenticated administration and encrypted private storage protect the service; email is not posted in channels, ordinary application logs or GitHub."
+      },
+      {
+        "title": "Deletion and your rights",
+        "text": "Use Delete my application in Discord and confirm, or on the website verify the same email again, choose Delete my application and confirm. You can also contact privacy@oleksiy-havryliuk.de from an account whose ownership can be verified. We erase the application/email, cancel queued messages and arrange removal of the testing role. Leaving the Google Group and removing Google/Discord account data require separate actions with those platforms; contact us for assistance. You may request access, correction, erasure, restriction and portability where applicable, withdraw consent and complain to a competent data-protection authority. We normally respond within one month under GDPR Article 12(3). We do not normally request an identity-document copy."
+      },
+      {
+        "title": "Joining and age",
+        "text": "Join the Google Group with the same Google account, then open the Google Play opt-in link once a release is available. Group membership is self-service, while its member list and discussions are restricted to the owner. The testing invitation is sent only after a published active Alpha release is observed. Delivery and a user self-report are not proof that you joined Google Play. Google may require additional review or account eligibility before making a release available. The programme is restricted to people aged 18 or older; no date of birth or identity document is collected."
+      },
+      {
+        "title": "Provider agreements and international processing",
+        "text": "Cloudflare processes service data under its Self-Serve Subscription Agreement and incorporated Data Processing Addendum. STRATO includes its processing agreement in this account’s contract, which began in July 2026. These services may use subprocessors; providers describe their roles and international transfers in their published terms. Where applicable, Cloudflare uses the EU–US Data Privacy Framework or contractual safeguards including Standard Contractual Clauses. Discord and Google also process their own account/platform data under their privacy terms. We do not claim that all processing is EU-only or that encryption alone prevents every provider access. Questions about services, safeguards or this notice can be sent to privacy@oleksiy-havryliuk.de."
+      }
+    ]
+  },
+  "uk": {
+    "title": "Тестування Quiet Camp — приватність",
+    "intro": "Як обробляємо дані під час реєстрації до списку очікування Android-тестування Quiet Camp через сайт або Discord.",
+    "sections": [
+      {
+        "title": "Хто відповідає",
+        "text": "Контролер: Oleksii Havryliuk (публічно Oleksiy Havryliuk), Kruty1918 Games, Kapitänspromenade 6, 23966 Wismar, Німеччина. Приватність: privacy@oleksiy-havryliuk.de; підтримка: support@oleksiy-havryliuk.de. Реквізити взято з підтвердженого власником запису сайту."
+      },
+      {
+        "title": "Дані та мета",
+        "text": "Запитуємо email облікового запису Google Play, вибрану мову, статус заявки, дати заявки й згоди, версію політики та дату підтвердження пошти. Discord ID зберігається лише для заявки через Discord або прив’язки цього акаунта. Дані потрібні для підтвердження контролю над поштою, списку очікування, запобігання дублюванню, ролі тестування та повідомлень з інструкціями. Для доступу через Google Group/Play потрібен email Google-акаунта; пароль, дату народження, телефон і копію документа не запитуємо. Участь добровільна й не означає згоди на сторонню рекламу чи аналітику гри."
+      },
+      {
+        "title": "Підстава та згода",
+        "text": "Підстава реєстрації та пов’язаних повідомлень — згода за статтею 6(1)(a) GDPR. Прочитайте політику та явно погодьтеся у формі; перша програма тестування призначена для осіб від 18 років. Надсилаємо одноразовий шестизначний код. Його підтвердження доводить контроль над скринькою, але не участь у Google Group чи Google Play. Згоду можна відкликати будь-коли без впливу на законність попередньої обробки. Коли тест фактично доступний, підтверджені заявки зі списку очікування можуть схвалюватися автоматично; адміністратор переглядає статуси й опрацьовує звернення. Ці рішення не мають юридичних або подібних істотних наслідків. Обмежений захист від зловживань і захист сервісу ґрунтуються на законному інтересі за статтею 6(1)(f)."
+      },
+      {
+        "title": "Сервіси та доступ",
+        "text": "Форму реєстрації та API розміщено в Cloudflare Workers із двома приватними базами D1, створеними з EU jurisdiction. Це не означає, що все виконання Worker й обробка сервісів обмежені ЄС. Email шифрується AES-256-GCM, для дублікатів використовується окремий ключований індекс. Quiet Camp Control на OpenAI Sites/Cloudflare отримує адміністративні метадані й кількості; звичайні розмовні MCP-інструменти не повертають незамасковані email. Одноразовий експорт доступний після окремої авторизації адміністратора. STRATO надсилає коди й повідомлення з quietcamp@oleksiy-havryliuk.de та обробляє адресу одержувача й текст листа. Discord отримує приватну анкету, обробляє ідентичність, ролі та повідомлення, якщо ви обрали цей спосіб. Google Groups і Google Play опрацьовують вступ та opt-in за власними умовами. Наявний інформаційний сайт на Vercel веде на форму Cloudflare; поля введення email не розміщуються в його Hobby deployment. Відвідування самого сайту описує політика сайту. Ключі відновлення зберігаються в приватних GitHub Actions secrets; записи email заявників у GitHub не завантажуються."
+      },
+      {
+        "title": "Строки та захист",
+        "text": "Заявки, зокрема відхилені, видаляються через 90 днів після подання або раніше за запитом чи відкликанням згоди. Непідтверджені коди, зашифровані адреси та поштові завдання мають строк до десяти хвилин; після підтвердження тимчасовий код і адреса очищуються. Сесія доступу діє одну годину й зберігається лише в пам’яті поточної вкладки. Хешовані ключі обмеження зловживань видаляються через добу. Історія відновлення Cloudflare D1 може утримувати попередні зашифровані записи до 30 днів. Випадкові ID видалених заявок зберігаються в окремому актуальному журналі 31 день; після відновлення його застосовують до поновлення обробки. Адміністративний аудит видаляється через 90 днів. Запрошення в черзі скасовуються під час видалення; тимчасові завдання зняття ролі зберігають Discord ID до виконання або завершення строку. Уже доставлені листи, Discord-повідомлення й експорти відкликати неможливо. Ваш поштовий провайдер може зберігати листи за власними правилами. Захист включає HTTPS, окремі секрети, авторизацію адміністратора й зашифроване приватне сховище; email не публікується в каналах, звичайних логах або GitHub."
+      },
+      {
+        "title": "Видалення та права",
+        "text": "Натисніть «Видалити заявку» у Discord і підтвердіть або на сайті повторно підтвердьте ту саму пошту, натисніть «Видалити мою заявку» й погодьте видалення. Також можна написати на privacy@oleksiy-havryliuk.de з акаунта, належність якого можна перевірити. Ми видаляємо заявку/email, скасовуємо повідомлення в черзі й організовуємо зняття ролі тестування. Вихід із Google Group та видалення акаунтів Google/Discord потребують окремих дій у цих сервісах; зверніться по допомогу. Ви маєте права на доступ, виправлення, видалення, обмеження й перенесення за застосовних умов, відкликання згоди та скаргу компетентному органу захисту даних. Зазвичай відповідаємо протягом місяця за статтею 12(3) GDPR. Типово копію документа не запитуємо."
+      },
+      {
+        "title": "Вступ та вік",
+        "text": "Приєднайтеся до Google Group тим самим Google-акаунтом, потім відкрийте Play opt-in, коли випуск стане доступним. Вступ до групи самостійний, але список учасників та обговорення доступні лише власнику. Запрошення на тест надсилається після виявлення опублікованого активного Alpha-релізу. Доставка або повідомлення користувача не доводять участі в Google Play. Google може вимагати власної перевірки випуску або відповідності акаунта. Програма призначена лише для осіб від 18 років; дату народження або копію документа не збираємо."
+      },
+      {
+        "title": "Договори сервісів і міжнародна обробка",
+        "text": "Cloudflare обробляє дані сервісу за Self-Serve Subscription Agreement і включеним Data Processing Addendum. STRATO включає AVV до чинного договору цього акаунта, який почав діяти в липні 2026 року. Сервіси можуть залучати субобробників; їхні ролі та міжнародні передачі описано в опублікованих умовах. За застосовних обставин Cloudflare використовує EU–US Data Privacy Framework або договірні гарантії, зокрема стандартні договірні положення. Discord і Google також опрацьовують власні дані акаунтів і платформ за своїми політиками. Ми не стверджуємо, що вся обробка відбувається лише в ЄС або що шифрування виключає будь-який доступ провайдерів. Запитання щодо сервісів, гарантій і цієї політики: privacy@oleksiy-havryliuk.de."
+      }
+    ]
+  },
+  "de": {
+    "title": "Quiet Camp testen — Datenschutzhinweise",
+    "intro": "So verarbeiten wir Daten bei der Anmeldung zur Quiet Camp Android-Testwarteliste über Website oder Discord.",
+    "sections": [
+      {
+        "title": "Verantwortlicher",
+        "text": "Verantwortlich: Oleksii Havryliuk (öffentlich Oleksiy Havryliuk), Kruty1918 Games, Kapitänspromenade 6, 23966 Wismar, Deutschland. Datenschutz: privacy@oleksiy-havryliuk.de; Support: support@oleksiy-havryliuk.de. Die Angaben stammen aus dem vom Inhaber bestätigten Website-Datensatz."
+      },
+      {
+        "title": "Daten und Zwecke",
+        "text": "Wir erfragen die E-Mail-Adresse des Google-Play-Kontos, Sprache, Bewerbungsstatus, Antrags- und Einwilligungsdatum, Hinweisversion und Bestätigungsdatum. Eine Discord-ID speichern wir nur bei Anmeldung über Discord oder Verknüpfung dieses Kontos. Die Daten dienen der E-Mail-Bestätigung, Warteliste, Dublettenprüfung, Testrolle und relevanten Testanleitungen. Für Google Group/Play benötigen wir die E-Mail-Adresse des Google-Kontos; Passwort, Geburtsdatum, Telefonnummer und Ausweiskopie werden nicht verlangt. Die Anmeldung ist freiwillig und erlaubt keine sonstige Werbung oder Spielanalyse."
+      },
+      {
+        "title": "Rechtsgrundlage und Einwilligung",
+        "text": "Rechtsgrundlage für Anmeldung und zugehörige Testnachrichten ist die Einwilligung nach Art. 6 Abs. 1 Buchst. a DSGVO. Lesen Sie diese Hinweise und stimmen Sie im Formular ausdrücklich zu; das erste Testprogramm richtet sich an Personen ab 18 Jahren. Wir senden einen einmaligen sechsstelligen Code. Er bestätigt die Kontrolle über das Postfach, weder Gruppenmitgliedschaft noch Play-Teilnahme. Ein Widerruf ist jederzeit möglich und berührt die vorherige Rechtmäßigkeit nicht. Sobald ein Test tatsächlich verfügbar ist, können bestätigte ausstehende Anträge automatisch freigegeben werden; Administratoren prüfen Status und bearbeiten Anfragen. Diese Entscheidungen haben keine rechtlichen oder ähnlich erheblichen Auswirkungen. Begrenzte Missbrauchsabwehr und Dienstsicherheit beruhen auf berechtigten Interessen nach Art. 6 Abs. 1 Buchst. f DSGVO."
+      },
+      {
+        "title": "Dienste und Zugriff",
+        "text": "Anmeldeformular und API laufen auf Cloudflare Workers mit zwei privaten D1-Datenbanken mit EU jurisdiction. Das bedeutet keine ausschließlich europäische Verarbeitung durch Worker und andere Dienste. E-Mail-Adressen werden mit AES-256-GCM verschlüsselt; ein separater schlüsselbasierter Index erkennt Duplikate. Quiet Camp Control auf OpenAI Sites/Cloudflare erhält Verwaltungsmetadaten und Zähler; gewöhnliche dialogbasierte MCP-Werkzeuge geben keine unmaskierten Adressen zurück. Ein einmaliger Export erfordert eine separate Administratorauthentifizierung. STRATO versendet Codes und Testnachrichten von quietcamp@oleksiy-havryliuk.de und verarbeitet dafür Empfängeradresse und Nachricht. Discord verarbeitet bei Nutzung dieses Weges das private Formular, Kontokennung, Rollen und Nachrichten. Google Groups und Google Play verarbeiten Beitritt und Opt-in nach eigenen Bedingungen. Die bestehende Informationswebsite auf Vercel verlinkt auf das Cloudflare-Formular; ihr Hobby-Deployment enthält kein E-Mail-Eingabeformular. Für den Websitebesuch gelten deren eigene Datenschutzhinweise. Wiederherstellungsschlüssel liegen zusätzlich in privaten GitHub Actions Secrets; Bewerber-E-Mail-Datensätze werden nicht zu GitHub hochgeladen."
+      },
+      {
+        "title": "Speicherung und Sicherheit",
+        "text": "Bewerbungen einschließlich abgelehnter Anträge verfallen 90 Tage nach Einreichung oder früher bei Löschung/Widerruf. Unbestätigte Codes, verschlüsselte Adressen und Versandaufträge verfallen innerhalb von zehn Minuten; bei erfolgreicher Bestätigung werden temporärer Code und Adressinhalt gelöscht. Zugriffssitzungen verfallen nach einer Stunde und bleiben nur im Speicher des aktuellen Tabs. Gehashte Missbrauchsschutzschlüssel verfallen nach einem Tag. Die Cloudflare-D1-Wiederherstellungshistorie kann frühere verschlüsselte Datensätze bis zu 30 Tage enthalten. Zufällige IDs gelöschter Anträge bleiben 31 Tage im separaten aktuellen Löschjournal; dieses wird nach einer Wiederherstellung vor erneuter Verarbeitung angewandt. Verwaltungsprotokolle verfallen nach 90 Tagen. Offene Einladungen werden bei Löschung storniert; temporäre Rollenentzugsaufträge behalten die Discord-ID bis zur Ausführung oder Frist. Bereits zugestellte E-Mails, Discord-Nachrichten und Exporte können nicht zurückgerufen werden. Ihr Mailanbieter kann empfangene Nachrichten nach eigenen Regeln speichern. HTTPS, getrennte Geheimnisse, authentifizierte Verwaltung und verschlüsselter privater Speicher schützen den Dienst; Adressen erscheinen nicht in Kanälen, gewöhnlichen Anwendungslogs oder GitHub."
+      },
+      {
+        "title": "Löschung und Rechte",
+        "text": "Wählen Sie in Discord „Anmeldung löschen“ und bestätigen Sie oder bestätigen Sie auf der Website dieselbe E-Mail erneut und wählen Sie die bestätigte Löschung. Sie können auch von einem überprüfbaren Konto an privacy@oleksiy-havryliuk.de schreiben. Wir löschen Antrag/E-Mail, stornieren offene Nachrichten und veranlassen den Entzug der Testrolle. Gruppen­austritt und Löschung von Google-/Discord-Kontodaten erfordern gesonderte Schritte bei diesen Plattformen; wir helfen bei Anfragen. Unter den jeweiligen Voraussetzungen bestehen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung und Übertragbarkeit, Widerruf und Beschwerde bei einer zuständigen Datenschutzaufsicht. Wir antworten grundsätzlich innerhalb eines Monats nach Art. 12 Abs. 3 DSGVO. Ausweiskopien werden nicht standardmäßig verlangt."
+      },
+      {
+        "title": "Beitritt und Alter",
+        "text": "Treten Sie der Google Group mit demselben Google-Konto bei und öffnen Sie anschließend den Play-Opt-in-Link, sobald ein Release verfügbar ist. Der Gruppenbeitritt erfolgt selbstständig; Mitgliederliste und Diskussionen sind nur für den Inhaber sichtbar. Die Testeinladung wird erst nach Erkennung eines veröffentlichten aktiven Alpha-Releases versendet. Zustellung oder Selbstauskunft beweisen keine Play-Teilnahme. Google kann eine eigene Releaseprüfung oder Kontoberechtigung verlangen. Das Programm ist auf Personen ab 18 Jahren beschränkt; Geburtsdatum und Ausweiskopie werden nicht erhoben."
+      },
+      {
+        "title": "Anbietervereinbarungen und internationale Verarbeitung",
+        "text": "Cloudflare verarbeitet Dienstdaten nach seinem Self-Serve Subscription Agreement einschließlich Data Processing Addendum. STRATO bezieht die AVV in den seit Juli 2026 bestehenden Vertrag dieses Kontos ein. Die Dienste können Unterauftragsverarbeiter einsetzen; Rollen und internationale Übermittlungen werden in den veröffentlichten Bedingungen beschrieben. Soweit anwendbar, nutzt Cloudflare das EU–US Data Privacy Framework oder vertragliche Garantien einschließlich Standardvertragsklauseln. Discord und Google verarbeiten eigene Konto-/Plattformdaten auch nach ihren eigenen Datenschutzhinweisen. Wir behaupten weder ausschließlich europäische Verarbeitung noch, dass Verschlüsselung jeden Anbieterzugriff ausschließt. Fragen zu Diensten, Garantien und diesen Hinweisen: privacy@oleksiy-havryliuk.de."
+      }
+    ]
+  },
+  "infrastructureEvidence": {
+    "host": "Cloudflare Worker production deployment and separate EU D1 databases; SMTP AUTH and receipt verified 2026-11-17",
+    "locations": "D1 jurisdiction eu, primary running EEUR; global Worker, Google and Discord processing explicitly disclosed",
+    "contracts": "Cloudflare Self-Serve Agreement section 6.1 incorporates DPA; STRATO customer contract starts 2026-07-02 so AVV automatically included; Vercel Hobby excludes DPA and hosts only an external registration entry link",
+    "transfers": "Cloudflare DPA v6.4 reviewed for DPF/SCC provisions, provider account processing disclosed; no claim of exclusive EU execution or complete legal certification",
+    "retention": "90-day applications/audit; 10-minute OTP; 1-hour sessions; 1-day hashed limiter; maximum 30-day D1 recovery; current separate erasure ledger 31 days; v2 recovery tested",
+    "ageRules": "18+ consent wording in all registration routes, authorized under owner full preparation instruction; no date of birth or ID requested",
+    "translations": "EN/UK/DE compared against the same deployed fields, automation rules, providers, periods and deletion routes; no independent human translation certification claimed"
+  },
+  "approvedBy": "Controller authorization in the active Quiet Camp task",
+  "approvedAt": "2026-11-17",
+  "approvalScope": "Owner explicitly authorized completing website/Discord registration and cloud automation; APK upload, testing release and build execution remain prohibited."
+}
