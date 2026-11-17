@@ -17,7 +17,7 @@ const [data,policy,websitePolicy,controller,imprint,media,playerPages,search]=aw
 const testing=await json('legal/quiet-camp-testing/content.json');
 if(releaseMode||process.env.VERCEL_ENV==='production')assertTestingPublication(testing);
 data.playerPages=playerPages;
-const schemaHashes=new Set(Object.values(playtestCopy).map(t=>scriptHash(JSON.stringify(t).replaceAll('<','\\u003c'))));
+const schemaHashes=new Set();
 const out=path.join(root,'dist'),langs=['en','uk','de'];
 const dimensions=Object.fromEntries(media.map(m=>[path.basename(m.file),m]));
 for(const lang of langs){

@@ -87,7 +87,7 @@ function checkShell(html,label){
  assert(tags(html,'link').some(tag=>tag.rel==='stylesheet'&&tag.href==='/assets/site.css'),label+' shared stylesheet');
  const scripts=tags(html,'script'),playtestPage=/^\/quiet-camp\/playtesting(?:\/(?:uk|de))?$/.test(label),executable=scripts.filter(tag=>!['application/ld+json','application/json'].includes(tag.type));
  assert.equal(executable.length,playtestPage?2:1,label+' reviewed local scripts only');
- if(playtestPage){assert.equal(executable[1].src,'/assets/playtesting.js');assert(tags(html,'input').some(t=>t.type==='email'&&t.autocomplete==='email'));assert(tags(html,'input').some(t=>t.autocomplete==='one-time-code'));}
+ if(playtestPage){assert.equal(executable[1].src,'/assets/playtesting-status.js');assert(!tags(html,'input').some(t=>t.type==='email'||t.autocomplete==='one-time-code'),'Vercel Hobby must only link to Cloudflare registration');assert(tags(html,'a').some(t=>t.href?.startsWith('https://quietcamp-testers.oleksiy-havryliuk.workers.dev/register')),'Cloudflare registration entry required');}
  assert(executable[0].src==='/assets/site.js'&&Object.hasOwn(executable[0],'defer'),label+' shared deferred site.js');
  assert(scripts.filter(tag=>tag.type==='application/ld+json').every(tag=>!tag.src),label+' structured data is local static JSON');
  assert(tags(html,'link').filter(tag=>tag.rel==='stylesheet').every(tag=>tag.href.startsWith('/assets/')),label+' external stylesheet or font');
@@ -118,7 +118,7 @@ async function checkLocal(value,r){
 for(const r of routes){
  const html=htmlByPath.get(r.path);checkShell(html,r.path);
  assert.equal(tags(html,'html')[0]?.lang,r.lang,r.path+' language');
- assert.equal(tags(html,'meta').some(tag=>tag.name==='robots'&&/noindex/i.test(tag.content||'')),r.slug==='quiet-camp/playtesting/privacy',r.path+' draft/public indexing');
+ assert.equal(tags(html,'meta').some(tag=>tag.name==='robots'&&/noindex/i.test(tag.content||'')),r.slug==='quiet-camp/playtesting/privacy'&&!testingPolicy.releaseApproved,r.path+' draft/public indexing');
  assert(tags(html,'link').some(tag=>tag.rel==='canonical'&&tag.href===domain+r.path),r.path+' canonical');
  const alternates=tags(html,'link').filter(tag=>tag.rel==='alternate');assert.equal(alternates.length,4,r.path+' language alternatives');
  for(const lang of ['en','uk','de']){
