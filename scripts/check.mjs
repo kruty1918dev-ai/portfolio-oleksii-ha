@@ -12,13 +12,14 @@ const [routes,config,data,policy,websitePolicy,controller,media,selection]=await
  json('legal/quiet-camp/content.json'),json('legal/website/content.json'),
  json('legal/controller.json'),json('docs/media-sources.json'),json('docs/selected-media-2026-10-22.json')
 ]);
+const testingPolicy=await json('legal/quiet-camp-testing/content.json');
 const domain=data.profile.domain;
 assert.equal(new URL(domain).protocol,'https:','Public canonical origin must use HTTPS');
 const known=new Map(routes.map(r=>[r.path,r]));
-assert.equal(routes.length,42,'The complete site needs 14 routes in all three languages');
+assert.equal(routes.length,45,'The complete site needs 15 routes in all three languages');
 assert.equal(known.size,routes.length,'Duplicate routes');
-assert.equal(routes.length,(11+data.projects.length)*3,'Every project and core page needs all languages');
-const expectedSlugs=['','games','portfolio','about','quiet-camp','moyva','fun-and-ball','quiet-camp/legal','quiet-camp/account','quiet-camp/delete-account','impressum','privacy','quiet-camp/privacy','quiet-camp/playtesting/privacy'];
+assert.equal(routes.length,(12+data.projects.length)*3,'Every project and core page needs all languages');
+const expectedSlugs=['','games','portfolio','about','quiet-camp','moyva','fun-and-ball','quiet-camp/legal','quiet-camp/account','quiet-camp/delete-account','impressum','privacy','quiet-camp/privacy','quiet-camp/playtesting/privacy','quiet-camp/playtesting'];
 for(const slug of expectedSlugs)for(const lang of ['en','uk','de']){
  const target='/'+[slug,...(lang==='en'?[]:[lang])].filter(Boolean).join('/');
  assert(known.has(target),`Missing translated route ${target}`);
@@ -84,20 +85,21 @@ function checkShell(html,label){
  assert(tags(html,'a').some(tag=>hasClass(tag,'skip')&&tag.href==='#main'),label+' skip link');
  assert(tags(html,'details').some(tag=>hasClass(tag,'mobile-menu')),label+' native mobile menu');
  assert(tags(html,'link').some(tag=>tag.rel==='stylesheet'&&tag.href==='/assets/site.css'),label+' shared stylesheet');
- const scripts=tags(html,'script'),executable=scripts.filter(tag=>tag.type!=='application/ld+json');
- assert.equal(executable.length,1,label+' only the shared progressive-interaction script');
+ const scripts=tags(html,'script'),playtestPage=/^\/quiet-camp\/playtesting(?:\/(?:uk|de))?$/.test(label),executable=scripts.filter(tag=>!['application/ld+json','application/json'].includes(tag.type));
+ assert.equal(executable.length,playtestPage?2:1,label+' reviewed local scripts only');
+ if(playtestPage){assert.equal(executable[1].src,'/assets/playtesting.js');assert(tags(html,'input').some(t=>t.type==='email'&&t.autocomplete==='email'));assert(tags(html,'input').some(t=>t.autocomplete==='one-time-code'));}
  assert(executable[0].src==='/assets/site.js'&&Object.hasOwn(executable[0],'defer'),label+' shared deferred site.js');
  assert(scripts.filter(tag=>tag.type==='application/ld+json').every(tag=>!tag.src),label+' structured data is local static JSON');
  assert(tags(html,'link').filter(tag=>tag.rel==='stylesheet').every(tag=>tag.href.startsWith('/assets/')),label+' external stylesheet or font');
  assert(!tags(html,'video').some(tag=>Object.hasOwn(tag,'autoplay')),label+' automatic video');
  assert(!/\{\{\s*(?:legalName|publicName|postalAddress|ukrainianName|privacyEmail|supportEmail|brand|country)\s*\}\}/.test(html),label+' unresolved controller tokens');
  assert(!/\breview-note\b|id="review-heading"/.test(html),label+' public internal review notice');
- if(label.startsWith('/quiet-camp/playtesting/privacy'))assert(tags(html,'meta').some(t=>t.name==='robots'&&t.content.includes('noindex')),label+' draft must be noindex');
+ if(label.startsWith('/quiet-camp/playtesting/privacy')&&!testingPolicy.releaseApproved)assert(tags(html,'meta').some(t=>t.name==='robots'&&t.content.includes('noindex')),label+' draft must be noindex');
  else assert(!unfinishedCopy.test(publicText(html)),label+' public unfinished/audit copy');
  for(const asset of ['script','img','source','iframe','embed','object'].flatMap(name=>tags(html,name))){
   for(const attr of ['src','data'])if(asset[attr])assert(asset[attr].startsWith('/'),label+' external asset or tracking request: '+asset[attr]);
  }
- assert(!/Hannover|Ausbildung|Lebenslauf|umzugsbereit|B1-Prüfung|18 Jahre alt/i.test(html),label+' outdated recruitment copy');
+ assert(!(playtestPage?/Hannover|Ausbildung|Lebenslauf|umzugsbereit|B1-Prüfung/i:/Hannover|Ausbildung|Lebenslauf|umzugsbereit|B1-Prüfung|18 Jahre alt/i).test(html),label+' outdated recruitment copy');
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
  assert.equal(ids.length,new Set(ids).size,label+' duplicate IDs');
 }

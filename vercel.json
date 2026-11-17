@@ -50,6 +50,10 @@
       "destination": "/privacy/index.html"
     },
     {
+      "source": "/quiet-camp/playtesting",
+      "destination": "/quiet-camp/playtesting/index.html"
+    },
+    {
       "source": "/quiet-camp/playtesting/privacy",
       "destination": "/quiet-camp/playtesting/privacy/index.html"
     },
@@ -104,6 +108,10 @@
     {
       "source": "/privacy/uk",
       "destination": "/privacy/uk/index.html"
+    },
+    {
+      "source": "/quiet-camp/playtesting/uk",
+      "destination": "/quiet-camp/playtesting/uk/index.html"
     },
     {
       "source": "/quiet-camp/playtesting/privacy/uk",
@@ -162,6 +170,10 @@
       "destination": "/privacy/de/index.html"
     },
     {
+      "source": "/quiet-camp/playtesting/de",
+      "destination": "/quiet-camp/playtesting/de/index.html"
+    },
+    {
       "source": "/quiet-camp/playtesting/privacy/de",
       "destination": "/quiet-camp/playtesting/privacy/de/index.html"
     },
@@ -206,7 +218,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self' 'sha256-FCHv6GQEX4Xc6dDY671GyTzo62GAU6qqJhsj4jtE5uM=' 'sha256-jjNA5apq312XtVzXBQ/afeGNBekC/qxPaZytCjlLOVI=' 'sha256-BguK9Chfzfy004GGETmnmS4RdLKU+DrNmWUWmLVKsAc=' 'sha256-T73ErgFZAQtiKv3QWhwTCoXjmXRQQZd9aAQXc05e6oU=' 'sha256-Hmh6MpFCR/qI5rslvsAFKuC0pU/Ec7djaEvpceru2Ow=' 'sha256-ok1wqtDV009YB1zom6yBR+HERIZXtv/6unkbWywBklM=' 'sha256-m8YmNbEts+eupMg7G82znRhqB8fKIs0QLxvQucVnWkU=' 'sha256-tKn7phrWmtK+g5SAAU5UQ3Yix9dktiPKUSST5gXg35s=' 'sha256-rwStWVMKwFtI84U3YSfnOv8uiv7LEmviT0IKhetSIJo=' 'sha256-JSzLMO3JJsJmJjRzq7imFG4HV2jcvuwhG4J17t5BZh0=' 'sha256-CVPd+EBcXzvLh/Inje4firEuGLzM+nHRxJ62946gm9c=' 'sha256-R6QoqGZwpHn/h8+XXXoG6SQsD6A2AGBTJ/RnN9hSBwc='; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+          "value": "default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self' 'sha256-9ujptnuc1qKjuaUTjrSCt02esdogLmEEk5hccPLYLW8=' 'sha256-gTxeUj+f2KWwbUxBPX03q1NVsmoWKht52ibSFP/mjc0=' 'sha256-crcYxmAXyBIL5QBeIMAx5NSOGH50jX4QFqZoljoDaD0=' 'sha256-FCHv6GQEX4Xc6dDY671GyTzo62GAU6qqJhsj4jtE5uM=' 'sha256-jjNA5apq312XtVzXBQ/afeGNBekC/qxPaZytCjlLOVI=' 'sha256-BguK9Chfzfy004GGETmnmS4RdLKU+DrNmWUWmLVKsAc=' 'sha256-T73ErgFZAQtiKv3QWhwTCoXjmXRQQZd9aAQXc05e6oU=' 'sha256-Hmh6MpFCR/qI5rslvsAFKuC0pU/Ec7djaEvpceru2Ow=' 'sha256-ok1wqtDV009YB1zom6yBR+HERIZXtv/6unkbWywBklM=' 'sha256-m8YmNbEts+eupMg7G82znRhqB8fKIs0QLxvQucVnWkU=' 'sha256-tKn7phrWmtK+g5SAAU5UQ3Yix9dktiPKUSST5gXg35s=' 'sha256-rwStWVMKwFtI84U3YSfnOv8uiv7LEmviT0IKhetSIJo=' 'sha256-JSzLMO3JJsJmJjRzq7imFG4HV2jcvuwhG4J17t5BZh0=' 'sha256-CVPd+EBcXzvLh/Inje4firEuGLzM+nHRxJ62946gm9c=' 'sha256-R6QoqGZwpHn/h8+XXXoG6SQsD6A2AGBTJ/RnN9hSBwc='; connect-src 'self' https://quietcamp-testers.oleksiy-havryliuk.workers.dev; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
         },
         {
           "key": "Permissions-Policy",

@@ -40,4 +40,4 @@ for(const route of routes){
 assert.equal(structured,12);
 assert(!sitemap.includes('workers.dev')&&!sitemap.includes('/v1/'),'Service APIs and session login are not website search landing pages');
 assert((await read('dist/404.html')).includes('<meta name="robots" content="noindex">'));
-console.log('PASS: 42 routes (including 3 noindex tester drafts), translated account/deletion discovery, real form links, 12 structured-data graphs with strict CSP, localized game name and no unverified store claims.');
+console.log('PASS: 45 routes (including verified-email registration and three tester privacy routes), translated account/deletion discovery, real form links, 12 structured-data graphs with strict CSP, localized game name and no unverified store claims.');
